@@ -1,0 +1,395 @@
+# todo: add a Symbol + Description per faction
+#---------------------------------------------------------
+# == Required values ==
+# Id:                       - The id must be unique and is used in savegames so if you change it, this will break existing savegames. The id must be < 100 else a player faction will be created! You can have gaps in the id list.
+# FactionName:  			- No spaces and do not use special characters > can be used in the localization! Factio Name = used as KEY; FactionName is the reference for use with playfields, POI and such!
+# Abbrev:   				- Only 3 letters. Avoid special characters
+# Color: ",,"  				- To get the RGB color code, multiply 255 with the float. To get the float for the setting, divide the RGB by 255
+# Description:              - The description (if available) will be shown on top of all NPC factions.
+#
+# == Settings for STATIC factions ==
+# (Factions like the Legacy, Alien .. you cannot interact with or improve your standing or such)
+# Friendly: true	- Always friendly; DefReputation.ecf. is not used; Do not set 'Reputation: true' when using this;
+# Unfriendly: true  - Always hostile; DefReputation.ecf. is not used; Do not set 'Reputation: true' when using this;
+# Note: not setting either Friendly or Unfriendly defaults the faction to a NEUTRAL state
+#
+# == Settings for DYNAMIC factions ==
+# (Factions like the Zirax with Reputation, own territory claim on planets, improve/loose reputation etc pp)
+# Reputation: true   		- If NOT set, the reputation matrix in the DefReputation.ecf is NOT used! Faction is static-hostile if FriendlyToPlayers is not set to true then.
+# ClaimTerritory: true		- If set to true, the faction can have a visual territory on planets; If not set, no territory is created around the factions POIs. Does NOT relate to galactic territories! These are set in the galaxy.ecf
+# == Other Settings ===
+# OmitMapLegend: true		- Of set the factions is HIDDEN from the faction-info list on the maps
+# HideAbbrev: true          - Will hide the Abbrev of the faction in the HUD (Faction-tag)
+# Discovery: true           - Factions can be discovered as soon as any of their POIs is discovered. To enable that a faction is 'discoverable', add 'Discovery: true' to the faction in Faction.ecf. Use console cmd 'faction discover <faction>' to debug that.
+# AttackNPC: true           - NPC factions will attack other NPC faction that have this enabled
+# == Notes ===
+# You cannot MIX settings for STATIC and DYNAMIC factions!
+# Some factions (Zirax, Talon, Alien, Polaris, Prey, Predator, Admin) are not available for customization as they are handled as internal faction references or fallbacks; see comments below!
+#
+#
+#================================================================================
+#    HARDCODED FACTIONS
+# >> Do NOT change anything, except COLOR
+# >> Hard coded factions need to be defined/placed BEFORE any other faction!
+#================================================================================
+#
+{ Faction Id: 1, Name: "Public"
+  Abbrev: Pub
+  Color: "0.9, 0.9, 0.9"
+  OmitMapLegend: true
+  HideAbbrev: true
+  NPC: false
+}
+
+{ Faction Id: 2, Name: "Zirax"       #Zirax Empire head faction; split into houses: Xenu, Rados, Epsilon, Ghyst, Serdu,..
+  Abbrev: Zrx
+  Color: "0.81, 0.09, 0.33"
+  ClaimTerritory: true
+  Reputation: true            # Do not change. Hardcoded effect on Base Attacks. Change will lead to issues with related features!
+  AttackNPC: true
+  Discovery: true
+}
+
+{ Faction Id: 3, Name: "Predator"
+  Abbrev: Prd
+  Color: "0.9, 0.75, 0"
+  HideAbbrev: true
+  OmitMapLegend: true
+}
+
+{ Faction Id: 4, Name: "Prey"
+  Abbrev: Pry
+  Color: "0, 0.75, 0.75"
+  HideAbbrev: true
+  OmitMapLegend: true
+}
+
+{ Faction Id: 5, Name: "Admin"
+  Abbrev: Adm
+  Color: "0, 0.9, 0.9"
+  Friendly: true
+  HideAbbrev: true
+  OmitMapLegend: true
+  NPC: false
+}
+
+{ Faction Id: 6, Name: "Talon"       #Main Story Faction
+  Abbrev: Tal
+  Color: "0.2, 0.9, 0.2"
+  ClaimTerritory: true
+  Reputation: true            # Do not change. Hardcoded effect on Base Attacks. Change will lead to issues with related features!
+  Discovery: true
+}
+
+{ Faction Id: 7, Name: "Polaris"
+  Abbrev: Pol
+  Color: "0.9, 0.6, 0.2"
+  ClaimTerritory: true
+  Reputation: true
+  Discovery: true
+}
+
+{ Faction Id: 8, Name: "Alien"
+  Abbrev: Aln
+  Color: "0.9, 0.2, 0.6"
+  Unfriendly: true
+  HideAbbrev: true
+  AttackNPC: true
+  Discovery: true
+}
+
+#===========================
+#  CUSTOM STATIC Factions
+#===========================
+
+{ Faction Id: 9, Name: "DESC"               #Fallback Faction, only for DESC Modules/Stations
+  Abbrev: DSC
+  Color: "0.9, 0.9, 0.9"
+  Friendly: true
+  OmitMapLegend: true
+  HideAbbrev: true
+}
+{ Faction Id: 10, Name: "TheLegacy"          #Main Story Faction
+  Abbrev: Lgc
+  Color: "0, 1, 0.67"
+  Unfriendly: true
+  AttackNPC: true
+  Discovery: true
+}
+
+{ Faction Id: 11, Name: "UCH"                #Main Story Faction
+  Abbrev: UCH
+  Color: "0.2, 0.2, 0.9"
+  Friendly: true
+  Discovery: true
+}
+
+{ Faction Id: 12, Name: "Progenitor"
+  Abbrev: Prg
+  Color: "0.9, 0.9, 0.9"
+  Friendly: true
+  OmitMapLegend: true
+  HideAbbrev: true
+  Discovery: true
+}
+
+{ Faction Id: 13, Name: "Void"
+  Abbrev: Voi
+  Color: "0, 0, 0"
+  Unfriendly: true
+  OmitMapLegend: true
+  HideAbbrev: true
+  Discovery: true
+}
+{ Faction Id: 14, Name: "GLaD"
+  Abbrev: GLD
+  Color: "0.2, 0.2, 0.9"
+  Friendly: true
+  Discovery: true
+}
+
+{ Faction Id: 15, Name: "Civilian"
+  Abbrev: Civ
+  Color: "0.9, 0.9, 0.9"
+  Friendly: true
+  OmitMapLegend: true
+  HideAbbrev: true
+  Discovery: true
+}
+{ Faction Id: 16, Name: "Warlord"       #Use for hostile random POI and Encounters
+  Abbrev: War
+  Color: "0.9, 0.2, 0.2"
+  Unfriendly: true
+  OmitMapLegend: true
+  HideAbbrev: true
+  AttackNPC: true
+  #Discovery: true
+}
+#===========================
+#  CUSTOM DYNAMIC Factions
+#===========================
+
+{ Faction Id: 17, Name: "Pirates"
+  Abbrev: Pir
+  Color: "0.8, 0.8, 0"
+  ClaimTerritory: true
+  Reputation: true
+  Discovery: true
+  AttackNPC: true
+}
+
+{ Faction Id: 18, Name: "Kriel"
+  Abbrev: Kri
+  Color: "0.5, 0, 0.8"
+  ClaimTerritory: true
+  Reputation: true
+  Discovery: true
+  AttackNPC: true
+}
+
+{ Faction Id: 19, Name: "Trader"
+  Abbrev: Tra
+  Color: "0.6, 1, 1"
+  ClaimTerritory: true
+  Reputation: true
+  Discovery: true
+}
+
+{ Faction Id: 20, Name: "Colonists"
+  Abbrev: Col
+  Color: "0.9, 0.7, 0.7"
+  ClaimTerritory: true
+  Reputation: true
+  Discovery: true
+}
+
+{ Faction Id: 21, Name: "Tesch"
+  Abbrev: Tsc
+  Color: "0.9, 0.2, 0.6"
+  ClaimTerritory: true
+  Reputation: true
+  Discovery: true
+}
+{ Faction Id: 22, Name: "Farr"      #Brotherhood of Farr
+  Abbrev: BoF
+  Color: "1, 0.9, 0.7"
+  ClaimTerritory: true
+  Reputation: true
+  Discovery: true
+  # AttackNPC: true
+}
+{ Faction Id: 23, Name: "Wastelanders"
+  Abbrev: WST
+  Color: "0.7, 0.4, 0.3"
+  ClaimTerritory: true
+  Reputation: true
+  Discovery: true
+  # AttackNPC: true
+}
+{ Faction Id: 24, Name: "ARC"
+  Abbrev: ARC
+  Color: "1, 0.9, 0.7"
+  ClaimTerritory: true
+  Reputation: true
+  Discovery: true
+  # AttackNPC: true
+}
+#==============================
+#  Custom dynamic SUB-Factions
+#==============================
+
+{ Faction Id: 25, Name: "Xenu"               # Zirax Empire - Military
+  Abbrev: Xen
+  Color: "0.9, 0.2, 0.2"
+  OmitMapLegend: true
+  ClaimTerritory: true
+  Reputation: true
+  Discovery: true
+}
+{ Faction Id: 26, Name: "Rados"               # Zirax Empire - Support
+  Abbrev: Rad
+  Color: "0.9, 0.2, 0.2"
+  ClaimTerritory: true
+  OmitMapLegend: true
+  Reputation: true
+  Discovery: true
+}
+{ Faction Id: 27, Name: "Epsilon"             # Zirax Empire - Communication
+  Abbrev: Eps
+  Color: "0.9, 0.2, 0.2"
+  OmitMapLegend: true
+  ClaimTerritory: true
+  Reputation: true
+  Discovery: true
+}
+{ Faction Id: 28, Name: "Ghyst"               # Zirax Empire - Recon
+  Abbrev: Ghy
+  Color: "0.9, 0.2, 0.2"
+  OmitMapLegend: true
+  ClaimTerritory: true
+  Reputation: true
+  Discovery: true
+}
+{ Faction Id: 29, Name: "Serdu"             # Zirax Empire - Science
+  Abbrev: Ser
+  Color: "0.9, 0.2, 0.2"
+  OmitMapLegend: true
+  ClaimTerritory: true
+  Reputation: true
+  Discovery: true
+}
+{ Faction Id: 30, Name: "Abyssal"             # Zirax Empire - Science
+  Abbrev: Aby
+  Color: "0.9, 0.2, 0.2"
+  OmitMapLegend: true
+  ClaimTerritory: true
+  Reputation: true
+}
+
+############################################
+############################################
+############################################
+#                HWS Factions              #
+############################################
+############################################
+############################################
+
+{ Faction Id: 31, Name: "Cyborgs"
+  Description: "[i][c][ffffff]Lore:[-][/c] Few [b][c][334C66]Prototype Clones[-][/c][/b] did not accept their faith in becoming one of the three main Origins and moved on to do their own thing. In fear of the EGS Cooperation, they are living now peacefully in the outer ring of the HWS Universe. Rumors say, they want to take their revenge against EGS and the experiments they suffered.[/i]"
+  Abbrev: Cyb
+  Color: "0.2, 0.3, 0.4"
+  ClaimTerritory: true
+  Reputation: true
+  Discovery: true
+}
+
+{ Faction Id: 32, Name: "EGS"
+  Description: "[i][c][ffffff]Lore:[-][/c] The one and only [b][c][019245]Elemental Galactic Services[-][/c][/b] or EGS Cooperation, as some traitor call them. Nobody has more power, credits and knowledge what is going on in the HWS Universe. However, nobody knows as well what the ultimate goals of EGS are. Over the years the overall reputation became split. One say EGS are the superior helper of the universe. Others say that shady business is going on in the background.[/i]"
+  Abbrev: EGS
+  Color: "0, 0.57, 0.27"
+  ClaimTerritory: true
+  Reputation: true
+}
+
+{ Faction Id: 33, Name: "Federation"
+  Description: "[i][c][ffffff]Lore:[-][/c] With every galactic Black Hole Implosion (server full wipe) a small group of [b][c][009393]Federation[-][/c][/b] Origin people survive somehow and settle in the outer ring, the furthest way out from the Black Hole as possible. Every new Federation Origin Clone should sooner or later visit the [u]real[/u] Homeworld of their Origin, to get power from old generations.[/i]"
+  Abbrev: FED
+  Color: "0, 0.58, 0.58"
+  ClaimTerritory: true
+  Reputation: true
+  Origin: 1
+}
+
+{ Faction Id: 34, Name: "Freelancer"
+  Description: "[i][c][ffffff]Lore:[-][/c] The oldest and proudest Faction in the HWS Universe - the [b][c][E5FFE5]Freelancer[-][/c][/b]. Retired from politics and battles, they live more or less peaceful far out in the HWS Universe. From time to time, very good contracts still motivate them to come out and explore the new universe and its secrets. Every decent Freelancer Origin Clone must visit the veterans to learn better skills.[/i]"
+  Abbrev: FRE
+  Color: "0.9, 1, 0.9"
+  ClaimTerritory: true
+  Reputation: true
+  Origin: 0
+}
+
+{ Faction Id: 35, Name: "Outcast"
+  Description: "[i][c][ffffff]Lore:[-][/c] After many years of battles against the Federation Clones, the EGS Cooperation and everyone trying to steal their land and wealth, many former Pirate Clones went into the exile to regroup, rethink and plan revenge. The [b][c][D60011]Outcast[-][/c][/b] people became a myth for some citizens. Rumors seem to be true though, that the Pirates will never be defeated and the revenge of the Outcast Clones will be the biggest threat the HWS Universe has ever experienced.[/i]"
+  Abbrev: OUT
+  Color: "0.84, 0, 0.07"
+  ClaimTerritory: true
+  Reputation: true
+  Origin: 2
+}
+
+{ Faction Id: 36, Name: "Aqua"
+  Abbrev: Aqua
+  Color: "0.3, 0.3, 0.9"
+  Unfriendly: true
+  Discovery: true
+}
+
+{ Faction Id: 37, Name: "Terra"
+  Abbrev: Terra
+  Color: "0.3, 0.5, 0.3"
+  Unfriendly: true
+  Discovery: true
+}
+
+{ Faction Id: 38, Name: "Pyro"
+  Abbrev: Pyro
+  Color: "0.9, 0.3, 0.3"
+  Unfriendly: true
+  Discovery: true
+}
+
+{ Faction Id: 39, Name: "Obsidian"
+  Abbrev: Obsidian
+  Color: "0.05, 0.9, 0.9"
+  Unfriendly: true
+  Discovery: true
+}
+
+{ Faction Id: 40, Name: "Lux"
+  Abbrev: Lux
+  Color: "0.9, 0.9, 0.9"
+  Unfriendly: true
+  Discovery: true
+}
+
+{ Faction Id: 41, Name: "Nox"
+  Abbrev: Nox
+  Color: "0.1, 0.1, 0.1"
+  Unfriendly: true
+  Discovery: true
+}
+
+{ Faction Id: 42, Name: "Strangelet"
+  Abbrev: Strangelet
+  Color: "0.9, 0.1, 0.9"
+  Unfriendly: true
+  Discovery: true
+}
+
+{ Faction Id: 100, Name: "HWS"
+  Abbrev: HWS
+  Color: "0, 0.57, 0.27"
+  NPC: false
+  OmitMapLegend: true
+}

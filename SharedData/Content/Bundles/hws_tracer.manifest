@@ -1,0 +1,30 @@
+ManifestFileVersion: 0
+CRC: 4025196602
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: dc195c704640858037dec5e6a9f73aca
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cba7746f2695bbe95ab1e78d4f039405
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/hws_tracer/HWSAquaTracerLarge.prefab
+- Assets/hws_tracer/HWSPyroTracerLarge.prefab
+Dependencies: []

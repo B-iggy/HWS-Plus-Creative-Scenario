@@ -1,0 +1,77 @@
+# -------
+# Created with eWPDA 2.9.6
+# Website: https://empyrion-homeworld.net/tools/ewpda
+# -------
+Creator: RexXxuS | HWS
+Chapters:
+  - ChapterTitle: pda_i8uQm
+    Category: Tutorial
+    NoSkip: true
+    PlayerLevel: 1
+    Activatable: Always
+    Visibility: Always
+    Preamble: pda_mGCnS
+    Tasks:
+      - TaskTitle: pda_4GSiW
+        Actions:
+          - ActionTitle: pda_qeCKm
+            Description: pda_08KKi
+            Check: WaitAction
+            Amount: 10
+            AllowManualCompletion: true
+            CompletedMessage: ''
+        StartMessage: high;30|pda_0m4aq
+        Rewards:
+          - Type: LevelTarget
+            Count: 25
+          - Type: UP
+            Count: 100000
+      - TaskTitle: hws_pda_maeiqeW
+        Actions:
+          - ActionTitle: hws_pda_O5mDWK0
+            Description: hws_pda_84t8Gqa
+            Check: WindowOpened
+            Names:
+              - TechTree
+            IsOptional: 'false'
+            AllowManualCompletion: true
+            CompletedMessage: mbox;20|hws_pda_8eOGaGr
+    StartMessage: mbox;20|pda_maOW4
+    Description: pda_OuGgu
+    CompletedMessage: dlg;Quest_HWSPlusBoost_Credits|
+    AutoActivateOnGameStart: true
+    ChapterActivation:
+      - Check: WaitAction
+        Amount: 3
+        NoSkip: 'true'
+        PopupActivatesChapter: 'true'
+      - Check: WindowOpened
+        Names:
+          - Pda
+        NoSkip: 'true'
+        PopupActivatesChapter: 'true'
+    RewardedChaptersOnSkip:
+      - pda_u0eKKea
+    ActivateChapterOnCompletion: pda_u0eKKea
+    RewardedChapters:
+      - pda_u0eKKea
+  - ChapterTitle: pda_u0eKKea
+    Category: Tutorial
+    NoSkip: true
+    Activatable: WhenRewarded
+    Visibility: WhenRewarded
+    PlayerLevel: 1
+    Tasks:
+      - TaskTitle: pda_kaOIWW0
+        Actions:
+          - ActionTitle: pda_GmCGgPe
+            Description: pda_qOemSqC
+            CompletedMessage: mbox;20|pda_Ga2CmuW
+            Check: NearPoi
+            Names:
+              - HWS EWS² Wall
+            GuidingDistance: 5000
+            TriggerDistance: 150
+    CompletedMessage: ''
+    StartMessage: high;45|pda_8i0e0u8
+    Description: pda_8i0e0u8

@@ -1,0 +1,160 @@
+/*  Created with eWCCT 3.11.2  */
+/*  Website: https://empyrion-homeworld.net/tools/ewcct  */
+{ +Dialogue Name: Quest_TSCG_Translation
+  Option_1: hws_dlg_O6GWmW4
+  OptionNext_1: End
+  Option_2: hws_dlg_0CCi4OO
+  OptionNext_2: End
+  Option_3: hws_dlg_mCmWeC8
+  OptionNext_3: End
+  Option_4: hws_dlg_pKeKqe8
+  OptionNext_4: End
+  Option_5: hws_dlg_C8eWr8W
+  OptionNext_5: End
+  Option_6: hws_dlg_a4OW0CV
+  OptionNext_6: End
+  Option_7: hws_dlg_qaS89Ci
+  OptionNext_7: End
+  Option_8: hws_dlg_8e4GMae
+  OptionNext_8: End
+  Option_9: hws_dlg_Ae28eG0
+  OptionNext_9: End
+  Option_10: hws_dlg_qeO0CiO
+  OptionNext_10: End
+}
+{ +Dialogue Name: Quest_TSCG_Start_Lux
+  Output: hws_dlg_Vaimq8C
+  NPCName: hws_dlg_ui8ii8q
+  Execute: "if (DialogueProgress == 0) {<nl>if (Player.PlayfieldName == 'Homeworld') {<nl> ElementOutput = LocF('hws_dlg_O6GWmW4', Player.Name);<nl>} else {<nl> ElementOutput = LocF('hws_dlg_0CCi4OO', Player.Name);<nl>}<nl>}<nl><nl>if (DialogueProgress == 1) {<nl>if (Player.PlayfieldName == 'Homeworld') {<nl> ElementOutput = Loc('hws_dlg_C8eWr8W');<nl>} else {<nl> ElementOutput = Loc('hws_dlg_mCmWeC8');<nl>}<nl>}<nl><nl>if (DialogueProgress == 2) {<nl>if (Player.PlayfieldName != 'Homeworld') {<nl>} else {<nl> ElementOutput = Loc('hws_dlg_pKeKqe8');<nl>}<nl>}<nl><nl>if (DialogueProgress == 3) {<nl> ElementOutput = Loc('hws_dlg_qeO0CiO');<nl>}"
+  Variable_1: "ElementOutput", param1: string
+  Variable_2: "DialogueProgress", param1: int
+  Option_1: hws_dlg_4ucNmiu
+  OptionIf_1: "Player.PlayfieldName == 'Homeworld' && DialogueProgress == 0"
+  OptionNext_1: Quest_TSCG_Start_Lux
+  OptionExecute_1: "DialogueProgress = 1;"
+  Option_2: hws_dlg_4CEuCGG
+  OptionIf_2: "Player.PlayfieldName != 'Homeworld'"
+  OptionNext_2: Quest_TSCG_Start_Lux
+  OptionExecute_2: "DialogueProgress = 1;"
+  Option_3: hws_dlg_380mSW8
+  OptionIf_3: "Player.PlayfieldName != 'Homeworld'"
+  OptionNext_3: Quest_TSCG_Start_Lux
+  OptionExecute_3: "DialogueProgress = 2;"
+  Option_4: hws_dlg_aec1SaS
+  OptionIf_4: "DialogueProgress > 0"
+  OptionNext_4: Quest_TSCG_Start_Lux
+  OptionExecute_4: "DialogueProgress = 3;"
+  Option_5: hws_dlg_B4mSSCS
+  OptionNext_5: End
+}
+{ +Dialogue Name: Quest_TSCG_Start_Terra
+  Output: hws_dlg_Vaimq8C
+  NPCName: hws_dlg_qx84u8i
+  Execute: "if (DialogueProgress == 0) {<nl>if (Player.PlayfieldName == 'Homeworld') {<nl> ElementOutput = LocF('hws_dlg_O6GWmW4', Player.Name);<nl>} else {<nl> ElementOutput = LocF('hws_dlg_0CCi4OO', Player.Name);<nl>}<nl>}<nl><nl>if (DialogueProgress == 1) {<nl>if (Player.PlayfieldName == 'Homeworld') {<nl> ElementOutput = Loc('hws_dlg_a4OW0CV');<nl>} else {<nl> ElementOutput = Loc('hws_dlg_mCmWeC8');<nl>}<nl>}<nl><nl>if (DialogueProgress == 2) {<nl>if (Player.PlayfieldName != 'Homeworld') {<nl>} else {<nl> ElementOutput = Loc('hws_dlg_pKeKqe8');<nl>}<nl>}<nl><nl>if (DialogueProgress == 3) {<nl> ElementOutput = Loc('hws_dlg_qeO0CiO');<nl>}"
+  Option_1: hws_dlg_4ucNmiu
+  OptionIf_1: "Player.PlayfieldName == 'Homeworld' && DialogueProgress == 0"
+  OptionNext_1: Quest_TSCG_Start_Terra
+  OptionExecute_1: "DialogueProgress = 1;"
+  Option_2: hws_dlg_4CEuCGG
+  OptionIf_2: "Player.PlayfieldName != 'Homeworld'"
+  OptionNext_2: Quest_TSCG_Start_Terra
+  OptionExecute_2: "DialogueProgress = 1;"
+  Option_3: hws_dlg_380mSW8
+  OptionIf_3: "Player.PlayfieldName != 'Homeworld'"
+  OptionNext_3: Quest_TSCG_Start_Terra
+  OptionExecute_3: "DialogueProgress = 2;"
+  Option_4: hws_dlg_aec1SaS
+  OptionIf_4: "DialogueProgress > 0"
+  OptionNext_4: Quest_TSCG_Start_Terra
+  OptionExecute_4: "DialogueProgress = 3;"
+  Option_5: hws_dlg_B4mSSCS
+  OptionNext_5: End
+  Variable_1: "ElementOutput", param1: string
+  Variable_2: "DialogueProgress", param1: int
+}
+{ +Dialogue Name: Quest_TSCG_Start_Pyro
+  Output: hws_dlg_IamMSGa
+  NPCName: hws_dlg_OCSCG0i
+  Execute: "if (DialogueProgress == 0) {<nl>if (Player.PlayfieldName == 'Homeworld') {<nl> ElementOutput = LocF('hws_dlg_O6GWmW4', Player.Name);<nl>} else {<nl> ElementOutput = LocF('hws_dlg_0CCi4OO', Player.Name);<nl>}<nl>}<nl><nl>if (DialogueProgress == 1) {<nl>if (Player.PlayfieldName == 'Homeworld') {<nl> ElementOutput = Loc('hws_dlg_qaS89Ci');<nl>} else {<nl> ElementOutput = Loc('hws_dlg_mCmWeC8');<nl>}<nl>}<nl><nl>if (DialogueProgress == 2) {<nl>if (Player.PlayfieldName != 'Homeworld') {<nl>} else {<nl> ElementOutput = Loc('hws_dlg_pKeKqe8');<nl>}<nl>}<nl><nl>if (DialogueProgress == 3) {<nl> ElementOutput = Loc('hws_dlg_qeO0CiO');<nl>}"
+  Option_1: hws_dlg_WieCuWK
+  OptionIf_1: "Player.PlayfieldName == 'Homeworld' && DialogueProgress == 0"
+  OptionNext_1: Quest_TSCG_Start_Pyro
+  OptionExecute_1: "DialogueProgress = 1;"
+  Option_2: hws_dlg_aaSCau8
+  OptionIf_2: "Player.PlayfieldName != 'Homeworld'"
+  OptionNext_2: Quest_TSCG_Start_Pyro
+  OptionExecute_2: "DialogueProgress = 1;"
+  Option_3: hws_dlg_0uOeiSi
+  OptionIf_3: "Player.PlayfieldName != 'Homeworld'"
+  OptionNext_3: Quest_TSCG_Start_Pyro
+  OptionExecute_3: "DialogueProgress = 2;"
+  Option_4: hws_dlg_aec1SaS
+  OptionIf_4: "DialogueProgress > 0"
+  OptionNext_4: Quest_TSCG_Start_Pyro
+  OptionExecute_4: "DialogueProgress = 3;"
+  Option_5: hws_dlg_OGJme8W
+  OptionNext_5: End
+  Variable_1: "ElementOutput", param1: string
+  Variable_2: "DialogueProgress", param1: int
+}
+{ +Dialogue Name: Quest_TSCG_Start_Aqua
+  Output: hws_dlg_iqG84uC
+  NPCName: hws_dlg_8OiiSuW
+  Execute: "if (DialogueProgress == 0) {<nl>if (Player.PlayfieldName == 'Homeworld') {<nl> ElementOutput = LocF('hws_dlg_O6GWmW4', Player.Name);<nl>} else {<nl> ElementOutput = LocF('hws_dlg_0CCi4OO', Player.Name);<nl>}<nl>}<nl><nl>if (DialogueProgress == 1) {<nl>if (Player.PlayfieldName == 'Homeworld') {<nl> ElementOutput = Loc('hws_dlg_8e4GMae');<nl>} else {<nl> ElementOutput = Loc('hws_dlg_mCmWeC8');<nl>}<nl>}<nl><nl>if (DialogueProgress == 2) {<nl>if (Player.PlayfieldName != 'Homeworld') {<nl>} else {<nl> ElementOutput = Loc('hws_dlg_pKeKqe8');<nl>}<nl>}<nl><nl>if (DialogueProgress == 3) {<nl> ElementOutput = Loc('hws_dlg_qeO0CiO');<nl>}"
+  Option_1: hws_dlg_uaCWS0W
+  OptionIf_1: "Player.PlayfieldName == 'Homeworld' && DialogueProgress == 0"
+  OptionNext_1: Quest_TSCG_Start_Aqua
+  OptionExecute_1: "DialogueProgress = 1;"
+  Option_2: hws_dlg_iWeiqGi
+  OptionIf_2: "Player.PlayfieldName != 'Homeworld'"
+  OptionNext_2: Quest_TSCG_Start_Aqua
+  OptionExecute_2: "DialogueProgress = 1;"
+  Option_3: hws_dlg_6W3Oq0C
+  OptionIf_3: "Player.PlayfieldName != 'Homeworld'"
+  OptionNext_3: Quest_TSCG_Start_Aqua
+  OptionExecute_3: "DialogueProgress = 2;"
+  Option_4: hws_dlg_aec1SaS
+  OptionIf_4: "DialogueProgress > 0"
+  OptionNext_4: Quest_TSCG_Start_Aqua
+  OptionExecute_4: "DialogueProgress = 3;"
+  Option_5: hws_dlg_SCuEgS4
+  OptionNext_5: End
+  Variable_1: "ElementOutput", param1: string
+  Variable_2: "DialogueProgress", param1: int
+}
+{ +Dialogue Name: Quest_TSCG_Start_Nox
+  Output: hws_dlg_0wa8OiO
+  NPCName: hws_dlg_mmW8GmQ
+  Execute: "if (DialogueProgress == 0) {<nl>if (Player.PlayfieldName == 'Homeworld') {<nl> ElementOutput = LocF('hws_dlg_O6GWmW4', Player.Name);<nl>} else {<nl> ElementOutput = LocF('hws_dlg_0CCi4OO', Player.Name);<nl>}<nl>}<nl><nl>if (DialogueProgress == 1) {<nl>if (Player.PlayfieldName == 'Homeworld') {<nl> ElementOutput = Loc('hws_dlg_Ae28eG0');<nl>} else {<nl> ElementOutput = Loc('hws_dlg_mCmWeC8');<nl>}<nl>}<nl><nl>if (DialogueProgress == 2) {<nl>if (Player.PlayfieldName != 'Homeworld') {<nl>} else {<nl> ElementOutput = Loc('hws_dlg_pKeKqe8');<nl>}<nl>}<nl><nl>if (DialogueProgress == 3) {<nl> ElementOutput = Loc('hws_dlg_qeO0CiO');<nl>}"
+  Option_1: hws_dlg_A0OOCGC
+  OptionIf_1: "Player.PlayfieldName == 'Homeworld' && DialogueProgress == 0"
+  OptionNext_1: Quest_TSCG_Start_Nox
+  OptionExecute_1: "DialogueProgress = 1;"
+  Option_2: hws_dlg_Gp0OeCC
+  OptionIf_2: "Player.PlayfieldName != 'Homeworld'"
+  OptionNext_2: Quest_TSCG_Start_Nox
+  OptionExecute_2: "DialogueProgress = 1;"
+  Option_3: hws_dlg_GqaKq4w
+  OptionIf_3: "Player.PlayfieldName != 'Homeworld'"
+  OptionNext_3: Quest_TSCG_Start_Nox
+  OptionExecute_3: "DialogueProgress = 2;"
+  Option_4: hws_dlg_aec1SaS
+  OptionIf_4: "DialogueProgress > 0"
+  OptionNext_4: Quest_TSCG_Start_Nox
+  OptionExecute_4: "DialogueProgress = 3;"
+  Option_5: hws_dlg_aW4MmM4
+  OptionNext_5: End
+  Variable_1: "ElementOutput", param1: string
+  Variable_2: "DialogueProgress", param1: int
+}
+{ +Dialogue Name: Quest_TSCG_Init
+  Next_1: Quest_TSCG_Story
+}
+{ +Dialogue Name: Quest_TSCG_Story
+  Output: hws_dlg_s0m8Wae
+}
+{ +Dialogue Name: Quest_HWSPlusBoost_Credits
+  Execute: "Player.Credit += 100000000;"
+  Output: dialogue_qqOeCOd
+  NPCName: dialogue_GSaCC4e
+}

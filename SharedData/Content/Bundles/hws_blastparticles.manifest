@@ -1,0 +1,76 @@
+ManifestFileVersion: 0
+CRC: 2944632861
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: de968760a07c7b34d86d5e877e237423
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: d166f128ee2bca5aff5c48a5396380a6
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/hws_blastparticles/HWSPyroExplosionTiny.prefab
+- Assets/hws_blastparticles/HWSPyroShieldExplosionLarge.prefab
+- Assets/hws_blastparticles/HWSNoxShieldExplosionLarge.prefab
+- Assets/hws_blastparticles/HWSStrangeletExplosionLarge.prefab
+- Assets/hws_blastparticles/HWSStrangeletShieldExplosionSmall.prefab
+- Assets/hws_blastparticles/HWSStrangeletExplosionSmall.prefab
+- Assets/hws_blastparticles/HWSTerraExplosionLarge.prefab
+- Assets/hws_blastparticles/HWSObsidianExplosionSmall.prefab
+- Assets/hws_blastparticles/HWSLuxExplosionTiny.prefab
+- Assets/hws_blastparticles/HWSNoxShieldExplosionSmall.prefab
+- Assets/hws_blastparticles/HWSPyroExplosionSmall.prefab
+- Assets/hws_blastparticles/HWSPyroShieldExplosionSmall.prefab
+- Assets/hws_blastparticles/HWSAquaShieldExplosionSmall.prefab
+- Assets/hws_blastparticles/HWSTerraExplosionMedium.prefab
+- Assets/hws_blastparticles/HWSStrangeletExplosionMedium.prefab
+- Assets/hws_blastparticles/HWSStrangeletExplosionTiny.prefab
+- Assets/hws_blastparticles/HWSObsidianExplosionMedium.prefab
+- Assets/hws_blastparticles/HWSTerraExplosionSmall.prefab
+- Assets/hws_blastparticles/HWSLuxExplosionLarge.prefab
+- Assets/hws_blastparticles/HWSTerraShieldExplosionLarge.prefab
+- Assets/hws_blastparticles/HWSTerraExplosionTiny.prefab
+- Assets/hws_blastparticles/HWSPyroExplosionLarge.prefab
+- Assets/hws_blastparticles/HWSTerraShieldExplosionSmall.prefab
+- Assets/hws_blastparticles/HWSObsidianExplosionLarge.prefab
+- Assets/hws_blastparticles/HWSAquaExplosionLarge.prefab
+- Assets/hws_blastparticles/HWSLuxExplosionSmall.prefab
+- Assets/hws_blastparticles/HWSNoxExplosionSmall.prefab
+- Assets/hws_blastparticles/HWSNoxExplosionMedium.prefab
+- Assets/hws_blastparticles/HWSPyroExplosionMedium.prefab
+- Assets/hws_blastparticles/HWSAquaExplosionSmall.prefab
+- Assets/hws_blastparticles/HWSLuxExplosionMedium.prefab
+- Assets/hws_blastparticles/HWSNoxExplosionTiny.prefab
+- Assets/hws_blastparticles/HWSObsidianExplosionTiny.prefab
+- Assets/hws_blastparticles/HWSAquaShieldExplosionLarge.prefab
+- Assets/hws_blastparticles/HWSLuxShieldExplosionSmall.prefab
+- Assets/hws_blastparticles/HWSNoxExplosionLarge.prefab
+- Assets/hws_blastparticles/HWSObsidianShieldExplosionLarge.prefab
+- Assets/hws_blastparticles/HWSObsidianShieldExplosionSmall.prefab
+- Assets/hws_blastparticles/HWSLuxShieldExplosionLarge.prefab
+- Assets/hws_blastparticles/HWSStrangeletShieldExplosionLarge.prefab
+- Assets/hws_blastparticles/HWSAquaExplosionTiny.prefab
+- Assets/hws_blastparticles/HWSAquaExplosionMedium.prefab
+Dependencies: []

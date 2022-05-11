@@ -1,0 +1,99 @@
+#== Count Limits ==
+# Regions: Range from Child StarRegion_1 up to Child StarRegion_99
+# Territories: Range from Child Territory_1 up to Child Territory_20
+# Territories: You can set 1-10 Other_ factions to exist for this territory  (Other_1 > Other_10)
+# Main-types (suntypes: unlimited)
+# ===
+# Special configuration: Dual-star systems
+# CompanionStarClass: <value>  ; ONLY works in random generated Stars. Not in Sectors.yaml. adding this parameter to a StarClass definition adds a 2nd star of the named value as compantion; 2nd star is decoration only;; <value> needs to be chosen from an already existing StarClass in this config!
+# ===
+# For the star models, we support these:
+# Available Models: SunBlueGiant, SunWhiteDwarf, SunYellowWhite, SunYellow, SunRedGiant, SunRedDwarf, SunNeutron, BlackHole, SunGeneric
+# Customizing: You can add new IDs at the end of the list or modify the given ones. You can customize ALL parameters and use our own values, for example for StarClass (You can then use in your Sectors.yaml or SolarSystemConfg!). Only the models are limited to those mentioned above.
+# Starter System: When your scenario does NOT use a fixed sectors.yaml with starterplanets, you can define one starter system in the General settings below. If you use a sectors.yaml with starter planets set AND have a starter system added below, the starter system entry in this galaxy config will not be used.
+# Starter System Settings: The StarterSystemName can be freely chosen. The StarterSystemClass needs to be one defined in the IDs 1 and onwards.
+# Territories > Factions available are: Zirax, Talon, Polaris, Kriel, Pirates, Trader, UCH, Civilian, Alien
+# Territories > You can set up several individual territories for the same faction with different or overlapping coordinates and spheres!
+# Territories > In a given territory, only the POI of the Territory-Faction will be placed. To allow other factions POI use the 'Other_' setting with an ongoing number. You can define the probability from center to edge of the territory!
+# Internal calculation values:
+# 1 LJ = 10.000 AU = 100.000 Sectors (In reality one LY is about 65.000 AU, but the value was chosen for readability and better measurement)
+# 1 AU = 10 Sectors
+# Note: The coordinates of a territory or a sun (in the sectors.yaml f.ex), the GalaxySpawnRadius and the Radius of the Galaxy are given in LIGHTYEARS. The coordinates (min/max) of a zone of a Star (f.ex HabitableCold ), the coordinates of a planet in the sectors.yaml and the definitions given for planet, moon or station positions in the solarsystemconfigs are measured in SECTORS (not AU). Example: HabitableHot: "109, 120" > a planet in this zone is 109 to 120 SECTORS away from his star.
+#===================================================
+# For previwng changes made in the galaxy without having to start a new game > load a savegame and edit its Galaxyconfig.ecf in the savegame/content folder.
+# Then you can reload the edits with the ingame console > cmd: 'galaxy'
+#===================================================
+
+# ------------------------------------------------------------------------------------------------------ Galaxy Settings
+{ GalaxyConfig, Name: General
+  StarCount: "0, 0"   # random value between these two. This is the absolute MAX amount of Stars available for the party below
+  Radius: "0, 707"  # inner and outer radius of galaxy in LY (no random!). For Nebulas!!
+
+  #NebulaCount: "150, 300"                     # 150-300 random value min/max
+  # Nebula Colors (only temporary until we add better support for it): 3 color gradients are supported, you need to set at least two colors but can use any number of colors for the gradients
+  NebulaColors1: "1,0,0,   1,0,0,   1,0,0"  # red, purple, blue
+  NebulaColors2: "0,1,0,   0,1,0,   0,1,0"  # red, purple, blue
+  NebulaColors3: "0,0,1,   0,0,1,   0,0,1"  # red, purple, blue
+ # you can restrict the display the galaxy (this will not break savegames). f.e. for server owners that want to uncover the galaxy step by step.
+  # Concept: Universe starts with 150 random + 20 fixed stars. Once the first Star Fragment is decrypted, the Universe will get expanded by specific variable values LY.
+
+  # RestrictGalaxyDisplayRadius: 90  # you can restrict the display the galaxy (this will not break savegames)
+
+  GalaxyMode: Regions                        # Regions, None (compatibility mode to old savegames)
+  SectorsPerLY: 100000                       # Note: the old was 10000 but this was based on a wrong calculation
+
+  # Not relevant for HWS
+  #StarterSystemLYCoord: "1331, 0, 1546"       # X, Z, Y
+  #StarterSystemName: Epsilon System
+  #StarterSystemStarClass: G
+
+
+}
+# Homeworld PvE System Dual Sun used in Sectors.yaml
+{ GalaxyConfig, Name: HW-PvE-B
+  StarClass: HW-PvE-B
+  Model: SunGeneric
+  ModelColor: "0.7, 0.9, 0.3" # (can be used if you want a different color apart from Color or LightColor)
+  ModelColor2: "1, 1, 0.7" # (use only if you want to switch to "two color" mode. Allows the sun model to show a gradient between the two colors.)
+  ModelBrightness: 1 # (overall brightness)
+  ModelNoiseTiling: 100 # (default is 40, set to higher values for bigger stars)
+  ModelCoronaSpikesSize: 0 # (default is 0.75, values < 0.6 will hide the spikes completely)
+  ModelPlasmaArcsSize: 0.5 # (default is 0.5)
+  ModelFlareBrightness: 0.5 # (default is 0.5, values < 1 will make the flare smaller.)
+  Probability: 1
+  Color: "0.7, 0.9, 0.3"
+  SurfaceTemperature: "3000, 3500"
+  Mass: 0.3
+  Radius: 0.4
+  Luminosity: 0.002
+  ColorName: Bright Green Yellow
+  Age: 1
+  Description: "The Twin Star of the big Homeworld PvE Sun"
+}
+# Homeworld PvP System
+{ GalaxyConfig, Name: HW-PvP
+  StarClass: HW-PvP
+  Model: SunGeneric
+  ModelColor: "0.2, 0.5, 0.3"
+  ModelColor2: "1, 0.5, 0.1"
+  ModelBrightness: 1.5
+  ModelNoiseTiling: 350
+  ModelCoronaSpikesSize: 0.7
+  ModelPlasmaArcsSize: 0.4
+  ModelFlareBrightness: 0.1
+  Probability: 1
+  SizeClass: 13
+  Color: "1, 0.5, 0.1"
+  SurfaceTemperature: "5000, 74000"
+  Mass: 0.3
+  Radius: 0.4
+  Luminosity: 0.002
+  ColorName: Bright Red
+  Age: 49
+  InnerSystem: "10, 50"
+  HabitableHot: "40, 100"
+  HabitableTemperate: "90, 150"
+  HabitableCold: "140, 200"
+  OuterSystem: "190, 250"
+  Description: "[c][ff7700]WARNING: [b]PvP![/b][-][/c] Dedicated Resources and events making it the perfect PvP battleground in the whole universe. Make sure to prepare VERY WELL before entering!"
+}

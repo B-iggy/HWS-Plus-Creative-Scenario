@@ -1,0 +1,263 @@
+# Allow to override the default reputation for all Origin based factions to NPC factions
+{ Reputation Name: "Explorer:0"
+  Zirax: 0
+  Xenu: 0
+  Rados: 0
+  Epsilon: 0
+  Ghyst: 0
+  Serdu: 0
+  Abyssal: 8500
+  Talon: 16500
+  Polaris: 16500
+  Pirates: 12020
+  Kriel: 0
+  Trader: 16500
+  Colonists: 15000
+  Tesch: 13500
+  Farr: 16500
+  Wastelanders: 12001
+  ARC: 12001
+  EGS: 15000
+}
+{ Reputation Name: "Engineer:1"
+  Zirax: 0
+  Xenu: 0
+  Rados: 0
+  Epsilon: 0
+  Ghyst: 0
+  Serdu: 0
+  Abyssal: 8500
+  Talon: 16500
+  Polaris: 16500
+  Pirates: 12020
+  Kriel: 0
+  Trader: 16500
+  Colonists: 15000
+  Tesch: 13500
+  Farr: 16500
+  Wastelanders: 12001
+  ARC: 12001
+  EGS: 15000
+}
+{ Reputation Name: "Fighter:2"
+  Zirax: 0
+  Xenu: 0
+  Rados: 0
+  Epsilon: 0
+  Ghyst: 0
+  Serdu: 0
+  Abyssal: 8500
+  Talon: 16500
+  Polaris: 16500
+  Pirates: 12020
+  Kriel: 0
+  Trader: 16500
+  Colonists: 15000
+  Tesch: 13500
+  Farr: 16500
+  Wastelanders: 12001
+  ARC: 12001
+  EGS: 15000
+}
+{ Reputation Name: "Dealer:3"
+  Zirax: 0
+  Xenu: 0
+  Rados: 0
+  Epsilon: 0
+  Ghyst: 0
+  Serdu: 0
+  Abyssal: 8500
+  Talon: 16500
+  Polaris: 16500
+  Pirates: 12020
+  Kriel: 0
+  Trader: 16500
+  Colonists: 15000
+  Tesch: 13500
+  Farr: 16500
+  Wastelanders: 12001
+  ARC: 12001
+  EGS: 15000
+}
+
+# Matrix defining reputation points that you get when you do actions to this faction
+# Example: if you killed a member of Zirax your reputation is decreased by 300 points
+# => define this matrix before defining any trigger or threshold levels and rivalry values
+{ Reputation Name: "Action.Reputation"
+  Order:                   "Zirax,  Talon, Polaris, Pirates, Kriel, Trader, Colonists,  Xenu,  Rados, Epsilon, Ghyst,   Serdu, Abyssal,  Tesch,   Farr,  Wastelanders,    ARC"
+  AttackedMember:          " -0.12, -0.12,  -0.12,   -0.12,  -0.12,  -0.12,     -0.12, -0.12,  -0.12,   -0.12, -0.12,   -0.12,   -0.12,  -0.12,  -0.12,         -0.12,  -0.12" # value is multiplied with damage points || Drops to NeutralMin
+  KilledMember:            " -300,  -300,    -300,    -300,   -300,   -300,      -300, -300,    -300,    -300,  -300,    -300,    -300,   -300,   -300,          -300,   -300" # NOT multiplied with damage points || Drops to UnfriendlyMax
+  DestroyBlock:            "  -30,   -30,     -30,     -30,    -30,    -30,       -30,  -30,     -30,     -30,   -30,     -30,     -30,    -30,    -30,           -30,    -30"
+  ShieldAttacked:          "  -30,   -30,     -30,     -30,    -30,    -30,       -30,  -30,     -30,     -30,   -30,     -30,     -30,    -30,    -30,           -30,    -30"
+  OpenContainer:           " -200,  -200,    -200,    -200,   -200,   -200,      -200, -200,    -200,    -200,  -200,    -200,    -200,   -200,   -200,          -200,   -200"
+  AttackedPrey:            "  0.1,  -0.1,       0,       0,      0,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,             0,      0" # multiplied with damage points
+  AttackedPredator:        "  0.1,   0.3,     0.1,     0.1,    0.1,    0.1,       0.1,  0.1,     0.1,     0.1,   0.1,     0.1,     0.1,    0.1,    0.1,           0.1,    0.1" # multiplied with damage points
+  StructSpawnedInTerritory:" -100,  -100,    -100,    -100,   -100,   -100,      -100, -100,    -100,    -100,  -100,    -100,    -100,   -100,   -100,          -100,   -100"
+  StructStayInTerritory:   "  -25,   -50,     -25,     -50,    -25,    -25,       -25,  -25,     -25,     -25,   -25,     -25,     -25,    -25,    -25,           -25,    -25" # every 5min realtime and only WITH pilot
+  OreMined:                "  -15,    -5,     -30,     -15,    -20,    -20,       -20,  -20,     -20,     -20,   -20,     -20,     -20,    -20,    -20,           -20,    -20" # about every 10 ores
+  PlantHarvest:            "    0,     0,       0,       0,      0,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,             0,      0"
+  PlantDestroy:            "    0,     0,       0,       0,      0,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,             0,      0"
+  OutsideHostileTerritory: "    0,     0,       0,       0,      0,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,             0,      0"
+}
+
+# If one of these actions was executed, the reputation level will get set back at least to that value
+# You can specify reputation levels or reputation levels with added Min/Max to use either the minimum or maximum of a level.
+# Example: if you attacked a member of any faction your reputation will drop at least to the minimum value of Neutral
+{ Reputation Name: "Action.TriggerLevel"
+  # AttackedMember:  "NeutralMin"
+  KilledMember:    "UnfriendlyMax"
+  DestroyBlock:    "NeutralMin"
+  ShieldAttacked:  "NeutralMin"
+  OpenContainer:   "NeutralMin"
+}
+
+# If one of these actions was executed, the reputation points are added/subtracted only if the reputation is already less than to this level
+# You can specify reputation levels directly.
+# Example: on spawning a structure in Zirax territory, you will only get -25 reputation to Zirax if you are less than Honored
+{ Reputation Name: "Action.ThresholdLevel"
+  StructSpawnedInTerritory: "Honored"
+  StructStayInTerritory:    "Friendly"
+  OreMined:                 "Friendly"
+  PlantHarvest:             "Friendly"
+  PlantDestroy:             "Honored"
+}
+
+# Matrix defining reputation points that rivalry factions get when you do actions to this faction
+# Note: No changes required for the Faction columan that is defined in its own rivalry matrix! This is handled by line 38-47.
+# Example: If you killed a member of Zirax, you get 15 points to the reputation to Talon, 5 to Polaris, 15 to Pirates, 25 to Kriel, etc
+{ Reputation Name: "Zirax.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          "    0,     0,     0,         0,     0,      0,         0, -0.1,  -0.1,    -0.1,  -0.1,  -0.1,      -1,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "    0,     5,     5,        15,    25,      0,         0,   -5,    -5,      -5,    -5,    -5,     -15,     0,     5,            0,   0"
+  DestroyBlock:            "    0,     0,     1,         1,     2,      0,         0,   -1,    -1,      -1,    -1,    -1,      -1,     0,     1,            0,   0"
+  OpenContainer:           "    0,     0,     0,         0,     0,      0,         0,   -1,    -1,      -1,    -1,    -1,      -1,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,     0,      0,         0,  -10,   -10,     -10,   -10,   -10,     -10,     0,     0,            0,   0"
+}
+{ Reputation Name: "Talon.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "   15,     0,    -5,         5,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  DestroyBlock:            "    1,     0,    -1,         1,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  OpenContainer:           "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+}
+{ Reputation Name: "Polaris.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "    5,    -5,     0,        15,     0,      0,       -10,    0,     0,       0,     0,       0,     0,     0,   -10,            0,   0"
+  DestroyBlock:            "    1,    -1,     0,         1,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,    -1,            0,   0"
+  OpenContainer:           "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+}
+{ Reputation Name: "Pirates.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "   15,     1,    15,         0,    15,     15,        10,    0,     0,       0,     0,       0,     0,     0,    15,            0,   0"
+  DestroyBlock:            "    1,     1,     1,         0,     1,      1,         0,    0,     0,       0,     0,       0,     0,     0,     1,            0,   0"
+  OpenContainer:           "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"    2,     0,     5,         0,     2,      5,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+}
+{ Reputation Name: "Kriel.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "   25,     0,     0,        30,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,    10,            0,   0"
+  DestroyBlock:            "    2,     0,     0,         1,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     1,            0,   0"
+  OpenContainer:           "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+}
+{ Reputation Name: "Trader.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "    0,     0,     0,        50,     0,      0,       -10,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  DestroyBlock:            "    0,     0,     0,         2,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  OpenContainer:           "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+}
+{ Reputation Name: "Xenu.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          " -0.1,     0,     0,         0,     0,      0,         0,    0,  -0.1,    -0.5,    -1,   0.1,     0.5,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "  -15,     5,     5,        25,    50,      0,         0,    0,    -5,      -7,   -15,     2,       4,     0,     5,            0,   0"
+  DestroyBlock:            "   -1,     0,     1,         1,     2,      0,         0,    0,     0,       0,     0,     0,       0,     0,     1,            0,   0"
+  OpenContainer:           "   -1,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"  -10,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,            0,   0"
+}
+{ Reputation Name: "Rados.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          " -0.5,     0,     0,         0,     0,      0,         0, -0.1,     0,    -0.1,  -0.1,  -0.5,    -0.5,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "  -15,     5,     5,        30,    50,      0,         0,   -5,     0,      -5,    -5,    -7,      -7,     0,     5,            0,   0"
+  DestroyBlock:            "   -1,     0,     1,         1,     2,      0,         0,    0,     0,       0,     0,     0,       0,     0,     1,            0,   0"
+  OpenContainer:           "   -1,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"  -10,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,            0,   0"
+}
+{ Reputation Name: "Epsilon.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          " -0.5,     0,     0,         0,     0,      0,         0, -0.5,  -0.1,       0,  -0.5,  -0.1,    -0.1,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "  -10,     5,     5,        30,    50,      0,         0,   -7,    -5,       0,    -7,    -5,      -5,     0,     5,            0,   0"
+  DestroyBlock:            "   -1,     0,     1,         1,     2,      0,         0,    0,     0,       0,     0,     0,       0,     0,     1,            0,   0"
+  OpenContainer:           "   -1,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"  -10,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,            0,   0"
+}
+{ Reputation Name: "Ghyst.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          " -0.1,     0,     0,         0,     0,      0,         0,   -1,  -0.5,    -0.1,     0,   0.1,    0.5,     0,      0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "  -15,     5,     5,        30,    50,      0,         0,  -15,    -7,      -5,     0,     2,      4,     0,      5,            0,   0"
+  DestroyBlock:            "   -1,     0,     1,         1,     2,      0,         0,    0,     0,       0,     0,     0,      0,     0,      1,            0,   0"
+  OpenContainer:           "   -1,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,      0,     0,      0,            0,   0"
+  StructSpawnedInTerritory:"  -10,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,      0,     0,      0,            0,   0"
+}
+{ Reputation Name: "Serdu.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          " -0.8,     0,     0,         0,     0,      0,         0,  0.5,  -0.1,    -0.5,   0.1,     0,      -1,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "  -20,     5,     5,        30,    50,      0,         0,    4,    -5,      -7,     2,     0,     -15,     0,     5,            0,   0"
+  DestroyBlock:            "   -1,     0,     1,         1,     2,      0,         0,    0,     0,       0,     0,     0,       0,     0,     1,            0,   0"
+  OpenContainer:           "   -1,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"  -10,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,            0,   0"
+}
+{ Reputation Name: "Abyssal.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          "   -1,     0,     0,         0,     0,      0,         0,  0.5,  -0.1,    -0.5,   0.1,    -1,       0,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "  -25,     5,     5,        30,    50,      0,         0,    4,    -5,      -7,     2,   -15,       0,     0,     5,            0,   0"
+  DestroyBlock:            "   -1,     0,     1,         1,     2,      0,         0,    0,     0,       0,     0,     0,       0,     0,     1,            0,   0"
+  OpenContainer:           "   -1,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"  -10,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,     0,       0,     0,     0,            0,   0"
+}
+{ Reputation Name: "Colonists.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "  -10,     0,   -10,        -5,     0,    -10,         0,    0,     0,       0,     0,       0,     0,     0,   -10,            0,   0"
+  DestroyBlock:            "    0,     0,     0,       -15,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  OpenContainer:           "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+}
+{ Reputation Name: "Tesch.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  DestroyBlock:            "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  OpenContainer:           "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+}
+{ Reputation Name: "Farr.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "    0,     0,   -15,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  DestroyBlock:            "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  OpenContainer:           "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+}
+{ Reputation Name: "Wastelanders.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  DestroyBlock:            "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  OpenContainer:           "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+}
+{ Reputation Name: "ARC.Rivalry"
+  #Order:                  "Zirax, Talon, Polaris, Pirates, Kriel, Trader, Colonists, Xenu, Rados, Epsilon, Ghyst, Serdu, Abyssal, Tesch,  Farr, Wastelanders, ARC" # this must fit the order defined in "Action.Reputation" above
+  AttackedMember:          "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0" # value is multiplied with damage points
+  KilledMember:            "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  DestroyBlock:            "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  OpenContainer:           "    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+  StructSpawnedInTerritory:"    0,     0,     0,         0,     0,      0,         0,    0,     0,       0,     0,       0,     0,     0,     0,            0,   0"
+}

@@ -1,0 +1,966 @@
+# --------------------------------------------------------------------------------------------------------------------------
+# Created by EPD v2.0.8.4899, Playfield Version: 1.5 [3400] (V1.5)
+# --------------------------------------------------------------------------------------------------------------------------
+#
+Seed: 7
+PlanetSize: 2
+PlanetAxis: 12.245342300000001
+PlayfieldLevel: 9
+TemperatureMinMax: [-28, 34]
+TemperatureNight: 10
+HumidityMinMax: [0.025973767, 0.796279609]
+SeaLevel: 3
+TerrainLevel: 70
+BaseLevel: 3
+LandWaterRatio: 0.001
+TemperatureHeightRange: [30, 50]
+TemperatureGradientRange: [0.550000012, 0]
+TemperatureNoiseFac: 0.75
+HumidityHeightFac: [0, 270]
+HumidityNoiseFac: 0.89999997600000003
+Gravity: -7
+AtmosphereDensity: 1
+AtmosphereBreathable: True
+AtmosphereO2: 0.37993350599999998
+Water: WaterBlue
+Music: temperate
+TerrainHeightMapMax: 490
+BiomeStampTries: 50
+HumidityMasks:
+- Global_1, 0.125
+- Global_1a, 0.125
+- Global_2, 0.125
+- Global_2a, 0.125
+- Global_3, 0.125
+- Global_3a, 0.125
+- Global_4, 0.125
+- Global_4a, 0.125
+TemperatureMasks:
+- Global_1, 0.125
+- Global_1a, 0.125
+- Global_2, 0.125
+- Global_2a, 0.125
+- Global_3, 0.125
+- Global_3a, 0.125
+- Global_4, 0.125
+- Global_4a, 0.125
+Biome:
+-  BiomeClusterData:
+   -  Name: DeepWater
+      AmbientSound: Ocean
+      IgnoreForcedBiome: True
+      Texture: [10, 10, 0.00999999978]
+      UndergroundLayers:
+      - [10, 3]
+      - [11, -1]
+      - [10, 1]
+      SelectionCriteria:
+      - Height < SeaLevel - 17
+      Color: [0, 0, 1]
+      StampProb: 1
+      Decorations:
+      - [CoralStone01-05, 0.003, Free]
+      - [CoralStone03-06, 0.003, Free]
+      - [FingerSponge03-01, 0.001, Free]
+      - [RealRock1Water, 0.001, Free]
+      - [RealRock5Water, 0.001, Free]
+      - [RealRock8Water, 0.001, Free]
+      - [RealRock9Water, 0.001, Free]
+      - [RockGrey01Large, 0.001, Free]
+      - [RockGrey02Large, 0.001, Free]
+      - [CoralBig01, 0.01, Plant]
+      - [CoralBig08, 0.02, Plant]
+      - [SeaWeed02-04, 0.03, Plant]
+      - [CrystalStraight, 0.002, Free]
+      - [PromethiumStone, 0.001, Free]
+      Grass:
+      -  Name: Seaweed02
+         Density: 0.80000001200000004
+         Preset: GrassDense
+      -  Name: Seaweed03
+         Density: 0.050000000699999998
+         Preset: GrassDense
+      -  Name: Seaweed05
+         Density: 0.050000000699999998
+         Preset: GrassDense
+   -  Name: Water
+      AmbientSound: Water
+      IgnoreForcedBiome: True
+      Texture: [10, 11, 0.200000003]
+      UndergroundLayers:
+      - [10, 3]
+      - [12, 2]
+      - [11, -1]
+      - [10, 1]
+      SelectionCriteria:
+      - Height < SeaLevel - 7
+      Color: [0.200000003, 0.200000003, 1]
+      StampProb: 1
+      Decorations:
+      - [FingerSponge03-01, 0.01, Free]
+      - [RealRock5Water, 0.001, Free]
+      - [RockGrey01Large, 0.001, Free]
+      - [RockGrey02Large, 0.001, Free]
+      - [CoralBig08, 0.004, Plant]
+      - [Hydrilla2, 0.01, Plant]
+      - [SeaWeed02-04, 0.04, Plant]
+      - [CrystalStraight, 0.002, Free]
+      Grass:
+      -  Name: Seaweed02
+         Density: 0.80000001200000004
+         Preset: GrassDense
+      -  Name: Seaweed03
+         Density: 0.050000000699999998
+         Preset: GrassDense
+   -  Name: ShallowWater
+      AmbientSound: SmallLake
+      IgnoreForcedBiome: True
+      Texture: [1, 10, -0.5]
+      UndergroundLayers:
+      - [10, 3]
+      - [12, 2]
+      - [11, -1]
+      - [10, 1]
+      SelectionCriteria:
+      - Height < SeaLevel
+      Color: [0.400000006, 0.400000006, 1]
+      StampProb: 1
+      Decorations:
+      - [RockGrey01Large, 0.002, Free]
+      - [RockGrey02Large, 0.002, Free]
+      Grass:
+      -  Name: GrassGreen01
+         Density: 0.40000000600000002
+         Preset: GrassDense
+   -  Name: Pole
+      Weather: PoleFog
+      AmbientSound: ArcticLowPlains
+      IgnoreForcedBiome: True
+      Texture: [5, 11, 0.200000003]
+      UndergroundLayers:
+      - [0, 2]
+      - [10, 4]
+      - [11, -1]
+      - [10, 1]
+      SelectionCriteria:
+      - +Lat > 0.975
+      Color: [1, 1, 1]
+      StampProb: 1
+      Temperature: -6
+   -  Name: GlacierSnow
+      AmbientSound: Mountains
+      IgnoreForcedBiome: True
+      Texture: [5, 11, 0.200000003]
+      UndergroundLayers:
+      - [0, 2]
+      - [10, 4]
+      - [11, -1]
+      - [10, 1]
+      SelectionCriteria:
+      - Temperature < 13
+      - Height > 180
+      Color: [1, 1, 1]
+      StampProb: 1
+      Temperature: -8
+      Decorations:
+      - [BushWinter01, 0.003, BigPlant]
+      - [BushWinter02, 0.003, BigPlant]
+      - [BushWinter03, 0.003, BigPlant]
+      - [RealRock1Snow, 0.0001, Free]
+      - [RealRock6Snow, 0.0001, BigPlant]
+      - [RealRock10Snow, 0.0001, BigPlant]
+      Grass:
+      -  Name: GrassGreen06Snow
+         Density: 0.019999999599999999
+         Preset: GrassDense
+   -  Name: WaterSwamp
+      AmbientSound: Swamp
+      IgnoreForcedBiome: True
+      Texture: [0, 3, 0.850000024, 0, 3, 0.850000024, 0.200000003]
+      UndergroundLayers:
+      - [12, 0]
+      - [12, 2]
+      - [10, 3]
+      - [11, -1]
+      - [10, 1]
+      SelectionCriteria:
+      - Height < SeaLevel + 4
+      - Humidity > 0.63
+      - Temperature > 20
+      Color: [0, 1, 0.200000003]
+      StampProb: 1
+      Decorations:
+      - [OmicronPlant, 0.01, Plant]
+      - [OmicronWaterleaf, 0.01, Plant]
+      - [AkuaBush1, 0.01, Bush]
+      - [DimpleDome, 0.0015, Plant]
+      - [ClusterShroom, 0.0015, Free]
+      - [CattailWinter, 0.004, Plant]
+      - [PixieStalks, 0.004, Free]
+      - [CornDogBush, 0.001, Plant]
+      Grass:
+      -  Name: Reeds01
+         Density: 0.80000001200000004
+         Preset: GrassDense
+      -  Name: GrassGreen01a
+         Density: 0.30000001199999998
+         Preset: GrassDense
+   -  Name: Beach
+      AmbientSound: DesertCricket
+      IgnoreForcedBiome: True
+      Texture: [1, 10, 0.0500000007]
+      UndergroundLayers:
+      - [10, 2]
+      - [12, 4]
+      - [11, -1]
+      - [12, 1]
+      SelectionCriteria:
+      - Height < SeaLevel + 4
+      - Temperature > 0
+      Color: [0.899999976, 0.899999976, 0]
+      StampProb: 1
+      Decorations:
+      - [RockGrey01Large, 0.002]
+      - [RockGrey02Large, 0.002]
+      - [CornDogBush, 0.001, Plant]
+      Grass:
+      -  Name: Plant01
+         Preset: GrassDense
+   -  Name: PolarSnow
+      AmbientSound: ArcticHighPlains
+      Texture: [5, 5, 0.200000003]
+      UndergroundLayers:
+      - [0, 2]
+      - [10, 4]
+      - [11, -1]
+      - [10, 1]
+      SelectionCriteria:
+      - Height < 200
+      - Temperature < 3
+      Color: [1, 1, 1]
+      StampProb: 1
+      Temperature: -5
+      Decorations:
+      - [CornDogBushSnow, 0.001, Plant]
+   -  Name: Tundra
+      AmbientSound: ArcticLowPlains
+      Texture: [4, 4, 1, 11, 11, 1, 0.349999994]
+      SelectionCriteria:
+      - Temperature > 0
+      - Temperature < 8
+      - Height < 150
+      Color: [0.400000006, 0.400000006, 0.0149999997]
+      StampProb: 0.119999997
+      Stamps:
+      - Pingo_01, 0.9
+      Decorations:
+      - [HollywoodJuniperDesktop, 0.03, Tree]
+      - [HollywoodJuniperDesktopBare, 0.02, Tree]
+      - [BushGreen01, 0.0006, Free]
+      - [RealRock4, 0.0006, Free]
+      - [RealRock5, 0.0006, Free]
+      - [RealRock1, 0.0006, Free]
+      - [RockGrey01Large, 0.002, Free]
+      - [RockGrey02Large, 0.002, Free]
+      - [CornDogBush, 0.002, Free]
+      - [RockResourceIron, 0.0003, Free]
+      - [RockResourceCopper, 0.0003, Free]
+      - [RockResourceSilicon, 0.0003, Free]
+      Grass:
+      -  Name: GrassBrown06
+         Density: 1
+         Preset: GrassDense
+      -  Name: Plant01Brown
+         Density: 0.050000000699999998
+         Preset: GrassDense
+      -  Name: Plant01
+         Density: 0.050000000699999998
+         Preset: GrassDense
+   -  Name: ColdPlains
+      AmbientSound: OpenPlains
+      Texture: [6, 6, 0.600000024, 11, 11, 1, 0.349999994]
+      SelectionCriteria:
+      - Temperature < 12
+      - Height < 100
+      Color: [0, 0.5, 0.200000003]
+      StampProb: 0.25
+      Stamps:
+      - CraterLava_3_BM
+      Decorations:
+      - [AmericanElm, 0.001, Tree]
+      - [ElderberryBushGreen, 0.001, BigPlant]
+      - [BushGreen01, 0.0004, BigPlant]
+      - [BushGreen02, 0.0004, BigPlant]
+      - [RealRock10, 0.0001, Free]
+      - [RealRock1, 0.0001, Free]
+      - [RealRock3, 0.0001, Free]
+      - [RealRock4, 0.0001, Free]
+      - [RealRock8, 0.0001, Free]
+      - [ElderberryBush, 0.0001, BigPlant]
+      - [Snakeweed, 0.001, Plant]
+      - [RockResourceIron, 0.0002, Free]
+      - [RockResourceCopper, 0.0002, Free]
+      Grass:
+      -  Name: GrassGreen02
+         Density: 1.5
+         Preset: GrassDense
+      -  Name: GrassGreen03
+         Density: 0.80000001200000004
+         Preset: GrassDense
+      -  Name: Flower04
+         Density: 0.0099999997799999994
+         Preset: GrassDense
+   -  Name: Swamp
+      AmbientSound: TropicalIsland
+      Texture: [0, 3, 0.75, 0, 3, 0.75, 0.200000003]
+      UndergroundLayers:
+      - [12, 0]
+      - [12, 2]
+      - [10, 3]
+      - [11, -1]
+      - [10, 1]
+      SelectionCriteria:
+      - Height < SeaLevel + 10
+      - Height > SeaLevel + 1
+      - Humidity > 0.60
+      - Temperature > 20
+      Color: [0, 0.200000003, 0]
+      StampProb: 1
+      Decorations:
+      - [ChineseBanyan, 0.14, Tree]
+      - [DeadTree02b, 0.0007, Free]
+      - [PulpitFungus, 0.004, Plant]
+      - [DeadTree02a, 0.002, Free]
+      - [BulbShroomYoung, 0.002, Plant]
+      - [AkuaBush1, 0.04, Bush]
+      - [OmicronPlant, 0.001, Bush]
+      - [SkeletonWhaleFull, 0.0005, Free]
+      - [ElderberryBushGreen, 0.0015, Bush]
+      - [DimpleDome, 0.0015, Plant]
+      - [BulbShroom, 0.004, Free]
+      - [CobraLeavesPlant, 0.001, Plant]
+      - [CattailWinter, 0.001, Plant]
+      - [MushroomTallGreen01, 0.002, Free]
+      - [ClusterShroom, 0.0015, Free]
+      - [CornDogBush, 0.001, Plant]
+      - [RockResourceIron, 0.001, Free]
+      - [RockResourceCopper, 0.001, Free]
+      - [RockResourceSilicon, 0.0001, Free]
+      Grass:
+      -  Name: GrassGreen02
+         Density: 0.89999997600000003
+         Preset: GrassDense
+      -  Name: GrassBrown06
+         Density: 1
+         Preset: GrassDense
+      -  Name: Reeds01
+         Density: 0.30000001199999998
+         Preset: GrassDense
+   -  Name: Marsh
+      AmbientSound: TropicalIsland
+      Texture: [3, 6, 0.5, 11, 11, 0.100000001, 0.349999994]
+      UndergroundLayers:
+      - [12, 0]
+      - [12, 2]
+      - [10, 3]
+      - [11, -1]
+      - [12, 1]
+      SelectionCriteria:
+      - Humidity > 0.55
+      - Temperature > 23
+      - Height < 48
+      Color: [0.550000012, 0.649999976, 0.100000001]
+      StampProb: 1
+      Decorations:
+      - [WhiteOak, 0.15, Tree]
+      - [RiverBirch, 0.02, Tree]
+      - [ElderberryBushGreen, 0.05, BigPlant]
+      - [DeadTree01, 0.005, Free]
+      - [DeadTree02b, 0.005, Free]
+      - [RealRock3Dark, 0.0004, Free]
+      - [RealRock4Dark, 0.002, Free]
+      - [RealRock8Dark, 0.0004, Free]
+      - [RealRock10Dark, 0.0005, Free]
+      - [SkeletonMammothTorso, 0.001, Free]
+      - [AlienPlant07, 0.003, Plant]
+      - [ElderberryBush, 0.01, BigPlant]
+      - [ClusterShroom, 0.0015, Free]
+      - [DimpleDome, 0.0015, Plant]
+      - [Snakeweed, 0.005, Plant]
+      - [CobraLeavesPlant, 0.005, Plant]
+      - [MushroomBellBrown01, 0.0001, Plant]
+      - [ScalyPods, 0.002, Plant]
+      - [CattailWinter, 0.008, Plant]
+      - [RockResourceIron, 0.0005, Free]
+      - [RockResourceSilicon, 0.0003, Free]
+      Grass:
+      -  Name: GrassBrown02c
+         Density: 0.89999997600000003
+         Preset: GrassDense
+      -  Name: GrassBrown05
+         Density: 0.10000000100000001
+         Preset: GrassDense
+      -  Name: GrassGreen04
+         Density: 0.20000000300000001
+         Preset: GrassDense
+   -  Name: Savanna
+      AmbientSound: Oasis
+      Texture: [7, 8, 0.800000012, 11, 11, 1, 0.349999994]
+      UndergroundLayers:
+      - [12, 0]
+      - [12, 2]
+      - [11, -1]
+      - [10, 1]
+      SelectionCriteria:
+      - Humidity < 0.16
+      - Temperature > 15
+      - Height < 80
+      Color: [0.649999976, 0.579999983, 0.0500000007]
+      StampProb: 0.5
+      Stamps:
+      - Flats_1, 0.6
+      - Valley_1, 0.3
+      - Valley_2, 0.3
+      - Valley_3, 0.3
+      Temperature: 1
+      Decorations:
+      - [AmericanElm, 0.0002, Free]
+      - [BushGreen02, 0.0003, Bush]
+      - [BushGreen01, 0.0002, Bush]
+      - [ElderberryBushOrange, 0.001, Free]
+      - [DesertRock1, 0.002, Free]
+      - [DesertRock2, 0.002, Free]
+      - [Boulder1, 0.0001, Free]
+      - [Boulder2, 0.0001, Free]
+      - [Boulder3, 0.0001, Free]
+      - [Boulder4, 0.00015, Free]
+      - [Boulder5, 0.00015, Free]
+      - [DesertPlant20, 0.003, Plant]
+      - [Snakeweed, 0.003, Plant]
+      - [EggPlant, 0.003, Plant]
+      - [OpuntiaCactus, 0.002, Free]
+      - [RockResourceIron, 0.0003, Free]
+      - [RockResourceCopper, 0.0004, Free]
+      - [RockResourceSilicon, 0.0001, Free]
+      Grass:
+      -  Name: GrassBrown04
+         Density: 0.89999997600000003
+         Preset: GrassDense
+      -  Name: GrassBrown02c
+         Density: 0.89999997600000003
+         Preset: GrassDense
+   -  Name: Sand
+      AmbientSound: DesertCricket
+      Texture: [1, 10, 0.400000006]
+      UndergroundLayers:
+      - [10, 2]
+      - [11, -1]
+      - [12, 1]
+      SelectionCriteria:
+      - Humidity < 0.35
+      - Temperature > 23
+      - Height < 110
+      Color: [0.899999976, 0.800000012, 0]
+      StampProb: 1
+      Decorations:
+      - [RockGrey01Large, 0.001]
+      - [RockGrey02Large, 0.001]
+      - [RockResourceIron, 0.0001, Free]
+      - [RockResourceCopper, 0.0001, Free]
+      - [RockResourceSilicon, 0.0003, Free]
+      Grass:
+      -  Name: GrassBrown01
+         Density: 0.0049999998899999997
+         Preset: GrassDense
+   -  Name: SavannaEdge
+      AmbientSound: Oasis
+      Texture: [7, 8, 0.200000003, 11, 11, 1, 0.349999994]
+      UndergroundLayers:
+      - [12, 0]
+      - [12, 2]
+      - [11, -1]
+      - [10, 1]
+      SelectionCriteria:
+      - Humidity < 0.28
+      - Temperature > 15
+      Color: [0.699999988, 0.699999988, 0.0599999987]
+      StampProb: 1
+      Decorations:
+      - [AmericanElm, 0.0002, Free]
+      - [BushGreen02, 0.0003, Bush]
+      - [BushGreen01, 0.0002, Bush]
+      - [ElderberryBushOrange, 0.001, Free]
+      - [DesertRock1, 0.002, Free]
+      - [DesertRock2, 0.002, Free]
+      - [Boulder1, 0.0001, Free]
+      - [Boulder2, 0.0001, Free]
+      - [Boulder3, 0.0001, Free]
+      - [Boulder4, 0.00015, Free]
+      - [Boulder5, 0.00015, Free]
+      - [DesertPlant20, 0.003, Plant]
+      - [Snakeweed, 0.003, Plant]
+      - [EggPlant, 0.003, Plant]
+      - [OpuntiaCactus, 0.002, Free]
+      - [RockResourceIron, 0.0003, Free]
+      - [RockResourceCopper, 0.0004, Free]
+      - [RockResourceSilicon, 0.0001, Free]
+      Grass:
+      -  Name: GrassBrown04
+         Density: 0.89999997600000003
+         Preset: GrassDense
+      -  Name: GrassBrown02c
+         Density: 0.89999997600000003
+         Preset: GrassDense
+   -  Name: Oasis
+      AmbientSound: Oasis
+      Texture: [7, 0, 0.600000024, 11, 11, 1, 0.349999994]
+      UndergroundLayers:
+      - [10, 2]
+      - [11, -1]
+      - [12, 1]
+      SelectionCriteria:
+      - Height < 50
+      - Humidity > 0.40
+      - Humidity < 0.43
+      - Temperature > 20
+      - Temperature < 22
+      Color: [1, 0, 0]
+      StampProb: 1
+      Decorations:
+      - [BigFlower, 0.02, Plant]
+      - [RockGrey01Large, 0.01]
+      - [RockGrey02Large, 0.01]
+      - [RealRock1, 0.001, Free]
+      - [RealRock4, 0.001, Free]
+      - [RealRock5, 0.001, Free]
+      - [RealRock6, 0.001, Free]
+      - [RockResourceGold, 0.005]
+      - [RockResourceSilicon, 0.005]
+      - [RockResourceCopper, 0.005]
+      Grass:
+      -  Name: GrassBrown04
+         Density: 1
+         Preset: GrassDense
+      -  Name: GrassBrown06
+         Density: 0.89999997600000003
+         Preset: GrassDense
+      -  Name: Plant01Brown
+         Density: 0.050000000699999998
+         Preset: GrassDense
+      -  Name: Flower02
+         Density: 0.15000000599999999
+         Preset: GrassDense
+   -  Name: Forest
+      AmbientSound: TropicalForest
+      Texture: [3, 6, 0.5, 9, 11, 0.100000001, 0.349999994]
+      UndergroundLayers:
+      - [12, 0]
+      - [12, 2]
+      - [10, 3]
+      - [11, -1]
+      - [12, 1]
+      SelectionCriteria:
+      - Humidity > 0.30
+      - Temperature > 15
+      - Height < 70
+      Color: [0, 0.400000006, 0]
+      StampProb: 0.5
+      Stamps:
+      - Valley_3, 0.3
+      Temperature: -1
+      Decorations:
+      - [WhiteOak, 0.02, Tree]
+      - [BaldCypres, 0.05, Tree]
+      - [Rainforest, 0.02, Tree]
+      - [RiverBirch, 0.03, Tree]
+      - [AridRock01, 0.0005, Free]
+      Grass:
+      -  Name: GrassGreen07
+         Density: 0.01
+         Preset: GrassDense
+   -  Name: DustBowl
+      AmbientSound: DesertCricket
+      Texture: [10, 11, -0.150000006]
+      UndergroundLayers:
+      - [10, 2]
+      - [12, 4]
+      - [11, -1]
+      - [12, 1]
+      SelectionCriteria:
+      - Height > 600
+      Color: [1, 1, 0.200000003]
+      StampProb: 1
+      StampForcesBiome: True
+      StampForcesBiomeType: OverlapOff
+      Stamps:
+      - Hollow_01_SUB
+      StampTries: 200
+      Decorations:
+      - [RockGrey01Large, 0.01]
+      - [RockGrey02Large, 0.01]
+      - [RealRock4, 0.0007, Free]
+      - [RealRock5, 0.0007, Free]
+      - [CornDogBush, 0.002, Plant]
+      - [Snakeweed, 0.002, Plant]
+      - [RockResourceSilicon, 0.0007, Free]
+      Grass:
+      -  Name: GrassBrown02c
+         Density: 0.80000001200000004
+         Preset: GrassDense
+      -  Name: Flower05
+         Density: 0.20000000300000001
+         Preset: GrassDense
+      -  Name: Flower04
+         Density: 0.0099999997799999994
+         Preset: GrassDense
+      -  Name: GrassBrown06
+         Density: 0.20000000300000001
+         Preset: GrassDense
+      -  Name: GrassFern
+         Density: 0.00100000005
+         Preset: GrassDense
+   -  Name: Grassland
+      AmbientSound: OpenPlains
+      Texture: [3, 6, 0.5, 11, 11, 1, 0.400000006]
+      UndergroundLayers:
+      - [9, 0]
+      - [9, 3]
+      - [10, 5]
+      - [11, -1]
+      - [12, 1]
+      SelectionCriteria:
+      - true
+      Color: [0, 0.600000024, 0]
+      StampProb: 0.40000000600000002
+      Stamps:
+      - Flats_1, 0.8
+      Decorations:
+      - [AmericanElm, 0.002, Tree]
+      - [ElderberryBushGreen, 0.001, BigPlant]
+      - [BushGreen01, 0.0004, BigPlant]
+      - [BushGreen02, 0.0004, BigPlant]
+      - [RealRock10, 0.0001, Free]
+      - [RealRock1, 0.0001, Free]
+      - [RealRock3, 0.0001, Free]
+      - [RealRock4, 0.0001, Free]
+      - [RealRock8, 0.0001, Free]
+      - [ElderberryBush, 0.0001, BigPlant]
+      - [Snakeweed, 0.001, Plant]
+      - [CornDogBush, 0.001, Plant]
+      - [RockResourceIron, 0.0002, Free]
+      - [RockResourceCopper, 0.0002, Free]
+      Grass:
+      -  Name: GrassGreen02
+         Density: 1.5
+         Preset: GrassDense
+      -  Name: GrassGreen03
+         Density: 0.80000001200000004
+         Preset: GrassDense
+      -  Name: Flower01
+         Density: 0.0099999997799999994
+         Preset: GrassDense
+      -  Name: Flower04
+         Density: 0.0030000000299999999
+         Preset: GrassDense
+      UndergroundLayersDefault: True
+Description: "Welcome to HWS+ Creative!\r\n\r\nThe main intention here is to teach you the new EWS².\r\nWhich means to learn what Element is effective against other Elements or Materials.\r\n\r\nUse the free ships in front of you to quickly get into it.\r\nFor more information visit: \r\n[u]https://hws.global[/u]"
+PlanetClass: Temperate
+PlanetType: Temperate
+PlayfieldType: Planet
+AtmosphereEnabled: True
+Difficulty: 2
+LandClaimZone: Device
+SpecialEffectsGlobal:
+-  Name: Clear
+   Type: Weather
+   Delay: 2
+   Lifetime: 1200
+AtmosphereColor: 0.674, 0.824, 1.000
+SkyColor: 1, 0.96, 0.96
+SkyHorizonColor: 0.94,0.9,0.55
+AtmosphereParams: [1, 2]
+LightZenithColor: 1,0.95,0.97
+LightHorizonColor: 1,0.84,0
+DayLightIntensity: 1.375
+NightLightIntensity: 0.55000001200000004
+NightLightColor: 0.78, 0.78, 1
+SunFlare: EnvironmentalEffects/SunFlareBlue
+AtmosphereFog: 0.56832504299999997
+FogColor: 1.0, 1.0, 1.0
+CloudsZenithColor: 0.93, 0.98, 1.1
+CloudsHorizonColor: 1, 0.3, 0.1
+CloudsNightZenithColor: 0.04, 0.041, 0.065
+CloudsNightHorizonColor: 0.04, 0.041, 0.065
+Build: 3207
+PvP: True
+BaseAttackCount: 1
+UseFixed: True
+UseRandom: True
+AllowBA: True
+AllowCV: True
+AllowSV: True
+AllowHV: True
+AllowBlueprintBA: True
+AllowBlueprintCV: True
+AllowBlueprintSV: True
+AllowBlueprintHV: True
+RandomResources:
+-  Name: GoldResource
+   IsScalingCount: False
+   IsImportant: True
+   CountMinMax: [7, 7]
+   SizeMinMax: [17, 27]
+   DepthMinMax: [1, 7]
+   DroneProb: 1
+   MaxDroneCount: 7
+AsteroidResources:
+-  Name: GoldResource
+   Threshold: 0.20000000000000001
+   Amount: 0.20000000000000001
+POIs:
+   Fixed:
+   -  Type: BA_Alien
+      Prefab: HWS TSCG TimeSpaceCG
+      Mode: Survival
+      Name: Time Space Continuum Generator
+      Pos: [-573, 5, 331]
+      Rot: [0, 0, 0]
+      Faction: Admin
+      Properties:
+      -  Key: PvEArea
+         Value: 2000
+      -  Key: StationInterface
+         Value: "All, IfNeutral:0, IfFriendly:0, IfHonored:0"
+   -  Type: BA_Alien
+      Prefab: HWS EWS Wall
+      Mode: Survival
+      Name: HWS EWS² Wall
+      Pos: [-692, 35, 1845]
+      Rot: [0, 0, 0]
+      Faction: Alien
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: StationInterface
+         Value: "All, IfNeutral:0, IfFriendly:0, IfHonored:0"
+   -  Type: BA_Alien
+      Prefab: HWS EWS Wall No Shield
+      Mode: Survival
+      Name: HWS EWS² Wall No Shield
+      Pos: [-392, 35, 1845]
+      Rot: [0, 0, 0]
+      Faction: Alien
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: StationInterface
+         Value: "All, IfNeutral:0, IfFriendly:0, IfHonored:0"
+   -  Type: BA_Alien
+      Prefab: HWS EWS Wall PewPew
+      Mode: Survival
+      Name: HWS EWS² Wall PewPew
+      Pos: [-992, 35, 1845]
+      Rot: [0, 0, 0]
+      Faction: Alien
+      InitPower: True
+      Properties:
+      -  Key: SI
+         Value: Off
+      -  Key: StationInterface
+         Value: "All, IfNeutral:0, IfFriendly:0, IfHonored:0"
+   -  Type: SV_Player
+      Prefab: HWS Kolfskot Aqua
+      Mode: Survival
+      Name: Elemental Aqua
+      Pos: [-543, 6, 377]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+   -  Type: SV_Player
+      Prefab: HWS Kolfskot Nox
+      Mode: Survival
+      Name: Elemental Nox
+      Pos: [-508, 6, 377]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+   -  Type: SV_Player
+      Prefab: HWS Kolfskot Pyro
+      Mode: Survival
+      Name: Elemental Pyro
+      Pos: [-573, 6, 377]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+   -  Type: SV_Player
+      Prefab: HWS Kolfskot Terra
+      Mode: Survival
+      Name: Elemental Terra
+      Pos: [-605, 6, 377]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+   -  Type: SV_Player
+      Prefab: HWS Kolfskot Lux
+      Mode: Survival
+      Name: Elemental Lux
+      Pos: [-640, 6, 377]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+   -  Type: SV_Player
+      Prefab: HWS Kolfskot Obsidian
+      Mode: Survival
+      Name: Elemental Obsidian
+      Pos: [-557, 6, 417]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+   -  Type: SV_Player
+      Prefab: HWS Kolfskot Strangelet
+      Mode: Survival
+      Name: Elemental Strangelet
+      Pos: [-587, 6, 417]
+      Rot: [0, 0, 0]
+      Faction: Public
+      InitPower: True
+   FixedPlayerStart:
+   -  Mode: Survival
+      Pos: [-571, 8, 257]
+      Items: ['HWSElementStrangeletRefined:50, HWSElementalMultitool', 'HWSElementStrangeletRefined:50, HWSElementalMultitool', 'HWSElementStrangeletRefined:50, HWSElementalMultitool', '#FreshStart: HWSElementStrangeletRefined:50, HWSElementalMultitool']
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+      Armor: ArmorHeavyEpic
+   -  Mode: Creative
+      Pos: [-571, 8, 257]
+      Items: ['HWSElementStrangeletRefined:50, HWSElementalMultitool', 'HWSElementStrangeletRefined:50, HWSElementalMultitool', 'HWSElementStrangeletRefined:50, HWSElementalMultitool', '#FreshStart: HWSElementStrangeletRefined:50, HWSElementalMultitool']
+      Status: ['Food:500, Health: 500', 'Food:500, Health: 500', 'Food:500, Health: 500', '#FreshStart:Food:500, Health: 500']
+      Armor: ArmorHeavyEpic
+DroneBaseSetup: {}
+DroneSpawning:
+   Random: []
+CreatureSpawning:
+-  Biomes: [Grassland]
+   Entities:
+   -  Name: Megalonopses
+      Period: Day
+      Amount: 15
+      DelayMinMax: [10, 12]
+      Color: "0, 0, 1.0"
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 12
+      DelayMinMax: [10, 12]
+      Color: "0, 1.0, 1.0"
+-  Biomes: [Grassland]
+   Entities:
+   -  Name: Spiders01
+      Amount: 6
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+-  Biomes: [Savanna, SavannaEdge]
+   Entities:
+   -  Name: RaptorHerd
+      Period: Day
+      Amount: 12
+      DelayMinMax: [10, 12]
+      Color: "1.0, 1.0, 1.0, 0.0"
+   -  Name: RaptorsNight
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "0.5, 0, 0"
+   -  Name: AlienBugs04
+      Period: Always
+      Amount: 8
+      DelayMinMax: [10, 12]
+      Color: "0, 1.0, 1.0"
+   -  Name: Triceratopses
+      Period: Day
+      Amount: 8
+      DelayMinMax: [10, 12]
+      Color: "0, 0.5, 1.0"
+-  Biomes: [ShallowWater, WaterSwamp]
+   Entities:
+   -  Name: Telluropods
+      Period: Always
+      Amount: 10
+      DelayMinMax: [20, 24]
+      Color: "1.0, 1.0, 1.0, 0.0"
+      AllowInWater: True
+-  Biomes: [Swamp, WaterSwamp, Beach]
+   Entities:
+   -  Name: Slimes
+      Period: Day
+      Amount: 10
+      DelayMinMax: [10, 12]
+      Color: "1.0, 1.0, 1.0, 0.0"
+   -  Name: Creepys
+      Amount: 12
+      DelayMinMax: [20, 24]
+      Color: "1.0, 1.0, 1.0, 0.0"
+   -  Name: CaveWormGreenHerd
+      Period: Day
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "1.0, 1.0, 1.0, 0.0"
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 12
+      DelayMinMax: [10, 12]
+      Color: "0, 1.0, 1.0"
+-  Biomes: [DustBowl]
+   Entities:
+   -  Name: Spiders01
+      Period: Always
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: AlienBugs01
+      Period: Always
+      Amount: 10
+      DelayMinMax: [10, 12]
+      Color: "1.0, 1.0, 1.0, 0.0"
+-  Biomes: [Tundra, ColdPlains]
+   Entities:
+   -  Name: Oviraptors
+      Period: Always
+      Amount: 15
+      DelayMinMax: [10, 12]
+      Color: "1.0, 1.0, 1.0, 0.0"
+   -  Name: RaptorsNight
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "0.5, 0, 0"
+-  Biomes: [PolarSnow]
+   Entities:
+   -  Name: Oviraptors
+      Period: Always
+      Amount: 15
+      DelayMinMax: [10, 12]
+      Color: "1.0, 1.0, 1.0, 0.0"
+   -  Name: SlimesWhite
+      Period: Always
+      Amount: 10
+      DelayMinMax: [10, 12]
+      Color: "1.0, 1.0, 0"
+   -  Name: CaveWormWhiteHerd
+      Amount: 8
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: GolemsIce
+      Period: Day
+      Amount: 3
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+-  Biomes: [Sand]
+   Entities:
+   -  Name: Otyughs
+      Amount: 6
+      DelayMinMax: [20, 24]
+      Color: "1.0, 0, 0"
+   -  Name: AlienBugs04
+      Period: Always
+      Amount: 10
+      DelayMinMax: [20, 24]
+      Color: "1.0, 1.0, 1.0, 0.0"

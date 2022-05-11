@@ -1,0 +1,10 @@
+[EWS]
+-Mode=Opaque
+-Pos=0.5270411,132.01,-6.449532
+-Rot=89.98022,359.9201,0
+-Size=2.9,1.9,1
+-EmissiveColor=1,1,1
+-Cull=false
+-Diffuse=HWS-Elemental-Effectiveness.png
+-Emissive=HWS-Elemental-Effectiveness.png
+

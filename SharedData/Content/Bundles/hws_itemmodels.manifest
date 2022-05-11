@@ -1,0 +1,77 @@
+ManifestFileVersion: 0
+CRC: 205927888
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cbd9daf1b1fd5103596eaf3fcea6516c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 22b6f76b218336e33314f7c7c10e4242
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/hws_itemmodels/HWSOriginGunFighter/scene.prefab
+- Assets/hws_itemmodels/HWSElementalGuns/HWSTerraGun.prefab
+- Assets/hws_itemmodels/HWSOriginGunDealer/textures/initialShadingGroup_baseColor.jpeg
+- Assets/hws_itemmodels/HWSOriginGunDealer/textures/initialShadingGroup_emissive.jpeg
+- Assets/hws_itemmodels/HWSOriginGunFighter/scene.Meshes/defaultMaterial.asset
+- Assets/hws_itemmodels/HWSOriginGunDealer/scene.Textures/initialShadingGroup_metallicRoughness.occlusion.asset
+- Assets/hws_itemmodels/HWSOriginGunDealer/scene.Materials/initialShadingGroup.asset
+- Assets/hws_itemmodels/HWSOriginGunEngineer/textures/initialShadingGroup_baseColor.jpeg
+- Assets/hws_itemmodels/HWSOriginGunEngineer/textures/initialShadingGroup_emissive.jpeg
+- Assets/hws_itemmodels/HWSOriginGunFighter/textures/initialShadingGroup_baseColor.jpeg
+- Assets/hws_itemmodels/HWSElementalGuns/HWSLuxGun.prefab
+- Assets/hws_itemmodels/HWSOriginGunFighter/textures/initialShadingGroup_normal.png
+- Assets/hws_itemmodels/HWSOriginGunEngineer/scene.Textures/initialShadingGroup_metallicRoughness.metallicRoughness.asset
+- Assets/hws_itemmodels/HWSOriginGunEngineer/scene.prefab
+- Assets/hws_itemmodels/HWSOriginGunExplorer/scene.Materials/initialShadingGroup.asset
+- Assets/hws_itemmodels/HWSElementalGuns/HWSNoxGun.prefab
+- Assets/hws_itemmodels/HWSElementalGuns/HWSObsidianGun.prefab
+- Assets/hws_itemmodels/HWSExplorerOriginGun.prefab
+- Assets/hws_itemmodels/HWSOriginGunFighter/textures/initialShadingGroup_metallicRoughness.png
+- Assets/hws_itemmodels/HWSElementalGuns/HWSAquaGun.prefab
+- Assets/hws_itemmodels/HWSOriginGunExplorer/scene.Textures/initialShadingGroup_metallicRoughness.metallicRoughness.asset
+- Assets/hws_itemmodels/HWSOriginGunFighter/scene.Textures/initialShadingGroup_metallicRoughness.occlusion.asset
+- Assets/hws_itemmodels/HWSOriginGunExplorer/textures/initialShadingGroup_baseColor.jpeg
+- Assets/hws_itemmodels/HWSDealerOriginGun.prefab
+- Assets/hws_itemmodels/HWSOriginGunDealer/textures/initialShadingGroup_metallicRoughness.png
+- Assets/hws_itemmodels/HWSOriginGunEngineer/textures/initialShadingGroup_normal.png
+- Assets/hws_itemmodels/HWSOriginGunExplorer/scene.prefab
+- Assets/hws_itemmodels/HWSOriginGunExplorer/textures/initialShadingGroup_normal.png
+- Assets/hws_itemmodels/HWSElementalGuns/HWSPyroGun.prefab
+- Assets/hws_itemmodels/HWSElementalGuns/HWSStrangeletGun.prefab
+- Assets/hws_itemmodels/HWSFighterOriginGun.prefab
+- Assets/hws_itemmodels/HWSEngineerOriginGun.prefab
+- Assets/hws_itemmodels/HWSOriginGunFighter/textures/initialShadingGroup_emissive.jpeg
+- Assets/hws_itemmodels/HWSOriginGunDealer/textures/initialShadingGroup_normal.png
+- Assets/hws_itemmodels/HWSOriginGunEngineer/textures/initialShadingGroup_metallicRoughness.png
+- Assets/hws_itemmodels/HWSOriginGunFighter/scene.Textures/initialShadingGroup_metallicRoughness.metallicRoughness.asset
+- Assets/hws_itemmodels/HWSOriginGunExplorer/textures/initialShadingGroup_emissive.jpeg
+- Assets/hws_itemmodels/HWSOriginGunEngineer/scene.Materials/initialShadingGroup.asset
+- Assets/hws_itemmodels/HWSOriginGunExplorer/scene.Meshes/defaultMaterial.asset
+- Assets/hws_itemmodels/HWSOriginGunDealer/scene.Textures/initialShadingGroup_metallicRoughness.metallicRoughness.asset
+- Assets/hws_itemmodels/HWSOriginGunExplorer/scene.Textures/initialShadingGroup_metallicRoughness.occlusion.asset
+- Assets/hws_itemmodels/HWSOriginGunFighter/scene.Materials/initialShadingGroup.asset
+- Assets/hws_itemmodels/HWSOriginGunExplorer/textures/initialShadingGroup_metallicRoughness.png
+- Assets/hws_itemmodels/HWSOriginGunDealer/scene.prefab
+- Assets/hws_itemmodels/HWSOriginGunEngineer/scene.Meshes/defaultMaterial.asset
+- Assets/hws_itemmodels/HWSOriginGunEngineer/scene.Textures/initialShadingGroup_metallicRoughness.occlusion.asset
+- Assets/hws_itemmodels/HWSOriginGunDealer/scene.Meshes/defaultMaterial.asset
+Dependencies: []

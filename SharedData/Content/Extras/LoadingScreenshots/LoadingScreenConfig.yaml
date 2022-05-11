@@ -1,0 +1,40 @@
+# ---------------------------------------------------------------------------------------
+# Note: Specify filenames without extension (.jpg will be added internally)
+# ---------------------------------------------------------------------------------------
+
+# Overlay title
+# max. 29 characters all caps
+Title: HWS+ | The Era of the Elements
+
+# Overlay body (typically multi-line text)
+# If commented out, only the title will be displayed
+# max. 17 lines default format
+Body: |
+  <color=#EBCE3D>Patreon Closed Beta | 26.12.2021</color><size=80%>
+  • Please concentrate on testing the new EWS²
+  • Your Start area of 1km³ is PvE, outside PvP
+  • You can buy ammo, fuel and shield at the TSCG for credits
+  • The PDA gets you to instant Level 25 and 100000 UP
+  • Use the command do:re and do:bp to boost your progress
+  • Use the command egs:spawn</size>
+
+  <size=60%>Learn more about HWS at <color=#019245><u>https://guide.hws.global</u></color>
+  Become a HWS Patron with unique convenience benefits at <color=#019245><u>https://patreon.com/hws</u></color></size>
+
+# To show a certain image at the start of each loading image sequence, specify the respective file name
+# To use the default random image selection, comment out the following line
+FirstPic: p00
+
+# To show the overlay text with certain images only, specify the respective file names
+# To show the text with every image, comment out the following line
+#ShowWith: [ p00, p03 ]
+
+# Show time for images - if not specified differently below
+# If commented out, the default is 10 seconds
+# Note: This time depends on the speed of the client computer as when loading a game a lot of work is done in parallel
+StandardShowTime: 7
+
+# To set a specific show time for certain images, specify "filename: time" lines
+# If not needed, comment out all lines of the following parameter
+#ShowTimes:
+#  p00: 13

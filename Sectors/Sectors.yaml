@@ -1,0 +1,103 @@
+# -------
+# Created with eWSSC v1.10.0
+# Website: https://empyrion-homeworld.net/tools/ewssc
+# -------
+GalaxyMode: true
+Sectors: []
+SolarSystems:
+  - Name: Homeworld System
+    StarClass: HW-PvP
+    Coordinates:
+      - 0
+      - 27
+      - 0
+    Sectors:
+      - Coordinates:
+          - 0
+          - 0
+          - 0
+        Color: '0.82,0.56,0.11'
+        SectorMapType: None
+        Playfields:
+          - ['0,0,0', Homeworld System, SunRandom, '']
+      - Coordinates:
+          - 20
+          - 0
+          - 0
+        Color: '1, 1, 1'
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'Homeworld System [Sun Right]', WarpTarget PvP, '']
+        Allow: []
+        Deny: []
+      - Coordinates:
+          - -20
+          - 0
+          - 0
+        Color: '1, 1, 1'
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'Homeworld System [Sun Left]', WarpTarget PvP, '']
+        Allow: []
+        Deny: []
+      - Coordinates:
+          - 0
+          - 20
+          - 0
+        Color: '1, 1, 1'
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'Homeworld System [Sun Top]', WarpTarget PvP, '']
+        Allow: []
+        Deny: []
+      - Coordinates:
+          - 0
+          - -20
+          - 0
+        Color: '1, 1, 1'
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'Homeworld System [Sun Bottom]', WarpTarget PvP, '']
+        Allow: []
+        Deny: []
+      - Coordinates:
+          - 0
+          - 0
+          - 20
+        Color: '1, 1, 1'
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'Homeworld System [Sun Front]', WarpTarget PvP, '']
+        Allow: []
+        Deny: []
+      - Coordinates:
+          - 0
+          - 0
+          - -20
+        Color: '1, 1, 1'
+        SectorMapType: WarpTarget
+        Playfields:
+          - ['0,0,0', 'Homeworld System [Sun Back]', WarpTarget PvP, '']
+        Allow: []
+        Deny: []
+      - Coordinates:
+          - 57
+          - -3
+          - -5
+        Color: '0.82,0.56,0.11'
+        SectorMapType: Planet
+        Playfields:
+          - ['0,0,0', Homeworld, Homeworld Temperate, 'Explorer:1']
+          - ['0,0,0', Homeworld Sector, Homeworld Sector, '']
+        Allow: []
+        Deny: []
+      - Coordinates:
+          - 64
+          - 3
+          - -12
+        Color: '0.30,0.13,0.45'
+        SectorMapType: GasGiantRing
+        Playfields:
+          - ['0,0,0', Homy, GasGiant, '', '', SaturnPurple, '11']
+        Allow: []
+        Deny: []
