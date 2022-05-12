@@ -311,16 +311,7 @@
   Reputation: true
 }
 
-{ Faction Id: 33, Name: "Federation"
-  Description: "[i][c][ffffff]Lore:[-][/c] With every galactic Black Hole Implosion (server full wipe) a small group of [b][c][009393]Federation[-][/c][/b] Origin people survive somehow and settle in the outer ring, the furthest way out from the Black Hole as possible. Every new Federation Origin Clone should sooner or later visit the [u]real[/u] Homeworld of their Origin, to get power from old generations.[/i]"
-  Abbrev: FED
-  Color: "0, 0.58, 0.58"
-  ClaimTerritory: true
-  Reputation: true
-  Origin: 1
-}
-
-{ Faction Id: 34, Name: "Freelancer"
+{ Faction Id: 33, Name: "Explorer"
   Description: "[i][c][ffffff]Lore:[-][/c] The oldest and proudest Faction in the HWS Universe - the [b][c][E5FFE5]Freelancer[-][/c][/b]. Retired from politics and battles, they live more or less peaceful far out in the HWS Universe. From time to time, very good contracts still motivate them to come out and explore the new universe and its secrets. Every decent Freelancer Origin Clone must visit the veterans to learn better skills.[/i]"
   Abbrev: FRE
   Color: "0.9, 1, 0.9"
@@ -329,7 +320,16 @@
   Origin: 0
 }
 
-{ Faction Id: 35, Name: "Outcast"
+{ Faction Id: 34, Name: "Engineer"
+  Description: "[i][c][ffffff]Lore:[-][/c] With every galactic Black Hole Implosion (server full wipe) a small group of [b][c][009393]Federation[-][/c][/b] Origin people survive somehow and settle in the outer ring, the furthest way out from the Black Hole as possible. Every new Federation Origin Clone should sooner or later visit the [u]real[/u] Homeworld of their Origin, to get power from old generations.[/i]"
+  Abbrev: FED
+  Color: "0, 0.58, 0.58"
+  ClaimTerritory: true
+  Reputation: true
+  Origin: 1
+}
+
+{ Faction Id: 35, Name: "Fighter"
   Description: "[i][c][ffffff]Lore:[-][/c] After many years of battles against the Federation Clones, the EGS Cooperation and everyone trying to steal their land and wealth, many former Pirate Clones went into the exile to regroup, rethink and plan revenge. The [b][c][D60011]Outcast[-][/c][/b] people became a myth for some citizens. Rumors seem to be true though, that the Pirates will never be defeated and the revenge of the Outcast Clones will be the biggest threat the HWS Universe has ever experienced.[/i]"
   Abbrev: OUT
   Color: "0.84, 0, 0.07"
@@ -338,28 +338,37 @@
   Origin: 2
 }
 
-{ Faction Id: 36, Name: "Aqua"
+{ Faction Id: 36, Name: "Dealer"
+  Description: "[i][c][ffffff]Lore:[-][/c] After many years of battles against the Federation Clones, the EGS Cooperation and everyone trying to steal their land and wealth, many former Pirate Clones went into the exile to regroup, rethink and plan revenge. The [b][c][D60011]Outcast[-][/c][/b] people became a myth for some citizens. Rumors seem to be true though, that the Pirates will never be defeated and the revenge of the Outcast Clones will be the biggest threat the HWS Universe has ever experienced.[/i]"
+  Abbrev: OUT
+  Color: "0.84, 0, 0.07"
+  ClaimTerritory: true
+  Reputation: true
+  Origin: 3
+}
+
+{ Faction Id: 37, Name: "Aqua"
   Abbrev: Aqua
   Color: "0.3, 0.3, 0.9"
   Unfriendly: true
   Discovery: true
 }
 
-{ Faction Id: 37, Name: "Terra"
+{ Faction Id: 38, Name: "Terra"
   Abbrev: Terra
   Color: "0.3, 0.5, 0.3"
   Unfriendly: true
   Discovery: true
 }
 
-{ Faction Id: 38, Name: "Pyro"
+{ Faction Id: 39, Name: "Pyro"
   Abbrev: Pyro
   Color: "0.9, 0.3, 0.3"
   Unfriendly: true
   Discovery: true
 }
 
-{ Faction Id: 39, Name: "Obsidian"
+{ Faction Id: 40, Name: "Obsidian"
   Abbrev: Obsidian
   Color: "0.05, 0.9, 0.9"
   Unfriendly: true

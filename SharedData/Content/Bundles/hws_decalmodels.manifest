@@ -1,0 +1,111 @@
+ManifestFileVersion: 0
+CRC: 336688866
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ae5d8c1c466514f8d33c666216667327
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b45a96008eacadab284ad82256b3b061
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/hws_decalmodels/HWSSupergate/Material/verticalglowline3(Modular).mat
+- Assets/hws_decalmodels/DebrisCloud01Prefab.prefab
+- Assets/hws_decalmodels/HWSSupergate/HWSSupergateBlueVfx.prefab
+- Assets/hws_decalmodels/DebrisCloud04Prefab.prefab
+- Assets/hws_decalmodels/HWSSupergate/Textures/Ju_smoke01.png
+- Assets/hws_decalmodels/TSCG/Textures/Marble016_1K_Color.jpg
+- Assets/hws_decalmodels/DebrisCloud07Prefab.prefab
+- Assets/hws_decalmodels/TSCG/Materials/Material.Stern.mat
+- Assets/hws_decalmodels/HWSSupergate/Textures/verticalglow3.png
+- Assets/hws_decalmodels/HWSNebula/Textures/HWSNebula2.mat
+- Assets/hws_decalmodels/DebrisCloud05Prefab.prefab
+- Assets/hws_decalmodels/HWSSupergate/Material/smallglow01(Modular).mat
+- Assets/hws_decalmodels/HWSNebula/Textures/HWSNebula1.mat
+- Assets/hws_decalmodels/TSCG/TSCGRing.prefab
+- Assets/hws_decalmodels/HWSNebula/Textures/Nebula-1.png
+- Assets/hws_decalmodels/HWSNebula/Textures/perlin_mirrored.png
+- Assets/hws_decalmodels/Chaos/HWSChaosShieldLux.prefab
+- Assets/hws_decalmodels/TSCG/Materials/Material.001.mat
+- Assets/hws_decalmodels/Chaos/HWSChaosShieldPyro.prefab
+- Assets/hws_decalmodels/HWSSupergate/HWSSupergateBlackVfx.prefab
+- Assets/hws_decalmodels/HWSNebula/Textures/HWSNebulaCloud.mat
+- Assets/hws_decalmodels/HWSSupergate/HWSSupergateGreenVfx.prefab
+- Assets/hws_decalmodels/HWSSupergate/Textures/Ju_aura01.png
+- Assets/hws_decalmodels/HWSSupergate/Textures/smallglow01.png
+- Assets/hws_decalmodels/TSCG/Materials/Material.Nox.mat
+- Assets/hws_decalmodels/HWSSupergate/Textures/Ju_fire02.png
+- Assets/hws_decalmodels/TSCG/HWSTSCGRingTerra.prefab
+- Assets/hws_decalmodels/TSCG/Materials/Material.Aqua.mat
+- Assets/hws_decalmodels/HWSSupergate/Material/Ju_smoke01.mat
+- Assets/hws_decalmodels/DebrisCloud06Prefab.prefab
+- Assets/hws_decalmodels/TSCG/Materials/Material.Pyro.mat
+- Assets/hws_decalmodels/DebrisPieceCloud02Prefab.prefab
+- Assets/hws_decalmodels/TSCG/HWSStarFragment1.prefab
+- Assets/hws_decalmodels/Chaos/HWSChaosShieldObsidian.prefab
+- Assets/hws_decalmodels/TSCG/HWSTSCGRingNox.prefab
+- Assets/hws_decalmodels/TSCG/Textures/Plaster004_2K_Roughness.jpg
+- Assets/hws_decalmodels/TSCG/HWSStarFragment4.prefab
+- Assets/hws_decalmodels/TSCG/TSCGRing.fbx
+- Assets/hws_decalmodels/HWSNebula/HWSNebulaGreen.prefab
+- Assets/hws_decalmodels/TSCG/HWSStarFragment7.prefab
+- Assets/hws_decalmodels/TSCG/HWSStarFragment3.prefab
+- Assets/hws_decalmodels/HWSNebula/HWSNebulaMix.prefab
+- Assets/hws_decalmodels/HWSNebula/Textures/lines_mirrored.png
+- Assets/hws_decalmodels/Chaos/HWSChaosShieldNox.prefab
+- Assets/hws_decalmodels/DebrisCloud03Prefab.prefab
+- Assets/hws_decalmodels/Chaos/HWSChaosShieldAqua.prefab
+- Assets/hws_decalmodels/HWSSupergate/HWSSupergatePurpleVfx.prefab
+- Assets/hws_decalmodels/TSCG/Textures/Marble016_1K_Color 1.jpg
+- Assets/hws_decalmodels/HWSSupergate/HWSSupergateWhiteVfx.prefab
+- Assets/hws_decalmodels/DebrisCloud02Prefab.prefab
+- Assets/hws_decalmodels/HWSSupergate/Material/Ju_fire02.mat
+- Assets/hws_decalmodels/HWSSupergate/HWSSupergateYellowVfx.prefab
+- Assets/hws_decalmodels/TSCG/HWSTSCGRingPyro.prefab
+- Assets/hws_decalmodels/TSCG/Textures/Marble016_1K_Displacement.jpg
+- Assets/hws_decalmodels/TSCG/HWSTSCGRingLux.prefab
+- Assets/hws_decalmodels/TSCG/HWSTSCGRingAqua.prefab
+- Assets/hws_decalmodels/TSCG/Textures/Plaster004_2K_Displacement.jpg
+- Assets/hws_decalmodels/DebrisPieceCloud03Prefab.prefab
+- Assets/hws_decalmodels/TSCG/Textures/Plaster004_2K_Color.jpg
+- Assets/hws_decalmodels/DebrisPieceCloud01Prefab.prefab
+- Assets/hws_decalmodels/HWSNebula/HWSNebulaWhite.prefab
+- Assets/hws_decalmodels/HWSNebula/Textures/Nebula-2.png
+- Assets/hws_decalmodels/HWSSupergate/Material/Ju_aura01.mat
+- Assets/hws_decalmodels/TSCG/Textures/Marble016_1K_Roughness.jpg
+- Assets/hws_decalmodels/TSCG/Materials/Material.Terra.mat
+- Assets/hws_decalmodels/HWSNebula/Textures/HWSNebula.png
+- Assets/hws_decalmodels/TSCG/HWSStarFragment6.prefab
+- Assets/hws_decalmodels/Chaos/HWSChaosShieldTerra.prefab
+- Assets/hws_decalmodels/TSCG/Materials/Material.Lux.mat
+- Assets/hws_decalmodels/HWSSupergate/HWSSupergateOrangeVfx.prefab
+- Assets/hws_decalmodels/TSCG/HWSStarFragment2.prefab
+- Assets/hws_decalmodels/TSCG/HWSStarFragment5.prefab
+- Assets/hws_decalmodels/HWSSupergate/HWSSupergateRedVfx.prefab
+- Assets/hws_decalmodels/TSCG/Materials/Material.mat
+- Assets/hws_decalmodels/TSCG/TSCG.fbx
+- Assets/hws_decalmodels/Chaos/HWSChaosShieldStrangelet.prefab
+Dependencies:
+- C:/Program Files (x86)/Steam/steamapps/common/Empyrion - Galactic Survival/BlockModelsAndSuitPropsModding/Bundles/hws_eclassmodels

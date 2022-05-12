@@ -1,0 +1,566 @@
+#
+# Define damage multipliers here and reference them from ItemsConfig.ecf
+# using DamageMultiplier_Group: Pistol.
+# For now you can either use DamageMultiplier_x OR DamageMultiplier_Group in ItemsConfig.ecf
+# Ranged = NoBlast, blast will be ignored by the game though
+# LauncherSS, Projectile = Blast
+
+# ------------------------------------------------------------------------- HWS Aqua EWS
+# ------------------------------------------------------------------------- HWS Aqua vs Elements
+{ DamageMultiplierGroup Name: HWS_Aqua_vs_Pyro
+  DamageMultiplier_1: 2, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+  BlastDamageMultiplier_1: 2, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+}
+{ DamageMultiplierGroup Name: HWS_Aqua_vs_Aqua
+  DamageMultiplier_1: 1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+  BlastDamageMultiplier_1: 1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+}
+{ DamageMultiplierGroup Name: HWS_Aqua_vs_Terra
+  DamageMultiplier_1: 0.1, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+}
+{ DamageMultiplierGroup Name: HWS_Aqua_vs_Obsidian
+  DamageMultiplier_1: 0.1, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+}
+{ DamageMultiplierGroup Name: HWS_Aqua_vs_Lux
+  DamageMultiplier_1: 0.1, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Aqua_vs_Nox
+  DamageMultiplier_1: 0.1, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Aqua_vs_Strangelet
+  DamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+}
+
+# ------------------------------------------------------------------------- HWS Aqua vs Vanilla
+{ DamageMultiplierGroup Name: HWS_Aqua_vs_Blocks
+  DamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+  BlastDamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+}
+{ DamageMultiplierGroup Name: HWS_Aqua_vs_Terrain
+  DamageMultiplier_1: 0, param1: dirt|stone|rock
+  BlastDamageMultiplier_1: 0, param1: dirt|stone|rock
+}
+{ DamageMultiplierGroup Name: HWS_Aqua_vs_Npc
+  DamageMultiplier_1: 1, param1: head|body
+  BlastDamageMultiplier_1: 1, param1: head|body
+}
+{ DamageMultiplierGroup Name: HWS_Aqua_vs_Devices
+  DamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+  BlastDamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+}
+{ DamageMultiplierGroup Name: HWS_Aqua_vs_Shield
+  DamageMultiplier_1: 1, param1: shield
+  BlastDamageMultiplier_1: 1, param1: shield
+}
+
+# ------------------------------------------------------------------------- HWS Terra EWS
+# ------------------------------------------------------------------------- HWS Terra vs Elements
+{ DamageMultiplierGroup Name: HWS_Terra_vs_Aqua
+  DamageMultiplier_1: 2, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+  BlastDamageMultiplier_1: 2, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+}
+{ DamageMultiplierGroup Name: HWS_Terra_vs_Pyro
+  DamageMultiplier_1: 0.1, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+}
+{ DamageMultiplierGroup Name: HWS_Terra_vs_Terra
+  DamageMultiplier_1: 1, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+  BlastDamageMultiplier_1: 1, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+}
+{ DamageMultiplierGroup Name: HWS_Terra_vs_Obsidian
+  DamageMultiplier_1: 0.1, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+}
+{ DamageMultiplierGroup Name: HWS_Terra_vs_Lux
+  DamageMultiplier_1: 0.1, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Terra_vs_Nox
+  DamageMultiplier_1: 0.1, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Terra_vs_Strangelet
+  DamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+}
+
+# ------------------------------------------------------------------------- HWS Terra vs Vanilla
+{ DamageMultiplierGroup Name: HWS_ Terra_vs_Blocks
+  DamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+  BlastDamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+}
+{ DamageMultiplierGroup Name: HWS_ Terra_vs_Terrain
+  DamageMultiplier_1: 0, param1: dirt
+  DamageMultiplier_2: 1, param1: stone|rock
+  BlastDamageMultiplier_1: 0, param1: dirt
+  BlastDamageMultiplier_2: 1, param1: stone|rock
+}
+{ DamageMultiplierGroup Name: HWS_ Terra_vs_Npc
+  DamageMultiplier_1: 1, param1: head|body
+  BlastDamageMultiplier_1: 1, param1: head|body
+}
+{ DamageMultiplierGroup Name: HWS_ Terra_vs_Devices
+  DamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+  BlastDamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+}
+{ DamageMultiplierGroup Name: HWS_ Terra_vs_Shield
+  DamageMultiplier_1: 1, param1: shield
+  BlastDamageMultiplier_1: 1, param1: shield
+}
+
+
+# ------------------------------------------------------------------------- HWS Pyro EWS
+# ------------------------------------------------------------------------- HWS Pyro vs Elements
+{ DamageMultiplierGroup Name: HWS_Pyro_vs_Terra
+  DamageMultiplier_1: 2, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+  BlastDamageMultiplier_1: 2, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+}
+{ DamageMultiplierGroup Name: HWS_Pyro_vs_Pyro
+  DamageMultiplier_1: 1, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+  BlastDamageMultiplier_1: 1, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+}
+{ DamageMultiplierGroup Name: HWS_Pyro_vs_Aqua
+  DamageMultiplier_1: 0.1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+}
+{ DamageMultiplierGroup Name: HWS_Pyro_vs_Obsidian
+  DamageMultiplier_1: 0.1, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+}
+{ DamageMultiplierGroup Name: HWS_Pyro_vs_Lux
+  DamageMultiplier_1: 0.1, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Pyro_vs_Nox
+  DamageMultiplier_1: 0.1, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Pyro_vs_Strangelet
+  DamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+}
+
+# ------------------------------------------------------------------------- HWS Pyro vs Vanilla
+{ DamageMultiplierGroup Name: HWS_ Pyro_vs_Blocks
+  DamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+  BlastDamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+}
+{ DamageMultiplierGroup Name: HWS_ Pyro_vs_Terrain
+  DamageMultiplier_1: 0, param1: dirt
+  DamageMultiplier_2: 2, param1: stone|rock
+  BlastDamageMultiplier_1: 0, param1: dirt
+  BlastDamageMultiplier_2: 2, param1: stone|rock
+}
+{ DamageMultiplierGroup Name: HWS_ Pyro_vs_Npc
+  DamageMultiplier_1: 1, param1: head|body
+  BlastDamageMultiplier_1: 1, param1: head|body
+}
+{ DamageMultiplierGroup Name: HWS_ Pyro_vs_Devices
+  DamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+  BlastDamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+}
+{ DamageMultiplierGroup Name: HWS_ Pyro_vs_Shield
+  DamageMultiplier_1: 1, param1: shield
+  BlastDamageMultiplier_1: 1, param1: shield
+}
+
+
+# ------------------------------------------------------------------------- HWS Obsidian EWS
+# ------------------------------------------------------------------------- HWS Obsidian vs Elements
+{ DamageMultiplierGroup Name: HWS_Obsidian_Meta
+  DamageMultiplier_1: 2, param1: HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge
+  BlastDamageMultiplier_1: 2, param1: HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge
+}
+{ DamageMultiplierGroup Name: HWS_Obsidian_vs_Lux
+  DamageMultiplier_1: 2, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+  BlastDamageMultiplier_1: 2, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Obsidian_vs_Pyro
+  DamageMultiplier_1: 0.1, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+}
+{ DamageMultiplierGroup Name: HWS_Obsidian_vs_Aqua
+  DamageMultiplier_1: 0.1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+}
+{ DamageMultiplierGroup Name: HWS_Obsidian_vs_Terra
+  DamageMultiplier_1: 0.1, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+}
+{ DamageMultiplierGroup Name: HWS_Obsidian_vs_Obsidian
+  DamageMultiplier_1: 1, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+  BlastDamageMultiplier_1: 1, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+}
+{ DamageMultiplierGroup Name: HWS_Obsidian_vs_Nox
+  DamageMultiplier_1: 0.1, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Obsidian_vs_Strangelet
+  DamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+}
+
+# ------------------------------------------------------------------------- HWS Obsidian vs Vanilla
+{ DamageMultiplierGroup Name: HWS_ Obsidian_vs_Blocks
+  DamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+  BlastDamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+}
+{ DamageMultiplierGroup Name: HWS_ Obsidian_vs_Terrain
+  DamageMultiplier_1: 0, param1: dirt|stone|rock
+  BlastDamageMultiplier_1: 0, param1: dirt|stone|rock
+}
+{ DamageMultiplierGroup Name: HWS_ Obsidian_vs_Npc
+  DamageMultiplier_1: 1, param1: head|body
+  BlastDamageMultiplier_1: 1, param1: head|body
+}
+{ DamageMultiplierGroup Name: HWS_ Obsidian_vs_Devices
+  DamageMultiplier_1: 2, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+  BlastDamageMultiplier_1: 2, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+}
+{ DamageMultiplierGroup Name: HWS_ Obsidian_vs_Shield
+  DamageMultiplier_1: 1, param1: shield
+  BlastDamageMultiplier_1: 1, param1: shield
+}
+
+
+# ------------------------------------------------------------------------- HWS Lux EWS
+# ------------------------------------------------------------------------- HWS Lux vs Elements
+{ DamageMultiplierGroup Name: HWS_Lux_vs_Pyro
+  DamageMultiplier_1: 0.1, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+}
+{ DamageMultiplierGroup Name: HWS_Lux_vs_Aqua
+  DamageMultiplier_1: 0.1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+}
+{ DamageMultiplierGroup Name: HWS_Lux_vs_Terra
+  DamageMultiplier_1: 0.1, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+}
+{ DamageMultiplierGroup Name: HWS_Lux_vs_Obsidian
+  DamageMultiplier_1: 0.1, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+}
+{ DamageMultiplierGroup Name: HWS_Lux_vs_Lux
+  DamageMultiplier_1: 1, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+  BlastDamageMultiplier_1: 1, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Lux_vs_Nox
+  DamageMultiplier_1: 2, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+  BlastDamageMultiplier_1: 2, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Lux_vs_Strangelet
+  DamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+}
+
+# ------------------------------------------------------------------------- HWS Lux vs Vanilla
+{ DamageMultiplierGroup Name: HWS_ Lux_vs_Blocks
+  DamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+  BlastDamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+}
+{ DamageMultiplierGroup Name: HWS_ Lux_vs_Terrain
+  DamageMultiplier_1: 0, param1: dirt|stone|rock
+  BlastDamageMultiplier_1: 0, param1: dirt|stone|rock
+}
+{ DamageMultiplierGroup Name: HWS_ Lux_vs_Npc
+  DamageMultiplier_1: 1, param1: head|body
+  BlastDamageMultiplier_1: 1, param1: head|body
+}
+{ DamageMultiplierGroup Name: HWS_ Lux_vs_Devices
+  DamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+  BlastDamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+}
+{ DamageMultiplierGroup Name: HWS_ Lux_vs_Shield
+  DamageMultiplier_1: 1, param1: shield
+  BlastDamageMultiplier_1: 1, param1: shield
+}
+
+
+# ------------------------------------------------------------------------- HWS Nox EWS
+# ------------------------------------------------------------------------- HWS Nox vs Elements
+{ DamageMultiplierGroup Name: HWS_Nox_Meta
+  DamageMultiplier_1: 2, param1: HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge
+  BlastDamageMultiplier_1: 2, param1: HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge
+}
+{ DamageMultiplierGroup Name: HWS_Nox_vs_Pyro
+  DamageMultiplier_1: 2, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyronpc
+  BlastDamageMultiplier_1: 2, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyronpc
+}
+{ DamageMultiplierGroup Name: HWS_Nox_vs_Aqua
+  DamageMultiplier_1: 1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquanpc
+  BlastDamageMultiplier_1: 1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquanpc
+}
+{ DamageMultiplierGroup Name: HWS_Nox_vs_Terra
+  DamageMultiplier_1: 0.1, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terranpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terranpc
+}
+{ DamageMultiplierGroup Name: HWS_Nox_vs_Obsidian
+  DamageMultiplier_1: 2, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidiannpc
+  BlastDamageMultiplier_1: 2, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidiannpc
+}
+{ DamageMultiplierGroup Name: HWS_Nox_vs_Lux
+  DamageMultiplier_1: 0.1, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Nox_vs_Nox
+  DamageMultiplier_1: 1, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxnpc
+  BlastDamageMultiplier_1: 1, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Nox_vs_Strangelet
+  DamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletnpc
+}
+
+# ------------------------------------------------------------------------- HWS Nox vs Vanilla
+{ DamageMultiplierGroup Name: HWS_ Nox_vs_Blocks
+  DamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+  BlastDamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+}
+{ DamageMultiplierGroup Name: HWS_ Nox_vs_Terrain
+  DamageMultiplier_1: 0, param1: dirt|stone|rock
+  BlastDamageMultiplier_1: 0, param1: dirt|stone|rock
+}
+{ DamageMultiplierGroup Name: HWS_ Nox_vs_Npc
+  DamageMultiplier_1: 1, param1: head|body
+  BlastDamageMultiplier_1: 1, param1: head|body
+}
+{ DamageMultiplierGroup Name: HWS_ Nox_vs_Devices
+  DamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+  BlastDamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+}
+{ DamageMultiplierGroup Name: HWS_ Nox_vs_Shield
+  DamageMultiplier_1: 2, param1: shield
+  BlastDamageMultiplier_1: 2, param1: shield
+}
+
+
+# ------------------------------------------------------------------------- HWS Strangelet EWS
+# ------------------------------------------------------------------------- HWS Strangelet vs Elements
+{ DamageMultiplierGroup Name: HWS_Strangelet_vs_Pyro
+  DamageMultiplier_1: 2, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+  BlastDamageMultiplier_1: 2, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+}
+{ DamageMultiplierGroup Name: HWS_Strangelet_vs_Aqua
+  DamageMultiplier_1: 2, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+  BlastDamageMultiplier_1: 2, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+}
+{ DamageMultiplierGroup Name: HWS_Strangelet_vs_Terra
+  DamageMultiplier_1: 2, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+  BlastDamageMultiplier_1: 2, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+}
+{ DamageMultiplierGroup Name: HWS_Strangelet_vs_Obsidian
+  DamageMultiplier_1: 2, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+  BlastDamageMultiplier_1: 2, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+}
+{ DamageMultiplierGroup Name: HWS_Strangelet_vs_Lux
+  DamageMultiplier_1: 2, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+  BlastDamageMultiplier_1: 2, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Strangelet_vs_Nox
+  DamageMultiplier_1: 2, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+  BlastDamageMultiplier_1: 2, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Strangelet_vs_Strangelet
+  DamageMultiplier_1: 2, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+  BlastDamageMultiplier_1: 2, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+}
+
+# ------------------------------------------------------------------------- HWS Strangelet vs Vanilla
+{ DamageMultiplierGroup Name: HWS_ Strangelet_vs_Blocks
+  DamageMultiplier_1: 2, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+  BlastDamageMultiplier_1: 2, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+}
+{ DamageMultiplierGroup Name: HWS_ Strangelet_vs_Terrain
+  DamageMultiplier_1: 0, param1: dirt|stone|rock
+  BlastDamageMultiplier_1: 0, param1: dirt|stone|rock
+}
+{ DamageMultiplierGroup Name: HWS_ Strangelet_vs_Npc
+  DamageMultiplier_1: 2, param1: head|body
+  BlastDamageMultiplier_1: 2, param1: head|body
+}
+{ DamageMultiplierGroup Name: HWS_ Strangelet_vs_Devices
+  DamageMultiplier_1: 2, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+  BlastDamageMultiplier_1: 2, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+}
+{ DamageMultiplierGroup Name: HWS_ Strangelet_vs_Shield
+  DamageMultiplier_1: 2, param1: shield
+  BlastDamageMultiplier_1: 2, param1: shield
+}
+
+
+
+# ------------------------------------------------------------------------- HWS Kinetic EWS
+# ------------------------------------------------------------------------- HWS Kinetic vs Elements
+{ DamageMultiplierGroup Name: HWS_Kinetic_vs_Pyro
+  DamageMultiplier_1: 0.1, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+}
+{ DamageMultiplierGroup Name: HWS_Kinetic_vs_Aqua
+  DamageMultiplier_1: 0.1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+}
+{ DamageMultiplierGroup Name: HWS_Kinetic_vs_Terra
+  DamageMultiplier_1: 0.1, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+}
+{ DamageMultiplierGroup Name: HWS_Kinetic_vs_Obsidian
+  DamageMultiplier_1: 0.1, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+}
+{ DamageMultiplierGroup Name: HWS_Kinetic_vs_Lux
+  DamageMultiplier_1: 0.1, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Kinetic_vs_Nox
+  DamageMultiplier_1: 0.1, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Kinetic_vs_Strangelet
+  DamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+}
+
+# ------------------------------------------------------------------------- HWS Kinetic vs Vanilla
+{ DamageMultiplierGroup Name: HWS_ Kinetic_vs_Blocks
+  DamageMultiplier_1: 2, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+  BlastDamageMultiplier_1: 2, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+}
+{ DamageMultiplierGroup Name: HWS_ Kinetic_vs_Terrain
+  DamageMultiplier_1: 0, param1: dirt|stone|rock
+  BlastDamageMultiplier_1: 0, param1: dirt|stone|rock
+}
+{ DamageMultiplierGroup Name: HWS_ Kinetic_vs_Npc
+  DamageMultiplier_1: 2, param1: head|body
+  BlastDamageMultiplier_1: 2, param1: head|body
+}
+{ DamageMultiplierGroup Name: HWS_ Kinetic_vs_Devices
+  DamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+  BlastDamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+}
+{ DamageMultiplierGroup Name: HWS_ Kinetic_vs_Shield
+  DamageMultiplier_1: 0.1, param1: shield
+  BlastDamageMultiplier_1: 0.1, param1: shield
+}
+
+
+# ------------------------------------------------------------------------- HWS Energy EWS
+# ------------------------------------------------------------------------- HWS Energy vs Elements
+{ DamageMultiplierGroup Name: HWS_Energy_vs_Pyro
+  DamageMultiplier_1: 0.1, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_pyronpc
+}
+{ DamageMultiplierGroup Name: HWS_Energy_vs_Aqua
+  DamageMultiplier_1: 0.1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_aquanpc
+}
+{ DamageMultiplierGroup Name: HWS_Energy_vs_Terra
+  DamageMultiplier_1: 0.1, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_terranpc
+}
+{ DamageMultiplierGroup Name: HWS_Energy_vs_Obsidian
+  DamageMultiplier_1: 0.1, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_obsidiannpc
+}
+{ DamageMultiplierGroup Name: HWS_Energy_vs_Lux
+  DamageMultiplier_1: 0.1, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_luxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Energy_vs_Nox
+  DamageMultiplier_1: 0.1, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_noxnpc
+}
+{ DamageMultiplierGroup Name: HWS_Energy_vs_Strangelet
+  DamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+  BlastDamageMultiplier_1: 0.1, param1: HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_strangeletnpc
+}
+
+# ------------------------------------------------------------------------- HWS Energy vs Vanilla
+{ DamageMultiplierGroup Name: HWS_Energy_vs_Blocks
+  DamageMultiplier_1: 0.1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+  BlastDamageMultiplier_1: 0.1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+}
+{ DamageMultiplierGroup Name: HWS_Energy_vs_Terrain
+  DamageMultiplier_1: 0, param1: dirt|stone|rock
+  BlastDamageMultiplier_1: 0, param1: dirt|stone|rock
+}
+{ DamageMultiplierGroup Name: HWS_Energy_vs_Npc
+  DamageMultiplier_1: 1, param1: head|body
+  BlastDamageMultiplier_1: 1, param1: head|body
+}
+{ DamageMultiplierGroup Name: HWS_Energy_vs_Devices
+  DamageMultiplier_1: 2, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+  BlastDamageMultiplier_1: 2, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
+}
+{ DamageMultiplierGroup Name: HWS_Energy_vs_Shield
+  DamageMultiplier_1: 2, param1: shield
+  BlastDamageMultiplier_1: 2, param1: shield
+}
+
+
+# ------------------------------------------------------------------------- HWS EWS
+# ------------------------------------------------------------------------- Vanilla Multitool
+{ DamageMultiplierGroup Name: HWS_Multitool_Vanilla
+  DamageMultiplier_1: 2, param1: head|body|alien|HWS_material_devices_kinetic|HWS_material_devices_energy|hull|hullarmored|hullcombat|concrete|wood|plastic|shield|HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_aquanpc|HWS_material_terranpc|HWS_material_pyronpc|HWS_material_obsidiannpc|HWS_material_luxnpc|HWS_material_noxnpc|HWS_material_strangeletnpc
+  DamageMultiplier_2: 0, param1: dirt|stone|rock|plants
+}
+
+# ------------------------------------------------------------------------- HWS EWS
+# ------------------------------------------------------------------------- HWS Elemental Multitool
+{ DamageMultiplierGroup Name: HWS_Multitool_Elemental
+  DamageMultiplier_1: 2, param1: head|body|alien|HWS_material_devices_kinetic|HWS_material_devices_energy|hull|hullarmored|hullcombat|concrete|wood|plastic|shield|plants
+  DamageMultiplier_2: 0, param1: dirt|stone|rock|HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_aquanpc|HWS_material_terranpc|HWS_material_pyronpc|HWS_material_obsidiannpc|HWS_material_luxnpc|HWS_material_noxnpc|HWS_material_strangeletnpc
+}
+# ------------------------------------------------------------------------- HWS EWS
+# ------------------------------------------------------------------------- Survival Tool
+{ DamageMultiplierGroup Name: HWS_Survival_Vanilla
+  DamageMultiplier_1: 1, param1: body|head
+  DamageMultiplier_2: 0, param1: dirt|stone|rock|plants
+  DamageMultiplier_3: 2, param1: HWS_material_devices_kinetic|HWS_material_devices_energy|shield
+  DamageMultiplier_4: 0.1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_aquanpc|HWS_material_terranpc|HWS_material_pyronpc|HWS_material_obsidiannpc|HWS_material_luxnpc|HWS_material_noxnpc|HWS_material_strangeletnpc|alien|hull|hullarmored|hullcombat|concrete|wood|plastic
+}
+
+# ------------------------------------------------------------------------- HWS EWS
+# ------------------------------------------------------------------------- Vanilla Drill
+{ DamageMultiplierGroup Name: HWS_Drill_Vanilla
+  DamageMultiplier_1: 0, param1: body|head|woodblock|concrete|hull|hullarmored|hullcombat|devcies_kinetic|HWS_material_devices_energy|shield
+  DamageMultiplier_2: 0, param1: wood   # no tree cutting
+  DamageMultiplier_3: 0, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_aquanpc|HWS_material_terranpc|HWS_material_pyronpc|HWS_material_obsidiannpc|HWS_material_luxnpc|HWS_material_noxnpc|HWS_material_strangeletnpc|alien|plastic
+}
+
+# Define a group of groups. Cannot reference another group of groups!
+# Reference in ItemsConfig.ecf with e.g. DamageMultiplier_Group: Aqua_EWS
+# ----------------------------------------------------------------------- HWS Collections
+# ----------------------------------------------------------------------- HWS Aqua Collection
+{ DamageMultiplierGroup Name: HWS_EWS_Aqua
+  Collection: "HWS_Aqua_vs_Pyro,HWS_Aqua_vs_Aqua,HWS_Aqua_vs_Terra,HWS_Aqua_vs_Obsidian,HWS_Aqua_vs_Lux,HWS_Aqua_vs_Nox,HWS_Aqua_vs_Strangelet,HWS_Aqua_vs_Blocks,HWS_Aqua_vs_Terrain,HWS_Aqua_vs_Npc,HWS_Aqua_vs_Devices,HWS_Aqua_vs_Shield"
+}
+{ DamageMultiplierGroup Name: HWS_EWS_Terra
+  Collection: "HWS_Terra_vs_Pyro,HWS_Terra_vs_Aqua,HWS_Terra_vs_Terra,HWS_Terra_vs_Obsidian,HWS_Terra_vs_Lux,HWS_Terra_vs_Nox,HWS_Terra_vs_Strangelet,HWS_Terra_vs_Blocks,HWS_Terra_vs_Terrain,HWS_Terra_vs_Npc,HWS_Terra_vs_Devices,HWS_Terra_vs_Shield"
+}
+{ DamageMultiplierGroup Name: HWS_EWS_Pyro
+  Collection: "HWS_Pyro_vs_Pyro,HWS_Pyro_vs_Aqua,HWS_Pyro_vs_Terra,HWS_Pyro_vs_Obsidian,HWS_Pyro_vs_Lux,HWS_Pyro_vs_Nox,HWS_Pyro_vs_Strangelet,HWS_Pyro_vs_Blocks,HWS_Pyro_vs_Terrain,HWS_Pyro_vs_Npc,HWS_Pyro_vs_Devices,HWS_Pyro_vs_Shield"
+}
+{ DamageMultiplierGroup Name: HWS_EWS_Obsidian
+  Collection: "HWS_Obsidian_Meta,HWS_Obsidian_vs_Pyro,HWS_Obsidian_vs_Aqua,HWS_Obsidian_vs_Terra,HWS_Obsidian_vs_Obsidian,HWS_Obsidian_vs_Lux,HWS_Obsidian_vs_Nox,HWS_Obsidian_vs_Strangelet,HWS_Obsidian_vs_Blocks,HWS_Obsidian_vs_Terrain,HWS_Obsidian_vs_Npc,HWS_Obsidian_vs_Devices,HWS_Obsidian_vs_Shield"
+}
+{ DamageMultiplierGroup Name: HWS_EWS_Lux
+  Collection: "HWS_Lux_vs_Pyro,HWS_Lux_vs_Aqua,HWS_Lux_vs_Terra,HWS_Lux_vs_Obsidian,HWS_Lux_vs_Lux,HWS_Lux_vs_Nox,HWS_Lux_vs_Strangelet,HWS_Lux_vs_Blocks,HWS_Lux_vs_Terrain,HWS_Lux_vs_Npc,HWS_Lux_vs_Devices,HWS_Lux_vs_Shield"
+}
+{ DamageMultiplierGroup Name: HWS_EWS_Nox
+  Collection: "HWS_Nox_Meta,HWS_Nox_vs_Pyro,HWS_Nox_vs_Aqua,HWS_Nox_vs_Terra,HWS_Nox_vs_Obsidian,HWS_Nox_vs_Lux,HWS_Nox_vs_Nox,HWS_Nox_vs_Strangelet,HWS_Nox_vs_Blocks,HWS_Nox_vs_Terrain,HWS_Nox_vs_Npc,HWS_Nox_vs_Devices,HWS_Nox_vs_Shield"
+}
+{ DamageMultiplierGroup Name: HWS_EWS_Strangelet
+  Collection: "HWS_Strangelet_vs_Pyro,HWS_Strangelet_vs_Aqua,HWS_Strangelet_vs_Terra,HWS_Strangelet_vs_Obsidian,HWS_Strangelet_vs_Lux,HWS_Strangelet_vs_Nox,HWS_Strangelet_vs_Strangelet,HWS_Strangelet_vs_Blocks,HWS_Strangelet_vs_Terrain,HWS_Strangelet_vs_Npc,HWS_Strangelet_vs_Devices,HWS_Strangelet_vs_Shield"
+}
+{ DamageMultiplierGroup Name: HWS_EWS_Kinetic
+  Collection: "HWS_Kinetic_vs_Pyro,HWS_Kinetic_vs_Aqua,HWS_Kinetic_vs_Terra,HWS_Kinetic_vs_Obsidian,HWS_Kinetic_vs_Lux,HWS_Kinetic_vs_Nox,HWS_Kinetic_vs_Strangelet,HWS_Kinetic_vs_Blocks,HWS_Kinetic_vs_Terrain,HWS_Kinetic_vs_Npc,HWS_Kinetic_vs_Devices,HWS_Kinetic_vs_Shield"
+}
+{ DamageMultiplierGroup Name: HWS_EWS_Energy
+  Collection: "HWS_Energy_vs_Pyro,HWS_Energy_vs_Aqua,HWS_Energy_vs_Terra,HWS_Energy_vs_Obsidian,HWS_Energy_vs_Lux,HWS_Energy_vs_Nox,HWS_Energy_vs_Strangelet,HWS_Energy_vs_Blocks,HWS_Energy_vs_Terrain,HWS_Energy_vs_Npc,HWS_Energy_vs_Devices,HWS_Energy_vs_Shield"
+}

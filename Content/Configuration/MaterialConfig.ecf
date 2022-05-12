@@ -453,13 +453,63 @@
   HitPoints: 55, type: int, display: false
 }
 # ----------------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------- HWS EWS
+{ Material Name: HWS_material_devices_kinetic
+  damage_category: HWS_material_devices_kinetic
+  surface_category: metal
+  particle_category: metal
+  particle_destroy_category: metal
+  stepsound: metal
+  stability_glue: 500
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_devices_energy
+  damage_category: HWS_material_devices_energy
+  surface_category: metal
+  particle_category: metal
+  particle_destroy_category: metal
+  stepsound: metal
+  stability_glue: 500
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_weapon_kinetic
+  damage_category: HWS_material_weapon_kinetic
+  surface_category: metal
+  particle_category: metal
+  particle_destroy_category: metal
+  stepsound: metal
+  stability_glue: 500
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_weapon_energy
+  damage_category: HWS_material_weapon_energy
+  surface_category: metal
+  particle_category: metal
+  particle_destroy_category: metal
+  stepsound: metal
+  stability_glue: 500
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+# ----------------------------------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------- Elemental Block Materials
 # Small: HV / SV
 # Large: CV / BA
 # Preparation of small and large differentiation for the future. For example special SV weapons good against CVs.
 # For now only large is considered. 2021.
-{ Material Name: aquablocksmall
-  damage_category: aquablocksmall
+{ Material Name: HWS_material_aquablocksmall
+  damage_category: HWS_material_aquablocksmall
   surface_category: water
   particle_category: water
   particle_destroy_category: water
@@ -470,8 +520,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: aquablocklarge
-  damage_category: aquablocklarge
+{ Material Name: HWS_material_aquablocklarge
+  damage_category: HWS_material_aquablocklarge
   surface_category: water
   particle_category: water
   particle_destroy_category: water
@@ -482,8 +532,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: terrablocksmall
-  damage_category: terrablocksmall
+{ Material Name: HWS_material_terrablocksmall
+  damage_category: HWS_material_terrablocksmall
   surface_category: stone
   particle_category: stone
   particle_destroy_category: wood
@@ -494,8 +544,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: terrablocklarge
-  damage_category: terrablocklarge
+{ Material Name: HWS_material_terrablocklarge
+  damage_category: HWS_material_terrablocklarge
   surface_category: stone
   particle_category: stone
   particle_destroy_category: wood
@@ -506,8 +556,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: pyroblocksmall
-  damage_category: pyroblocksmall
+{ Material Name: HWS_material_pyroblocksmall
+  damage_category: HWS_material_pyroblocksmall
   surface_category: water
   particle_category: water
   particle_destroy_category: wood
@@ -518,8 +568,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: pyroblocklarge
-  damage_category: pyroblocklarge
+{ Material Name: HWS_material_pyroblocklarge
+  damage_category: HWS_material_pyroblocklarge
   surface_category: water
   particle_category: water
   particle_destroy_category: wood
@@ -530,8 +580,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: obsidianblocksmall
-  damage_category: obsidianblocksmall
+{ Material Name: HWS_material_obsidianblocksmall
+  damage_category: HWS_material_obsidianblocksmall
   surface_category: metal
   particle_category: metal
   particle_destroy_category: wood
@@ -542,8 +592,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: obsidianblocklarge
-  damage_category: obsidianblocklarge
+{ Material Name: HWS_material_obsidianblocklarge
+  damage_category: HWS_material_obsidianblocklarge
   surface_category: metal
   particle_category: metal
   particle_destroy_category: wood
@@ -554,8 +604,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: luxblocksmall
-  damage_category: luxblocksmall
+{ Material Name: HWS_material_luxblocksmall
+  damage_category: HWS_material_luxblocksmall
   surface_category: dirt
   particle_category: dirt
   particle_destroy_category: wood
@@ -566,8 +616,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: luxblocklarge
-  damage_category: luxblocklarge
+{ Material Name: HWS_material_luxblocklarge
+  damage_category: HWS_material_luxblocklarge
   surface_category: dirt
   particle_category: dirt
   particle_destroy_category: wood
@@ -578,8 +628,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: noxblocksmall
-  damage_category: noxblocksmall
+{ Material Name: HWS_material_noxblocksmall
+  damage_category: HWS_material_noxblocksmall
   surface_category: alien
   particle_category: dirt
   particle_destroy_category: wood
@@ -590,8 +640,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: noxblocklarge
-  damage_category: noxblocklarge
+{ Material Name: HWS_material_noxblocklarge
+  damage_category: HWS_material_noxblocklarge
   surface_category: alien
   particle_category: dirt
   particle_destroy_category: wood
@@ -602,8 +652,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: strangeletblocksmall
-  damage_category: strangeletblocksmall
+{ Material Name: HWS_material_strangeletblocksmall
+  damage_category: HWS_material_strangeletblocksmall
   surface_category: human
   particle_category: alien
   particle_destroy_category: wood
@@ -614,8 +664,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: strangeletblocklarge
-  damage_category: strangeletblocklarge
+{ Material Name: HWS_material_strangeletblocklarge
+  damage_category: HWS_material_strangeletblocklarge
   surface_category: human
   particle_category: alien
   particle_destroy_category: wood
@@ -633,8 +683,8 @@
 # Preparation of small and large differentiation for the future. For example special SV weapons good against CVs. Also
 # for different weapon type effectiveness. Homing good vs Blocks. Beam good vs Shield. Hitscan good vs Devices.
 # For now only large is considered and only Obsidian is effective against device material. 2021.
-{ Material Name: aquadevicesmall
-  damage_category: aquadevicesmall
+{ Material Name: HWS_material_aquadevicesmall
+  damage_category: HWS_material_aquadevicesmall
   surface_category: water
   particle_category: water
   particle_destroy_category: water
@@ -645,8 +695,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: aquadevicelarge
-   damage_category: aquadevicelarge
+{ Material Name: HWS_material_aquadevicelarge
+   damage_category: HWS_material_aquadevicelarge
    surface_category: water
    particle_category: water
    particle_destroy_category: water
@@ -657,8 +707,8 @@
    ExplosionHardness: 1
    HitPoints: 0, type: int, display: false
 }
-{ Material Name: terradevicesmall
-  damage_category: terradevicesmall
+{ Material Name: HWS_material_terradevicesmall
+  damage_category: HWS_material_terradevicesmall
   surface_category: stone
   particle_category: stone
   particle_destroy_category: wood
@@ -669,8 +719,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: terradevicelarge
-  damage_category: terradevicelarge
+{ Material Name: HWS_material_terradevicelarge
+  damage_category: HWS_material_terradevicelarge
   surface_category: stone
   particle_category: stone
   particle_destroy_category: wood
@@ -681,8 +731,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: pyrodevicesmall
-  damage_category: pyrodevicesmall
+{ Material Name: HWS_material_pyrodevicesmall
+  damage_category: HWS_material_pyrodevicesmall
   surface_category: water
   particle_category: water
   particle_destroy_category: wood
@@ -693,8 +743,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: pyrodevicelarge
-  damage_category: pyrodevicelarge
+{ Material Name: HWS_material_pyrodevicelarge
+  damage_category: HWS_material_pyrodevicelarge
   surface_category: water
   particle_category: water
   particle_destroy_category: wood
@@ -705,8 +755,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: obsidiandevicesmall
-  damage_category: obsidiandevicesmall
+{ Material Name: HWS_material_obsidiandevicesmall
+  damage_category: HWS_material_obsidiandevicesmall
   surface_category: metal
   particle_category: metal
   particle_destroy_category: wood
@@ -717,8 +767,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: obsidiandevicelarge
-  damage_category: obsidiandevicelarge
+{ Material Name: HWS_material_obsidiandevicelarge
+  damage_category: HWS_material_obsidiandevicelarge
   surface_category: metal
   particle_category: metal
   particle_destroy_category: wood
@@ -729,8 +779,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: luxdevicesmall
-  damage_category: luxdevicesmall
+{ Material Name: HWS_material_luxdevicesmall
+  damage_category: HWS_material_luxdevicesmall
   surface_category: dirt
   particle_category: dirt
   particle_destroy_category: wood
@@ -741,8 +791,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: luxdevicelarge
-  damage_category: luxdevicelarge
+{ Material Name: HWS_material_luxdevicelarge
+  damage_category: HWS_material_luxdevicelarge
   surface_category: dirt
   particle_category: dirt
   particle_destroy_category: wood
@@ -753,8 +803,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: noxdevicesmall
-  damage_category: noxdevicesmall
+{ Material Name: HWS_material_noxdevicesmall
+  damage_category: HWS_material_noxdevicesmall
   surface_category: alien
   particle_category: dirt
   particle_destroy_category: wood
@@ -765,8 +815,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: noxdevicelarge
-  damage_category: noxdevicelarge
+{ Material Name: HWS_material_noxdevicelarge
+  damage_category: HWS_material_noxdevicelarge
   surface_category: alien
   particle_category: dirt
   particle_destroy_category: wood
@@ -777,8 +827,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: strangeletdevicesmall
-  damage_category: strangeletdevicesmall
+{ Material Name: HWS_material_strangeletdevicesmall
+  damage_category: HWS_material_strangeletdevicesmall
   surface_category: human
   particle_category: alien
   particle_destroy_category: wood
@@ -789,8 +839,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: strangeletdevicelarge
-  damage_category: strangeletdevicelarge
+{ Material Name: HWS_material_strangeletdevicelarge
+  damage_category: HWS_material_strangeletdevicelarge
   surface_category: human
   particle_category: alien
   particle_destroy_category: wood
@@ -803,9 +853,8 @@
 }
 # ----------------------------------------------------------------------------------------------------------------------
 # ---------------------------------------------------------------------------------------------- Elemental NPC Materials
-# Preparation only. NPCs do not have a material yet unfortunately. EWS² is not applied to them. Only Body and Head are working.
-{ Material Name: aquanpc
-  damage_category: aquanpc
+{ Material Name: HWS_material_aquanpc
+  damage_category: HWS_material_aquanpc
   surface_category: water
   particle_category: water
   particle_destroy_category: water
@@ -816,8 +865,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: terranpc
-  damage_category: terranpc
+{ Material Name: HWS_material_terranpc
+  damage_category: HWS_material_terranpc
   surface_category: stone
   particle_category: stone
   particle_destroy_category: stone
@@ -828,8 +877,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: pyronpc
-  damage_category: pyronpc
+{ Material Name: HWS_material_pyronpc
+  damage_category: HWS_material_pyronpc
   surface_category: water
   particle_category: water
   particle_destroy_category: water
@@ -840,8 +889,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: obsidiannpc
-  damage_category: obsidiannpc
+{ Material Name: HWS_material_obsidiannpc
+  damage_category: HWS_material_obsidiannpc
   surface_category: metal
   particle_category: metal
   particle_destroy_category: metal
@@ -852,8 +901,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: luxnpc
-  damage_category: luxnpc
+{ Material Name: HWS_material_luxnpc
+  damage_category: HWS_material_luxnpc
   surface_category: dirt
   particle_category: dirt
   particle_destroy_category: dirt
@@ -864,8 +913,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: noxnpc
-  damage_category: noxnpc
+{ Material Name: HWS_material_noxnpc
+  damage_category: HWS_material_noxnpc
   surface_category: alien
   particle_category: dirt
   particle_destroy_category: dirt
@@ -876,8 +925,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: strangeletnpc
-  damage_category: strangeletnpc
+{ Material Name: HWS_material_strangeletnpc
+  damage_category: HWS_material_strangeletnpc
   surface_category: human
   particle_category: alien
   particle_destroy_category: alien
@@ -891,8 +940,8 @@
 # ----------------------------------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------- Elemental Material Blocks
 # Placeholder visual material for Blocks for better readability
-{ Material Name: elements
-  damage_category: elements
+{ Material Name: HWS_material_elements
+  damage_category: HWS_material_elements
   surface_category: metal
   particle_category: metal
   particle_destroy_category: metal
@@ -903,8 +952,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: aquaitem
-  damage_category: aquaitem
+{ Material Name: HWS_material_aquaitem
+  damage_category: HWS_material_aquaitem
   surface_category: water
   particle_category: water
   particle_destroy_category: water
@@ -915,8 +964,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: terraitem
-  damage_category: terraitem
+{ Material Name: HWS_material_terraitem
+  damage_category: HWS_material_terraitem
   surface_category: stone
   particle_category: stone
   particle_destroy_category: stone
@@ -927,8 +976,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: pyroitem
-  damage_category: pyroitem
+{ Material Name: HWS_material_pyroitem
+  damage_category: HWS_material_pyroitem
   surface_category: water
   particle_category: water
   particle_destroy_category: water
@@ -939,8 +988,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: obsidianitem
-  damage_category: obsidianitem
+{ Material Name: HWS_material_obsidianitem
+  damage_category: HWS_material_obsidianitem
   surface_category: metal
   particle_category: metal
   particle_destroy_category: metal
@@ -951,8 +1000,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: luxitem
-  damage_category: luxitem
+{ Material Name: HWS_material_luxitem
+  damage_category: HWS_material_luxitem
   surface_category: dirt
   particle_category: dirt
   particle_destroy_category: dirt
@@ -963,8 +1012,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: noxitem
-  damage_category: noxitem
+{ Material Name: HWS_material_noxitem
+  damage_category: HWS_material_noxitem
   surface_category: alien
   particle_category: dirt
   particle_destroy_category: dirt
@@ -975,8 +1024,8 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
-{ Material Name: strangeletitem
-  damage_category: strangeletitem
+{ Material Name: HWS_material_strangeletitem
+  damage_category: HWS_material_strangeletitem
   surface_category: human
   particle_category: alien
   particle_destroy_category: alien
