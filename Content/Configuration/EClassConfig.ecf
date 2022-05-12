@@ -4338,7 +4338,7 @@
   HandItem: MeleeSpider03Baby
 }
 
-{ Entity Name: AlienBug01, Ref: PredatorBAITemplate
+{ +Entity Name: AlienBug01Old, Ref: PredatorBAITemplate
   Mesh: Enemies/AlienBugs/AlienBug01Prefab
   MeshDead: Enemies/AlienBugs/AlienBug01DeadPrefab
   HeadTransform: Head
@@ -4413,7 +4413,7 @@
 }
 
 
-{ Entity Name: AlienBug03, Ref: AlienBug01
+{ +Entity Name: AlienBug03, Ref: AlienBug01Old
   Mesh: Enemies/AlienBugs/AlienBug03Prefab
   MeshDead: Enemies/AlienBugs/AlienBug03DeadPrefab
   HeadTransform: Head

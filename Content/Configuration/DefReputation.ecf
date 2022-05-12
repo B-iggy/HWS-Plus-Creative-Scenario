@@ -19,66 +19,6 @@
   ARC: 12001
   EGS: 15000
 }
-{ Reputation Name: "Engineer:1"
-  Zirax: 0
-  Xenu: 0
-  Rados: 0
-  Epsilon: 0
-  Ghyst: 0
-  Serdu: 0
-  Abyssal: 8500
-  Talon: 16500
-  Polaris: 16500
-  Pirates: 12020
-  Kriel: 0
-  Trader: 16500
-  Colonists: 15000
-  Tesch: 13500
-  Farr: 16500
-  Wastelanders: 12001
-  ARC: 12001
-  EGS: 15000
-}
-{ Reputation Name: "Fighter:2"
-  Zirax: 0
-  Xenu: 0
-  Rados: 0
-  Epsilon: 0
-  Ghyst: 0
-  Serdu: 0
-  Abyssal: 8500
-  Talon: 16500
-  Polaris: 16500
-  Pirates: 12020
-  Kriel: 0
-  Trader: 16500
-  Colonists: 15000
-  Tesch: 13500
-  Farr: 16500
-  Wastelanders: 12001
-  ARC: 12001
-  EGS: 15000
-}
-{ Reputation Name: "Dealer:3"
-  Zirax: 0
-  Xenu: 0
-  Rados: 0
-  Epsilon: 0
-  Ghyst: 0
-  Serdu: 0
-  Abyssal: 8500
-  Talon: 16500
-  Polaris: 16500
-  Pirates: 12020
-  Kriel: 0
-  Trader: 16500
-  Colonists: 15000
-  Tesch: 13500
-  Farr: 16500
-  Wastelanders: 12001
-  ARC: 12001
-  EGS: 15000
-}
 
 # Matrix defining reputation points that you get when you do actions to this faction
 # Example: if you killed a member of Zirax your reputation is decreased by 300 points

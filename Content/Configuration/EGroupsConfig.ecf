@@ -1,41 +1,54 @@
 
-# Temporary
+
+# Note: Creature's _factions_ are set in the EClassConfig!
+# =======================
 
 
-{ EGroup Name: Spiders01few
-  Spider01: "1, 3"
-  SpawnInSameDirection:false /* if true, animals will spawn all in approximately same direction */ 
+
+
+
+# ================================================== 
+# BATTLE GROUPS - Spawned as a group, interacting with each other as a team
+
+# Behavioral AI ===
+
+{ EGroup Name: Alien02_03_BattleGroup
+  AlienBug03Group: "1, 2"               /* Will continuously respawn AlienBug02Group, and bombards player from afar */ 
+  AlienBug02Group: "5, 7"               /* Will try to protect AlienBug03Group */ 
+  SpawnInSameDirection:false            /* if true, animals will spawn all in approximately same direction */ 
 }
 
-{ EGroup Name: AlienCivilians1
-  AlienCivilian1: "1, 1"
+
+{ EGroup Name: Alien02_03_BattleGroupLarge
+  AlienBug03Group: "2, 3"               /* Will continuously respawn AlienBug02Group, and bombards player from afar */ 
+  AlienBug02Group: "10, 12"             /* Will try to protect AlienBug03Group */ 
+  SpawnInSameDirection:false
 }
 
-{ EGroup Name: AssaultCyborgs
-  AssaultCyborg: "2, 2"
-  AlienCivilian1: "1, 1"
-  SpawnInSameDirection:true /* if true, animals will spawn all in approximately same direction */ 
+
+
+# ================================================== 
+# HERDS
+
+# Behavioral AI ===
+{ EGroup Name: Parasaurs           
+  Parasaur02: "5, 6"
+  ParasaurBaby: "3, 5"
 }
 
-{ EGroup Name: ParasaursFew
-  Parasaur: "3, 5"
+{ EGroup Name: ParasaursFew        /* (Used on TemperateStarter (Crashsite), to better control max number of possible spawns) */ 
+  Parasaur02: "3, 5"
   ParasaurBaby: "1, 2"
 }
 
-{ EGroup Name: Alien02Test
-  AlienBug03Group: "2, 3"
-  AlienBug02Group: "4, 6"
-  SpawnInSameDirection:false /* if true, animals will spawn all in approximately same direction */
-}
-
-
-
-# HERDS
-
-# Behavioral AI
-{ EGroup Name: Parasaurs
+{ EGroup Name: ParasaursOld
   Parasaur: "5, 6"
   ParasaurBaby: "3, 5"
+}
+
+{ EGroup Name: ParasaursFewOld        /* (Used on TemperateStarter (Crashsite), to better control max number of possible spawns) */ 
+  Parasaur: "3, 5"
+  ParasaurBaby: "1, 2"
 }
 
 { EGroup Name: Oviraptors
@@ -45,7 +58,12 @@
 
 { EGroup Name: Spiders01
   Spider01: "3, 5"
-  SpawnInSameDirection:false /* if true, animals will spawn all in approximately same direction */
+  SpawnInSameDirection:false
+}
+
+{ EGroup Name: Spiders01few        /* (Used on TemperateStarter, to keep the threat small) */ 
+  Spider01: "1, 3"
+  SpawnInSameDirection:false
 }
 
 { EGroup Name: CaveWormGreyHerd
@@ -73,6 +91,11 @@
 }
 
 { EGroup Name: RaptorHerd
+  Raptor02: "5, 8"
+  SpawnInSameDirection:true 
+}
+
+{ EGroup Name: RaptorHerdOld
   Raptor: "5, 8"
   SpawnInSameDirection:true 
 }
@@ -82,38 +105,57 @@
   LizardMuleBaby: "3, 5"
 }
 
-## ================================================== 
+# ===============
+
+
 { EGroup Name: ZiraxMinigunPatrol
   ZiraxLaser: "1, 1"
-  ZiraxMale: "1, 1"
   ZiraxMinigun: "3, 4"
 }
 
+{ EGroup Name: ZiraxMinigunPatrolEasy
+  ZiraxMinigun: "4, 5"
+}
+
 { EGroup Name: ZiraxRocketPatrol
-  ZiraxLaser: "1, 2"
-  ZiraxMale: "1, 1"
-  ZiraxRocket: "2, 3"
+  ZiraxLaser: "1, 1"
+  ZiraxRocket: "3, 4"
+}
+
+{ EGroup Name: ZiraxRocketPatrolEasy
+  ZiraxMinigun: "1, 1"
+  ZiraxRocket: "3, 4"
 }
 
 { EGroup Name: ZiraxShotgunPatrol
-  ZiraxSniper: "1, 1"
-  ZiraxShotgun: "2, 2"
-  ZiraxMinigun: "1, 1"
+  ZiraxLaser: "1, 1"
+  ZiraxShotgun: "3, 4"
 }
 
+{ EGroup Name: ZiraxShotgunPatrolEasy
+  ZiraxMinigun: "1, 1"
+  ZiraxShotgun: "3, 4"
+}
+
+
 { EGroup Name: ZiraxMechanoidPatrol
-  AssaultMech: "1, 1"
+  ZiraxLaser: "1, 1"
   Mechanoid: "3, 5"
 }
 
 { EGroup Name: ZiraxRipperDogPatrol
-  ZiraxSniper: "1, 1"
+  ZiraxLaser: "1, 1"
+  RipperDog: "3, 5"
+}
+
+{ EGroup Name: ZiraxRipperDogPatrolEasy
+  ZiraxMinigun: "1, 1"
   RipperDog: "3, 5"
 }
 
 # Obsolete - keep for old playfield.yaml
 { EGroup Name: ZiraxOverseerPatrol
-  ZiraxMale: "1, 1"
+  ZiraxLaser: "1, 1"
   RipperDog: "3, 5"
   # OverseerGroup: "3, 5"
 }
@@ -124,33 +166,111 @@
   # CrawlerGroup: "3, 5"
 }
 
-# Normal AI
+# Polaris Patrols
 
-{ EGroup Name: TalonGuardianHerd
+{ EGroup Name: AssaultCyborgsCommandoPatrol     
+  AssaultCyborg: "3, 4"
+  AssaultCyborgCommando: "1,1"
+  SpawnInSameDirection:true
+}
+
+{ EGroup Name: AlienSoldierShotgunCommandoPatrol     
+  AssaultCyborgCommando: "1, 1"
+  SoldierAlienShotgun: "3,4"
+  SpawnInSameDirection:true
+}
+
+{ EGroup Name: AlienSoldierRifleCommandoPatrol     
+  SoldierAlienAssaultRifle: "3, 4"
+  AssaultCyborgCommando: "1,2"
+  SpawnInSameDirection:true
+}
+
+# Normal AI ===
+
+{ EGroup Name: AssaultCyborgs
+  AssaultCyborgSentinel: "2, 2"
+  AlienCivilian1: "1, 1"
+  SpawnInSameDirection:true
+}
+
+
+{ EGroup Name: TalonGuardianHerd              /* Talon faction */ 
   TalonGuardianGroup: "3, 4"
   TalonGuardianCrossbowGroup: "1, 3"
 }
 
-## ================================================== 
+{ EGroup Name: AssaultCyborgsCommandoHerd     /* Polaris Faction. */ 
+  AssaultCyborg: "2, 2"
+  AssaultCyborgCommando: "1, 1"
+  SpawnInSameDirection:true
+}
+
+{ EGroup Name: AssaultCyborgsDamagedHerd      /* Pirate Faction. */ 
+  AssaultCyborgDamaged: "2, 3"
+  SpawnInSameDirection:true
+}
+
+{ EGroup Name: HexapodsInfectedHerd           /* 'TheLegacy' faction. - Aggressive. */ 
+  HexapodInfected: "2, 3"
+}
+
+{ EGroup Name: AlienAssassinsInfectedHerd     /* 'TheLegacy' faction. - Aggressive. */
+  AlienAssassinInfected: "2, 3"
+}
+
+
+{ EGroup Name: HumanSoldiersInfectedHerd      /* 'TheLegacy' faction. - Aggressive. */ 
+  SoldierHumanMaleInfected: "1, 1"
+  SoldierHumanMale2Infected: "2, 3"
+}
+
+{ EGroup Name: ZiraxInfectedHerd              /* 'TheLegacy' faction. - Aggressive. */
+  ZiraxInfectedBlue: "2, 3"
+  ZiraxInfectedYellow: "1, 1"
+  TotalHorror: "1,2"
+  SpawnInSameDirection:true
+}
+
+
+
+
+
+
+# ================================================== 
 # Individual behavior but spawned as a group  
 
+
 # Behavioral AI
-{ EGroup Name: AlienBugs01
-  AlienBug01: "3, 5"
+
+{ EGroup Name: AlienBugs01               /* (Territorial) */
+  AlienBug01V2: "3, 5"
   SpawnInSameDirection:false
 }
+
+{ EGroup Name: AlienBugs01Old           /*  (Non-Territorial) */
+  AlienBug01Old: "3, 5"
+  SpawnInSameDirection:false
+}
+
 
 { EGroup Name: LizardMules
   LizardMule: "1, 3"
   LizardMuleBaby: "2, 5"
 }
-	
+
 # Normal AI
 
-## ================================================== 
-# Individuals 
 
-# Behavioral AI
+
+
+# ================================================== 
+# (Mostly) INDIVIDUALS
+
+
+
+# Behavioral AI ===
+
 { EGroup Name: Creepys
   Creepy: "1, 1"
 }
@@ -171,12 +291,19 @@
   AlienBug03: "1, 1"
 }
 
-# Normal AI
+
+
+# Normal AI ===
+
 { EGroup Name: Megalonopses
   MegalonopsGrey: "1, 1"
 }
 
 { EGroup Name: Raptors
+  Raptor02: "1, 1"
+}
+
+{ EGroup Name: RaptorsOld
   Raptor: "1, 1"
 }
 
@@ -257,7 +384,7 @@
 }
 
 { EGroup Name: AlienBugs01
-  AlienBug01: "1, 1"
+  AlienBug01V2: "1, 1"
 }
 
 { EGroup Name: AlienBugs02
@@ -276,155 +403,105 @@
   Spider03: "1, 1"
 }
 
-{ EGroup Name: Hexapods
+
+
+
+{ EGroup Name: AlienCivilians1
+  AlienCivilian1: "1, 1"
+}
+
+
+
+{ EGroup Name: Hexapods               /* Kriel Faction */ 
   Hexapod: "1, 1"
 }
 
-{ EGroup Name: AlienAssassinGreys
+{ EGroup Name: AlienAssassinGreys     /* Kriel Faction */ 
   AlienAssassinGrey: "1, 1"
 }
 
-{ EGroup Name: AlienAssassinReds
+{ EGroup Name: AlienAssassinReds      /* Kriel Faction */ 
   AlienAssassinRed: "1, 1"
 }
 
-{ EGroup Name: TalonGuardians
+
+
+{ EGroup Name: TalonGuardians         /* Talon Faction */ 
   TalonGuardian: "1, 1"
 }
 
-{ EGroup Name: Crawlers
+{ EGroup Name: Crawlers               /* Talon Faction */ 
   Crawler: "1, 1"
 }
 
-# =============================================== Project Eden Custom Groups - RG Compatibility
 
-# =============================================== Zirax
 
-{ EGroup Name: Eden_ZiraxPatrolSniper
-  ZiraxSniper: "3, 3"
-  ZiraxShotgun: "1, 1"
+{ EGroup Name: HexapodsInfected                      /* 'TheLegacy' faction. - Aggressive. */ 
+  HexapodInfected: "1, 1"
 }
 
-{ EGroup Name: Eden_ZiraxRipperDogPatrolMinigun
-  ZiraxMinigun: "1, 1"
-  RipperDog: "2, 4"
+{ EGroup Name: AlienAssassinGreysInfected            /* 'TheLegacy' faction. - Aggressive. */
+  AlienAssassinInfected: "1, 1"
 }
 
-{ EGroup Name: Eden_ZiraxRipperDogPatrolSniper
-  ZiraxSniper: "1, 1"
-  RipperDog: "2, 4"
+
+
+{ EGroup Name: SoldierAliensInfected           /* 'TheLegacy' faction. - Aggressive. */
+  SoldierAlienInfected: "1, 1"
 }
 
-# =============================================== Talon
-{ EGroup Name: Eden_TalonGuardianHerdMega
-  TalonGuardianGroup: "4, 7"
-  TalonGuardianCrossbowGroup: "4, 7"
+
+
+{ EGroup Name: TalonGuardiansCrossbowInfected     /* 'TheLegacy' faction. - Aggressive. */
+  TalonGuardianInfectedCrossbow: "1, 1"
 }
 
-{ EGroup Name: Eden_TalonCrossbowPatrol
-  TalonGuardianCrossbowGroup: "5, 8"
+{ EGroup Name: TalonGuardiansGreenInfected        /* 'TheLegacy' faction. - Aggressive. */
+  TalonGuardianInfectedGreen: "1, 1"
 }
 
-{ EGroup Name: Eden_TalonShamanPatrol
-  TalonGuardianShamanBaseAttack: "1, 1"
-  TalonGuardianGroup: "1, 3"
-  TalonGuardianCrossbowGroup: "3, 5"
+{ EGroup Name: TalonGuardiansBlueInfected         /* 'TheLegacy' faction. - Aggressive. */
+  TalonGuardianInfectedBlue: "1, 1"
 }
 
-{ EGroup Name: Eden_TalonCrawlerPatrol
-  TalonGuardianGroup: "1, 2"
-  Crawler: "4, 7"
+{ EGroup Name: TalonGuardiansRedInfected          /* 'TheLegacy' faction. - Aggressive. */
+  TalonGuardianInfectedRed: "1, 1"
 }
 
-{ EGroup Name: Eden_TalonLizardMulePatrol
-  TalonGuardianGroup: "1, 2"
-  LizardMule: "4, 8"
-  LizardMuleBaby: "2, 4"
+
+{ EGroup Name: SoldierHumanMalesInfected          /* 'TheLegacy' faction. - Aggressive. */
+  SoldierHumanMaleInfected: "1, 1"
 }
 
-# =============================================== Predator
-
-{ EGroup Name: Eden_AlienBugs03Herd
-  AlienBug03: "4, 6"
+{ EGroup Name: SoldierHumanMales2Infected         /* 'TheLegacy' faction. - Aggressive. */
+  SoldierHumanMale2Infected: "1, 1"
 }
 
-{ EGroup Name: Eden_AlienBugs03HerdMega
-  AlienBug03: "6, 9"
+
+{ EGroup Name: ZiraxBluesInfected                 /* 'TheLegacy' faction. - Aggressive. */
+  ZiraxInfectedBlue: "1, 1"
 }
 
-{ EGroup Name: Eden_RaptorsNightHerdMega
-  RaptorNight: "7, 12"
+{ EGroup Name: ZiraxGreensInfected                /* 'TheLegacy' faction. - Aggressive. */
+  ZiraxInfectedGreen: "1, 1"
 }
 
-{ EGroup Name: Eden_Spiders03HerdMega
-  Spider03: "5, 8"
+{ EGroup Name: ZiraxRedsInfected                  /* 'TheLegacy' faction. - Aggressive. */
+  ZiraxInfectedRed: "1, 1"
 }
 
-{ EGroup Name: Eden_SpidersHerdMega
-  Spider01: "3, 6"
-  Spider02: "2, 3"
-  Spider03: "2, 3"
+{ EGroup Name: ZiraxYellowsInfected               /* 'TheLegacy' faction. - Aggressive. */
+  ZiraxInfectedYellow: "1, 1"
 }
 
-# =============================================== Alien
-{ EGroup Name: Eden_OverseerPatrol
-  Overseer: "1, 1"
-  TotalHorror: "2, 3"
+{ EGroup Name: ZiraxPurplesInfected               /* 'TheLegacy' faction. - Aggressive. */
+  ZiraxInfectedPurple: "1, 1"
 }
 
-# Golems
-{ EGroup Name: Eden_GolemsIceMega
-  GolemIce: "6, 8"
+{ EGroup Name: ZiraxCommandersInfected            /* 'TheLegacy' faction. - Aggressive. */
+  ZiraxInfectedCommander: "1, 1"
 }
 
-{ EGroup Name: Eden_GolemsDesertMega
-  GolemDesert: "6, 8"
-}
 
-{ EGroup Name: Eden_GolemsSwampMega
-  GolemSwamp: "6, 8"
-}
-## =============== Elite Patrols ======================
-{ EGroup Name: ZiraxEliteGroundPatrol
-  ZiraxEliteSoldier: "2, 3"
-  ZiraxEliteShotgun: "1, 2"
-  ZiraxSniper: "1, 2"
-}
 
-{ EGroup Name: ZiraxEliteAAPatrol
-  ZiraxLaser: "1, 2"
-  ZiraxElitePlasma: "2, 3"
-  ZiraxRocket: "2, 3"
-}
 
-{ EGroup Name: ZiraxEliteCQCPatrol
-  ZiraxMale: "1, 1"
-  ZiraxShotgun: "2, 3"
-  ZiraxEliteShotgun: "1, 2"
-}
-
-{ EGroup Name: ZiraxHeavyMechanoidPatrol
-  AssaultMech: "2, 4"
-  ZiraxElitePlasma: "1, 2"
-}
-
-{ EGroup Name: ZiraxElitePlatoon
-  ZiraxMinigun: "8, 12"
-  ZiraxEliteSoldier: "5, 8"
-}
-
-{ EGroup Name: ZiraxEliteSniper
-  ZiraxEliteMarksman: "1, 1"
-}
-
-{ EGroup Name: ZiraxEliteRanged
-  ZiraxSniper: "1, 2"
-  ZiraxEliteMarksman: "1, 2"
-}
-
-{ EGroup Name: ZiraxEliteSquad
-  ZiraxEliteSoldier: "1, 1"
-  ZiraxEliteMarksman: "1, 1"
-  ZiraxEliteShotgun: "1, 1"
-  ZiraxElitePlasma: "1, 1"
-}

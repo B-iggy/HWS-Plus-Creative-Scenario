@@ -14974,7 +14974,8 @@
   BlastRadius: 2
   BlastDamage: 80
 
-  UpgradeTo: RCSBlockMS_T2, display: true
+  UpgradeTo: null, display: false
+  DowngradeTo: RCSBlockMS, display: true
   UnlockCost: 5, display: true
   UnlockLevel: 10, display: true
   TechTreeParent: RCSBlockMS
