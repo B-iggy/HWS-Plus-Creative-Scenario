@@ -64,4 +64,8 @@ Constructive feedback about the HWS+ Config files are most welcome in form of ["
 
 ## Known problems
 
+* sounds are too loud.
+
+* Elemental Hand Weapons do not shoot sometimes (need to find a repro). After a relog they work again.
+
 * if you try to access anything related to suitprops (for example the SnowmanHead), you get a red error in the console. I will not share my suitprops bundle as long as it's not needed.

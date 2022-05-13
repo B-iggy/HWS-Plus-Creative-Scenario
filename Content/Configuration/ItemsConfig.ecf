@@ -4131,7 +4131,7 @@
   Meshfile: @models/Blocks/WeaponsShip/WeaponSSLaserPrefab
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Canhold: false
   Material: HWS_material_weapon_energy, display: true
@@ -13911,7 +13911,7 @@
   PropHead: @hws_headdecorations/HWSValentinesDayGlasses
   ShowUser: Yes
   Category: Deco Blocks
-  Crosshair: @@crosshairs/crosshair_valentines_day_glasses
+  Crosshair: @hws_crosshairs/crosshair_valentines_day_glasses
 
   { Child 1
     Class: Zoom
@@ -14375,7 +14375,7 @@
   MarketPrice: 1050, display: true
   #CustomIcon: RocketLauncher
   CustomIcon: GrenadeLauncher
-  Crosshair: @@crosshairs/crosshair_grenade_launcher
+  Crosshair: @hws_crosshairs/crosshair_grenade_launcher
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -14652,7 +14652,7 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 0.5, type: float, display: true, formatter: ROF
-    Range: 577, display: true
+    Range: 500, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.5, display: true
     CameraShake: 3
@@ -14696,8 +14696,8 @@
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 0.5, type: float, display: true, formatter: ROF
-    Range: 577, display: true
+    ROF: 1, type: float, display: true, formatter: ROF
+    Range: 500, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.5, display: true
     CameraShake: 3
@@ -14740,8 +14740,8 @@
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 0.5, type: float, display: true, formatter: ROF
-    Range: 577, display: true
+    ROF: 1, type: float, display: true, formatter: ROF
+    Range: 500, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.5, display: true
     CameraShake: 3
@@ -14784,8 +14784,8 @@
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 0.5, type: float, display: true, formatter: ROF
-    Range: 577, display: true
+    ROF: 1, type: float, display: true, formatter: ROF
+    Range: 500, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.5, display: true
     CameraShake: 3
@@ -14828,8 +14828,8 @@
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 0.5, type: float, display: true, formatter: ROF
-    Range: 577, display: true
+    ROF: 1, type: float, display: true, formatter: ROF
+    Range: 1000, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.5, display: true
     CameraShake: 3
@@ -14872,8 +14872,8 @@
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 0.5, type: float, display: true, formatter: ROF
-    Range: 577, display: true
+    ROF: 1, type: float, display: true, formatter: ROF
+    Range: 500, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.5, display: true
     CameraShake: 3
@@ -14916,8 +14916,8 @@
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 0.5, type: float, display: true, formatter: ROF
-    Range: 577, display: true
+    ROF: 1, type: float, display: true, formatter: ROF
+    Range: 500, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.5, display: true
     CameraShake: 3
@@ -14997,7 +14997,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     Buff: "Stunned,Mutilation"
     Buff_chance: "1.0,0.9"
 
@@ -15030,7 +15030,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -15063,7 +15063,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -15096,7 +15096,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -15129,7 +15129,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -15162,7 +15162,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -15550,7 +15550,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     Buff: "Stunned,Mutilation"
     Buff_chance: "1.0,0.9"
 
@@ -15583,7 +15583,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -15616,7 +15616,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -15649,7 +15649,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -15682,7 +15682,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -15715,7 +15715,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -15744,7 +15744,7 @@
   { Child 0
     Class: LauncherSS # Projectile Splash
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 500, display: false
     RangeSpace: 1000, display: false
     AmmoCapacity: 100, display: true
@@ -15769,7 +15769,7 @@
   { Child 0
     Class: LauncherSS # Projectile Splash
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 2, type: float, display: true, formatter: ROF
     Range: 650, display: false
     RangeSpace: 1400, display: false
     AmmoCapacity: 111, display: true
@@ -15795,7 +15795,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 1.75, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -15866,7 +15866,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -15927,7 +15927,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 650, display: false
     RangeSpace: 1400, display: false
     AmmoCapacity: 111, display: true
@@ -15953,7 +15953,7 @@
     Class: Ranged
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -15987,7 +15987,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 0.1, type: float, display: true, formatter: ROF
+    ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16024,7 +16024,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 6, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16085,7 +16085,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 650, display: false
     RangeSpace: 1400, display: false
     AmmoCapacity: 111, display: true
@@ -16111,7 +16111,7 @@
     Class: Ranged
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16145,7 +16145,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 0.1, type: float, display: true, formatter: ROF
+    ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16181,7 +16181,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 6, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16242,7 +16242,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 650, display: false
     RangeSpace: 1400, display: false
     AmmoCapacity: 111, display: true
@@ -16268,7 +16268,7 @@
     Class: Ranged
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16302,7 +16302,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 0.1, type: float, display: true, formatter: ROF
+    ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16338,7 +16338,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 6, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16399,7 +16399,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 650, display: false
     RangeSpace: 1400, display: false
     AmmoCapacity: 111, display: true
@@ -16425,7 +16425,7 @@
     Class: Ranged
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16459,7 +16459,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 0.1, type: float, display: true, formatter: ROF
+    ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16495,7 +16495,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 6, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16556,7 +16556,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 650, display: false
     RangeSpace: 1400, display: false
     AmmoCapacity: 111, display: true
@@ -16582,7 +16582,7 @@
     Class: Ranged
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16616,7 +16616,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 0.1, type: float, display: true, formatter: ROF
+    ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16652,7 +16652,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 6, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16713,7 +16713,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 650, display: false
     RangeSpace: 1400, display: false
     AmmoCapacity: 111, display: true
@@ -16739,7 +16739,7 @@
     Class: Ranged
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16773,7 +16773,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 0.1, type: float, display: true, formatter: ROF
+    ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16810,7 +16810,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 5, type: float, display: true, formatter: ROF
+    ROF: 6, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
@@ -16878,7 +16878,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -16919,7 +16919,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -16961,7 +16961,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17031,7 +17031,7 @@
   CustomIcon: HWSAquaGunCVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17073,7 +17073,7 @@
   CustomIcon: HWSAquaGunCVT3
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17142,7 +17142,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17183,7 +17183,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17225,7 +17225,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17295,7 +17295,7 @@
   CustomIcon: HWSTerraGunCVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17337,7 +17337,7 @@
   CustomIcon: HWSTerraGunCVT3
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17406,7 +17406,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17447,7 +17447,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17489,7 +17489,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17559,7 +17559,7 @@
   CustomIcon: HWSPyroGunCVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17601,7 +17601,7 @@
   CustomIcon: HWSPyroGunCVT3
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17670,7 +17670,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17711,7 +17711,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17753,7 +17753,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17823,7 +17823,7 @@
   CustomIcon: HWSObsidianGunCVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17865,7 +17865,7 @@
   CustomIcon: HWSObsidianGunCVT3
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -17913,7 +17913,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 6.00, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1650, display: true
     Automatic: true
@@ -17934,13 +17934,13 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 6.00, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1650, display: true
     Damage: 2000, display: true
@@ -17975,7 +17975,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18017,13 +18017,13 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 6.00, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1650, display: true
     Damage: 2000, display: true
@@ -18087,7 +18087,7 @@
   CustomIcon: HWSLuxGunCVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18129,7 +18129,7 @@
   CustomIcon: HWSLuxGunCVT3
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18198,7 +18198,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18239,7 +18239,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18281,7 +18281,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18351,7 +18351,7 @@
   CustomIcon: HWSNoxGunCVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18393,7 +18393,7 @@
   CustomIcon: HWSNoxGunCVT3
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18462,7 +18462,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18503,7 +18503,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18545,7 +18545,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18615,7 +18615,7 @@
   CustomIcon: HWSStrangeletGunCVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18657,7 +18657,7 @@
   CustomIcon: HWSStrangeletGunCVT3
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18735,7 +18735,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18774,7 +18774,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18814,7 +18814,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18860,7 +18860,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1100, display: true
     Automatic: true
@@ -18883,7 +18883,7 @@
   MarketPrice: 1, display: true
   Meshfile: @hws_blockmodels/HWSElementalGunHVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18950,7 +18950,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -18990,7 +18990,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -19030,7 +19030,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -19076,7 +19076,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1100, display: true
     Automatic: true
@@ -19098,12 +19098,12 @@
   CustomIcon: HWSTerraGunHVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1100, display: true
     Damage: 900, display: true
@@ -19165,7 +19165,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -19205,7 +19205,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -19245,7 +19245,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -19291,7 +19291,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1100, display: true
     Automatic: true
@@ -19313,12 +19313,12 @@
   CustomIcon: HWSPyroGunHVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1100, display: true
     Damage: 900, display: true
@@ -19379,7 +19379,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -19419,7 +19419,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -19459,7 +19459,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -19505,7 +19505,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1100, display: true
     Automatic: true
@@ -19527,12 +19527,12 @@
   CustomIcon: HWSObsidianGunHVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1100, display: true
     Damage: 900, display: true
@@ -19593,7 +19593,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -19633,7 +19633,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -19673,7 +19673,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -19719,7 +19719,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1100, display: true
     Automatic: true
@@ -19741,12 +19741,12 @@
   CustomIcon: HWSLuxGunHVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1100, display: true
     Damage: 900, display: true
@@ -19807,7 +19807,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -19847,7 +19847,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -19887,7 +19887,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -19933,7 +19933,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1100, display: true
     Automatic: true
@@ -19955,12 +19955,12 @@
   CustomIcon: HWSNoxGunHVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1100, display: true
     Damage: 900, display: true
@@ -20022,7 +20022,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20062,7 +20062,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20102,7 +20102,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20149,7 +20149,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1100, display: true
     Automatic: true
@@ -20171,12 +20171,12 @@
   CustomIcon: HWSStrangeletGunHVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 1100, display: true
     Damage: 900, display: true
@@ -20250,7 +20250,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20319,7 +20319,7 @@
   CustomIcon: HWSAquaGunSVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20359,7 +20359,7 @@
   CustomIcon: HWSAquaGunSVT3
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20401,7 +20401,7 @@
   CustomIcon: HWSAquaGunSVT4
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20469,7 +20469,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20537,7 +20537,7 @@
   CustomIcon: HWSTerraGunSVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20578,7 +20578,7 @@
   CustomIcon: HWSTerraGunSVT3
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20620,7 +20620,7 @@
   CustomIcon: HWSTerraGunSVT4
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20688,7 +20688,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20756,7 +20756,7 @@
   CustomIcon: HWSPyroGunSVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20797,7 +20797,7 @@
   CustomIcon: HWSPyroGunSVT3
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20838,7 +20838,7 @@
   CustomIcon: HWSPyroGunSVT4
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20906,7 +20906,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -20975,7 +20975,7 @@
   CustomIcon: HWSObsidianGunSVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21016,7 +21016,7 @@
   CustomIcon: HWSObsidianGunSVT3
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21057,7 +21057,7 @@
   CustomIcon: HWSObsidianGunSVT4
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21126,7 +21126,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21195,7 +21195,7 @@
   CustomIcon: HWSLuxGunSVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21236,7 +21236,7 @@
   CustomIcon: HWSLuxGunSVT3
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21277,7 +21277,7 @@
   CustomIcon: HWSLuxGunSVT4
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21345,7 +21345,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21414,7 +21414,7 @@
   CustomIcon: HWSNoxGunSVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21455,7 +21455,7 @@
   CustomIcon: HWSNoxGunSVT3
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21496,7 +21496,7 @@
   CustomIcon: HWSNoxGunSVT4
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21564,7 +21564,7 @@
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21633,7 +21633,7 @@
   CustomIcon: HWSStrangeletGunSVT2
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21674,7 +21674,7 @@
   CustomIcon: HWSStrangeletGunSVT3
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21715,7 +21715,7 @@
   CustomIcon: HWSStrangeletGunSVT4
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  Crosshair: @@crosshairs/default_ship
+  Crosshair: @hws_crosshairs/default_ship
   ShowUser: NoButCSV  # reported by HWS
   Category: Weapons/Items
   { Child 0
@@ -21763,7 +21763,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 748, display: true
     RangeSpace: 1100, display: true
     AmmoCapacity: 100, display: false      # no need to display since unlimited ammo
@@ -22471,7 +22471,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 0.8, type: float, display: true, formatter: ROF
+    ROF: 1, type: float, display: true, formatter: ROF
     Range: 748, display: true
     RangeSpace: 1100, display: true
     Automatic: true
@@ -22499,7 +22499,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 0.8, type: float, display: true, formatter: ROF
+    ROF: 2, type: float, display: true, formatter: ROF
     Range: 748, display: true
     RangeSpace: 1100, display: true
     AmmoCapacity: 150, display: false      # no need to display since unlimited ammo
@@ -22524,7 +22524,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 0.8, type: float, display: true, formatter: ROF
+    ROF: 2, type: float, display: true, formatter: ROF
     Range: 748, display: true
     RangeSpace: 1100, display: true
     AmmoCapacity: 150, display: false      # no need to display since unlimited ammo
@@ -22549,7 +22549,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 0.8, type: float, display: true, formatter: ROF
+    ROF: 2, type: float, display: true, formatter: ROF
     Range: 748, display: true
     RangeSpace: 1100, display: true
     AmmoCapacity: 150, display: false      # no need to display since unlimited ammo
@@ -22574,7 +22574,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 0.8, type: float, display: true, formatter: ROF
+    ROF: 2, type: float, display: true, formatter: ROF
     Range: 748, display: true
     RangeSpace: 1100, display: true
     AmmoCapacity: 150, display: false      # no need to display since unlimited ammo
@@ -22599,7 +22599,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 0.8, type: float, display: true, formatter: ROF
+    ROF: 2, type: float, display: true, formatter: ROF
     Range: 748, display: true
     RangeSpace: 1100, display: true
     AmmoCapacity: 150, display: false      # no need to display since unlimited ammo
@@ -22624,7 +22624,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 0.8, type: float, display: true, formatter: ROF
+    ROF: 2, type: float, display: true, formatter: ROF
     Range: 748, display: true
     RangeSpace: 1100, display: true
     AmmoCapacity: 150, display: false      # no need to display since unlimited ammo
@@ -23492,7 +23492,7 @@
     Range: 500, display: true
     SpeedSpace: 300, display: true
     RangeSpace: 1000, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -23579,7 +23579,7 @@
     Range: 500, display: true
     SpeedSpace: 300, display: true
     RangeSpace: 1000, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -23666,7 +23666,7 @@
     Range: 500, display: true
     SpeedSpace: 300, display: true
     RangeSpace: 1000, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -23753,7 +23753,7 @@
     Range: 500, display: true
     SpeedSpace: 300, display: true
     RangeSpace: 1000, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -23840,7 +23840,7 @@
     Range: 750, display: true
     SpeedSpace: 450, display: true
     RangeSpace: 1500, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -23927,7 +23927,7 @@
     Range: 500, display: true
     SpeedSpace: 300, display: true
     RangeSpace: 1000, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24014,7 +24014,7 @@
     Range: 500, display: true
     SpeedSpace: 300, display: true
     RangeSpace: 1000, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24102,7 +24102,7 @@
     Range: 450, display: true
     SpeedSpace: 200, display: true
     RangeSpace: 800, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24189,7 +24189,7 @@
     Range: 450, display: true
     SpeedSpace: 200, display: true
     RangeSpace: 800, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24276,7 +24276,7 @@
     Range: 450, display: true
     SpeedSpace: 200, display: true
     RangeSpace: 800, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24363,7 +24363,7 @@
     Range: 450, display: true
     SpeedSpace: 200, display: true
     RangeSpace: 800, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24450,7 +24450,7 @@
     Range: 700, display: true
     SpeedSpace: 300, display: true
     RangeSpace: 1200, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24537,7 +24537,7 @@
     Range: 450, display: true
     SpeedSpace: 200, display: true
     RangeSpace: 800, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24624,7 +24624,7 @@
     Range: 450, display: true
     SpeedSpace: 200, display: true
     RangeSpace: 800, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24712,7 +24712,7 @@
     Range: 400, display: true
     SpeedSpace: 200, display: true
     RangeSpace: 900, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24800,7 +24800,7 @@
     Range: 400, display: true
     SpeedSpace: 200, display: true
     RangeSpace: 900, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24887,7 +24887,7 @@
     Range: 400, display: true
     SpeedSpace: 200, display: true
     RangeSpace: 900, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24974,7 +24974,7 @@
     Range: 400, display: true
     SpeedSpace: 200, display: true
     RangeSpace: 900, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25061,7 +25061,7 @@
     Range: 600, display: true
     SpeedSpace: 300, display: true
     RangeSpace: 1350, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25148,7 +25148,7 @@
     Range: 400, display: true
     SpeedSpace: 200, display: true
     RangeSpace: 900, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25235,7 +25235,7 @@
     Range: 400, display: true
     SpeedSpace: 200, display: true
     RangeSpace: 900, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25325,7 +25325,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25359,7 +25359,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25393,7 +25393,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25427,7 +25427,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25461,7 +25461,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25495,7 +25495,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25529,7 +25529,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25564,7 +25564,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25598,7 +25598,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25632,7 +25632,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25666,7 +25666,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25700,7 +25700,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25734,7 +25734,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25768,7 +25768,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25803,7 +25803,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25837,7 +25837,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25871,7 +25871,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25905,7 +25905,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25939,7 +25939,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25973,7 +25973,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26007,7 +26007,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26042,7 +26042,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26076,7 +26076,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26110,7 +26110,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26144,7 +26144,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26178,7 +26178,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26212,7 +26212,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26246,7 +26246,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26281,7 +26281,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26315,7 +26315,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26349,7 +26349,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26383,7 +26383,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26417,7 +26417,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26451,7 +26451,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26485,7 +26485,7 @@
     Range: 577, display: true
     SpeedSpace: 154, display: true
     RangeSpace: 1155, display: true
-    Ballistic: false
+    Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -26877,7 +26877,7 @@
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 0.1, type: float, display: true, formatter: ROF
+    ROF: 1, type: float, display: true, formatter: ROF
     Damage: 1100, display: true
     Range: 500, display: false
     NoiseStrength: 190, display: false
@@ -26921,7 +26921,7 @@
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 0.1, type: float, display: true, formatter: ROF
+    ROF: 1, type: float, display: true, formatter: ROF
     Damage: 1100, display: true
     Range: 500, display: false
     NoiseStrength: 190, display: false
@@ -26965,7 +26965,7 @@
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 0.1, type: float, display: true, formatter: ROF
+    ROF: 1, type: float, display: true, formatter: ROF
     Damage: 1100, display: true
     Range: 500, display: false
     NoiseStrength: 190, display: false
@@ -27009,7 +27009,7 @@
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 0.5, type: float, display: true, formatter: ROF
+    ROF: 1, type: float, display: true, formatter: ROF
     Damage: 1100, display: true
     Range: 500, display: false
     NoiseStrength: 190, display: false
