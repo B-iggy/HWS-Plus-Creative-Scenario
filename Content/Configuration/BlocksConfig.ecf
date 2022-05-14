@@ -27416,10 +27416,10 @@
   EnergyIn: 25000, type: int, display: true, formatter: Watt
   CPUIn: 24700, type: int, display: true
   EnergyInIdle: 1000, type: int, display: true, formatter: Watt
-  ShieldCapacity: 15000000, type: int, display: true
+  ShieldCapacity: 1500000, type: int, display: true
   ShieldRecharge: 214286, type: int, display: true # full in 70 sec
-  ShieldCooldown: 25, type: int, display: true
-  ShieldPerCrystal: 37500, type: int, display: true # 400 Pentaxid in total
+  ShieldCooldown: 10, type: int, display: true
+  ShieldPerCrystal: 300, type: int, display: true # 400 Pentaxid in total
   UpgradeTo: ShieldGeneratorBAT2, display: true
   BlastParticleIndex: 8
   BlastRadius: 2
@@ -27446,7 +27446,7 @@
   EnergyIn: 20000, type: int, display: true, formatter: Watt
   CPUIn: 18100, type: int, display: true
   EnergyInIdle: 800, type: int, display: true, formatter: Watt
-  ShieldCapacity: 20000000, type: int, display: true
+  ShieldCapacity: 1000000, type: int, display: true
   ShieldRecharge: 200000, type: int, display: true      # full in 100 sec
   ShieldCooldown: 45, type: int, display: true
   ShieldPerCrystal: 41666, type: int, display: true # 600 Pentaxid in total
@@ -27473,7 +27473,7 @@
   EnergyIn: 6000, type: int, display: true, formatter: Watt
   CPUIn: 16300, type: int, display: true
   EnergyInIdle: 400, type: int, display: true, formatter: Watt
-  ShieldCapacity: 3000000, type: int, display: true
+  ShieldCapacity: 250000, type: int, display: true
   ShieldRecharge: 23077, type: int, display: true # full in 130 sec
   ShieldCooldown: 55, type: int, display: true
   ShieldPerCrystal: 15000, type: int, display: true # 200 Pentaxid in total
@@ -27499,7 +27499,7 @@
   EnergyIn: 40000, type: int, display: true, formatter: Watt
   CPUIn: 33100, type: int, display: true
   EnergyInIdle: 1600, type: int, display: true, formatter: Watt
-  ShieldCapacity: 40000000, type: int, display: true
+  ShieldCapacity: 2000000, type: int, display: true
   ShieldRecharge: 571429, type: int, display: true # full in 70 sec
   ShieldCooldown: 35, type: int, display: true
   ShieldPerCrystal: 57143, type: int, display: true # 700 Pentaxid in total
@@ -27527,7 +27527,7 @@
   EnergyIn: 70000, type: int, display: true, formatter: Watt
   CPUIn: 45500, type: int, display: true
   EnergyInIdle: 1500, type: int, display: true, formatter: Watt
-  ShieldCapacity: 30000000, type: int, display: true
+  ShieldCapacity: 3000000, type: int, display: true
   ShieldRecharge: 750000, type: int, display: true # full in 40 sec
   ShieldCooldown: 20, type: int, display: true
   ShieldPerCrystal: 60000, type: int, display: true # 500 Pentaxid in total
@@ -28041,7 +28041,7 @@
   EnergyIn: 5000, type: int, display: true, formatter: Watt
   EnergyInIdle: 500, type: int, display: true, formatter: Watt
   CPUIn: 15400, type: int, display: true
-  ShieldCapacity: 4000000, type: int, display: true
+  ShieldCapacity: 500000, type: int, display: true
   ShieldRecharge: 30770, type: int, display: true # full in 130 sec
   ShieldCooldown: 55, type: int, display: true
   ShieldPerCrystal: 13333, type: int, display: true # 300 Pentaxid in total
@@ -30923,7 +30923,7 @@
   Info: InfoHWSAquaTurret
   AllowPlacingAt: Base, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 
   UnlockCost: -1, display: true
@@ -30963,7 +30963,7 @@
   BlastParticleIndex: 11
   BlastRadius: 2
   BlastDamage: 10000
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   EnergyIn: 100, type: int, display: true, formatter: Watt
   HitPoints: 15000, type: int, display: true
 
@@ -31004,7 +31004,7 @@
   BlastParticleIndex: 11
   BlastRadius: 2
   BlastDamage: 10000
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   EnergyIn: 100, type: int, display: true, formatter: Watt
   HitPoints: 15000, type: int, display: true
 
@@ -31044,7 +31044,7 @@
   BlastParticleIndex: 11
   BlastRadius: 2
   BlastDamage: 10000
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   EnergyIn: 100, type: int, display: true, formatter: Watt
   HitPoints: 15000, type: int, display: true
 
@@ -31084,7 +31084,7 @@
   BlastParticleIndex: 11
   BlastRadius: 2
   BlastDamage: 10000
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   EnergyIn: 100, type: int, display: true, formatter: Watt
   HitPoints: 15000, type: int, display: true
 
@@ -31124,7 +31124,7 @@
   BlastParticleIndex: 11
   BlastRadius: 2
   BlastDamage: 10000
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   EnergyIn: 100, type: int, display: true, formatter: Watt
   HitPoints: 15000, type: int, display: true
 
@@ -31155,7 +31155,7 @@
   AllowPlacingAt: Base, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -31195,7 +31195,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 22500, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31231,7 +31231,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 22500, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31267,7 +31267,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 22500, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31303,7 +31303,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 22500, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31339,7 +31339,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 22500, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31368,7 +31368,7 @@
   AllowPlacingAt: Base, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -31407,7 +31407,7 @@
   BlastDamage: 5000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31443,7 +31443,7 @@
   BlastDamage: 5000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31479,7 +31479,7 @@
   BlastDamage: 5000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31515,7 +31515,7 @@
   BlastDamage: 5000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31551,7 +31551,7 @@
   BlastDamage: 5000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31580,7 +31580,7 @@
   AllowPlacingAt: Base, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -31619,7 +31619,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31655,7 +31655,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31691,7 +31691,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31727,7 +31727,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31763,7 +31763,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31792,7 +31792,7 @@
   AllowPlacingAt: Base, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 5000, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -31831,7 +31831,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 50000, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31867,7 +31867,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 50000, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31903,7 +31903,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 50000, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31939,7 +31939,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 50000, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -31975,7 +31975,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 50000, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -32004,7 +32004,7 @@
   AllowPlacingAt: Base, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -32043,7 +32043,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -32079,7 +32079,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -32115,7 +32115,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -32151,7 +32151,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -32187,7 +32187,7 @@
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -32216,7 +32216,7 @@
   AllowPlacingAt: Base, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 22500, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -32255,7 +32255,7 @@
   BlastDamage: 10000
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 15000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 22500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -32291,7 +32291,7 @@
   BlastDamage: 10000
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 15000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 22500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -32327,7 +32327,7 @@
   BlastDamage: 10000
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 15000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 22500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -32363,7 +32363,7 @@
   BlastDamage: 10000
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 15000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 22500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -32399,7 +32399,7 @@
   BlastDamage: 10000
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 15000, type: int, display: true
-  Mass: 100000, type: float, display: true, formatter: Kilogram
+  Mass: 22500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
@@ -32427,7 +32427,7 @@
   AllowPlacingAt: Base, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -32470,7 +32470,7 @@
   RotSpeed: 255, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -32512,7 +32512,7 @@
   RotSpeed: 255, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -32554,7 +32554,7 @@
   RotSpeed: 255, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -32596,7 +32596,7 @@
   RotSpeed: 255, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -32638,7 +32638,7 @@
   RotSpeed: 255, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 4250, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -32680,7 +32680,7 @@
   RotSpeed: 255, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -32722,7 +32722,7 @@
   RotSpeed: 255, type: int, display: true
   EnergyIn: 8, type: int, display: true, formatter: Watt
   CPUIn: 7500, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 22500, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -32803,7 +32803,7 @@
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -32827,7 +32827,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -32867,7 +32867,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -32907,7 +32907,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -32995,7 +32995,7 @@
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33019,7 +33019,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33059,7 +33059,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33099,7 +33099,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33187,7 +33187,7 @@
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33211,7 +33211,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33251,7 +33251,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33291,7 +33291,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33379,7 +33379,7 @@
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33403,7 +33403,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33443,7 +33443,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33483,7 +33483,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33571,7 +33571,7 @@
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33595,7 +33595,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33635,7 +33635,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33675,7 +33675,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33763,7 +33763,7 @@
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33787,7 +33787,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33827,7 +33827,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33867,7 +33867,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -33911,7 +33911,7 @@
   AllowPlacingAt: MS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -33955,7 +33955,7 @@
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 30000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33979,7 +33979,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -34019,7 +34019,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -34059,7 +34059,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4000, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -34146,7 +34146,7 @@
   RotSpeed: 180, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -34188,7 +34188,7 @@
   RotSpeed: 180, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -34230,7 +34230,7 @@
   RotSpeed: 180, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -34272,7 +34272,7 @@
   RotSpeed: 180, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -34314,7 +34314,7 @@
   RotSpeed: 180, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 4250, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -34356,7 +34356,7 @@
   RotSpeed: 180, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -34398,7 +34398,7 @@
   RotSpeed: 180, type: int, display: true
   EnergyIn: 8, type: int, display: true, formatter: Watt
   CPUIn: 7500, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -34465,7 +34465,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "5,10,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "0,64,220"
@@ -34512,7 +34512,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "5,14,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "0,64,220"
@@ -34559,7 +34559,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "1,14,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "0,64,220"
@@ -34637,7 +34637,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "5,10,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "28,149,36"
@@ -34684,7 +34684,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "5,14,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "28,149,36"
@@ -34731,7 +34731,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "28,149,36"
@@ -34809,7 +34809,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "5,10,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "170,5,5"
@@ -34821,7 +34821,7 @@
   BlastParticleIndex: 4
   BlastRadius: 1
   BlastDamage: 150
-  EnergyIn: 50, type: int, display: true, formatter: Watt
+  EnergyIn: 25, type: int, display: true, formatter: Watt
   CPUIn: 2000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 211, display: true
@@ -34855,7 +34855,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "5,14,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "170,5,5"
@@ -34868,7 +34868,7 @@
   BlastParticleIndex: 4
   BlastRadius: 1
   BlastDamage: 150
-  EnergyIn: 50, type: int, display: true, formatter: Watt
+  EnergyIn: 25, type: int, display: true, formatter: Watt
   CPUIn: 2000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 33, display: true
@@ -34902,7 +34902,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "170,5,5"
@@ -34915,7 +34915,7 @@
   BlastParticleIndex: 4
   BlastRadius: 1
   BlastDamage: 150
-  EnergyIn: 50, type: int, display: true, formatter: Watt
+  EnergyIn: 25, type: int, display: true, formatter: Watt
   CPUIn: 2000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 33, display: true
@@ -34980,7 +34980,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "5,10,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "0,220,153"
@@ -35026,7 +35026,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "5,14,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "0,220,153"
@@ -35073,7 +35073,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "0,220,153"
@@ -35151,7 +35151,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "5,10,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "220,220,220"
@@ -35197,7 +35197,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "5,14,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "220,220,220"
@@ -35244,7 +35244,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "220,220,220"
@@ -35322,7 +35322,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "5,10,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "10,10,10"
@@ -35368,7 +35368,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "5,14,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "10,10,10"
@@ -35414,7 +35414,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "10,10,10"
@@ -35492,7 +35492,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "5,10,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "171,32,161"
@@ -35537,7 +35537,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "5,14,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "171,32,161"
@@ -35584,7 +35584,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 10000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "171,32,161"
@@ -35635,7 +35635,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -35679,7 +35679,7 @@
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 1000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -35703,7 +35703,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -35743,7 +35743,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -35783,7 +35783,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -35826,7 +35826,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -35870,7 +35870,7 @@
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 1000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   HitPoints: 1500, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -35894,7 +35894,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -35934,7 +35934,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -35974,7 +35974,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36017,7 +36017,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -36061,7 +36061,7 @@
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 1000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36085,7 +36085,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36125,7 +36125,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36165,7 +36165,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36208,7 +36208,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -36252,7 +36252,7 @@
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 1000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36276,7 +36276,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36316,7 +36316,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36356,7 +36356,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36399,7 +36399,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 5000, type: float, display: true, formatter: Kilogram
+  Mass: 2500, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -36443,7 +36443,7 @@
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 1000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 2500, type: float, display: true, formatter: Kilogram
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36467,7 +36467,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 2500, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36507,7 +36507,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 2500, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36547,7 +36547,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 2500, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36590,7 +36590,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -36634,7 +36634,7 @@
   EnergyIn: 150, type: int, display: true, formatter: Watt
   CPUIn: 1000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36658,7 +36658,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36698,7 +36698,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36738,7 +36738,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36781,7 +36781,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -36825,7 +36825,7 @@
   EnergyIn: 225, type: int, display: true, formatter: Watt
   CPUIn: 2250, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 3000, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36849,7 +36849,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 3000, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36889,7 +36889,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 3000, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36929,7 +36929,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 3000, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -36972,7 +36972,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -37016,7 +37016,7 @@
   RotSpeed: 105, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -37058,7 +37058,7 @@
   RotSpeed: 105, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -37100,7 +37100,7 @@
   RotSpeed: 105, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -37142,7 +37142,7 @@
   RotSpeed: 105, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -37184,7 +37184,7 @@
   RotSpeed: 105, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 4250, type: float, display: true, formatter: Kilogram
+  Mass: 2500, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -37226,7 +37226,7 @@
   RotSpeed: 105, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -37268,7 +37268,7 @@
   RotSpeed: 105, type: int, display: true
   EnergyIn: 8, type: int, display: true, formatter: Watt
   CPUIn: 7500, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -37299,7 +37299,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -37334,7 +37334,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,6,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "0,64,220"
@@ -37381,7 +37381,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "0,64,220"
@@ -37425,7 +37425,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -37460,7 +37460,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,6,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "28,149,36"
@@ -37507,7 +37507,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "28,149,36"
@@ -37551,7 +37551,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -37586,7 +37586,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,6,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "170,5,5"
@@ -37598,7 +37598,7 @@
   BlastParticleIndex: 4
   BlastRadius: 1
   BlastDamage: 75
-  EnergyIn: 60, type: int, display: true, formatter: Watt
+  EnergyIn: 30, type: int, display: true, formatter: Watt
   CPUIn: 750, type: int, display: true
   HitPoints: 750, type: int, display: true
   # Damage: 211, display: true
@@ -37633,7 +37633,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "170,5,5"
@@ -37646,7 +37646,7 @@
   BlastParticleIndex: 4
   BlastRadius: 1
   BlastDamage: 75
-  EnergyIn: 60, type: int, display: true, formatter: Watt
+  EnergyIn: 30, type: int, display: true, formatter: Watt
   CPUIn: 750, type: int, display: true
   HitPoints: 750, type: int, display: true
   # Damage: 33, display: true
@@ -37677,7 +37677,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -37712,7 +37712,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,6,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "0,220,153"
@@ -37759,7 +37759,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "0,220,153"
@@ -37803,7 +37803,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 5000, type: float, display: true, formatter: Kilogram
+  Mass: 2500, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -37838,7 +37838,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,6,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 750, type: float, display: true, formatter: Kilogram
+  Mass: 2500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "220,220,220"
@@ -37885,7 +37885,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 750, type: float, display: true, formatter: Kilogram
+  Mass: 2500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "220,220,220"
@@ -37929,7 +37929,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -37964,7 +37964,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,6,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "10,10,10"
@@ -38011,7 +38011,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "10,10,10"
@@ -38055,7 +38055,7 @@
   AllowPlacingAt: GV, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -38090,7 +38090,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,6,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2250, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "171,32,161"
@@ -38137,7 +38137,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2250, type: float, display: true, formatter: Kilogram
+  Mass: 7500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "171,32,161"
@@ -38186,7 +38186,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -38230,7 +38230,7 @@
   EnergyIn: 50, type: int, display: true, formatter: Watt
   CPUIn: 500, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   HitPoints: 500, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
@@ -38254,7 +38254,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -38297,7 +38297,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -38341,7 +38341,7 @@
   EnergyIn: 50, type: int, display: true, formatter: Watt
   CPUIn: 500, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   HitPoints: 750, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
@@ -38365,7 +38365,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -38408,7 +38408,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -38449,10 +38449,10 @@
   BlastParticleIndex: 11
   BlastRadius: 1
   BlastDamage: 50
-  EnergyIn: 50, type: int, display: true, formatter: Watt
+  EnergyIn: 25, type: int, display: true, formatter: Watt
   CPUIn: 500, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   HitPoints: 500, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
@@ -38476,7 +38476,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -38491,7 +38491,7 @@
   BlastParticleIndex: 11
   BlastRadius: 1
   BlastDamage: 50
-  EnergyIn: 50, type: int, display: true, formatter: Watt
+  EnergyIn: 25, type: int, display: true, formatter: Watt
   CPUIn: 500, type: int, display: true
   HitPoints: 500, type: int, display: true
   RotSpeed: 20, type: int, display: true
@@ -38519,7 +38519,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -38563,7 +38563,7 @@
   EnergyIn: 50, type: int, display: true, formatter: Watt
   CPUIn: 500, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   HitPoints: 500, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
@@ -38587,7 +38587,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -38630,7 +38630,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 5000, type: float, display: true, formatter: Kilogram
+  Mass: 500, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -38741,7 +38741,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -38785,7 +38785,7 @@
   EnergyIn: 50, type: int, display: true, formatter: Watt
   CPUIn: 500, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   HitPoints: 500, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
@@ -38809,7 +38809,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -38852,7 +38852,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 1500, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -38896,7 +38896,7 @@
   EnergyIn: 75, type: int, display: true, formatter: Watt
   CPUIn: 750, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 500, type: float, display: true, formatter: Kilogram
+  Mass: 1500, type: float, display: true, formatter: Kilogram
   HitPoints: 500, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
@@ -38920,7 +38920,7 @@
   IsGPUInstance: false  # !!!
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 500, type: float, display: true, formatter: Kilogram
+  Mass: 1500, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -38961,7 +38961,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -39001,11 +39001,11 @@
   BlastParticleIndex: 1
   BlastRadius: 2
   BlastDamage: 3500
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -39043,11 +39043,11 @@
   BlastParticleIndex: 1
   BlastRadius: 2
   BlastDamage: 3500
-  HitPoints: 15000, type: int, display: true
+  HitPoints: 1500, type: int, display: true
   RotSpeed: 30, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -39085,11 +39085,11 @@
   BlastParticleIndex: 1
   BlastRadius: 1
   BlastDamage: 1750
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 30, type: int, display: true
-  EnergyIn: 5, type: int, display: true, formatter: Watt
+  EnergyIn: 2, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -39127,11 +39127,11 @@
   BlastParticleIndex: 1
   BlastRadius: 2
   BlastDamage: 3500
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -39169,11 +39169,11 @@
   BlastParticleIndex: 1
   BlastRadius: 2
   BlastDamage: 3500
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 4250, type: float, display: true, formatter: Kilogram
+  Mass: 500, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -39211,11 +39211,11 @@
   BlastParticleIndex: 1
   BlastRadius: 2
   BlastDamage: 3500
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 5000, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -39253,11 +39253,11 @@
   BlastParticleIndex: 1
   BlastRadius: 2
   BlastDamage: 3500
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   EnergyIn: 8, type: int, display: true, formatter: Watt
   CPUIn: 7500, type: int, display: true
-  Mass: 8500, type: float, display: true, formatter: Kilogram
+  Mass: 1500, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
 
@@ -39290,7 +39290,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -39509,7 +39509,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -39731,7 +39731,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -39778,7 +39778,7 @@
   BlastParticleIndex: 4
   BlastRadius: 1
   BlastDamage: 50
-  EnergyIn: 30, type: int, display: true, formatter: Watt
+  EnergyIn: 15, type: int, display: true, formatter: Watt
   CPUIn: 800, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 211, display: true
@@ -39826,7 +39826,7 @@
   BlastParticleIndex: 4
   BlastRadius: 1
   BlastDamage: 50
-  EnergyIn: 30, type: int, display: true, formatter: Watt
+  EnergyIn: 15, type: int, display: true, formatter: Watt
   CPUIn: 800, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
@@ -39874,7 +39874,7 @@
   BlastParticleIndex: 4
   BlastRadius: 1
   BlastDamage: 50
-  EnergyIn: 30, type: int, display: true, formatter: Watt
+  EnergyIn: 15, type: int, display: true, formatter: Watt
   CPUIn: 800, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
@@ -39922,7 +39922,7 @@
   BlastParticleIndex: 4
   BlastRadius: 1
   BlastDamage: 50
-  EnergyIn: 30, type: int, display: true, formatter: Watt
+  EnergyIn: 15, type: int, display: true, formatter: Watt
   CPUIn: 800, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
@@ -39953,7 +39953,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -40175,7 +40175,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 5000, type: float, display: true, formatter: Kilogram
+  Mass: 500, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -40210,7 +40210,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "1,6,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "220,220,220"
@@ -40257,7 +40257,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "1,4,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "220,220,220"
@@ -40305,7 +40305,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "1,6,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "220,220,220"
@@ -40353,7 +40353,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "1,3,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "220,220,220"
@@ -40397,7 +40397,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -40619,7 +40619,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 1500, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -40654,7 +40654,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "1,6,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 1500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "171,32,161"
@@ -40701,7 +40701,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "1,4,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 1500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "171,32,161"
@@ -40749,7 +40749,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "1,6,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 1500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "171,32,161"
@@ -40797,7 +40797,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "1,3,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 1500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "171,32,161"
@@ -40836,7 +40836,7 @@
   AllowPlacingAt: SS, display: true
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
-  Mass: 10000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #CPUIn: 10380, type: int, display: true
 
@@ -40873,7 +40873,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "3,4,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShipSpace, display: true
   Category: Weapons/Items
   BlockColor: "0,64,220"
@@ -40884,7 +40884,7 @@
   MaxCount: 4, type: int, display: true
   BlastParticleIndex: 4
   BlastRadius: 2
-  BlastDamage: 50
+  BlastDamage: 100
   EnergyIn: 6, type: int, display: true, formatter: Watt
   CPUIn: 3000, type: int, display: true
   HitPoints: 1000, type: int, display: true
@@ -40923,7 +40923,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "3,4,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShipSpace, display: true
   Category: Weapons/Items
   BlockColor: "28,149,36"
@@ -40934,7 +40934,7 @@
   MaxCount: 4, type: int, display: true
   BlastParticleIndex: 4
   BlastRadius: 2
-  BlastDamage: 50
+  BlastDamage: 100
   EnergyIn: 6, type: int, display: true, formatter: Watt
   CPUIn: 3000, type: int, display: true
   HitPoints: 1500, type: int, display: true
@@ -40972,7 +40972,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "3,4,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShipSpace, display: true
   Category: Weapons/Items
   BlockColor: "170,5,5"
@@ -40983,8 +40983,8 @@
   MaxCount: 4, type: int, display: true
   BlastParticleIndex: 4
   BlastRadius: 1
-  BlastDamage: 25
-  EnergyIn: 6, type: int, display: true, formatter: Watt
+  BlastDamage: 50
+  EnergyIn: 3, type: int, display: true, formatter: Watt
   CPUIn: 3000, type: int, display: true
   HitPoints: 1000, type: int, display: true
 
@@ -41021,7 +41021,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "3,4,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShipSpace, display: true
   Category: Weapons/Items
   BlockColor: "0,220,153"
@@ -41032,7 +41032,7 @@
   MaxCount: 4, type: int, display: true
   BlastParticleIndex: 4
   BlastRadius: 2
-  BlastDamage: 50
+  BlastDamage: 100
   EnergyIn: 6, type: int, display: true, formatter: Watt
   CPUIn: 3000, type: int, display: true
   HitPoints: 1000, type: int, display: true
@@ -41070,7 +41070,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "3,4,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShipSpace, display: true
   Category: Weapons/Items
   BlockColor: "220,220,220"
@@ -41081,7 +41081,7 @@
   MaxCount: 4, type: int, display: true
   BlastParticleIndex: 4
   BlastRadius: 2
-  BlastDamage: 50
+  BlastDamage: 100
   EnergyIn: 6, type: int, display: true, formatter: Watt
   CPUIn: 3000, type: int, display: true
   HitPoints: 1000, type: int, display: true
@@ -41119,7 +41119,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "3,4,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 1000, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShipSpace, display: true
   Category: Weapons/Items
   BlockColor: "10,10,10"
@@ -41130,7 +41130,7 @@
   MaxCount: 4, type: int, display: true
   BlastParticleIndex: 4
   BlastRadius: 2
-  BlastDamage: 50
+  BlastDamage: 100
   EnergyIn: 6, type: int, display: true, formatter: Watt
   CPUIn: 3000, type: int, display: true
   HitPoints: 1000, type: int, display: true
@@ -41168,7 +41168,7 @@
   AllowPlacingAt: SS, display: true
   SizeInBlocks: "3,4,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2000, type: float, display: true, formatter: Kilogram
+  Mass: 1500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShipSpace, display: true
   Category: Weapons/Items
   BlockColor: "171,32,161"
@@ -41179,7 +41179,7 @@
   MaxCount: 4, type: int, display: true
   BlastParticleIndex: 4
   BlastRadius: 2
-  BlastDamage: 50
+  BlastDamage: 100
   EnergyIn: 12, type: int, display: true, formatter: Watt
   CPUIn: 4500, type: int, display: true
   HitPoints: 1000, type: int, display: true
@@ -41276,7 +41276,7 @@
   EnergyIn: 25000, type: int, display: true, formatter: Watt
   CPUIn: 25000, type: int, display: true
   EnergyInIdle: 1000, type: int, display: true, formatter: Watt
-  ShieldCapacity: 100000, type: int, display: true
+  ShieldCapacity: 500000, type: int, display: true
   ShieldRecharge: 200000, type: int, display: true # full in 5 sec
   ShieldCooldown: 5, type: int, display: true # 5 sec + 10 sec built-in
   ShieldPerCrystal: 2000, type: int, display: true # 500 Pentaxid in total
@@ -41381,7 +41381,7 @@
   EnergyIn: 25000, type: int, display: true, formatter: Watt
   CPUIn: 25000, type: int, display: true
   EnergyInIdle: 1000, type: int, display: true, formatter: Watt
-  ShieldCapacity: 100000, type: int, display: true
+  ShieldCapacity: 500000, type: int, display: true
   ShieldRecharge: 200000, type: int, display: true # full in 70 sec
   ShieldCooldown: 5, type: int, display: true
   ShieldPerCrystal: 2000, type: int, display: true # 400 Pentaxid in total
@@ -41486,7 +41486,7 @@
   EnergyIn: 25000, type: int, display: true, formatter: Watt
   CPUIn: 25000, type: int, display: true
   EnergyInIdle: 1000, type: int, display: true, formatter: Watt
-  ShieldCapacity: 100000, type: int, display: true
+  ShieldCapacity: 500000, type: int, display: true
   ShieldRecharge: 200000, type: int, display: true # full in 70 sec
   ShieldCooldown: 5, type: int, display: true
   ShieldPerCrystal: 2000, type: int, display: true # 400 Pentaxid in total
@@ -41591,7 +41591,7 @@
   EnergyIn: 25000, type: int, display: true, formatter: Watt
   CPUIn: 25000, type: int, display: true
   EnergyInIdle: 1000, type: int, display: true, formatter: Watt
-  ShieldCapacity: 100000, type: int, display: true
+  ShieldCapacity: 500000, type: int, display: true
   ShieldRecharge: 200000, type: int, display: true # full in 70 sec
   ShieldCooldown: 5, type: int, display: true
   ShieldPerCrystal: 2000, type: int, display: true # 400 Pentaxid in total
@@ -41696,7 +41696,7 @@
   EnergyIn: 25000, type: int, display: true, formatter: Watt
   CPUIn: 25000, type: int, display: true
   EnergyInIdle: 1000, type: int, display: true, formatter: Watt
-  ShieldCapacity: 100000, type: int, display: true
+  ShieldCapacity: 500000, type: int, display: true
   ShieldRecharge: 200000, type: int, display: true # full in 70 sec
   ShieldCooldown: 5, type: int, display: true
   ShieldPerCrystal: 2000, type: int, display: true # 400 Pentaxid in total
@@ -41801,7 +41801,7 @@
   EnergyIn: 25000, type: int, display: true, formatter: Watt
   CPUIn: 25000, type: int, display: true
   EnergyInIdle: 1000, type: int, display: true, formatter: Watt
-  ShieldCapacity: 100000, type: int, display: true
+  ShieldCapacity: 500000, type: int, display: true
   ShieldRecharge: 200000, type: int, display: true # full in 70 sec
   ShieldCooldown: 5, type: int, display: true
   ShieldPerCrystal: 2000, type: int, display: true # 400 Pentaxid in total
@@ -41906,7 +41906,7 @@
   EnergyIn: 25000, type: int, display: true, formatter: Watt
   CPUIn: 37500, type: int, display: true
   EnergyInIdle: 1000, type: int, display: true, formatter: Watt
-  ShieldCapacity: 100000, type: int, display: true
+  ShieldCapacity: 500000, type: int, display: true
   ShieldRecharge: 200000, type: int, display: true # full in 70 sec
   ShieldCooldown: 5, type: int, display: true
   ShieldPerCrystal: 2000, type: int, display: true # 400 Pentaxid in total
@@ -41997,6 +41997,7 @@
   BlockColor: "110,110,110"
   Category: Devices
   CPUIn: 25000, type: int, display: true
+  HitPoints: 4000, type: int, display: true
 
   UnlockCost: 50, display: true
   UnlockLevel: 20, display: true
@@ -42027,6 +42028,7 @@
   BlockColor: "110,110,110"
   Category: Devices
   CPUIn: 25000, type: int, display: true
+  HitPoints: 4000, type: int, display: true
 
   UnlockCost: 100, display: true
   UnlockLevel: 25, display: true
@@ -42052,11 +42054,13 @@
   SizeInBlocks: "1,1,1", display: true
   #ModelOffset: "0,1,0"
   SizeInBlocksLocked: "Base,MS"
+  OccupySizeInBlocks: true
   StackSize: 50000
   
   BlockColor: "110,110,110"
   Category: Devices
   CPUIn: 25000, type: int, display: true
+  HitPoints: 3000, type: int, display: true
 
   UnlockCost: 50, display: true
   UnlockLevel: 20, display: true
@@ -42082,11 +42086,13 @@
   SizeInBlocks: "1,1,1", display: true
   #ModelOffset: "0,1,0"
   SizeInBlocksLocked: "Base,MS"
+  OccupySizeInBlocks: true
   StackSize: 50000
   
   BlockColor: "110,110,110"
   Category: Devices
   CPUIn: 25000, type: int, display: true
+  HitPoints: 3000, type: int, display: true
 
   UnlockCost: 100, display: true
   UnlockLevel: 25, display: true
@@ -42110,13 +42116,14 @@
   AllowedInBlueprint: true, display: true
   AllowPlacingAt: "GV", display: true
   SizeInBlocks: "1,1,1", display: true
+  OccupySizeInBlocks: true
   #ModelOffset: "0,1,0"
-  SizeInBlocksLocked: "SS,GV"
   StackSize: 50000
   
   BlockColor: "110,110,110"
   Category: Devices
   CPUIn: 25000, type: int, display: true
+  HitPoints: 2000, type: int, display: true
 
   UnlockCost: 50, display: true
   UnlockLevel: 17, display: true
@@ -42139,13 +42146,14 @@
   AllowedInBlueprint: true, display: true
   AllowPlacingAt: "GV", display: true
   SizeInBlocks: "1,1,1", display: true
+  OccupySizeInBlocks: true
   #ModelOffset: "0,1,0"
-  SizeInBlocksLocked: "SS,GV"
   StackSize: 50000
   
   BlockColor: "110,110,110"
   Category: Devices
   CPUIn: 25000, type: int, display: true
+  HitPoints: 2000, type: int, display: true
 
   UnlockCost: 100, display: true
   UnlockLevel: 25, display: true
@@ -42168,13 +42176,14 @@
   AllowedInBlueprint: true, display: true
   AllowPlacingAt: "SS", display: true
   SizeInBlocks: "1,1,1", display: true
+  OccupySizeInBlocks: true
   #ModelOffset: "0,1,0"
-  SizeInBlocksLocked: "SS,GV"
   StackSize: 50000
   
   BlockColor: "110,110,110"
   Category: Devices
   CPUIn: 25000, type: int, display: true
+  HitPoints: 1000, type: int, display: true
 
   UnlockCost: 50, display: true
   UnlockLevel: 17, display: true
@@ -42197,13 +42206,14 @@
   AllowedInBlueprint: true, display: true
   AllowPlacingAt: "SS", display: true
   SizeInBlocks: "1,1,1", display: true
+  OccupySizeInBlocks: true
   #ModelOffset: "0,1,0"
-  SizeInBlocksLocked: "SS,GV"
   StackSize: 50000
   
   BlockColor: "110,110,110"
   Category: Devices
   CPUIn: 25000, type: int, display: true
+  HitPoints: 1000, type: int, display: true
 
   UnlockCost: 100, display: true
   UnlockLevel: 25, display: true

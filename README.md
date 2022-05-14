@@ -64,6 +64,14 @@ Constructive feedback about the HWS+ Config files are most welcome in form of ["
 
 ## Known problems
 
+* Shield Extender have no final size yet. Need dedicated models for the small version.
+
+* material of custom shield extender wrong material shader.
+
+* whole Shield topic comes next.
+
+* whole Templates.ecf is not commited yet.
+
 * sounds are too loud.
 
 * Elemental Hand Weapons do not shoot sometimes (need to find a repro). After a relog they work again.

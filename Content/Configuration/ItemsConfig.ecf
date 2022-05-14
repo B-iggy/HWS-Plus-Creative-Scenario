@@ -3518,7 +3518,7 @@
     AmmoUnlimited: true, display: false
     ReloadDelay: 2.0, display: false
     AmmoCapacity: 7, display: false
-    Damage: 200
+    Damage: 500
 
     DamageMultiplier_Group: HWS_Multitool_Elemental
   }
@@ -3543,7 +3543,7 @@
     AmmoUnlimited: true, display: false
   }
   { Child 5 # "Salvage" (get components from a block)
-    Damage: 200
+    Damage: 500
 	ReturnFactor: 0.75
     Range: 10
 	AmmoType: AmmoInfinite, display: true
@@ -14643,7 +14643,7 @@
   StackSize: 50000
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
-  Mass: 25, type: float, display: true, formatter: Kilogram
+  Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Durability: 100, display: false
   DegradationProb: 1, type: float, display: false
@@ -14654,12 +14654,12 @@
     ROF: 0.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     NoiseStrength: 190, display: false
-    Recoil: 0.5, display: true
+    Recoil: 0.25, display: true
     CameraShake: 3
     Automatic: true
-    AmmoCapacity: 6, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSAquaGunAmmo, display: true
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 2.5, display: true
     #SfxBegin: Weapons/Player/RocketLauncher/FLYBYMissile02Slow
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
@@ -14687,9 +14687,8 @@
   StackSize: 50000
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
-  Mass: 25, type: float, display: true, formatter: Kilogram
+  Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  BlastRadius: 3, display: true
   Durability: 100, display: false
   DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
@@ -14699,12 +14698,12 @@
     ROF: 1, type: float, display: true, formatter: ROF
     Range: 500, display: true
     NoiseStrength: 190, display: false
-    Recoil: 0.5, display: true
+    Recoil: 0.25, display: true
     CameraShake: 3
     Automatic: true
-    AmmoCapacity: 6, display: true
+    AmmoCapacity: 15, display: true
     AmmoType: HWSTerraGunAmmo, display: true
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 5, display: true
     # SfxBegin: Weapons/Player/RocketLauncher/FLYBYMissile02Slow
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
@@ -14732,7 +14731,7 @@
   StackSize: 50000
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
-  Mass: 25, type: float, display: true, formatter: Kilogram
+  Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Durability: 100, display: false
   DegradationProb: 1, type: float, display: false
@@ -14743,12 +14742,12 @@
     ROF: 1, type: float, display: true, formatter: ROF
     Range: 500, display: true
     NoiseStrength: 190, display: false
-    Recoil: 0.5, display: true
+    Recoil: 0.25, display: true
     CameraShake: 3
     Automatic: true
-    AmmoCapacity: 6, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSPyroGunAmmo, display: true
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 5, display: true
     # SfxBegin: Weapons/Player/RocketLauncher/FLYBYMissile02Slow
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
@@ -14776,7 +14775,7 @@
   StackSize: 50000
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
-  Mass: 25, type: float, display: true, formatter: Kilogram
+  Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Durability: 100, display: false
   DegradationProb: 1, type: float, display: false
@@ -14787,12 +14786,12 @@
     ROF: 1, type: float, display: true, formatter: ROF
     Range: 500, display: true
     NoiseStrength: 190, display: false
-    Recoil: 0.5, display: true
+    Recoil: 0.25, display: true
     CameraShake: 3
     Automatic: true
-    AmmoCapacity: 6, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSObsidianGunAmmo, display: true
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 5, display: true
     # SfxBegin: Weapons/Player/RocketLauncher/FLYBYMissile02Slow
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
@@ -14820,7 +14819,7 @@
   StackSize: 50000
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
-  Mass: 25, type: float, display: true, formatter: Kilogram
+  Mass: 5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Durability: 100, display: false
   DegradationProb: 1, type: float, display: false
@@ -14829,14 +14828,14 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
-    Range: 1000, display: true
+    Range: 750, display: true
     NoiseStrength: 190, display: false
-    Recoil: 0.5, display: true
+    Recoil: 0.25, display: true
     CameraShake: 3
     Automatic: true
-    AmmoCapacity: 6, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSLuxGunAmmo, display: true
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 5, display: true
     # SfxBegin: Weapons/Player/RocketLauncher/FLYBYMissile02Slow
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
@@ -14864,7 +14863,7 @@
   StackSize: 50000
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
-  Mass: 25, type: float, display: true, formatter: Kilogram
+  Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Durability: 100, display: false
   DegradationProb: 1, type: float, display: false
@@ -14875,12 +14874,12 @@
     ROF: 1, type: float, display: true, formatter: ROF
     Range: 500, display: true
     NoiseStrength: 190, display: false
-    Recoil: 0.5, display: true
+    Recoil: 0.25, display: true
     CameraShake: 3
     Automatic: true
-    AmmoCapacity: 6, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSNoxGunAmmo, display: true
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 5, display: true
     # SfxBegin: Weapons/Player/RocketLauncher/FLYBYMissile02Slow
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
@@ -14908,7 +14907,7 @@
   StackSize: 50000
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
-  Mass: 25, type: float, display: true, formatter: Kilogram
+  Mass: 15, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Durability: 100, display: false
   DegradationProb: 1, type: float, display: false
@@ -14919,12 +14918,12 @@
     ROF: 1, type: float, display: true, formatter: ROF
     Range: 500, display: true
     NoiseStrength: 190, display: false
-    Recoil: 0.5, display: true
+    Recoil: 0.25, display: true
     CameraShake: 3
     Automatic: true
-    AmmoCapacity: 6, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSStrangeletGunAmmo, display: true
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 5, display: true
     # SfxBegin: Weapons/Player/RocketLauncher/FLYBYMissile02Slow
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
@@ -14951,19 +14950,20 @@
   MarketPrice: 10001, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_aquaitem, display: true
+  Mass: 10, type: float, display: true, formatter: Kilogram
   { Child 0
     Class: Projectile
     Damage: 1000, display: true
     NoiseStrength: 100, display: false
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSAquaExplosionSmall
-    BlastRadius: 3, display: true
-    BlastDamage: 100, display: true
+    BlastRadius: 2, display: true
+    BlastDamage: 1000, display: true
     HomingSpeed: 1.0
-    Speed: 50, display: true
-    Range: 577, display: true
-    SpeedSpace: 154, display: true
-    RangeSpace: 1155, display: true
+    Speed: 100, display: true
+    Range: 500, display: true
+    SpeedSpace: 200, display: true
+    RangeSpace: 1000, display: true
     Ballistic: true
     Buff: "Frostbite"
     Buff_chance: "1.0"
@@ -14983,6 +14983,7 @@
   MarketPrice: 10001, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_terraitem, display: true
+  Mass: 10, type: float, display: true, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
     Class: Projectile
@@ -14991,12 +14992,12 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSTerraExplosionSmall
     HomingSpeed: 1.0
-    BlastRadius: 3, display: true
-    BlastDamage: 50, display: true
-    Speed: 50, display: true
-    Range: 577, display: true
-    SpeedSpace: 154, display: true
-    RangeSpace: 1155, display: true
+    BlastRadius: 2, display: true
+    BlastDamage: 1000, display: true
+    Speed: 100, display: true
+    Range: 500, display: true
+    SpeedSpace: 200, display: true
+    RangeSpace: 1000, display: true
     Ballistic: true
     Buff: "Stunned,Mutilation"
     Buff_chance: "1.0,0.9"
@@ -15016,6 +15017,7 @@
   MarketPrice: 10001, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_pyroitem, display: true
+  Mass: 10, type: float, display: true, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
     Class: Projectile
@@ -15024,12 +15026,12 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSPyroExplosionSmall
     BlastRadius: 3, display: true
-    BlastDamage: 50, display: true
+    BlastDamage: 1500, display: true
     HomingSpeed: 1.0
-    Speed: 50, display: true
-    Range: 577, display: true
-    SpeedSpace: 154, display: true
-    RangeSpace: 1155, display: true
+    Speed: 100, display: true
+    Range: 500, display: true
+    SpeedSpace: 200, display: true
+    RangeSpace: 1000, display: true
     Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
@@ -15049,6 +15051,7 @@
   MarketPrice: 30003, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_obsidianitem, display: true
+  Mass: 10, type: float, display: true, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
     Class: Projectile
@@ -15056,13 +15059,13 @@
     NoiseStrength: 100, display: false
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSObsidianExplosionSmall
-    BlastRadius: 3, display: true
-    BlastDamage: 50, display: true
+    BlastRadius: 2, display: true
+    BlastDamage: 1000, display: true
     HomingSpeed: 1.0
-    Speed: 50, display: true
-    Range: 577, display: true
-    SpeedSpace: 154, display: true
-    RangeSpace: 1155, display: true
+    Speed: 100, display: true
+    Range: 500, display: true
+    SpeedSpace: 200, display: true
+    RangeSpace: 1000, display: true
     Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
@@ -15082,6 +15085,7 @@
   MarketPrice: 10001, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_luxitem, display: true
+  Mass: 5, type: float, display: true, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
     Class: Projectile
@@ -15089,13 +15093,13 @@
     NoiseStrength: 100, display: false
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSLuxExplosionSmall
-    BlastRadius: 3, display: true
-    BlastDamage: 50, display: true
+    BlastRadius: 2, display: true
+    BlastDamage: 1000, display: true
     HomingSpeed: 1.0
-    Speed: 50, display: true
-    Range: 577, display: true
-    SpeedSpace: 154, display: true
-    RangeSpace: 1155, display: true
+    Speed: 150, display: true
+    Range: 750, display: true
+    SpeedSpace: 300, display: true
+    RangeSpace: 1500, display: true
     Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
@@ -15115,6 +15119,7 @@
   MarketPrice: 10001, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_noxitem, display: true
+  Mass: 10, type: float, display: true, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
     Class: Projectile
@@ -15122,13 +15127,13 @@
     NoiseStrength: 100, display: false
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSNoxExplosionSmall
-    BlastRadius: 3, display: true
-    BlastDamage: 50, display: true
+    BlastRadius: 2, display: true
+    BlastDamage: 1000, display: true
     HomingSpeed: 1.0
-    Speed: 50, display: true
-    Range: 577, display: true
-    SpeedSpace: 154, display: true
-    RangeSpace: 1155, display: true
+    Speed: 100, display: true
+    Range: 500, display: true
+    SpeedSpace: 200, display: true
+    RangeSpace: 1000, display: true
     Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
@@ -15148,6 +15153,7 @@
   MarketPrice: 10001, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_strangeletitem, display: true
+  Mass: 15, type: float, display: true, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
     Class: Projectile
@@ -15155,13 +15161,13 @@
     NoiseStrength: 100, display: false
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSStrangeletExplosionSmall
-    BlastRadius: 3, display: true
-    BlastDamage: 50, display: true
+    BlastRadius: 2, display: true
+    BlastDamage: 1000, display: true
     HomingSpeed: 1.0
-    Speed: 50, display: true
-    Range: 577, display: true
-    SpeedSpace: 154, display: true
-    RangeSpace: 1155, display: true
+    Speed: 100, display: true
+    Range: 500, display: true
+    SpeedSpace: 200, display: true
+    RangeSpace: 1000, display: true
     Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
@@ -26866,11 +26872,9 @@
   StackSize: 50000
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
-  Mass: 25, type: float, display: true, formatter: Kilogram
+  Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #just for display - BlastRadius and BlastDamage is controlled by "SlowRocket"
-  BlastRadius: 3, display: true
-  BlastDamage: 500, display: true
   Durability: 100, display: false
   DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
@@ -26878,14 +26882,15 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
-    Damage: 1100, display: true
-    Range: 500, display: false
+    Damage: 500, display: true
+    Range: 500, display: true
+    RangeSpace: 1000, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.5, display: true
     CameraShake: 3
-    AmmoCapacity: 6, display: true
+    AmmoCapacity: 7, display: true
     AmmoType: HWSOriginGunAmmo, display: true
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 2.5, display: true
     SfxBegin: Weapons/Player/RocketLauncher/FLYBYMissile02Slow
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
@@ -26911,10 +26916,8 @@
   StackSize: 50000
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
-  Mass: 25, type: float, display: true, formatter: Kilogram
+  Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  BlastRadius: 3, display: true
-  BlastDamage: 500, display: true
   Durability: 100, display: false
   DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
@@ -26922,14 +26925,15 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
-    Damage: 1100, display: true
-    Range: 500, display: false
+    Damage: 500, display: true
+    Range: 500, display: true
+    RangeSpace: 1000, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.5, display: true
     CameraShake: 3
-    AmmoCapacity: 6, display: true
+    AmmoCapacity: 14, display: true
     AmmoType: HWSOriginGunAmmo, display: true
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 5, display: true
     SfxBegin: Weapons/Player/RocketLauncher/FLYBYMissile02Slow
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
@@ -26955,25 +26959,24 @@
   StackSize: 50000
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
-  Mass: 25, type: float, display: true, formatter: Kilogram
+  Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  BlastRadius: 3, display: true
-  BlastDamage: 500, display: true
   Durability: 100, display: false
   DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 1, type: float, display: true, formatter: ROF
-    Damage: 1100, display: true
-    Range: 500, display: false
+    ROF: 0.9, type: float, display: true, formatter: ROF
+    Damage: 500, display: true
+    Range: 500, display: true
+    RangeSpace: 1000, display: true
     NoiseStrength: 190, display: false
-    Recoil: 0.5, display: true
+    Recoil: 0.45, display: true
     CameraShake: 3
-    AmmoCapacity: 6, display: true
+    AmmoCapacity: 8, display: true
     AmmoType: HWSOriginGunAmmo, display: true
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 4.50, display: true
     SfxBegin: Weapons/Player/RocketLauncher/FLYBYMissile02Slow
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
@@ -26999,26 +27002,24 @@
   StackSize: 50000
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
-  Mass: 25, type: float, display: true, formatter: Kilogram
+  Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  BlastRadius: 3, display: true
-  BlastDamage: 500, display: true
   Durability: 100, display: false
   DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 1, type: float, display: true, formatter: ROF
-    Damage: 1100, display: true
-    Range: 500, display: false
+    ROF: 0.5, type: float, display: true, formatter: ROF
+    Damage: 500, display: true
+    Range: 500, display: true
+    RangeSpace: 1000, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.5, display: true
     CameraShake: 3
-    Automatic: true
-    AmmoCapacity: 6, display: true
+    AmmoCapacity: 7, display: true
     AmmoType: HWSOriginGunAmmo, display: true
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 5, display: true
     SfxBegin: Weapons/Player/RocketLauncher/FLYBYMissile02Slow
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
@@ -27046,16 +27047,17 @@
   Category: Weapons/Items
   StackSize: 50000
 
-  Mass: 0.9, type: float, display: true, formatter: Kilogram
+  Mass: 5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   { Child 0
     Class: Projectile
-    Damage: 1045
+    Damage: 500
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 522, display: true
+    BlastDamage: 500, display: true
     Speed: 50
     Range: 500
+    RangeSpace: 1000
     HomingSpeed: 3
     Ballistic: False
 
