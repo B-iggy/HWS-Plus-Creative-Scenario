@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 2077658481
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 887536f2c926b455585f2df4feb62d57
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/hws_crosshairs/hws/crosshair_grenade_launcher.png
+- Assets/hws_crosshairs/hws/default_ship.png
+- Assets/hws_crosshairs/hws/crosshair_valentines_day_glasses.png
+- Assets/hws_crosshairs/hws/default.png
+- Assets/hws_crosshairs/hws/default_aiming.png
+- Assets/hws_crosshairs/hws/default_focus.png
+Dependencies: []

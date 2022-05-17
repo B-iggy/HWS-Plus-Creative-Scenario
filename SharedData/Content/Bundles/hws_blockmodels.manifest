@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3757347730
+CRC: 3615425244
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 34643821e1165863842d4c5f7dcb7cd6
+    Hash: 50e93f4e2c6ed531ad41c02ee3e29701
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 6d7b8b67f2d9928ee4e9b84179aa2b09
+    Hash: f5f56521519eb2d437349b393d9515e3
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -42,9 +42,9 @@ ClassTypes:
 - Class: 111
   Script: {instanceID: 0}
 - Class: 114
-  Script: {fileID: 11500000, guid: f9b3dcbe4c5cab840a4a714cb35d0d24, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 8396afed7c1a1d5498e6e8b2a5f94443, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f9b3dcbe4c5cab840a4a714cb35d0d24, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 135
@@ -182,6 +182,7 @@ Assets:
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Materials/Material.002.asset
 - Assets/hws_blockmodels/HWSDecoBlockComputer/scene.Meshes/pCylinder35_mini_computer_0.asset
 - Assets/hws_blockmodels/HWSElementalGuns/HWSElementalGunCVT3.prefab
+- Assets/hws_blockmodels/HWSLogistics/HWSLogistics.prefab
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Textures/Capsule_03_occlusionRoughnessMetallic.metallicRoughness.asset
 - Assets/hws_blockmodels/HWSPlants/textures/pngegg.png
 - Assets/hws_blockmodels/HWSWarpDriveT3/Texture2D/WarpDrive.png
