@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3591268805
+CRC: 392076936
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ff6e75ff1ac7b3c005a882eb0eed1c49
+    Hash: e6a13016fec30fa1f6dbb88a91d3cd34
   TypeTreeHash:
     serializedVersion: 2
     Hash: b0363f7088f9761414f730641bf9a24b
@@ -13,6 +13,8 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/hws_crosshairs/crosshair_grenade_launcher.png
-- Assets/hws_crosshairs/crosshair_valentines_day_glasses.png
+- Assets/crosshairs/default_focus.png
+- Assets/crosshairs/default.png
+- Assets/crosshairs/default_aiming.png
+- Assets/crosshairs/default_ship.png
 Dependencies: []
