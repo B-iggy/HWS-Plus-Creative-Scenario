@@ -1,34 +1,26 @@
 # --------------------------------------------------------------------------------------------------------------------------
-# Created by EPD v2.0.8.4899, Playfield Version: 1.5 [3400] (V1.5)
+# Created by EPD v2.0.6.4794, Playfield Version: 1.1.5 [3077] (V1.1.5)
 # --------------------------------------------------------------------------------------------------------------------------
 #
-TemperatureDay: -177
-PlayfieldLevel: 10
-Music: Adrift
 Description: "Welcome to HWS+ Creative!\r\n\r\nThe main intention here is to teach you the new EWS².\r\nWhich means to learn what Element is effective against other Elements or Materials.\r\n\r\nUse the free ships in front of you to quickly get into it.\r\nFor more information visit: \r\n[u]https://hws.global[/u]"
-PlanetType: Space
-PlayfieldType: Space
-PfServerWeight: 100
-AtmosphereEnabled: False
-Difficulty: 5
-LandClaimZone: Device
-SunFlare: EnvironmentalEffects/SunFlareWhite3Space
-Build: 1846
-Radiation: 77
-PvP: True
+TemperatureDay: [-250, -200]
+Radiation: [5, 10]
 UseFixed: True
-AllowBA: True
+PvPProb: 1
+Gravity: 0
+AtmosphereEnabled: False
+Music: [moonstone, Adrift, 2473, Transit, Anomalous, Blight, Dusk, Magnitude, alien2, EnergyMatrix]
+PlayfieldType: Space
+PlanetType: Empty
+Build: 3067
+AllowBA: False
 AllowCV: True
 AllowSV: True
 AllowHV: True
-AllowBlueprintBA: True
-AllowBlueprintCV: True
-AllowBlueprintSV: True
-AllowBlueprintHV: True
-POIs:
-   Fixed:
-   -  Type: AsteroidField
-      Name: Asteroid Field
-      Pos: [3320, 5269, -8323]
-      Rot: [0, 0, 0]
-DroneBaseSetup: {}
+AllowBlueprintBA: False
+AllowBlueprintCV: False
+AllowBlueprintSV: False
+AllowBlueprintHV: False
+BaseAttackCount: 0
+POIs: []
+DroneBaseSetup: []
