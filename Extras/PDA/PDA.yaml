@@ -1,5 +1,5 @@
 # -------
-# Created with eWPDA 2.9.6
+# Created with eWPDA 2.33.0
 # Website: https://empyrion-homeworld.net/tools/ewpda
 # -------
 Creator: RexXxuS | HWS
@@ -43,11 +43,6 @@ Chapters:
     ChapterActivation:
       - Check: WaitAction
         Amount: 3
-        NoSkip: 'true'
-        PopupActivatesChapter: 'true'
-      - Check: WindowOpened
-        Names:
-          - Pda
         NoSkip: 'true'
         PopupActivatesChapter: 'true'
     RewardedChaptersOnSkip:
