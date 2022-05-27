@@ -4,7 +4,7 @@
 # MarketPrice: = sets the price per unit for use with 'Key: StationInterface' for POIs; if different items are used in the same context (like 3 types of energy cells for "Fuel" the item with the lowest cost per fuel content is used automatically)
 # LifetimeOnDrop: float  = specifies in seconds how long an item will live after dropping it. Default is 200 seconds. Please only increase this time if ABSOLUTELY needed as lots of items can bring down the performance of a server, but als in SP.
 # DropOnDeath:   > If set to 'False'  this item or block is not dropped on player death. Use for important story items that players shall not lose on death. Default is set to 'True'.
-#
+#== Buffs/Debuffs/Buffmod==
 # BuffMod: "StatusID_01, DurationFactor, ValueFactor, PreventsOnExpired(Optional);"
 # BuffMod: "MedikitBandages, 0.5, 0.5, true; MedikitApplied, -0.2, 2"
 #== Armor Suits and Boosters
@@ -32,7 +32,7 @@
 # LauncherSS type weapons can also have a BLAST damage, defined by BlastDamage & BlastRadius. Note that the BlastDamage is ADDED on top of the weapons base DAMAGE for the CENTER (hit) block (only)! The calculation for the combinded Damage for this block can e approximated by the following formula: (Damage + BlastDamage) - (BlastDamage / BlastRadius)
 # Weapons can have multipliers to modify the base/blast damage
 # Syntax examples:
-# DamageMultiplier_1: <value>, param1: <material1>|<material2>  ; NOTE: You can add the parameter "Material: HWS_material_" to an creature/NPC entry in the EClassConfig and use the string set there as reference at this point in the itemsconfig (for the weapon being more or less effective against a certain creature/NPC!)
+# DamageMultiplier_1: <value>, param1: <material1>|<material2>  ; NOTE: You can add the parameter "Material: " to an creature/NPC entry in the EClassConfig and use the string set there as reference at this point in the Itemsconfig (for the weapon being more or less effective against a certain creature/NPC!)
 # BlastDamageMultiplier_1: <value>, param1: <material1>|<material2>
 # >> Available materials: head, body, dirt, stone, rock, metallight, metal, metalhard, woodsoft, wood, woodhard, concrete, concrete, hull, hullarmored, hullcombat, shield
 # -- BlastDamage/Radius/Effect setup --
@@ -44,10 +44,10 @@
 # SHIELD: the Class: ShieldGenerator (BlocksConfig.ecf) can have a parameter 'ShieldMultiplier: AnyStringPossible' > The value 'AnyStringPossible' can be used in the DamageMultiplier setup to define shield-block specific damage multipliers! If not used, damage multiplier = 1
 # --
 #
-# Categories: 
+# Categories:
 # Ingredients: Base material without a template (ie picked up in the world)
-# Components: Processed material with a template 
-# 
+# Components: Processed material with a template
+#
 #
 #=== Weapon Hold Types:
 # HoldType: 0    unspecified
@@ -55,26 +55,26 @@
 # HoldType: 15   Rifle
 # HoldType: 16   Rifle + weaker shoot animation (Survival Tool, Multitool, Drill)
 #
-#  Categories: 
+#  Categories:
 # > Sufficient condition given in Templates.ecf
 # > Necessary condition that an item appears in a certain device
-# Food: FoodP and SurvC 
-# Medical: FoodP and SurvC   
+# Food: FoodP and SurvC
+# Medical: FoodP and SurvC
 # Ingredients: FoodP
 # Weapons/Items: SurvC, SmallC, LargeC, AdvC
 # Components: SurvC, SmallC, LargeC, AdvC
 # BuildingBlocks: SurvC, SmallC, LargeC, AdvC
 # Devices: SurvC, SmallC, LargeC, AdvC
 # Deco Blocks: SurvC, SmallC, LargeC, AdvC
-# 
-# Automatic weapons: duration SfxBegin > ROF 
-# 
-# AllowRemote: true / false     # allow / disallow in player drone. per default it is: true  
+#
+# Automatic weapons: duration SfxBegin > ROF
+#
+# AllowRemote: true / false     # allow / disallow in player drone. per default it is: true
 # AmmoCapacity: max is 500 for all turret and mounted weapons
 # Durability: max is 5000 for all handheld weapons and tools
 # AutoReload: true > per default it is set to "true"
 
-# CATEGORIE: PLAYER WEAPONS AND TOOLS id 1 - 99 
+# CATEGORIE: PLAYER WEAPONS AND TOOLS id 1 - 99
 { Item Id: 1, Name: MeleePlayer
   Material: human, display: true
   MarketPrice: 1, display: true
@@ -2140,6 +2140,7 @@
   PickupToToolbar: true
   MarketPrice: 100001, display: true
   Info: "An improved automatic pistol developed by the Zirax after examining UCH weapons retrieved from the Titan's Wreckage. The technology to repair this weapon does not exist yet.", display: true
+  Mass: 2.25, type: float, display: true, formatter: Kilogram
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
   Durability: 500, display: false
   DegradationProb: 0.3, type: float, display: false
@@ -2999,7 +3000,7 @@
   StackSize: 50000
   Category: Weapons/Items
   Info: A specialized injector gun for administering medical aid to an ally in the field., display: true
-  Mass: 4.1, type: float, display: true, formatter: Kilogram
+  Mass: 12, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Durability: 250, display: false
   DegradationProb: 1.0, type: float, display: false
@@ -3168,7 +3169,7 @@
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
   StackSize: 50000
-  Mass: 0.9, type: float, display: true, formatter: Kilogram
+  Mass: 1.2, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   { Child 0
     Class: Projectile
@@ -3252,13 +3253,13 @@
 }
 { Item Id: 60, Name: PulseLaserChargePistol, Ref: 50Caliber
   Material: HWS_material_weapon_energy, display: true
-  Mass: 0.15, type: float, display: true, formatter: Kilogram
+  Mass: 0.75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 7, display: true
 }
 { Item Id: 61, Name: PulseLaserChargeRifle, Ref: 50Caliber
   Material: HWS_material_weapon_energy, display: true
-  Mass: 0.2, type: float, display: true, formatter: Kilogram
+  Mass: 1.20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 20, display: true
 }
@@ -3382,7 +3383,7 @@
   Category: Weapons/Items
   StackSize: 50000
   
-  Mass: 4, type: float, display: true, formatter: Kilogram
+  Mass: 20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 530, display: true
   { Child 0
@@ -3627,7 +3628,7 @@
   StackSize: 50000
   
 
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 1.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   O2Value: 75, display: false, type: int
   Category: Components
@@ -4406,7 +4407,7 @@
   HoldType: 0
   StackSize: 50000
 
-  Mass: 2485, type: float, display: false, formatter: Kilogram
+  Mass: 8485, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
@@ -4620,7 +4621,7 @@
   HoldType: 0
   StackSize: 50000
 
-  Mass: 1050, type: float, display: false, formatter: Kilogram
+  Mass: 2450, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   RadialMenu: true
   { Child 0
@@ -5716,7 +5717,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
   StackSize: 50000
-  # Mass: 8500, type: float, display: false, formatter: Kilogram
+  Mass: 8500, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
@@ -5773,6 +5774,7 @@
 }
 { Item Id: 143, Name: DrillAttachmentSVT2Weapon, Ref: DrillAttachmentWeapon
   CustomIcon: DrillAttachmentT2
+  Mass: 400, type: float, display: false, formatter: Kilogram
   MarketPrice: 1, display: true
   { Child 0
     Class: Driller
@@ -5914,7 +5916,7 @@
   StackSize: 50000
   
   Canhold: false
-  Mass: 3, type: float, display: true, formatter: Kilogram
+  Mass: 18, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -5948,7 +5950,7 @@
   StackSize: 50000
   
   Canhold: false
-  Mass: 0.9, type: float, display: true, formatter: Kilogram
+  Mass: 0.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 14, display: true
   Info: bkiAmmo, display: true
@@ -5967,7 +5969,7 @@
   StackSize: 50000
   
   Canhold: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Category: Weapons/Items
@@ -5988,7 +5990,7 @@
   Canhold: false
   MarketPrice: 169, display: true
   ShowUser: No
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 41, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6097,7 +6099,7 @@
   StackSize: 50000
   
   Canhold: false
-  Mass: 15, type: float, display: true, formatter: Kilogram
+  Mass: 140, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6129,7 +6131,7 @@
   StackSize: 50000
   
   Canhold: false
-  Mass: 49, type: float, display: true, formatter: Kilogram
+  Mass: 76, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6166,7 +6168,7 @@
   
   Canhold: false
   ShowUser: No
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 47, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6202,7 +6204,7 @@
   StackSize: 50000
   
   Canhold: false
-  Mass: 2, type: float, display: true, formatter: Kilogram
+  Mass: 12, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6274,7 +6276,7 @@
   StackSize: 50000
   
   Canhold: false
-  Mass: 50, type: float, display: true, formatter: Kilogram
+  Mass: 32, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6347,7 +6349,7 @@
   Canhold: false
   ShowUser: No
   CustomIcon: PulseLaserChargeBA
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 140, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6376,7 +6378,7 @@
 { Item Id: 165, Name: FastRocketHoming, Ref: FastRocket
   Info: bkiAmmoHoming, display: true
   AllowPlacingAt: "SS,GV", display: false
-  Mass: 10, type: float, display: true, formatter: Kilogram
+  Mass: 20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 252, display: true
   { Child 0
@@ -6440,7 +6442,7 @@
 
 { Item Id: 168, Name: PulseLaserChargeBA, Ref: PulseLaserChargeMS
   AllowPlacingAt: Base, display: false
-  Mass: 10, type: float, display: true, formatter: Kilogram
+  Mass: 140, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 17, display: true
   { Child 0
@@ -6459,7 +6461,7 @@
 
 { Item Id: 169, Name: FastRocketBA, Ref: FastRocketMS
   AllowPlacingAt: Base, display: false
-  Mass: 49, type: float, display: true, formatter: Kilogram
+  Mass: 76, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 1034, display: true
   { Child 0
@@ -6480,7 +6482,7 @@
 
 { Item Id: 170, Name: TurretBAPlasmaCharge, Ref: TurretMSPlasmaCharge
   AllowPlacingAt: Base, display: false
-  Mass: 50, type: float, display: true, formatter: Kilogram
+  Mass: 35, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 130, display: true
   { Child 0
@@ -6507,7 +6509,7 @@
   StackSize: 50000
   
   Canhold: false
-  Mass: 10, type: float, display: true, formatter: Kilogram
+  Mass: 150, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Category: Weapons/Items
@@ -6560,7 +6562,7 @@
 }
 { Item Id: 174, Name: FastRocketGV, Ref: FlakRocket
   AllowPlacingAt: GV, display: false
-  Mass: 2, type: float, display: true, formatter: Kilogram
+  Mass: 19, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 316, display: true
   { Child 0
@@ -6665,7 +6667,7 @@
   StackSize: 50000
   Canhold: false
   ShowUser: No
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 34, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6698,7 +6700,7 @@
   StackSize: 50000
   Canhold: false
   ShowUser: No
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 100, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -7273,7 +7275,7 @@
   # Info: bkiCurrency, display: true
   MarketPrice: 401, display: true
   Info: Embossed gold coins that can be exchanged for credits by inserting them into the coin slot on an ATM. Can also be melted down in a furnace., display: true
-  Mass: 0.36, type: float, display: true, formatter: Kilogram
+  Mass: 0.72, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Credits: 50, display: true
   ShowUser: Yes
@@ -7396,7 +7398,7 @@
 }
 
 { Item Id: 265, Name: TitanPlates, Ref: ComponentsTemplate
-  Mass: 15, type: float, display: true, formatter: Kilogram
+  Mass: 6.76, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A plate of Titanium metal with a foam metal core for added strength and durability., display: true
   ShowUser: Yes
@@ -7455,7 +7457,7 @@
 }
 
 { Item Id: 271, Name: PlatinOunce, Ref: ComponentsTemplate
-  Mass: 4.0, type: float, display: true, formatter: Kilogram
+  Mass: 32.18, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A folded bar of Platinum Foil. Unfolded it's used in various applications for it's resistance to corrosion and friction., display: true
   ShowUser: Yes
@@ -8087,8 +8089,7 @@
 }
 
 { Item Id: 327, Name: Medikit01, Ref: FoodTemplate
-
-  Mass: 0.04, type: float, display: true, formatter: Kilogram
+  Mass: 0.75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Medical
   Info: bkiMedikit01, display: true  #NewRequired
@@ -8129,8 +8130,7 @@
 }
 
 { Item Id: 329, Name: Medikit04, Ref: FoodTemplate
-
-  Mass: 0.12, type: float, display: true, formatter: Kilogram
+  Mass: 0.06, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Medical
   Info: bkiMedikit01, display: true  #NewRequired
@@ -8261,6 +8261,7 @@
     SfxBegin: UseActions/exhale
     Buff: Indigestion
     Buff_chance: 0.15
+    BuffMod: "InfectedWound, -0.2, -0.4, true; Sepsis, -0.1, -0.25;EndoParasite2, 0.5, 0, false"
   }
 }
 { Item Id: 335, Name: HerbalLeaves, Ref: FoodTemplate
@@ -8379,7 +8380,6 @@
   }
 }
 { Item Id: 341, Name: Bandages, Ref: FoodTemplate
-
   Mass: 0.05, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Medical
@@ -8396,10 +8396,10 @@
     Buff: MedikitBandages
     Debuff: "OpenWound,BrokenLeg,FractureClosed", display: EffectiveAgainst
     SfxBegin: UseActions/exhale
+    BuffMod: "FractureClosed, -0.3, -0.8, true; FractureOpen, -0.4, -0.6, true"
   }
 }
 { Item Id: 342, Name: BrafusFungi, Ref: FoodTemplate
-
   Info: bkiConsumable, display: true
   Category: Ingredients
   FoodDecayTime: 25, display: true, type: int
@@ -8461,8 +8461,8 @@
   }
 }
 { Item Id: 345, Name: AntibioticInjection, Ref: FoodTemplate
-
   Info: bkiConsumable, display: true
+  Mass: 0.02, type: float, display: true, formatter: Kilogram
   Category: Medical
   MarketPrice: 137, display: true
   ShowUser: Yes
@@ -8477,6 +8477,7 @@
     Buff: Indigestion
     Buff_chance: 0.10
     SfxBegin: UseActions/exhale
+    BuffMod: "Sepsis, -0.15, -0.4; EndoParasite3, -0.6, -0.2, false"
   }
 }
 { Item Id: 346, Name: EmergencyRations, Ref: FoodTemplate
@@ -8526,7 +8527,7 @@
 { Item Id: 348, Name: WaterJug, Ref: FoodTemplate
   Info: bkiConsumable, display: true
   Category: Components
-  Mass: 30, type: float, display: true, formatter: Kilogram
+  Mass: 20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 180, display: true
   ShowUser: Yes
@@ -8637,9 +8638,9 @@
 }
 # delete when save game break
 { Item Id: 354, Name: AkuaFruit, Ref: FoodTemplate
-
  Info: bkiConsumable, display: true
  Category: Ingredients
+ Mass: 0.09, type: float, display: true, formatter: Kilogram
  FoodDecayTime: 25, display: true, type: int
  FoodDecayedItem: RottenFood
   MarketPrice: 16, display: true
@@ -9102,8 +9103,7 @@
   }
 }
 { Item Id: 379, Name: AntibioticOintment, Ref: FoodTemplate
-
-  Mass: 0.01, type: float, display: true, formatter: Kilogram
+  Mass: 0.04, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiConsumable, display: true
   Category: Medical
@@ -9178,6 +9178,7 @@
     AddOxygen: 0
     Debuff: "Indigestion,PoisonFood", display: EffectiveAgainst
     SfxBegin: UseActions/playerSwallow
+    BuffMod: "PoisonFood, -0.7, 0, true; Frostbite, 0.2, -0.7, false; Necrosis, 0, -0.85, false; OrganFailure, 0, -0.4; FeverAttack, 0.3, -0.4, false"
   }
 }
 { Item Id: 383, Name: HotBeverage, Ref: FoodTemplate
@@ -9267,9 +9268,9 @@
   }
 }
 { Item Id: 387, Name: AntiRadiationOintment, Ref: FoodTemplate
-
   Info: bkiConsumable, display: true
   Category: Medical
+  Mass: 0.04, type: float, display: true, formatter: Kilogram
   MarketPrice: 72, display: true
   ShowUser: Yes
   { Child 0
@@ -9285,9 +9286,9 @@
   }
 }
 { Item Id: 388, Name: AntiToxicOintment, Ref: FoodTemplate
-
   Info: bkiConsumable, display: true
   Category: Medical
+  Mass: 0.04, type: float, display: true, formatter: Kilogram
   MarketPrice: 52, display: true
   ShowUser: Yes
   { Child 0
@@ -9305,6 +9306,7 @@
 
   Info: bkiConsumable, display: true
   Category: Medical
+  Mass: 0.01, type: float, display: true, formatter: Kilogram
   MarketPrice: 117, display: true
   ShowUser: Yes
   { Child 0
@@ -9318,12 +9320,14 @@
     SfxBegin: UseActions/exhale
     Buff: Indigestion
     Buff_chance: 0.15
+    BuffMod: "PoisonBit2, 0.6, -0.9, false;Intoxication, 1, -0.4, true"
   }
 }
 { Item Id: 390, Name: AntiParasitePills, Ref: FoodTemplate
 
   Info: bkiConsumable, display: true
   Category: Medical
+  Mass: 0.01, type: float, display: true, formatter: Kilogram
   MarketPrice: 175, display: true
   ShowUser: Yes
   { Child 0
@@ -9340,9 +9344,9 @@
   }
 }
 { Item Id: 391, Name: AntiToxicInjection, Ref: FoodTemplate
-
   Info: bkiConsumable, display: true
   Category: Medical
+  Mass: 0.02, type: float, display: true, formatter: Kilogram
   MarketPrice: 148, display: true
   ShowUser: Yes
   { Child 0
@@ -9357,9 +9361,9 @@
   }
 }
 { Item Id: 392, Name: AntiParasiteInjection, Ref: FoodTemplate
-
   Info: bkiConsumable, display: true
   Category: Medical
+  Mass: 0.02, type: float, display: true, formatter: Kilogram
   MarketPrice: 206, display: true
   ShowUser: Yes
   { Child 0
@@ -10550,6 +10554,7 @@
   # Meshfile: Entities/Items/Weapons/Enemies/ZiraxGunPrefab
   MarketPrice: 1, display: true
   Meshfile: Entities/Items/Weapons/Enemies/ZiraxLaserPrefab
+  Mass: 12, type: float, display: false, formatter: Kilogram
   { Child 0
     Class: Ranged
     ROF: 0.8, type: float, display: true, formatter: ROF
@@ -11033,6 +11038,7 @@
 { Item Id: 587, Name: ZiraxSniperWeapon, Ref: ZiraxMinigunWeapon
   Meshfile: Entities/Items/Weapons/Enemies/ZiraxSniperPrefab
   MarketPrice: 1, display: true
+  Mass: 12, type: float, display: false, formatter: Kilogram
   { Child 0
     ROF: 2, type: float
     Range: 120, display: false
@@ -11339,7 +11345,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_devices_kinetic, display: false
-  Mass: 44, type: float, display: false, formatter: Kilogram
+  Mass: 48, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   VolumeCapacity: 20, type: float, display: true, formatter: Liter
   HoldType: 0
@@ -11373,7 +11379,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_devices_kinetic, display: false
-  Mass: 52, type: float, display: false, formatter: Kilogram
+  Mass: 88, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   VolumeCapacity: 30, type: float, display: true, formatter: Liter
   HoldType: 0
@@ -11406,7 +11412,7 @@
   RecipeName: LightArmorEpic
   MarketPrice: 2578, display: true
   Info: Light Armor reinforced with enhanced elements with increased protection and durability., display: true
-  Mass: 25, type: float, display: false, formatter: Kilogram
+  Mass: 37, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   VolumeCapacity: 40, type: float, display: true, formatter: Liter
 
@@ -11454,7 +11460,7 @@
 
   NrSlots: 3, type: int, display: true
 
-  Mass: 18, type: float, display: false, formatter: Kilogram
+  Mass: 79, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 
   UnlockLevel: 1
@@ -11486,7 +11492,7 @@
   StaminaFac: 1.1, type: float, display: true
   NrSlots: 4, type: int, display: true
 
-  Mass: 100, type: float, display: false, formatter: Kilogram
+  Mass: 112, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 
   UnlockLevel: 1
@@ -11876,7 +11882,7 @@
   HoldType: 0
   StackSize: 50000
   ShowUser: No
-  Mass: 0.5, type: float, display: true, formatter: Kilogram
+  Mass: 40.0, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Weapons/Items
   Info: bkiExplosives, display: true
@@ -11947,6 +11953,7 @@
 { Item Id: 800, Name: ZiraxAssaultRiflePlayer , Ref: AssaultRifleT2
   Meshfile: Entities/Items/Weapons/Enemies/ZiraxMinigunPlyPrefab
   MarketPrice: 1, display: true
+  Mass: 6.2, type: float, display: true, formatter: Kilogram
   ShowUser: No
   { Child 0
     Range: 120, display: false
@@ -11968,6 +11975,7 @@
 { Item Id: 801, Name: ZiraxShotgunPlayer, Ref: AssaultRifleT2
   Meshfile: Entities/Items/Weapons/Enemies/ZiraxShotgunPlyPrefab
   MarketPrice: 1, display: true
+  Mass: 11.2, type: float, display: true, formatter: Kilogram
   ShowUser: No
   { Child 0
     Range: 120, display: false
@@ -11989,7 +11997,7 @@
   StackSize: 50000
   Category: Weapons/Items
   Info: bkiWeaponHandheldIgnoringAtmo, display: true
-  Mass: 6, type: float, display: true, formatter: Kilogram
+  Mass: 6.8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Durability: 1000, display: false
   DegradationProb: 0.05, type: float, display: false
@@ -12727,6 +12735,7 @@
 
 # === High Tier sphere turret weapon and ammo (900-920) ===
 { Item Id: 900, Name: TurretEnemyLaserWeaponBlack, Ref: TurretEnemyLaserWeaponT2
+  Mass: 8500, type: float, display: false, formatter: Kilogram
   { Child 0
   MarketPrice: 1, display: true
     AmmoType: TurretEnemyLaserChargeBlack, display: true
@@ -12821,7 +12830,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
   StackSize: 50000
-  Mass: 6120, type: float, display: false, formatter: Kilogram
+  Mass: 8500, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
     Class: Ranged
@@ -13665,6 +13674,11 @@
   Mass: 0.8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
+{ +Item Id: 1022, Name: FishMeat, Ref: TradingGoodsTemplate
+  CustomIcon: Meat
+  ShowUser: Yes
+  MarketPrice: 15, display: true
+}
 # == Reports Common
 { Item Id: 1049, Name: ReportsTemplate
   Meshfile: Entities/Misc/DummyPrefab
@@ -14209,7 +14223,7 @@
   Material: metalitem, display: false
   Canhold: false
   HoldType: 0
-  Mass: 0, type: float, display: false, formatter: Kilogram
+  Mass: 0.1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   StackSize: 50000
   Info: bkiKeysGeneral, display: true
