@@ -2337,7 +2337,7 @@
   StackSize: 50000
   BlockColor: "110,110,110"
   Category: Devices
-  Torque: 150, type: int, display: true, formatter: NewtonMeter
+  Torque: 100, type: int, display: true, formatter: NewtonMeter
   EnergyDynamicGroup: RCS
   EnergyIn: 30, type: int, display: true, formatter: Watt
   CPUIn: 300, type: int, display: true
@@ -31099,7 +31099,7 @@
 
   RotSpeed: 170, type: int, display: true
   Zoom: 5, type: float
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
 }
 { Block Name: HWSAquaTurretBAT2
   MarketPrice: 1, display: true
@@ -31140,7 +31140,7 @@
 
   RotSpeed: 170, type: int, display: true
   Zoom: 5, type: float
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
 }
 { Block Name: HWSAquaTurretBAT3
   MarketPrice: 1, display: true
@@ -31180,7 +31180,7 @@
 
   RotSpeed: 170, type: int, display: true
   Zoom: 5, type: float
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
 }
 { Block Name: HWSAquaTurretBAT4
   MarketPrice: 1, display: true
@@ -31220,7 +31220,7 @@
 
   RotSpeed: 170, type: int, display: true
   Zoom: 5, type: float
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
 }
 { Block Name: HWSAquaTurretBAT5
   MarketPrice: 1, display: true
@@ -31260,7 +31260,7 @@
 
   RotSpeed: 170, type: int, display: true
   Zoom: 5, type: float
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
 }
 # ------------------------------------------------------------------------------------------------------ Terra Turret BA
 { Block Name: HWSTerraTurretBABlocks
@@ -31324,7 +31324,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 22500, type: int, display: true
 
@@ -31360,7 +31360,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 22500, type: int, display: true
 
@@ -31396,7 +31396,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 22500, type: int, display: true
 
@@ -31432,7 +31432,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 22500, type: int, display: true
 
@@ -31468,7 +31468,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 22500, type: int, display: true
 
@@ -31536,7 +31536,7 @@
   BlastRadius: 1
   BlastDamage: 5000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -31572,7 +31572,7 @@
   BlastRadius: 1
   BlastDamage: 5000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -31608,7 +31608,7 @@
   BlastRadius: 1
   BlastDamage: 5000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -31644,7 +31644,7 @@
   BlastRadius: 1
   BlastDamage: 5000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -31680,7 +31680,7 @@
   BlastRadius: 1
   BlastDamage: 5000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -31748,7 +31748,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -31784,7 +31784,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -31820,7 +31820,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -31856,7 +31856,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -31892,7 +31892,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -31960,7 +31960,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 7500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -31996,7 +31996,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 7500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -32032,7 +32032,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 7500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -32068,7 +32068,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 7500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -32104,7 +32104,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 7500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -32172,7 +32172,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -32208,7 +32208,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -32244,7 +32244,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -32280,7 +32280,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -32316,7 +32316,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 200000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -32384,7 +32384,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 15000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   Mass: 22500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -32420,7 +32420,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 15000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   Mass: 22500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -32456,7 +32456,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 15000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   Mass: 22500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -32492,7 +32492,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 15000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   Mass: 22500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -32528,7 +32528,7 @@
   BlastRadius: 2
   BlastDamage: 10000
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 15000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   Mass: 22500, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
 
@@ -32599,7 +32599,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 255, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 250000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -32641,7 +32641,7 @@
   HitPoints: 15000, type: int, display: true
   RotSpeed: 255, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 250000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -32683,7 +32683,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 255, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 250000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -32725,7 +32725,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 255, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 250000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -32767,7 +32767,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 255, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 250000, type: int, display: true
   Mass: 7500, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -32809,7 +32809,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 255, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 250000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -32851,7 +32851,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 255, type: int, display: true
   EnergyIn: 8, type: int, display: true, formatter: Watt
-  CPUIn: 7500, type: int, display: true
+  CPUIn: 375000, type: int, display: true
   Mass: 22500, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -32931,7 +32931,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 10000, type: float, display: true, formatter: Kilogram
   HitPoints: 10000, type: int, display: true
@@ -32973,7 +32973,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33013,7 +33013,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33053,7 +33053,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33123,7 +33123,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 10000, type: float, display: true, formatter: Kilogram
   HitPoints: 15000, type: int, display: true
@@ -33165,7 +33165,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 15000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33205,7 +33205,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 15000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33245,7 +33245,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 15000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33315,7 +33315,7 @@
   BlastRadius: 1
   BlastDamage: 250
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 10000, type: float, display: true, formatter: Kilogram
   HitPoints: 10000, type: int, display: true
@@ -33357,7 +33357,7 @@
   BlastRadius: 1
   BlastDamage: 250
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33397,7 +33397,7 @@
   BlastRadius: 1
   BlastDamage: 250
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33437,7 +33437,7 @@
   BlastRadius: 1
   BlastDamage: 250
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33507,7 +33507,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 10000, type: float, display: true, formatter: Kilogram
   HitPoints: 10000, type: int, display: true
@@ -33549,7 +33549,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33589,7 +33589,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33629,7 +33629,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33699,7 +33699,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 5000, type: float, display: true, formatter: Kilogram
   HitPoints: 10000, type: int, display: true
@@ -33741,7 +33741,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33781,7 +33781,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33821,7 +33821,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33891,7 +33891,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 10000, type: float, display: true, formatter: Kilogram
   HitPoints: 10000, type: int, display: true
@@ -33933,7 +33933,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33973,7 +33973,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -34013,7 +34013,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  CPUIn: 300000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -34083,7 +34083,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 30000, type: int, display: true
+  CPUIn: 450000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 10000, type: int, display: true
@@ -34125,7 +34125,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 30000, type: int, display: true
+  CPUIn: 450000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -34165,7 +34165,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 30000, type: int, display: true
+  CPUIn: 450000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -34205,7 +34205,7 @@
   BlastRadius: 2
   BlastDamage: 500
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 30000, type: int, display: true
+  CPUIn: 450000, type: int, display: true
   HitPoints: 10000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -34275,7 +34275,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 180, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 500000, type: int, display: true
   Mass: 10000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -34317,7 +34317,7 @@
   HitPoints: 15000, type: int, display: true
   RotSpeed: 180, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 500000, type: int, display: true
   Mass: 10000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -34359,7 +34359,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 180, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 500000, type: int, display: true
   Mass: 10000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -34401,7 +34401,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 180, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 500000, type: int, display: true
   Mass: 10000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -34443,7 +34443,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 180, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 500000, type: int, display: true
   Mass: 5000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -34485,7 +34485,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 180, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 500000, type: int, display: true
   Mass: 10000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -34527,7 +34527,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 180, type: int, display: true
   EnergyIn: 8, type: int, display: true, formatter: Watt
-  CPUIn: 7500, type: int, display: true
+  CPUIn: 750000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -34540,8 +34540,8 @@
 # T2 Gun. Fast Hitscan (direct damage impact, hit where cursor aims to)
 # T3 Gun. Penetration (direct damage impact through Blocks, hit where cursor aims to)
 { Block Name: HWSAquaGunCVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_aquadevicelarge, display: true
   MarketPrice: 30003, display: true
@@ -34608,7 +34608,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -34656,7 +34656,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -34703,7 +34703,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -34713,8 +34713,8 @@
 }
 # --------------------------------------------------------------------------------------------------------- Terra Gun CV
 { Block Name: HWSTerraGunCVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_terradevicelarge, display: true
   MarketPrice: 30003, display: true
@@ -34780,7 +34780,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 3000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -34828,7 +34828,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 3000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -34875,7 +34875,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 3000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -34885,8 +34885,8 @@
 }
 # ---------------------------------------------------------------------------------------------------------- Pyro Gun CV
 { Block Name: HWSPyroGunCVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_pyrodevicelarge, display: true
   MarketPrice: 30003, display: true
@@ -34952,7 +34952,7 @@
   BlastRadius: 1
   BlastDamage: 150
   EnergyIn: 25, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -34999,7 +34999,7 @@
   BlastRadius: 1
   BlastDamage: 150
   EnergyIn: 25, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -35046,7 +35046,7 @@
   BlastRadius: 1
   BlastDamage: 150
   EnergyIn: 25, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -35056,8 +35056,8 @@
 }
 # ------------------------------------------------------------------------------------------------------ Obsidian Gun CV
 { Block Name: HWSObsidianGunCVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_obsidiandevicelarge, display: true
   MarketPrice: 90009, display: true
@@ -35123,7 +35123,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -35170,7 +35170,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -35217,7 +35217,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -35227,8 +35227,8 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Lux Gun CV
 { Block Name: HWSLuxGunCVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_luxdevicelarge, display: true
   MarketPrice: 30003, display: true
@@ -35294,7 +35294,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -35341,7 +35341,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -35388,7 +35388,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -35398,8 +35398,8 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Nox Gun CV
 { Block Name: HWSNoxGunCVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_noxdevicelarge, display: true
   MarketPrice: 30003, display: true
@@ -35465,7 +35465,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -35512,7 +35512,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -35558,7 +35558,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 400000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -35568,8 +35568,8 @@
 }
 # ---------------------------------------------------------------------------------------------------- Strangelet Gun CV
 { Block Name: HWSStrangeletGunCVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_strangeletdevicelarge, display: true
   MarketPrice: 10001, display: true
@@ -35635,7 +35635,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 75, type: int, display: true, formatter: Watt
-  CPUIn: 3500, type: int, display: true
+  CPUIn: 600000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -35681,7 +35681,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 75, type: int, display: true, formatter: Watt
-  CPUIn: 3500, type: int, display: true
+  CPUIn: 600000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -35728,7 +35728,7 @@
   BlastRadius: 2
   BlastDamage: 300
   EnergyIn: 75, type: int, display: true, formatter: Watt
-  CPUIn: 3500, type: int, display: true
+  CPUIn: 600000, type: int, display: true
   HitPoints: 2000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -35807,7 +35807,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 5000, type: float, display: true, formatter: Kilogram
   HitPoints: 1000, type: int, display: true
@@ -35849,7 +35849,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -35889,7 +35889,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -35929,7 +35929,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -35998,7 +35998,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 5000, type: float, display: true, formatter: Kilogram
   HitPoints: 1500, type: int, display: true
@@ -36040,7 +36040,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1500, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36080,7 +36080,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1500, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36120,7 +36120,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1500, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36189,7 +36189,7 @@
   BlastRadius: 1
   BlastDamage: 75
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 5000, type: float, display: true, formatter: Kilogram
   HitPoints: 1000, type: int, display: true
@@ -36231,7 +36231,7 @@
   BlastRadius: 1
   BlastDamage: 75
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36271,7 +36271,7 @@
   BlastRadius: 1
   BlastDamage: 75
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36311,7 +36311,7 @@
   BlastRadius: 1
   BlastDamage: 75
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36380,7 +36380,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 5000, type: float, display: true, formatter: Kilogram
   HitPoints: 1000, type: int, display: true
@@ -36422,7 +36422,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36462,7 +36462,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36502,7 +36502,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36571,7 +36571,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 2500, type: float, display: true, formatter: Kilogram
   HitPoints: 1000, type: int, display: true
@@ -36613,7 +36613,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36653,7 +36653,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36693,7 +36693,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36762,7 +36762,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 5000, type: float, display: true, formatter: Kilogram
   HitPoints: 1000, type: int, display: true
@@ -36804,7 +36804,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36844,7 +36844,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36884,7 +36884,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 150, type: int, display: true, formatter: Watt
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -36953,7 +36953,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 225, type: int, display: true, formatter: Watt
-  CPUIn: 2250, type: int, display: true
+  CPUIn: 30000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 7500, type: float, display: true, formatter: Kilogram
   HitPoints: 1000, type: int, display: true
@@ -36995,7 +36995,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 225, type: int, display: true, formatter: Watt
-  CPUIn: 2250, type: int, display: true
+  CPUIn: 30000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -37035,7 +37035,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 225, type: int, display: true, formatter: Watt
-  CPUIn: 2250, type: int, display: true
+  CPUIn: 30000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -37075,7 +37075,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 225, type: int, display: true, formatter: Watt
-  CPUIn: 2250, type: int, display: true
+  CPUIn: 30000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -37145,7 +37145,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 105, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 35000, type: int, display: true
   Mass: 5000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -37187,7 +37187,7 @@
   HitPoints: 15000, type: int, display: true
   RotSpeed: 105, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 35000, type: int, display: true
   Mass: 5000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -37229,7 +37229,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 105, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 35000, type: int, display: true
   Mass: 5000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -37271,7 +37271,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 105, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 35000, type: int, display: true
   Mass: 5000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -37313,7 +37313,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 105, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 35000, type: int, display: true
   Mass: 2500, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -37355,7 +37355,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 105, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 35000, type: int, display: true
   Mass: 5000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -37397,7 +37397,7 @@
   HitPoints: 10000, type: int, display: true
   RotSpeed: 105, type: int, display: true
   EnergyIn: 8, type: int, display: true, formatter: Watt
-  CPUIn: 7500, type: int, display: true
+  CPUIn: 52500, type: int, display: true
   Mass: 7500, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -37409,8 +37409,8 @@
 # T1 Gun. High Splash and High Damage and Homing
 # T2 Gun. Penetration (direct damage impact through Blocks, hit where cursor aims to)
 { Block Name: HWSAquaGunHVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_aquadevicesmall, display: true
   MarketPrice: 30003, display: true
@@ -37477,7 +37477,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 60, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 750, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -37525,7 +37525,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 60, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 750, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -37535,8 +37535,8 @@
 }
 # --------------------------------------------------------------------------------------------------------- Terra Gun HV
 { Block Name: HWSTerraGunHVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_terradevicesmall, display: true
   MarketPrice: 30003, display: true
@@ -37603,7 +37603,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 60, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 1125, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -37651,7 +37651,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 60, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 1125, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -37661,8 +37661,8 @@
 }
 # ---------------------------------------------------------------------------------------------------------- Pyro Gun HV
 { Block Name: HWSPyroGunHVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_pyrodevicesmall, display: true
   MarketPrice: 30003, display: true
@@ -37729,7 +37729,7 @@
   BlastRadius: 1
   BlastDamage: 75
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 750, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -37777,7 +37777,7 @@
   BlastRadius: 1
   BlastDamage: 75
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 750, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -37787,8 +37787,8 @@
 }
 # ------------------------------------------------------------------------------------------------------ Obsidian Gun HV
 { Block Name: HWSObsidianGunHVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_obsidiandevicesmall, display: true
   MarketPrice: 90009, display: true
@@ -37855,7 +37855,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 60, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 750, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -37903,7 +37903,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 60, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 750, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -37913,8 +37913,8 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Lux Gun HV
 { Block Name: HWSLuxGunHVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_luxdevicesmall, display: true
   MarketPrice: 30003, display: true
@@ -37981,7 +37981,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 60, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 750, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -38029,7 +38029,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 60, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 750, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -38039,8 +38039,8 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Nox Gun HV
 { Block Name: HWSNoxGunHVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_noxdevicesmall, display: true
   MarketPrice: 30003, display: true
@@ -38107,7 +38107,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 60, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 750, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -38155,7 +38155,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 60, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 750, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -38165,8 +38165,8 @@
 }
 # ---------------------------------------------------------------------------------------------------- Strangelet Gun HV
 { Block Name: HWSStrangeletGunHVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_strangeletdevicesmall, display: true
   MarketPrice: 10001, display: true
@@ -38233,7 +38233,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 90, type: int, display: true, formatter: Watt
-  CPUIn: 1125, type: int, display: true
+  CPUIn: 15000, type: int, display: true
   HitPoints: 750, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -38281,7 +38281,7 @@
   BlastRadius: 2
   BlastDamage: 150
   EnergyIn: 90, type: int, display: true, formatter: Watt
-  CPUIn: 1125, type: int, display: true
+  CPUIn: 15000, type: int, display: true
   HitPoints: 750, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -38358,10 +38358,10 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 500, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 1000, type: float, display: true, formatter: Kilogram
-  HitPoints: 500, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38400,8 +38400,8 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 500, type: int, display: true
-  HitPoints: 500, type: int, display: true
+  CPUIn: 20000, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38469,10 +38469,10 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 500, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 1000, type: float, display: true, formatter: Kilogram
-  HitPoints: 750, type: int, display: true
+  HitPoints: 1500, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38511,8 +38511,8 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 500, type: int, display: true
-  HitPoints: 750, type: int, display: true
+  CPUIn: 20000, type: int, display: true
+  HitPoints: 1500, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38580,10 +38580,10 @@
   BlastRadius: 1
   BlastDamage: 50
   EnergyIn: 25, type: int, display: true, formatter: Watt
-  CPUIn: 500, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 1000, type: float, display: true, formatter: Kilogram
-  HitPoints: 500, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38622,8 +38622,8 @@
   BlastRadius: 1
   BlastDamage: 50
   EnergyIn: 25, type: int, display: true, formatter: Watt
-  CPUIn: 500, type: int, display: true
-  HitPoints: 500, type: int, display: true
+  CPUIn: 20000, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38691,10 +38691,10 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 500, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 1000, type: float, display: true, formatter: Kilogram
-  HitPoints: 500, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38733,8 +38733,8 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 500, type: int, display: true
-  HitPoints: 500, type: int, display: true
+  CPUIn: 20000, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38802,10 +38802,10 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 500, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 500, type: float, display: true, formatter: Kilogram
-  HitPoints: 500, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38844,8 +38844,8 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 500, type: int, display: true
-  HitPoints: 500, type: int, display: true
+  CPUIn: 20000, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38913,10 +38913,10 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 500, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 1000, type: float, display: true, formatter: Kilogram
-  HitPoints: 500, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38955,8 +38955,8 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 50, type: int, display: true, formatter: Watt
-  CPUIn: 500, type: int, display: true
-  HitPoints: 500, type: int, display: true
+  CPUIn: 20000, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
 }
@@ -39024,10 +39024,10 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 75, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
+  CPUIn: 30000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 1500, type: float, display: true, formatter: Kilogram
-  HitPoints: 500, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
 }
@@ -39066,8 +39066,8 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 75, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
-  HitPoints: 500, type: int, display: true
+  CPUIn: 30000, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   RotSpeed: 20, type: int, display: true
   Zoom: 5, type: float
 }
@@ -39134,7 +39134,7 @@
   HitPoints: 1000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 25000, type: int, display: true
   Mass: 1000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -39176,7 +39176,7 @@
   HitPoints: 1500, type: int, display: true
   RotSpeed: 30, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 25000, type: int, display: true
   Mass: 1000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -39218,7 +39218,7 @@
   HitPoints: 1000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   EnergyIn: 2, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 25000, type: int, display: true
   Mass: 1000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -39260,7 +39260,7 @@
   HitPoints: 1000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 25000, type: int, display: true
   Mass: 1000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -39302,7 +39302,7 @@
   HitPoints: 1000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 25000, type: int, display: true
   Mass: 500, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -39344,7 +39344,7 @@
   HitPoints: 1000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 25000, type: int, display: true
   Mass: 1000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -39386,7 +39386,7 @@
   HitPoints: 1000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   EnergyIn: 8, type: int, display: true, formatter: Watt
-  CPUIn: 7500, type: int, display: true
+  CPUIn: 37500, type: int, display: true
   Mass: 1500, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -39400,8 +39400,8 @@
 # T3 Gun. Beam (direct continouus damage impact, hit where cursor aims to)
 # T4 Gun. Penetration (direct damage impact through Blocks, hit where cursor aims to)
 { Block Name: HWSAquaGunSVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_aquadevicesmall, display: true
   MarketPrice: 30003, display: true
@@ -39468,7 +39468,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -39515,7 +39515,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -39562,7 +39562,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -39609,7 +39609,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -39619,8 +39619,8 @@
 }
 # --------------------------------------------------------------------------------------------------------- Terra Gun SV
 { Block Name: HWSTerraGunSVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_terradevicesmall, display: true
   MarketPrice: 30003, display: true
@@ -39687,7 +39687,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 1050, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -39735,7 +39735,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 1050, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -39783,7 +39783,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 1050, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -39831,7 +39831,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 1050, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -39841,8 +39841,8 @@
 }
 # ---------------------------------------------------------------------------------------------------------- Pyro Gun SV
 { Block Name: HWSPyroGunSVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_pyrodevicesmall, display: true
   MarketPrice: 30003, display: true
@@ -39909,7 +39909,7 @@
   BlastRadius: 1
   BlastDamage: 50
   EnergyIn: 15, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -39957,7 +39957,7 @@
   BlastRadius: 1
   BlastDamage: 50
   EnergyIn: 15, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -40005,7 +40005,7 @@
   BlastRadius: 1
   BlastDamage: 50
   EnergyIn: 15, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -40053,7 +40053,7 @@
   BlastRadius: 1
   BlastDamage: 50
   EnergyIn: 15, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -40063,8 +40063,8 @@
 }
 # ------------------------------------------------------------------------------------------------------ Obsidian Gun SV
 { Block Name: HWSObsidianGunSVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_obsidiandevicesmall, display: true
   MarketPrice: 90009, display: true
@@ -40131,7 +40131,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -40179,7 +40179,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -40227,7 +40227,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -40275,7 +40275,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -40285,8 +40285,8 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Lux Gun SV
 { Block Name: HWSLuxGunSVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_luxdevicesmall, display: true
   MarketPrice: 30003, display: true
@@ -40353,7 +40353,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -40401,7 +40401,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -40449,7 +40449,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -40497,7 +40497,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -40507,8 +40507,8 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Nox Gun SV
 { Block Name: HWSNoxGunSVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_noxdevicesmall, display: true
   MarketPrice: 30003, display: true
@@ -40575,7 +40575,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -40623,7 +40623,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -40671,7 +40671,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -40719,7 +40719,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUIn: 800, type: int, display: true
+  CPUIn: 10000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -40729,8 +40729,8 @@
 }
 # ---------------------------------------------------------------------------------------------------- Strangelet Gun SV
 { Block Name: HWSStrangeletGunSVBlocks
-  Class: TurretManual
-  IndexName: Turret
+  Class: Weapon
+  IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_strangeletdevicesmall, display: true
   MarketPrice: 10001, display: true
@@ -40797,7 +40797,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 45, type: int, display: true, formatter: Watt
-  CPUIn: 1200, type: int, display: true
+  CPUIn: 15000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
@@ -40845,7 +40845,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 45, type: int, display: true, formatter: Watt
-  CPUIn: 1200, type: int, display: true
+  CPUIn: 15000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -40893,7 +40893,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 45, type: int, display: true, formatter: Watt
-  CPUIn: 1200, type: int, display: true
+  CPUIn: 15000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -40941,7 +40941,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 45, type: int, display: true, formatter: Watt
-  CPUIn: 1200, type: int, display: true
+  CPUIn: 15000, type: int, display: true
   HitPoints: 700, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
@@ -41016,7 +41016,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 6, type: int, display: true, formatter: Watt
-  CPUIn: 3000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   MarketPrice: 2111, display: true
 
@@ -41066,7 +41066,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 6, type: int, display: true, formatter: Watt
-  CPUIn: 3000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1500, type: int, display: true
 
   UpgradeTo: HWSPyroChaosGunSV, display: true
@@ -41115,7 +41115,7 @@
   BlastRadius: 1
   BlastDamage: 50
   EnergyIn: 3, type: int, display: true, formatter: Watt
-  CPUIn: 3000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
 
   UpgradeTo: HWSObsidianChaosGunSV, display: true
@@ -41164,7 +41164,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 6, type: int, display: true, formatter: Watt
-  CPUIn: 3000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
 
   UpgradeTo: HWSLuxChaosGunSV, display: true
@@ -41213,7 +41213,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 6, type: int, display: true, formatter: Watt
-  CPUIn: 3000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
 
   UpgradeTo: HWSNoxChaosGunSV, display: true
@@ -41262,7 +41262,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 6, type: int, display: true, formatter: Watt
-  CPUIn: 3000, type: int, display: true
+  CPUIn: 20000, type: int, display: true
   HitPoints: 1000, type: int, display: true
 
   UpgradeTo: HWSStrangeletChaosGunSV, display: true
@@ -41311,7 +41311,7 @@
   BlastRadius: 2
   BlastDamage: 100
   EnergyIn: 12, type: int, display: true, formatter: Watt
-  CPUIn: 4500, type: int, display: true
+  CPUIn: 30000, type: int, display: true
   HitPoints: 1000, type: int, display: true
 
   UpgradeTo: HWSAquaChaosGunSV, display: true
@@ -42832,6 +42832,9 @@
   
   ExecuteOnCollide: Quest_TriggerPlate_Init
 }
+
+# ----------------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------- HWS Custom Resources
 
 # =================================================================================
 # ================================ Non-ID Blocks ==================================
