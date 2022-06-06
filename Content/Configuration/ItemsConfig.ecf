@@ -26611,7 +26611,6 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 { Item Id: 3912, Name: HWSElementAquaGas, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleGasAqua, display: true
@@ -26619,7 +26618,6 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 { Item Id: 3913, Name: HWSElementAquaSolid, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleSolidAqua, display: true
@@ -26627,15 +26625,13 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
-{ Item Id: 3914, Name: HWSElementAquaGem, Ref: HWSElementTemplate
+{ Item Id: 3914, Name: HWSElementAquaCrystal, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleStoneAqua, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30003, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 # -------------------------------------------------------------------------------------------------------- Pyro Element
 { Item Id: 3915, Name: HWSElementPyroFluid, Ref: HWSElementTemplate
@@ -26644,7 +26640,6 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 { Item Id: 3916, Name: HWSElementPyroGas, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleGasPyro, display: true
@@ -26652,7 +26647,6 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 { Item Id: 3917, Name: HWSElementPyroSolid, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleSolidPyro, display: true
@@ -26660,15 +26654,13 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
-{ Item Id: 3918, Name: HWSElementPyroGem, Ref: HWSElementTemplate
+{ Item Id: 3918, Name: HWSElementPyroCrystal, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleStonePyro, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30003, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 # -------------------------------------------------------------------------------------------------------- Terra Element
 { Item Id: 3919, Name: HWSElementTerraFluid, Ref: HWSElementTemplate
@@ -26677,7 +26669,6 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 { Item Id: 3920, Name: HWSElementTerraGas, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleGasTerra, display: true
@@ -26685,7 +26676,6 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 { Item Id: 3921, Name: HWSElementTerraSolid, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleSolidTerra, display: true
@@ -26693,15 +26683,13 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
-{ Item Id: 3922, Name: HWSElementTerraGem, Ref: HWSElementTemplate
+{ Item Id: 3922, Name: HWSElementTerraCrystal, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleStoneTerra, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30003, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 # -------------------------------------------------------------------------------------------------------- Lux Element
 { Item Id: 3923, Name: HWSElementLuxFluid, Ref: HWSElementTemplate
@@ -26710,7 +26698,6 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 { Item Id: 3924, Name: HWSElementLuxGas, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleGasLux, display: true
@@ -26718,7 +26705,6 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 { Item Id: 3925, Name: HWSElementLuxSolid, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleSolidLux, display: true
@@ -26726,15 +26712,13 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
-{ Item Id: 3926, Name: HWSElementLuxGem, Ref: HWSElementTemplate
+{ Item Id: 3926, Name: HWSElementLuxCrystal, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleStoneLux, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30003, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 # -------------------------------------------------------------------------------------------------------- Nox Element
 { Item Id: 3927, Name: HWSElementNoxFluid, Ref: HWSElementTemplate
@@ -26743,7 +26727,6 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 { Item Id: 3928, Name: HWSElementNoxGas, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleGasNox, display: true
@@ -26751,7 +26734,6 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 { Item Id: 3929, Name: HWSElementNoxSolid, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleSolidNox, display: true
@@ -26759,15 +26741,13 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
-{ Item Id: 3930, Name: HWSElementNoxGem, Ref: HWSElementTemplate
+{ Item Id: 3930, Name: HWSElementNoxCrystal, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_EleStoneNox, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30003, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 # --------------------------------------------------------------------------------------------------- Strangelet Element
 { Item Id: 3931, Name: HWSElementStrangelet, Ref: HWSElementTemplate
@@ -26776,7 +26756,6 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
 }
 { Item Id: 3932, Name: HWSElementStrangeletRefined, Ref: HWSElementTemplate
   Info: HWSStrangeletRefinedInfo, display: true
@@ -26784,7 +26763,6 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
-  NoRepairInputItem: true
   FuelValue: 5000, type: int, display: true, formatter: WattHour
 }
 # --------------------------------------------------------------------------------------------------- EGS Web
@@ -26818,7 +26796,7 @@
   Info: itmSulfur, display: true
 }
 { Item Id: 3936, Name: HWSTungstenIngot, Ref: ComponentsTemplate
-  Meshfile: Entities/Items/Ores/AluminiumOrePrefab
+  Meshfile: Entities/Misc/DummyPrefab
   ShowUser: Yes
   Mass: 1.55, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -26826,7 +26804,7 @@
   Info: itmSulfur, display: true
 }
 { Item Id: 3937, Name: HWSChromiteOre, Ref: ComponentsTemplate
-  Meshfile: Entities/Items/Ores/AluminiumOrePrefab
+  Meshfile: Entities/Items/Ores/CopperOrePrefab
   ShowUser: Yes
   Mass: 1.55, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -26834,7 +26812,7 @@
   Info: itmSulfur, display: true
 }
 { Item Id: 3938, Name: HWSChromium, Ref: ComponentsTemplate
-  Meshfile: Entities/Items/Ores/AluminiumOrePrefab
+  Meshfile: Entities/Misc/DummyPrefab
   ShowUser: Yes
   Mass: 1.55, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -26842,7 +26820,7 @@
   Info: itmSulfur, display: true
 }
 { Item Id: 3939, Name: HWSBismuthOre, Ref: ComponentsTemplate
-  Meshfile: Entities/Items/Ores/AluminiumOrePrefab
+  Meshfile: Entities/Items/Ores/TitanOrePrefab
   ShowUser: Yes
   Mass: 1.55, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -26856,6 +26834,48 @@
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30, display: true
   Info: itmSulfur, display: true
+}
+{ Item Id: 3941, Name: HWSElementalWater, Ref: ComponentsTemplate
+  Meshfile: Entities/Items/Ores/AluminiumOrePrefab
+  ShowUser: Yes
+  Mass: 1.55, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: false, formatter: Liter
+  MarketPrice: 30, display: true
+  Info: itmSulfur, display: true
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 0
+    AddStamina: 0
+    AddFood: 0
+    AddOxygen: 0, display: OxygenValue
+    SfxBegin: UseActions/playerEatingCrunchy
+    Buff: "PoisonFood"
+    BuffMod: "EndoParasite2, -0.75, -0.66, true; EndoParasite3, 0, -0.5, false"
+    Debuff: "Stunned", display: EffectiveAgainst
+    Buff_chance: "0.75"
+  }
+}
+{ Item Id: 3942, Name: HWSElementalSpice, Ref: ComponentsTemplate
+  Meshfile: Entities/Items/Ores/AluminiumOrePrefab
+  ShowUser: Yes
+  Mass: 1.55, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: false, formatter: Liter
+  MarketPrice: 30, display: true
+  Info: itmSulfur, display: true
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+    AddHealth: 0
+    AddStamina: 0
+    AddFood: 0
+    AddOxygen: 0, display: OxygenValue
+    SfxBegin: UseActions/playerEatingCrunchy
+    Buff: "PoisonFood"
+    BuffMod: "EndoParasite2, -0.75, -0.66, true; EndoParasite3, 0, -0.5, false"
+    Debuff: "Stunned", display: EffectiveAgainst
+    Buff_chance: "0.75"
+  }
 }
 # -------------------------------------------------------------------------------------------------------- HWS Origin XP
 { Item Id: 4086, Name: HWSAllOriginXP

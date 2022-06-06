@@ -3278,11 +3278,11 @@
   CraftTime: 15 #C2 12
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
-    HWSElementLuxGem: 1
-    HWSElementNoxGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
+    HWSElementLuxCrystal: 1
+    HWSElementNoxCrystal: 1
     HWSElementStrangeletRefined: 1
   }
 }
@@ -3291,11 +3291,11 @@
 # ===============
 
 { Template Name: EVABoost
-  CraftTime: 100  
+  CraftTime: 100
   Target: "HoverC,BaseC,SmallC,LargeC,AdvC"
   { Child Inputs
     SteelPlate: 1
-    OpticalFiber: 1 
+    OpticalFiber: 1
     Nanotubes: 2
     GoldIngot: 1
   }
@@ -3714,7 +3714,7 @@
 }
 
 { Template Name: WeaponSV04 #"Plasma Cannon"
-  CraftTime: 30 #D1 20 
+  CraftTime: 30 #D1 20
   Target: AdvC
   { Child Inputs
     ZascosiumAlloy: 50
@@ -3773,7 +3773,7 @@
   }
 }
 
-{ Template Name: TurretMSProjectileBlocks 
+{ Template Name: TurretMSProjectileBlocks
 # { Template Name: TurretMSMinigunRetract #"Minigun Turret"
   CraftTime: 30 #C1 CV 10 uses "15mmBullet"
   Target: "LargeC,AdvC"
@@ -3866,7 +3866,7 @@
 }
 
 
-{ Template Name: TurretMSRocketBlocks 
+{ Template Name: TurretMSRocketBlocks
   CraftTime: 30 #D1 CV 15 uses "FlakRocketMS"
   Target: "LargeC,AdvC"
   { Child Inputs
@@ -3879,7 +3879,7 @@
 }
 
 /* rocket */
-{ Template Name: TurretBaseRocketBlocks 
+{ Template Name: TurretBaseRocketBlocks
   CraftTime: 30 #C2 5 uses FastRocketBA
   Target: "LargeC,AdvC"
   { Child Inputs
@@ -3974,7 +3974,7 @@
 }
 
 { Template Name: TurretMSToolBlocks
-  CraftTime: 30 #D1 20 
+  CraftTime: 30 #D1 20
   Target: AdvC
   { Child Inputs
     ZascosiumAlloy: 50
@@ -4009,7 +4009,7 @@
 }
 
 { Template Name: BioFuel
-  OutputCount: 1 #A1 
+  OutputCount: 1 #A1
   CraftTime: 28
   Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
   { Child Inputs
@@ -4108,7 +4108,7 @@
 
 { Template Name: PulseLaserChargePistol
   OutputCount: 75 #C2
-  DeconOverride: Continue 
+  DeconOverride: Continue
   CraftTime: 5
   Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
   { Child Inputs
@@ -4119,7 +4119,7 @@
 
 { Template Name: PulseLaserChargeRifle
   OutputCount: 50 #D1 1
-  DeconOverride: Continue 
+  DeconOverride: Continue
   CraftTime: 5
   Target: "LargeC,AdvC"
   { Child Inputs
@@ -4177,7 +4177,7 @@
 
 { Template Name: PulseLaserChargeSS #"Ls.Charge SV"
   OutputCount: 100 #D1
-  DeconOverride: Continue 
+  DeconOverride: Continue
   CraftTime: 7
   Target: "AdvC"
   { Child Inputs
@@ -4425,12 +4425,12 @@
 }
 
 
- # ============================== 
+ # ==============================
  # -------------------------------------------------------------------------------------------- Medical Items: Ointments
- # ============================== 
+ # ==============================
 
 { Template Name: AntibioticOintment
-  DeconOverride: Stop 
+  DeconOverride: Stop
   CraftTime: 10
   Target: "FoodP,SurvC,SmallC,HoverC,BaseC,SuitC"
   { Child Inputs
@@ -4459,10 +4459,10 @@
   }
 }
 
- # ============================== 
+ # ==============================
  # ------------------------------------------------------------------------------------------------- Medical Items: Kits
- # ============================== 
- 
+ # ==============================
+
 { Template Name: Bandages
   DeconOverride: Stop
   CraftTime: 25
@@ -4527,11 +4527,11 @@
   }
 }
 
- # ============================== 
+ # ==============================
  # ------------------------------------------------------------------------------------------------ Medical Items: Pills
- # ============================== 
- 
-{ Template Name: StomachPills 
+ # ==============================
+
+{ Template Name: StomachPills
   OutputCount: 1
   CraftTime: 15
   Target: "FoodP,SurvC,SmallC,HoverC,BaseC"
@@ -4588,10 +4588,10 @@
   }
 }
 
- # ============================== 
+ # ==============================
  # ------------------------------------------------------------------------------------------- Medical Items: Injections
- # ============================== 
- 
+ # ==============================
+
 { Template Name: AntibioticInjection
   OutputCount: 1
   DeconOverride: Stop
@@ -4642,9 +4642,9 @@
 }
 
 
- # =========================== 
+ # ===========================
  # ---------------------------------------------------------------------------------------------------- Medical Boosters
- # =========================== 
+ # ===========================
 
 { Template Name: EnergyPills
   OutputCount: 1
@@ -4685,10 +4685,10 @@
   }
 }
 
- # =========================== 
+ # ===========================
  # ---------------------------------------------------------------------------------------------- Food Basic Ingredients
- # =========================== 
- 
+ # ===========================
+
 { Template Name: Flour
   DeconOverride: Stop
   CraftTime: 6
@@ -4728,9 +4728,9 @@
   }
 }
 
- # ======================= 
+ # =======================
  # ----------------------------------------------------------------------------------------------------------   Meals T1
- # ======================= 
+ # =======================
 { Template Name: PowerBar
   DeconOverride: Stop
   CraftTime: 8
@@ -4848,7 +4848,7 @@
   CraftTime: 2
   Target: "FoodP,SurvC,SmallC,HoverC,BaseC,SuitC"
   { Child Inputs
-    Buds: 2 
+    Buds: 2
   }
 }
 { Template Name: EnergyDrink
@@ -5036,7 +5036,7 @@
   CraftTime: 29
   Target: FoodP
   { Child Inputs
-    MushroomBrown:1 
+    MushroomBrown:1
     Vegetables: 2
     Cheese: 1
     Salami: 1
@@ -5104,8 +5104,8 @@
 
  # =======================
  # ------------------------------------------------------------------------------------------------------------- Sprouts
- # ======================= 
- 
+ # =======================
+
 { Template Name: DurianRoot
   OutputCount: 2
   DeconOverride: Stop
@@ -5312,12 +5312,12 @@
     NutrientSolution: 1
   }
 }
- # ======================= 
+ # =======================
  # ------------------------------------------------------------------------------------------------------------- Farming
- # ======================= 
+ # =======================
 { Template Name: GrowingPot
   BaseItem: true #C1 Ba CV 1
-  DeconOverride: Continue 
+  DeconOverride: Continue
   CraftTime: 10
   Target: "BaseC,LargeC,AdvC"
   { Child Inputs
@@ -5376,9 +5376,9 @@
   }
 }
 
- # ======================= 
+ # =======================
  # ----------------------------------------------------------------------------------------------- Biochemical Compounds
- # ======================= 
+ # =======================
 
 { Template Name: ConfettiMossScrapings
   DeconOverride: Stop
@@ -5388,7 +5388,7 @@
   { Child Inputs
     AlienParts02: 1
     MushroomBrown: 1
-    PromethiumPellets: 1 
+    PromethiumPellets: 1
   }
 }
 { Template Name: FireMossScrapings
@@ -5399,9 +5399,9 @@
   { Child Inputs
     AlienParts02: 1
     MushroomBrown: 1
-    PromethiumPellets: 2 
+    PromethiumPellets: 2
   }
-} 
+}
 { Template Name: AlienParts02
   DeconOverride: Stop
   OutputCount: 4
@@ -5410,9 +5410,9 @@
   { Child Inputs
     Meat: 1
     AlienTooth: 1
-    NutrientSolution: 2 
+    NutrientSolution: 2
   }
-}  
+}
 { Template Name: AlienParts01
   DeconOverride: Stop
   OutputCount: 4
@@ -5421,9 +5421,9 @@
   { Child Inputs
     Egg: 1
     AlienParts02: 1
-    NCPowder: 2 
+    NCPowder: 2
   }
-}  
+}
 { Template Name: AlienParts03
   DeconOverride: Stop
   OutputCount: 4
@@ -5432,27 +5432,27 @@
   { Child Inputs
     Egg: 1
     AlienParts01: 2
-    NCPowder: 2 
+    NCPowder: 2
   }
-} 
+}
 { Template Name: AlienThorn
  # DeconOverride: Stop
   OutputCount: 4
   CraftTime: 120
   Target: FoodP
   { Child Inputs
-    AlienTooth: 2 
-    NCPowder: 1 
+    AlienTooth: 2
+    NCPowder: 1
     PentaxidElement: 5
   }
-}  
- 
- # ======================= 
+}
+
+ # =======================
  # ---------------------------------------------------------------------------------------------------    SPECIAL BLOCKS
- # ======================= 
- 
+ # =======================
+
 /* Special Blocks (not placeable by players) */
-# needed for PickupTarget and TemplateRoot 
+# needed for PickupTarget and TemplateRoot
 { Template Name: EntitySpawner1
   CraftTime: 2
   Target: ""
@@ -5485,7 +5485,7 @@
   }
 }
 { Template Name: SmallOptronicBridge
-  BaseItem: true 
+  BaseItem: true
   DeconOverride: Stop
   CraftTime: 600
   Target: "AdvC"
@@ -5507,7 +5507,7 @@
   }
 }
 { Template Name: LargeOptronicBridge
-  BaseItem: true 
+  BaseItem: true
   DeconOverride: Stop
   CraftTime: 600
   Target: "AdvC"
@@ -5736,7 +5736,6 @@
 }
 
 { Template Name: FlameThrower
-
   CraftTime: 50
   Target: "AdvC"
   { Child Inputs
@@ -5762,7 +5761,143 @@
 # ----------------------------------------------------------------------------------------------------------------------
 # ---------------------------------------------------------------------------------------------------------------- HWS +
 # --------------------------------------------------------------------------------------------------------- HWS Elements
-{ Template Name: HWSElementAquaGem
+{ Template Name: HWSElementAquaFluid
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementAquaGas
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementAquaSolid
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementPyroFluid
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementPyroGas
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementPyroSolid
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementTerraFluid
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementTerraGas
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementTerraSolid
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementLuxFluid
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementLuxGas
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementLuxSolid
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementNoxFluid
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementNoxGas
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementNoxSolid
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementStrangelet
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementStrangeletRefined
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+
+{ Template Name: HWSElementAquaCrystal
   CraftTime: 600
   OutputCount: 1
   BaseItem: true
@@ -5774,7 +5909,7 @@
   }
 }
 
-{ Template Name: HWSElementTerraGem
+{ Template Name: HWSElementTerraCrystal
   CraftTime: 600
   OutputCount: 1
   BaseItem: true
@@ -5786,7 +5921,7 @@
   }
 }
 
-{ Template Name: HWSElementPyroGem
+{ Template Name: HWSElementPyroCrystal
   CraftTime: 600
   OutputCount: 1
   BaseItem: true
@@ -5798,7 +5933,7 @@
   }
 }
 
-{ Template Name: HWSElementLuxGem
+{ Template Name: HWSElementLuxCrystal
   CraftTime: 600
   OutputCount: 1
   BaseItem: true
@@ -5810,7 +5945,7 @@
   }
 }
 
-{ Template Name: HWSElementNoxGem
+{ Template Name: HWSElementNoxCrystal
   CraftTime: 600
   OutputCount: 1
   BaseItem: true
@@ -5823,7 +5958,7 @@
 }
 # ------------------------------------------------------------------------------------------------- HWS Elemental Blocks
 { Template Name: HWSAquaBlocksLarge
-  CraftTime: 40
+  CraftTime: 20
   OutputCount: 1
   Target: "LargeC, AdvC"
   { Child Inputs
@@ -5834,7 +5969,7 @@
 }
 
 { Template Name: HWSAquaBlocksSmall
-  CraftTime: 20
+  CraftTime: 5
   OutputCount: 1
   Target: "LargeC, AdvC"
   { Child Inputs
@@ -5845,7 +5980,7 @@
 }
 
 { Template Name: HWSTerraBlocksLarge
-  CraftTime: 40
+  CraftTime: 20
   OutputCount: 1
   Target: "LargeC, AdvC"
   { Child Inputs
@@ -5856,7 +5991,7 @@
 }
 
 { Template Name: HWSTerraBlocksSmall
-  CraftTime: 20
+  CraftTime: 5
   OutputCount: 1
   Target: "LargeC, AdvC"
   { Child Inputs
@@ -5867,7 +6002,7 @@
 }
 
 { Template Name: HWSPyroBlocksLarge
-  CraftTime: 40
+  CraftTime: 20
   OutputCount: 1
   Target: "LargeC, AdvC"
   { Child Inputs
@@ -5878,7 +6013,7 @@
 }
 
 { Template Name: HWSPyroBlocksSmall
-  CraftTime: 20
+  CraftTime: 5
   OutputCount: 1
   Target: "LargeC, AdvC"
   { Child Inputs
@@ -5889,7 +6024,7 @@
 }
 
 { Template Name: HWSObsidianBlocksLarge
-  CraftTime: 40
+  CraftTime: 20
   OutputCount: 1
   Target: "LargeC, AdvC"
   { Child Inputs
@@ -5900,7 +6035,7 @@
 }
 
 { Template Name: HWSObsidianBlocksSmall
-  CraftTime: 20
+  CraftTime: 5
   OutputCount: 1
   Target: "LargeC, AdvC"
   { Child Inputs
@@ -5911,7 +6046,7 @@
 }
 
 { Template Name: HWSLuxBlocksLarge
-  CraftTime: 40
+  CraftTime: 20
   OutputCount: 1
   Target: "LargeC, AdvC"
   { Child Inputs
@@ -5922,7 +6057,7 @@
 }
 
 { Template Name: HWSLuxBlocksSmall
-  CraftTime: 20
+  CraftTime: 5
   OutputCount: 1
   Target: "LargeC, AdvC"
   { Child Inputs
@@ -5933,7 +6068,7 @@
 }
 
 { Template Name: HWSNoxBlocksLarge
-  CraftTime: 40
+  CraftTime: 20
   OutputCount: 1
   Target: "LargeC, AdvC"
   { Child Inputs
@@ -5944,7 +6079,7 @@
 }
 
 { Template Name: HWSNoxBlocksSmall
-  CraftTime: 20
+  CraftTime: 5
   OutputCount: 1
   Target: "LargeC, AdvC"
   { Child Inputs
@@ -5955,7 +6090,7 @@
 }
 
 { Template Name: HWSStrangeletBlocksLarge
-  CraftTime: 40
+  CraftTime: 20
   OutputCount: 1
   Target: "LargeC, AdvC"
   { Child Inputs
@@ -5964,7 +6099,7 @@
 }
 
 { Template Name: HWSStrangeletBlocksSmall
-  CraftTime: 20
+  CraftTime: 5
   OutputCount: 1
   Target: "LargeC, AdvC"
   { Child Inputs
@@ -5979,7 +6114,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
+    HWSElementAquaCrystal: 1
   }
 }
 
@@ -5988,7 +6123,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementTerraGem: 1
+    HWSElementTerraCrystal: 1
   }
 }
 
@@ -5997,7 +6132,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementPyroGem: 1
+    HWSElementPyroCrystal: 1
   }
 }
 
@@ -6006,9 +6141,9 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
   }
 }
 
@@ -6017,7 +6152,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementLuxGem: 1
+    HWSElementLuxCrystal: 1
   }
 }
 
@@ -6026,7 +6161,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementNoxGem: 1
+    HWSElementNoxCrystal: 1
   }
 }
 
@@ -6044,7 +6179,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
+    HWSElementAquaCrystal: 1
   }
 }
 
@@ -6053,7 +6188,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementTerraGem: 1
+    HWSElementTerraCrystal: 1
   }
 }
 
@@ -6062,7 +6197,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementPyroGem: 1
+    HWSElementPyroCrystal: 1
   }
 }
 
@@ -6071,9 +6206,9 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
   }
 }
 
@@ -6082,7 +6217,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementLuxGem: 1
+    HWSElementLuxCrystal: 1
   }
 }
 
@@ -6091,7 +6226,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementNoxGem: 1
+    HWSElementNoxCrystal: 1
   }
 }
 
@@ -6109,7 +6244,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
+    HWSElementAquaCrystal: 1
   }
 }
 
@@ -6118,7 +6253,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementTerraGem: 1
+    HWSElementTerraCrystal: 1
   }
 }
 
@@ -6127,7 +6262,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementPyroGem: 1
+    HWSElementPyroCrystal: 1
   }
 }
 
@@ -6136,9 +6271,9 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
   }
 }
 
@@ -6147,7 +6282,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementLuxGem: 1
+    HWSElementLuxCrystal: 1
   }
 }
 
@@ -6156,7 +6291,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementNoxGem: 1
+    HWSElementNoxCrystal: 1
   }
 }
 
@@ -6174,7 +6309,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
+    HWSElementAquaCrystal: 1
   }
 }
 
@@ -6183,7 +6318,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementTerraGem: 1
+    HWSElementTerraCrystal: 1
   }
 }
 
@@ -6192,7 +6327,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementPyroGem: 1
+    HWSElementPyroCrystal: 1
   }
 }
 
@@ -6201,9 +6336,9 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
   }
 }
 
@@ -6212,7 +6347,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementLuxGem: 1
+    HWSElementLuxCrystal: 1
   }
 }
 
@@ -6221,7 +6356,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementNoxGem: 1
+    HWSElementNoxCrystal: 1
   }
 }
 
@@ -6240,7 +6375,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
+    HWSElementAquaCrystal: 1
   }
 }
 
@@ -6249,7 +6384,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementTerraGem: 1
+    HWSElementTerraCrystal: 1
   }
 }
 
@@ -6258,7 +6393,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementPyroGem: 1
+    HWSElementPyroCrystal: 1
   }
 }
 
@@ -6267,9 +6402,9 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
   }
 }
 
@@ -6278,7 +6413,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementLuxGem: 1
+    HWSElementLuxCrystal: 1
   }
 }
 
@@ -6287,7 +6422,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementNoxGem: 1
+    HWSElementNoxCrystal: 1
   }
 }
 
@@ -6305,7 +6440,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
+    HWSElementAquaCrystal: 1
   }
 }
 
@@ -6314,7 +6449,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementTerraGem: 1
+    HWSElementTerraCrystal: 1
   }
 }
 
@@ -6323,7 +6458,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementPyroGem: 1
+    HWSElementPyroCrystal: 1
   }
 }
 
@@ -6332,9 +6467,9 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
   }
 }
 
@@ -6343,7 +6478,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementLuxGem: 1
+    HWSElementLuxCrystal: 1
   }
 }
 
@@ -6352,7 +6487,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementNoxGem: 1
+    HWSElementNoxCrystal: 1
   }
 }
 
@@ -6370,7 +6505,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
+    HWSElementAquaCrystal: 1
   }
 }
 
@@ -6379,7 +6514,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementTerraGem: 1
+    HWSElementTerraCrystal: 1
   }
 }
 
@@ -6388,7 +6523,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementPyroGem: 1
+    HWSElementPyroCrystal: 1
   }
 }
 
@@ -6397,9 +6532,9 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
   }
 }
 
@@ -6408,7 +6543,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementLuxGem: 1
+    HWSElementLuxCrystal: 1
   }
 }
 
@@ -6417,7 +6552,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementNoxGem: 1
+    HWSElementNoxCrystal: 1
   }
 }
 
@@ -6437,7 +6572,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
+    HWSElementAquaCrystal: 1
   }
 }
 # ---------------------------------------------------------------------------------------------------------------- Terra
@@ -6446,7 +6581,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementTerraGem: 1
+    HWSElementTerraCrystal: 1
   }
 }
 # ----------------------------------------------------------------------------------------------------------------- Pyro
@@ -6455,7 +6590,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementPyroGem: 1
+    HWSElementPyroCrystal: 1
   }
 }
 # ------------------------------------------------------------------------------------------------------------- Obsidian
@@ -6464,9 +6599,9 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
   }
 }
 # ------------------------------------------------------------------------------------------------------------------ Lux
@@ -6475,7 +6610,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementLuxGem: 1
+    HWSElementLuxCrystal: 1
   }
 }
 # ------------------------------------------------------------------------------------------------------------------ Nox
@@ -6484,7 +6619,7 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementNoxGem: 1
+    HWSElementNoxCrystal: 1
   }
 }
 # ----------------------------------------------------------------------------------------------------------- Strangelet
@@ -7638,11 +7773,11 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
-    HWSElementLuxGem: 1
-    HWSElementNoxGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
+    HWSElementLuxCrystal: 1
+    HWSElementNoxCrystal: 1
     HWSElementStrangeletRefined: 1
   }
 }
@@ -7652,11 +7787,11 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
-    HWSElementLuxGem: 1
-    HWSElementNoxGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
+    HWSElementLuxCrystal: 1
+    HWSElementNoxCrystal: 1
     HWSElementStrangeletRefined: 1
   }
 }
@@ -7666,11 +7801,11 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
-    HWSElementLuxGem: 1
-    HWSElementNoxGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
+    HWSElementLuxCrystal: 1
+    HWSElementNoxCrystal: 1
     HWSElementStrangeletRefined: 1
   }
 }
@@ -7680,11 +7815,11 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
-    HWSElementLuxGem: 1
-    HWSElementNoxGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
+    HWSElementLuxCrystal: 1
+    HWSElementNoxCrystal: 1
     HWSElementStrangeletRefined: 1
   }
 }
@@ -7696,11 +7831,11 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
-    HWSElementLuxGem: 1
-    HWSElementNoxGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
+    HWSElementLuxCrystal: 1
+    HWSElementNoxCrystal: 1
     HWSElementStrangeletRefined: 1
   }
 }
@@ -7711,11 +7846,11 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
-    HWSElementLuxGem: 1
-    HWSElementNoxGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
+    HWSElementLuxCrystal: 1
+    HWSElementNoxCrystal: 1
     HWSElementStrangeletRefined: 1
   }
 }
@@ -7725,11 +7860,11 @@
   OutputCount: 1
   Target: "AdvC"
   { Child Inputs
-    HWSElementAquaGem: 1
-    HWSElementTerraGem: 1
-    HWSElementPyroGem: 1
-    HWSElementLuxGem: 1
-    HWSElementNoxGem: 1
+    HWSElementAquaCrystal: 1
+    HWSElementTerraCrystal: 1
+    HWSElementPyroCrystal: 1
+    HWSElementLuxCrystal: 1
+    HWSElementNoxCrystal: 1
     HWSElementStrangeletRefined: 1
   }
 }
@@ -7738,7 +7873,7 @@
 { Template Name: HWSShieldCapacityExtenderBase
   CraftTime: 400
   OutputCount: 1
-  Target: "BaseC,LargeC,AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     EnergyMatrix: 30
     Oscillator: 30
@@ -7754,7 +7889,7 @@
 { Template Name: HWSShieldCapacityExtenderCV
   CraftTime: 400
   OutputCount: 1
-  Target: "BaseC,LargeC,AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     EnergyMatrix: 30
     Oscillator: 30
@@ -7770,7 +7905,7 @@
 { Template Name: HWSShieldCapacityExtenderHV
   CraftTime: 400
   OutputCount: 1
-  Target: "HoverC,BaseC,LargeC,AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     EnergyMatrix: 30
     Oscillator: 30
@@ -7786,7 +7921,7 @@
 { Template Name: HWSShieldCapacityExtenderSV
   CraftTime: 400
   OutputCount: 1
-  Target: "SmallC,BaseC,LargeC,AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     EnergyMatrix: 30
     Oscillator: 30
@@ -7803,7 +7938,7 @@
 { Template Name: HWSShieldRechargeExtenderBase
   CraftTime: 400
   OutputCount: 1
-  Target: "BaseC,LargeC,AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     EnergyMatrix: 30
     Oscillator: 30
@@ -7819,7 +7954,7 @@
 { Template Name: HWSShieldRechargeExtenderCV
   CraftTime: 400
   OutputCount: 1
-  Target: "BaseC,LargeC,AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     EnergyMatrix: 30
     Oscillator: 30
@@ -7835,7 +7970,7 @@
 { Template Name: HWSShieldRechargeExtenderHV
   CraftTime: 400
   OutputCount: 1
-  Target: "HoverC,BaseC,LargeC,AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     EnergyMatrix: 30
     Oscillator: 30
@@ -7851,7 +7986,7 @@
 { Template Name: HWSShieldRechargeExtenderSV
   CraftTime: 400
   OutputCount: 1
-  Target: "SmallC,BaseC,LargeC,AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     EnergyMatrix: 30
     Oscillator: 30
@@ -7866,7 +8001,7 @@
 
 # ------------------------------------------------------------------------------------------------------ HWS Lift Blocks
 { Template Name: HWSLiftBlocks
-  CraftTime: 100
+  CraftTime: 15
   OutputCount: 1
   Target: "BaseC,LargeC,AdvC"
   { Child Inputs
