@@ -34,7 +34,7 @@
 #================================================================================
 #
 { Faction Id: 1, Name: "Public"
-  Abbrev: Pub
+  Abbrev: Public
   Color: "0.9, 0.9, 0.9"
   OmitMapLegend: true
   HideAbbrev: true
@@ -42,7 +42,7 @@
 }
 
 { Faction Id: 2, Name: "Zirax"       #Zirax Empire head faction; split into houses: Xenu, Rados, Epsilon, Ghyst, Serdu,..
-  Abbrev: Zrx
+  Abbrev: Zirax
   Color: "0.81, 0.09, 0.33"
   ClaimTerritory: true
   Reputation: true            # Do not change. Hardcoded effect on Base Attacks. Change will lead to issues with related features!
@@ -51,21 +51,21 @@
 }
 
 { Faction Id: 3, Name: "Predator"
-  Abbrev: Prd
+  Abbrev: Predator
   Color: "0.9, 0.75, 0"
   HideAbbrev: true
   OmitMapLegend: true
 }
 
 { Faction Id: 4, Name: "Prey"
-  Abbrev: Pry
+  Abbrev: Prey
   Color: "0, 0.75, 0.75"
   HideAbbrev: true
   OmitMapLegend: true
 }
 
 { Faction Id: 5, Name: "Admin"
-  Abbrev: Adm
+  Abbrev: Admin
   Color: "0, 0.9, 0.9"
   Friendly: true
   HideAbbrev: true
@@ -74,7 +74,7 @@
 }
 
 { Faction Id: 6, Name: "Talon"       #Main Story Faction
-  Abbrev: Tal
+  Abbrev: Talon
   Color: "0.2, 0.9, 0.2"
   ClaimTerritory: true
   Reputation: true            # Do not change. Hardcoded effect on Base Attacks. Change will lead to issues with related features!
@@ -82,7 +82,7 @@
 }
 
 { Faction Id: 7, Name: "Polaris"
-  Abbrev: Pol
+  Abbrev: Polaris
   Color: "0.9, 0.6, 0.2"
   ClaimTerritory: true
   Reputation: true
@@ -90,12 +90,12 @@
 }
 
 { Faction Id: 8, Name: "Alien"
-  Abbrev: Aln
+  Abbrev: Alien
   Color: "0.9, 0.2, 0.6"
   Unfriendly: true
   HideAbbrev: true
   AttackNPC: true
-  Discovery: true
+  # Discovery: true
 }
 
 #===========================
@@ -270,7 +270,7 @@
   Reputation: true
   Discovery: true
 }
-{ Faction Id: 29, Name: "Serdu"             # Zirax Empire - Science
+{ Faction Id: 29, Name: "Serdu"             # Zirax Empire - Religion
   Abbrev: Ser
   Color: "0.9, 0.2, 0.2"
   OmitMapLegend: true
@@ -286,14 +286,7 @@
   Reputation: true
 }
 
-############################################
-############################################
-############################################
-#                HWS Factions              #
-############################################
-############################################
-############################################
-
+# --------------------------------------------------------------------------------------------------------- HWS Factions
 { Faction Id: 31, Name: "Cyborgs"
   Description: "[i][c][ffffff]Lore:[-][/c] Few [b][c][334C66]Prototype Clones[-][/c][/b] did not accept their faith in becoming one of the three main Origins and moved on to do their own thing. In fear of the EGS Cooperation, they are living now peacefully in the outer ring of the HWS Universe. Rumors say, they want to take their revenge against EGS and the experiments they suffered.[/i]"
   Abbrev: Cyb
@@ -313,89 +306,100 @@
 
 { Faction Id: 33, Name: "Explorer"
   Description: "[i][c][ffffff]Lore:[-][/c] The oldest and proudest Faction in the HWS Universe - the [b][c][E5FFE5]Freelancer[-][/c][/b]. Retired from politics and battles, they live more or less peaceful far out in the HWS Universe. From time to time, very good contracts still motivate them to come out and explore the new universe and its secrets. Every decent Freelancer Origin Clone must visit the veterans to learn better skills.[/i]"
-  Abbrev: FRE
+  Abbrev: Exp
   Color: "0.9, 1, 0.9"
   ClaimTerritory: true
   Reputation: true
-  Origin: 0
 }
 
 { Faction Id: 34, Name: "Engineer"
   Description: "[i][c][ffffff]Lore:[-][/c] With every galactic Black Hole Implosion (server full wipe) a small group of [b][c][009393]Federation[-][/c][/b] Origin people survive somehow and settle in the outer ring, the furthest way out from the Black Hole as possible. Every new Federation Origin Clone should sooner or later visit the [u]real[/u] Homeworld of their Origin, to get power from old generations.[/i]"
-  Abbrev: FED
+  Abbrev: Eng
   Color: "0, 0.58, 0.58"
   ClaimTerritory: true
   Reputation: true
-  Origin: 1
 }
 
 { Faction Id: 35, Name: "Fighter"
   Description: "[i][c][ffffff]Lore:[-][/c] After many years of battles against the Federation Clones, the EGS Cooperation and everyone trying to steal their land and wealth, many former Pirate Clones went into the exile to regroup, rethink and plan revenge. The [b][c][D60011]Outcast[-][/c][/b] people became a myth for some citizens. Rumors seem to be true though, that the Pirates will never be defeated and the revenge of the Outcast Clones will be the biggest threat the HWS Universe has ever experienced.[/i]"
-  Abbrev: OUT
+  Abbrev: Fig
   Color: "0.84, 0, 0.07"
   ClaimTerritory: true
   Reputation: true
-  Origin: 2
 }
 
 { Faction Id: 36, Name: "Dealer"
   Description: "[i][c][ffffff]Lore:[-][/c] After many years of battles against the Federation Clones, the EGS Cooperation and everyone trying to steal their land and wealth, many former Pirate Clones went into the exile to regroup, rethink and plan revenge. The [b][c][D60011]Outcast[-][/c][/b] people became a myth for some citizens. Rumors seem to be true though, that the Pirates will never be defeated and the revenge of the Outcast Clones will be the biggest threat the HWS Universe has ever experienced.[/i]"
-  Abbrev: OUT
+  Abbrev: Dea
   Color: "0.84, 0, 0.07"
   ClaimTerritory: true
   Reputation: true
-  Origin: 3
 }
 
 { Faction Id: 37, Name: "Aqua"
   Abbrev: Aqua
   Color: "0.3, 0.3, 0.9"
   Unfriendly: true
+  ClaimTerritory: true
   Discovery: true
+  AttackNPC: true
 }
 
 { Faction Id: 38, Name: "Terra"
   Abbrev: Terra
   Color: "0.3, 0.5, 0.3"
   Unfriendly: true
+  ClaimTerritory: true
   Discovery: true
+  AttackNPC: true
 }
 
 { Faction Id: 39, Name: "Pyro"
   Abbrev: Pyro
   Color: "0.9, 0.3, 0.3"
   Unfriendly: true
+  ClaimTerritory: true
   Discovery: true
+  AttackNPC: true
 }
 
 { Faction Id: 40, Name: "Obsidian"
   Abbrev: Obsidian
   Color: "0.05, 0.9, 0.9"
   Unfriendly: true
+  ClaimTerritory: true
   Discovery: true
+  AttackNPC: true
 }
 
-{ Faction Id: 40, Name: "Lux"
+{ Faction Id: 41, Name: "Lux"
   Abbrev: Lux
   Color: "0.9, 0.9, 0.9"
   Unfriendly: true
+  ClaimTerritory: true
   Discovery: true
+  AttackNPC: true
 }
 
-{ Faction Id: 41, Name: "Nox"
+{ Faction Id: 42, Name: "Nox"
   Abbrev: Nox
   Color: "0.1, 0.1, 0.1"
   Unfriendly: true
+  ClaimTerritory: true
   Discovery: true
+  AttackNPC: true
 }
 
-{ Faction Id: 42, Name: "Strangelet"
+{ Faction Id: 43, Name: "Strangelet"
   Abbrev: Strangelet
   Color: "0.9, 0.1, 0.9"
   Unfriendly: true
+  ClaimTerritory: true
   Discovery: true
+  AttackNPC: true
 }
 
+# ------------------------------------------------------------------------------------------------------- HWS MP Faction
 { Faction Id: 100, Name: "HWS"
   Abbrev: HWS
   Color: "0, 0.57, 0.27"
