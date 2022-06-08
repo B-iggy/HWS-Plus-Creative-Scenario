@@ -90,25 +90,25 @@
 }
 
 # ------------------------------------------------------------------------- HWS Terra vs Vanilla
-{ DamageMultiplierGroup Name: HWS_ Terra_vs_Blocks
+{ DamageMultiplierGroup Name: HWS_Terra_vs_Blocks
   DamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
   BlastDamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
 }
-{ DamageMultiplierGroup Name: HWS_ Terra_vs_Terrain
+{ DamageMultiplierGroup Name: HWS_Terra_vs_Terrain
   DamageMultiplier_1: 0, param1: dirt
   DamageMultiplier_2: 1, param1: stone|rock
   BlastDamageMultiplier_1: 0, param1: dirt
   BlastDamageMultiplier_2: 1, param1: stone|rock
 }
-{ DamageMultiplierGroup Name: HWS_ Terra_vs_Npc
+{ DamageMultiplierGroup Name: HWS_Terra_vs_Npc
   DamageMultiplier_1: 1, param1: head|body
   BlastDamageMultiplier_1: 1, param1: head|body
 }
-{ DamageMultiplierGroup Name: HWS_ Terra_vs_Devices
+{ DamageMultiplierGroup Name: HWS_Terra_vs_Devices
   DamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
 }
-{ DamageMultiplierGroup Name: HWS_ Terra_vs_Shield
+{ DamageMultiplierGroup Name: HWS_Terra_vs_Shield
   DamageMultiplier_1: 1, param1: shield
   BlastDamageMultiplier_1: 1, param1: shield
 }
@@ -146,25 +146,25 @@
 }
 
 # ------------------------------------------------------------------------- HWS Pyro vs Vanilla
-{ DamageMultiplierGroup Name: HWS_ Pyro_vs_Blocks
+{ DamageMultiplierGroup Name: HWS_Pyro_vs_Blocks
   DamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
   BlastDamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
 }
-{ DamageMultiplierGroup Name: HWS_ Pyro_vs_Terrain
+{ DamageMultiplierGroup Name: HWS_Pyro_vs_Terrain
   DamageMultiplier_1: 0, param1: dirt
   DamageMultiplier_2: 2, param1: stone|rock
   BlastDamageMultiplier_1: 0, param1: dirt
   BlastDamageMultiplier_2: 2, param1: stone|rock
 }
-{ DamageMultiplierGroup Name: HWS_ Pyro_vs_Npc
+{ DamageMultiplierGroup Name: HWS_Pyro_vs_Npc
   DamageMultiplier_1: 1, param1: head|body
   BlastDamageMultiplier_1: 1, param1: head|body
 }
-{ DamageMultiplierGroup Name: HWS_ Pyro_vs_Devices
+{ DamageMultiplierGroup Name: HWS_Pyro_vs_Devices
   DamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
 }
-{ DamageMultiplierGroup Name: HWS_ Pyro_vs_Shield
+{ DamageMultiplierGroup Name: HWS_Pyro_vs_Shield
   DamageMultiplier_1: 1, param1: shield
   BlastDamageMultiplier_1: 1, param1: shield
 }
@@ -206,23 +206,23 @@
 }
 
 # ------------------------------------------------------------------------- HWS Obsidian vs Vanilla
-{ DamageMultiplierGroup Name: HWS_ Obsidian_vs_Blocks
+{ DamageMultiplierGroup Name: HWS_Obsidian_vs_Blocks
   DamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
   BlastDamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
 }
-{ DamageMultiplierGroup Name: HWS_ Obsidian_vs_Terrain
+{ DamageMultiplierGroup Name: HWS_Obsidian_vs_Terrain
   DamageMultiplier_1: 0, param1: dirt|stone|rock
   BlastDamageMultiplier_1: 0, param1: dirt|stone|rock
 }
-{ DamageMultiplierGroup Name: HWS_ Obsidian_vs_Npc
+{ DamageMultiplierGroup Name: HWS_Obsidian_vs_Npc
   DamageMultiplier_1: 1, param1: head|body
   BlastDamageMultiplier_1: 1, param1: head|body
 }
-{ DamageMultiplierGroup Name: HWS_ Obsidian_vs_Devices
+{ DamageMultiplierGroup Name: HWS_Obsidian_vs_Devices
   DamageMultiplier_1: 2, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_1: 2, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
 }
-{ DamageMultiplierGroup Name: HWS_ Obsidian_vs_Shield
+{ DamageMultiplierGroup Name: HWS_Obsidian_vs_Shield
   DamageMultiplier_1: 1, param1: shield
   BlastDamageMultiplier_1: 1, param1: shield
 }
@@ -260,23 +260,23 @@
 }
 
 # ------------------------------------------------------------------------- HWS Lux vs Vanilla
-{ DamageMultiplierGroup Name: HWS_ Lux_vs_Blocks
+{ DamageMultiplierGroup Name: HWS_Lux_vs_Blocks
   DamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
   BlastDamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
 }
-{ DamageMultiplierGroup Name: HWS_ Lux_vs_Terrain
+{ DamageMultiplierGroup Name: HWS_Lux_vs_Terrain
   DamageMultiplier_1: 0, param1: dirt|stone|rock
   BlastDamageMultiplier_1: 0, param1: dirt|stone|rock
 }
-{ DamageMultiplierGroup Name: HWS_ Lux_vs_Npc
+{ DamageMultiplierGroup Name: HWS_Lux_vs_Npc
   DamageMultiplier_1: 1, param1: head|body
   BlastDamageMultiplier_1: 1, param1: head|body
 }
-{ DamageMultiplierGroup Name: HWS_ Lux_vs_Devices
+{ DamageMultiplierGroup Name: HWS_Lux_vs_Devices
   DamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
 }
-{ DamageMultiplierGroup Name: HWS_ Lux_vs_Shield
+{ DamageMultiplierGroup Name: HWS_Lux_vs_Shield
   DamageMultiplier_1: 1, param1: shield
   BlastDamageMultiplier_1: 1, param1: shield
 }
@@ -318,23 +318,23 @@
 }
 
 # ------------------------------------------------------------------------- HWS Nox vs Vanilla
-{ DamageMultiplierGroup Name: HWS_ Nox_vs_Blocks
+{ DamageMultiplierGroup Name: HWS_Nox_vs_Blocks
   DamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
   BlastDamageMultiplier_1: 1, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
 }
-{ DamageMultiplierGroup Name: HWS_ Nox_vs_Terrain
+{ DamageMultiplierGroup Name: HWS_Nox_vs_Terrain
   DamageMultiplier_1: 0, param1: dirt|stone|rock
   BlastDamageMultiplier_1: 0, param1: dirt|stone|rock
 }
-{ DamageMultiplierGroup Name: HWS_ Nox_vs_Npc
+{ DamageMultiplierGroup Name: HWS_Nox_vs_Npc
   DamageMultiplier_1: 1, param1: head|body
   BlastDamageMultiplier_1: 1, param1: head|body
 }
-{ DamageMultiplierGroup Name: HWS_ Nox_vs_Devices
+{ DamageMultiplierGroup Name: HWS_Nox_vs_Devices
   DamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
 }
-{ DamageMultiplierGroup Name: HWS_ Nox_vs_Shield
+{ DamageMultiplierGroup Name: HWS_Nox_vs_Shield
   DamageMultiplier_1: 2, param1: shield
   BlastDamageMultiplier_1: 2, param1: shield
 }
@@ -372,23 +372,23 @@
 }
 
 # ------------------------------------------------------------------------- HWS Strangelet vs Vanilla
-{ DamageMultiplierGroup Name: HWS_ Strangelet_vs_Blocks
+{ DamageMultiplierGroup Name: HWS_Strangelet_vs_Blocks
   DamageMultiplier_1: 2, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
   BlastDamageMultiplier_1: 2, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
 }
-{ DamageMultiplierGroup Name: HWS_ Strangelet_vs_Terrain
+{ DamageMultiplierGroup Name: HWS_Strangelet_vs_Terrain
   DamageMultiplier_1: 0, param1: dirt|stone|rock
   BlastDamageMultiplier_1: 0, param1: dirt|stone|rock
 }
-{ DamageMultiplierGroup Name: HWS_ Strangelet_vs_Npc
+{ DamageMultiplierGroup Name: HWS_Strangelet_vs_Npc
   DamageMultiplier_1: 2, param1: head|body
   BlastDamageMultiplier_1: 2, param1: head|body
 }
-{ DamageMultiplierGroup Name: HWS_ Strangelet_vs_Devices
+{ DamageMultiplierGroup Name: HWS_Strangelet_vs_Devices
   DamageMultiplier_1: 2, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_1: 2, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
 }
-{ DamageMultiplierGroup Name: HWS_ Strangelet_vs_Shield
+{ DamageMultiplierGroup Name: HWS_Strangelet_vs_Shield
   DamageMultiplier_1: 2, param1: shield
   BlastDamageMultiplier_1: 2, param1: shield
 }
@@ -427,23 +427,23 @@
 }
 
 # ------------------------------------------------------------------------- HWS Kinetic vs Vanilla
-{ DamageMultiplierGroup Name: HWS_ Kinetic_vs_Blocks
+{ DamageMultiplierGroup Name: HWS_Kinetic_vs_Blocks
   DamageMultiplier_1: 2, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
   BlastDamageMultiplier_1: 2, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
 }
-{ DamageMultiplierGroup Name: HWS_ Kinetic_vs_Terrain
+{ DamageMultiplierGroup Name: HWS_Kinetic_vs_Terrain
   DamageMultiplier_1: 0, param1: dirt|stone|rock
   BlastDamageMultiplier_1: 0, param1: dirt|stone|rock
 }
-{ DamageMultiplierGroup Name: HWS_ Kinetic_vs_Npc
+{ DamageMultiplierGroup Name: HWS_Kinetic_vs_Npc
   DamageMultiplier_1: 2, param1: head|body
   BlastDamageMultiplier_1: 2, param1: head|body
 }
-{ DamageMultiplierGroup Name: HWS_ Kinetic_vs_Devices
+{ DamageMultiplierGroup Name: HWS_Kinetic_vs_Devices
   DamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_1: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
 }
-{ DamageMultiplierGroup Name: HWS_ Kinetic_vs_Shield
+{ DamageMultiplierGroup Name: HWS_Kinetic_vs_Shield
   DamageMultiplier_1: 0.1, param1: shield
   BlastDamageMultiplier_1: 0.1, param1: shield
 }
@@ -520,7 +520,7 @@
 # ------------------------------------------------------------------------- Survival Tool
 { DamageMultiplierGroup Name: HWS_Survival_Vanilla
   DamageMultiplier_1: 1, param1: body|head
-  DamageMultiplier_2: 0, param1: dirt|stone|rock|plants
+  DamageMultiplier_2: 1, param1: dirt|stone|rock|plants
   DamageMultiplier_3: 2, param1: HWS_material_devices_kinetic|HWS_material_devices_energy|shield
   DamageMultiplier_4: 0.1, param1: HWS_material_aquablocksmall|HWS_material_aquablocklarge|HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_aquashieldsmall|HWS_material_aquashieldlarge|HWS_material_terrablocksmall|HWS_material_terrablocklarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_terrashieldsmall|HWS_material_terrashieldlarge|HWS_material_pyroblocksmall|HWS_material_pyroblocklarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_pyroshieldsmall|HWS_material_pyroshieldlarge|HWS_material_obsidianblocksmall|HWS_material_obsidianblocklarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_obsidianshieldsmall|HWS_material_obsidianshieldlarge|HWS_material_luxblocksmall|HWS_material_luxblocklarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_luxshieldsmall|HWS_material_luxshieldlarge|HWS_material_noxblocksmall|HWS_material_noxblocklarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_noxshieldsmall|HWS_material_noxshieldlarge|HWS_material_strangeletblocksmall|HWS_material_strangeletblocklarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge|HWS_material_strangeletshieldsmall|HWS_material_strangeletshieldlarge|HWS_material_aquanpc|HWS_material_terranpc|HWS_material_pyronpc|HWS_material_obsidiannpc|HWS_material_luxnpc|HWS_material_noxnpc|HWS_material_strangeletnpc|alien|hull|hullarmored|hullcombat|concrete|wood|plastic
 }
