@@ -257,6 +257,38 @@ RandomResources:
    DepthMinMax: [1, 7]
    DroneProb: 1
    MaxDroneCount: 7
+#-  Name: HWSTungstenResource
+#   IsScalingCount: False
+#   IsImportant: True
+#   CountMinMax: [7, 7]
+#   SizeMinMax: [17, 27]
+#   DepthMinMax: [1, 7]
+#   DroneProb: 1
+#   MaxDroneCount: 7
+#-  Name: HWSChromiteResource
+#   IsScalingCount: False
+#   IsImportant: True
+#   CountMinMax: [7, 7]
+#   SizeMinMax: [17, 27]
+#   DepthMinMax: [1, 7]
+#   DroneProb: 1
+#   MaxDroneCount: 7
+#-  Name: HWSBismuthResource
+#   IsScalingCount: False
+#   IsImportant: True
+#   CountMinMax: [7, 7]
+#   SizeMinMax: [17, 27]
+#   DepthMinMax: [1, 7]
+#   DroneProb: 1
+#   MaxDroneCount: 7
+#-  Name: HWSColtanResource
+#   IsScalingCount: False
+#   IsImportant: True
+#   CountMinMax: [7, 7]
+#   SizeMinMax: [17, 27]
+#   DepthMinMax: [1, 7]
+#   DroneProb: 1
+#   MaxDroneCount: 7
 # 
 # ====================
 # ASTEROID RESOURCES 
