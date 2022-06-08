@@ -611,6 +611,22 @@
   }
 }
 
+{ StatusEffect Name: MosquitoStun
+  Duration: 5
+  Name: MosquitoStun
+  Type: speedmodifier
+  Stack: reset
+  Description: igmEffectMosquitoStun #NewRequired
+  Icon: TmpEff_Stunned
+  Actions: screen(underWaterFog);screen(radiation)
+
+  { Child Modify0
+    Stat: speedmodifier
+    SetValue: 0.1
+    Type: speedmodifier
+  }
+}
+
 # ====================================================================================================================================================================================================================
 #                                                                                                        PARASITES STATUSES
 # ====================================================================================================================================================================================================================
@@ -922,11 +938,11 @@
   CastSound: Player_Male/GROANMaleHurtLong
   OnDebuffSound: Player_Male/sigh
   BuffIf: varBodyRad > 1
- # DebuffIf: varBodyRad < 1
+  DebuffIf: varBodyRad < 0.3
   Type: radiation
   Description: igmEffectRadiationBurn
   Icon: TmpEff_RadiationBurn
-  Mutex: RadiationSickness
+  Mutex: "RadiationPoisoning, RadiationSickness, RadiationOverload"
 
   { Child Modify0
     Stat: radiation
@@ -941,7 +957,9 @@
   CastSound: Player_Male/GROANMaleHurtLong
   OnDebuffSound: Player_Male/sigh
   BuffIf: varBodyRad > 3
-  DebuffIf: varBodyRad < 1
+  DebuffIf: varBodyRad < 1.3
+  Actions: debuff(RadiationBurn)
+  Mutex: "RadiationSickness, RadiationOverload"
   Type: radiation
   Description: igmEffectRadiationPoisoning
   Icon: TmpEff_RadiationPoisoning
@@ -969,8 +987,9 @@
   CastSound: Player_Male/GROANMaleHurtLong
   OnDebuffSound: Player_Male/sigh
   BuffIf: varBodyRad > 5
-  DebuffIf: varBodyRad < 3.5
-  Actions: "debuff(RadiationPoisoning)"
+  DebuffIf: varBodyRad < 3.3
+  Actions: "debuff(RadiationBurn); debuff(RadiationPoisoning)"
+  Mutex: RadiationOverload
   OnExpired: "OrganFailure"
   Type: radiation
   Description: igmEffectRadiationSickness
@@ -999,11 +1018,11 @@
   CastSound: Player_Male/GROANMaleHurtLong
   OnDebuffSound: Player_Male/sigh
   BuffIf: varBodyRad > 9
-  DebuffIf: varBodyRad < 6
-  Actions: "buff(OpenWound)"
+  DebuffIf: varBodyRad < 5.3
+  Actions: "buff(OpenWound); debuff(RadiationBurn); debuff(RadiationPoisoning); debuff(RadiationSickness)"
   Type: radiation
   Description: igmEffectRadiationOverload
-  Icon: TmpEff_RadiationSickness
+  Icon: TmpEff_Stunned
 
   { Child Modify0
     Stat: stamina
@@ -1134,6 +1153,20 @@
   { Child Modify0
     Stat: health
     Amount: 15
+    Rate: 1
+  }
+}
+{ StatusEffect Name: ButterflyHeal
+  Duration: 10
+  Name: ButterflyHeal
+  Type: healthup
+  Stack: reset
+  Description: igmEffectButterfly
+  Icon: TmpEff_MedikitBandages
+
+  { Child Modify0
+    Stat: health
+    Amount: 8
     Rate: 1
   }
 }
