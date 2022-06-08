@@ -7119,7 +7119,7 @@
   ShowUser: Yes
 }
 { Item Id: 235, Name: PlasticMaterial, Ref: ComponentsTemplate
-  Mass: 0.18, type: float, display: true, formatter: Kilogram
+  Mass: 1.75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: Raw composite that can be refined with igneous stone dust to form Basalt Fiber. A fireproof and lightweight building material., display: true
   ShowUser: Yes
@@ -8000,9 +8000,9 @@
    AddStamina: 15, display: StaminaValue
    AddFood: 28, display: FoodValue
    AddOxygen: 0
-   # Buff: Indigestion
-   # Buff_chance: 0.05
-   # Debuff: PoisonBit, display: EffectiveAgainst
+   Buff: Indigestion
+   Buff_chance: 0.05
+   Debuff: PoisonBit, display: EffectiveAgainst
    SfxBegin: UseActions/playerEatingSoft
  }
 }
@@ -8080,9 +8080,9 @@
     AddStamina: 25, display: StaminaValue
     AddFood: 24, display: FoodValue
     AddOxygen: 0
-	AddTemperature: -3, display: TemperatureValue
+	AddTemperature: -1, display: TemperatureValue
     Buff: Indigestion
-    Buff_chance: 0.1
+    Buff_chance: 0.2
     Debuff: BadTrip, display: EffectiveAgainst
     SfxBegin: UseActions/playerDrinking
   }
@@ -8163,8 +8163,8 @@
     AddOxygen: 0
 	AddTemperature: -8, display: TemperatureValue
     SfxBegin: UseActions/playerDrinking
-    Buff: "Hangover,Intoxication"
-    Buff_chance: "0.25,0.1"
+    Buff: "Hangover"
+    Buff_chance: "0.1"
    # Debuff: Cold, display: EffectiveAgainst
   }
 }
@@ -8374,8 +8374,8 @@
     AddStamina: 50, display: StaminaValue
     AddFood: 35, display: FoodValue
     AddOxygen: 0
-    # Buff: Indigestion
-    # Buff_chance: 0.15
+    Buff: Indigestion
+    Buff_chance: 0.15
     SfxBegin: UseActions/playerEatingSoft
   }
 }
@@ -14555,6 +14555,8 @@
     SfxBegin: UseActions/playerDrinking
   }
 }
+# ----------------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------------------- HWS Fishing
 
 { Item Id: 1604, Name: HWSFishRod
   
@@ -26599,35 +26601,35 @@
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   StackSize: 50000
-  Info: HWS_ItemInfo_EleFluidAquaTemplate, display: true
+  Info: HWS_ItemInfo_HWSElementFluidAquaTemplate, display: true
   Category: Components
   ShowUser: No
   MarketPrice: 10001, display: true
 }
 # -------------------------------------------------------------------------------------------------------- Aqua Element
 { Item Id: 3911, Name: HWSElementAquaFluid, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleFluidAqua, display: true
+  Info: HWS_ItemInfo_HWSElementAquaFluid, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3912, Name: HWSElementAquaGas, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleGasAqua, display: true
+  Info: HWS_ItemInfo_HWSElementAquaGas, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3913, Name: HWSElementAquaSolid, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleSolidAqua, display: true
+  Info: HWS_ItemInfo_HWSElementAquaSolid, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3914, Name: HWSElementAquaCrystal, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleStoneAqua, display: true
+  Info: HWS_ItemInfo_HWSElementAquaCrystal, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30003, display: true
@@ -26635,28 +26637,28 @@
 }
 # -------------------------------------------------------------------------------------------------------- Pyro Element
 { Item Id: 3915, Name: HWSElementPyroFluid, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleFluidPyro, display: true
+  Info: HWS_ItemInfo_HWSElementPyroFluid, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3916, Name: HWSElementPyroGas, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleGasPyro, display: true
+  Info: HWS_ItemInfo_HWSElementPyroGas, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3917, Name: HWSElementPyroSolid, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleSolidPyro, display: true
+  Info: HWS_ItemInfo_HWSElementPyroSolid, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3918, Name: HWSElementPyroCrystal, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleStonePyro, display: true
+  Info: HWS_ItemInfo_HWSElementPyroCrystal, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30003, display: true
@@ -26664,28 +26666,28 @@
 }
 # -------------------------------------------------------------------------------------------------------- Terra Element
 { Item Id: 3919, Name: HWSElementTerraFluid, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleFluidTerra, display: true
+  Info: HWS_ItemInfo_HWSElementTerraFluid, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3920, Name: HWSElementTerraGas, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleGasTerra, display: true
+  Info: HWS_ItemInfo_HWSElementTerraGas, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3921, Name: HWSElementTerraSolid, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleSolidTerra, display: true
+  Info: HWS_ItemInfo_HWSElementTerraSolid, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3922, Name: HWSElementTerraCrystal, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleStoneTerra, display: true
+  Info: HWS_ItemInfo_HWSElementTerraCrystal, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30003, display: true
@@ -26693,28 +26695,28 @@
 }
 # -------------------------------------------------------------------------------------------------------- Lux Element
 { Item Id: 3923, Name: HWSElementLuxFluid, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleFluidLux, display: true
+  Info: HWS_ItemInfo_HWSElementLuxFluid, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3924, Name: HWSElementLuxGas, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleGasLux, display: true
+  Info: HWS_ItemInfo_HWSElementLuxGas, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3925, Name: HWSElementLuxSolid, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleSolidLux, display: true
+  Info: HWS_ItemInfo_HWSElementLuxSolid, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3926, Name: HWSElementLuxCrystal, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleStoneLux, display: true
+  Info: HWS_ItemInfo_HWSElementLuxCrystal, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30003, display: true
@@ -26722,28 +26724,28 @@
 }
 # -------------------------------------------------------------------------------------------------------- Nox Element
 { Item Id: 3927, Name: HWSElementNoxFluid, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleFluidNox, display: true
+  Info: HWS_ItemInfo_HWSElementNoxFluid, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3928, Name: HWSElementNoxGas, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleGasNox, display: true
+  Info: HWS_ItemInfo_HWSElementNoxGas, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3929, Name: HWSElementNoxSolid, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleSolidNox, display: true
+  Info: HWS_ItemInfo_HWSElementNoxSolid, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3930, Name: HWSElementNoxCrystal, Ref: HWSElementTemplate
-  Info: HWS_ItemInfo_EleStoneNox, display: true
+  Info: HWS_ItemInfo_HWSElementNoxCrystal, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30003, display: true
@@ -26751,14 +26753,14 @@
 }
 # --------------------------------------------------------------------------------------------------- Strangelet Element
 { Item Id: 3931, Name: HWSElementStrangelet, Ref: HWSElementTemplate
-  Info: HWSStrangeletInfo, display: true
+  Info: HWS_ItemInfo_HWSElementStrangelet, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
   ShowUser: Yes
 }
 { Item Id: 3932, Name: HWSElementStrangeletRefined, Ref: HWSElementTemplate
-  Info: HWSStrangeletRefinedInfo, display: true
+  Info: HWS_ItemInfo_HWSElementStrangeletRefined, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 10001, display: true
@@ -26766,8 +26768,8 @@
   FuelValue: 5000, type: int, display: true, formatter: WattHour
 }
 # --------------------------------------------------------------------------------------------------- EGS Web
-{ Item Id: 3933, Name: EGSPhone, Ref: HWSElementTemplate
-  Info: "Use this item to open the EGS Web\n\nPress shift + right click on device, to use from inventory.", display: true
+{ Item Id: 3933, Name: HWSEGSPhone, Ref: HWSElementTemplate
+  Info: HWS_ItemInfo_HWSEGSPhone, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 99, display: true
@@ -26778,8 +26780,8 @@
     ROF: 10, type: float
   }
 }
-{ Item Id: 3934, Name: SatelliteConstructionKit, Ref: HWSElementTemplate
-  Info: "This satellite can be deployed, through the EGS Web.", display: true
+{ Item Id: 3934, Name: HWSSatelliteConstructionKit, Ref: HWSElementTemplate
+  Info: HWS_ItemInfo_HWSSatelliteConstructionKit, display: true
   Mass: 10, type: float, display: true, formatter: ton
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 99, display: true
@@ -26790,58 +26792,58 @@
 { Item Id: 3935, Name: HWSTungstenOre, Ref: ComponentsTemplate
   Meshfile: Entities/Items/Ores/AluminiumOrePrefab
   ShowUser: Yes
-  Mass: 1.55, type: float, display: true, formatter: Kilogram
+  Mass: 19.3, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30, display: true
-  Info: itmSulfur, display: true
+  Info: HWS_ItemInfo_HWSTungstenOre, display: true
 }
 { Item Id: 3936, Name: HWSTungstenIngot, Ref: ComponentsTemplate
   Meshfile: Entities/Misc/DummyPrefab
   ShowUser: Yes
-  Mass: 1.55, type: float, display: true, formatter: Kilogram
+  Mass: 9.65, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30, display: true
-  Info: itmSulfur, display: true
+  Info: HWS_ItemInfo_HWSTungstenIngot, display: true
 }
 { Item Id: 3937, Name: HWSChromiteOre, Ref: ComponentsTemplate
   Meshfile: Entities/Items/Ores/CopperOrePrefab
   ShowUser: Yes
-  Mass: 1.55, type: float, display: true, formatter: Kilogram
+  Mass: 14.28, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30, display: true
-  Info: itmSulfur, display: true
+  Info: HWS_ItemInfo_HWSChromiteOre, display: true
 }
 { Item Id: 3938, Name: HWSChromium, Ref: ComponentsTemplate
   Meshfile: Entities/Misc/DummyPrefab
   ShowUser: Yes
-  Mass: 1.55, type: float, display: true, formatter: Kilogram
+  Mass: 7.14, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30, display: true
-  Info: itmSulfur, display: true
+  Info: HWS_ItemInfo_HWSChromium, display: true
 }
 { Item Id: 3939, Name: HWSBismuthOre, Ref: ComponentsTemplate
   Meshfile: Entities/Items/Ores/TitanOrePrefab
   ShowUser: Yes
-  Mass: 1.55, type: float, display: true, formatter: Kilogram
+  Mass: 9.78, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30, display: true
-  Info: itmSulfur, display: true
+  Info: HWS_ItemInfo_HWSBismuthOre, display: true
 }
 { Item Id: 3940, Name: HWSBismuthIngot, Ref: ComponentsTemplate
   Meshfile: Entities/Items/Ores/AluminiumOrePrefab
   ShowUser: Yes
-  Mass: 1.55, type: float, display: true, formatter: Kilogram
+  Mass: 19.56, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30, display: true
-  Info: itmSulfur, display: true
+  Info: HWS_ItemInfo_HWSBismuthIngot, display: true
 }
 { Item Id: 3941, Name: HWSElementalWater, Ref: ComponentsTemplate
   Meshfile: Entities/Items/Ores/AluminiumOrePrefab
   ShowUser: Yes
-  Mass: 1.55, type: float, display: true, formatter: Kilogram
+  Mass: 7, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30, display: true
-  Info: itmSulfur, display: true
+  Info: HWS_ItemInfo_HWSElementalWater, display: true
   { Child 0
     Class: Eat
     ROF: 1, type: float
@@ -26859,10 +26861,10 @@
 { Item Id: 3942, Name: HWSElementalSpice, Ref: ComponentsTemplate
   Meshfile: Entities/Items/Ores/AluminiumOrePrefab
   ShowUser: Yes
-  Mass: 1.55, type: float, display: true, formatter: Kilogram
+  Mass: 3, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 30, display: true
-  Info: itmSulfur, display: true
+  Info: HWS_ItemInfo_HWSElementalSpice, display: true
   { Child 0
     Class: Eat
     ROF: 1, type: float
@@ -26876,6 +26878,30 @@
     Debuff: "Stunned", display: EffectiveAgainst
     Buff_chance: "0.75"
   }
+}
+{ Item Id: 3943, Name: HWSColtan, Ref: ComponentsTemplate
+  Meshfile: Entities/Items/Ores/TitanOrePrefab
+  ShowUser: Yes
+  Mass: 16.69, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: false, formatter: Liter
+  MarketPrice: 30, display: true
+  Info: HWS_ItemInfo_HWSColtan, display: true
+}
+{ Item Id: 3944, Name: HWSTantal, Ref: ComponentsTemplate
+  Meshfile: Entities/Misc/DummyPrefab
+  ShowUser: Yes
+  Mass: 8.35, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: false, formatter: Liter
+  MarketPrice: 30, display: true
+  Info: HWS_ItemInfo_HWSTantal, display: true
+}
+{ Item Id: 3945, Name: HWSCarbonOre, Ref: ComponentsTemplate
+  Meshfile: Entities/Misc/DummyPrefab
+  ShowUser: Yes
+  Mass: 3.52, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: false, formatter: Liter
+  MarketPrice: 30, display: true
+  Info: HWS_ItemInfo_HWSHWSCarbonOre, display: true
 }
 # -------------------------------------------------------------------------------------------------------- HWS Origin XP
 { Item Id: 4086, Name: HWSAllOriginXP

@@ -5760,6 +5760,73 @@
 
 # ----------------------------------------------------------------------------------------------------------------------
 # ---------------------------------------------------------------------------------------------------------------- HWS +
+# -------------------------------------------------------------------------------------------------------- HWS Resources
+{ Template Name: HWSTungstenOre
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+{ Template Name: HWSTungstenIngot
+  BaseItem: true
+  OutputCount: 10
+  CraftTime: 5
+  Target: "LargeC,AdvC,Furn"
+  { Child Inputs
+    HWSTungstenOre: 5
+  }
+}
+{ Template Name: HWSChromiteOre
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+{ Template Name: HWSChromium
+  BaseItem: true
+  OutputCount: 10
+  CraftTime: 5
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    HWSChromiteOre: 5
+  }
+}
+{ Template Name: HWSBismuthOre
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+{ Template Name: HWSBismuthIngot
+  BaseItem: true
+  OutputCount: 10
+  CraftTime: 5
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    HWSBismuthOre: 5
+  }
+}
+{ Template Name: HWSColtan
+  CraftTime: 1
+  BaseItem: true
+  Target: ""
+  { Child Inputs
+  }
+}
+{ Template Name: HWSTantal
+  BaseItem: true
+  OutputCount: 10
+  CraftTime: 5
+  Target: "LargeC,AdvC,Furn"
+  { Child Inputs
+    HWSColtan: 5
+  }
+}
+# ----------------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------------------------------------- HWS +
 # --------------------------------------------------------------------------------------------------------- HWS Elements
 { Template Name: HWSElementAquaFluid
   CraftTime: 1
