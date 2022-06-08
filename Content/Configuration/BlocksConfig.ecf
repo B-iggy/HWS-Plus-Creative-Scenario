@@ -1684,7 +1684,7 @@
   ShowUser: No
   Group: resource
   { Child DropOnDestroy
-    Item: PlasticMaterial
+    Item: HWSCarbonOre
     Count: "6,8"
     Prob: 0.2
   }
@@ -40422,7 +40422,6 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSLuxGunSVBlocks
 
-
   IsGPUInstance: false  # !!!
   Texture: 50
   SoundOpen: UseActions/WeaponOpenClose
@@ -40469,7 +40468,6 @@
   Model: @hws_blockmodels/HWSElementalGunSVT4
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSLuxGunSVBlocks
-
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -42555,7 +42553,7 @@
   IsColorable: true
   Group: Custom
   Model: @hws_blockmodels/HWSPlantCapsule
-  ShowUser: Yes
+  ShowUser: No
   IsActivatedOnPlace: false
   Shape: ModelEntity
   Material: HWS_material_devices_kinetic, display: true
@@ -42834,8 +42832,64 @@
 }
 
 # ----------------------------------------------------------------------------------------------------------------------
-# ------------------------------------------------------------------------------------------------- HWS Custom Resources
+# ------------------------------------------------------------------------------------------------ HWS+ Custom Resources
 
+{ Block Name: HWSTungstenResource
+  MarketPrice: 1, display: true
+  Material: resourcehard
+  Shape: Terrain
+  Mesh: terrain
+  Texture: 219
+  ShowUser: No
+  Group: resource
+  { Child DropOnDestroy
+    Item: HWSTungstenOre
+    Count: "6,8"
+    Prob: 0.2
+  }
+}
+{ Block Name: HWSChromiteResource
+  MarketPrice: 1, display: true
+  Material: resourcehard
+  Shape: Terrain
+  Mesh: terrain
+  Texture: 219
+  ShowUser: No
+  Group: resource
+  { Child DropOnDestroy
+    Item: HWSChromiteOre
+    Count: "6,8"
+    Prob: 0.2
+  }
+}
+{ Block Name: HWSBismuthResource
+  MarketPrice: 1, display: true
+  Material: resourcehard
+  Shape: Terrain
+  Mesh: terrain
+  Texture: 219
+  ShowUser: No
+  Group: resource
+  { Child DropOnDestroy
+    Item: HWSBismuthOre
+    Count: "6,8"
+    Prob: 0.2
+  }
+}
+{ Block Name: HWSColtanResource
+  MarketPrice: 1, display: true
+  Material: resourcehard
+  Shape: Terrain
+  Mesh: terrain
+  Texture: 219
+  ShowUser: No
+  Group: resource
+  { Child DropOnDestroy
+    Item: HWSColtan
+    Count: "6,8"
+    Prob: 0.2
+  }
+}
 # =================================================================================
 # ================================ Non-ID Blocks ==================================
 # =================================================================================
@@ -44422,7 +44476,7 @@
   IsTextureable: true
   IsColorable: true
   Model: @hws_blockmodels/HWSCaptureTheFlag
-  ShowUser: Yes
+  ShowUser: No
   Shape: ModelEntity
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
