@@ -88,7 +88,7 @@
   Meshfile: Entities/Items/Tools/flashlight01Prefab
   # DropMeshfile: Entities/Misc/BagSmallNewPrefab
   LifetimeOnDrop: 720
-  MarketPrice: 270, display: true
+  MarketPrice: 436, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 14
   PickupToToolbar: true
@@ -105,7 +105,7 @@
   Meshfile: Entities/Items/Weapons/Pistols/ProjectilePistolPrefab
   # Meshfile: Entities/Items/Weapons/Pistols/SciFiPistol4BlackPrefab
   PickupToToolbar: true
-  MarketPrice: 125, display: true
+  MarketPrice: 270, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 14
   StackSize: 50000
@@ -160,7 +160,7 @@
   # Meshfile: Entities/Items/Weapons/Shotguns/SciFiShotgun1BlackPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 225, display: true
+  MarketPrice: 486, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -217,7 +217,7 @@
   Meshfile: Entities\Items\Weapons\ScifiMinigun\MinigunPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 1705, display: true
+  MarketPrice: 5189, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -307,7 +307,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackT1Prefab
   # Meshfile: Entities/Items/Weapons/PulseRifle/PulseRiflePrefab
   PickupToToolbar: true
-  MarketPrice: 2943, display: true
+  MarketPrice: 7086, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 15
   StackSize: 50000
@@ -376,7 +376,7 @@
   Meshfile: Entities/Items/Weapons/Snipers/SniperRiflePrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 225, display: true
+  MarketPrice: 486, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -522,7 +522,7 @@
   Meshfile: Entities/Items/Weapons/Shotguns/SciFiShotgun2BlackPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 847, display: true
+  MarketPrice: 2484, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -581,7 +581,7 @@
   Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/SciFiGrenadeLauncherBlackPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 3700, display: true
+  MarketPrice: 6682, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -629,7 +629,7 @@
   Meshfile: Entities/Items/Weapons/MultiToolT1Prefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: false
-  MarketPrice: 170, display: true
+  MarketPrice: 220, display: true
   HoldType: 16
   StackSize: 50000
   Category: Weapons/Items
@@ -1035,7 +1035,7 @@
   # Meshfile: Entities/Items/Weapons/Pistols/SciFiPistol2BluePrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_energy, display: true
-  MarketPrice: 1937, display: true
+  MarketPrice: 4164, display: true
   HoldType: 14
   StackSize: 50000
   Category: Weapons/Items
@@ -1104,7 +1104,7 @@
   # Meshfile: Entities/Items/Weapons/Rifles/AssaultRiflePrefab
   # Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackT1Prefab
   PickupToToolbar: true
-  MarketPrice: 275, display: true
+  MarketPrice: 470, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 15
   StackSize: 50000
@@ -1168,7 +1168,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle4Prefab
   PickupToToolbar: true
   Material: HWS_material_weapon_energy, display: true
-  MarketPrice: 80017, display: true
+  MarketPrice: 266724, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -1248,7 +1248,7 @@
   Meshfile: Entities/Items/Weapons/ScifiCannon/ScifiCannonPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_energy, display: true
-  MarketPrice: 19680, display: true
+  MarketPrice: 61132, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -1336,7 +1336,7 @@
   Meshfile: Entities/Items/Weapons/Snipers/ScifiSniper3Prefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 747, display: true
+  MarketPrice: 2296, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -1396,7 +1396,7 @@
   Meshfile: Entities/Items/Weapons/DrillV2/DrillT2Prefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: false
-  MarketPrice: 1315, display: true
+  MarketPrice: 1954, display: true
   HoldType: 16
   StackSize: 50000
   Category: Weapons/Items
@@ -1593,7 +1593,7 @@
   Meshfile: Entities/Items/Weapons/Pistols/SciFiPistol4BlackT2Prefab
   PickupToToolbar: true
   Durability: 500, display: false
-  MarketPrice: 300, display: true
+  MarketPrice: 1018, display: true
   Info: "A specialist sidearm with a larger magazine and holosight. It possesses superior stopping power and can operate underwater."", display: true
   DegradationProb: 0.75, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
@@ -1725,7 +1725,7 @@
   Meshfile: Entities/Items/Tools/ChainsawV2Prefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 500, display: true
+  MarketPrice: 832, display: true
   HoldType: 16
   StackSize: 50000
   Category: Weapons/Items
@@ -2189,7 +2189,7 @@
 }
 { Item Id: 31, Name: MultiToolT2, Ref: MultiTool
   Meshfile: Entities/Items/Weapons/MultiToolT2Prefab
-  MarketPrice: 1932, display: true
+  MarketPrice: 4254, display: true
   { Child 0 # "Retrieve Blocks" (= get complete blocks in own structure, do "Salvage" in others)
     Range: 8
 	  ReturnFactor: 0.6, display: true
@@ -2231,7 +2231,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 980, display: true
+  MarketPrice: 1507, display: true
   Canhold: false
   HoldType: 0
   StackSize: 50000
@@ -2258,7 +2258,7 @@
 { Item Id: 33, Name: RocketLauncherT2, Ref: RocketLauncher
   Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/SciFiGrenadeLauncherT2Prefab
   PickupToToolbar: true
-  MarketPrice: 5395, display: true
+  MarketPrice: 11428, display: true
   Durability: 100, display: false
   Info: "An improved variant of Rocket Launcher designed to operate using laser-guided microrockets for anti-aircraft engagements where the targets are protected behind armor.", display: true
   #just for display, see ammo "SlowRocketHoming"
@@ -2344,7 +2344,7 @@
 { Item Id: 35, Name: LaserPistolT2, Ref: LaserPistol
   Meshfile: Entities/Items/Weapons/Pistols/ScifiEnergyPistol3Prefab
   PickupToToolbar: true
-  MarketPrice: 20459, display: true
+  MarketPrice: 60630, display: true
   # Damage: 100, display: true
   Durability: 500, display: false
   DegradationProb: 0.2, type: float, display: false
@@ -2384,7 +2384,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/AssaultRifleT2Prefab
   # Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackPrefab
   PickupToToolbar: true
-  MarketPrice: 1875, display: true
+  MarketPrice: 3395, display: true
   Durability: 500, display: false
   DegradationProb: 0.25, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
@@ -2432,7 +2432,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackT2Prefab
   # Meshfile: Entities/Items/Weapons/PulseRifle/PulseRifleT2Prefab
   PickupToToolbar: true
-  MarketPrice: 4675, display: true
+  MarketPrice: 11073, display: true
   Durability: 500, display: false
   DegradationProb: 0.2, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
@@ -2579,7 +2579,7 @@
     RadialDesc: rdlDefenceTxt # add text
     RadialIcon: Radial_Defence
   }
-  { Child 1       # Resource mining and stone removal
+  { Child 1       # Resource mining, stone removal, wood cutter
     Class: Driller
 	DrillMode: 3
     DecoMode: true
@@ -2588,7 +2588,7 @@
     HarvestSupport: true
     AllowAt: "UnderWater, Planet, Space"
     ROF: 0.5, type: float, display: false, formatter: ROF
-    Damage: 150
+    Damage: 100
     Radius: 1.75
     Range: 5, display: false
     NoiseStrength: 50, display: false
@@ -2650,17 +2650,17 @@
     Class: Driller
     AllowAt: "UnderWater, Planet, Space"
     ROF: 0.5, type: float, display: false, formatter: ROF
-    Range: 5
+    Range: 10
     # Recoil: 0.1, display: true
     NoiseStrength: 10, display: false
     CameraShake: 0
     IgnoreAtmo: true
     Automatic: true
-    Damage: 17
+    Damage: 25
     # Stamina: -7
     Radius: 3
     Demolish: True
-    ReturnFactor: 0.333, display: true
+    ReturnFactor: 0.25, display: true
     AmmoCapacity: 25, display: false           # no need to display since unlimited ammo
     AmmoType: AmmoInfinite, display: true      # no need to display since unlimited ammo
     AmmoUnlimited: true
@@ -2672,6 +2672,10 @@
     # ParticleTransform: ""     # do NOT show a particle effect
 
     DamageMultiplier_Group: HWS_Survival_Vanilla
+
+    RadialText: rdlDeconstructST
+    RadialDesc: rdlDeconstructTxt
+    RadialIcon: Radial_Deconstruct
   }
   { Child 3
     ROF: 5, type: float
@@ -2718,7 +2722,7 @@
   Meshfile: Entities/Items/Tools/ColorTextureToollPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: false
-  MarketPrice: 300, display: true
+  MarketPrice: 1100, display: true
   HoldType: 14
   StackSize: 50000
   Category: Weapons/Items
@@ -2757,7 +2761,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 16420, display: true
+  MarketPrice: 61182, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -2902,7 +2906,7 @@
   
 
   Meshfile: Entities/Items/Weapons/Projectiles/BombDronePrefab
-  MarketPrice: 12250, display: true
+  MarketPrice: 308479, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   CustomIcon: BombDrone
   Material: HWS_material_weapon_kinetic, display: true
@@ -2992,7 +2996,7 @@
 
 { Item Id: 47, Name: MedicGun
   Meshfile: Entities/Items/Weapons/MultiToolT1Prefab
-  MarketPrice: 1950, display: true
+  MarketPrice: 14479, display: true
   CustomIcon: ChangeTool
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: false
@@ -3163,7 +3167,7 @@
   # Meshfile: Entities/Items/Weapons/Projectiles/rocket01Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 202, display: true
+  MarketPrice: 473, display: true
   HoldType: 0
   Canhold: false
   Info: bkiAmmoExplosive, display: true
@@ -3198,7 +3202,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 8, display: true
+  MarketPrice: 12, display: true
   HoldType: 0
   Canhold: false
   StackSize: 50000
@@ -3212,38 +3216,38 @@
 }
 { +Item Id: 53, Name: 8.3mmBullet, Ref: 50Caliber
   StackSize: 50000
-  MarketPrice: 10, display: true
+  MarketPrice: 22, display: true
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { +Item Id: 54, Name: 5.8mmBullet, Ref: 50Caliber
   StackSize: 50000
-  MarketPrice: 16, display: true
+  MarketPrice: 29, display: true
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { +Item Id: 55, Name: 12.7mmBullet, Ref: 50Caliber
   StackSize: 50000
-  MarketPrice: 33, display: true
+  MarketPrice: 63, display: true
   Mass: 0.06, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 56, Name: 15mmBullet, Ref: 50Caliber
   Mass: 0.2, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 8, display: true
+  MarketPrice: 16, display: true
 }
 { Item Id: 57, Name: DrillCharge, Ref: 50Caliber
   Material: HWS_material_weapon_kinetic
   Mass: 1.05, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 262, display: true
+  MarketPrice: 442, display: true
   Info: bkiAmmoFullLoad, display: true
 }
 { Item Id: 58, Name: ShotgunShells, Ref: 50Caliber
   Mass: 0.03, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 31, display: true
+  MarketPrice: 66, display: true
 }
 { Item Id: 59, Name: FillerCharge, Ref: 50Caliber
   Material: HWS_material_weapon_kinetic, display: false
@@ -3255,20 +3259,20 @@
   Material: HWS_material_weapon_energy, display: true
   Mass: 0.75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 7, display: true
+  MarketPrice: 378, display: true
 }
 { Item Id: 61, Name: PulseLaserChargeRifle, Ref: 50Caliber
   Material: HWS_material_weapon_energy, display: true
   Mass: 1.20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 20, display: true
+  MarketPrice: 1134, display: true
 }
 { Item Id: 62, Name: MultiCharge, Ref: 50Caliber
   Material: HWS_material_weapon_kinetic, display: false
   Mass: 1.05, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoFullLoad, display: true
-  MarketPrice: 437, display: true
+  MarketPrice: 619, display: true
 }
 { Item Id: 63, Name: BioFuel, Ref: 50Caliber
   Material: HWS_material_weapon_kinetic, display: false
@@ -3296,7 +3300,7 @@
   
   Mass: 4, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 194, display: true
+  MarketPrice: 2543, display: true
   { Child 0
     Class: Projectile
     Damage: 687, display: true
@@ -3319,7 +3323,7 @@
   StackSize: 50000
   Mass: 1.6, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 755, display: true
+  MarketPrice: 1687, display: true
   { Child 0
     Class: Projectile
     Damage: 1254
@@ -3606,7 +3610,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: false
-  MarketPrice: 115, display: true
+  MarketPrice: 329, display: true
   Canhold: false
   HoldType: 0
   Category: Components
@@ -3621,7 +3625,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: false
-  MarketPrice: 54, display: true
+  MarketPrice: 394, display: true
   Canhold: false
   AutoFill: false
   HoldType: 0
@@ -3705,7 +3709,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: Base, display: true
-  MarketPrice: 2160, display: true
+  MarketPrice: 3116, display: true
   Material: hullarmored, display: false
   HoldType: 0
   StackSize: 50000
@@ -3730,7 +3734,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: SS, display: true
   Material: hullarmored, display: false
-  MarketPrice: 3160, display: true
+  MarketPrice: 5276, display: true
   HoldType: 0
   StackSize: 50000
   
@@ -3754,7 +3758,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: MS, display: true
   Material: hullarmored, display: false
-  MarketPrice: 7104, display: true
+  MarketPrice: 15048, display: true
   HoldType: 0
   StackSize: 50000
   
@@ -3779,7 +3783,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: GV, display: true
   Material: hullarmored, display: false
-  MarketPrice: 2960, display: true
+  MarketPrice: 4844, display: true
   HoldType: 0
   StackSize: 50000
   
@@ -3832,7 +3836,7 @@
   Mass: 0.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   O2Value: 35, display: false, type: int
-  MarketPrice: 180, display: true
+  MarketPrice: 730, display: true
   Category: Components
   Info: bkiRespiratorCharge, display: true
   { Child 0
@@ -4019,7 +4023,7 @@
 
 { Item Id: 99, Name: AmmoCVTorpedo
   Meshfile: Entities/Items/Weapons/Projectiles/AlienRocketRedPrefab
-  MarketPrice: 39195, display: true
+  MarketPrice: 395200, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   CustomIcon: FillerCharge
   Material: HWS_material_weapon_kinetic, display: true
@@ -5834,7 +5838,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_energy, display: true
   AllowPlacingAt: SS, display: false
-  MarketPrice: 61, display: true
+  MarketPrice: 1263, display: true
   HoldType: 0
   StackSize: 50000
   
@@ -5875,7 +5879,7 @@
   Meshfile: Entities/Items/Weapons/Projectiles/sniperBulletPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 483, display: true
+  MarketPrice: 1454, display: true
   AllowPlacingAt: SS, display: false
   HoldType: 0
   Canhold: false
@@ -5910,7 +5914,7 @@
   Meshfile: Entities/Items/Weapons/Projectiles/rocket01Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 84, display: true
+  MarketPrice: 197, display: true
   AllowPlacingAt: SS, display: false
   HoldType: 0
   StackSize: 50000
@@ -5952,7 +5956,7 @@
   Canhold: false
   Mass: 0.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 14, display: true
+  MarketPrice: 31, display: true
   Info: bkiAmmo, display: true
   Category: Weapons/Items
 
@@ -5963,7 +5967,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_energy, display: true
-  MarketPrice: 19, display: true
+  MarketPrice: 850, display: true
   AllowPlacingAt: SS, display: false
   HoldType: 0
   StackSize: 50000
@@ -6015,7 +6019,7 @@
 }
 { Item Id: 606, Name: AmmoSVAntimatterCannon
   Meshfile: Entities/Items/Weapons/Projectiles/AlienRocketGreenPrefab
-  MarketPrice: 2050, display: true
+  MarketPrice: 23225, display: true
   # Meshfile: Entities/Items/Weapons/Projectiles/alienRocketPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_energy, display: true
@@ -6065,7 +6069,7 @@
   Mass: 870, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
-  MarketPrice: 1522, display: true
+  MarketPrice: 4757, display: true
   Category: Weapons/Items
   { Child 0
     Class: Projectile
@@ -6103,7 +6107,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
-  MarketPrice: 18, display: true
+  MarketPrice: 760, display: true
   { Child 0
     Class: Projectile
     Damage: 7000, display: true
@@ -6135,7 +6139,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
-  MarketPrice: 753, display: true
+  MarketPrice: 2014, display: true
   { Child 0
     Class: Projectile
     Damage: 11000, display: true
@@ -6208,7 +6212,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
-  MarketPrice: 46, display: true
+  MarketPrice: 1209, display: true
   { Child 0
     Class: Projectile
     Damage: 2090, display: true
@@ -6244,7 +6248,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
-  MarketPrice: 58, display: true
+  MarketPrice: 193, display: true
   { Child 0
     Class: Projectile
     Damage: 4000, display: true
@@ -6280,7 +6284,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
-  MarketPrice: 93, display: true
+  MarketPrice: 1118, display: true
   { Child 0
     Class: Projectile
     Damage: 13000, display: true
@@ -6315,7 +6319,7 @@
   Info: bkiAmmoExplosive, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Weapons/Items
-  MarketPrice: 454, display: true
+  MarketPrice: 1432, display: true
   { Child 0
     Class: Projectile
     Damage: 20000, display: true
@@ -6380,7 +6384,7 @@
   AllowPlacingAt: "SS,GV", display: false
   Mass: 20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 252, display: true
+  MarketPrice: 694, display: true
   { Child 0
     Damage: 2960, display: true
     BlastParticleIndex: 3
@@ -6402,7 +6406,7 @@
 
 { Item Id: 166, Name: FlakRocketMS, Ref: FlakRocket
   AllowPlacingAt: MS, display: false
-  MarketPrice: 52, display: true
+  MarketPrice: 163, display: true
   { Child 0
     Damage: 3000, display: true
     BlastParticleIndex: 3
@@ -6423,7 +6427,7 @@
   Mass: 840, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   AllowPlacingAt: MS, display: false
-  MarketPrice: 1484, display: true
+  MarketPrice: 4524, display: true
   { Child 0
     Damage: 20000, display: true
     BlastParticleIndex: 3
@@ -6444,7 +6448,7 @@
   AllowPlacingAt: Base, display: false
   Mass: 140, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 17, display: true
+  MarketPrice: 579, display: true
   { Child 0
     Damage: 20000, display: true
     Range: 748, display: true
@@ -6463,7 +6467,7 @@
   AllowPlacingAt: Base, display: false
   Mass: 76, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 1034, display: true
+  MarketPrice: 2564, display: true
   { Child 0
     Damage: 11626, display: true
     BlastParticleIndex: 3
@@ -6484,7 +6488,7 @@
   AllowPlacingAt: Base, display: false
   Mass: 35, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 130, display: true
+  MarketPrice: 2553, display: true
   { Child 0
     Damage: 20000, display: true
     BlastParticleIndex: 3
@@ -6513,7 +6517,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Category: Weapons/Items
-  MarketPrice: 16, display: true
+  MarketPrice: 578, display: true
 
   UnlockLevel: 1
   TechTreeNames: Hidden
@@ -6564,7 +6568,7 @@
   AllowPlacingAt: GV, display: false
   Mass: 19, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 316, display: true
+  MarketPrice: 760, display: true
   { Child 0
     Damage: 2000, display: true
     BlastRadius: 3, display: true
@@ -6729,7 +6733,7 @@
 
 { Item Id: 179, Name: AmmoTurretHVLaser
   Meshfile: Entities/Items/Weapons/Projectiles/LaserShotRedAlien
-  MarketPrice: 972, display: true
+  MarketPrice: 29094, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_energy, display: true
   AllowPlacingAt: "GV", display: false
@@ -6831,7 +6835,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: "A variant of Magnesite. This ore can be processed in a constructor into a powder used primarily in incendiary and explosive weapons.", display: true
   XpFactor: 35
-  MarketPrice: 51
+  MarketPrice: 400
   ShowUser: Yes
 }
 { Item Id: 201, Name: IronOre, Ref: OreTemplate
@@ -6840,7 +6844,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A dense ore known as Magnetite that consists primarily of iron that can be refined in a Constructor or Furnace., display: true
   XpFactor: 20
-  MarketPrice: 200, display: true
+  MarketPrice: 250, display: true
   ShowUser: Yes
   NoRepairInputItem: true   # needed since it has flag "BaseItem: true" and would other be considered for repairing in R2T
 }
@@ -6850,7 +6854,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A mineral-rich ore consisting primarily of Cobalt that can be refined in a Constructor or Furnace., display: true
   XpFactor: 25
-  MarketPrice: 81, display: true
+  MarketPrice: 225, display: true
   ShowUser: Yes
 }
 { Item Id: 203, Name: SiliconOre, Ref: OreTemplate
@@ -6869,7 +6873,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A Neodymium-rich variant of Bastnasite that can be refined into pure Neodymium with a Constructor or Furnace, display: true
   XpFactor: 35
-  MarketPrice: 121, display: true
+  MarketPrice: 355, display: true
   ShowUser: Yes
 }
 { Item Id: 205, Name: CopperOre, Ref: OreTemplate
@@ -6878,7 +6882,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A copper-rich ore known as Bornite that can be processed into Copper using a Constructor or Furnace., display: true
   XpFactor: 25
-  MarketPrice: 200, display: true
+  MarketPrice: 300, display: true
   ShowUser: Yes
   NoRepairInputItem: true  # needed since it has flag "BaseItem: true" and would other be considered for repairing in R2T
 }
@@ -6888,7 +6892,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A radioactive crystalline mineral rich in Promethium. It can be refined in a constructor into a fine powder and pressed into pellets., display: true
   XpFactor: 30
-  MarketPrice: 251, display: true
+  MarketPrice: 350, display: true
   ShowUser: Yes
 }
 { Item Id: 207, Name: OpticalFiber, Ref: ComponentsTemplate     # former: Cables
@@ -6903,74 +6907,74 @@
   Mass: 0.65, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: An assortment of smaller metal components used in most mechanical devices., display: true
-  MarketPrice: 25, display: true
+  MarketPrice: 54, display: true
 }
 { Item Id: 209, Name: CapacitorComponent, Ref: ComponentsTemplate
   ShowUser: Yes
   Mass: 42, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A heavy industrial capacitor module used in some devices to store and output large amounts of energy., display: true
-  MarketPrice: 1090, display: true
+  MarketPrice: 3005, display: true
 }
 { Item Id: 210, Name: Computer, Ref: ComponentsTemplate
   ShowUser: Yes
   Mass: 12, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A dedicated computer hard drive used as the brain of many devices., display: true
-  MarketPrice: 1590, display: true
+  MarketPrice: 2148, display: true
 }
 { Item Id: 211, Name: EnergyMatrix, Ref: ComponentsTemplate     #former: ControlPanel
   ShowUser: Yes
   Mass: 17.2, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 870, display: true
+  MarketPrice: 1264, display: true
   Info: An electrical component that interfaces between computer and electrical systems to regulate the throughput of power., display: true
 }
 { Item Id: 212, Name: Electronics, Ref: ComponentsTemplate
   ShowUser: Yes
   Mass: 2.86, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 150, display: true
+  MarketPrice: 200, display: true
   Info: An assortment of circuitboards and cables used in every electronic device., display: true
 }
 { Item Id: 213, Name: FluxCoil, Ref: ComponentsTemplate
   ShowUser: Yes
   Mass: 39.1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 472, display: true
+  MarketPrice: 1646, display: true
   Info: An advanced electromagnetic coil used for generating magnetic fields on a large scale., display: true
 }
 { Item Id: 214, Name: Motor, Ref: ComponentsTemplate
   ShowUser: Yes
   Mass: 24.28, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 300, display: true
+  MarketPrice: 1049, display: true
   Info: A highly-efficient electric motor used in many devices with moving parts., display: true
 }
 { Item Id: 215, Name: Nanotubes, Ref: ComponentsTemplate    # former: Pipes
   ShowUser: Yes
   Mass: 0.57, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 6, display: true
+  MarketPrice: 175, display: true
   Info: Inert carbon-plastic tubes used to transport fluids and as a structural element in lightweight designs., display: true
 }
 { Item Id: 216, Name: CobaltAlloy, Ref: ComponentsTemplate    # former: ReactorCore
   ShowUser: Yes
   Mass: 6.29, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 64, display: true
+  MarketPrice: 117, display: true
   Info: An HSS steel alloy used in aerospace engineering for its high heat resistance and superior hardness., display: true
 }
 { Item Id: 217, Name: SteelPlate, Ref: ComponentsTemplate
   ShowUser: Yes
   Mass: 11.8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 50, display: true
+  MarketPrice: 108, display: true
   Info: A steel plate with a foamsteel core that provides improved impact resistance and durability., display: true
 }
 { Item Id: 218, Name: EnergyCell, Ref: ComponentsTemplate
   FuelValue: 30, type: int, display: true, formatter: WattHour
-  MarketPrice: 630, display: true
+  MarketPrice: 875, display: true
   ShowUser: Yes
   Info: bkiEnergyCell, display: true
 
@@ -6996,14 +7000,14 @@
   ShowUser: Yes
   Mass: 0.8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 10
+  MarketPrice: 12
   Info: Scrap metal that can be melted down in a furnace for raw materials., display: true
 }
 { Item Id: 221, Name: ErestrumOre, Ref: OreTemplate
   Meshfile: Entities/Items/Ores/ErestrumOrePrefab
   Mass: 14.36, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 141, display: true
+  MarketPrice: 500, display: true
   Info: A radioactive mineral comprised of Erestrum. An element unique to the Andromeda Galaxy., display: true
   XpFactor: 45
   ShowUser: Yes
@@ -7012,7 +7016,7 @@
   Meshfile: Entities/Items/Ores/ZascosiumOrePrefab
   Mass: 16.22, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 181, display: true
+  MarketPrice: 600, display: true
   Info: A rare-earth mineral comprised of Zascosium. An element unique to the Andromeda Galaxy., display: true
   XpFactor: 45
   ShowUser: Yes
@@ -7022,14 +7026,14 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A hazardous powdered form of Magnesium. Easily ignited it burns at over 3000 degrees and used in explosives and incendiary applications., display: true
   ShowUser: Yes
-  MarketPrice: 26, display: true
+  MarketPrice: 200, display: true
 }
 { Item Id: 224, Name: IronIngot, Ref: ComponentsTemplate
   Mass: 5.9, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: An industrial ingot of Iron. The primary building material of all human technology and engineering., display: true
   ShowUser: Yes
-  MarketPrice: 100, display: true
+  MarketPrice: 125, display: true
   StackSize: 50000
   
 }
@@ -7038,7 +7042,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: Commonly used in high-strength alloys and some electronics., display: true
   ShowUser: Yes
-  MarketPrice: 40
+  MarketPrice: 112
   StackSize: 50000
   
 }
@@ -7056,7 +7060,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: Commonly used in high-strength electromagnets and Neodymium-doped glass lenses used in laser transmitters and weapons., display: true
   ShowUser: Yes
-  MarketPrice: 60, display: true
+  MarketPrice: 178, display: true
   StackSize: 50000
   
 }
@@ -7065,7 +7069,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A thermally and electrically conductive metal used in almost every kind of electronic component., display: true
   ShowUser: Yes
-  MarketPrice: 100, display: true
+  MarketPrice: 150, display: true
   StackSize: 50000
   
 }
@@ -7074,14 +7078,14 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: Compressed discs of promethium crystal that are used in power cells using thermal and piezoelectric catalysts to generate energy., display: true
   ShowUser: Yes
-  MarketPrice: 126, display: true
+  MarketPrice: 175, display: true
 }
 { Item Id: 230, Name: ErestrumIngot, Ref: ComponentsTemplate
   Mass: 4.65, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A green-lustred metal similar in some aspects to Beryllium. Its extremely low melting point and magnetic properties makes it ideal for plasma-based applications., display: true
   ShowUser: Yes
-  MarketPrice: 70, display: true
+  MarketPrice: 250, display: true
   StackSize: 50000
   
 }
@@ -7090,7 +7094,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A unique metal that oxides red. Zascosium has high reflectivity when polished and exceptional hardness but is brittle., display: true
   ShowUser: Yes
-  MarketPrice: 90, display: true
+  MarketPrice: 300, display: true
   StackSize: 50000
   
 }
@@ -7100,7 +7104,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: Chunks of broken stone with trace amounts of several metals., display: true
   XpFactor: 1
-  MarketPrice: 4, display: true
+  MarketPrice: 5, display: true
   ShowUser: Yes
 }
 { Item Id: 233, Name: RockDust, Ref: ComponentsTemplate
@@ -7115,15 +7119,15 @@
 { Item Id: 234, Name: Oscillator, Ref: ComponentsTemplate     #former: AdvancedCPU
   Mass: 8.27, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 235, display: true
+  MarketPrice: 439, display: true
   ShowUser: Yes
 }
 { Item Id: 235, Name: PlasticMaterial, Ref: ComponentsTemplate
   Mass: 1.75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  Info: Raw composite that can be refined with igneous stone dust to form Basalt Fiber. A fireproof and lightweight building material., display: true
+  Info: HWS_ItemInfo_PlasticMaterial, display: true
   ShowUser: Yes
-  MarketPrice: 3, display: true
+  MarketPrice: 175, display: true
 }
 { Item Id: 236, Name: SathiumOre, Ref: OreTemplate
   Meshfile: Entities/Items/Ores/SathiumOrePrefab
@@ -7131,7 +7135,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A dense mineral ore rich in exotic metals with high amounts of Sathium. A metal unique to the Andromeda Galaxy., display: true
   XpFactor: 45
-  MarketPrice: 101, display: true
+  MarketPrice: 330, display: true
   ShowUser: Yes
 }
 { Item Id: 237, Name: SathiumIngot, Ref: ComponentsTemplate
@@ -7139,7 +7143,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: An extremely hard and durable metal similar to Tungsten. Sathium is used in armor plating and radiation shielding., display: true
   ShowUser: Yes
-  MarketPrice: 50, display: true
+  MarketPrice: 165, display: true
   StackSize: 50000
   
 }
@@ -7147,7 +7151,7 @@
   ShowUser: Yes
   Mass: 184.9, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 4142, display: true
+  MarketPrice: 10052, display: true
   Info: An electromagnetic coil array used for building up and releasing huge amounts of power., display: true
 }
 
@@ -7156,7 +7160,7 @@
 { Item Id: 239, Name: EnergyCellLarge, Ref: ComponentsTemplate
   FuelValue: 150, type: int, display: true, formatter: WattHour
   ShowUser: Yes
-  MarketPrice: 2520, display: true
+  MarketPrice: 3500, display: true
   Info: bkiEnergyCell, display: true
 
   Mass: 30, type: float, display: true, formatter: Kilogram
@@ -7167,10 +7171,10 @@
   TechTreeParent: EnergyCellHydrogen
   TechTreeNames: Misc
 }
-# Not used anymore
+
 { Item Id: 240, Name: EnergyCellHydrogen, Ref: ComponentsTemplate
   FuelValue: 15, type: int, display: true, formatter: WattHour
-  MarketPrice: 815, display: true
+  MarketPrice: 1923, display: true
   Info: A hydrogen fuel cell used in a fusion reactor to initiate and sustain a fusion reaction., display: true
   ShowUser: Yes
 
@@ -7188,7 +7192,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A tank of compressed Hydrogen used as a supercoolant or as fuel for a Fusion Reactor., display: true
   ShowUser: Yes
-  MarketPrice: 100, display: true
+  MarketPrice: 297, display: true
 }
 { Item Id: 242, Name: WoodLogs, Ref: OreTemplate
   Meshfile: Entities/Items/Resources/WoodLogsPrefab
@@ -7204,7 +7208,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A good old piece of wood you can use to make housing or furniture., display: true
   ShowUser: Yes
-  MarketPrice: 3, display: true
+  MarketPrice: 1, display: true
   StackSize: 50000
   
 }
@@ -7221,7 +7225,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A highly radioactive unstable crystal that can be refined into an even more unstable form used in quantum technology., display: true
   XpFactor: 60
-  MarketPrice: 201, display: true
+  MarketPrice: 700, display: true
   ShowUser: Yes
 }
 # Used for PentaxidTank
@@ -7231,7 +7235,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: Refined Pentaxid Crystals that are highly unstable and can be easily excited into releasing huge quantities of energy., display: true
   ShowUser: Yes
-  MarketPrice: 100, display: true
+  MarketPrice: 1400, display: true
   StackSize: 50000
   
 }
@@ -7239,7 +7243,7 @@
   ShowUser: Yes
   Mass: 28.88, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 25
+  MarketPrice: 82
   Info: An armor plate made from compressed Sathium with a foam-cell core for improved strength and durability., display: true
 }
 ## Please do not rename - referenced in code
@@ -7259,7 +7263,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A rare mix of igneous rock and native gold that can be refined into pure gold., display: true
   XpFactor: 60
-  MarketPrice: 401, display: true
+  MarketPrice: 500, display: true
   ShowUser: Yes
 }
 { Item Id: 250, Name: GoldIngot, Ref: ComponentsTemplate
@@ -7267,13 +7271,13 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: Universally accepted as currency., display: true
   ShowUser: Yes
-  MarketPrice: 2005, display: true
+  MarketPrice: 2500, display: true
   StackSize: 50000
   
 }
 { Item Id: 251, Name: GoldCoins, Ref: ComponentsTemplate
   # Info: bkiCurrency, display: true
-  MarketPrice: 401, display: true
+  MarketPrice: 500, display: true
   Info: Embossed gold coins that can be exchanged for credits by inserting them into the coin slot on an ATM. Can also be melted down in a furnace., display: true
   Mass: 0.72, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -7284,7 +7288,7 @@
   ShowUser: Yes
   Mass: 59.4, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 100, display: true
+  MarketPrice: 125, display: true
 }
 ## Please do not rename - referenced in code
 { Item Id: 253, Name: PlayerBike
@@ -7300,7 +7304,7 @@
   Category: Devices
   MapIcon: map_PlayerBike
   PickupToToolbar: true
-  MarketPrice: 100, display: true
+  MarketPrice: 125, display: true
   { Child 0
     Class: PlaceBike
     Range: 5
@@ -7312,55 +7316,55 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: The core component used in Automining technology responsible for non-destructive metal extraction., display: true
   ShowUser: Yes
-  MarketPrice: 500, display: true
+  MarketPrice: 65422, display: true
 }
 { Item Id: 255, Name: PistolKit, Ref: ComponentsTemplate
   Mass: 1.25, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A case containing upgrade components for handheld firearms and personal tools., display: true
   ShowUser: Yes
-  MarketPrice: 50, display: true
+  MarketPrice: 478, display: true
 }
 { Item Id: 256, Name: RifleKit, Ref: ComponentsTemplate
   Mass: 2.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A case containing upgrade components for rifles and advanced tools., display: true
   ShowUser: Yes
-  MarketPrice: 320
+  MarketPrice: 585
 }
 { Item Id: 257, Name: SniperKit, Ref: ComponentsTemplate
   Mass: 5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: "A case containing compensators for anti-material rifles so they don't break the wielder's shoulder.", display: true
   ShowUser: Yes
-  MarketPrice: 25, display: true
+  MarketPrice: 82, display: true
 }
 { Item Id: 258, Name: ShotgunKit, Ref: ComponentsTemplate
   Mass: 2.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A case containing replacement barrels and reloader for shotguns., display: true
   ShowUser: Yes
-  MarketPrice: 25, display: true
+  MarketPrice: 82, display: true
 }
 { Item Id: 259, Name: HeavyWeaponKit, Ref: ComponentsTemplate
   Mass: 15, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A large container with precision parts for upgrading heavy weapons., display: true
-  MarketPrice: 640, display: true
+  MarketPrice: 2700, display: true
   ShowUser: Yes
 }
 { Item Id: 260, Name: LaserKit, Ref: ComponentsTemplate
   Mass: 5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A padded case containing a sensitive laser focusing array used in high-powered lasers., display: true
-  MarketPrice: 12500, display: true
+  MarketPrice: 42902, display: true
   ShowUser: Yes
 }
 { Item Id: 261, Name: PentaxidElement, Ref: ComponentsTemplate
   ShowUser: Yes
   Mass: 2.21, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 100, display: true
+  MarketPrice: 5600, display: true
   Info: Isolated into pure elemental Pentaxium form. This element has measurable levels of exotic matter and is key to all quantum technology., display: true
 }
 
@@ -7371,7 +7375,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: Frozen water that can be used as coolant or melted into drinkable water., display: true
   XpFactor: 2
-  MarketPrice: 36, display: true
+  MarketPrice: 110, display: true
   ShowUser: Yes
   NoRepairInputItem: true   # needed since it has flag "BaseItem: true" and would other be considered for repairing in R2T
 }
@@ -7383,7 +7387,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A mineral variant of Rutile. High in Titanium that can be processed in a Constructor or Furnace., display: true
   XpFactor: 20
-  MarketPrice: 91, display: true
+  MarketPrice: 230, display: true
   ShowUser: Yes
   NoRepairInputItem: true   # needed since it has flag "BaseItem: true" and would other be considered for repairing in R2T
 }
@@ -7393,7 +7397,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: Round ingots of Titanium used in many industrial applications and steel alloys., display: true
   ShowUser: Yes
-  MarketPrice: 46
+  MarketPrice: 115
   StackSize: 50000
 }
 
@@ -7402,7 +7406,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A plate of Titanium metal with a foam metal core for added strength and durability., display: true
   ShowUser: Yes
-  MarketPrice: 23, display: true
+  MarketPrice: 58, display: true
 }
 
 { Item Id: 266, Name: AluminiumOre, Ref: OreTemplate
@@ -7412,7 +7416,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A sedimentary variant of Bauxite. A source of Aluminium when refined., display: true
   XpFactor: 20
-  MarketPrice: 71, display: true
+  MarketPrice: 270, display: true
   ShowUser: Yes
   NoRepairInputItem: true   # needed since it has flag "BaseItem: true" and would other be considered for repairing in R2T
 }
@@ -7422,7 +7426,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: Powdered Aluminium metal used in casting electroplating alloying and some incendiary devices., display: true
   ShowUser: Yes
-  MarketPrice: 36, display: true
+  MarketPrice: 135, display: true
   StackSize: 50000
   
 }
@@ -7430,7 +7434,7 @@
 { Item Id: 268, Name: AluminiumCoil, Ref: ComponentsTemplate
   Mass: 8.1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 180, display: true
+  MarketPrice: 675, display: true
   Info: A conductive coil of aluminium used in electronics and heating elements., display: true
   ShowUser: Yes
 }
@@ -7441,7 +7445,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A dense metallic ore of Sperrylite. It's rich in platinum but is toxic due to high arsenic content. Must be processed in a furnace., display: true
   XpFactor: 20
-  MarketPrice: 401, display: true
+  MarketPrice: 250, display: true
   ShowUser: Yes
   NoRepairInputItem: true   # needed since it has flag "BaseItem: true" and would other be considered for repairing in R2T
 }
@@ -7451,7 +7455,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A valuable and extremely dense metal used in a variety of applications from catalysts to thruster shielding., display: true
   ShowUser: Yes
-  MarketPrice: 200, display: true
+  MarketPrice: 125, display: true
   StackSize: 50000
   
 }
@@ -7461,7 +7465,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A folded bar of Platinum Foil. Unfolded it's used in various applications for it's resistance to corrosion and friction., display: true
   ShowUser: Yes
-  MarketPrice: 100, display: true
+  MarketPrice: 62, display: true
 }
 
 # Save game break: move down to food items, e.g. Id: 327
@@ -7470,7 +7474,7 @@
   FoodDecayTime: 90, display: true, type: int
   FoodDecayedItem: RottenFood
   Info: bkiAnniversaryCake, display: true
-  MarketPrice: 171, display: true
+  MarketPrice: 281, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7487,14 +7491,14 @@
   ShowUser: Yes
   Mass: 1.6, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 350, display: true
+  MarketPrice: 1250, display: true
   Info: A treated form of Erestrum to keep it in a semifluid state. Used primarily for plasma applications., display: true
 }
 { Item Id: 279, Name: ZascosiumAlloy, Ref: ComponentsTemplate
   ShowUser: Yes
   Mass: 7.33, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 1250, display: true
+  MarketPrice: 4250, display: true
   Info: An alloy of Zascosium and Erestrum that exhibits both Zascosium's strength with Erestrum's conductivity. Used in superconductors., display: true
 }
 { Item Id: 280, Name: XenoSubstrate, Ref: ComponentsTemplate
@@ -7515,27 +7519,27 @@
   Mass: 16, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A complex computing component used in advanced CPUs., display: true
-  MarketPrice: 87675, display: true
+  MarketPrice: 122620, display: true
   ShowUser: Yes
 }
 { Item Id: 283, Name: SmallOptronicMatrix, Ref: ComponentsTemplate
   Mass: 30, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A complex computing component used in advanced CPUs., display: true
-  MarketPrice: 236550, display: true
+  MarketPrice: 315080, display: true
   ShowUser: Yes
 }
 { Item Id: 284, Name: LargeOptronicBridge, Ref: ComponentsTemplate
   Mass: 200, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A complex computing component used in advanced CPUs., display: true
-  MarketPrice: 269225, display: true
+  MarketPrice: 495240, display: true
   ShowUser: Yes
 }
 { Item Id: 285, Name: LargeOptronicMatrix, Ref: ComponentsTemplate
   Mass: 400, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 435345, display: true
+  MarketPrice: 628100, display: true
   ShowUser: Yes
 }
 
@@ -7610,7 +7614,7 @@
   Info: A grilled steak made from processed meat. It looks tasty but I make no guarantees on the flavor., display: true
   FoodDecayTime: 13, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 75, display: true
+  MarketPrice: 130, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7631,7 +7635,7 @@
   Info: "It's some kind of unidentifiable meat. I wouldn't recommend eating this raw.", display: true
   FoodDecayTime: 10, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 75, display: true
+  MarketPrice: 130, display: true
   Category: Food
   ShowUser: Yes
   { Child 0
@@ -7708,7 +7712,7 @@
   Mass: 1.50, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   ShowUser: Yes
-  MarketPrice: 39, display: true
+  MarketPrice: 94, display: true
   Info: A bottle of Akuan Wine made from Akuan Berries and artificially aged using a Food Processor. None of the class of a real Terra vintage of course., display: true
   { Child 0
     Class: Eat
@@ -7730,7 +7734,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Medical
   Info: bkiMedikit02, display: true
-  MarketPrice: 266, display: true
+  MarketPrice: 665, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7750,7 +7754,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Medical
   Info: bkiMedikit03, display: true
-  MarketPrice: 280, display: true
+  MarketPrice: 653, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7768,7 +7772,7 @@
 { Item Id: 309, Name: AlienParts01, Ref: FoodTemplate
 
   Mass: 0.3, type: float, display: true, formatter: Kilogram
-  MarketPrice: 29, display: true
+  MarketPrice: 80, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A fleshy plant growth filled with a strong anesthetic sap possessing anti-bacterial and anti-microbial properties., display: true
   Category: Food
@@ -7780,7 +7784,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A gland retrieved from an alien creature that scans have identified to have medical uses if processed properly., display: true
   Category: Food
-  MarketPrice: 69, display: true
+  MarketPrice: 219, display: true
   ShowUser: Yes
 }
 { Item Id: 311, Name: AlienParts03, Ref: FoodTemplate
@@ -7789,7 +7793,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A hard mollusk-like growth whose body contains enzymes and poisons that can be diluted and processed for medical applications., display: true
   Category: Food
-  MarketPrice: 26, display: true
+  MarketPrice: 65, display: true
   ShowUser: Yes
 }
 { Item Id: 312, Name: AlienParts04, Ref: FoodTemplate
@@ -7807,7 +7811,7 @@
   Category: Food
   FoodDecayTime: 28, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 285, display: true
+  MarketPrice: 505, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7828,7 +7832,7 @@
   Category: Food
   FoodDecayTime: 113, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 50, display: true
+  MarketPrice: 105, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7894,7 +7898,7 @@
   Category: Food
   FoodDecayTime: 32, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 38, display: true
+  MarketPrice: 93, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8034,7 +8038,7 @@
   Category: Food
   FoodDecayTime: 60, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 81, display: true
+  MarketPrice: 136, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8053,7 +8057,7 @@
   Mass: 75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   FuelValue: 300, type: int, display: true, formatter: WattHour
-  MarketPrice: 4150, display: true
+  MarketPrice: 7399, display: true
   ShowUser: Yes
   Info: bkiFusionCell, display: true
 
@@ -8071,7 +8075,7 @@
   Category: Food
   FoodDecayTime: 20, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 28, display: true
+  MarketPrice: 83, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8093,7 +8097,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Medical
   Info: bkiMedikit01, display: true  #NewRequired
-  MarketPrice: 463, display: true
+  MarketPrice: 14512, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8116,7 +8120,7 @@
   Category: Food
   FoodDecayTime: 48, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 28, display: true
+  MarketPrice: 83, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8134,7 +8138,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Medical
   Info: bkiMedikit01, display: true  #NewRequired
-  MarketPrice: 190, display: true
+  MarketPrice: 7326, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8220,7 +8224,7 @@
   ShowUser: Yes
   Mass: 6, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 94, display: true
+  MarketPrice: 369, display: true
 }
 { Item Id: 333, Name: RottenFood, Ref: FoodTemplate
 
@@ -8248,7 +8252,7 @@
   Category: Medical
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 106, display: true
+  MarketPrice: 172, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8314,7 +8318,7 @@
   Category: Medical
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 205, display: true
+  MarketPrice: 561, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8424,7 +8428,7 @@
   Category: Food
   FoodDecayTime: 36, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 75, display: true
+  MarketPrice: 141, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8445,7 +8449,7 @@
   Category: Food
   FoodDecayTime: 33, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 88, display: true
+  MarketPrice: 151, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8464,7 +8468,7 @@
   Info: bkiConsumable, display: true
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Category: Medical
-  MarketPrice: 137, display: true
+  MarketPrice: 255, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8486,7 +8490,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiConsumable, display: true
   Category: Food
-  MarketPrice: 923, display: true
+  MarketPrice: 1762, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8529,7 +8533,7 @@
   Category: Components
   Mass: 20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 180, display: true
+  MarketPrice: 550, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8552,7 +8556,7 @@
   ShowUser: Yes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 18, display: true
+  MarketPrice: 73, display: true
   { Child 0
     Class: Eat
     ROF: 1, type: float
@@ -8659,7 +8663,7 @@
 
   Info: bkiIngredient, display: true
   Category: Medical
-  MarketPrice: 132, display: true
+  MarketPrice: 7007, display: true
   ShowUser: Yes
 }
 { Item Id: 356, Name: AlienSpikeLemon, Ref: FoodTemplate
@@ -8769,7 +8773,7 @@
   Category: Food
   FoodDecayTime: 98, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 153, display: true
+  MarketPrice: 318, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8788,7 +8792,7 @@
   Category: Food
   FoodDecayTime: 106, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 132, display: true
+  MarketPrice: 187, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8809,7 +8813,7 @@
   Category: Food
   FoodDecayTime: 307, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 154, display: true
+  MarketPrice: 209, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8830,7 +8834,7 @@
   Category: Food
   FoodDecayTime: 282, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 272, display: true
+  MarketPrice: 437, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8874,7 +8878,7 @@
   Category: Food
   FoodDecayTime: 56, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 254, display: true
+  MarketPrice: 333, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8893,7 +8897,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiConsumable, display: true
   Category: Medical
-  MarketPrice: 137, display: true
+  MarketPrice: 203, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8917,7 +8921,7 @@
   Category: Food
   FoodDecayTime: 69, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 37, display: true
+  MarketPrice: 65, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8944,7 +8948,7 @@
   Category: Food
   FoodDecayTime: 166, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 101, display: true
+  MarketPrice: 156, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8964,7 +8968,7 @@
   Category: Food
   FoodDecayTime: 24, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 146, display: true
+  MarketPrice: 256, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8985,7 +8989,7 @@
   Category: Food
   FoodDecayTime: 78, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 129, display: true
+  MarketPrice: 239, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9003,7 +9007,7 @@
 { Item Id: 374, Name: PumpkinCookie, Ref: FoodTemplate
 
  Info: bkiConsumable, display: true
-  MarketPrice: 70, display: true
+  MarketPrice: 125, display: true
  Category: Food
  FoodDecayTime: 97, display: true, type: int
  FoodDecayedItem: RottenFood
@@ -9068,7 +9072,7 @@
   Category: Food
   FoodDecayTime: 20, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 60, display: true
+  MarketPrice: 115, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9087,7 +9091,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiEnergyPills, display: true
   Category: Medical
-  MarketPrice: 143, display: true
+  MarketPrice: 209, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9127,7 +9131,7 @@
   Info: bkiAdrenalineShot, display: true
   Category: Medical
   ShowUser: Yes
-  MarketPrice: 130, display: true
+  MarketPrice: 420, display: true
   { Child 0
     Class: Eat
     ROF: 1, type: float
@@ -9148,7 +9152,7 @@
   Category: Food
   FoodDecayTime: 95, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 171, display: true
+  MarketPrice: 281, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9307,7 +9311,7 @@
   Info: bkiConsumable, display: true
   Category: Medical
   Mass: 0.01, type: float, display: true, formatter: Kilogram
-  MarketPrice: 117, display: true
+  MarketPrice: 183, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9328,7 +9332,7 @@
   Info: bkiConsumable, display: true
   Category: Medical
   Mass: 0.01, type: float, display: true, formatter: Kilogram
-  MarketPrice: 175, display: true
+  MarketPrice: 391, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9347,7 +9351,7 @@
   Info: bkiConsumable, display: true
   Category: Medical
   Mass: 0.02, type: float, display: true, formatter: Kilogram
-  MarketPrice: 148, display: true
+  MarketPrice: 266, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9364,7 +9368,7 @@
   Info: bkiConsumable, display: true
   Category: Medical
   Mass: 0.02, type: float, display: true, formatter: Kilogram
-  MarketPrice: 206, display: true
+  MarketPrice: 474, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9383,7 +9387,7 @@
   Category: Medical
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 171, display: true
+  MarketPrice: 461, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -11303,7 +11307,7 @@
 { Item Id: 600, Name: ArmorLight
   Class: Armor
   RecipeName: LightArmor
-  MarketPrice: 770, display: true
+  MarketPrice: 1516, display: true
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_devices_kinetic, display: false
@@ -11607,7 +11611,7 @@
   ShowUser: Yes
 }
 { Item Id: 628, Name: EVABoost, Ref: ArmorBoostTemplate
-  MarketPrice: 2087, display: true
+  MarketPrice: 2978, display: true
   Armor: -80, type: int, display: true
   Heat: -15, type: int, display: true
   Cold: 190, type: int, display: true
@@ -11742,7 +11746,7 @@
   UnlockLevel: 3, display: true
   TechTreeParent: RadarSuitT1
   TechTreeNames: Tools
-  MarketPrice: 1790, display: true
+  MarketPrice: 2456, display: true
 }
 
 { Item Id: 702, Name: RadarSuitT1
@@ -14386,7 +14390,7 @@
   Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/SciFiGrenadeLauncherBlackPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 1050, display: true
+  MarketPrice: 3954, display: true
   #CustomIcon: RocketLauncher
   CustomIcon: GrenadeLauncher
   Crosshair: @hws_crosshairs/crosshair_grenade_launcher
@@ -14450,7 +14454,7 @@
   Category: Food
   FoodDecayTime: 100, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 7016430, display: true
+  MarketPrice: 7016980, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -14469,7 +14473,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   CustomIcon: FragGrenade
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 97, display: true
+  MarketPrice: 481, display: true
   StackSize: 50000
   ShowUser: Yes
   Mass: 1, type: float, display: true, formatter: Kilogram
@@ -14502,7 +14506,7 @@
   Meshfile: Entities/Items/Weapons/Projectiles/rocket01Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 409, display: true
+  MarketPrice: 1079, display: true
   StackSize: 50000
   AllowPlacingAt: MS, display: false
   CustomIcon: LightRocketCV
@@ -14539,7 +14543,7 @@
   CustomIcon: Coffee
   Info: A nice hot cup of holiday coffee. This particular blend of coffee is only made around this time of year., display: true
   Category: Food
-  MarketPrice: 42, display: true
+  MarketPrice: 198, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -26789,12 +26793,12 @@
   ShowUser: Yes
 }
 # --------------------------------------------------------------------------------------------------- HWS+ Resources
-{ Item Id: 3935, Name: HWSTungstenOre, Ref: ComponentsTemplate
+{ Item Id: 3935, Name: HWSTungstenOre, Ref: OreTemplate
   Meshfile: Entities/Items/Ores/AluminiumOrePrefab
   ShowUser: Yes
   Mass: 19.3, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 30, display: true
+  MarketPrice: 450, display: true
   Info: HWS_ItemInfo_HWSTungstenOre, display: true
 }
 { Item Id: 3936, Name: HWSTungstenIngot, Ref: ComponentsTemplate
@@ -26802,15 +26806,17 @@
   ShowUser: Yes
   Mass: 9.65, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 30, display: true
+  MarketPrice: 225, display: true
   Info: HWS_ItemInfo_HWSTungstenIngot, display: true
+
+  
 }
-{ Item Id: 3937, Name: HWSChromiteOre, Ref: ComponentsTemplate
+{ Item Id: 3937, Name: HWSChromiteOre, Ref: OreTemplate
   Meshfile: Entities/Items/Ores/CopperOrePrefab
   ShowUser: Yes
   Mass: 14.28, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 30, display: true
+  MarketPrice: 410, display: true
   Info: HWS_ItemInfo_HWSChromiteOre, display: true
 }
 { Item Id: 3938, Name: HWSChromium, Ref: ComponentsTemplate
@@ -26818,15 +26824,17 @@
   ShowUser: Yes
   Mass: 7.14, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 30, display: true
+  MarketPrice: 205, display: true
   Info: HWS_ItemInfo_HWSChromium, display: true
+
+  
 }
-{ Item Id: 3939, Name: HWSBismuthOre, Ref: ComponentsTemplate
+{ Item Id: 3939, Name: HWSBismuthOre, Ref: OreTemplate
   Meshfile: Entities/Items/Ores/TitanOrePrefab
   ShowUser: Yes
   Mass: 9.78, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 30, display: true
+  MarketPrice: 420, display: true
   Info: HWS_ItemInfo_HWSBismuthOre, display: true
 }
 { Item Id: 3940, Name: HWSBismuthIngot, Ref: ComponentsTemplate
@@ -26834,15 +26842,17 @@
   ShowUser: Yes
   Mass: 19.56, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 30, display: true
+  MarketPrice: 210, display: true
   Info: HWS_ItemInfo_HWSBismuthIngot, display: true
+
+  
 }
 { Item Id: 3941, Name: HWSElementalWater, Ref: ComponentsTemplate
   Meshfile: Entities/Items/Ores/AluminiumOrePrefab
   ShowUser: Yes
   Mass: 7, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 30, display: true
+  MarketPrice: 1000, display: true
   Info: HWS_ItemInfo_HWSElementalWater, display: true
   { Child 0
     Class: Eat
@@ -26863,7 +26873,7 @@
   ShowUser: Yes
   Mass: 3, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 30, display: true
+  MarketPrice: 1000, display: true
   Info: HWS_ItemInfo_HWSElementalSpice, display: true
   { Child 0
     Class: Eat
@@ -26879,12 +26889,12 @@
     Buff_chance: "0.75"
   }
 }
-{ Item Id: 3943, Name: HWSColtan, Ref: ComponentsTemplate
+{ Item Id: 3943, Name: HWSColtan, Ref: OreTemplate
   Meshfile: Entities/Items/Ores/TitanOrePrefab
   ShowUser: Yes
   Mass: 16.69, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 30, display: true
+  MarketPrice: 470, display: true
   Info: HWS_ItemInfo_HWSColtan, display: true
 }
 { Item Id: 3944, Name: HWSTantal, Ref: ComponentsTemplate
@@ -26892,15 +26902,17 @@
   ShowUser: Yes
   Mass: 8.35, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 30, display: true
+  MarketPrice: 235, display: true
   Info: HWS_ItemInfo_HWSTantal, display: true
+
+  
 }
-{ Item Id: 3945, Name: HWSCarbonOre, Ref: ComponentsTemplate
+{ Item Id: 3945, Name: HWSCarbonOre, Ref: OreTemplate
   Meshfile: Entities/Misc/DummyPrefab
   ShowUser: Yes
   Mass: 3.52, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 30, display: true
+  MarketPrice: 350, display: true
   Info: HWS_ItemInfo_HWSHWSCarbonOre, display: true
 }
 # -------------------------------------------------------------------------------------------------------- HWS Origin XP

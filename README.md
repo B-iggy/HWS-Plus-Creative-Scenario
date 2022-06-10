@@ -9,13 +9,6 @@ I value feedback, so the Config files are constantly changing based on the Commu
 
 The main intention for this repository is for HWS players to test and work with the HWS Configs for HWS - in form of an easy to use Scenario.
 
-## Licence
-HWS © 2022 by RexXxuS is licensed under Attribution-NonCommercial-NoDerivatives 4.0 International
-https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
-
-Additionally: This Scenario is available for private use only. It is NOT permitted to host a public server with this Scenario and of course to re-use it and put it in any form in the Workshop.
-Furthermore it is not permitted to use everything or parts of it in your own Scenario.
-
 ### Elemental Weapon System (EWS)
 HWS uses a detailed Rock-Paper-Scissors principle for Weapons and Materials. A quick sheet can be seen here:
 ![HWS-Elemental-Effectiveness](https://github.com/B-iggy/HWS-Plus-Creative-Scenario/blob/main/SharedData/Content/Prefabs/HWS-Elemental-Effectiveness.png?raw=true)
@@ -66,14 +59,14 @@ Constructive feedback about the HWS+ Config files are most welcome in form of ["
 
 * Shield Extender have no final size yet. Need dedicated models for the small version.
 
-* material of custom shield extender wrong material shader.
-
-* whole Shield topic comes next.
-
-* whole Templates.ecf is not commited yet.
-
-* sounds are too loud.
-
 * Elemental Hand Weapons do not shoot sometimes (need to find a repro). After a relog they work again.
 
 * if you try to access anything related to suitprops (for example the SnowmanHead), you get a red error in the console. I will not share my suitprops bundle as long as it's not needed.
+
+
+## Licence
+HWS © 2022 by RexXxuS is licensed under Attribution-NonCommercial-NoDerivatives 4.0 International
+https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+Additionally: This Scenario is available for private use only. It is NOT permitted to host a public server with this Scenario and of course to re-use it and put it in any form in the Workshop.
+Furthermore it is not permitted to use everything or parts of it in your own Scenario.
