@@ -1,0 +1,3 @@
+Welcome to the HWS+ Creative Scenario.
+
+This Scenario is intended to prepare your blueprints and check things out, for the HWS+ Multiplayer Servers.
