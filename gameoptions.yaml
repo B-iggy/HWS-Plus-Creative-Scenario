@@ -11,7 +11,7 @@ Options:
   AntiGriefDistancePvE: 30
   GroundedStructureSpawn: false
   TurretUndergroundCheck: true
-  OriginDefault: Freelancer
+  OriginDefault: Explorer
   OriginAutoAlliance: false
   DespawnEscapePod: true
   RegeneratePOIs: true
@@ -26,6 +26,8 @@ Options:
   EnableVolumeWeight: true
   EnableCPUPoints: true
   UndergroundBpSpawn: PvE
+  CustomPlayerTab: HWS Connect;https://connect.hws.global
+  DiffSpawnLocal: Always # Always - as before, always show the "local spawn" option, PvP - show it only in PvP, PvE - show it only in PvE, Never - never show it
 - ValidFor:
   - MP
   - Survival
@@ -39,7 +41,7 @@ Options:
   AntiGriefOresDistance: 30
   GroundedStructureSpawn: false
   TurretUndergroundCheck: true
-  OriginDefault: Freelancer
+  OriginDefault: Explorer
   OriginAutoAlliance: false
   DespawnEscapePod: true
   RegeneratePOIs: true
@@ -55,3 +57,5 @@ Options:
   EnableCPUPoints: true
   EnableMaxBlockCount: true
   UndergroundBpSpawn: PvE
+  CustomPlayerTab: HWS Connect;https://connect.hws.global
+  DiffSpawnLocal: PvE # Always - as before, always show the "local spawn" option, PvP - show it only in PvP, PvE - show it only in PvE, Never - never show it

@@ -307,7 +307,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackT1Prefab
   # Meshfile: Entities/Items/Weapons/PulseRifle/PulseRiflePrefab
   PickupToToolbar: true
-  MarketPrice: 7086, display: true
+  MarketPrice: 7094, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 15
   StackSize: 50000
@@ -1035,7 +1035,7 @@
   # Meshfile: Entities/Items/Weapons/Pistols/SciFiPistol2BluePrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_energy, display: true
-  MarketPrice: 4164, display: true
+  MarketPrice: 4168, display: true
   HoldType: 14
   StackSize: 50000
   Category: Weapons/Items
@@ -1168,7 +1168,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle4Prefab
   PickupToToolbar: true
   Material: HWS_material_weapon_energy, display: true
-  MarketPrice: 266724, display: true
+  MarketPrice: 139228, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -1248,7 +1248,7 @@
   Meshfile: Entities/Items/Weapons/ScifiCannon/ScifiCannonPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_energy, display: true
-  MarketPrice: 61132, display: true
+  MarketPrice: 39906, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -2189,7 +2189,7 @@
 }
 { Item Id: 31, Name: MultiToolT2, Ref: MultiTool
   Meshfile: Entities/Items/Weapons/MultiToolT2Prefab
-  MarketPrice: 4254, display: true
+  MarketPrice: 4258, display: true
   { Child 0 # "Retrieve Blocks" (= get complete blocks in own structure, do "Salvage" in others)
     Range: 8
 	  ReturnFactor: 0.6, display: true
@@ -2258,7 +2258,7 @@
 { Item Id: 33, Name: RocketLauncherT2, Ref: RocketLauncher
   Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/SciFiGrenadeLauncherT2Prefab
   PickupToToolbar: true
-  MarketPrice: 11428, display: true
+  MarketPrice: 11432, display: true
   Durability: 100, display: false
   Info: "An improved variant of Rocket Launcher designed to operate using laser-guided microrockets for anti-aircraft engagements where the targets are protected behind armor.", display: true
   #just for display, see ammo "SlowRocketHoming"
@@ -2344,7 +2344,7 @@
 { Item Id: 35, Name: LaserPistolT2, Ref: LaserPistol
   Meshfile: Entities/Items/Weapons/Pistols/ScifiEnergyPistol3Prefab
   PickupToToolbar: true
-  MarketPrice: 60630, display: true
+  MarketPrice: 39396, display: true
   # Damage: 100, display: true
   Durability: 500, display: false
   DegradationProb: 0.2, type: float, display: false
@@ -2432,7 +2432,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackT2Prefab
   # Meshfile: Entities/Items/Weapons/PulseRifle/PulseRifleT2Prefab
   PickupToToolbar: true
-  MarketPrice: 11073, display: true
+  MarketPrice: 11085, display: true
   Durability: 500, display: false
   DegradationProb: 0.2, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
@@ -2761,7 +2761,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 61182, display: true
+  MarketPrice: 39934, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -2906,7 +2906,7 @@
   
 
   Meshfile: Entities/Items/Weapons/Projectiles/BombDronePrefab
-  MarketPrice: 308479, display: true
+  MarketPrice: 122479, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   CustomIcon: BombDrone
   Material: HWS_material_weapon_kinetic, display: true
@@ -2996,7 +2996,7 @@
 
 { Item Id: 47, Name: MedicGun
   Meshfile: Entities/Items/Weapons/MultiToolT1Prefab
-  MarketPrice: 14479, display: true
+  MarketPrice: 5780, display: true
   CustomIcon: ChangeTool
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: false
@@ -3259,13 +3259,13 @@
   Material: HWS_material_weapon_energy, display: true
   Mass: 0.75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 378, display: true
+  MarketPrice: 52, display: true
 }
 { Item Id: 61, Name: PulseLaserChargeRifle, Ref: 50Caliber
   Material: HWS_material_weapon_energy, display: true
   Mass: 1.20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 1134, display: true
+  MarketPrice: 154, display: true
 }
 { Item Id: 62, Name: MultiCharge, Ref: 50Caliber
   Material: HWS_material_weapon_kinetic, display: false
@@ -3300,7 +3300,7 @@
   
   Mass: 4, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 2543, display: true
+  MarketPrice: 533, display: true
   { Child 0
     Class: Projectile
     Damage: 687, display: true
@@ -3625,7 +3625,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: false
-  MarketPrice: 394, display: true
+  MarketPrice: 340, display: true
   Canhold: false
   AutoFill: false
   HoldType: 0
@@ -3836,7 +3836,7 @@
   Mass: 0.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   O2Value: 35, display: false, type: int
-  MarketPrice: 730, display: true
+  MarketPrice: 550, display: true
   Category: Components
   Info: bkiRespiratorCharge, display: true
   { Child 0
@@ -4023,7 +4023,7 @@
 
 { Item Id: 99, Name: AmmoCVTorpedo
   Meshfile: Entities/Items/Weapons/Projectiles/AlienRocketRedPrefab
-  MarketPrice: 395200, display: true
+  MarketPrice: 125950, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   CustomIcon: FillerCharge
   Material: HWS_material_weapon_kinetic, display: true
@@ -5838,7 +5838,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_energy, display: true
   AllowPlacingAt: SS, display: false
-  MarketPrice: 1263, display: true
+  MarketPrice: 220, display: true
   HoldType: 0
   StackSize: 50000
   
@@ -5879,7 +5879,7 @@
   Meshfile: Entities/Items/Weapons/Projectiles/sniperBulletPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 1454, display: true
+  MarketPrice: 1029, display: true
   AllowPlacingAt: SS, display: false
   HoldType: 0
   Canhold: false
@@ -5967,7 +5967,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_energy, display: true
-  MarketPrice: 850, display: true
+  MarketPrice: 115, display: true
   AllowPlacingAt: SS, display: false
   HoldType: 0
   StackSize: 50000
@@ -6019,7 +6019,7 @@
 }
 { Item Id: 606, Name: AmmoSVAntimatterCannon
   Meshfile: Entities/Items/Weapons/Projectiles/AlienRocketGreenPrefab
-  MarketPrice: 23225, display: true
+  MarketPrice: 5400, display: true
   # Meshfile: Entities/Items/Weapons/Projectiles/alienRocketPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_energy, display: true
@@ -6069,7 +6069,7 @@
   Mass: 870, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
-  MarketPrice: 4757, display: true
+  MarketPrice: 3257, display: true
   Category: Weapons/Items
   { Child 0
     Class: Projectile
@@ -6107,7 +6107,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
-  MarketPrice: 760, display: true
+  MarketPrice: 106, display: true
   { Child 0
     Class: Projectile
     Damage: 7000, display: true
@@ -6139,7 +6139,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
-  MarketPrice: 2014, display: true
+  MarketPrice: 1493, display: true
   { Child 0
     Class: Projectile
     Damage: 11000, display: true
@@ -6212,7 +6212,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
-  MarketPrice: 1209, display: true
+  MarketPrice: 192, display: true
   { Child 0
     Class: Projectile
     Damage: 2090, display: true
@@ -6284,7 +6284,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
-  MarketPrice: 1118, display: true
+  MarketPrice: 258, display: true
   { Child 0
     Class: Projectile
     Damage: 13000, display: true
@@ -6384,7 +6384,7 @@
   AllowPlacingAt: "SS,GV", display: false
   Mass: 20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 694, display: true
+  MarketPrice: 485, display: true
   { Child 0
     Damage: 2960, display: true
     BlastParticleIndex: 3
@@ -6427,7 +6427,7 @@
   Mass: 840, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   AllowPlacingAt: MS, display: false
-  MarketPrice: 4524, display: true
+  MarketPrice: 3274, display: true
   { Child 0
     Damage: 20000, display: true
     BlastParticleIndex: 3
@@ -6448,7 +6448,7 @@
   AllowPlacingAt: Base, display: false
   Mass: 140, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 579, display: true
+  MarketPrice: 89, display: true
   { Child 0
     Damage: 20000, display: true
     Range: 748, display: true
@@ -6467,7 +6467,7 @@
   AllowPlacingAt: Base, display: false
   Mass: 76, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 2564, display: true
+  MarketPrice: 1939, display: true
   { Child 0
     Damage: 11626, display: true
     BlastParticleIndex: 3
@@ -6488,7 +6488,7 @@
   AllowPlacingAt: Base, display: false
   Mass: 35, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 2553, display: true
+  MarketPrice: 468, display: true
   { Child 0
     Damage: 20000, display: true
     BlastParticleIndex: 3
@@ -6517,7 +6517,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Category: Weapons/Items
-  MarketPrice: 578, display: true
+  MarketPrice: 88, display: true
 
   UnlockLevel: 1
   TechTreeNames: Hidden
@@ -6733,7 +6733,7 @@
 
 { Item Id: 179, Name: AmmoTurretHVLaser
   Meshfile: Entities/Items/Weapons/Projectiles/LaserShotRedAlien
-  MarketPrice: 29094, display: true
+  MarketPrice: 4594, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_energy, display: true
   AllowPlacingAt: "GV", display: false
@@ -6914,7 +6914,7 @@
   Mass: 42, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A heavy industrial capacitor module used in some devices to store and output large amounts of energy., display: true
-  MarketPrice: 3005, display: true
+  MarketPrice: 3009, display: true
 }
 { Item Id: 210, Name: Computer, Ref: ComponentsTemplate
   ShowUser: Yes
@@ -6992,7 +6992,7 @@
   ShowUser: Yes
   Mass: 5.8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 101, display: true
+  MarketPrice: 102, display: true
   Info: Silicate-based glass used in windows and optical lenses., display: true
 }
 # deactivated
@@ -7111,7 +7111,7 @@
   Mass: 2.67, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A fine powder made from crushed stone used as a binder in concrete, display: true
-  MarketPrice: 1, display: true
+  MarketPrice: 2, display: true
   ShowUser: Yes
   StackSize: 50000
   
@@ -7119,7 +7119,7 @@
 { Item Id: 234, Name: Oscillator, Ref: ComponentsTemplate     #former: AdvancedCPU
   Mass: 8.27, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 439, display: true
+  MarketPrice: 440, display: true
   ShowUser: Yes
 }
 { Item Id: 235, Name: PlasticMaterial, Ref: ComponentsTemplate
@@ -7151,7 +7151,7 @@
   ShowUser: Yes
   Mass: 184.9, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 10052, display: true
+  MarketPrice: 10054, display: true
   Info: An electromagnetic coil array used for building up and releasing huge amounts of power., display: true
 }
 
@@ -7160,7 +7160,7 @@
 { Item Id: 239, Name: EnergyCellLarge, Ref: ComponentsTemplate
   FuelValue: 150, type: int, display: true, formatter: WattHour
   ShowUser: Yes
-  MarketPrice: 3500, display: true
+  MarketPrice: 4375, display: true
   Info: bkiEnergyCell, display: true
 
   Mass: 30, type: float, display: true, formatter: Kilogram
@@ -7173,8 +7173,8 @@
 }
 
 { Item Id: 240, Name: EnergyCellHydrogen, Ref: ComponentsTemplate
-  FuelValue: 15, type: int, display: true, formatter: WattHour
-  MarketPrice: 1923, display: true
+  FuelValue: 100, type: int, display: true, formatter: WattHour
+  MarketPrice: 2360, display: true
   Info: A hydrogen fuel cell used in a fusion reactor to initiate and sustain a fusion reaction., display: true
   ShowUser: Yes
 
@@ -7217,7 +7217,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A mix of sand and gravel that when mixed with water will produce Concrete., display: true
   ShowUser: Yes
-  MarketPrice: 5, display: true
+  MarketPrice: 20, display: true
 }
 { Item Id: 245, Name: PentaxidOre, Ref: OreTemplate
   Meshfile: Entities/Items/Ores/PentaxidOrePrefab
@@ -7316,7 +7316,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: The core component used in Automining technology responsible for non-destructive metal extraction., display: true
   ShowUser: Yes
-  MarketPrice: 65422, display: true
+  MarketPrice: 65462, display: true
 }
 { Item Id: 255, Name: PistolKit, Ref: ComponentsTemplate
   Mass: 1.25, type: float, display: true, formatter: Kilogram
@@ -7357,14 +7357,14 @@
   Mass: 5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A padded case containing a sensitive laser focusing array used in high-powered lasers., display: true
-  MarketPrice: 42902, display: true
+  MarketPrice: 21654, display: true
   ShowUser: Yes
 }
 { Item Id: 261, Name: PentaxidElement, Ref: ComponentsTemplate
   ShowUser: Yes
   Mass: 2.21, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 5600, display: true
+  MarketPrice: 700, display: true
   Info: Isolated into pure elemental Pentaxium form. This element has measurable levels of exotic matter and is key to all quantum technology., display: true
 }
 
@@ -7474,7 +7474,7 @@
   FoodDecayTime: 90, display: true, type: int
   FoodDecayedItem: RottenFood
   Info: bkiAnniversaryCake, display: true
-  MarketPrice: 281, display: true
+  MarketPrice: 245, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7491,14 +7491,14 @@
   ShowUser: Yes
   Mass: 1.6, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 1250, display: true
+  MarketPrice: 625, display: true
   Info: A treated form of Erestrum to keep it in a semifluid state. Used primarily for plasma applications., display: true
 }
 { Item Id: 279, Name: ZascosiumAlloy, Ref: ComponentsTemplate
   ShowUser: Yes
   Mass: 7.33, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 4250, display: true
+  MarketPrice: 2125, display: true
   Info: An alloy of Zascosium and Erestrum that exhibits both Zascosium's strength with Erestrum's conductivity. Used in superconductors., display: true
 }
 { Item Id: 280, Name: XenoSubstrate, Ref: ComponentsTemplate
@@ -7519,7 +7519,7 @@
   Mass: 16, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A complex computing component used in advanced CPUs., display: true
-  MarketPrice: 122620, display: true
+  MarketPrice: 122700, display: true
   ShowUser: Yes
 }
 { Item Id: 283, Name: SmallOptronicMatrix, Ref: ComponentsTemplate
@@ -7533,13 +7533,13 @@
   Mass: 200, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A complex computing component used in advanced CPUs., display: true
-  MarketPrice: 495240, display: true
+  MarketPrice: 389150, display: true
   ShowUser: Yes
 }
 { Item Id: 285, Name: LargeOptronicMatrix, Ref: ComponentsTemplate
   Mass: 400, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 628100, display: true
+  MarketPrice: 615620, display: true
   ShowUser: Yes
 }
 
@@ -7614,7 +7614,7 @@
   Info: A grilled steak made from processed meat. It looks tasty but I make no guarantees on the flavor., display: true
   FoodDecayTime: 13, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 130, display: true
+  MarketPrice: 112, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7635,7 +7635,7 @@
   Info: "It's some kind of unidentifiable meat. I wouldn't recommend eating this raw.", display: true
   FoodDecayTime: 10, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 130, display: true
+  MarketPrice: 112, display: true
   Category: Food
   ShowUser: Yes
   { Child 0
@@ -7712,7 +7712,7 @@
   Mass: 1.50, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   ShowUser: Yes
-  MarketPrice: 94, display: true
+  MarketPrice: 76, display: true
   Info: A bottle of Akuan Wine made from Akuan Berries and artificially aged using a Food Processor. None of the class of a real Terra vintage of course., display: true
   { Child 0
     Class: Eat
@@ -7734,7 +7734,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Medical
   Info: bkiMedikit02, display: true
-  MarketPrice: 665, display: true
+  MarketPrice: 606, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7754,7 +7754,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Medical
   Info: bkiMedikit03, display: true
-  MarketPrice: 653, display: true
+  MarketPrice: 602, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7772,7 +7772,7 @@
 { Item Id: 309, Name: AlienParts01, Ref: FoodTemplate
 
   Mass: 0.3, type: float, display: true, formatter: Kilogram
-  MarketPrice: 80, display: true
+  MarketPrice: 64, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A fleshy plant growth filled with a strong anesthetic sap possessing anti-bacterial and anti-microbial properties., display: true
   Category: Food
@@ -7784,7 +7784,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A gland retrieved from an alien creature that scans have identified to have medical uses if processed properly., display: true
   Category: Food
-  MarketPrice: 219, display: true
+  MarketPrice: 173, display: true
   ShowUser: Yes
 }
 { Item Id: 311, Name: AlienParts03, Ref: FoodTemplate
@@ -7793,7 +7793,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A hard mollusk-like growth whose body contains enzymes and poisons that can be diluted and processed for medical applications., display: true
   Category: Food
-  MarketPrice: 65, display: true
+  MarketPrice: 53, display: true
   ShowUser: Yes
 }
 { Item Id: 312, Name: AlienParts04, Ref: FoodTemplate
@@ -7811,7 +7811,7 @@
   Category: Food
   FoodDecayTime: 28, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 505, display: true
+  MarketPrice: 433, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7832,7 +7832,7 @@
   Category: Food
   FoodDecayTime: 113, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 105, display: true
+  MarketPrice: 87, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -7898,7 +7898,7 @@
   Category: Food
   FoodDecayTime: 32, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 93, display: true
+  MarketPrice: 75, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8038,7 +8038,7 @@
   Category: Food
   FoodDecayTime: 60, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 136, display: true
+  MarketPrice: 118, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8057,7 +8057,7 @@
   Mass: 75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   FuelValue: 300, type: int, display: true, formatter: WattHour
-  MarketPrice: 7399, display: true
+  MarketPrice: 66399, display: true
   ShowUser: Yes
   Info: bkiFusionCell, display: true
 
@@ -8075,7 +8075,7 @@
   Category: Food
   FoodDecayTime: 20, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 83, display: true
+  MarketPrice: 65, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8097,7 +8097,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Medical
   Info: bkiMedikit01, display: true  #NewRequired
-  MarketPrice: 14512, display: true
+  MarketPrice: 2235, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8120,7 +8120,7 @@
   Category: Food
   FoodDecayTime: 48, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 83, display: true
+  MarketPrice: 65, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8138,7 +8138,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Medical
   Info: bkiMedikit01, display: true  #NewRequired
-  MarketPrice: 7326, display: true
+  MarketPrice: 1173, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8224,7 +8224,7 @@
   ShowUser: Yes
   Mass: 6, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 369, display: true
+  MarketPrice: 283, display: true
 }
 { Item Id: 333, Name: RottenFood, Ref: FoodTemplate
 
@@ -8252,7 +8252,7 @@
   Category: Medical
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 172, display: true
+  MarketPrice: 157, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8318,7 +8318,7 @@
   Category: Medical
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 561, display: true
+  MarketPrice: 516, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8428,7 +8428,7 @@
   Category: Food
   FoodDecayTime: 36, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 141, display: true
+  MarketPrice: 126, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8449,7 +8449,7 @@
   Category: Food
   FoodDecayTime: 33, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 151, display: true
+  MarketPrice: 139, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8468,7 +8468,7 @@
   Info: bkiConsumable, display: true
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Category: Medical
-  MarketPrice: 255, display: true
+  MarketPrice: 225, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8490,7 +8490,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiConsumable, display: true
   Category: Food
-  MarketPrice: 1762, display: true
+  MarketPrice: 1600, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8556,7 +8556,7 @@
   ShowUser: Yes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 73, display: true
+  MarketPrice: 55, display: true
   { Child 0
     Class: Eat
     ROF: 1, type: float
@@ -8663,7 +8663,7 @@
 
   Info: bkiIngredient, display: true
   Category: Medical
-  MarketPrice: 7007, display: true
+  MarketPrice: 882, display: true
   ShowUser: Yes
 }
 { Item Id: 356, Name: AlienSpikeLemon, Ref: FoodTemplate
@@ -8773,7 +8773,7 @@
   Category: Food
   FoodDecayTime: 98, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 318, display: true
+  MarketPrice: 264, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8792,7 +8792,7 @@
   Category: Food
   FoodDecayTime: 106, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 187, display: true
+  MarketPrice: 169, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8813,7 +8813,7 @@
   Category: Food
   FoodDecayTime: 307, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 209, display: true
+  MarketPrice: 191, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8834,7 +8834,7 @@
   Category: Food
   FoodDecayTime: 282, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 437, display: true
+  MarketPrice: 383, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8878,7 +8878,7 @@
   Category: Food
   FoodDecayTime: 56, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 333, display: true
+  MarketPrice: 297, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8897,7 +8897,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiConsumable, display: true
   Category: Medical
-  MarketPrice: 203, display: true
+  MarketPrice: 188, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8921,7 +8921,7 @@
   Category: Food
   FoodDecayTime: 69, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 65, display: true
+  MarketPrice: 56, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8948,7 +8948,7 @@
   Category: Food
   FoodDecayTime: 166, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 156, display: true
+  MarketPrice: 138, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8968,7 +8968,7 @@
   Category: Food
   FoodDecayTime: 24, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 256, display: true
+  MarketPrice: 220, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -8989,7 +8989,7 @@
   Category: Food
   FoodDecayTime: 78, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 239, display: true
+  MarketPrice: 203, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9007,7 +9007,7 @@
 { Item Id: 374, Name: PumpkinCookie, Ref: FoodTemplate
 
  Info: bkiConsumable, display: true
-  MarketPrice: 125, display: true
+  MarketPrice: 107, display: true
  Category: Food
  FoodDecayTime: 97, display: true, type: int
  FoodDecayedItem: RottenFood
@@ -9072,7 +9072,7 @@
   Category: Food
   FoodDecayTime: 20, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 115, display: true
+  MarketPrice: 97, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9091,7 +9091,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiEnergyPills, display: true
   Category: Medical
-  MarketPrice: 209, display: true
+  MarketPrice: 194, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9131,7 +9131,7 @@
   Info: bkiAdrenalineShot, display: true
   Category: Medical
   ShowUser: Yes
-  MarketPrice: 420, display: true
+  MarketPrice: 390, display: true
   { Child 0
     Class: Eat
     ROF: 1, type: float
@@ -9152,7 +9152,7 @@
   Category: Food
   FoodDecayTime: 95, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 281, display: true
+  MarketPrice: 245, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9311,7 +9311,7 @@
   Info: bkiConsumable, display: true
   Category: Medical
   Mass: 0.01, type: float, display: true, formatter: Kilogram
-  MarketPrice: 183, display: true
+  MarketPrice: 168, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9332,7 +9332,7 @@
   Info: bkiConsumable, display: true
   Category: Medical
   Mass: 0.01, type: float, display: true, formatter: Kilogram
-  MarketPrice: 391, display: true
+  MarketPrice: 330, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9351,7 +9351,7 @@
   Info: bkiConsumable, display: true
   Category: Medical
   Mass: 0.02, type: float, display: true, formatter: Kilogram
-  MarketPrice: 266, display: true
+  MarketPrice: 236, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9368,7 +9368,7 @@
   Info: bkiConsumable, display: true
   Category: Medical
   Mass: 0.02, type: float, display: true, formatter: Kilogram
-  MarketPrice: 474, display: true
+  MarketPrice: 398, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9387,7 +9387,7 @@
   Category: Medical
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 461, display: true
+  MarketPrice: 431, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -11898,6 +11898,28 @@
     Range: 8
     SfxBegin: UseActions/ExplosivesAttach
   }
+}
+
+{ +Item Id: 708, Name: PDA
+  Info: bkiPDA, display: true
+  CustomIcon: Tablet
+  LifetimeOnDrop: 1200
+  # MarketPrice: 250, display: true
+  Meshfile: Entities/Misc/DummyPrefab
+  # PickupToToolbar: true
+  DropMeshfile: Entities/Misc/PDADropPrefab   #Available variants: BagSmallChristmasPrefab,BagSmallNewPrefab
+  Material: metal
+  Mass: 0.2, type: float, display: true, formatter: Kilogram
+  Volume: 0.1, type: float, display: true, formatter: Liter
+  Canhold: false
+  HoldType: 0
+  StackSize: 50000
+  Category: Weapons/Items
+
+ # UnlockCost: 0, display: true
+ # UnlockLevel: 1, display: true
+ # TechTreeParent: SurvivalTool
+ # TechTreeNames: Tools
 }
 
 # HWS Event items. From 799 downwards
@@ -14454,7 +14476,7 @@
   Category: Food
   FoodDecayTime: 100, display: true, type: int
   FoodDecayedItem: RottenFood
-  MarketPrice: 7016980, display: true
+  MarketPrice: 7016800, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -14543,7 +14565,7 @@
   CustomIcon: Coffee
   Info: A nice hot cup of holiday coffee. This particular blend of coffee is only made around this time of year., display: true
   Category: Food
-  MarketPrice: 198, display: true
+  MarketPrice: 162, display: true
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -14811,7 +14833,7 @@
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSObsidianGunAmmo, display: true
-    ReloadDelay: 5, display: true
+    ReloadDelay: 7.50, display: true
     # SfxBegin: Weapons/Player/RocketLauncher/FLYBYMissile02Slow
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
@@ -14892,7 +14914,7 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
-    Range: 500, display: true
+    Range: 250, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.25, display: true
     CameraShake: 3
@@ -15151,9 +15173,9 @@
     BlastDamage: 1000, display: true
     HomingSpeed: 1.0
     Speed: 100, display: true
-    Range: 500, display: true
+    Range: 250, display: true
     SpeedSpace: 200, display: true
-    RangeSpace: 1000, display: true
+    RangeSpace: 500, display: true
     Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
@@ -15368,7 +15390,7 @@
     AmmoCapacity: 250, display: true
     AmmoUnlimited: true
     AmmoType: HWSObsidianElementalAmmo, display: true
-    ReloadDelay: 6.3, display: true
+    ReloadDelay: 9.450, display: true
     SfxBegin: Enemies/Otyugh/Otyugh_SfxAttack_a2
 	# MaxFireAngle: 15 #we need bigger angle, as the bug firing angle is not perfectly aligned with look angle
   }
@@ -15448,7 +15470,7 @@
   { Child 0
     Class: LauncherSS
     ROF: 1, type: float
-    Range: 120, display: true
+    Range: 60.0, display: true
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
     Damage: 35, display: true
     AmmoCapacity: 250, display: true
@@ -15468,7 +15490,7 @@
   { Child 0
     Class: Melee
     ROF: 2.2, type: float
-    Range: 7
+    Range: 3.50
     Damage: 100
     SfxBegin: Enemies/ArmoredGolem/ArmoredGolem_SfxAttack
     Buff: "OpenWound,FractureClosed,FractureOpen,Mutilation,Stunned"
@@ -15705,9 +15727,9 @@
     BlastDamage: 50, display: true
     HomingSpeed: 1.0
     Speed: 50, display: true
-    Range: 577, display: true
+    Range: 288.50, display: true
     SpeedSpace: 154, display: true
-    RangeSpace: 1155, display: true
+    RangeSpace: 578, display: true
     Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
@@ -16267,7 +16289,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 4, display: true # adapt sound
+    ReloadDelay: 6.00, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16293,7 +16315,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 4, display: true # adapt sound
+    ReloadDelay: 6.00, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16324,7 +16346,7 @@
     AmmoType: HWSObsidianBAT3Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 4, display: true # adapt sound
+    ReloadDelay: 6.00, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16359,7 +16381,7 @@
     AmmoType: HWSObsidianBAT4Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 4, display: true # adapt sound
+    ReloadDelay: 6.00, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16396,7 +16418,7 @@
     AmmoType: HWSObsidianBAT5Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 4, display: true # adapt sound
+    ReloadDelay: 6.00, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16584,8 +16606,8 @@
     CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 5, type: float, display: true, formatter: ROF
-    Range: 500, display: false
-    RangeSpace: 1000, display: false
+    Range: 250, display: false
+    RangeSpace: 500, display: false
     AmmoCapacity: 100, display: true
     AmmoType: HWSNoxBAT1Ammo, display: true
     NoiseStrength: 500, display: false
@@ -16610,8 +16632,8 @@
     CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 4, type: float, display: true, formatter: ROF
-    Range: 650, display: false
-    RangeSpace: 1400, display: false
+    Range: 325.0, display: false
+    RangeSpace: 700, display: false
     AmmoCapacity: 111, display: true
     AmmoType: HWSNoxBAT2Ammo, display: true
     NoiseStrength: 500, display: false
@@ -16637,8 +16659,8 @@
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 3.5, type: float, display: true, formatter: ROF
-    Range: 450, display: true
-    RangeSpace: 900, display: true
+    Range: 225.0, display: true
+    RangeSpace: 450, display: true
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 12
@@ -16672,8 +16694,8 @@
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 0.2, type: float, display: true, formatter: ROF
-    Range: 450, display: true
-    RangeSpace: 900, display: true
+    Range: 225.0, display: true
+    RangeSpace: 450, display: true
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
@@ -16709,8 +16731,8 @@
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 6, type: float, display: true, formatter: ROF
-    Range: 450, display: true
-    RangeSpace: 900, display: true
+    Range: 225.0, display: true
+    RangeSpace: 450, display: true
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
@@ -17719,7 +17741,7 @@
     AmmoType: HWSObsidianCVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4.5, display: true # adapt sound
+    ReloadDelay: 6.750, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17747,7 +17769,7 @@
     AmmoType: HWSObsidianCVT2Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4.5, display: true # adapt sound
+    ReloadDelay: 6.750, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17788,7 +17810,7 @@
     AmmoType: HWSObsidianCVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4.5, display: true # adapt sound
+    ReloadDelay: 6.750, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17830,7 +17852,7 @@
     AmmoType: HWSObsidianCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4.5, display: true # adapt sound
+    ReloadDelay: 6.750, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17871,7 +17893,7 @@
     AmmoType: HWSObsidianCVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4, display: true # adapt sound
+    ReloadDelay: 6.00, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17900,7 +17922,7 @@
     AmmoType: HWSObsidianCVT2Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4, display: true # adapt sound
+    ReloadDelay: 6.00, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17942,7 +17964,7 @@
     AmmoType: HWSObsidianCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4, display: true # adapt sound
+    ReloadDelay: 6.00, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18240,8 +18262,8 @@
     CheckObstructed: true
     AllowAt: Space
     ROF: 4, type: float, display: true, formatter: ROF
-    Range: 550, display: true
-    RangeSpace: 1100, display: true
+    Range: 275.0, display: true
+    RangeSpace: 550, display: true
     Automatic: true
     AmmoCapacity: 15, display: true
     AmmoType: HWSNoxCVT1Ammo, display: true
@@ -18267,8 +18289,8 @@
     CheckObstructed: true
     AllowAt: Space
     ROF: 4, type: float, display: true, formatter: ROF
-    Range: 550, display: true
-    RangeSpace: 1100, display: true
+    Range: 275.0, display: true
+    RangeSpace: 550, display: true
     Damage: 2000, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
@@ -18308,8 +18330,8 @@
     CheckObstructed: true
     AllowAt: Space
     ROF: 0.2, type: float, display: true, formatter: ROF
-    Range: 550, display: true
-    RangeSpace: 1100, display: true
+    Range: 275.0, display: true
+    RangeSpace: 550, display: true
     Damage: 2000, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
@@ -18350,8 +18372,8 @@
     CheckObstructed: true
     AllowAt: Space
     ROF: 4, type: float, display: true, formatter: ROF
-    Range: 550, display: true
-    RangeSpace: 1100, display: true
+    Range: 275.0, display: true
+    RangeSpace: 550, display: true
     Damage: 2000, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
@@ -18392,8 +18414,8 @@
     CheckObstructed: true
     AllowAt: Space
     ROF: 3, type: float, display: true, formatter: ROF
-    Range: 500, display: true
-    RangeSpace: 1000, display: true
+    Range: 250, display: true
+    RangeSpace: 500, display: true
     Automatic: true
     AmmoCapacity: 15, display: true
     AmmoType: HWSNoxCVT1Ammo, display: true
@@ -18420,8 +18442,8 @@
     CheckObstructed: true
     AllowAt: Space
     ROF: 3, type: float, display: true, formatter: ROF
-    Range: 500, display: true
-    RangeSpace: 1000, display: true
+    Range: 250, display: true
+    RangeSpace: 500, display: true
     Damage: 1000, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
@@ -18462,8 +18484,8 @@
     CheckObstructed: true
     AllowAt: Space
     ROF: 0.2, type: float, display: true, formatter: ROF
-    Range: 500, display: true
-    RangeSpace: 1000, display: true
+    Range: 250, display: true
+    RangeSpace: 500, display: true
     Damage: 1000, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
@@ -19428,7 +19450,7 @@
     AmmoType: HWSObsidianHVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 5, display: true # adapt sound
+    ReloadDelay: 7.50, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -19455,7 +19477,7 @@
     AmmoType: HWSObsidianHVT2Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 5, display: true # adapt sound
+    ReloadDelay: 7.50, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -19495,7 +19517,7 @@
     AmmoType: HWSObsidianHVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 5, display: true # adapt sound
+    ReloadDelay: 7.50, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -19535,7 +19557,7 @@
     AmmoType: HWSObsidianHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 5, display: true # adapt sound
+    ReloadDelay: 7.50, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -19575,7 +19597,7 @@
     AmmoType: HWSObsidianHVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 5, display: true # adapt sound
+    ReloadDelay: 7.50, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -19603,7 +19625,7 @@
     AmmoType: HWSObsidianHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 5, display: true # adapt sound
+    ReloadDelay: 7.50, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -19849,8 +19871,8 @@
     Class: LauncherSS
     CheckObstructed: true
     ROF: 4, type: float, display: true, formatter: ROF
-    Range: 495, display: true
-    RangeSpace: 990, display: true
+    Range: 247.50, display: true
+    RangeSpace: 495, display: true
     Automatic: true
     AmmoCapacity: 15, display: true
     AmmoType: HWSNoxHVT1Ammo, display: true
@@ -19875,8 +19897,8 @@
     Class: Ranged
     CheckObstructed: true
     ROF: 4, type: float, display: true, formatter: ROF
-    Range: 525, display: true
-    RangeSpace: 1050, display: true
+    Range: 262.50, display: true
+    RangeSpace: 525, display: true
     Damage: 1200, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
@@ -19915,8 +19937,8 @@
     Class: Ranged
     CheckObstructed: true
     ROF: 0.2, type: float, display: true, formatter: ROF
-    Range: 525, display: true
-    RangeSpace: 1050, display: true
+    Range: 262.50, display: true
+    RangeSpace: 525, display: true
     Damage: 1200, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
@@ -19955,8 +19977,8 @@
     Class: Ranged
     CheckObstructed: true
     ROF: 4, type: float, display: true, formatter: ROF
-    Range: 525, display: true
-    RangeSpace: 1050, display: true
+    Range: 262.50, display: true
+    RangeSpace: 525, display: true
     Damage: 1200, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
@@ -19996,8 +20018,8 @@
     Class: LauncherSS
     CheckObstructed: true
     ROF: 3, type: float, display: true, formatter: ROF
-    Range: 550, display: true
-    RangeSpace: 1100, display: true
+    Range: 275.0, display: true
+    RangeSpace: 550, display: true
     Automatic: true
     AmmoCapacity: 15, display: true
     AmmoType: HWSNoxHVT1Ammo, display: true
@@ -20023,8 +20045,8 @@
     Class: Ranged
     CheckObstructed: true
     ROF: 4, type: float, display: true, formatter: ROF
-    Range: 550, display: true
-    RangeSpace: 1100, display: true
+    Range: 275.0, display: true
+    RangeSpace: 550, display: true
     Damage: 900, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
@@ -20955,7 +20977,7 @@
     AmmoType: HWSObsidianSVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 5.5, display: true # adapt sound
+    ReloadDelay: 8.250, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -20982,7 +21004,7 @@
     AmmoType: HWSObsidianSVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 5.5, display: true # adapt sound
+    ReloadDelay: 8.250, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21023,7 +21045,7 @@
     AmmoType: HWSObsidianSVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 5, display: true # adapt sound
+    ReloadDelay: 7.50, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21051,7 +21073,7 @@
     AmmoType: HWSObsidianSVT2Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4, display: true # adapt sound
+    ReloadDelay: 6.00, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21092,7 +21114,7 @@
     AmmoType: HWSObsidianSVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 5, display: true # adapt sound
+    ReloadDelay: 7.50, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21133,7 +21155,7 @@
     AmmoType: HWSObsidianSVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 5, display: true # adapt sound
+    ReloadDelay: 7.50, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21387,8 +21409,8 @@
     Class: LauncherSS
     CheckObstructed: true
     ROF: 3, type: float, display: true, formatter: ROF
-    Range: 525, display: true
-    RangeSpace: 1050, display: true
+    Range: 262.50, display: true
+    RangeSpace: 525, display: true
     Automatic: true
     AmmoCapacity: 15, display: true
     AmmoType: HWSNoxSVT1Ammo, display: true
@@ -21413,8 +21435,8 @@
     Class: Ranged
     CheckObstructed: true
     ROF: 3, type: float, display: true, formatter: ROF
-    Range: 525, display: true
-    RangeSpace: 1050, display: true
+    Range: 262.50, display: true
+    RangeSpace: 525, display: true
     Damage: 1500, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
@@ -21455,8 +21477,8 @@
     Class: LauncherSS
     CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
-    Range: 400, display: true
-    RangeSpace: 800, display: true
+    Range: 200, display: true
+    RangeSpace: 400, display: true
     Automatic: true
     AmmoCapacity: 30, display: true
     AmmoType: HWSNoxSVT1Ammo, display: true
@@ -21482,8 +21504,8 @@
     Class: Ranged
     CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
-    Range: 400, display: true
-    RangeSpace: 800, display: true
+    Range: 200, display: true
+    RangeSpace: 400, display: true
     Damage: 400, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
@@ -21523,8 +21545,8 @@
     Class: Ranged
     CheckObstructed: true
     ROF: 0.2, type: float, display: true, formatter: ROF
-    Range: 400, display: true
-    RangeSpace: 800, display: true
+    Range: 200, display: true
+    RangeSpace: 400, display: true
     Damage: 400, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
@@ -21564,8 +21586,8 @@
     Class: Ranged
     CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
-    Range: 400, display: true
-    RangeSpace: 800, display: true
+    Range: 200, display: true
+    RangeSpace: 400, display: true
     Damage: 400, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
@@ -21910,7 +21932,7 @@
     # AmmoUnlimited: true
     AmmoType: HWSObsidianBAT2Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 2.00, display: true
+    ReloadDelay: 3.00, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21956,8 +21978,8 @@
     CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 3, type: float, display: true, formatter: ROF
-    Range: 748, display: true
-    RangeSpace: 1100, display: true
+    Range: 374.00, display: true
+    RangeSpace: 550, display: true
     AmmoCapacity: 100, display: false      # no need to display since unlimited ammo
     # AmmoUnlimited: true
     AmmoType: HWSNoxBAT2Ammo, display: true
@@ -22094,7 +22116,7 @@
     # AmmoUnlimited: true
     AmmoType: HWSObsidianCVT1Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 2.250, display: true
+    ReloadDelay: 3.3750, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22140,8 +22162,8 @@
     CheckObstructed: true
     AllowAt: Space
     ROF: 4, type: float, display: true, formatter: ROF
-    Range: 550, display: true
-    RangeSpace: 1100, display: true
+    Range: 275.0, display: true
+    RangeSpace: 550, display: true
     AmmoCapacity: 100, display: false      # no need to display since unlimited ammo
     # AmmoUnlimited: true
     AmmoType: HWSNoxCVT1Ammo, display: true
@@ -22278,7 +22300,7 @@
     # AmmoUnlimited: true
     AmmoType: HWSObsidianHVT1Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 2.50, display: true
+    ReloadDelay: 3.750, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22324,8 +22346,8 @@
     CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 4, type: float, display: true, formatter: ROF
-    Range: 748, display: true
-    RangeSpace: 1100, display: true
+    Range: 374.00, display: true
+    RangeSpace: 550, display: true
     AmmoCapacity: 100, display: false      # no need to display since unlimited ammo
     # AmmoUnlimited: true
     AmmoType: HWSNoxHVT1Ammo, display: true
@@ -22462,7 +22484,7 @@
     # AmmoUnlimited: true
     AmmoType: HWSObsidianSVT1Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 2.750, display: true
+    ReloadDelay: 4.1250, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22508,8 +22530,8 @@
     CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 3, type: float, display: true, formatter: ROF
-    Range: 525, display: true
-    RangeSpace: 1050, display: true
+    Range: 262.50, display: true
+    RangeSpace: 525, display: true
     AmmoCapacity: 100, display: false      # no need to display since unlimited ammo
     # AmmoUnlimited: true
     AmmoType: HWSNoxSVT1Ammo, display: true
@@ -22648,7 +22670,7 @@
     # AmmoUnlimited: true
     AmmoType: HWSObsidianSVT1Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 1, display: true
+    ReloadDelay: 1.50, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22694,8 +22716,8 @@
     Class: LauncherSS
     CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
-    Range: 748, display: true
-    RangeSpace: 1100, display: true
+    Range: 374.00, display: true
+    RangeSpace: 550, display: true
     AmmoCapacity: 150, display: false      # no need to display since unlimited ammo
     # AmmoUnlimited: true
     AmmoType: HWSNoxSVT1Ammo, display: true
@@ -23346,9 +23368,9 @@
     BlastRadius: 1, display: true
     BlastDamage: 1000, display: true
     Speed: 200
-    Range: 500
+    Range: 250
     SpeedSpace: 300
-    RangeSpace: 1000
+    RangeSpace: 500
     Ballistic: true
     Buff: "FractureOpen,BrokenLeg,Mutilation,Stunned"
     Buff_chance: "0.3,0.3,0.3,0.5"
@@ -23381,9 +23403,9 @@
     BlastDamage: 500, display: true
     HomingSpeed: 3
     Speed: 200
-    Range: 500
+    Range: 250
     SpeedSpace: 300
-    RangeSpace: 1000
+    RangeSpace: 500
     Ballistic: true
     Buff: "FractureOpen,BrokenLeg,Mutilation,Stunned"
     Buff_chance: "0.3,0.3,0.3,0.5"
@@ -24019,9 +24041,9 @@
     BlastRadius: 1, display: true
     BlastDamage: 1000, display: true
     Speed: 200, display: true
-    Range: 500, display: true
+    Range: 250, display: true
     SpeedSpace: 300, display: true
-    RangeSpace: 1000, display: true
+    RangeSpace: 500, display: true
     Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
@@ -24629,9 +24651,9 @@
     BlastRadius: 1, display: true
     BlastDamage: 700, display: true
     Speed: 100, display: true
-    Range: 450, display: true
+    Range: 225.0, display: true
     SpeedSpace: 200, display: true
-    RangeSpace: 800, display: true
+    RangeSpace: 400, display: true
     Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
@@ -25240,9 +25262,9 @@
     BlastRadius: 1, display: true
     BlastDamage: 300, display: true
     Speed: 100, display: true
-    Range: 400, display: true
+    Range: 200, display: true
     SpeedSpace: 200, display: true
-    RangeSpace: 900, display: true
+    RangeSpace: 450, display: true
     Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
@@ -25587,9 +25609,9 @@
     BlastRadius: 3, display: true
     BlastDamage: 1166, display: true
     Speed: 77, display: true
-    Range: 577, display: true
+    Range: 288.50, display: true
     SpeedSpace: 154, display: true
-    RangeSpace: 1155, display: true
+    RangeSpace: 578, display: true
     Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
@@ -25826,9 +25848,9 @@
     BlastRadius: 3, display: true
     BlastDamage: 1166, display: true
     Speed: 77, display: true
-    Range: 577, display: true
+    Range: 288.50, display: true
     SpeedSpace: 154, display: true
-    RangeSpace: 1155, display: true
+    RangeSpace: 578, display: true
     Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
@@ -26065,9 +26087,9 @@
     BlastRadius: 3, display: true
     BlastDamage: 1166, display: true
     Speed: 77, display: true
-    Range: 577, display: true
+    Range: 288.50, display: true
     SpeedSpace: 154, display: true
-    RangeSpace: 1155, display: true
+    RangeSpace: 578, display: true
     Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
@@ -26304,9 +26326,9 @@
     BlastRadius: 3, display: true
     BlastDamage: 1166, display: true
     Speed: 77, display: true
-    Range: 577, display: true
+    Range: 288.50, display: true
     SpeedSpace: 154, display: true
-    RangeSpace: 1155, display: true
+    RangeSpace: 578, display: true
     Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
@@ -26543,9 +26565,9 @@
     BlastRadius: 3, display: true
     BlastDamage: 1166, display: true
     Speed: 77, display: true
-    Range: 577, display: true
+    Range: 288.50, display: true
     SpeedSpace: 154, display: true
-    RangeSpace: 1155, display: true
+    RangeSpace: 578, display: true
     Ballistic: true
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"

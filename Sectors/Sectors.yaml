@@ -87,7 +87,8 @@ SolarSystems:
         Color: '0.82,0.56,0.11'
         SectorMapType: Planet
         Playfields:
-          - ['0,0,0', Homeworld, Homeworld Temperate, 'Explorer:0']
+          - ['0,0,0', Homeworld I, Homeworld Temperate, 'Explorer:0']
+          - ['7777,0,0', Homeworld II, Homeworld Temperate, 'Engineer:1']
           - ['0,0,0', Homeworld Sector, Homeworld Sector, '']
         Allow: []
         Deny: []
