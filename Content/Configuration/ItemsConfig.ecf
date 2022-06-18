@@ -88,7 +88,7 @@
   Meshfile: Entities/Items/Tools/flashlight01Prefab
   # DropMeshfile: Entities/Misc/BagSmallNewPrefab
   LifetimeOnDrop: 720
-  MarketPrice: 436, display: true
+  MarketPrice: 344, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 14
   PickupToToolbar: true
@@ -105,7 +105,7 @@
   Meshfile: Entities/Items/Weapons/Pistols/ProjectilePistolPrefab
   # Meshfile: Entities/Items/Weapons/Pistols/SciFiPistol4BlackPrefab
   PickupToToolbar: true
-  MarketPrice: 270, display: true
+  MarketPrice: 155, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 14
   StackSize: 50000
@@ -160,7 +160,7 @@
   # Meshfile: Entities/Items/Weapons/Shotguns/SciFiShotgun1BlackPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 486, display: true
+  MarketPrice: 279, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -217,7 +217,7 @@
   Meshfile: Entities\Items\Weapons\ScifiMinigun\MinigunPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 5189, display: true
+  MarketPrice: 8726, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -307,7 +307,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackT1Prefab
   # Meshfile: Entities/Items/Weapons/PulseRifle/PulseRiflePrefab
   PickupToToolbar: true
-  MarketPrice: 7094, display: true
+  MarketPrice: 14686, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 15
   StackSize: 50000
@@ -376,7 +376,7 @@
   Meshfile: Entities/Items/Weapons/Snipers/SniperRiflePrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 486, display: true
+  MarketPrice: 279, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -522,7 +522,7 @@
   Meshfile: Entities/Items/Weapons/Shotguns/SciFiShotgun2BlackPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 2484, display: true
+  MarketPrice: 3770, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -581,7 +581,7 @@
   Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/SciFiGrenadeLauncherBlackPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 6682, display: true
+  MarketPrice: 6498, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -1035,7 +1035,7 @@
   # Meshfile: Entities/Items/Weapons/Pistols/SciFiPistol2BluePrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_energy, display: true
-  MarketPrice: 4168, display: true
+  MarketPrice: 7315, display: true
   HoldType: 14
   StackSize: 50000
   Category: Weapons/Items
@@ -1104,7 +1104,7 @@
   # Meshfile: Entities/Items/Weapons/Rifles/AssaultRiflePrefab
   # Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackT1Prefab
   PickupToToolbar: true
-  MarketPrice: 470, display: true
+  MarketPrice: 355, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 15
   StackSize: 50000
@@ -1168,7 +1168,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle4Prefab
   PickupToToolbar: true
   Material: HWS_material_weapon_energy, display: true
-  MarketPrice: 139228, display: true
+  MarketPrice: 141525, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -1248,7 +1248,7 @@
   Meshfile: Entities/Items/Weapons/ScifiCannon/ScifiCannonPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_energy, display: true
-  MarketPrice: 39906, display: true
+  MarketPrice: 52792, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -1336,7 +1336,7 @@
   Meshfile: Entities/Items/Weapons/Snipers/ScifiSniper3Prefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 2296, display: true
+  MarketPrice: 3697, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -1396,7 +1396,7 @@
   Meshfile: Entities/Items/Weapons/DrillV2/DrillT2Prefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: false
-  MarketPrice: 1954, display: true
+  MarketPrice: 1839, display: true
   HoldType: 16
   StackSize: 50000
   Category: Weapons/Items
@@ -1593,7 +1593,7 @@
   Meshfile: Entities/Items/Weapons/Pistols/SciFiPistol4BlackT2Prefab
   PickupToToolbar: true
   Durability: 500, display: false
-  MarketPrice: 1018, display: true
+  MarketPrice: 627, display: true
   Info: "A specialist sidearm with a larger magazine and holosight. It possesses superior stopping power and can operate underwater."", display: true
   DegradationProb: 0.75, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
@@ -1725,7 +1725,7 @@
   Meshfile: Entities/Items/Tools/ChainsawV2Prefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 832, display: true
+  MarketPrice: 648, display: true
   HoldType: 16
   StackSize: 50000
   Category: Weapons/Items
@@ -2189,7 +2189,7 @@
 }
 { Item Id: 31, Name: MultiToolT2, Ref: MultiTool
   Meshfile: Entities/Items/Weapons/MultiToolT2Prefab
-  MarketPrice: 4258, display: true
+  MarketPrice: 7290, display: true
   { Child 0 # "Retrieve Blocks" (= get complete blocks in own structure, do "Salvage" in others)
     Range: 8
 	  ReturnFactor: 0.6, display: true
@@ -2231,7 +2231,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 1507, display: true
+  MarketPrice: 1323, display: true
   Canhold: false
   HoldType: 0
   StackSize: 50000
@@ -2258,7 +2258,7 @@
 { Item Id: 33, Name: RocketLauncherT2, Ref: RocketLauncher
   Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/SciFiGrenadeLauncherT2Prefab
   PickupToToolbar: true
-  MarketPrice: 11432, display: true
+  MarketPrice: 18656, display: true
   Durability: 100, display: false
   Info: "An improved variant of Rocket Launcher designed to operate using laser-guided microrockets for anti-aircraft engagements where the targets are protected behind armor.", display: true
   #just for display, see ammo "SlowRocketHoming"
@@ -2344,7 +2344,7 @@
 { Item Id: 35, Name: LaserPistolT2, Ref: LaserPistol
   Meshfile: Entities/Items/Weapons/Pistols/ScifiEnergyPistol3Prefab
   PickupToToolbar: true
-  MarketPrice: 39396, display: true
+  MarketPrice: 48171, display: true
   # Damage: 100, display: true
   Durability: 500, display: false
   DegradationProb: 0.2, type: float, display: false
@@ -2384,7 +2384,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/AssaultRifleT2Prefab
   # Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackPrefab
   PickupToToolbar: true
-  MarketPrice: 3395, display: true
+  MarketPrice: 3280, display: true
   Durability: 500, display: false
   DegradationProb: 0.25, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
@@ -2432,7 +2432,7 @@
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackT2Prefab
   # Meshfile: Entities/Items/Weapons/PulseRifle/PulseRifleT2Prefab
   PickupToToolbar: true
-  MarketPrice: 11085, display: true
+  MarketPrice: 21893, display: true
   Durability: 500, display: false
   DegradationProb: 0.2, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
@@ -2573,10 +2573,10 @@
     # PfxMuzzle: MuzzleFlashSurvivalTool          # for Class: Ranged, we need to use this
     # PfxMuzzle: MuzzleFlashSurvivalToolV2
 
-    DamageMultiplier_Group: HWS_Survival_Vanilla
+    DamageMultiplier_Group: HWS_EWS_Energy
 
     RadialText: rdlDefence # add text
-    RadialDesc: rdlDefenceTxt # add text
+    RadialDesc: rdlDefenceDescST # add text
     RadialIcon: Radial_Defence
   }
   { Child 1       # Resource mining, stone removal, wood cutter
@@ -2609,12 +2609,12 @@
     # SfxReload: Weapons/Player/Drill/WaltherP99MagInQuick01
     PfxMuzzle: MuzzleFlashLightning
 
-    DamageMultiplier_Group: HWS_Survival_Vanilla
+    DamageMultiplier_Group: HWS_Drill_Vanilla
 
    # DamageMultiplier_3: 0.25, param1: resourcemedium
    # DamageMultiplier_4: 0.1, param1: resourcehard
        RadialText: rdlResourceMining
-    RadialDesc: rdlResourceMiningManualTxt
+    RadialDesc: rdlResourceMiningDescST
     RadialIcon: Radial_ResourceMining
   }
   # { Child 1
@@ -2671,7 +2671,7 @@
     SfxReload: Weapons/Player/Reload/RifleReloadNormal
     # ParticleTransform: ""     # do NOT show a particle effect
 
-    DamageMultiplier_Group: HWS_Survival_Vanilla
+    DamageMultiplier_Group: HWS_Multitool_Vanilla
 
     RadialText: rdlDeconstructST
     RadialDesc: rdlDeconstructTxt
@@ -2761,7 +2761,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 39934, display: true
+  MarketPrice: 43896, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -2906,7 +2906,7 @@
   
 
   Meshfile: Entities/Items/Weapons/Projectiles/BombDronePrefab
-  MarketPrice: 122479, display: true
+  MarketPrice: 120646, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   CustomIcon: BombDrone
   Material: HWS_material_weapon_kinetic, display: true
@@ -2996,7 +2996,7 @@
 
 { Item Id: 47, Name: MedicGun
   Meshfile: Entities/Items/Weapons/MultiToolT1Prefab
-  MarketPrice: 5780, display: true
+  MarketPrice: 5412, display: true
   CustomIcon: ChangeTool
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: false
@@ -3167,7 +3167,7 @@
   # Meshfile: Entities/Items/Weapons/Projectiles/rocket01Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 473, display: true
+  MarketPrice: 399, display: true
   HoldType: 0
   Canhold: false
   Info: bkiAmmoExplosive, display: true
@@ -3216,38 +3216,38 @@
 }
 { +Item Id: 53, Name: 8.3mmBullet, Ref: 50Caliber
   StackSize: 50000
-  MarketPrice: 22, display: true
+  MarketPrice: 12, display: true
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { +Item Id: 54, Name: 5.8mmBullet, Ref: 50Caliber
   StackSize: 50000
-  MarketPrice: 29, display: true
+  MarketPrice: 22, display: true
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { +Item Id: 55, Name: 12.7mmBullet, Ref: 50Caliber
   StackSize: 50000
-  MarketPrice: 63, display: true
+  MarketPrice: 45, display: true
   Mass: 0.06, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 56, Name: 15mmBullet, Ref: 50Caliber
   Mass: 0.2, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 16, display: true
+  MarketPrice: 9, display: true
 }
 { Item Id: 57, Name: DrillCharge, Ref: 50Caliber
   Material: HWS_material_weapon_kinetic
   Mass: 1.05, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 442, display: true
+  MarketPrice: 432, display: true
   Info: bkiAmmoFullLoad, display: true
 }
 { Item Id: 58, Name: ShotgunShells, Ref: 50Caliber
   Mass: 0.03, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 66, display: true
+  MarketPrice: 63, display: true
 }
 { Item Id: 59, Name: FillerCharge, Ref: 50Caliber
   Material: HWS_material_weapon_kinetic, display: false
@@ -3272,7 +3272,7 @@
   Mass: 1.05, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoFullLoad, display: true
-  MarketPrice: 619, display: true
+  MarketPrice: 604, display: true
 }
 { Item Id: 63, Name: BioFuel, Ref: 50Caliber
   Material: HWS_material_weapon_kinetic, display: false
@@ -3323,7 +3323,7 @@
   StackSize: 50000
   Mass: 1.6, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 1687, display: true
+  MarketPrice: 1572, display: true
   { Child 0
     Class: Projectile
     Damage: 1254
@@ -3610,7 +3610,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: false
-  MarketPrice: 329, display: true
+  MarketPrice: 306, display: true
   Canhold: false
   HoldType: 0
   Category: Components
@@ -3709,7 +3709,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: Base, display: true
-  MarketPrice: 3116, display: true
+  MarketPrice: 2794, display: true
   Material: hullarmored, display: false
   HoldType: 0
   StackSize: 50000
@@ -3734,7 +3734,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: SS, display: true
   Material: hullarmored, display: false
-  MarketPrice: 5276, display: true
+  MarketPrice: 4034, display: true
   HoldType: 0
   StackSize: 50000
   
@@ -3758,7 +3758,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: MS, display: true
   Material: hullarmored, display: false
-  MarketPrice: 15048, display: true
+  MarketPrice: 14262, display: true
   HoldType: 0
   StackSize: 50000
   
@@ -3783,7 +3783,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: GV, display: true
   Material: hullarmored, display: false
-  MarketPrice: 4844, display: true
+  MarketPrice: 3786, display: true
   HoldType: 0
   StackSize: 50000
   
@@ -4023,7 +4023,7 @@
 
 { Item Id: 99, Name: AmmoCVTorpedo
   Meshfile: Entities/Items/Weapons/Projectiles/AlienRocketRedPrefab
-  MarketPrice: 125950, display: true
+  MarketPrice: 125263, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   CustomIcon: FillerCharge
   Material: HWS_material_weapon_kinetic, display: true
@@ -5914,7 +5914,7 @@
   Meshfile: Entities/Items/Weapons/Projectiles/rocket01Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 197, display: true
+  MarketPrice: 166, display: true
   AllowPlacingAt: SS, display: false
   HoldType: 0
   StackSize: 50000
@@ -5956,7 +5956,7 @@
   Canhold: false
   Mass: 0.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 31, display: true
+  MarketPrice: 18, display: true
   Info: bkiAmmo, display: true
   Category: Weapons/Items
 
@@ -6069,7 +6069,7 @@
   Mass: 870, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
-  MarketPrice: 3257, display: true
+  MarketPrice: 3073, display: true
   Category: Weapons/Items
   { Child 0
     Class: Projectile
@@ -6139,7 +6139,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
-  MarketPrice: 1493, display: true
+  MarketPrice: 1416, display: true
   { Child 0
     Class: Projectile
     Damage: 11000, display: true
@@ -6248,7 +6248,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
-  MarketPrice: 193, display: true
+  MarketPrice: 175, display: true
   { Child 0
     Class: Projectile
     Damage: 4000, display: true
@@ -6319,7 +6319,7 @@
   Info: bkiAmmoExplosive, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Weapons/Items
-  MarketPrice: 1432, display: true
+  MarketPrice: 1248, display: true
   { Child 0
     Class: Projectile
     Damage: 20000, display: true
@@ -6384,7 +6384,7 @@
   AllowPlacingAt: "SS,GV", display: false
   Mass: 20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 485, display: true
+  MarketPrice: 454, display: true
   { Child 0
     Damage: 2960, display: true
     BlastParticleIndex: 3
@@ -6406,7 +6406,7 @@
 
 { Item Id: 166, Name: FlakRocketMS, Ref: FlakRocket
   AllowPlacingAt: MS, display: false
-  MarketPrice: 163, display: true
+  MarketPrice: 148, display: true
   { Child 0
     Damage: 3000, display: true
     BlastParticleIndex: 3
@@ -6427,7 +6427,7 @@
   Mass: 840, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   AllowPlacingAt: MS, display: false
-  MarketPrice: 3274, display: true
+  MarketPrice: 3136, display: true
   { Child 0
     Damage: 20000, display: true
     BlastParticleIndex: 3
@@ -6467,7 +6467,7 @@
   AllowPlacingAt: Base, display: false
   Mass: 76, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 1939, display: true
+  MarketPrice: 1801, display: true
   { Child 0
     Damage: 11626, display: true
     BlastParticleIndex: 3
@@ -6568,7 +6568,7 @@
   AllowPlacingAt: GV, display: false
   Mass: 19, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 760, display: true
+  MarketPrice: 703, display: true
   { Child 0
     Damage: 2000, display: true
     BlastRadius: 3, display: true
@@ -6907,21 +6907,21 @@
   Mass: 0.65, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: An assortment of smaller metal components used in most mechanical devices., display: true
-  MarketPrice: 54, display: true
+  MarketPrice: 31, display: true
 }
 { Item Id: 209, Name: CapacitorComponent, Ref: ComponentsTemplate
   ShowUser: Yes
   Mass: 42, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A heavy industrial capacitor module used in some devices to store and output large amounts of energy., display: true
-  MarketPrice: 3009, display: true
+  MarketPrice: 4479, display: true
 }
 { Item Id: 210, Name: Computer, Ref: ComponentsTemplate
   ShowUser: Yes
   Mass: 12, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A dedicated computer hard drive used as the brain of many devices., display: true
-  MarketPrice: 2148, display: true
+  MarketPrice: 2102, display: true
 }
 { Item Id: 211, Name: EnergyMatrix, Ref: ComponentsTemplate     #former: ControlPanel
   ShowUser: Yes
@@ -6941,14 +6941,14 @@
   ShowUser: Yes
   Mass: 39.1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 1646, display: true
+  MarketPrice: 3254, display: true
   Info: An advanced electromagnetic coil used for generating magnetic fields on a large scale., display: true
 }
 { Item Id: 214, Name: Motor, Ref: ComponentsTemplate
   ShowUser: Yes
   Mass: 24.28, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 1049, display: true
+  MarketPrice: 911, display: true
   Info: A highly-efficient electric motor used in many devices with moving parts., display: true
 }
 { Item Id: 215, Name: Nanotubes, Ref: ComponentsTemplate    # former: Pipes
@@ -6969,7 +6969,7 @@
   ShowUser: Yes
   Mass: 11.8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 108, display: true
+  MarketPrice: 62, display: true
   Info: A steel plate with a foamsteel core that provides improved impact resistance and durability., display: true
 }
 { Item Id: 218, Name: EnergyCell, Ref: ComponentsTemplate
@@ -7119,7 +7119,7 @@
 { Item Id: 234, Name: Oscillator, Ref: ComponentsTemplate     #former: AdvancedCPU
   Mass: 8.27, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 440, display: true
+  MarketPrice: 842, display: true
   ShowUser: Yes
 }
 { Item Id: 235, Name: PlasticMaterial, Ref: ComponentsTemplate
@@ -7151,7 +7151,7 @@
   ShowUser: Yes
   Mass: 184.9, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 10054, display: true
+  MarketPrice: 12466, display: true
   Info: An electromagnetic coil array used for building up and releasing huge amounts of power., display: true
 }
 
@@ -7174,7 +7174,7 @@
 
 { Item Id: 240, Name: EnergyCellHydrogen, Ref: ComponentsTemplate
   FuelValue: 100, type: int, display: true, formatter: WattHour
-  MarketPrice: 2360, display: true
+  MarketPrice: 2310, display: true
   Info: A hydrogen fuel cell used in a fusion reactor to initiate and sustain a fusion reaction., display: true
   ShowUser: Yes
 
@@ -7192,7 +7192,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A tank of compressed Hydrogen used as a supercoolant or as fuel for a Fusion Reactor., display: true
   ShowUser: Yes
-  MarketPrice: 297, display: true
+  MarketPrice: 287, display: true
 }
 { Item Id: 242, Name: WoodLogs, Ref: OreTemplate
   Meshfile: Entities/Items/Resources/WoodLogsPrefab
@@ -7316,14 +7316,14 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: The core component used in Automining technology responsible for non-destructive metal extraction., display: true
   ShowUser: Yes
-  MarketPrice: 65462, display: true
+  MarketPrice: 107542, display: true
 }
 { Item Id: 255, Name: PistolKit, Ref: ComponentsTemplate
   Mass: 1.25, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A case containing upgrade components for handheld firearms and personal tools., display: true
   ShowUser: Yes
-  MarketPrice: 478, display: true
+  MarketPrice: 317, display: true
 }
 { Item Id: 256, Name: RifleKit, Ref: ComponentsTemplate
   Mass: 2.5, type: float, display: true, formatter: Kilogram
@@ -7350,7 +7350,7 @@
   Mass: 15, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A large container with precision parts for upgrading heavy weapons., display: true
-  MarketPrice: 2700, display: true
+  MarketPrice: 6490, display: true
   ShowUser: Yes
 }
 { Item Id: 260, Name: LaserKit, Ref: ComponentsTemplate
@@ -7406,7 +7406,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A plate of Titanium metal with a foam metal core for added strength and durability., display: true
   ShowUser: Yes
-  MarketPrice: 58, display: true
+  MarketPrice: 460, display: true
 }
 
 { Item Id: 266, Name: AluminiumOre, Ref: OreTemplate
@@ -7434,7 +7434,7 @@
 { Item Id: 268, Name: AluminiumCoil, Ref: ComponentsTemplate
   Mass: 8.1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 675, display: true
+  MarketPrice: 540, display: true
   Info: A conductive coil of aluminium used in electronics and heating elements., display: true
   ShowUser: Yes
 }
@@ -7465,7 +7465,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A folded bar of Platinum Foil. Unfolded it's used in various applications for it's resistance to corrosion and friction., display: true
   ShowUser: Yes
-  MarketPrice: 62, display: true
+  MarketPrice: 500, display: true
 }
 
 # Save game break: move down to food items, e.g. Id: 327
@@ -7519,27 +7519,27 @@
   Mass: 16, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A complex computing component used in advanced CPUs., display: true
-  MarketPrice: 122700, display: true
+  MarketPrice: 154860, display: true
   ShowUser: Yes
 }
 { Item Id: 283, Name: SmallOptronicMatrix, Ref: ComponentsTemplate
   Mass: 30, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A complex computing component used in advanced CPUs., display: true
-  MarketPrice: 315080, display: true
+  MarketPrice: 310480, display: true
   ShowUser: Yes
 }
 { Item Id: 284, Name: LargeOptronicBridge, Ref: ComponentsTemplate
   Mass: 200, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A complex computing component used in advanced CPUs., display: true
-  MarketPrice: 389150, display: true
+  MarketPrice: 453470, display: true
   ShowUser: Yes
 }
 { Item Id: 285, Name: LargeOptronicMatrix, Ref: ComponentsTemplate
   Mass: 400, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 615620, display: true
+  MarketPrice: 635140, display: true
   ShowUser: Yes
 }
 
@@ -8057,7 +8057,7 @@
   Mass: 75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   FuelValue: 300, type: int, display: true, formatter: WattHour
-  MarketPrice: 66399, display: true
+  MarketPrice: 65026, display: true
   ShowUser: Yes
   Info: bkiFusionCell, display: true
 
@@ -11307,7 +11307,7 @@
 { Item Id: 600, Name: ArmorLight
   Class: Armor
   RecipeName: LightArmor
-  MarketPrice: 1516, display: true
+  MarketPrice: 964, display: true
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_devices_kinetic, display: false
@@ -11337,6 +11337,8 @@
   NrSlots: 2, type: int, display: true
   SlotItems: "InsulationBoost, ArmorBoost, JetpackBoost, MultiBoost, OxygenBoost, MobilityBoost, RadiationBoost, EVABoost, TransportationBoost,InsulationBoostEpic, ArmorBoostEpic, JetpackBoostEpic, MultiBoostEpic,  MobilityBoostEpic, RadiationBoostEpic"
 
+  IsEquippableWithoutLocker: true
+  IsBoostEquippableWithoutLocker: true
   UnlockCost: 2, display: true
   UnlockLevel: 5, display: true
   TechTreeNames: Weapons
@@ -11611,7 +11613,7 @@
   ShowUser: Yes
 }
 { Item Id: 628, Name: EVABoost, Ref: ArmorBoostTemplate
-  MarketPrice: 2978, display: true
+  MarketPrice: 2932, display: true
   Armor: -80, type: int, display: true
   Heat: -15, type: int, display: true
   Cold: 190, type: int, display: true
@@ -11746,7 +11748,7 @@
   UnlockLevel: 3, display: true
   TechTreeParent: RadarSuitT1
   TechTreeNames: Tools
-  MarketPrice: 2456, display: true
+  MarketPrice: 2364, display: true
 }
 
 { Item Id: 702, Name: RadarSuitT1
@@ -14412,7 +14414,7 @@
   Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/SciFiGrenadeLauncherBlackPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 3954, display: true
+  MarketPrice: 3356, display: true
   #CustomIcon: RocketLauncher
   CustomIcon: GrenadeLauncher
   Crosshair: @hws_crosshairs/crosshair_grenade_launcher
@@ -14495,7 +14497,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   CustomIcon: FragGrenade
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 481, display: true
+  MarketPrice: 473, display: true
   StackSize: 50000
   ShowUser: Yes
   Mass: 1, type: float, display: true, formatter: Kilogram
@@ -14528,7 +14530,7 @@
   Meshfile: Entities/Items/Weapons/Projectiles/rocket01Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 1079, display: true
+  MarketPrice: 1360, display: true
   StackSize: 50000
   AllowPlacingAt: MS, display: false
   CustomIcon: LightRocketCV
@@ -26793,7 +26795,7 @@
   ShowUser: Yes
   FuelValue: 5000, type: int, display: true, formatter: WattHour
 }
-# --------------------------------------------------------------------------------------------------- EGS Web
+# -------------------------------------------------------------------------------------------------------------- EGS Web
 { Item Id: 3933, Name: HWSEGSPhone, Ref: HWSElementTemplate
   Info: HWS_ItemInfo_HWSEGSPhone, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
@@ -26814,9 +26816,9 @@
   CustomIcon: Satellite
   ShowUser: Yes
 }
-# --------------------------------------------------------------------------------------------------- HWS+ Resources
+# ------------------------------------------------------------------------------------------------------- HWS+ Resources
 { Item Id: 3935, Name: HWSTungstenOre, Ref: OreTemplate
-  Meshfile: Entities/Items/Ores/AluminiumOrePrefab
+  Meshfile: Entities/Items/Ores/NeodymiumOrePrefab
   ShowUser: Yes
   Mass: 19.3, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -26834,7 +26836,7 @@
   
 }
 { Item Id: 3937, Name: HWSChromiteOre, Ref: OreTemplate
-  Meshfile: Entities/Items/Ores/CopperOrePrefab
+  Meshfile: Entities/Items/Ores/MagnesiumOrePrefab
   ShowUser: Yes
   Mass: 14.28, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -26860,7 +26862,7 @@
   Info: HWS_ItemInfo_HWSBismuthOre, display: true
 }
 { Item Id: 3940, Name: HWSBismuthIngot, Ref: ComponentsTemplate
-  Meshfile: Entities/Items/Ores/AluminiumOrePrefab
+  Meshfile: Entities/Misc/DummyPrefab
   ShowUser: Yes
   Mass: 19.56, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -26912,7 +26914,7 @@
   }
 }
 { Item Id: 3943, Name: HWSColtan, Ref: OreTemplate
-  Meshfile: Entities/Items/Ores/TitanOrePrefab
+  Meshfile: Entities/Items/Ores/CobaltOrePrefab
   ShowUser: Yes
   Mass: 16.69, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -26937,12 +26939,78 @@
   MarketPrice: 350, display: true
   Info: HWS_ItemInfo_HWSHWSCarbonOre, display: true
 }
+# ------------------------------------------------------------------------------------- Alien Speciment Growing Facility
+{ Item Id: 3946, Name: BacteriaSpecimentCell_AT, Ref: HWSElementTemplate
+  Info: "This bacteria speciment contains 50000 bacteria, of the 'Alouatta Typus' type.", display: true
+  Mass: 10, type: float, display: true, formatter: ton
+  Volume: 1, type: float, display: true, formatter: Liter
+  MarketPrice: 99, display: true
+  CustomIcon: BacteriaSpeciment
+  ShowUser: Yes
+}
+{ Item Id: 3947, Name: BacteriaSpecimentCell_PP, Ref: HWSElementTemplate
+  Info: "This bacteria speciment contains 5000 bacteria, of the 'Poecilia Pictus' type.", display: true
+  Mass: 10, type: float, display: true, formatter: ton
+  Volume: 1, type: float, display: true, formatter: Liter
+  MarketPrice: 99, display: true
+  CustomIcon: BacteriaSpeciment2
+  ShowUser: Yes
+}
+{ Item Id: 3948, Name: BacteriaSpecimentCell_LL, Ref: HWSElementTemplate
+  Info: "This bacteria speciment contains 50000 bacteria, of the 'Leopeutes Lupina' type.", display: true
+  Mass: 10, type: float, display: true, formatter: ton
+  Volume: 1, type: float, display: true, formatter: Liter
+  MarketPrice: 99, display: true
+  CustomIcon: BacteriaSpeciment3
+  ShowUser: Yes
+}
+# ------------------------------------------------------------------------------------------------- HWS Element Essences
+{ Item Id: 3949, Name: HWSElementAquaEssence, Ref: HWSElementTemplate
+  Meshfile: Entities/Misc/DummyPrefab
+  ShowUser: Yes
+  Mass: 7.7, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: false, formatter: Liter
+  MarketPrice: 7000000000, display: true
+  Info: HWS_ItemInfo_HWSElementAquaEssence, display: true
+}
+{ Item Id: 3950, Name: HWSElementTerraEssence, Ref: HWSElementTemplate
+  Meshfile: Entities/Misc/DummyPrefab
+  ShowUser: Yes
+  Mass: 7.7, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: false, formatter: Liter
+  MarketPrice: 7000000000, display: true
+  Info: HWS_ItemInfo_HWSElementTerraEssence, display: true
+}
+{ Item Id: 3951, Name: HWSElementPyroEssence, Ref: HWSElementTemplate
+  Meshfile: Entities/Misc/DummyPrefab
+  ShowUser: Yes
+  Mass: 7.7, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: false, formatter: Liter
+  MarketPrice: 7000000000, display: true
+  Info: HWS_ItemInfo_HWSElementPyroEssence, display: true
+}
+{ Item Id: 3952, Name: HWSElementLuxEssence, Ref: HWSElementTemplate
+  Meshfile: Entities/Misc/DummyPrefab
+  ShowUser: Yes
+  Mass: 7.7, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: false, formatter: Liter
+  MarketPrice: 7000000000, display: true
+  Info: HWS_ItemInfo_HWSElementLuxEssence, display: true
+}
+{ Item Id: 3953, Name: HWSElementNoxEssence, Ref: HWSElementTemplate
+  Meshfile: Entities/Misc/DummyPrefab
+  ShowUser: Yes
+  Mass: 7.7, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: false, formatter: Liter
+  MarketPrice: 7000000000, display: true
+  Info: HWS_ItemInfo_HWSElementNoxEssence, display: true
+}
 # -------------------------------------------------------------------------------------------------------- HWS Origin XP
 { Item Id: 4086, Name: HWSAllOriginXP
   
 
   Meshfile: Entities/Misc/DummyPrefab
-  MarketPrice: 1, display: true
+  MarketPrice: 100000, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: metalitem, display: false
   Canhold: false
@@ -26959,7 +27027,7 @@
   
 
   Meshfile: Entities/Misc/DummyPrefab
-  MarketPrice: 1, display: true
+  MarketPrice: 700000, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: metalitem, display: false
   Canhold: false
@@ -26976,7 +27044,7 @@
   
 
   Meshfile: Entities/Misc/DummyPrefab
-  MarketPrice: 1, display: true
+  MarketPrice: 700000, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: metalitem, display: false
   Canhold: false
@@ -26993,7 +27061,7 @@
   
 
   Meshfile: Entities/Misc/DummyPrefab
-  MarketPrice: 1, display: true
+  MarketPrice: 700000, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: metalitem, display: false
   Canhold: false
@@ -27010,7 +27078,7 @@
   
 
   Meshfile: Entities/Misc/DummyPrefab
-  MarketPrice: 1, display: true
+  MarketPrice: 700000, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: metalitem, display: false
   Canhold: false
@@ -27030,7 +27098,7 @@
   Meshfile: @hws_itemmodels/HWSDealerOriginGun
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 6872, display: true
+  MarketPrice: 100000, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -27074,7 +27142,7 @@
   Meshfile: @hws_itemmodels/HWSEngineerOriginGun
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 6872, display: true
+  MarketPrice: 100000, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -27117,7 +27185,7 @@
   Meshfile: @hws_itemmodels/HWSExplorerOriginGun
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 6872, display: true
+  MarketPrice: 100000, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items
@@ -27160,7 +27228,7 @@
   Meshfile: @hws_itemmodels/HWSFighterOriginGun
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 6872, display: true
+  MarketPrice: 100000, display: true
   HoldType: 15
   StackSize: 50000
   Category: Weapons/Items

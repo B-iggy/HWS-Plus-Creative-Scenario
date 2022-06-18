@@ -1803,7 +1803,7 @@
   IndexName: FuelTank
   Group: cpgFuelTank
   EssentialCategory: cpgFuelTank
-  MarketPrice: 2700, display: true
+  MarketPrice: 2010, display: true
   # LootList: 22   # 10 slots
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -1851,7 +1851,7 @@
 { Block Id: 260, Name: FuelTankMSLarge, Ref: FuelTankMSSmall
   # LootList: 23    # 20 slots
   Model: @models/Blocks/Mothership/FuelTankMSLargePrefab
-  MarketPrice: 8910, display: true
+  MarketPrice: 7530, display: true
   HitPoints: 125, type: int, display: true
   FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, HWSElementStrangeletRefined"
   FuelCapacity: 6000, type: int, display: true
@@ -1939,7 +1939,7 @@
   Class: O2Tank
   IndexName: O2Tank
   Group: cpgO2Tank
-  MarketPrice: 4873, display: true
+  MarketPrice: 3585, display: true
   EssentialCategory: cpgO2Tank
   # LootList: 24     # 10 slots
   Material: HWS_material_devices_kinetic, display: true
@@ -2070,7 +2070,7 @@
   Group: cpgPassengerSeat
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
-  MarketPrice: 3124, display: true
+  MarketPrice: 2756, display: true
   ShowBlockName: true
   Model: @models/Blocks/Mothership/passengerSeatMSPrefab
   Mesh-Damage-1: Mesh/D0
@@ -2143,7 +2143,7 @@
 
  # SV Antimatter Cannon
 { Block Id: 268, Name: WeaponSVAntimatterCannon
-  MarketPrice: 113002, display: true
+  MarketPrice: 116628, display: true
   Class: Weapon
   IndexName: WeaponShip
   Group: cpgWeapon
@@ -2195,7 +2195,7 @@
 
  # CV Energy Railgun
 { Block Id: 269, Name: WeaponCVTorpedoLauncher
-  MarketPrice: 221898, display: true
+  MarketPrice: 226372, display: true
   Class: Weapon
   IndexName: WeaponShip
   Group: cpgWeapon
@@ -2317,7 +2317,7 @@
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
   ShowBlockName: true
-  MarketPrice: 5288, display: true
+  MarketPrice: 4092, display: true
   Model: @models/Blocks/Mothership/RCS_BlockPrefab
   Mesh-Damage-1: Mesh/D0
   Mesh-Damage-2: Mesh/D1
@@ -2479,7 +2479,7 @@
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
   ShowBlockName: true
-  MarketPrice: 29634, display: true
+  MarketPrice: 38843, display: true
   # ModelOffset: "0,0.5,0"
   Model: @models/Blocks/Mothership/gravitygeneratorMSPrefab
   Mesh-Damage-1: Mesh/D0
@@ -2521,7 +2521,7 @@
   Class: Light
   Group: cpgLight
   IndexName: Light
-  MarketPrice: 558, display: true
+  MarketPrice: 466, display: true
   CanSetColor: true
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -2785,7 +2785,7 @@
 { Block Id: 289, Name: TurretRadar
   # Class: Turret
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 25460, display: true
+  MarketPrice: 24770, display: true
   Shape: ModelEntity
   Model: @models/Blocks/Misc/RadarPrefab
   Mesh-Damage-1: Mesh/D0
@@ -2866,7 +2866,7 @@
   
 }
 { Block Id: 291, Name: OxygenStation
-  MarketPrice: 7751, display: true
+  MarketPrice: 7429, display: true
   Class: O2Station
   Group: cpgO2Station
   Material: HWS_material_devices_kinetic, display: true
@@ -3484,7 +3484,7 @@
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
   ShowBlockName: true
-  MarketPrice: 13056, display: true
+  MarketPrice: 12596, display: true
   # Model: @models/Blocks/Mothership/AntennaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
@@ -3556,7 +3556,7 @@
   Group: cpgEquipment
   IndexName: OP
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 26239, display: true
+  MarketPrice: 38000, display: true
   Shape: ModelEntity
   ShowBlockName: true
   Model: @models/Blocks/Mothership/OfflineProtectorPrefab
@@ -3595,7 +3595,7 @@
 { Block Id: 336, Name: PentaxidTank
   Class: WarpDriveTank
   Group: cpgWarp
-  MarketPrice: 30409, display: true
+  MarketPrice: 44995, display: true
   IndexName: WarpDriveTank
   LootList: 3   #  lootcontainer Warp Drive Tank
   Material: HWS_material_devices_kinetic, display: true
@@ -3771,7 +3771,7 @@
 }
 
 { Block Id: 343, Name: LadderBlocks
-  MarketPrice: 432, display: true
+  MarketPrice: 248, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Class: Ladder
   Category: BuildingBlocks
@@ -3837,7 +3837,7 @@
   Group: cpgTurret
   CustomIcon: TurretGVMinigun
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 4189, display: true
+  MarketPrice: 2901, display: true
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretGVMinigunV2Prefab
@@ -4204,7 +4204,7 @@
 # Steel Blocks (small blocks) - block group
 { Block Id: 380, Name: HullSmallBlocks
   Material: hull, display: true
-  MarketPrice: 216, display: true
+  MarketPrice: 124, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   # do not change - block used in old structures
   Texture: 50
@@ -4423,7 +4423,7 @@
 # Hardened Steel Blocks (small blocks) - block group
 { Block Id: 393, Name: HullArmoredSmallBlocks
   Material: hull, display: true
-  MarketPrice: 796, display: true
+  MarketPrice: 4724, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Texture: 54
   BlockColor: "170,170,170"
@@ -4608,7 +4608,7 @@
 # Steel Block (large) - block group
 { Block Id: 402, Name: HullLargeBlocks
   Material: hull, display: true
-  MarketPrice: 1080, display: true
+  MarketPrice: 620, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Texture: 50
   BlockColor: "110,110,110"
@@ -4668,7 +4668,7 @@
 # Hardened Steel Block (large) - block group
 { Block Id: 405, Name: HullArmoredLargeBlocks
   Material: hullarmored, display: true
-  MarketPrice: 1776, display: true
+  MarketPrice: 6140, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Texture: 54
   BlockColor: "170,170,170"
@@ -4784,7 +4784,7 @@
 # Combat Steel Blocks (large blocks) - block group
 { Block Id: 411, Name: HullCombatLargeBlocks
   Material: hullcombat, display: true
-  MarketPrice: 2310, display: true
+  MarketPrice: 1850, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Texture: 56
   BlockColor: "170,170,170"
@@ -4958,7 +4958,7 @@
 }
 { Block Id: 418, Name: GeneratorSV
   IndexName: Generator
-  MarketPrice: 9104, display: true
+  MarketPrice: 7586, display: true
   Class: Generator
   Group: cpgGenerator
   EssentialCategory: cpgGenerator
@@ -5005,7 +5005,7 @@
 { Block Id: 419, Name: FuelTankSV
   Class: FuelTank
   IndexName: FuelTank
-  MarketPrice: 1396, display: true
+  MarketPrice: 1074, display: true
   Group: cpgFuelTank
   EssentialCategory: cpgFuelTank
   # LootList: 26   # 10 slots
@@ -5057,7 +5057,7 @@
   IndexName: RCS
   Group: cpgRCS
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 12388, display: true
+  MarketPrice: 17900, display: true
   Shape: ModelEntity
   ShowBlockName: true
   Model: @models/Blocks/Mothership/RCS_BlockPrefab
@@ -5123,7 +5123,7 @@
   Class: O2Tank
   IndexName: O2Tank
   Group: cpgO2Tank
-  MarketPrice: 864, display: true
+  MarketPrice: 496, display: true
   LootList: 25     # 5 slots
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -5169,7 +5169,7 @@
   Class: Container
   IndexName: Fridge
   Group: cpgFridge
-  MarketPrice: 2246, display: true
+  MarketPrice: 1694, display: true
   LootList: 1   # empty medium
   DontDecayFood: true   # now this loot container is a fridge
   Material: HWS_material_devices_kinetic, display: true
@@ -5359,7 +5359,7 @@
   IndexName: WeaponShip
   Group: cpgWeapon
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 114645, display: true
+  MarketPrice: 144795, display: true
   Shape: ModelEntity
   ShowBlockName: true
   WeaponItem: RailgunSSWeapon
@@ -5416,7 +5416,7 @@
   IndexName: WeaponShip
   Group: cpgWeapon
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 3508, display: true
+  MarketPrice: 2887, display: true
   Shape: ModelEntity
   ShowBlockName: true
   WeaponItem: MinigunSSWeapon
@@ -5464,7 +5464,7 @@
 }
 # Pulse Laser
 { Block Id: 430, Name: WeaponSV03
-  MarketPrice: 166920, display: true
+  MarketPrice: 187020, display: true
   Class: Weapon
   IndexName: WeaponShip
   Group: cpgWeapon
@@ -5524,7 +5524,7 @@
   Class: Weapon
   IndexName: WeaponShip
   Group: cpgWeapon
-  MarketPrice: 166920, display: true
+  MarketPrice: 187020, display: true
   Material: HWS_material_devices_energy, display: true
   Shape: ModelEntity
   ShowBlockName: true
@@ -5584,7 +5584,7 @@
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
   ShowBlockName: true
-  MarketPrice: 15964, display: true
+  MarketPrice: 16788, display: true
   WeaponItem: RocketLauncherSSWeapon
   Model: @models/Blocks/WeaponsShip/WeaponSSMissileRetractPrefab
   # Model: @models/Blocks/WeaponsShip/WeaponSSMissilePrefab
@@ -5927,7 +5927,7 @@
   Class: Thruster
   IndexName: Thruster
   Group: cpgThruster
-  MarketPrice: 3454, display: true
+  MarketPrice: 3201, display: true
   EssentialCategory: cpgThruster
   Place: Free
   Material: HWS_material_devices_kinetic, display: true
@@ -5978,7 +5978,7 @@
   Class: Thruster
   IndexName: Thruster
   Group: cpgThruster
-  MarketPrice: 10090, display: true
+  MarketPrice: 15786, display: true
   EssentialCategory: cpgThruster
   Place: Free
   Material: HWS_material_devices_kinetic, display: true
@@ -6174,7 +6174,7 @@
   Material: fertile, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Texture: "6,31,31,31,31,31"
-  MarketPrice: 1524, display: true
+  MarketPrice: 1248, display: true
   Shape: New
   Place: Free
   Model: Cube
@@ -6340,7 +6340,7 @@
   Class: Elevator
   Material: hull, display: true
   Shape: Ext3dModel
-  MarketPrice: 496, display: true
+  MarketPrice: 404, display: true
   Mesh: models
   Model: Mothership/Elevator, param1: ElevatorBlock
   # Model: Mothership/Elevator, param1: Collider_Mesh
@@ -6373,7 +6373,7 @@
   IndexName: Generator
   Class: Generator
   Group: cpgGenerator
-  MarketPrice: 45985, display: true
+  MarketPrice: 62291, display: true
   EssentialCategory: cpgGenerator
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -6421,7 +6421,7 @@
   Class: FuelTank
   IndexName: FuelTank
   Group: cpgFuelTank
-  MarketPrice: 760, display: true
+  MarketPrice: 530, display: true
   EssentialCategory: cpgFuelTank
   # LootList: 26   # 10 slots
   Material: HWS_material_devices_kinetic, display: true
@@ -6468,7 +6468,7 @@
   IndexName: Generator
   Class: Generator
   Group: cpgGenerator
-  MarketPrice: 3578, display: true
+  MarketPrice: 2842, display: true
   EssentialCategory: cpgGenerator
   LootList: 1
   Material: HWS_material_devices_kinetic, display: true
@@ -6782,7 +6782,7 @@
 # Rocket Launcher Homing
 { Block Id: 489, Name: WeaponSV05Homing, Ref: WeaponSV05
   WeaponItem: RocketLauncherSSHomingWeapon
-  MarketPrice: 79851, display: true
+  MarketPrice: 87615, display: true
   # Model: @models/Blocks/WeaponsShip/WeaponSSMissileHomingPrefab
   Model: @models/Blocks/WeaponsShip/WeaponSSMissileHomingRetractPrefab
   SizeInBlocks: "1,3,1", display: true
@@ -6902,7 +6902,7 @@
 
 { Block Id: 493, Name: ArtMassBlocks
   Material: hull, display: true
-  MarketPrice: 2160, display: true
+  MarketPrice: 1240, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Texture: 31
   BlockColor: "110,110,110"
@@ -7004,7 +7004,7 @@
   IndexName: Generator
   Class: Generator
   Group: cpgGenerator
-  MarketPrice: 21634, display: true
+  MarketPrice: 18966, display: true
   EssentialCategory: cpgGenerator
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -7425,7 +7425,7 @@
 }
 # Obsolete - but do not remove
 { Block Id: 520, Name: MarkerBlock
-  MarketPrice: 108, display: true
+  MarketPrice: 62, display: true
   AllowedInBlueprint: false, display: true
   IndexName: Marker
   Material: hullcombat, display: true
@@ -7449,7 +7449,7 @@
 }
 # Obsolete - but do not remove
 { Block Id: 521, Name: MarkerBlock2, Ref: MarkerBlock
-  MarketPrice: 108, display: true
+  MarketPrice: 62, display: true
   IndexName: Marker2
   Info: bkiAlienMarker2Block, display: true
   BlockColor: "0,15,100"
@@ -7686,7 +7686,7 @@
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
   Place: Free
-  MarketPrice: 4665, display: true
+  MarketPrice: 4205, display: true
   # Model: @models/Blocks/Thrusters/RoundThrusters/ThrusterSSRoundNormalPrefab
   # Mesh-Damage-1: Mesh/D0
   # Mesh-Damage-2: Mesh/D1
@@ -7795,7 +7795,7 @@
   Material: hull, display: true
   Shape: Invisible
   Mesh: models
-  MarketPrice: 2390, display: true
+  MarketPrice: 3940, display: true
   # Model: Mothership/windowVertMS, param1: window_nontransparent
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Info: bkiBlockGroup, display: true
@@ -7824,7 +7824,7 @@
 { Block Id: 546, Name: ThrusterSVRoundNormalT2, Ref: ThrusterSVRoundNormal
   Model: @models/Blocks/Thrusters/RoundThrusters/ThrusterGVRoundNormalT2Prefab
   SizeInBlocks: "1,2,1", display: true
-  MarketPrice: 8367, display: true
+  MarketPrice: 7723, display: true
   HitPoints: 100, type: int, display: true
   Mass: 520, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -7845,7 +7845,7 @@
 { Block Id: 547, Name: ThrusterSVRoundLarge, Ref: ThrusterSVRoundNormal
   Model: @models/Blocks/Thrusters/RoundThrusters/ThrusterGVRoundLargePrefab
   SizeInBlocks: "1,3,1", display: true
-  MarketPrice: 8061, display: true
+  MarketPrice: 7279, display: true
   HitPoints: 350, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 406, type: float, display: true, formatter: Kilogram
@@ -7867,7 +7867,7 @@
 { Block Id: 548, Name: ThrusterSVRoundLargeT2, Ref: ThrusterSVRoundNormal
   Model: @models/Blocks/Thrusters/RoundThrusters/ThrusterGVRoundLargeT2Prefab
   SizeInBlocks: "1,3,1", display: true
-  MarketPrice: 14084, display: true
+  MarketPrice: 13026, display: true
   HitPoints: 400, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 842, type: float, display: true, formatter: Kilogram
@@ -8109,7 +8109,7 @@
   Class: O2Generator
   Material: HWS_material_devices_kinetic
   Shape: ModelEntity
-  MarketPrice: 9753, display: true
+  MarketPrice: 8097, display: true
   Model: @models/Blocks/Terrain/OxygenGeneratorPrefab
   Mesh-Damage-1: Mesh/D0
   Mesh-Damage-2: Mesh/D1
@@ -8241,7 +8241,7 @@
   Class: Core
   Group: cpgCore
   IndexName: Core
-  MarketPrice: 3116, display: true
+  MarketPrice: 2794, display: true
   EssentialCategory: cpgCore
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -8294,7 +8294,7 @@
 }
 #  Alien Core
 { Block Id: 560, Name: CoreNPC
-  MarketPrice: 12248, display: true
+  MarketPrice: 11742, display: true
   AllowedInBlueprint: false, display: true
   Class: Core
   Group: cpgCore
@@ -8424,7 +8424,7 @@
   IndexName: Light
   Group: cpgGrowingLight
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 1042, display: true
+  MarketPrice: 812, display: true
   Shape: ModelEntity
   Tag: GrowingLight
   Place: Face
@@ -8646,7 +8646,7 @@
   # Class: Light
   IndexName: Light
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 1032, display: true
+  MarketPrice: 802, display: true
   Shape: ModelEntity
   Model: @models/Blocks/Terrain/LightWorkPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -8988,7 +8988,7 @@
 { Block Id: 588, Name: WaterGenerator
   Class: WaterGenerator
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 6426, display: true
+  MarketPrice: 5184, display: true
   Shape: ModelEntity
   Model: @models/Blocks/Terrain/WaterGeneratorPrefab
   # Mesh-Damage-1: Mesh/D0
@@ -9035,7 +9035,7 @@
   Class: Thruster
   IndexName: Thruster
   Group: cpgThruster
-  MarketPrice: 4804, display: true
+  MarketPrice: 3976, display: true
   EssentialCategory: cpgThruster
   Place: Free
   Material: HWS_material_devices_kinetic, display: true
@@ -9537,7 +9537,7 @@
 { Block Id: 603, Name: HoverBooster
   IndexName: HoverBooster
   Group: cpgHoverEngine
-  MarketPrice: 13010, display: true
+  MarketPrice: 10940, display: true
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
   ShowBlockName: true
@@ -9577,7 +9577,7 @@
   IndexName: RCS
   Group: cpgRCS
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 3240, display: true
+  MarketPrice: 2665, display: true
   Shape: ModelEntity
   ShowBlockName: true
   Model: @models/Blocks/Mothership/RCS_BlockPrefab
@@ -10428,7 +10428,7 @@
 # Rocket Launcher
 { Block Id: 646, Name: WeaponMS01
   Class: Weapon
-  MarketPrice: 167320, display: true
+  MarketPrice: 187420, display: true
   IndexName: WeaponShip
   Group: cpgWeapon
   Material: HWS_material_devices_kinetic, display: true
@@ -10478,7 +10478,7 @@
 }
 # Pulse Laser
 { Block Id: 647, Name: WeaponMS02
-  MarketPrice: 229675, display: true
+  MarketPrice: 257815, display: true
   Class: Weapon
   IndexName: WeaponShip
   Group: cpgWeapon
@@ -10660,7 +10660,7 @@
   IndexName: Light
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
-  MarketPrice: 1384, display: true
+  MarketPrice: 924, display: true
   Model: @models/Blocks/Terrain/LightWork02Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   IsTerrainDecoration: true
@@ -10781,7 +10781,7 @@
 }
 
 { Block Id: 658, Name: EntitySpawner1
-  MarketPrice: 108, display: true
+  MarketPrice: 62, display: true
   Class: Spawner
   Group: cpgNPCSpawner
   IndexName: EntitySpawner
@@ -10921,7 +10921,7 @@
   IndexName: WeaponShip
   Group: cpgHarvest
   Material: HWS_material_devices_kinetic, display: false
-  MarketPrice: 4665, display: true
+  MarketPrice: 4205, display: true
   Shape: ModelEntity
   ShowBlockName: true
   WeaponItem: SawAttachmentWeapon
@@ -11124,7 +11124,7 @@
   IndexName: WeaponShip
   Group: cpgHarvest
   Material: HWS_material_devices_kinetic, display: false
-  MarketPrice: 5492, display: true
+  MarketPrice: 4388, display: true
   Shape: ModelEntity
   ShowBlockName: true
   WeaponItem: DrillAttachmentWeapon
@@ -11323,7 +11323,7 @@
   Class: Thruster
   IndexName: Thruster
   Group: cpgThruster
-  MarketPrice: 32871, display: true
+  MarketPrice: 31859, display: true
   EssentialCategory: cpgThruster
   Place: Free
   Material: HWS_material_devices_kinetic, display: true
@@ -11371,7 +11371,7 @@
 }
 { Block Id: 695, Name: ThrusterJetRound3x10x3, Ref: ThrusterJetRound3x7x3
   Model: @models/Blocks/Thrusters/ThrusterJetRound3x10x3Prefab
-  MarketPrice: 40741, display: true
+  MarketPrice: 39499, display: true
   SizeInBlocks: "3,10,3", display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3060, type: float, display: true, formatter: Kilogram
@@ -11391,7 +11391,7 @@
   Temperature: 920, display: true
 }
 { Block Id: 696, Name: ThrusterJetRound3x13x3, Ref: ThrusterJetRound3x7x3
-  MarketPrice: 18539, display: true
+  MarketPrice: 17711, display: true
   Model: @models/Blocks/Thrusters/ThrusterJetRound3x13x3Prefab
   SizeInBlocks: "3,13,3", display: true
   Volume: 0, type: float, display: false, formatter: Liter
@@ -11413,7 +11413,7 @@
 }
 { Block Id: 697, Name: ThrusterJetRound1x3x1, Ref: ThrusterJetRound3x7x3
   Model: @models/Blocks/Thrusters/ThrusterJetRound1x3x1Prefab
-  MarketPrice: 12032, display: true
+  MarketPrice: 11618, display: true
   SizeInBlocks: "1,3,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 743, type: float, display: true, formatter: Kilogram
@@ -11436,7 +11436,7 @@
 }
 { Block Id: 698, Name: ThrusterJetRound2x5x2, Ref: ThrusterJetRound3x7x3
   Model: @models/Blocks/Thrusters/ThrusterJetRound2x5x2Prefab
-  MarketPrice: 21290, display: true
+  MarketPrice: 20600, display: true
   SizeInBlocks: "2,5,2", display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 1240, type: float, display: true, formatter: Kilogram
@@ -11641,7 +11641,7 @@
 
 # Produces only hydrogen now
 { Block Id: 706, Name: OxygenHydrogenGenerator, Ref: OxygenGenerator
-  MarketPrice: 11137, display: true
+  MarketPrice: 22231, display: true
   Class: O2H2Generator
   Model: @models/Blocks/Terrain/OxygenHydrogenGeneratorPrefab
   Mesh-Damage-1: Mesh/D0
@@ -11849,7 +11849,7 @@
   Class: PassengerSeat
   Group: cpgPassengerSeat
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 5068, display: true
+  MarketPrice: 3872, display: true
   Shape: ModelEntity
   ShowBlockName: true
   # ModelOffset: "0,0.5,0"
@@ -11929,7 +11929,7 @@
   Class: ConstructorRecursive
   IndexName: Constructor
   Group: cpgConstructor
-  MarketPrice: 41020, display: true
+  MarketPrice: 55950, display: true
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
   ShowBlockName: true
@@ -11976,7 +11976,7 @@
   Class: PassengerSeat
   Group: cpgPassengerSeat
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 3124, display: true
+  MarketPrice: 2756, display: true
   Shape: ModelEntity
   ShowBlockName: true
   Model: @models/Blocks/Spaceship/PassengerSeat2SVPrefab
@@ -12056,7 +12056,7 @@
   Class: O2Tank
   IndexName: O2Tank
   Group: cpgO2Tank
-  MarketPrice: 1512, display: true
+  MarketPrice: 868, display: true
   EssentialCategory: cpgO2Tank
   LootList: 25     # 5 slots
   Material: HWS_material_devices_kinetic, display: true
@@ -12153,7 +12153,7 @@
   IndexName: WarpDrive
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
-  MarketPrice: 196840, display: true
+  MarketPrice: 267128, display: true
   ShowBlockName: true
   Model: @models/Blocks/Mothership/WarpDriveT1Prefab
   Mesh-Damage-1: Mesh/D0
@@ -12198,9 +12198,6 @@
   Radiation: 25, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
   Temperature: 40, display: true
 
-  # TODO: Mod.RangeAU: "RangeAU + Player.Skills['PilotAURange']"
-  # TODO: Mod.RangeLY: "RangeLY + Player.Skills['PilotLYRange'] + 10"
-
   UnlockCost: 15, display: true
   UnlockLevel: 10, display: true
   TechTreeParent: PentaxidTank
@@ -12210,7 +12207,7 @@
   Class: O2Station
   Group: cpgO2Station
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 4970, display: true
+  MarketPrice: 4740, display: true
   Shape: ModelEntity
   #BuffName: OxygenStationSS DONE DIFFERENT NOW
   ShowBlockName: true
@@ -12290,7 +12287,7 @@
   Class: Container
   Group: cpgAmmo
   IndexName: AmmoCntr
-  MarketPrice: 3552, display: true
+  MarketPrice: 2908, display: true
   LootList: 70
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -12434,7 +12431,7 @@
   Material: HWS_material_devices_kinetic, display: true
   Info: bkiLandinggearHV, display: true
   AllowPlacingAt: "GV", display: true
-  MarketPrice: 940, display: true
+  MarketPrice: 710, display: true
   TemplateRoot: DockingPad
   Mass: 122, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -13261,7 +13258,7 @@
 { Block Id: 772, Name: ThrusterMSRoundBlocks
   IndexName: Thruster
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 19791, display: true
+  MarketPrice: 41889, display: true
   Shape: Invisible
   Place: Free
   # Model: @models/Blocks/Thrusters/RoundThrusters/ThrusterCVRoundArmoredPrefab
@@ -13361,7 +13358,7 @@
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
   Place: Free
-  MarketPrice: 160280, display: true
+  MarketPrice: 183848, display: true
   # Model: @models/Blocks/Thrusters/RoundThrusters/ThrusterCVRoundNormal2x2Prefab
   # Mesh-Damage-1: Mesh/D0
   # Mesh-Damage-2: Mesh/D1
@@ -13447,7 +13444,7 @@
   Group: cpgMedic
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
-  MarketPrice: 5978, display: true
+  MarketPrice: 5472, display: true
   ShowBlockName: true
   Model: @models/Blocks/Mothership/CloneChamberSmallPrefab
   #Mesh-Damage-1: Mesh/D0
@@ -13771,7 +13768,7 @@
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
   Place: Free
-  MarketPrice: 292356, display: true
+  MarketPrice: 323688, display: true
   # Model: @models/Blocks/Thrusters/RoundThrusters/ThrusterCVRoundNormal3x3Prefab
   # Mesh-Damage-1: Mesh/D0
   # Mesh-Damage-2: Mesh/D1
@@ -13809,7 +13806,7 @@
 { Block Id: 836, Name: WindowSmallBlocks
   Material: hull, display: true
   Shape: Invisible
-  MarketPrice: 210, display: true
+  MarketPrice: 164, display: true
   # Model: @models/Blocks/Windows/Standard/Window_v1x1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Info: bkiBlockGroup, display: true
@@ -13836,7 +13833,7 @@
 
 { Block Id: 837, Name: TrussSmallBlocks
   Material: hulllight, display: true
-  MarketPrice: 108, display: true
+  MarketPrice: 62, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Shape: Invisible
   Place: Free
@@ -13892,7 +13889,7 @@
   ShowUser: NoButCSV
 }
 { Block Id: 839, Name: StairsBlocks
-  MarketPrice: 540, display: true
+  MarketPrice: 310, display: true
   Material: hull, display: true
   Shape: Invisible
   Mesh: models
@@ -14009,7 +14006,7 @@
   LootList: 37   # still used?
   IndexName: WeaponShip
   Group: cpgHarvest
-  MarketPrice: 84587, display: true
+  MarketPrice: 90098, display: true
   Material: HWS_material_devices_kinetic
   Shape: ModelEntity
   ShowBlockName: true
@@ -14896,7 +14893,7 @@
 { Block Id: 927, Name: DecoBlocks
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 985, display: true
+  MarketPrice: 939, display: true
   # Model: @models2/Entities/Decorations/Sci-Fi_InteriorPack/ScifiBedPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
@@ -14919,7 +14916,7 @@
 { Block Id: 928, Name: ConsoleBlocks
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 2939, display: true
+  MarketPrice: 2801, display: true
   ShowBlockName: true
   # Model: @models/Blocks/Mothership/ConsoleMS01Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -15013,7 +15010,7 @@
   IndexName: RCS
   Group: cpgRCS
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 56056, display: true
+  MarketPrice: 80176, display: true
   Shape: ModelEntity
   ShowBlockName: true
   Model: @models/Blocks/Mothership/RCS_BlockT2Prefab
@@ -15566,7 +15563,7 @@
   Group: cpgConstructor
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
-  MarketPrice: 7554, display: true
+  MarketPrice: 6726, display: true
   ShowBlockName: true
   Model: @models/Blocks/Mothership/ConstructorT1Prefab
   Mesh-Damage-1: Mesh/D0
@@ -15628,7 +15625,7 @@
 { Block Id: 962, Name: FoodProcessorV2
   Class: FoodProcessorV2
   IndexName: Constructor
-  MarketPrice: 9960, display: true
+  MarketPrice: 8718, display: true
   Group: cpgFoodProcessor
   DontDecayFood: true   # now this loot container is a fridge
   Material: HWS_material_devices_kinetic, display: true
@@ -15854,7 +15851,7 @@
 { Block Id: 974, Name: WindowArmoredSmallBlocks
   Material: hullarmored, display: true
   Shape: Invisible
-  MarketPrice: 486, display: true
+  MarketPrice: 1646, display: true
   # Model: @models/Blocks/Windows/Standard/Window_v1x1ThickPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
@@ -15916,7 +15913,7 @@
   Material: hull, display: true
   Shape: Invisible
   Mesh: models
-  MarketPrice: 544, display: true
+  MarketPrice: 2106, display: true
   # Model: Mothership/windowVertMS, param1: window_nontransparent
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Info: bkiBlockGroup, display: true
@@ -16085,7 +16082,7 @@
   IndexName: Door
   Group: cpgDoor
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 616, display: true
+  MarketPrice: 524, display: true
   Shape: Invisible
   # Model: @models/Blocks/Mothership/DoorInterior01Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -16178,7 +16175,7 @@
   Class: Door
   IndexName: Door
   Group: cpgDoor
-  MarketPrice: 10580, display: true
+  MarketPrice: 8188, display: true
   Material: hullarmored, display: true
   Shape: Invisible
   # Model: @models/Blocks/Mothership/HangarDoor/HangarDoor10x5Prefab
@@ -16355,7 +16352,7 @@
   IndexName: Door
   Material: hullarmored, display: true
   Shape: Invisible
-  MarketPrice: 3001, display: true
+  MarketPrice: 2219, display: true
   # Model: @models/Blocks/Mothership/ShutterDoor1x1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
@@ -16431,7 +16428,7 @@
   IndexName: Door
   Material: hullarmored, display: true
   Shape: Invisible
-  MarketPrice: 2245, display: true
+  MarketPrice: 1785, display: true
   # Model: @models/Blocks/Spaceship/ShutterDoor1x1SVPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
@@ -16594,7 +16591,7 @@
 { Block Id: 1034, Name: GeneratorMST2, Ref: GeneratorMS
   Model: @models/Blocks/Mothership/generatorMST2Prefab
   EnergyOut: 190000, type: int, display: true, formatter: Watt
-  MarketPrice: 102696, display: true
+  MarketPrice: 120976, display: true
   CPUIn: 150000, type: int, display: true
   SizeInBlocks: "6,2,2", display: true
   Volume: 0, type: float, display: false, formatter: Liter
@@ -17098,7 +17095,7 @@
 { Block Id: 1075, Name: TrussLargeBlocks
   Material: hulllight, display: true
   Shape: Invisible
-  MarketPrice: 540, display: true
+  MarketPrice: 310, display: true
   Place: Free
   # Model: Truss/TrussCube
   Mesh: cutout
@@ -17340,7 +17337,7 @@
   Class: CockpitSS
   IndexName: Cockpit
   Group: cpgCockpit
-  MarketPrice: 5594, display: true
+  MarketPrice: 5387, display: true
   EssentialCategory: cpgCockpit
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
@@ -17376,7 +17373,7 @@
 { Block Id: 1095, Name: LCDScreenBlocks
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 5548, display: true
+  MarketPrice: 5456, display: true
   # Model: @models/Blocks/Misc/LCDNoFrame1x1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   HitPoints: 50, type: int, display: false
@@ -17504,7 +17501,7 @@
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
   Place: Free
-  MarketPrice: 5344, display: true
+  MarketPrice: 4286, display: true
   # Model: @models/Blocks/Thrusters/RoundThrusters/ThrusterSSRoundNormalPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   StackSize: 50000
@@ -17535,7 +17532,7 @@
   Class: AutoMiner
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
-  MarketPrice: 94093, display: true
+  MarketPrice: 159051, display: true
   Model: @models/Blocks/Terrain/AutoMiningDeviceT1Prefab
   Mesh-Damage-1: Mesh/geo/D0
   Mesh-Damage-2: Mesh/geo/D1
@@ -17583,7 +17580,7 @@
 { Block Id: 1109, Name: AutoMiningDeviceT2, Ref: AutoMiningDeviceT1
   Model: @models/Blocks/Terrain/AutoMiningDeviceT2Prefab
   HitPoints: 6000, type: int, display: true
-  MarketPrice: 168725, display: true
+  MarketPrice: 211013, display: true
   EnergyIn: 200, type: int, display: true, formatter: Watt
   ItemsPerHour: 200, display: true        # Attention: ItemsPerHour max is hard coded and set to 500
   ItemStorageLimit: 3500, display: true
@@ -17603,7 +17600,7 @@
 { Block Id: 1110, Name: AutoMiningDeviceT3, Ref: AutoMiningDeviceT1
   Model: @models/Blocks/Terrain/AutoMiningDeviceT3Prefab
   HitPoints: 7000, type: int, display: true
-  MarketPrice: 361944, display: true
+  MarketPrice: 423642, display: true
   EnergyIn: 320, type: int, display: true, formatter: Watt
   ItemsPerHour: 400, display: true       # Attention: ItemsPerHour max is hard coded and set to 500
   ItemStorageLimit: 6993, display: true
@@ -17624,7 +17621,7 @@
   Group: cpgEquipment
   Class: RepairBay
   IndexName: RepairBay
-  MarketPrice: 134547, display: true
+  MarketPrice: 166475, display: true
   Info: bkiRepairBay, display: true
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -17669,7 +17666,7 @@
   Class: Door
   IndexName: Door
   Group: cpgDoor
-  MarketPrice: 2316, display: true
+  MarketPrice: 3338, display: true
   Material: hullarmored, display: true
   Shape: Invisible
   # Model: @models/Blocks/Mothership/DoorNewArmoredPrefab
@@ -17737,7 +17734,7 @@
   IndexName: LandingGear
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 616, display: true
+  MarketPrice: 524, display: true
   ShowBlockName: true
   IsPhysicsColliders: false
   # Model: @models/Blocks/Landinggears/LandinggearLightPrefab
@@ -17765,7 +17762,7 @@
 }
 { Block Id: 1119, Name: LandinggearBlocksHeavySV, Ref: LandinggearBlocksSV
   Shape: Invisible
-  MarketPrice: 1432, display: true
+  MarketPrice: 1248, display: true
   # Model: @models/Blocks/Landinggears/LandinggearHeavyPrefab
   Info: bkiBlockGroup, display: true
   SizeInBlocks: "2,1,2", display: false
@@ -17783,7 +17780,7 @@
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
   ShowBlockName: true
-  MarketPrice: 1048, display: true
+  MarketPrice: 772, display: true
   # Model: @models/Blocks/Landinggears/LandinggearLightPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
@@ -17890,7 +17887,7 @@
   Group: cpgHoverEngine
   EssentialCategory: cpgHoverEngine
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 4713, display: true
+  MarketPrice: 3977, display: true
   Shape: ModelEntity
   ShowBlockName: true
   # ModelOffset: "0,0.5,0"
@@ -17939,7 +17936,7 @@
 { Block Id: 1128, Name: WindowLargeBlocks
   Material: hull, display: true
   Shape: Invisible
-  MarketPrice: 1050, display: true
+  MarketPrice: 820, display: true
   # Model: @models/Blocks/Windows/Standard/Window_v1x1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
@@ -17972,7 +17969,7 @@
 { Block Id: 1129, Name: WindowArmoredLargeBlocks
   Material: hullarmored, display: true
   Shape: Invisible
-  MarketPrice: 2016, display: true
+  MarketPrice: 4152, display: true
   # Model: @models/Blocks/Windows/Standard/Window_v1x1ThickPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
@@ -18002,7 +17999,7 @@
 
 { Block Id: 1130, Name: HoverEngineLarge, Ref: HoverEngineSmall
   SizeInBlocks: "2,1,2", display: true
-  MarketPrice: 8891, display: true
+  MarketPrice: 7189, display: true
   Model: @models/Blocks/Spaceship/HoverEngineLargePrefab
   Mass: 340, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -18023,7 +18020,7 @@
 
 { Block Id: 1131, Name: RepairBayCV, Ref: RepairBayBA
   AllowPlacingAt: MS, display: true
-  MarketPrice: 133907, display: true
+  MarketPrice: 161011, display: true
   EnergyIn: 25000, type: int, display: true, formatter: Watt
   HitPoints: 500, type: int, display: true
   Repairs: "SS,GV", display: true
@@ -18049,7 +18046,7 @@
   IndexName: Constructor
   Group: cpgConstructor
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 52723, display: true
+  MarketPrice: 115249, display: true
   Shape: ModelEntity
   Model: @models/Blocks/Mothership/FurnacePrefab
   Mesh-Damage-1: Mesh/D0
@@ -18129,7 +18126,7 @@
 { Block Id: 1134, Name: ATM
   Class: ATM
   Group: cpgTrading
-  MarketPrice: 7456, display: true
+  MarketPrice: 6812, display: true
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
   ShowBlockName: true
@@ -18165,7 +18162,7 @@
 { Block Id: 1135, Name: WingBlocks
   Material: hull, display: true
   Texture: 50
-  MarketPrice: 2552, display: true
+  MarketPrice: 1678, display: true
   BlockColor: "110,110,110"
   Shape: Invisible
   # Model: Wings/Wing6x9a
@@ -18190,7 +18187,7 @@
 
 { Block Id: 1136, Name: BlastDoorLargeBlocks
   Class: Door
-  MarketPrice: 17035, display: true
+  MarketPrice: 19055, display: true
   CustomIcon: BlastShutterDoors1x1x1
   IndexName: Door
   Material: hullcombat, display: true
@@ -19493,7 +19490,7 @@
 { Block Id: 1230, Name: SensorTriggerBlocksSV
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 723, display: true
+  MarketPrice: 677, display: true
   # Model: @models/Blocks/Misc/LeverPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   # ModelOffset: "0,0.5,0"
@@ -19514,7 +19511,7 @@
 }
 
 { Block Id: 1231, Name: RepairBayBAT2, Ref: RepairBayBA
-  MarketPrice: 200023, display: true
+  MarketPrice: 244585, display: true
   Model: @models/Blocks/Misc/RepairBayT2Prefab
 
   IsRepairToBlueprint: true
@@ -19571,7 +19568,7 @@
   # Model: @models/Blocks/WeaponsShip/DrillAttachmentT2Prefab
   WeaponItem: DrillAttachmentT2Weapon
   Damage: 30, display: true
-  MarketPrice: 70229, display: true
+  MarketPrice: 73351, display: true
 
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 1165, type: float, display: true, formatter: Kilogram
@@ -19775,7 +19772,7 @@
   Class: CockpitSS
   IndexName: Cockpit
   Group: cpgCockpit
-  MarketPrice: 32618, display: true
+  MarketPrice: 47502, display: true
   EssentialCategory: cpgCockpit
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
@@ -19821,7 +19818,7 @@
 }
 # Obsolete Block (has been used during EXP 6 phase)
 { Block Id: 1255, Name: HullDestroyed
-  MarketPrice: 540, display: true
+  MarketPrice: 310, display: true
   Material: hull, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Texture: 50
@@ -19863,7 +19860,7 @@
 { Block Id: 1257, Name: SensorTriggerBlocks
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 1396, display: true
+  MarketPrice: 1304, display: true
   # Model: @models/Blocks/Misc/LeverPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   # ModelOffset: "0,0.5,0"
@@ -20201,7 +20198,7 @@
 { Block Id: 1278, Name: LightLargeBlocks
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 618, display: true
+  MarketPrice: 526, display: true
   # Model: @models/Blocks/Mothership/lightMS01Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
@@ -20236,7 +20233,7 @@
 }
 { Block Id: 1281, Name: DecoBlocks2, Ref: DecoBlocks
   Shape: Invisible
-  MarketPrice: 1587, display: true
+  MarketPrice: 1541, display: true
   # Model: @models2/Entities/Decorations/LaboratoryPack/Scanner3Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SizeInBlocks: "1,1,1", display: true
@@ -20521,7 +20518,7 @@
   Info: bkiDetector, display: true
   WeaponItem: DetectorCVWeapon
   WeaponItemRotation: false
-  MarketPrice: 24422, display: true
+  MarketPrice: 30176, display: true
   IndexName: WeaponShip
   Group: cpgEquipment
   Material: HWS_material_devices_kinetic, display: true
@@ -20665,7 +20662,7 @@
   Class: Teleporter
   Group: cpgTransportation
   Category: Devices
-  MarketPrice: 188385, display: true
+  MarketPrice: 242987, display: true
   IndexName: Teleporter
   Info: bkiTeleporterCV, display: true
   # AllowedInBlueprint: false, display: true
@@ -20759,7 +20756,7 @@
 }
 { Block Id: 1321, Name: SpotlightBlocks, Ref: SpotlightSSCube
   Shape: Invisible
-  MarketPrice: 418, display: true
+  MarketPrice: 326, display: true
   # Model: @models/Blocks/Spaceship/spotlightSSCubePrefab
   Mass: 85, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -20777,7 +20774,7 @@
 # Armored Concrete Block
 { Block Id: 1322, Name: ConcreteArmoredBlocks
   Material: concretearmored, display: true
-  MarketPrice: 3952, display: true
+  MarketPrice: 3722, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Texture: 93
   TextureTable: 2    # 2 = concrete table
@@ -21336,7 +21333,7 @@
   Class: ArmorLocker
   Group: cpgEquipment
   GridSize: "5,3"
-  MarketPrice: 7596, display: true
+  MarketPrice: 6354, display: true
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
   ShowBlockName: true
@@ -21378,7 +21375,7 @@
   Class: Deconstructor
   Group: cpgConstructor
   IndexName: Constructor
-  MarketPrice: 38844, display: true
+  MarketPrice: 54326, display: true
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
   Model: @models/Blocks/Mothership/DeconstructorPrefab
@@ -21423,7 +21420,7 @@
   Class: RepairStation
   IndexName: Container
   Group: cpgEquipment
-  MarketPrice: 26485, display: true
+  MarketPrice: 27793, display: true
   GridSize: "4,4"
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -21521,7 +21518,7 @@
   Class: Door
   IndexName: Door
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 2081, display: true
+  MarketPrice: 1759, display: true
   Shape: Invisible
   # Model: @models/Blocks/Spaceship/DoorNewSSPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -21557,7 +21554,7 @@
 { Block Id: 1377, Name: TeleporterBA
   Info: bkiTeleporterBA, display: true
   Class: Teleporter
-  MarketPrice: 357306, display: true
+  MarketPrice: 458654, display: true
   Group: cpgTransportation
   Category: Devices
   IndexName: Teleporter
@@ -21626,7 +21623,7 @@
 { Block Id: 1380, Name: ArmorLockerSV
   Class: ArmorLocker
   Group: cpgEquipment
-  MarketPrice: 7396, display: true
+  MarketPrice: 6154, display: true
   GridSize: "5,1"
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -21722,7 +21719,7 @@
 
 # Destroyed Steel Block (large) - block group
 { Block Id: 1386, Name: HullLargeDestroyedBlocks
-  MarketPrice: 540, display: true
+  MarketPrice: 310, display: true
   Material: hullarmored, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Texture: 50
@@ -21779,7 +21776,7 @@
 
 # Destroyed Steel Block (small) - block group
 { Block Id: 1389, Name: HullSmallDestroyedBlocks
-  MarketPrice: 216, display: true
+  MarketPrice: 124, display: true
   Material: hullarmored, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Texture: 50
@@ -21898,7 +21895,7 @@
 
 { Block Id: 1395, Name: AlienLargeBlocks, Ref: AlienBlocks
   Material: alien, display: true
-  MarketPrice: 1460, display: true
+  MarketPrice: 1230, display: true
   Info: bkiBlockGroup, display: true
   AllowedInBlueprint: true, display: false
   HitPoints: 2750, type: int, display: false
@@ -21966,7 +21963,7 @@
 }
 
 { Block Id: 1402, Name: CoreNoCPU, Ref: Core
-  MarketPrice: 12248, display: true
+  MarketPrice: 11742, display: true
   #Model: @models/Blocks/Misc/CoreBlockPlayerPrefab
   IsUsingCPUSystem: false
   Info: bkiCoreNoCPU, display: true
@@ -22127,7 +22124,7 @@
 }
 { Block Id: 1417, Name: ThrusterGVJetRound1x3x1, Ref: ThrusterGVRoundNormal
   Model: @models/Blocks/Thrusters/ThrusterJetRound1x3x1Prefab
-  MarketPrice: 14298, display: true
+  MarketPrice: 11952, display: true
   Mass: 743, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   HitPoints: 300, type: int, display: true
@@ -22264,7 +22261,7 @@
 { Block Id: 1435, Name: WarpDriveSV, Ref: WarpDrive
   Model: @models/Blocks/Spaceship/WarpDriveSVPrefab
   AllowPlacingAt: SS, display: true
-  MarketPrice: 24150, display: true
+  MarketPrice: 23230, display: true
   SizeInBlocks: "3,2,5", display: true
   Mass: 2490, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -22296,7 +22293,7 @@
 { Block Id: 1436, Name: LandClaimDevice
   Class: LandClaimDevice
   Group: cpgEquipment
-  MarketPrice: 30512, display: true
+  MarketPrice: 43743, display: true
   IndexName: LCDevice
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -22331,7 +22328,7 @@
 { Block Id: 1437, Name: PentaxidTankSV
   Class: WarpDriveTank
   Group: cpgWarp
-  MarketPrice: 15486, display: true
+  MarketPrice: 15026, display: true
   IndexName: WarpDriveTank
   LootList: 13   #  lootcontainer Warp Drive Tank SV
   Material: HWS_material_devices_kinetic, display: true
@@ -22508,7 +22505,7 @@
   ChildShapes: "Stairs1x2x1"
 }
 { Block Id: 1446, Name: ConstructorSV, Ref: ConstructorSmallV2
-  MarketPrice: 15974, display: true
+  MarketPrice: 14732, display: true
   Material: HWS_material_devices_kinetic, display: true
   Class: ConstructorSmallV2
   AllowPlacingAt: "SS", display: true
@@ -22534,7 +22531,7 @@
 }
 
 { Block Id: 1447, Name: ConstructorHV, Ref: ConstructorSmallV2
-  MarketPrice: 6269, display: true
+  MarketPrice: 5671, display: true
   Material: HWS_material_devices_kinetic, display: true
   Class: ConstructorHover
   AllowPlacingAt: "GV", display: true
@@ -22934,7 +22931,7 @@
 { Block Id: 1484, Name: HoverEngineThruster
   IndexName: HoverEngineV2
   Group: cpgHoverEngine
-  MarketPrice: 1809, display: true
+  MarketPrice: 1441, display: true
   EssentialCategory: "cpgHoverEngine, cpgThruster"
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -23026,7 +23023,7 @@
 }
 { Block Id: 1486, Name: RepairBayCVT2, Ref: RepairBayCV
   Model: @models/Blocks/Misc/RepairBayT2Prefab
-  MarketPrice: 198863, display: true
+  MarketPrice: 235385, display: true
 
   Mass: 51770, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -23092,7 +23089,7 @@
   Group: cpgEquipment
   Class: RepairBayConsole
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 143938, display: true
+  MarketPrice: 176234, display: true
   Shape: ModelEntity
   ShowBlockName: true
   Info: bkiRepairBayConsole, display: true
@@ -23162,7 +23159,7 @@
   Class: SolarPanel
   IndexName: SolarPanel
   Group: cpgSolar
-  MarketPrice: 650, display: true
+  MarketPrice: 512, display: true
   PanelAngle: 30
   SolarPanelEfficiency: 3, display: true
   EssentialCategory: cpgFuelTank
@@ -23192,7 +23189,7 @@
   Class: SolarGenerator
   IndexName: SolarGenerator
   Group: cpgSolar
-  MarketPrice: 1402, display: true
+  MarketPrice: 1218, display: true
   EssentialCategory: cpgGenerator
   IsSolarPanel: true
   Material: HWS_material_devices_kinetic, display: true
@@ -23289,7 +23286,7 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Shape: Invisible
-  MarketPrice: 6033, display: true
+  MarketPrice: 9111, display: true
   # Model: @models/Blocks/Mothership/ForcefieldEmitter1x1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
@@ -23413,7 +23410,7 @@
   Class: SolarPanel
   IndexName: SolarPanel
   Group: cpgSolar
-  MarketPrice: 440, display: true
+  MarketPrice: 348, display: true
   PanelAngle: 30
   SolarPanelEfficiency: 1.5, display: true
   EssentialCategory: cpgFuelTank
@@ -23813,7 +23810,7 @@
 }
 
 { Block Id: 1549, Name: HeavyWindowBlocks
-  MarketPrice: 3266, display: true
+  MarketPrice: 2806, display: true
   Material: hullcombat, display: true
   Shape: Invisible
   # Model: @models/Blocks/Windows/Heavy/HeavyWindowAPrefab
@@ -23951,7 +23948,7 @@
 { Block Id: 1571, Name: MedicalStationBlocks
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 32868, display: true
+  MarketPrice: 31304, display: true
   # Model: @models/Blocks/Mothership/MedicStationPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
@@ -24011,7 +24008,7 @@
 { Block Id: 1575, Name: DetectorHVT1
   Info: bkiDetector, display: true
   WeaponItem: DetectorHVWeapon
-  MarketPrice: 3088, display: true
+  MarketPrice: 3042, display: true
   WeaponItemRotation: false
   CustomIcon: DetectorSVT1
   IndexName: WeaponShip
@@ -24154,7 +24151,7 @@
   IndexName: WeaponShip
   Group: cpgHarvest
   Material: HWS_material_devices_kinetic, display: false
-  MarketPrice: 162586, display: true
+  MarketPrice: 173038, display: true
   Shape: ModelEntity
   ShowBlockName: true
   WeaponItem: DrillAttachmentCVWeapon
@@ -24207,7 +24204,7 @@
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
   ShowBlockName: true
-  MarketPrice: 4863, display: true
+  MarketPrice: 4587, display: true
   Model: @models/Blocks/Spaceship/CloneChamberHVPrefab
   Mesh-Damage-1: Mesh/D0
   Mesh-Damage-2: Mesh/D1
@@ -24243,7 +24240,7 @@
   # Class: MedicStation
   # BuffName: MedicStation
   IndexName: SpawnPoint
-  MarketPrice: 15823, display: true
+  MarketPrice: 17775, display: true
   Group: cpgMedic
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -24281,7 +24278,7 @@
   Model: @models/Blocks/Thrusters/ThrusterJetRound2x5x2V2Prefab
   ThrusterForce: 1003, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 2.0, type: float, display: true
-  MarketPrice: 25761, display: true
+  MarketPrice: 24979, display: true
 
   UnlockCost: 14, display: true
   UnlockLevel: 12, display: true
@@ -24322,7 +24319,7 @@
 { Block Id: 1588, Name: FridgeBlocks
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 3485, display: true
+  MarketPrice: 2565, display: true
   # Model: @models/Blocks/Mothership/FridgeT1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
@@ -24378,7 +24375,7 @@
   BlastDamage: 750
 }
 { Block Id: 1591, Name: ThrusterJetRound3x10x3V2, Ref: ThrusterJetRound3x10x3
-  MarketPrice: 41091, display: true
+  MarketPrice: 39849, display: true
   Model: @models/Blocks/Thrusters/ThrusterJetRound3x10x3V2Prefab
   ThrusterForce: 3331, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 2.5, type: float, display: true
@@ -24391,7 +24388,7 @@
   TechTreeNames: Small Vessel
 }
 { Block Id: 1592, Name: ThrusterJetRound3x13x3V2, Ref: ThrusterJetRound3x13x3
-  MarketPrice: 18674, display: true
+  MarketPrice: 17846, display: true
   Model: @models/Blocks/Thrusters/ThrusterJetRound3x13x3V2Prefab
   ThrusterForce: 4222, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 3.0, type: float, display: true
@@ -24414,7 +24411,7 @@
   Material: hullcombat, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Texture: 56
-  MarketPrice: 842, display: true
+  MarketPrice: 658, display: true
   BlockColor: "170,170,170"
   Shape: Invisible
   # Model: Cube
@@ -24845,7 +24842,7 @@
   ShowUser: NoButCSV
 }
 { Block Id: 1626, Name: ModularWingBlocks
-  MarketPrice: 2230, display: true
+  MarketPrice: 1655, display: true
   Material: hull, display: true
   Shape: Invisible
   # Model: @models/Blocks/WingsModular/ModWingTaperLPrefab
@@ -24875,7 +24872,7 @@
 { Block Id: 1627, Name: RemoteConnection
   Class: RemoteConnector
   IndexName: Connector
-  MarketPrice: 2848, display: true
+  MarketPrice: 2802, display: true
   Group: cpgEquipment
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -24914,7 +24911,7 @@
 { Block Id: 1628, Name: ConstructorT0, Ref: ConstructorT1V2
   Material: HWS_material_devices_kinetic, display: true
   Class: ConstructorT0
-  MarketPrice: 3831, display: true
+  MarketPrice: 3394, display: true
   Model: @models/Blocks/Mothership/ConstructorT0Prefab
   SizeInBlocks: "1,1,1", display: true
   Mass: 1660, type: float, display: true, formatter: Kilogram
@@ -24979,7 +24976,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  MarketPrice: 22005, display: true
+  MarketPrice: 33719, display: true
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
   Place: Face
@@ -25009,7 +25006,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 195927, display: true
+  MarketPrice: 206103, display: true
   Shape: Invisible
   Place: Face
   # Model: @models/Blocks/Turrets/TurretMSRocketPrefab
@@ -25038,7 +25035,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_devices_energy, display: true
-  MarketPrice: 17752, display: true
+  MarketPrice: 22644, display: true
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretMSPulseLaserPrefab
@@ -25063,7 +25060,7 @@
   TechTreeNames: Capital Vessel
 }
 { Block Id: 1640, Name: TurretMSToolBlocks      #TurretPlayer CV GROUP Tool
-  MarketPrice: 122922, display: true
+  MarketPrice: 128274, display: true
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
@@ -25098,7 +25095,7 @@
   Group: cpgTurret
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 283710, display: true
+  MarketPrice: 343030, display: true
   Place: Face
   # Model: @models/Blocks/Turrets/TurretMSArtilleryPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -25127,7 +25124,7 @@
   Info: bkiDetector, display: true
   WeaponItem: DetectorSVWeapon
   WeaponItemRotation: false
-  MarketPrice: 3328, display: true
+  MarketPrice: 3282, display: true
   SizeInBlocks: "1,1,1", display: true
   AllowPlacingAt: "SS", display: true
   MaxCount: 1, type: int, display: true
@@ -25184,7 +25181,7 @@
 
 # BA Turret Groups
 { Block Id: 1648, Name: TurretBaseProjectileBlocks      #TurretPlayer BA GROUP Projectile
-  MarketPrice: 4278, display: true
+  MarketPrice: 3542, display: true
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
@@ -25217,7 +25214,7 @@
   Group: cpgTurret
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 10623, display: true
+  MarketPrice: 13103, display: true
   Place: Face
   # Model: @models/Blocks/Turrets/TurretMSRocketPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -25244,7 +25241,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_devices_energy, display: true
-  MarketPrice: 127940, display: true
+  MarketPrice: 136232, display: true
   Shape: Invisible
   Place: Face
   # Model: @models/Blocks/Turrets/TurretMSPulseLaserPrefab
@@ -25274,7 +25271,7 @@
   Group: cpgTurret
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 331767, display: true
+  MarketPrice: 361673, display: true
   Place: Face
   # Model: @models/Blocks/Turrets/TurretMSArtilleryPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -25438,7 +25435,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  MarketPrice: 4189, display: true
+  MarketPrice: 2901, display: true
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
   Place: Face
@@ -25463,7 +25460,7 @@
   TechTreeNames: Hover Vessel
 }
 { Block Id: 1660, Name: TurretGVRocketBlocks             #TurretPlayer HV GROUP Rocket
-  MarketPrice: 7949, display: true
+  MarketPrice: 7581, display: true
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
@@ -25495,7 +25492,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_devices_energy, display: true
-  MarketPrice: 66028, display: true
+  MarketPrice: 69910, display: true
   Shape: Invisible
   Place: Face
   # Model: @models/Blocks/Turrets/TurretMSPulseLaserPrefab
@@ -25525,7 +25522,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 122322, display: true
+  MarketPrice: 125146, display: true
   Shape: Invisible
   Place: Face
   # Model: @models/Blocks/Turrets/TurretMSArtilleryPrefab
@@ -25554,7 +25551,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_devices_energy, display: false
-  MarketPrice: 35202, display: true
+  MarketPrice: 38946, display: true
   Shape: Invisible
   Place: Face
   # Model: @models/Blocks/Turrets/TurretMSArtilleryPrefab
@@ -25740,7 +25737,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  MarketPrice: 3538, display: true
+  MarketPrice: 3032, display: true
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
   Place: Face
@@ -25960,7 +25957,7 @@
   Class: ContainerController
   IndexName: Container
   Group: cpgCargoBox
-  MarketPrice: 3644, display: true
+  MarketPrice: 3046, display: true
   LootList: 76        # 128 slots
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -26002,7 +25999,7 @@
   LootList: 68        # 63 slots
   Material: HWS_material_devices_kinetic, display: true
   Shape: New
-  MarketPrice: 2096, display: true
+  MarketPrice: 1544, display: true
   Place: Free
   Model: Cube
   # Texture: 15
@@ -26046,7 +26043,7 @@
   Model: @models/Blocks/Spaceship/ContainerControllerSmallPrefab
   Mass: 55, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  MarketPrice: 2564, display: true
+  MarketPrice: 2426, display: true
   HitPoints: 100, type: int, display: true
   StackSize: 50000
   
@@ -26064,7 +26061,7 @@
 { Block Id: 1685, Name: ContainerExtensionSmall, Ref: ContainerExtensionLarge
   Mass: 52, type: float, display: true, formatter: Kilogram
   HitPoints: 100, type: int, display: true
-  MarketPrice: 416, display: true
+  MarketPrice: 324, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   StackSize: 50000
   
@@ -26084,7 +26081,7 @@
 { Block Id: 1686, Name: ContainerHarvestControllerSmall, Ref: ContainerControllerLarge
   Class: ContainerController
   Group: cpgHarvest
-  MarketPrice: 2564, display: true
+  MarketPrice: 2426, display: true
   IndexName: HarvestCntr
   Model: @models/Blocks/Spaceship/ContainerHarvestControllerSmallPrefab
   BlockColor: "62,30,10"
@@ -26108,7 +26105,7 @@
   Class: ContainerController
   Group: cpgHarvest
   IndexName: HarvestCntr
-  MarketPrice: 3844, display: true
+  MarketPrice: 3246, display: true
   Model: @models/Blocks/Mothership/ContainerHarvestControllerLargePrefab
   BlockColor: "62,30,10"
   Info: bkiContainerHarvest, display: true                                      # adapt
@@ -26125,7 +26122,7 @@
   Class: ContainerController
   Group: cpgAmmo
   IndexName: AmmoCntr
-  MarketPrice: 2564, display: true
+  MarketPrice: 2426, display: true
   Model: @models/Blocks/Spaceship/ContainerAmmoControllerSmallPrefab
   BlockColor: "0,40,0"
   LootList: 69
@@ -26151,7 +26148,7 @@
   Class: ContainerController
   Group: cpgAmmo
   IndexName: AmmoCntr
-  MarketPrice: 2081, display: true
+  MarketPrice: 1529, display: true
   Model: @models/Blocks/Mothership/ContainerAmmoControllerLargePrefab
   BlockColor: "0,40,0"
   Info: bkiContainerAmmo, display: true                                      # adapt
@@ -26174,7 +26171,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Shape: Invisible
   Place: Free
-  MarketPrice: 216, display: true
+  MarketPrice: 124, display: true
   Mesh: cutout
   # Model: Walkway
   Texture: 61
@@ -26207,7 +26204,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Shape: Invisible
   Place: Free
-  MarketPrice: 540, display: true
+  MarketPrice: 310, display: true
   Mesh: cutout
   # Model: Walkway
   Texture: 61
@@ -26241,7 +26238,7 @@
   IndexName: Door
   Material: hullarmored, display: true
   Shape: Invisible
-  MarketPrice: 5058, display: true
+  MarketPrice: 3862, display: true
   # Model: @models/Blocks/Mothership/Ramps/Ramps/Ramp3x1x1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Face
@@ -26274,7 +26271,7 @@
   Class: Door
   IndexName: Door
   Material: hullarmored, display: true
-  MarketPrice: 2529, display: true
+  MarketPrice: 1931, display: true
   Shape: Invisible
   # Model: @models/Blocks/Mothership/Ramps/Ramps/Ramp3x1x1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -26452,7 +26449,7 @@
   Group: cpgRamp
   Material: hullarmored, display: true
   Shape: Invisible
-  MarketPrice: 6322, display: true
+  MarketPrice: 5126, display: true
   # Model: @models/Blocks/Mothership/HangarDoor/HangarDoor10x5Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
@@ -26545,7 +26542,7 @@
   Shape: Invisible
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
-  MarketPrice: 1296, display: true
+  MarketPrice: 744, display: true
   AllowPlacingAt: "Base,MS", display: true
   Mass: 1250, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -26566,7 +26563,7 @@
 { Block Id: 1712, Name: ContainerSmallBlocks
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 216, display: true
+  MarketPrice: 124, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
   AllowPlacingAt: "SS,GV", display: true
@@ -26664,7 +26661,7 @@
 { Block Id: 1719, Name: DecoVesselBlocks
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 1418, display: true
+  MarketPrice: 1326, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Face
   Info: bkiBlockGroup, display: true
@@ -27154,7 +27151,7 @@
 { Block Id: 1774, Name: ThrusterGVRoundNormalT2, Ref: ThrusterGVRoundNormal
   Model: @models/Blocks/Thrusters/RoundThrusters/ThrusterGVRoundNormalT2Prefab
   SizeInBlocks: "1,2,1", display: true
-  MarketPrice: 8353, display: true
+  MarketPrice: 7157, display: true
   HitPoints: 220, type: int, display: true
   Mass: 485, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -27176,7 +27173,7 @@
 }
 { Block Id: 1775, Name: ThrusterGVRoundLarge, Ref: ThrusterGVRoundNormal
   Model: @models/Blocks/Thrusters/RoundThrusters/ThrusterGVRoundLargePrefab
-  MarketPrice: 9063, display: true
+  MarketPrice: 7407, display: true
   SizeInBlocks: "1,3,1", display: true
   HitPoints: 350, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
@@ -27198,7 +27195,7 @@
 }
 { Block Id: 1776, Name: ThrusterGVRoundLargeT2, Ref: ThrusterGVRoundNormal
   Model: @models/Blocks/Thrusters/RoundThrusters/ThrusterGVRoundLargeT2Prefab
-  MarketPrice: 14746, display: true
+  MarketPrice: 12814, display: true
   SizeInBlocks: "1,3,1", display: true
   HitPoints: 400, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
@@ -27413,7 +27410,7 @@
   Class: CockpitSS
   IndexName: Cockpit
   Group: cpgCockpit
-  MarketPrice: 10428, display: true
+  MarketPrice: 14149, display: true
   EssentialCategory: cpgCockpit
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
@@ -27506,7 +27503,7 @@
   Class: ShieldGenerator
   IndexName: ShieldGenerator
   EnergyDynamicGroup: Shield
-  MarketPrice: 173140, display: true
+  MarketPrice: 270422, display: true
   Group: cpgEquipment
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -27555,7 +27552,7 @@
 }
 { Block Id: 1809, Name: ShieldGeneratorCV, Ref: ShieldGeneratorBA
   Model: @models/Blocks/Misc/ShieldGeneratorLargePrefab
-  MarketPrice: 191408, display: true
+  MarketPrice: 258138, display: true
   Mesh-Damage-1: Mesh/D0
   Mesh-Damage-2: Mesh/D1
   Mesh-Damage-3: Mesh/D2
@@ -27581,7 +27578,7 @@
 }
 { Block Id: 1810, Name: ShieldGeneratorSV, Ref: ShieldGeneratorBA
   Model: @models/Blocks/Misc/ShieldGeneratorSmallPrefab
-  MarketPrice: 78025, display: true
+  MarketPrice: 102833, display: true
   Mesh-Damage-1: Mesh/D0
   Mesh-Damage-2: Mesh/D1
   Mesh-Damage-3: Mesh/D2
@@ -27611,7 +27608,7 @@
 }
 { Block Id: 1811, Name: ShieldGeneratorCVT2, Ref: ShieldGeneratorCV
   Model: @models/Blocks/Misc/ShieldGeneratorLargeT2Prefab
-  MarketPrice: 342781, display: true
+  MarketPrice: 445001, display: true
   Mesh-Damage-1: Mesh/D0
   Mesh-Damage-2: Mesh/D1
   Mesh-Damage-3: Mesh/D2
@@ -27639,7 +27636,7 @@
 }
 { Block Id: 1812, Name: ShieldGeneratorBAT2, Ref: ShieldGeneratorBA
   Model: @models/Blocks/Misc/ShieldGeneratorLargeT2Prefab
-  MarketPrice: 299765, display: true
+  MarketPrice: 395553, display: true
   Mesh-Damage-1: Mesh/D0
   Mesh-Damage-2: Mesh/D1
   Mesh-Damage-3: Mesh/D2
@@ -28077,7 +28074,7 @@
 
 { Block Id: 1876, Name: DrillAttachmentLarge, Ref: DrillAttachment
   Model: @models/Blocks/WeaponsShip/DrillAttachmentLargePrefab
-  MarketPrice: 9750, display: true
+  MarketPrice: 7450, display: true
   IsRetractable: false, display: true
   WeaponItem: DrillAttachmentLargeWeapon
   SizeInBlocks: "3,8,3", display: true
@@ -28158,7 +28155,7 @@
 }
 { Block Id: 1888, Name: ShieldGeneratorHV, Ref: ShieldGeneratorBA
   Model: @models/Blocks/Misc/ShieldGeneratorSmallPrefab
-  MarketPrice: 107693, display: true
+  MarketPrice: 138818, display: true
   Mesh-Damage-1: Mesh/D0
   Mesh-Damage-2: Mesh/D1
   Mesh-Damage-3: Mesh/D2
@@ -28569,7 +28566,7 @@
 { Block Id: 1956, Name: VentilatorBlocks
   Material: hull, display: true
   Shape: Invisible
-  MarketPrice: 1757, display: true
+  MarketPrice: 1343, display: true
   # Model: @models/Blocks/Mothership/VentilatorCubePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base,MS,SS,GV", display: true
@@ -29103,7 +29100,7 @@
   IndexName: CPUExtender
   # EssentialCategory: cpgCPUExtender
   Material: HWS_material_devices_kinetic, display: true
-  MarketPrice: 27590, display: true
+  MarketPrice: 27910, display: true
   Shape: ModelEntity
   ShowBlockName: true
   Model: @models/Blocks/Misc/CPUExtenderSmallT2Prefab
@@ -29148,7 +29145,7 @@
 { Block Id: 2024, Name: CPUExtenderHVT3
   # Class: CPUExtender
   Group: cpgCore
-  MarketPrice: 300976, display: true
+  MarketPrice: 369704, display: true
   IndexName: CPUExtender
   # EssentialCategory: cpgCPUExtender
   Material: HWS_material_devices_kinetic, display: true
@@ -29199,7 +29196,7 @@
 { Block Id: 2025, Name: CPUExtenderHVT4, Ref: CPUExtenderHVT3
   Model: @models/Blocks/Misc/CPUExtenderSmallT4Prefab
   SizeInBlocks: "2,1,1", display: true
-  MarketPrice: 951244, display: true
+  MarketPrice: 1015596, display: true
   Mass: 750, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MaxCount: 4, type: int, display: true
@@ -29223,7 +29220,7 @@
   # Class: CPUExtender
   Group: cpgCore
   IndexName: CPUExtender
-  MarketPrice: 29236, display: true
+  MarketPrice: 31164, display: true
   # EssentialCategory: cpgCPUExtender
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
@@ -29270,7 +29267,7 @@
 { Block Id: 2027, Name: CPUExtenderSVT3
   # Class: CPUExtender
   Group: cpgCore
-  MarketPrice: 433156, display: true
+  MarketPrice: 539924, display: true
   IndexName: CPUExtender
   # EssentialCategory: cpgCPUExtender
   Material: HWS_material_devices_kinetic, display: true
@@ -29321,7 +29318,7 @@
 { Block Id: 2028, Name: CPUExtenderSVT4, Ref: CPUExtenderSVT3
   Model: @models/Blocks/Misc/CPUExtenderSmallT4Prefab
   SizeInBlocks: "2,1,1", display: true
-  MarketPrice: 1080528, display: true
+  MarketPrice: 1183472, display: true
   Mass: 750, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MaxCount: 4, type: int, display: true
@@ -29342,7 +29339,7 @@
  # ShowUser: No
 }
 { Block Id: 2029, Name: CPUExtenderCVT2
-  MarketPrice: 31080, display: true
+  MarketPrice: 36500, display: true
   # Class: CPUExtender
   Group: cpgCore
   IndexName: CPUExtender
@@ -29391,7 +29388,7 @@
 }
 { Block Id: 2030, Name: CPUExtenderCVT3
   # Class: CPUExtender
-  MarketPrice: 1239486, display: true
+  MarketPrice: 1452934, display: true
   Group: cpgCore
   IndexName: CPUExtender
   # EssentialCategory: cpgCPUExtender
@@ -29443,7 +29440,7 @@
 { Block Id: 2031, Name: CPUExtenderCVT4, Ref: CPUExtenderCVT3
   Model: @models/Blocks/Misc/CPUExtenderCPrefab
   SizeInBlocks: "2,1,1", display: true
-  MarketPrice: 2533010, display: true
+  MarketPrice: 2801074, display: true
   Mass: 3225, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MaxCount: 4, type: int, display: true
@@ -29464,7 +29461,7 @@
  # ShowUser: No
 }
 { Block Id: 2032, Name: CPUExtenderBAT2
-  MarketPrice: 31080, display: true
+  MarketPrice: 36500, display: true
   # Class: CPUExtender
   Group: cpgCore
   IndexName: CPUExtender
@@ -29513,7 +29510,7 @@
 }
 { Block Id: 2033, Name: CPUExtenderBAT3
   # Class: CPUExtender
-  MarketPrice: 1239486, display: true
+  MarketPrice: 1452934, display: true
   Group: cpgCore
   IndexName: CPUExtender
   # EssentialCategory: cpgCPUExtender
@@ -29565,7 +29562,7 @@
 { Block Id: 2034, Name: CPUExtenderBAT4, Ref: CPUExtenderBAT3
   Model: @models/Blocks/Misc/CPUExtenderCPrefab
   SizeInBlocks: "2,1,1", display: true
-  MarketPrice: 2531050, display: true
+  MarketPrice: 2798010, display: true
   Mass: 3225, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MaxCount: 4, type: int, display: true
@@ -29976,7 +29973,7 @@
   Shape: New
   Place: Free
   Model: Cube
-  TemplateRoot: HWSTerraBlockLarge
+  TemplateRoot: HWSTerraBlocksLarge
   AllowPlacingAt: "Base,MS", display: true
   HitPoints: 3000, type: int, display: true
   StackSize: 50000
@@ -30211,7 +30208,6 @@
   ChildShapes: "WallMediumDouble, RampBDouble, SmallCornerRoundB2, CubeSteppedEdge, CubeQuarterEdge, CubeHalfRamp, CubeHalfCubeConnector, CornerSmallCMediumLow, WallLowDouble, CubeRoundConnectorAMedium, CubeRoundConnectorALow, CornerSmallBMediumLow, WallSlopedBold, CylinderCubeConnector, CylinderCubeHalfConnector, CylinderWallConnector"
 }
 
-
 { Block Name: HWSPyroBlocksSmall
   Material: HWS_material_pyroblocksmall, display: true
   MarketPrice: 30003, display: true
@@ -30393,7 +30389,6 @@
   MarketPrice: 1, display: true
   ChildShapes: "WallMediumDouble, RampBDouble, SmallCornerRoundB2, CubeSteppedEdge, CubeQuarterEdge, CubeHalfRamp, CubeHalfCubeConnector, CornerSmallCMediumLow, WallLowDouble, CubeRoundConnectorAMedium, CubeRoundConnectorALow, CornerSmallBMediumLow, WallSlopedBold, CylinderCubeConnector, CylinderCubeHalfConnector, CylinderWallConnector"
 }
-
 
 { Block Name: HWSObsidianBlocksSmall
   Material: HWS_material_obsidianblocksmall, display: true
@@ -30577,7 +30572,6 @@
   ChildShapes: "WallMediumDouble, RampBDouble, SmallCornerRoundB2, CubeSteppedEdge, CubeQuarterEdge, CubeHalfRamp, CubeHalfCubeConnector, CornerSmallCMediumLow, WallLowDouble, CubeRoundConnectorAMedium, CubeRoundConnectorALow, CornerSmallBMediumLow, WallSlopedBold, CylinderCubeConnector, CylinderCubeHalfConnector, CylinderWallConnector"
 }
 
-
 { Block Name: HWSLuxBlocksSmall
   Material: HWS_material_luxblocksmall, display: true
   MarketPrice: 30003, display: true
@@ -30760,7 +30754,6 @@
   ChildShapes: "WallMediumDouble, RampBDouble, SmallCornerRoundB2, CubeSteppedEdge, CubeQuarterEdge, CubeHalfRamp, CubeHalfCubeConnector, CornerSmallCMediumLow, WallLowDouble, CubeRoundConnectorAMedium, CubeRoundConnectorALow, CornerSmallBMediumLow, WallSlopedBold, CylinderCubeConnector, CylinderCubeHalfConnector, CylinderWallConnector"
 }
 
-
 { Block Name: HWSNoxBlocksSmall
   Material: HWS_material_noxblocksmall, display: true
   MarketPrice: 30003, display: true
@@ -30942,7 +30935,6 @@
   MarketPrice: 1, display: true
   ChildShapes: "WallMediumDouble, RampBDouble, SmallCornerRoundB2, CubeSteppedEdge, CubeQuarterEdge, CubeHalfRamp, CubeHalfCubeConnector, CornerSmallCMediumLow, WallLowDouble, CubeRoundConnectorAMedium, CubeRoundConnectorALow, CornerSmallBMediumLow, WallSlopedBold, CylinderCubeConnector, CylinderCubeHalfConnector, CylinderWallConnector"
 }
-
 
 { Block Name: HWSStrangeletBlocksSmall
   Material: HWS_material_strangeletblocksmall, display: true
@@ -31311,6 +31303,8 @@
   Material: HWS_material_terradevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSTerraTurretBABlocks
+  TemplateRoot: HWSTerraTurretBABlocks
   Model: @models/Blocks/Turrets/TurretsEnemy/TurretEnemyLaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31348,6 +31342,8 @@
   Material: HWS_material_terradevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSTerraTurretBABlocks
+  TemplateRoot: HWSTerraTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31384,6 +31380,8 @@
   Material: HWS_material_terradevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSTerraTurretBABlocks
+  TemplateRoot: HWSTerraTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31420,6 +31418,8 @@
   Material: HWS_material_terradevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSTerraTurretBABlocks
+  TemplateRoot: HWSTerraTurretBABlocks
   Model: @models/Blocks/Turrets/TurretEnemyGreenPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31456,6 +31456,8 @@
   Material: HWS_material_terradevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSTerraTurretBABlocks
+  TemplateRoot: HWSTerraTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31524,6 +31526,8 @@
   Material: HWS_material_pyrodevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSPyroTurretBABlocks
+  TemplateRoot: HWSPyroTurretBABlocks
   Model: @models/Blocks/Turrets/TurretsEnemy/TurretEnemyLaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31560,6 +31564,8 @@
   Material: HWS_material_pyrodevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSPyroTurretBABlocks
+  TemplateRoot: HWSPyroTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31596,6 +31602,8 @@
   Material: HWS_material_pyrodevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSPyroTurretBABlocks
+  TemplateRoot: HWSPyroTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31632,6 +31640,8 @@
   Material: HWS_material_pyrodevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSPyroTurretBABlocks
+  TemplateRoot: HWSPyroTurretBABlocks
   Model: @models/Blocks/Turrets/TurretEnemyOrangePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31668,6 +31678,8 @@
   Material: HWS_material_pyrodevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSPyroTurretBABlocks
+  TemplateRoot: HWSPyroTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31736,6 +31748,8 @@
   Material: HWS_material_obsidiandevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSObsidianTurretBABlocks
+  TemplateRoot: HWSObsidianTurretBABlocks
   Model: @models/Blocks/Turrets/TurretsEnemy/TurretEnemyLaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31772,6 +31786,8 @@
   Material: HWS_material_obsidiandevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSObsidianTurretBABlocks
+  TemplateRoot: HWSObsidianTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31808,6 +31824,8 @@
   Material: HWS_material_obsidiandevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSObsidianTurretBABlocks
+  TemplateRoot: HWSObsidianTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31844,6 +31862,8 @@
   Material: HWS_material_obsidiandevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSObsidianTurretBABlocks
+  TemplateRoot: HWSObsidianTurretBABlocks
   Model: @models/Blocks/Turrets/TurretEnemyBluePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31880,6 +31900,8 @@
   Material: HWS_material_obsidiandevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSObsidianTurretBABlocks
+  TemplateRoot: HWSObsidianTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31948,6 +31970,8 @@
   Material: HWS_material_luxdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSLuxTurretBABlocks
+  TemplateRoot: HWSLuxTurretBABlocks
   Model: @models/Blocks/Turrets/TurretsEnemy/TurretEnemyLaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -31984,6 +32008,8 @@
   Material: HWS_material_luxdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSLuxTurretBABlocks
+  TemplateRoot: HWSLuxTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -32020,6 +32046,8 @@
   Material: HWS_material_luxdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSLuxTurretBABlocks
+  TemplateRoot: HWSLuxTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -32056,6 +32084,8 @@
   Material: HWS_material_luxdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSLuxTurretBABlocks
+  TemplateRoot: HWSLuxTurretBABlocks
   Model: @models/Blocks/Turrets/TurretEnemyYellowPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -32092,6 +32122,8 @@
   Material: HWS_material_luxdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSLuxTurretBABlocks
+  TemplateRoot: HWSLuxTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -32160,6 +32192,8 @@
   Material: HWS_material_noxdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSNoxTurretBABlocks
+  TemplateRoot: HWSNoxTurretBABlocks
   Model: @models/Blocks/Turrets/TurretsEnemy/TurretEnemyLaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -32196,6 +32230,8 @@
   Material: HWS_material_noxdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSNoxTurretBABlocks
+  TemplateRoot: HWSNoxTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -32232,6 +32268,8 @@
   Material: HWS_material_noxdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSNoxTurretBABlocks
+  TemplateRoot: HWSNoxTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -32268,6 +32306,8 @@
   Material: HWS_material_noxdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSNoxTurretBABlocks
+  TemplateRoot: HWSNoxTurretBABlocks
   Model: @models/Blocks/Turrets/TurretEnemyBlackPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -32304,6 +32344,8 @@
   Material: HWS_material_noxdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSNoxTurretBABlocks
+  TemplateRoot: HWSNoxTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -32372,6 +32414,8 @@
   Material: HWS_material_strangeletdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSStrangeletTurretBABlocks
+  TemplateRoot: HWSStrangeletTurretBABlocks
   Model: @models/Blocks/Turrets/TurretsEnemy/TurretEnemyLaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -32408,6 +32452,8 @@
   Material: HWS_material_strangeletdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSStrangeletTurretBABlocks
+  TemplateRoot: HWSStrangeletTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -32444,6 +32490,8 @@
   Material: HWS_material_strangeletdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSStrangeletTurretBABlocks
+  TemplateRoot: HWSStrangeletTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -32480,6 +32528,8 @@
   Material: HWS_material_strangeletdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSStrangeletTurretBABlocks
+  TemplateRoot: HWSStrangeletTurretBABlocks
   Model: @models/Blocks/Turrets/TurretEnemyPurplePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -32516,6 +32566,8 @@
   Material: HWS_material_strangeletdevicelarge, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSStrangeletTurretBABlocks
+  TemplateRoot: HWSStrangeletTurretBABlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   SoundOnEnter: UseActions/DOOROpen02
@@ -32583,8 +32635,8 @@
   IndexName: Turret
   Material: HWS_material_aquadevicelarge, display: true
   Shape: Turret
-  TemplateRoot: HWSAquaChaosTurretBA
-  PickupTarget: HWSAquaChaosTurretBA
+  TemplateRoot: HWSChaosTurretBABlocks
+  PickupTarget: HWSChaosTurretBABlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -32625,8 +32677,8 @@
   IndexName: Turret
   Material: HWS_material_terradevicelarge, display: true
   Shape: Turret
-  TemplateRoot: HWSTerraChaosTurretBA
-  PickupTarget: HWSTerraChaosTurretBA
+  TemplateRoot: HWSChaosTurretBABlocks
+  PickupTarget: HWSChaosTurretBABlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -32667,8 +32719,8 @@
   IndexName: Turret
   Material: HWS_material_pyrodevicelarge, display: true
   Shape: Turret
-  TemplateRoot: HWSPyroChaosTurretBA
-  PickupTarget: HWSPyroChaosTurretBA
+  TemplateRoot: HWSChaosTurretBABlocks
+  PickupTarget: HWSChaosTurretBABlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -32709,8 +32761,8 @@
   IndexName: Turret
   Material: HWS_material_obsidiandevicelarge, display: true
   Shape: Turret
-  TemplateRoot: HWSObsidianChaosTurretBA
-  PickupTarget: HWSObsidianChaosTurretBA
+  TemplateRoot: HWSChaosTurretBABlocks
+  PickupTarget: HWSChaosTurretBABlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -32751,8 +32803,8 @@
   IndexName: Turret
   Material: HWS_material_luxdevicelarge, display: true
   Shape: Turret
-  TemplateRoot: HWSLuxChaosTurretBA
-  PickupTarget: HWSLuxChaosTurretBA
+  TemplateRoot: HWSChaosTurretBABlocks
+  PickupTarget: HWSChaosTurretBABlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -32793,8 +32845,8 @@
   IndexName: Turret
   Material: HWS_material_noxdevicelarge, display: true
   Shape: Turret
-  TemplateRoot: HWSNoxChaosTurretBA
-  PickupTarget: HWSNoxChaosTurretBA
+  TemplateRoot: HWSChaosTurretBABlocks
+  PickupTarget: HWSChaosTurretBABlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -32835,8 +32887,8 @@
   IndexName: Turret
   Material: HWS_material_strangeletdevicelarge, display: true
   Shape: Turret
-  TemplateRoot: HWSStrangeletChaosTurretBA
-  PickupTarget: HWSStrangeletChaosTurretBA
+  TemplateRoot: HWSChaosTurretBABlocks
+  PickupTarget: HWSChaosTurretBABlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -32919,6 +32971,7 @@
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
+  PickupTarget: HWSAquaTurretCVBlocks
   TemplateRoot: HWSAquaTurretCVBlocks
   BlockColor: "0,64,220"
   IsTextureable: false
@@ -32957,6 +33010,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSAquaTurretCVBlocks
   TemplateRoot: HWSAquaTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -32997,6 +33051,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretEnemyCyanPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSAquaTurretCVBlocks
   TemplateRoot: HWSAquaTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33037,6 +33092,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSAquaTurretCVBlocks
   TemplateRoot: HWSAquaTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33111,6 +33167,7 @@
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
+  PickupTarget: HWSTerraTurretCVBlocks
   TemplateRoot: HWSTerraTurretCVBlocks
   BlockColor: "28,149,36"
   IsTextureable: false
@@ -33149,6 +33206,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSTerraTurretCVBlocks
   TemplateRoot: HWSTerraTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33189,6 +33247,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretEnemyGreenPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSTerraTurretCVBlocks
   TemplateRoot: HWSTerraTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33229,6 +33288,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSTerraTurretCVBlocks
   TemplateRoot: HWSTerraTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33303,6 +33363,7 @@
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
+  PickupTarget: HWSPyroTurretCVBlocks
   TemplateRoot: HWSPyroTurretCVBlocks
   BlockColor: "170,5,5"
   IsTextureable: false
@@ -33341,6 +33402,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSPyroTurretCVBlocks
   TemplateRoot: HWSPyroTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33381,6 +33443,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretEnemyOrangePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSPyroTurretCVBlocks
   TemplateRoot: HWSPyroTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33421,6 +33484,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSPyroTurretCVBlocks
   TemplateRoot: HWSPyroTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33495,6 +33559,7 @@
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
+  PickupTarget: HWSObsidianTurretCVBlocks
   TemplateRoot: HWSObsidianTurretCVBlocks
   BlockColor: "0,220,153"
   IsTextureable: false
@@ -33533,6 +33598,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSObsidianTurretCVBlocks
   TemplateRoot: HWSObsidianTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33573,6 +33639,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretEnemyBluePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSObsidianTurretCVBlocks
   TemplateRoot: HWSObsidianTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33613,6 +33680,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSObsidianTurretCVBlocks
   TemplateRoot: HWSObsidianTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33687,6 +33755,7 @@
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
+  PickupTarget: HWSLuxTurretCVBlocks
   TemplateRoot: HWSLuxTurretCVBlocks
   BlockColor: "220,220,220"
   IsTextureable: false
@@ -33725,6 +33794,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSLuxTurretCVBlocks
   TemplateRoot: HWSLuxTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33765,6 +33835,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretEnemyYellowPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSLuxTurretCVBlocks
   TemplateRoot: HWSLuxTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33805,6 +33876,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSLuxTurretCVBlocks
   TemplateRoot: HWSLuxTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33879,6 +33951,7 @@
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
+  PickupTarget: HWSNoxTurretCVBlocks
   TemplateRoot: HWSNoxTurretCVBlocks
   BlockColor: "10,10,10"
   IsTextureable: false
@@ -33917,6 +33990,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSNoxTurretCVBlocks
   TemplateRoot: HWSNoxTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33957,6 +34031,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretEnemyBlackPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSNoxTurretCVBlocks
   TemplateRoot: HWSNoxTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -33997,6 +34072,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSNoxTurretCVBlocks
   TemplateRoot: HWSNoxTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -34071,6 +34147,7 @@
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
+  PickupTarget: HWSStrangeletTurretCVBlocks
   TemplateRoot: HWSStrangeletTurretCVBlocks
   BlockColor: "171,32,161"
   IsTextureable: false
@@ -34109,6 +34186,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSStrangeletTurretCVBlocks
   TemplateRoot: HWSStrangeletTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -34149,6 +34227,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretEnemyPurplePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSStrangeletTurretCVBlocks
   TemplateRoot: HWSStrangeletTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -34189,6 +34268,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSStrangeletTurretCVBlocks
   TemplateRoot: HWSStrangeletTurretCVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
@@ -34259,8 +34339,8 @@
   IndexName: Turret
   Material: HWS_material_aquadevicelarge, display: true
   Shape: Turret
-  TemplateRoot: HWSAquaChaosTurretCV
-  PickupTarget: HWSAquaChaosTurretCV
+  PickupTarget: HWSChaosTurretCVBlocks
+  TemplateRoot: HWSChaosTurretCVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -34301,8 +34381,8 @@
   IndexName: Turret
   Material: HWS_material_terradevicelarge, display: true
   Shape: Turret
-  TemplateRoot: HWSTerraChaosTurretCV
-  PickupTarget: HWSTerraChaosTurretCV
+  PickupTarget: HWSChaosTurretCVBlocks
+  TemplateRoot: HWSChaosTurretCVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -34343,8 +34423,8 @@
   IndexName: Turret
   Material: HWS_material_pyrodevicelarge, display: true
   Shape: Turret
-  TemplateRoot: HWSPyroChaosTurretCV
-  PickupTarget: HWSPyroChaosTurretCV
+  PickupTarget: HWSChaosTurretCVBlocks
+  TemplateRoot: HWSChaosTurretCVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -34385,8 +34465,8 @@
   IndexName: Turret
   Material: HWS_material_obsidiandevicelarge, display: true
   Shape: Turret
-  TemplateRoot: HWSObsidianChaosTurretCV
-  PickupTarget: HWSObsidianChaosTurretCV
+  PickupTarget: HWSChaosTurretCVBlocks
+  TemplateRoot: HWSChaosTurretCVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -34427,8 +34507,8 @@
   IndexName: Turret
   Material: HWS_material_luxdevicelarge, display: true
   Shape: Turret
-  TemplateRoot: HWSLuxChaosTurretCV
-  PickupTarget: HWSLuxChaosTurretCV
+  PickupTarget: HWSChaosTurretCVBlocks
+  TemplateRoot: HWSChaosTurretCVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -34469,8 +34549,8 @@
   IndexName: Turret
   Material: HWS_material_noxdevicelarge, display: true
   Shape: Turret
-  TemplateRoot: HWSNoxChaosTurretCV
-  PickupTarget: HWSNoxChaosTurretCV
+  PickupTarget: HWSChaosTurretCVBlocks
+  TemplateRoot: HWSChaosTurretCVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -34511,8 +34591,8 @@
   IndexName: Turret
   Material: HWS_material_strangeletdevicelarge, display: true
   Shape: Turret
-  TemplateRoot: HWSStrangeletChaosTurretCV
-  PickupTarget: HWSStrangeletChaosTurretCV
+  PickupTarget: HWSChaosTurretCVBlocks
+  TemplateRoot: HWSChaosTurretCVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -34590,6 +34670,8 @@
   WeaponItem: HWSAquaGunCVT1Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSAquaGunCVBlocks
+  TemplateRoot: HWSAquaGunCVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -34637,7 +34719,8 @@
   WeaponItem: HWSAquaGunCVT2Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-
+  PickupTarget: HWSAquaGunCVBlocks
+  TemplateRoot: HWSAquaGunCVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -34684,7 +34767,8 @@
   WeaponItem: HWSAquaGunCVT3Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-
+  PickupTarget: HWSAquaGunCVBlocks
+  TemplateRoot: HWSAquaGunCVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -34762,6 +34846,8 @@
   WeaponItem: HWSTerraGunCVT1Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSTerraGunCVBlocks
+  TemplateRoot: HWSTerraGunCVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -34809,7 +34895,8 @@
   WeaponItem: HWSTerraGunCVT2Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-
+  PickupTarget: HWSTerraGunCVBlocks
+  TemplateRoot: HWSTerraGunCVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -34856,7 +34943,8 @@
   WeaponItem: HWSTerraGunCVT3Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-
+  PickupTarget: HWSTerraGunCVBlocks
+  TemplateRoot: HWSTerraGunCVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -34934,6 +35022,8 @@
   WeaponItem: HWSPyroGunCVT1Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSPyroGunCVBlocks
+  TemplateRoot: HWSPyroGunCVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -34980,7 +35070,8 @@
   WeaponItem: HWSPyroGunCVT2Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-
+  PickupTarget: HWSPyroGunCVBlocks
+  TemplateRoot: HWSPyroGunCVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -35027,7 +35118,8 @@
   WeaponItem: HWSPyroGunCVT3Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-
+  PickupTarget: HWSPyroGunCVBlocks
+  TemplateRoot: HWSPyroGunCVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -35105,6 +35197,8 @@
   WeaponItem: HWSObsidianGunCVT1Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSObsidianGunCVBlocks
+  TemplateRoot: HWSObsidianGunCVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -35151,7 +35245,8 @@
   WeaponItem: HWSObsidianGunCVT2Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-
+  PickupTarget: HWSObsidianGunCVBlocks
+  TemplateRoot: HWSObsidianGunCVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -35198,7 +35293,8 @@
   WeaponItem: HWSObsidianGunCVT3Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-
+  PickupTarget: HWSObsidianGunCVBlocks
+  TemplateRoot: HWSObsidianGunCVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -35276,6 +35372,8 @@
   WeaponItem: HWSLuxGunCVT1Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSLuxGunCVBlocks
+  TemplateRoot: HWSLuxGunCVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -35322,7 +35420,8 @@
   WeaponItem: HWSLuxGunCVT2Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-
+  PickupTarget: HWSLuxGunCVBlocks
+  TemplateRoot: HWSLuxGunCVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -35369,7 +35468,8 @@
   WeaponItem: HWSLuxGunCVT3Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-
+  PickupTarget: HWSLuxGunCVBlocks
+  TemplateRoot: HWSLuxGunCVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -35447,6 +35547,8 @@
   WeaponItem: HWSNoxGunCVT1Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSNoxGunCVBlocks
+  TemplateRoot: HWSNoxGunCVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -35493,7 +35595,8 @@
   WeaponItem: HWSNoxGunCVT2Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-
+  PickupTarget: HWSNoxGunCVBlocks
+  TemplateRoot: HWSNoxGunCVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -35540,6 +35643,8 @@
   WeaponItem: HWSNoxGunCVT3Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSNoxGunCVBlocks
+  TemplateRoot: HWSNoxGunCVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -35617,6 +35722,8 @@
   WeaponItem: HWSStrangeletGunCVT1Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSStrangeletGunCVBlocks
+  TemplateRoot: HWSStrangeletGunCVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -35663,6 +35770,8 @@
   WeaponItem: HWSStrangeletGunCVT2Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  PickupTarget: HWSStrangeletGunCVBlocks
+  TemplateRoot: HWSStrangeletGunCVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -35709,7 +35818,8 @@
   WeaponItem: HWSStrangeletGunCVT3Weapon
   Model: @hws_blockmodels/HWSElementalGunCVT3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-
+  PickupTarget: HWSStrangeletGunCVBlocks
+  TemplateRoot: HWSStrangeletGunCVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -35794,8 +35904,9 @@
   Material: HWS_material_aquadevicesmall, display: true
   Shape: Turret
   Place: Face
-  Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
+  PickupTarget: HWSAquaTurretHVBlocks
   TemplateRoot: HWSAquaTurretHVBlocks
+  Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   BlockColor: "0,64,220"
   IsTextureable: false
   IsColorable: false
@@ -35831,9 +35942,10 @@
   Material: HWS_material_aquadevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSAquaTurretHVBlocks
+  TemplateRoot: HWSAquaTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSAquaTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSAquaTurretHVT2Weapon
@@ -35871,9 +35983,10 @@
   Material: HWS_material_aquadevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSAquaTurretHVBlocks
+  TemplateRoot: HWSAquaTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretEnemyCyanPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSAquaTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSAquaTurretHVT3Weapon
@@ -35911,9 +36024,10 @@
   Material: HWS_material_aquadevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSAquaTurretHVBlocks
+  TemplateRoot: HWSAquaTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSAquaTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSAquaTurretHVT4Weapon
@@ -35985,8 +36099,9 @@
   Material: HWS_material_terradevicesmall, display: true
   Shape: Turret
   Place: Face
-  Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
+  PickupTarget: HWSTerraTurretHVBlocks
   TemplateRoot: HWSTerraTurretHVBlocks
+  Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   BlockColor: "28,149,36"
   IsTextureable: false
   IsColorable: false
@@ -36022,9 +36137,10 @@
   Material: HWS_material_terradevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSTerraTurretHVBlocks
+  TemplateRoot: HWSTerraTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSTerraTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSTerraTurretHVT2Weapon
@@ -36062,9 +36178,10 @@
   Material: HWS_material_terradevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSTerraTurretHVBlocks
+  TemplateRoot: HWSTerraTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretEnemyGreenPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSTerraTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSTerraTurretHVT3Weapon
@@ -36102,9 +36219,10 @@
   Material: HWS_material_terradevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSTerraTurretHVBlocks
+  TemplateRoot: HWSTerraTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSTerraTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSTerraTurretHVT4Weapon
@@ -36176,8 +36294,9 @@
   Material: HWS_material_pyrodevicesmall, display: true
   Shape: Turret
   Place: Face
-  Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
+  PickupTarget: HWSPyroTurretHVBlocks
   TemplateRoot: HWSPyroTurretHVBlocks
+  Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   BlockColor: "170,5,5"
   IsTextureable: false
   IsColorable: false
@@ -36213,9 +36332,10 @@
   Material: HWS_material_pyrodevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSPyroTurretHVBlocks
+  TemplateRoot: HWSPyroTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSPyroTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSPyroTurretHVT2Weapon
@@ -36253,9 +36373,10 @@
   Material: HWS_material_pyrodevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSPyroTurretHVBlocks
+  TemplateRoot: HWSPyroTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretEnemyOrangePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSPyroTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSPyroTurretHVT3Weapon
@@ -36293,9 +36414,10 @@
   Material: HWS_material_pyrodevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSPyroTurretHVBlocks
+  TemplateRoot: HWSPyroTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSPyroTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSPyroTurretHVT4Weapon
@@ -36367,8 +36489,9 @@
   Material: HWS_material_obsidiandevicesmall, display: true
   Shape: Turret
   Place: Face
-  Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
+  PickupTarget: HWSObsidianTurretHVBlocks
   TemplateRoot: HWSObsidianTurretHVBlocks
+  Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   BlockColor: "0,220,153"
   IsTextureable: false
   IsColorable: false
@@ -36404,9 +36527,10 @@
   Material: HWS_material_obsidiandevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSObsidianTurretHVBlocks
+  TemplateRoot: HWSObsidianTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSObsidianTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSObsidianTurretHVT2Weapon
@@ -36444,9 +36568,10 @@
   Material: HWS_material_obsidiandevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSObsidianTurretHVBlocks
+  TemplateRoot: HWSObsidianTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretEnemyBluePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSObsidianTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSObsidianTurretHVT3Weapon
@@ -36484,9 +36609,10 @@
   Material: HWS_material_obsidiandevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSObsidianTurretHVBlocks
+  TemplateRoot: HWSObsidianTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSObsidianTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSObsidianTurretHVT4Weapon
@@ -36558,8 +36684,9 @@
   Material: HWS_material_luxdevicesmall, display: true
   Shape: Turret
   Place: Face
-  Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
+  PickupTarget: HWSLuxTurretHVBlocks
   TemplateRoot: HWSLuxTurretHVBlocks
+  Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   BlockColor: "220,220,220"
   IsTextureable: false
   IsColorable: false
@@ -36595,9 +36722,10 @@
   Material: HWS_material_luxdevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSLuxTurretHVBlocks
+  TemplateRoot: HWSLuxTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSLuxTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSLuxTurretHVT2Weapon
@@ -36635,9 +36763,10 @@
   Material: HWS_material_luxdevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSLuxTurretHVBlocks
+  TemplateRoot: HWSLuxTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretEnemyYellowPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSLuxTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSLuxTurretHVT3Weapon
@@ -36675,9 +36804,10 @@
   Material: HWS_material_luxdevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSLuxTurretHVBlocks
+  TemplateRoot: HWSLuxTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSLuxTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSLuxTurretHVT4Weapon
@@ -36749,8 +36879,9 @@
   Material: HWS_material_noxdevicesmall, display: true
   Shape: Turret
   Place: Face
-  Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
+  PickupTarget: HWSNoxTurretHVBlocks
   TemplateRoot: HWSNoxTurretHVBlocks
+  Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   BlockColor: "10,10,10"
   IsTextureable: false
   IsColorable: false
@@ -36786,9 +36917,10 @@
   Material: HWS_material_noxdevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSNoxTurretHVBlocks
+  TemplateRoot: HWSNoxTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSNoxTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSNoxTurretHVT2Weapon
@@ -36826,9 +36958,10 @@
   Material: HWS_material_noxdevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSNoxTurretHVBlocks
+  TemplateRoot: HWSNoxTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretEnemyBlackPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSNoxTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSNoxTurretHVT3Weapon
@@ -36866,9 +36999,10 @@
   Material: HWS_material_noxdevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSNoxTurretHVBlocks
+  TemplateRoot: HWSNoxTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSNoxTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSNoxTurretHVT4Weapon
@@ -36940,8 +37074,9 @@
   Material: HWS_material_strangeletdevicesmall, display: true
   Shape: Turret
   Place: Face
-  Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
+  PickupTarget: HWSStrangeletTurretHVBlocks
   TemplateRoot: HWSStrangeletTurretHVBlocks
+  Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   BlockColor: "171,32,161"
   IsTextureable: false
   IsColorable: false
@@ -36977,9 +37112,10 @@
   Material: HWS_material_strangeletdevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSStrangeletTurretHVBlocks
+  TemplateRoot: HWSStrangeletTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSStrangeletTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSStrangeletTurretHVT2Weapon
@@ -37017,9 +37153,10 @@
   Material: HWS_material_strangeletdevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSStrangeletTurretHVBlocks
+  TemplateRoot: HWSStrangeletTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretEnemyPurplePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSStrangeletTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSStrangeletTurretHVT3Weapon
@@ -37057,9 +37194,10 @@
   Material: HWS_material_strangeletdevicesmall, display: true
   Shape: Turret
   Place: Face
+  PickupTarget: HWSStrangeletTurretHVBlocks
+  TemplateRoot: HWSStrangeletTurretHVBlocks
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_PlasmaPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  TemplateRoot: HWSStrangeletTurretHVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSStrangeletTurretHVT4Weapon
@@ -37129,8 +37267,8 @@
   IndexName: Turret
   Material: HWS_material_aquadevicesmall, display: true
   Shape: Turret
-  TemplateRoot: HWSAquaChaosTurretHV
-  PickupTarget: HWSAquaChaosTurretHV
+  TemplateRoot: HWSChaosTurretHVBlocks
+  PickupTarget: HWSChaosTurretHVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -37171,8 +37309,8 @@
   IndexName: Turret
   Material: HWS_material_terradevicesmall, display: true
   Shape: Turret
-  TemplateRoot: HWSTerraChaosTurretHV
-  PickupTarget: HWSTerraChaosTurretHV
+  TemplateRoot: HWSChaosTurretHVBlocks
+  PickupTarget: HWSChaosTurretHVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -37213,8 +37351,8 @@
   IndexName: Turret
   Material: HWS_material_pyrodevicesmall, display: true
   Shape: Turret
-  TemplateRoot: HWSPyroChaosTurretHV
-  PickupTarget: HWSPyroChaosTurretHV
+  TemplateRoot: HWSChaosTurretHVBlocks
+  PickupTarget: HWSChaosTurretHVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -37255,8 +37393,8 @@
   IndexName: Turret
   Material: HWS_material_obsidiandevicesmall, display: true
   Shape: Turret
-  TemplateRoot: HWSObsidianChaosTurretHV
-  PickupTarget: HWSObsidianChaosTurretHV
+  TemplateRoot: HWSChaosTurretHVBlocks
+  PickupTarget: HWSChaosTurretHVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -37297,8 +37435,8 @@
   IndexName: Turret
   Material: HWS_material_luxdevicesmall, display: true
   Shape: Turret
-  TemplateRoot: HWSLuxChaosTurretHV
-  PickupTarget: HWSLuxChaosTurretHV
+  TemplateRoot: HWSChaosTurretHVBlocks
+  PickupTarget: HWSChaosTurretHVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -37339,8 +37477,8 @@
   IndexName: Turret
   Material: HWS_material_noxdevicesmall, display: true
   Shape: Turret
-  TemplateRoot: HWSNoxChaosTurretHV
-  PickupTarget: HWSNoxChaosTurretHV
+  TemplateRoot: HWSChaosTurretHVBlocks
+  PickupTarget: HWSChaosTurretHVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -37381,8 +37519,8 @@
   IndexName: Turret
   Material: HWS_material_strangeletdevicesmall, display: true
   Shape: Turret
-  TemplateRoot: HWSStrangeletChaosTurretHV
-  PickupTarget: HWSStrangeletChaosTurretHV
+  TemplateRoot: HWSChaosTurretHVBlocks
+  PickupTarget: HWSChaosTurretHVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -37459,6 +37597,7 @@
   Model: @hws_blockmodels/HWSElementalGunHVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSAquaGunHVBlocks
+  PickupTarget: HWSAquaGunHVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -37506,6 +37645,7 @@
   Model: @hws_blockmodels/HWSElementalGunHVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSAquaGunHVBlocks
+  PickupTarget: HWSAquaGunHVBlocks
 
 
   IsGPUInstance: false  # !!!
@@ -37585,6 +37725,7 @@
   Model: @hws_blockmodels/HWSElementalGunHVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSTerraGunHVBlocks
+  PickupTarget: HWSTerraGunHVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -37632,6 +37773,7 @@
   Model: @hws_blockmodels/HWSElementalGunHVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSTerraGunHVBlocks
+  PickupTarget: HWSTerraGunHVBlocks
 
 
   IsGPUInstance: false  # !!!
@@ -37711,6 +37853,7 @@
   Model: @hws_blockmodels/HWSElementalGunHVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSPyroGunHVBlocks
+  PickupTarget: HWSPyroGunHVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -37758,6 +37901,7 @@
   Model: @hws_blockmodels/HWSElementalGunHVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSPyroGunHVBlocks
+  PickupTarget: HWSPyroGunHVBlocks
 
 
   IsGPUInstance: false  # !!!
@@ -37837,6 +37981,7 @@
   Model: @hws_blockmodels/HWSElementalGunHVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSObsidianGunHVBlocks
+  PickupTarget: HWSObsidianGunHVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -37884,6 +38029,7 @@
   Model: @hws_blockmodels/HWSElementalGunHVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSObsidianGunHVBlocks
+  PickupTarget: HWSObsidianGunHVBlocks
 
 
   IsGPUInstance: false  # !!!
@@ -37963,6 +38109,7 @@
   Model: @hws_blockmodels/HWSElementalGunHVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSLuxGunHVBlocks
+  PickupTarget: HWSLuxGunHVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -38010,7 +38157,7 @@
   Model: @hws_blockmodels/HWSElementalGunHVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSLuxGunHVBlocks
-
+  PickupTarget: HWSLuxGunHVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -38089,6 +38236,7 @@
   Model: @hws_blockmodels/HWSElementalGunHVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSNoxGunHVBlocks
+  PickupTarget: HWSNoxGunHVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -38136,7 +38284,7 @@
   Model: @hws_blockmodels/HWSElementalGunHVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSNoxGunHVBlocks
-
+  PickupTarget: HWSNoxGunHVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -38215,6 +38363,7 @@
   Model: @hws_blockmodels/HWSElementalGunHVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSStrangeletGunHVBlocks
+  PickupTarget: HWSStrangeletGunHVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -38262,7 +38411,7 @@
   Model: @hws_blockmodels/HWSElementalGunHVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSStrangeletGunHVBlocks
-
+  PickupTarget: HWSStrangeletGunHVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -38347,6 +38496,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   TemplateRoot: HWSAquaTurretSVBlocks
+  PickupTarget: HWSAquaTurretSVBlocks
   BlockColor: "0,64,220"
   IsTextureable: false
   IsColorable: false
@@ -38385,6 +38535,7 @@
   Model: @models/Blocks/Turrets/TurretEnemyCyanPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSAquaTurretSVBlocks
+  PickupTarget: HWSAquaTurretSVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSAquaTurretSVT2Weapon
@@ -38458,6 +38609,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   TemplateRoot: HWSTerraTurretSVBlocks
+  PickupTarget: HWSTerraTurretSVBlocks
   BlockColor: "28,149,36"
   IsTextureable: false
   IsColorable: false
@@ -38496,6 +38648,7 @@
   Model: @models/Blocks/Turrets/TurretEnemyGreenPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSTerraTurretSVBlocks
+  PickupTarget: HWSTerraTurretSVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSTerraTurretSVT2Weapon
@@ -38569,6 +38722,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   TemplateRoot: HWSPyroTurretSVBlocks
+  PickupTarget: HWSPyroTurretSVBlocks
   BlockColor: "170,5,5"
   IsTextureable: false
   IsColorable: false
@@ -38607,6 +38761,7 @@
   Model: @models/Blocks/Turrets/TurretEnemyOrangePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSPyroTurretSVBlocks
+  PickupTarget: HWSPyroTurretSVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSPyroTurretSVT2Weapon
@@ -38680,6 +38835,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   TemplateRoot: HWSObsidianTurretSVBlocks
+  PickupTarget: HWSObsidianTurretSVBlocks
   BlockColor: "0,220,153"
   IsTextureable: false
   IsColorable: false
@@ -38718,6 +38874,7 @@
   Model: @models/Blocks/Turrets/TurretEnemyBluePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSObsidianTurretSVBlocks
+  PickupTarget: HWSObsidianTurretSVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSObsidianTurretSVT2Weapon
@@ -38791,6 +38948,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   TemplateRoot: HWSLuxTurretSVBlocks
+  PickupTarget: HWSLuxTurretSVBlocks
   BlockColor: "220,220,220"
   IsTextureable: false
   IsColorable: false
@@ -38829,6 +38987,7 @@
   Model: @models/Blocks/Turrets/TurretEnemyYellowPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSLuxTurretSVBlocks
+  PickupTarget: HWSLuxTurretSVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSLuxTurretSVT2Weapon
@@ -38902,6 +39061,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   TemplateRoot: HWSNoxTurretSVBlocks
+  PickupTarget: HWSNoxTurretSVBlocks
   BlockColor: "10,10,10"
   IsTextureable: false
   IsColorable: false
@@ -38940,6 +39100,7 @@
   Model: @models/Blocks/Turrets/TurretEnemyBlackPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSNoxTurretSVBlocks
+  PickupTarget: HWSNoxTurretSVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSNoxTurretSVT2Weapon
@@ -39013,6 +39174,7 @@
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_RocketPrefab
   TemplateRoot: HWSStrangeletTurretSVBlocks
+  PickupTarget: HWSStrangeletTurretSVBlocks
   BlockColor: "171,32,161"
   IsTextureable: false
   IsColorable: false
@@ -39051,6 +39213,7 @@
   Model: @models/Blocks/Turrets/TurretEnemyPurplePrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSStrangeletTurretSVBlocks
+  PickupTarget: HWSStrangeletTurretSVBlocks
   SoundOnEnter: UseActions/DOOROpen02
   SoundRotate: Weapons/Turret/TurretRotateNormal
   WeaponItem: HWSStrangeletTurretSVT2Weapon
@@ -39118,8 +39281,8 @@
   IndexName: Turret
   Material: HWS_material_aquadevicesmall, display: true
   Shape: Turret
-  TemplateRoot: HWSAquaChaosTurretSV
-  PickupTarget: HWSAquaChaosTurretSV
+  TemplateRoot: HWSChaosTurretSVBlocks
+  PickupTarget: HWSChaosTurretSVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -39160,8 +39323,8 @@
   IndexName: Turret
   Material: HWS_material_terradevicesmall, display: true
   Shape: Turret
-  TemplateRoot: HWSTerraChaosTurretSV
-  PickupTarget: HWSTerraChaosTurretSV
+  TemplateRoot: HWSChaosTurretSVBlocks
+  PickupTarget: HWSChaosTurretSVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -39202,8 +39365,8 @@
   IndexName: Turret
   Material: HWS_material_pyrodevicesmall, display: true
   Shape: Turret
-  TemplateRoot: HWSPyroChaosTurretSV
-  PickupTarget: HWSPyroChaosTurretSV
+  TemplateRoot: HWSChaosTurretSVBlocks
+  PickupTarget: HWSChaosTurretSVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -39244,8 +39407,8 @@
   IndexName: Turret
   Material: HWS_material_obsidiandevicesmall, display: true
   Shape: Turret
-  TemplateRoot: HWSObsidianChaosTurretSV
-  PickupTarget: HWSObsidianChaosTurretSV
+  TemplateRoot: HWSChaosTurretSVBlocks
+  PickupTarget: HWSChaosTurretSVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -39286,8 +39449,8 @@
   IndexName: Turret
   Material: HWS_material_luxdevicesmall, display: true
   Shape: Turret
-  TemplateRoot: HWSLuxChaosTurretSV
-  PickupTarget: HWSLuxChaosTurretSV
+  TemplateRoot: HWSChaosTurretSVBlocks
+  PickupTarget: HWSChaosTurretSVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -39328,8 +39491,8 @@
   IndexName: Turret
   Material: HWS_material_noxdevicesmall, display: true
   Shape: Turret
-  TemplateRoot: HWSNoxChaosTurretSV
-  PickupTarget: HWSNoxChaosTurretSV
+  TemplateRoot: HWSChaosTurretSVBlocks
+  PickupTarget: HWSChaosTurretSVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -39370,8 +39533,8 @@
   IndexName: Turret
   Material: HWS_material_strangeletdevicesmall, display: true
   Shape: Turret
-  TemplateRoot: HWSStrangeletChaosTurretSV
-  PickupTarget: HWSStrangeletChaosTurretSV
+  TemplateRoot: HWSChaosTurretSVBlocks
+  PickupTarget: HWSChaosTurretSVBlocks
   Place: Face
   Model: @models/Blocks/Turrets/TurretsEnemy/turretIONcannon2Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -39450,6 +39613,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSAquaGunSVBlocks
+  PickupTarget: HWSAquaGunSVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -39497,6 +39661,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSAquaGunSVBlocks
+  PickupTarget: HWSAquaGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -39544,6 +39709,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSAquaGunSVBlocks
+  PickupTarget: HWSAquaGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -39591,6 +39757,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT4
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSAquaGunSVBlocks
+  PickupTarget: HWSAquaGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -39669,6 +39836,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSTerraGunSVBlocks
+  PickupTarget: HWSTerraGunSVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -39716,6 +39884,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSTerraGunSVBlocks
+  PickupTarget: HWSTerraGunSVBlocks
 
 
   IsGPUInstance: false  # !!!
@@ -39764,6 +39933,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSTerraGunSVBlocks
+  PickupTarget: HWSTerraGunSVBlocks
 
 
   IsGPUInstance: false  # !!!
@@ -39812,6 +39982,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT4
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSTerraGunSVBlocks
+  PickupTarget: HWSTerraGunSVBlocks
 
 
   IsGPUInstance: false  # !!!
@@ -39891,6 +40062,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSPyroGunSVBlocks
+  PickupTarget: HWSPyroGunSVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -39938,7 +40110,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSPyroGunSVBlocks
-
+  PickupTarget: HWSPyroGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -39986,7 +40158,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSPyroGunSVBlocks
-
+  PickupTarget: HWSPyroGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -40034,7 +40206,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT4
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSPyroGunSVBlocks
-
+  PickupTarget: HWSPyroGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -40113,6 +40285,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSObsidianGunSVBlocks
+  PickupTarget: HWSObsidianGunSVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -40160,7 +40333,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSObsidianGunSVBlocks
-
+  PickupTarget: HWSObsidianGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -40208,7 +40381,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSObsidianGunSVBlocks
-
+  PickupTarget: HWSObsidianGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -40256,7 +40429,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT4
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSObsidianGunSVBlocks
-
+  PickupTarget: HWSObsidianGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -40335,6 +40508,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSLuxGunSVBlocks
+  PickupTarget: HWSLuxGunSVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -40382,7 +40556,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSLuxGunSVBlocks
-
+  PickupTarget: HWSLuxGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -40430,7 +40604,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSLuxGunSVBlocks
-
+  PickupTarget: HWSLuxGunSVBlocks
   IsGPUInstance: false  # !!!
   Texture: 50
   SoundOpen: UseActions/WeaponOpenClose
@@ -40477,7 +40651,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT4
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSLuxGunSVBlocks
-
+  PickupTarget: HWSLuxGunSVBlocks
   IsGPUInstance: false  # !!!
   Texture: 50
   SoundOpen: UseActions/WeaponOpenClose
@@ -40555,6 +40729,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSNoxGunSVBlocks
+  PickupTarget: HWSNoxGunSVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -40602,7 +40777,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSNoxGunSVBlocks
-
+  PickupTarget: HWSNoxGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -40650,7 +40825,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSNoxGunSVBlocks
-
+  PickupTarget: HWSNoxGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -40698,7 +40873,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT4
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSNoxGunSVBlocks
-
+  PickupTarget: HWSNoxGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -40777,6 +40952,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT1
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSStrangeletGunSVBlocks
+  PickupTarget: HWSStrangeletGunSVBlocks
 
   IsOxygenTight: true, display: true
 
@@ -40824,7 +41000,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT2
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSStrangeletGunSVBlocks
-
+  PickupTarget: HWSStrangeletGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -40872,7 +41048,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSStrangeletGunSVBlocks
-
+  PickupTarget: HWSStrangeletGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -40920,7 +41096,7 @@
   Model: @hws_blockmodels/HWSElementalGunSVT4
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   TemplateRoot: HWSStrangeletGunSVBlocks
-
+  PickupTarget: HWSStrangeletGunSVBlocks
 
   IsGPUInstance: false  # !!!
   Texture: 50
@@ -40992,7 +41168,8 @@
   ShowBlockName: true
   WeaponItem: HWSAquaChaosGunSVWeapon
   Model: @hws_blockmodels/HWSElementalGunSVT5
-  TemplateRoot: HWSAquaChaosGunSV
+  TemplateRoot: HWSChaosGunSVBlocks
+  PickupTarget: HWSChaosGunSVBlocks
   # Model: @models/Blocks/WeaponsShip/WeaponSSMissilePrefab
   # Mesh-Damage-1: Mesh/D0
   # Mesh-Damage-2: Mesh/D1
@@ -41041,7 +41218,8 @@
   ShowBlockName: true
   WeaponItem: HWSTerraChaosGunSVWeapon
   Model: @hws_blockmodels/HWSElementalGunSVT5
-  TemplateRoot: HWSTerraChaosGunSV
+  TemplateRoot: HWSChaosGunSVBlocks
+  PickupTarget: HWSChaosGunSVBlocks
   # Model: @models/Blocks/WeaponsShip/WeaponSSMissilePrefab
   # Mesh-Damage-1: Mesh/D0
   # Mesh-Damage-2: Mesh/D1
@@ -41090,7 +41268,8 @@
   ShowBlockName: true
   WeaponItem: HWSPyroChaosGunSVWeapon
   Model: @hws_blockmodels/HWSElementalGunSVT5
-  TemplateRoot: HWSPyroChaosGunSV
+  TemplateRoot: HWSChaosGunSVBlocks
+  PickupTarget: HWSChaosGunSVBlocks
   # Model: @models/Blocks/WeaponsShip/WeaponSSMissilePrefab
   # Mesh-Damage-1: Mesh/D0
   # Mesh-Damage-2: Mesh/D1
@@ -41139,7 +41318,8 @@
   ShowBlockName: true
   WeaponItem: HWSObsidianChaosGunSVWeapon
   Model: @hws_blockmodels/HWSElementalGunSVT5
-  TemplateRoot: HWSObsidianChaosGunSV
+  TemplateRoot: HWSChaosGunSVBlocks
+  PickupTarget: HWSChaosGunSVBlocks
   # Model: @models/Blocks/WeaponsShip/WeaponSSMissilePrefab
   # Mesh-Damage-1: Mesh/D0
   # Mesh-Damage-2: Mesh/D1
@@ -41188,7 +41368,8 @@
   ShowBlockName: true
   WeaponItem: HWSLuxChaosGunSVWeapon
   Model: @hws_blockmodels/HWSElementalGunSVT5
-  TemplateRoot: HWSLuxChaosGunSV
+  TemplateRoot: HWSChaosGunSVBlocks
+  PickupTarget: HWSChaosGunSVBlocks
   # Model: @models/Blocks/WeaponsShip/WeaponSSMissilePrefab
   # Mesh-Damage-1: Mesh/D0
   # Mesh-Damage-2: Mesh/D1
@@ -41237,7 +41418,8 @@
   ShowBlockName: true
   WeaponItem: HWSNoxChaosGunSVWeapon
   Model: @hws_blockmodels/HWSElementalGunSVT5
-  TemplateRoot: HWSNoxChaosGunSV
+  TemplateRoot: HWSChaosGunSVBlocks
+  PickupTarget: HWSChaosGunSVBlocks
   # Model: @models/Blocks/WeaponsShip/WeaponSSMissilePrefab
   # Mesh-Damage-1: Mesh/D0
   # Mesh-Damage-2: Mesh/D1
@@ -41286,7 +41468,8 @@
   ShowBlockName: true
   WeaponItem: HWSStrangeletChaosGunSVWeapon
   Model: @hws_blockmodels/HWSElementalGunSVT5
-  TemplateRoot: HWSStrangeletChaosGunSV
+  TemplateRoot: HWSChaosGunSVBlocks
+  PickupTarget: HWSChaosGunSVBlocks
   # Model: @models/Blocks/WeaponsShip/WeaponSSMissilePrefab
   # Mesh-Damage-1: Mesh/D0
   # Mesh-Damage-2: Mesh/D1
@@ -41327,7 +41510,7 @@
 # ------------------------------------------------------------------------------------------------ HWS Elemental Devices
 # ----------------------------------------------------------------------------------------------- Aqua Shield Generators
 # # ShieldMultiplier Preparation of small and large differentiation for the future. For example special SV shields.
-  # For now only large ShieldMultiplier is considered. 2021.
+# For now only large ShieldMultiplier is considered. 2021.
 { Block Name: HWSChaosShieldGeneratorBlocksSmall
   Material: HWS_material_elements, display: true
   Shape: Invisible
@@ -41423,6 +41606,8 @@
   BlastDamage: 2000
   Radiation: 7, display: RadiationLevel
 
+  TemplateRoot: HWSChaosShieldGeneratorBlocksSmall
+  PickupTarget: HWSChaosShieldGeneratorBlocksSmall
   UpgradeTo: HWSTerraShieldGeneratorSmall, display: true
   DowngradeTo: null, display: false
 }
@@ -41475,6 +41660,8 @@
   BlastDamage: 2000
   Radiation: 7, display: RadiationLevel
 
+  TemplateRoot: HWSChaosShieldGeneratorBlocksLarge
+  PickupTarget: HWSChaosShieldGeneratorBlocksLarge
   UpgradeTo: HWSTerraShieldGeneratorLarge, display: true
   DowngradeTo: null, display: false
 }
@@ -41528,6 +41715,8 @@
   BlastDamage: 2000
   Radiation: 7, display: RadiationLevel
 
+  TemplateRoot: HWSChaosShieldGeneratorBlocksSmall
+  PickupTarget: HWSChaosShieldGeneratorBlocksSmall
   UpgradeTo: HWSPyroShieldGeneratorSmall, display: true
   DowngradeTo: null, display: false
 }
@@ -41580,6 +41769,8 @@
   BlastDamage: 2000
   Radiation: 7, display: RadiationLevel
 
+  TemplateRoot: HWSChaosShieldGeneratorBlocksLarge
+  PickupTarget: HWSChaosShieldGeneratorBlocksLarge
   UpgradeTo: HWSPyroShieldGeneratorLarge, display: true
   DowngradeTo: null, display: false
 }
@@ -41633,6 +41824,8 @@
   BlastDamage: 1000
   Radiation: 7, display: RadiationLevel
 
+  TemplateRoot: HWSChaosShieldGeneratorBlocksSmall
+  PickupTarget: HWSChaosShieldGeneratorBlocksSmall
   UpgradeTo: HWSObsidianShieldGeneratorSmall, display: true
   DowngradeTo: null, display: false
 }
@@ -41685,6 +41878,8 @@
   BlastDamage: 1000
   Radiation: 7, display: RadiationLevel
 
+  TemplateRoot: HWSChaosShieldGeneratorBlocksLarge
+  PickupTarget: HWSChaosShieldGeneratorBlocksLarge
   UpgradeTo: HWSObsidianShieldGeneratorLarge, display: true
   DowngradeTo: null, display: false
 }
@@ -41738,6 +41933,8 @@
   BlastDamage: 2000
   Radiation: 7, display: RadiationLevel
 
+  TemplateRoot: HWSChaosShieldGeneratorBlocksSmall
+  PickupTarget: HWSChaosShieldGeneratorBlocksSmall
   UpgradeTo: HWSLuxShieldGeneratorSmall, display: true
   DowngradeTo: null, display: false
 }
@@ -41790,6 +41987,8 @@
   BlastDamage: 2000
   Radiation: 7, display: RadiationLevel
 
+  TemplateRoot: HWSChaosShieldGeneratorBlocksLarge
+  PickupTarget: HWSChaosShieldGeneratorBlocksLarge
   UpgradeTo: HWSLuxShieldGeneratorLarge, display: true
   DowngradeTo: null, display: false
 }
@@ -41843,6 +42042,8 @@
   BlastDamage: 2000
   Radiation: 7, display: RadiationLevel
 
+  TemplateRoot: HWSChaosShieldGeneratorBlocksSmall
+  PickupTarget: HWSChaosShieldGeneratorBlocksSmall
   UpgradeTo: HWSNoxShieldGeneratorSmall, display: true
   DowngradeTo: null, display: false
 }
@@ -41895,6 +42096,8 @@
   BlastDamage: 2000
   Radiation: 7, display: RadiationLevel
 
+  TemplateRoot: HWSChaosShieldGeneratorBlocksLarge
+  PickupTarget: HWSChaosShieldGeneratorBlocksLarge
   UpgradeTo: HWSNoxShieldGeneratorLarge, display: true
   DowngradeTo: null, display: false
 }
@@ -41948,6 +42151,8 @@
   BlastDamage: 2000
   Radiation: 7, display: RadiationLevel
 
+  TemplateRoot: HWSChaosShieldGeneratorBlocksSmall
+  PickupTarget: HWSChaosShieldGeneratorBlocksSmall
   UpgradeTo: HWSStrangeletShieldGeneratorSmall, display: true
   DowngradeTo: null, display: false
 }
@@ -42000,6 +42205,8 @@
   BlastDamage: 2000
   Radiation: 7, display: RadiationLevel
 
+  TemplateRoot: HWSChaosShieldGeneratorBlocksLarge
+  PickupTarget: HWSChaosShieldGeneratorBlocksLarge
   UpgradeTo: HWSStrangeletShieldGeneratorLarge, display: true
   DowngradeTo: null, display: false
 }
@@ -42053,6 +42260,8 @@
   BlastDamage: 2000
   Radiation: 7, display: RadiationLevel
 
+  TemplateRoot: HWSChaosShieldGeneratorBlocksSmall
+  PickupTarget: HWSChaosShieldGeneratorBlocksSmall
   UpgradeTo: HWSAquaShieldGeneratorSmall, display: true
   DowngradeTo: null, display: false
 }
@@ -42105,6 +42314,8 @@
   BlastDamage: 2000
   Radiation: 7, display: RadiationLevel
 
+  TemplateRoot: HWSChaosShieldGeneratorBlocksLarge
+  PickupTarget: HWSChaosShieldGeneratorBlocksLarge
   UpgradeTo: HWSAquaShieldGeneratorLarge, display: true
   DowngradeTo: null, display: false
 }
@@ -42112,7 +42323,7 @@
 # -------------------------------------------------------------------------------------------------- HWS Shield Extender
 { Block Name: HWSShieldCapacityExtenderBase
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 445455, display: true
+  MarketPrice: 563640, display: true
   ShieldCapacityBonus: 2000, type: int, display: true
   NPCModelRotation: false
   IsTextureable: true
@@ -42145,7 +42356,7 @@
 }
 { Block Name: HWSShieldRechargeExtenderBase
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 445455, display: true
+  MarketPrice: 563640, display: true
   ShieldRechargeBonus: 2000000, type: int, display: true
   NPCModelRotation: false
   IsTextureable: true
@@ -42178,7 +42389,7 @@
 }
 { Block Name: HWSShieldCapacityExtenderCV
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 445455, display: true
+  MarketPrice: 563640, display: true
   ShieldCapacityBonus: 2000, type: int, display: true
   NPCModelRotation: false
   IsTextureable: true
@@ -42212,7 +42423,7 @@
 }
 { Block Name: HWSShieldRechargeExtenderCV
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 445455, display: true
+  MarketPrice: 563640, display: true
   ShieldRechargeBonus: 2000000, type: int, display: true
   NPCModelRotation: false
   IsTextureable: true
@@ -42246,7 +42457,7 @@
 }
 { Block Name: HWSShieldCapacityExtenderHV
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 445455, display: true
+  MarketPrice: 563640, display: true
   ShieldCapacityBonus: 2000, type: int, display: true
   NPCModelRotation: false
   IsTextureable: true
@@ -42279,7 +42490,7 @@
 }
 { Block Name: HWSShieldRechargeExtenderHV
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 445455, display: true
+  MarketPrice: 563640, display: true
   ShieldRechargeBonus: 2000000, type: int, display: true
   IsTextureable: true
   IsColorable: true
@@ -42311,7 +42522,7 @@
 }
 { Block Name: HWSShieldCapacityExtenderSV
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 445455, display: true
+  MarketPrice: 563640, display: true
   ShieldCapacityBonus: 2000, type: int, display: true
   IsTextureable: true
   IsColorable: true
@@ -42343,7 +42554,7 @@
 }
 { Block Name: HWSShieldRechargeExtenderSV
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 445455, display: true
+  MarketPrice: 563640, display: true
   ShieldRechargeBonus: 2000000, type: int, display: true
   IsTextureable: true
   IsColorable: true
@@ -42377,7 +42588,7 @@
 { Block Name: HWSLiftBlocks
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 4896, display: true
+  MarketPrice: 4252, display: true
   # Model: @models/Blocks/Misc/LeverPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   # ModelOffset: "0,0.5,0"
@@ -42410,6 +42621,8 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  PickupTarget: HWSLiftBlocks
+  TemplateRoot: HWSLiftBlocks
   AllowedInBlueprint: true, display: true
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocksLocked: "Base,MS"
@@ -42435,6 +42648,8 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  PickupTarget: HWSLiftBlocks
+  TemplateRoot: HWSLiftBlocks
   AllowedInBlueprint: true, display: true
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocksLocked: "Base,MS"
@@ -42460,6 +42675,8 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  PickupTarget: HWSLiftBlocks
+  TemplateRoot: HWSLiftBlocks
   AllowedInBlueprint: true, display: true
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocksLocked: "Base,MS"
@@ -42485,6 +42702,8 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  PickupTarget: HWSLiftBlocks
+  TemplateRoot: HWSLiftBlocks
   AllowedInBlueprint: true, display: true
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocksLocked: "Base,MS"
@@ -42510,6 +42729,8 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  PickupTarget: HWSLiftBlocks
+  TemplateRoot: HWSLiftBlocks
   AllowedInBlueprint: true, display: true
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocksLocked: "Base,MS"
@@ -42604,7 +42825,7 @@
   Material: HWS_material_devices_kinetic, display: true
   Shape: ModelEntity
   ShowBlockName: true
-  Model: @hws_blockmodels/HWSWarpDriveT3
+  Model: @models/Blocks/Mothership/WarpDriveT2Prefab
   Mesh-Damage-1: Mesh/D0
   Mesh-Damage-2: Mesh/D1
   Mesh-Damage-3: Mesh/D2
@@ -42633,20 +42854,17 @@
   EnergyIn: 1000, type: int, display: true, formatter: Watt
   CPUIn: 100000, type: int, display: true
   AttackTimeout: 25
-  DowngradeTo: WarpDriveT2
+  DowngradeTo: null
 
   BlastParticleIndex: 4
   BlastRadius: 2
   BlastDamage: 500
 
   ItemPerAU: PentaxidCrystal, display: true
-  CostPerAU: 1, display: true
-  CostPerLY: 1, display: true
+  CostPerAU: 3, display: true
+  CostPerLY: 3, display: true
   RangeAU: 100, display: true
-  RangeLY: 100, display: true
-
-  Mod.RangeAU: "RangeAU + Player.Skills['PilotAURange']"
-  Mod.RangeLY: "RangeLY + Player.Skills['PilotLYRange'] + 10"
+  RangeLY: 370, display: true
 
   Radiation: 100, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
   Temperature: 150, display: true
@@ -42863,12 +43081,13 @@
   Material: resourcehard
   Shape: Terrain
   Mesh: terrain
+  AutoMinerFactor: 0
   Texture: 219
   ShowUser: No
   Group: resource
   { Child DropOnDestroy
     Item: HWSTungstenOre
-    Count: "6,8"
+    Count: "1,4"
     Prob: 0.2
   }
 }
@@ -42877,12 +43096,13 @@
   Material: resourcehard
   Shape: Terrain
   Mesh: terrain
+  AutoMinerFactor: 0
   Texture: 219
   ShowUser: No
   Group: resource
   { Child DropOnDestroy
     Item: HWSChromiteOre
-    Count: "6,8"
+    Count: "1,4"
     Prob: 0.2
   }
 }
@@ -42891,12 +43111,13 @@
   Material: resourcehard
   Shape: Terrain
   Mesh: terrain
+  AutoMinerFactor: 0
   Texture: 219
   ShowUser: No
   Group: resource
   { Child DropOnDestroy
     Item: HWSBismuthOre
-    Count: "6,8"
+    Count: "1,4"
     Prob: 0.2
   }
 }
@@ -42905,12 +43126,13 @@
   Material: resourcehard
   Shape: Terrain
   Mesh: terrain
+  AutoMinerFactor: 0
   Texture: 219
   ShowUser: No
   Group: resource
   { Child DropOnDestroy
     Item: HWSColtan
-    Count: "6,8"
+    Count: "1,4"
     Prob: 0.2
   }
 }
@@ -43268,7 +43490,7 @@
   Material: hullcombat
   CustomIcon: HeavyWindowDetailedCT2COR
   Shape: Invisible
-  MarketPrice: 3272, display: true
+  MarketPrice: 2766, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
   Info: bkiBlockGroup, display: true
@@ -43581,7 +43803,7 @@
 # =================================================================================
 
 { Block Name: TeleporterBAEpic
-  MarketPrice: 357307, display: true
+  MarketPrice: 458655, display: true
   Info: bkiTeleporterBAEpic, display: true
   Class: Teleporter
  # MarketPrice: 2200, display: true
@@ -43642,7 +43864,7 @@
   IndexName: WarpDrive
   Material: HWS_material_devices_kinetic
   Shape: ModelEntity
-  MarketPrice: 196841, display: true
+  MarketPrice: 267129, display: true
   ShowBlockName: true
   RepairToTemplate: false                    #Blocks can NOT be placed, and used for R2T when destroyed
   AllowedInBlueprint: false, display: true  #Struct with these blocks cannot be blueprinted to avoid easy multiplication of these blocks!
@@ -43697,7 +43919,7 @@
 { Block Name: DetectorHVEpic
   Info: bkiDetectorHVEpic, display: true
   WeaponItem: DetectorHVEpicWeapon
-  MarketPrice: 3089, display: true
+  MarketPrice: 3043, display: true
   WeaponItemRotation: false
   RepairToTemplate: false                    #Blocks can be placed, and used for R2T when destroyed
   AllowedInBlueprint: false, display: true  #Struct with these blocks cannot be blueprinted to avoid easy multiplication of these blocks!
@@ -43752,7 +43974,7 @@
   WeaponItemRotation: false
   RepairToTemplate: false                    #Blocks can be placed, and used for R2T when destroyed
   AllowedInBlueprint: false, display: true  #Struct with these blocks cannot be blueprinted to avoid easy multiplication of these blocks!
-  MarketPrice: 24423, display: true
+  MarketPrice: 30177, display: true
   IndexName: WeaponShip
   Group: cpgEquipment
   Material: HWS_material_devices_kinetic
@@ -45349,7 +45571,7 @@
 }
 
 { Block Name: WarpDriveT2
-  MarketPrice: 349810, display: true
+  MarketPrice: 432450, display: true
   Class: WarpDrive
   Group: cpgWarp
   IndexName: WarpDrive
@@ -45391,13 +45613,13 @@
   BlastDamage: 500
 
   ItemPerAU: PentaxidCrystal, display: true
-  CostPerAU: 1, display: true
+  CostPerAU: 2, display: true
   CostPerLY: 2, display: true
-  RangeAU: 50, display: true
-  RangeLY: 77, display: true
+  RangeAU: 70, display: true
+  RangeLY: 30, display: true
 
   Mod.RangeAU: "RangeAU + Player.Skills['PilotAURange']"
-  Mod.RangeLY: "RangeLY + Player.Skills['PilotLYRange'] + 10"
+  Mod.RangeLY: "RangeLY + Player.Skills['PilotLYRange'] + 26"
 
   Radiation: 25, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
   Temperature: 90, display: true
@@ -45409,7 +45631,7 @@
 }
 
 { Block Name: WeaponSVTorpedoLauncher
-  MarketPrice: 104393, display: true
+  MarketPrice: 105653, display: true
   Class: Weapon
   AllowedInBlueprint: true, display: true
   IndexName: WeaponShip
@@ -45498,7 +45720,7 @@
   IndexName: WeaponShip
   Group: cpgWeapon
   Material: HWS_material_devices_kinetic
-  MarketPrice: 171812, display: true
+  MarketPrice: 220510, display: true
   Shape: ModelEntity
   ShowBlockName: true
   CustomIcon: WeaponSV05

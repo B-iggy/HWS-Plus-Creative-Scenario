@@ -1,3 +1,4 @@
 EPD*
 *.bin
 Prefabs/ExportedDevices/
+**/*_fixed.yaml
