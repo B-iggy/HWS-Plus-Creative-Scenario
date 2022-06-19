@@ -1837,7 +1837,7 @@
   FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, HWSElementStrangeletRefined"
   FuelCapacity: 3000, type: int, display: true
   BlastParticleIndex: 8
-  BlastRadius: 2
+  BlastRadius: 3
   BlastDamage: 150
 
   Radiation: 1.25, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
@@ -1862,8 +1862,8 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiFuelTank, display: true
   CPUIn: 100, type: int, display: true
-  BlastRadius: 2
-  BlastDamage: 5000
+  BlastRadius: 3
+  BlastDamage: 250
 
   Radiation: 1.4, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
 
@@ -2505,7 +2505,7 @@
 
   BlastParticleIndex: 10
   BlastRadius: 3
-  BlastDamage: 1000
+  BlastDamage: 240
 
   UnlockCost: 11, display: true
   UnlockLevel: 7, display: true
@@ -4990,7 +4990,7 @@
   Category: Devices
   BlastParticleIndex: 8
   BlastRadius: 3
-  BlastDamage: 1200
+  BlastDamage: 500
 
   UnlockCost: 2, display: true
   UnlockLevel: 3, display: true
@@ -5844,8 +5844,8 @@
   Temperature: 287, display: true
   Category: Devices
   BlastParticleIndex: 6
-  BlastRadius: 3
-  BlastDamage: 100
+  BlastRadius: 2
+  BlastDamage: 300
   UpgradeTo: ThrusterSVRoundNormalT2, display: false
 }
 { Block Id: 450, Name: ThrusterSVRoundArmored, Ref: ThrusterSVRoundNormal
@@ -5909,7 +5909,7 @@
   Category: Devices
   BlastParticleIndex: 8
   BlastRadius: 2
-  BlastDamage: 5000
+  BlastDamage: 1000
 
 
   Radiation: 5, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
@@ -5965,7 +5965,7 @@
   Category: Devices
   BlastParticleIndex: 4
   BlastRadius: 2
-  BlastDamage: 600
+  BlastDamage: 150
 
   UnlockCost: 7, display: true
   UnlockLevel: 5, display: true
@@ -6014,7 +6014,7 @@
   CPUIn: 4250, type: int, display: true
   Category: Devices
   BlastParticleIndex: 11
-  BlastRadius: 3
+  BlastRadius: 2
   BlastDamage: 500
 
   BlockColor: "110,110,110"
@@ -6070,7 +6070,7 @@
   CPUIn: 40000, type: int, display: true
   Category: Devices
   BlastParticleIndex: 1
-  BlastRadius: 3
+  BlastRadius: 2
   BlastDamage: 3000
 
   Radiation: 8, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
@@ -6497,8 +6497,8 @@
   CPUIn: 500, type: int, display: true
   Category: Devices
   BlastParticleIndex: 9
-  BlastRadius: 2
-  BlastDamage: 500
+  BlastRadius: 3
+  BlastDamage: 200
 
   UnlockCost: 0, display: true
   UnlockLevel: 1, display: true
@@ -6992,7 +6992,7 @@
   CPUIn: 110000, type: int, display: true
   Category: Devices
   BlastParticleIndex: 1
-  BlastRadius: 3
+  BlastRadius: 2
   BlastDamage: 16750
   OccupySizeInBlocks: true
 
@@ -7036,7 +7036,7 @@
   IsActivateable: true
 
   BlastParticleIndex: 8
-  BlastRadius: 2
+  BlastRadius: 3
   BlastDamage: 500
 
   UnlockCost: 4, display: true
@@ -7855,8 +7855,8 @@
   Temperature: 369, display: true
   TemplateRoot: ThrusterSVRoundLarge
   BlastParticleIndex: 8
-  BlastRadius: 3
-  BlastDamage: 1125
+  BlastRadius: 2
+  BlastDamage: 350
 
   UnlockCost: 12, display: true
   UnlockLevel: 10, display: true
@@ -7878,8 +7878,8 @@
   Temperature: 773, display: true
   TemplateRoot: ThrusterSVRoundLargeT2
   BlastParticleIndex: 8
-  BlastRadius: 3
-  BlastDamage: 1600
+  BlastRadius: 2
+  BlastDamage: 400
 
   UnlockCost: 15, display: true
   UnlockLevel: 12, display: true
@@ -7917,8 +7917,8 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 400, type: float, display: true, formatter: Kilogram
   BlastParticleIndex: 4
-  BlastRadius: 1
-  BlastDamage: 200
+  BlastRadius: 3
+  BlastDamage: 400
   StackSize: 50000
   
   HitPoints: 200, type: int, display: true
@@ -8136,7 +8136,7 @@
   Mass: 570, type: float, display: true, formatter: Kilogram
   BlastParticleIndex: 4
   BlastRadius: 2
-  BlastDamage: 50
+  BlastDamage: 80
   HitPoints: 80, type: int, display: true
   FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, HWSElementStrangeletRefined"
 
@@ -9020,7 +9020,7 @@
 
   BlastParticleIndex: 4
   BlastRadius: 2
-  BlastDamage: 250
+  BlastDamage: 80
 
   UnlockCost: 0, display: true
   UnlockLevel: 1, display: true
@@ -9073,7 +9073,7 @@
   Category: Devices
   BlastParticleIndex: 8
   BlastRadius: 2
-  BlastDamage: 400
+  BlastDamage: 80
 
   UnlockCost: 4, display: true
   UnlockLevel: 3, display: true
@@ -9119,8 +9119,8 @@
   CPUIn: 135, type: int, display: true
   Category: Devices
   BlastParticleIndex: 9
-  BlastRadius: 3
-  BlastDamage: 525
+  BlastRadius: 2
+  BlastDamage: 180
 
   Temperature: 90, display: true
   UpgradeTo: ThrusterGVRoundNormalT2, display: true
@@ -15712,7 +15712,7 @@
   # ModelOffset: "0,0.5,0"
   BlastParticleIndex: 4
   BlastRadius: 2
-  BlastDamage: 50
+  BlastDamage: 80
   HitPoints: 80, type: int, display: true
   FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, HWSElementStrangeletRefined"
 
@@ -16620,11 +16620,11 @@
   Volume: 0, type: float, display: false, formatter: Liter
   CPUIn: 100, type: int, display: true
   Mass: 3570, type: float, display: true, formatter: Kilogram
-  HitPoints: 80, type: int, display: true
+  HitPoints: 250, type: int, display: true
   FuelCapacity: 12000, type: int, display: true
   BlastParticleIndex: 1
   BlastRadius: 3
-  BlastDamage: 160
+  BlastDamage: 500
 
   Radiation: 2.8, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
 
@@ -27161,8 +27161,8 @@
   Temperature: 150, display: true
   TemplateRoot: ThrusterGVRoundNormalT2
   BlastParticleIndex: 8
-  BlastRadius: 3
-  BlastDamage: 100
+  BlastRadius: 2
+  BlastDamage: 220
 
   UnlockCost: 10, display: true
   UnlockLevel: 12, display: true
@@ -27184,8 +27184,8 @@
   Temperature: 120, display: true
   TemplateRoot: ThrusterGVRoundLarge
   BlastParticleIndex: 8
-  BlastRadius: 3
-  BlastDamage: 725
+  BlastRadius: 2
+  BlastDamage: 350
 
   UnlockCost: 7, display: true
   UnlockLevel: 7, display: true
@@ -27206,8 +27206,8 @@
   Temperature: 180, display: true
   TemplateRoot: ThrusterGVRoundLargeT2
   BlastParticleIndex: 8
-  BlastRadius: 3
-  BlastDamage: 950
+  BlastRadius: 2
+  BlastDamage: 400
 
   UnlockCost: 12, display: true
   UnlockLevel: 12, display: true
@@ -27541,7 +27541,7 @@
   ShieldPerCrystal: 300, type: int, display: true # 400 Pentaxid in total
   UpgradeTo: ShieldGeneratorBAT2, display: true
   BlastParticleIndex: 8
-  BlastRadius: 2
+  BlastRadius: 3
   BlastDamage: 4000
   Radiation: 7, display: RadiationLevel
 
@@ -31039,7 +31039,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_aquadevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 120012, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -31269,7 +31269,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_terradevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 120012, display: true
 
   Shape: Invisible
   Place: Free
@@ -31492,7 +31492,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_pyrodevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 120012, display: true
 
   Shape: Invisible
   Place: Free
@@ -31714,7 +31714,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_obsidiandevicelarge, display: true
-  MarketPrice: 90009, display: true
+  MarketPrice: 360036, display: true
 
   Shape: Invisible
   Place: Free
@@ -31936,7 +31936,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_luxdevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 120012, display: true
 
   Shape: Invisible
   Place: Free
@@ -32158,7 +32158,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_noxdevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 120012, display: true
 
   Shape: Invisible
   Place: Free
@@ -32380,7 +32380,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_strangeletdevicelarge, display: true
-  MarketPrice: 10001, display: true
+  MarketPrice: 40004, display: true
 
   Shape: Invisible
   Place: Free
@@ -32603,7 +32603,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_elements, display: true
-  MarketPrice: 160016, display: true
+  MarketPrice: 641904, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -32933,7 +32933,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_aquadevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 120012, display: true
 
   Shape: Invisible
   Place: Free
@@ -33129,7 +33129,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_terradevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 120012, display: true
 
   Shape: Invisible
   Place: Free
@@ -33325,7 +33325,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_pyrodevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 120012, display: true
 
   Shape: Invisible
   Place: Free
@@ -33521,7 +33521,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_obsidiandevicelarge, display: true
-  MarketPrice: 90009, display: true
+  MarketPrice: 360036, display: true
 
   Shape: Invisible
   Place: Free
@@ -33717,7 +33717,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_luxdevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 120012, display: true
 
   Shape: Invisible
   Place: Free
@@ -33913,7 +33913,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_noxdevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 120012, display: true
 
   Shape: Invisible
   Place: Free
@@ -34109,7 +34109,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_strangeletdevicelarge, display: true
-  MarketPrice: 10001, display: true
+  MarketPrice: 40004, display: true
 
   Shape: Invisible
   Place: Free
@@ -34306,7 +34306,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_elements, display: true
-  MarketPrice: 160016, display: true
+  MarketPrice: 641904, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -34633,7 +34633,7 @@
   IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_aquadevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 90009, display: true
 
   Shape: Invisible
   Place: Free
@@ -34810,7 +34810,7 @@
   IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_terradevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 90009, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -34986,7 +34986,7 @@
   IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_pyrodevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 90009, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -35161,7 +35161,7 @@
   IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_obsidiandevicelarge, display: true
-  MarketPrice: 90009, display: true
+  MarketPrice: 270027, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -35336,7 +35336,7 @@
   IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_luxdevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 90009, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -35511,7 +35511,7 @@
   IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_noxdevicelarge, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 90009, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -35686,7 +35686,7 @@
   IndexName: WeaponShip
   Group: cpgTurret
   Material: HWS_material_strangeletdevicelarge, display: true
-  MarketPrice: 10001, display: true
+  MarketPrice: 30003, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -35868,7 +35868,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_aquadevicesmall, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 60006, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -36063,7 +36063,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_terradevicesmall, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 60006, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -36258,7 +36258,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_pyrodevicesmall, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 60006, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -36453,7 +36453,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_obsidiandevicesmall, display: true
-  MarketPrice: 90009, display: true
+  MarketPrice: 180018, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -36648,7 +36648,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_luxdevicesmall, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 60006, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -36843,7 +36843,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_noxdevicesmall, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 60006, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -37038,7 +37038,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_strangeletdevicesmall, display: true
-  MarketPrice: 10001, display: true
+  MarketPrice: 20002, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -37234,7 +37234,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_elements, display: true
-  MarketPrice: 160016, display: true
+  MarketPrice: 320952, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -38458,7 +38458,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_aquadevicesmall, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 60006, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -38571,7 +38571,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_terradevicesmall, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 60006, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -38684,7 +38684,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_pyrodevicesmall, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 60006, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -38797,7 +38797,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_obsidiandevicesmall, display: true
-  MarketPrice: 90009, display: true
+  MarketPrice: 180018, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -38910,7 +38910,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_luxdevicesmall, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 60006, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -39023,7 +39023,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_noxdevicesmall, display: true
-  MarketPrice: 30003, display: true
+  MarketPrice: 60006, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -39136,7 +39136,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_strangeletdevicesmall, display: true
-  MarketPrice: 10001, display: true
+  MarketPrice: 20002, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -39250,7 +39250,7 @@
   IndexName: Turret
   Group: cpgTurret
   Material: HWS_material_elements, display: true
-  MarketPrice: 160016, display: true
+  MarketPrice: 320952, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -41136,7 +41136,7 @@
 # -------------------------------------------------------------------------------------------------- Chaos Gun SV Blocks
 { Block Name: HWSChaosGunSVBlocks
   Material: HWS_material_elements, display: true
-  MarketPrice: 160016, display: true
+  MarketPrice: 160476, display: true
   Shape: Invisible
   Place: Free
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -41514,7 +41514,7 @@
 { Block Name: HWSChaosShieldGeneratorBlocksSmall
   Material: HWS_material_elements, display: true
   Shape: Invisible
-  MarketPrice: 160016, display: true
+  MarketPrice: 320952, display: true
   # Model: @models/Blocks/Misc/LeverPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   # ModelOffset: "0,0.5,0"
@@ -41537,7 +41537,7 @@
 { Block Name: HWSChaosShieldGeneratorBlocksLarge
   Material: HWS_material_elements, display: true
   Shape: Invisible
-  MarketPrice: 160016, display: true
+  MarketPrice: 641904, display: true
   # Model: @models/Blocks/Misc/LeverPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   # ModelOffset: "0,0.5,0"
@@ -42323,7 +42323,7 @@
 # -------------------------------------------------------------------------------------------------- HWS Shield Extender
 { Block Name: HWSShieldCapacityExtenderBase
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 563640, display: true
+  MarketPrice: 574040, display: true
   ShieldCapacityBonus: 2000, type: int, display: true
   NPCModelRotation: false
   IsTextureable: true
@@ -42356,7 +42356,7 @@
 }
 { Block Name: HWSShieldRechargeExtenderBase
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 563640, display: true
+  MarketPrice: 574040, display: true
   ShieldRechargeBonus: 2000000, type: int, display: true
   NPCModelRotation: false
   IsTextureable: true
@@ -42389,7 +42389,7 @@
 }
 { Block Name: HWSShieldCapacityExtenderCV
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 563640, display: true
+  MarketPrice: 574040, display: true
   ShieldCapacityBonus: 2000, type: int, display: true
   NPCModelRotation: false
   IsTextureable: true
@@ -42423,7 +42423,7 @@
 }
 { Block Name: HWSShieldRechargeExtenderCV
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 563640, display: true
+  MarketPrice: 574040, display: true
   ShieldRechargeBonus: 2000000, type: int, display: true
   NPCModelRotation: false
   IsTextureable: true
@@ -42457,7 +42457,7 @@
 }
 { Block Name: HWSShieldCapacityExtenderHV
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 563640, display: true
+  MarketPrice: 498840, display: true
   ShieldCapacityBonus: 2000, type: int, display: true
   NPCModelRotation: false
   IsTextureable: true
@@ -42490,7 +42490,7 @@
 }
 { Block Name: HWSShieldRechargeExtenderHV
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 563640, display: true
+  MarketPrice: 568840, display: true
   ShieldRechargeBonus: 2000000, type: int, display: true
   IsTextureable: true
   IsColorable: true
@@ -42522,7 +42522,7 @@
 }
 { Block Name: HWSShieldCapacityExtenderSV
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 563640, display: true
+  MarketPrice: 498840, display: true
   ShieldCapacityBonus: 2000, type: int, display: true
   IsTextureable: true
   IsColorable: true
@@ -42554,7 +42554,7 @@
 }
 { Block Name: HWSShieldRechargeExtenderSV
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
-  MarketPrice: 563640, display: true
+  MarketPrice: 568840, display: true
   ShieldRechargeBonus: 2000000, type: int, display: true
   IsTextureable: true
   IsColorable: true
@@ -42588,7 +42588,7 @@
 { Block Name: HWSLiftBlocks
   Material: HWS_material_devices_kinetic, display: true
   Shape: Invisible
-  MarketPrice: 4252, display: true
+  MarketPrice: 8852, display: true
   # Model: @models/Blocks/Misc/LeverPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   # ModelOffset: "0,0.5,0"

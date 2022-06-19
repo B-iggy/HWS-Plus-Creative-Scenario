@@ -44,10 +44,10 @@
 # SHIELD: the Class: ShieldGenerator (BlocksConfig.ecf) can have a parameter 'ShieldMultiplier: AnyStringPossible' > The value 'AnyStringPossible' can be used in the DamageMultiplier setup to define shield-block specific damage multipliers! If not used, damage multiplier = 1
 # --
 #
-# Categories:
+# Categories: 
 # Ingredients: Base material without a template (ie picked up in the world)
-# Components: Processed material with a template
-#
+# Components: Processed material with a template 
+# 
 #
 #=== Weapon Hold Types:
 # HoldType: 0    unspecified
@@ -55,26 +55,26 @@
 # HoldType: 15   Rifle
 # HoldType: 16   Rifle + weaker shoot animation (Survival Tool, Multitool, Drill)
 #
-#  Categories:
+#  Categories: 
 # > Sufficient condition given in Templates.ecf
 # > Necessary condition that an item appears in a certain device
-# Food: FoodP and SurvC
-# Medical: FoodP and SurvC
+# Food: FoodP and SurvC 
+# Medical: FoodP and SurvC   
 # Ingredients: FoodP
 # Weapons/Items: SurvC, SmallC, LargeC, AdvC
 # Components: SurvC, SmallC, LargeC, AdvC
 # BuildingBlocks: SurvC, SmallC, LargeC, AdvC
 # Devices: SurvC, SmallC, LargeC, AdvC
 # Deco Blocks: SurvC, SmallC, LargeC, AdvC
-#
-# Automatic weapons: duration SfxBegin > ROF
-#
-# AllowRemote: true / false     # allow / disallow in player drone. per default it is: true
+# 
+# Automatic weapons: duration SfxBegin > ROF 
+# 
+# AllowRemote: true / false     # allow / disallow in player drone. per default it is: true  
 # AmmoCapacity: max is 500 for all turret and mounted weapons
 # Durability: max is 5000 for all handheld weapons and tools
 # AutoReload: true > per default it is set to "true"
 
-# CATEGORIE: PLAYER WEAPONS AND TOOLS id 1 - 99
+# CATEGORIE: PLAYER WEAPONS AND TOOLS id 1 - 99 
 { Item Id: 1, Name: MeleePlayer
   Material: human, display: true
   MarketPrice: 1, display: true
