@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3446484579
+CRC: 735304855
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5a53c27bdcc8abadfccd90821528a0ac
+    Hash: 0a445214f85d1645741c34d2529fd1db
   TypeTreeHash:
     serializedVersion: 2
-    Hash: e1e51553f0ad3039866775b394e162f7
+    Hash: 0af95a41c01f22ffae87183b936a0a38
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -50,6 +50,8 @@ ClassTypes:
 - Class: 136
   Script: {instanceID: 0}
 - Class: 137
+  Script: {instanceID: 0}
+- Class: 143
   Script: {instanceID: 0}
 - Class: 198
   Script: {instanceID: 0}
@@ -105,6 +107,7 @@ Assets:
 - Assets/hws_eclassmodels/HWSSkeleton/Textures/Shield.png
 - Assets/hws_eclassmodels/HWSSkeleton/animation/Materials/Material #34.mat
 - Assets/hws_eclassmodels/Drones/HWSDrone.prefab
+- Assets/hws_eclassmodels/PEntityAlienLarge.prefab
 - Assets/hws_eclassmodels/HWSSkeleton/animation/SkeletonDead.controller
 - Assets/hws_eclassmodels/HWSSkeleton/mesh/SWORD.FBX
 - Assets/hws_eclassmodels/HWSElementals/HWSLuxElementalDead_dedi.prefab

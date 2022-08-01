@@ -2,6 +2,7 @@ Options:
 - ValidFor:
   - SP
   - Survival
+  - Creative
   DecayTime: 6
   WipeTime: 360
   ProtectTime: 25

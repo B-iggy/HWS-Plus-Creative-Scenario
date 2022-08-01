@@ -80,7 +80,7 @@
   MarketPrice: 1, display: true
   Canhold: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Candrop: false
   ShowUser: No
 }
@@ -92,7 +92,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 14
   PickupToToolbar: true
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   CreatesLight: true
   Mass: 1, type: float, display: true, formatter: Kilogram
@@ -108,7 +108,7 @@
   MarketPrice: 155, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 14
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: "A standard-issue sidearm for personel defense. It's rated for underwater use.", display: true
   Mass: 2.1, type: float, display: true, formatter: Kilogram
@@ -162,7 +162,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 279, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
   Mass: 6.2, type: float, display: true, formatter: Kilogram
@@ -219,7 +219,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 8726, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: "A portable rotary cannon for manned emplacements. This weapon has safeties in place to prevent personal injury. Change mode with RMB.", display: true
   Mass: 39, type: float, display: true, formatter: Kilogram
@@ -310,7 +310,7 @@
   MarketPrice: 14686, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
   Mass: 4.2, type: float, display: true, formatter: Kilogram
@@ -378,7 +378,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 279, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: "A long ranged anti-personel and anti-materiel rifle weapon with a telescopic sight that has become the standard LRSW.", display: true
   Mass: 9.1, type: float, display: true, formatter: Kilogram
@@ -439,7 +439,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 157, display: true
   HoldType: 16
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Mass: 6, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -524,7 +524,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 3770, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: "An advanced semi-automatic combat shotgun used by elite personel for close quarters combat. It has a larger magazine and more stopping power than it's standard issue counterpart.", display: true
   Mass: 9.1, type: float, display: true, formatter: Kilogram
@@ -583,7 +583,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 6498, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
   Mass: 25, type: float, display: true, formatter: Kilogram
@@ -631,7 +631,7 @@
   Material: HWS_material_weapon_kinetic, display: false
   MarketPrice: 220, display: true
   HoldType: 16
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Mass: 8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -903,7 +903,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 16
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Mass: 8, type: float, display: true, formatter: Kilogram
   Info: bkiFillertool, display: true
@@ -964,7 +964,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   Canhold: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: bkiRotateBlocks, display: true
   Mass: 8, type: float, display: true, formatter: Kilogram
@@ -1037,7 +1037,7 @@
   Material: HWS_material_weapon_energy, display: true
   MarketPrice: 7315, display: true
   HoldType: 14
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: "Utilizing a pulsed laser array this weapon can produce collimated hard light beams that ignore atmospheric density and deal extreme thermal damage to the target.", display: true
   Mass: 2.5, type: float, display: true, formatter: Kilogram
@@ -1107,7 +1107,7 @@
   MarketPrice: 355, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: "A lightweight squad automatic weapon that's standard issue for military and tactical personel for rear support. It has superior range and damage over speed.", display: true
   Mass: 4, type: float, display: true, formatter: Kilogram
@@ -1170,7 +1170,7 @@
   Material: HWS_material_weapon_energy, display: true
   MarketPrice: 141525, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: "Utilizing a pulsed laser array this weapon can produce collimated hard light beams that ignore atmospheric density and deal extreme thermal damage to the target.", display: true
   Mass: 5, type: float, display: true, formatter: Kilogram
@@ -1250,7 +1250,7 @@
   Material: HWS_material_weapon_energy, display: true
   MarketPrice: 52792, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: bkiWeaponHandheldIgnoringAtmo, display: true
   Mass: 55, type: float, display: true, formatter: Kilogram
@@ -1338,7 +1338,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 3697, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: "A long ranged anti-materiel rifle with advanced telescopic sights and aim stabilizers allowing longer shots with more penetrative power against armored targets.", display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
@@ -1398,7 +1398,7 @@
   Material: HWS_material_weapon_kinetic, display: false
   MarketPrice: 1839, display: true
   HoldType: 16
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Mass: 28, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -1642,7 +1642,7 @@
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: false
   HoldType: 14
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: bkiColorTool, display: true
   Mass: 0.5, type: float, display: true, formatter: Kilogram
@@ -1685,7 +1685,7 @@
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: false
   HoldType: 14
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: bkiTextureTool, display: true
   Mass: 0.5, type: float, display: true, formatter: Kilogram
@@ -1727,7 +1727,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 648, display: true
   HoldType: 16
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: bkiChainsaw, display: true
   Mass: 16, type: float, display: true, formatter: Kilogram
@@ -1745,7 +1745,7 @@
     CameraShake: 0
     IgnoreAtmo: true
     Automatic: true
-    Damage: 85, display: true
+    Damage: 50, display: true
     AmmoCapacity: 125, display: true
     AmmoType: BioFuel, display: true
     ReloadDelay: 5.5, display: true
@@ -2225,7 +2225,7 @@
 }
 # Damage and Multipliers defined in EClassConfig > Entity Name: ExplosiveDevice
 { Item Id: 32, Name: Explosives
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/ScifiExplosiveDevice1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -2234,7 +2234,7 @@
   MarketPrice: 1323, display: true
   Canhold: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
   Mass: 0.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Weapons/Items
@@ -2475,7 +2475,7 @@
   MarketPrice: 250001, display: true
   Material: HWS_material_weapon_energy, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Durability: 500, display: false
   DegradationProb: 0.1, type: float, display: false
@@ -2542,7 +2542,7 @@
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: false
   HoldType: 16           # no weapon shaking animation
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Mass: 3, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -2588,7 +2588,7 @@
     HarvestSupport: true
     AllowAt: "UnderWater, Planet, Space"
     ROF: 0.5, type: float, display: false, formatter: ROF
-    Damage: 100
+    Damage: 50
     Radius: 1.75
     Range: 5, display: false
     NoiseStrength: 50, display: false
@@ -2611,8 +2611,6 @@
 
     DamageMultiplier_Group: HWS_Drill_Vanilla
 
-   # DamageMultiplier_3: 0.25, param1: resourcemedium
-   # DamageMultiplier_4: 0.1, param1: resourcehard
        RadialText: rdlResourceMining
     RadialDesc: rdlResourceMiningDescST
     RadialIcon: Radial_ResourceMining
@@ -2696,7 +2694,7 @@
 }
 { Item Id: 40, Name: DrillEpic, Ref: DrillT2
   Meshfile: Entities/Items/Weapons/DrillV2/DrillT2EpicPrefab
-  StackSize: 50000
+  StackSize: 1
   DegradationProb: 0.1, type: float, display: false
   MarketPrice: 300001, display: true
   { Child 0   # Resource Mining
@@ -2724,7 +2722,7 @@
   Material: HWS_material_weapon_kinetic, display: false
   MarketPrice: 1100, display: true
   HoldType: 14
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: bkiTextureColorTool, display: true
   Mass: 2.5, type: float, display: true, formatter: Kilogram
@@ -2763,7 +2761,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 43896, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Mass: 28, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -2826,7 +2824,7 @@
   Material: HWS_material_weapon_energy, display: true
   MarketPrice: 38837, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   #CustomIcon: StarterTool
   Category: Weapons/Items
   Info: "Some kind of plasma cannon of alien origin. It fires electro-magnetically guided balls of exotic plasma at a target.", display: true
@@ -2870,7 +2868,7 @@
 }
 
 { Item Id: 44, Name: WeaponSVTorpedoLauncherWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: @models/Blocks/WeaponsShip/WeaponSSMissilePrefab
   MarketPrice: 1, display: true
@@ -2880,7 +2878,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   CustomIcon: ThrusterGVRoundArmored
   HoldType: 0
-  StackSize: 50000
+  StackSize: 200
   Mass: 2000, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
@@ -2903,16 +2901,16 @@
 }
 
 { Item Id: 45, Name: AmmoSVTorpedo
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Items/Weapons/Projectiles/BombDronePrefab
-  MarketPrice: 120646, display: true
+  MarketPrice: 62896, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   CustomIcon: BombDrone
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: SS, display: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
   Canhold: false
   Mass: 500, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -2948,7 +2946,7 @@
   MarketPrice: 1, display: true
   Material: human, display: true
   HoldType: 20
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   #SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
 
@@ -3001,7 +2999,7 @@
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: false
   HoldType: 16
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: A specialized injector gun for administering medical aid to an ally in the field., display: true
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -3161,7 +3159,7 @@
 
 # Ammo id 51 - 79
 { Item Id: 51, Name: SlowRocket
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
 
   Meshfile: Entities/Items/Weapons/Projectiles/rocket01HandheldPrefab
   # Meshfile: Entities/Items/Weapons/Projectiles/rocket01Prefab
@@ -3172,7 +3170,7 @@
   Canhold: false
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
-  StackSize: 50000
+  StackSize: 1000
   Mass: 1.2, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   { Child 0
@@ -3197,7 +3195,7 @@
   TechTreeNames: Hidden
 }
 { Item Id: 52, Name: 50Caliber
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
 
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -3205,7 +3203,7 @@
   MarketPrice: 12, display: true
   HoldType: 0
   Canhold: false
-  StackSize: 50000
+  StackSize: 1000
   Info: bkiAmmo, display: true
   Category: Weapons/Items
   Mass: 0.01, type: float, display: true, formatter: Kilogram
@@ -3215,19 +3213,16 @@
   TechTreeNames: Hidden
 }
 { +Item Id: 53, Name: 8.3mmBullet, Ref: 50Caliber
-  StackSize: 50000
   MarketPrice: 12, display: true
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { +Item Id: 54, Name: 5.8mmBullet, Ref: 50Caliber
-  StackSize: 50000
   MarketPrice: 22, display: true
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { +Item Id: 55, Name: 12.7mmBullet, Ref: 50Caliber
-  StackSize: 50000
   MarketPrice: 45, display: true
   Mass: 0.06, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -3284,8 +3279,8 @@
   Mass: 20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 53, display: true
-  StackSize: 50000
-  
+  StackSize: 2000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 800"
 }
 
 { Item Id: 64, Name: SciFiCannonPlasmaCharge
@@ -3296,8 +3291,8 @@
   Canhold: false
   Info: bkiAmmoHoming, display: true
   Category: Weapons/Items
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Mass: 4, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 533, display: true
@@ -3320,7 +3315,7 @@
 }
 { Item Id: 65, Name: SlowRocketHoming, Ref: SlowRocket
   Info: bkiAmmoExplosive, display: true
-  StackSize: 50000
+  StackSize: 1000
   Mass: 1.6, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 1572, display: true
@@ -3352,8 +3347,8 @@
   Canhold: false
   Info: bkiAmmoHoming, display: true
   Category: Weapons/Items
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Mass: 4, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 587, display: true
@@ -3385,8 +3380,8 @@
   Canhold: false
   Info: bkiFlameThrowerCanister, display: true
   Category: Weapons/Items
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Mass: 20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 530, display: true
@@ -3467,7 +3462,7 @@
   MarketPrice: 1, display: true
   Material: human, display: true
   HoldType: 20
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -3492,7 +3487,7 @@
   MarketPrice: 1, display: true
   Material: human, display: true
   HoldType: 20
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -3571,7 +3566,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
   Canhold: false
-  StackSize: 50000
+  StackSize: 1000
   Mass: 1, type: float, display: false, formatter: Kilogram
   ShowUser: No
 
@@ -3583,7 +3578,7 @@
 { Item Id: 79, Name: RocketDebug, Ref: SlowRocket
   Info: bkiAmmoExplosive, display: true
   MarketPrice: 1, display: true
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 4, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -3614,8 +3609,8 @@
   Canhold: false
   HoldType: 0
   Category: Components
-  StackSize: 50000
-  
+  StackSize: 2000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 800"
   Mass: 12, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   O2Value: 250, display: true, type: int  #  O2Value should be multiples of 200 (=base buff value)
@@ -3629,8 +3624,8 @@
   Canhold: false
   AutoFill: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 200
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Mass: 1.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -3712,8 +3707,8 @@
   MarketPrice: 2794, display: true
   Material: hullarmored, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 10000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
 
   Category: BuildingBlocks
   Mass: 1000, type: float, display: true, formatter: Kilogram
@@ -3736,8 +3731,8 @@
   Material: hullarmored, display: false
   MarketPrice: 4034, display: true
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 10000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
 
   Category: BuildingBlocks
   Mass: 200, type: float, display: true, formatter: Kilogram
@@ -3760,8 +3755,8 @@
   Material: hullarmored, display: false
   MarketPrice: 14262, display: true
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 10000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
 
   Category: BuildingBlocks
   Mass: 1500, type: float, display: true, formatter: Kilogram
@@ -3785,8 +3780,8 @@
   Material: hullarmored, display: false
   MarketPrice: 3786, display: true
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 10000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
 
   Category: BuildingBlocks
   Mass: 150, type: float, display: true, formatter: Kilogram
@@ -3810,7 +3805,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: hullarmored, display: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Category: BuildingBlocks
   ShowUser: No
@@ -3831,8 +3826,8 @@
   Canhold: false
   AutoFill: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 200
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   Mass: 0.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   O2Value: 35, display: false, type: int
@@ -3856,7 +3851,7 @@
   AllowPlacingAt: Base, display: true
   Material: hullarmored, display: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Category: BuildingBlocks
   Mass: 500, type: float, display: true, formatter: Kilogram
@@ -3881,7 +3876,7 @@
   AllowPlacingAt: Base, display: true
   Material: hullarmored, display: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Category: BuildingBlocks
   Mass: 250, type: float, display: true, formatter: Kilogram
@@ -3906,7 +3901,7 @@
   AllowPlacingAt: MS, display: true
   Material: hullarmored, display: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Category: BuildingBlocks
   Mass: 750, type: float, display: true, formatter: Kilogram
@@ -3933,7 +3928,7 @@
   AllowPlacingAt: MS, display: true
   Material: hullarmored, display: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Category: BuildingBlocks
   Mass: 400, type: float, display: true, formatter: Kilogram
@@ -3962,7 +3957,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 8500, type: float, display: false, formatter: Kilogram
   CustomIcon: TurretZiraxMSLaser
@@ -3994,7 +3989,7 @@
   CustomIcon: RailgunSSWeapon
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 8500, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4023,14 +4018,14 @@
 
 { Item Id: 99, Name: AmmoCVTorpedo
   Meshfile: Entities/Items/Weapons/Projectiles/AlienRocketRedPrefab
-  MarketPrice: 125263, display: true
+  MarketPrice: 96388, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   CustomIcon: FillerCharge
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: MS, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 500, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -4066,7 +4061,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 365, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4108,7 +4103,7 @@
   Canhold: false
   Material: HWS_material_weapon_energy, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 1682, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4141,7 +4136,7 @@
   Canhold: false
   Material: HWS_material_weapon_energy, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 1645, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4185,7 +4180,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 19800, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4216,7 +4211,7 @@
   Canhold: false
   Material: HWS_material_weapon_energy, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 8500, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4244,7 +4239,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 5615, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4275,7 +4270,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 5777, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4308,7 +4303,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 521, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4338,7 +4333,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 1869, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4369,7 +4364,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 6120, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4409,7 +4404,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 8485, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4442,7 +4437,7 @@
   Canhold: false
   Material: HWS_material_weapon_energy, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 8500, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4471,7 +4466,7 @@
   Canhold: false
   Material: HWS_material_weapon_energy, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 2715, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4526,7 +4521,7 @@
   Canhold: false
   Material: HWS_material_weapon_energy, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 8500, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4555,7 +4550,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 500, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4594,7 +4589,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 520, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4623,7 +4618,7 @@
   Canhold: false
   Material: HWS_material_weapon_energy, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 2450, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4691,7 +4686,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 6150, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4729,7 +4724,7 @@
   Canhold: false
   Material: HWS_material_weapon_energy, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 8490, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4761,7 +4756,7 @@
   Canhold: false
   Material: HWS_material_weapon_energy, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 8490, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4830,7 +4825,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 4350, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4859,7 +4854,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 220, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4895,7 +4890,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 6150, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4933,7 +4928,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 11760, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4966,7 +4961,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 11760, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -4999,7 +4994,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 5777, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5030,7 +5025,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 5777, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5062,7 +5057,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 6120, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5101,7 +5096,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 19800, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5132,7 +5127,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 990, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5163,7 +5158,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 400, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5211,7 +5206,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 790, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5263,7 +5258,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 9270, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5351,7 +5346,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 150, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5457,7 +5452,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 9050, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5561,7 +5556,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 8500, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5589,7 +5584,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 12700, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5618,7 +5613,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 3650, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5662,7 +5657,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 500, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5689,7 +5684,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 8500, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5711,7 +5706,7 @@
   }
 }
 { Item Id: 141, Name: TurretEnemyLaserWeaponT2
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Model: Entities/Blocks/Turrets/TurretsEnemy/TurretEnemyLaserPrefab
   MarketPrice: 1, display: true
@@ -5720,7 +5715,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 200
   Mass: 8500, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
@@ -5753,7 +5748,7 @@
   Canhold: false
   Material: HWS_material_weapon_energy, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 8490, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
@@ -5810,7 +5805,7 @@
 #   Meshfile: Entities/Enemies/Drones/Weapons/BombLauncherDronePrefab
   Material: HWS_material_weapon_kinetic, display: true
 #   HoldType: 0
-#   StackSize: 50000
+#   StackSize: 1
 #   Category: Weapons/Items
 #   ShowUser: No
 #   { Child 0
@@ -5840,8 +5835,8 @@
   AllowPlacingAt: SS, display: false
   MarketPrice: 220, display: true
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 12, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -5883,8 +5878,8 @@
   AllowPlacingAt: SS, display: false
   HoldType: 0
   Canhold: false
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Mass: 20.6, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
@@ -5917,8 +5912,8 @@
   MarketPrice: 166, display: true
   AllowPlacingAt: SS, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 18, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -5951,8 +5946,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: "Base,MS", display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 0.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -5970,8 +5965,8 @@
   MarketPrice: 115, display: true
   AllowPlacingAt: SS, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -5989,8 +5984,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: "Base,MS", display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   MarketPrice: 169, display: true
   ShowUser: No
@@ -6026,8 +6021,8 @@
   AllowPlacingAt: SS, display: false
   CustomIcon: BlastShutterDoors1x1x1
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   ShowUser: Yes
   Mass: 1, type: float, display: true, formatter: Kilogram
@@ -6063,8 +6058,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: Base, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 870, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -6100,8 +6095,8 @@
   Material: HWS_material_weapon_energy, display: true
   AllowPlacingAt: MS, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 140, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -6132,8 +6127,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: MS, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 76, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -6168,8 +6163,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: "Base,MS", display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   ShowUser: No
   Mass: 47, type: float, display: true, formatter: Kilogram
@@ -6205,8 +6200,8 @@
   Material: HWS_material_weapon_energy, display: true
   AllowPlacingAt: GV, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 12, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -6241,8 +6236,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: Base, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 10.1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -6277,8 +6272,8 @@
   Material: HWS_material_weapon_energy, display: true
   AllowPlacingAt: MS, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 32, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -6312,8 +6307,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: GV, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 47, type: float, display: true, formatter: Kilogram
   Info: bkiAmmoExplosive, display: true
@@ -6348,8 +6343,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: "Base,MS", display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   ShowUser: No
   CustomIcon: PulseLaserChargeBA
@@ -6510,8 +6505,8 @@
   Material: HWS_material_weapon_energy, display: true
   AllowPlacingAt: MS, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 150, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -6591,8 +6586,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: Base, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   ShowUser: No
   Mass: 1, type: float, display: true, formatter: Kilogram
@@ -6668,7 +6663,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: "Base,MS", display: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
   Canhold: false
   ShowUser: No
   Mass: 34, type: float, display: true, formatter: Kilogram
@@ -6701,7 +6696,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: "Base,MS", display: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1000
   Canhold: false
   ShowUser: No
   Mass: 100, type: float, display: true, formatter: Kilogram
@@ -6739,8 +6734,8 @@
   AllowPlacingAt: "GV", display: false
   CustomIcon: ScifiContainer2Small
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   ShowUser: Yes
   Mass: 1, type: float, display: true, formatter: Kilogram
@@ -6774,8 +6769,6 @@
 # ============================================
 # TEMPLATES
 { Item Id: 197, Name: FoodTemplate
-  
-
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -6786,12 +6779,13 @@
   HoldType: 0
   Info: bkiConsumable, display: true
   Category: Food    # will be shown as template in FoodProc and SurvConstructor
-  StackSize: 50000
+  StackSize: 100
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 40"
   ShowUser: No
 
 }
 { Item Id: 198, Name: OreTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
 
   Meshfile: Entities/Items/Ores/MagnesiumOrePrefab
   MarketPrice: 1, display: true
@@ -6802,13 +6796,13 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiSourceMaterial, display: true
   Category: Components
-  StackSize: 50000
+  StackSize: 10000
   ShowUser: No
 
 
 }
 { Item Id: 199, Name: ComponentsTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 800"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
@@ -6820,7 +6814,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiComponent, display: true
   Category: Components
-  StackSize: 50000
+  StackSize: 2000
   ShowUser: No
 
 
@@ -7034,8 +7028,8 @@
   Info: An industrial ingot of Iron. The primary building material of all human technology and engineering., display: true
   ShowUser: Yes
   MarketPrice: 125, display: true
-  StackSize: 50000
-  
+  StackSize: 5000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 225, Name: CobaltIngot, Ref: ComponentsTemplate
   Mass: 6.68, type: float, display: true, formatter: Kilogram
@@ -7043,8 +7037,8 @@
   Info: Commonly used in high-strength alloys and some electronics., display: true
   ShowUser: Yes
   MarketPrice: 112
-  StackSize: 50000
-  
+  StackSize: 5000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 226, Name: SiliconIngot, Ref: ComponentsTemplate
   Mass: 1.9, type: float, display: true, formatter: Kilogram
@@ -7052,8 +7046,8 @@
   Info: A common material used in everything from insulation to glass., display: true
   ShowUser: Yes
   MarketPrice: 100, display: true
-  StackSize: 50000
-  
+  StackSize: 5000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 227, Name: NeodymiumIngot, Ref: ComponentsTemplate
   Mass: 5.26, type: float, display: true, formatter: Kilogram
@@ -7061,8 +7055,8 @@
   Info: Commonly used in high-strength electromagnets and Neodymium-doped glass lenses used in laser transmitters and weapons., display: true
   ShowUser: Yes
   MarketPrice: 178, display: true
-  StackSize: 50000
-  
+  StackSize: 5000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 228, Name: CopperIngot, Ref: ComponentsTemplate
   Mass: 6.71, type: float, display: true, formatter: Kilogram
@@ -7070,8 +7064,8 @@
   Info: A thermally and electrically conductive metal used in almost every kind of electronic component., display: true
   ShowUser: Yes
   MarketPrice: 150, display: true
-  StackSize: 50000
-  
+  StackSize: 5000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 229, Name: PromethiumPellets, Ref: ComponentsTemplate
   Mass: 2.18, type: float, display: true, formatter: Kilogram
@@ -7086,8 +7080,8 @@
   Info: A green-lustred metal similar in some aspects to Beryllium. Its extremely low melting point and magnetic properties makes it ideal for plasma-based applications., display: true
   ShowUser: Yes
   MarketPrice: 250, display: true
-  StackSize: 50000
-  
+  StackSize: 5000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 231, Name: ZascosiumIngot, Ref: ComponentsTemplate
   Mass: 5.36, type: float, display: true, formatter: Kilogram
@@ -7095,8 +7089,8 @@
   Info: A unique metal that oxides red. Zascosium has high reflectivity when polished and exceptional hardness but is brittle., display: true
   ShowUser: Yes
   MarketPrice: 300, display: true
-  StackSize: 50000
-  
+  StackSize: 5000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 232, Name: CrushedStone, Ref: OreTemplate
   Meshfile: Entities/Items/Ores/CrushedStonePrefab
@@ -7113,8 +7107,8 @@
   Info: A fine powder made from crushed stone used as a binder in concrete, display: true
   MarketPrice: 2, display: true
   ShowUser: Yes
-  StackSize: 50000
-  
+  StackSize: 5000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 234, Name: Oscillator, Ref: ComponentsTemplate     #former: AdvancedCPU
   Mass: 8.27, type: float, display: true, formatter: Kilogram
@@ -7144,8 +7138,8 @@
   Info: An extremely hard and durable metal similar to Tungsten. Sathium is used in armor plating and radiation shielding., display: true
   ShowUser: Yes
   MarketPrice: 165, display: true
-  StackSize: 50000
-  
+  StackSize: 5000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 238, Name: PowerCoil, Ref: ComponentsTemplate
   ShowUser: Yes
@@ -7174,7 +7168,7 @@
 
 { Item Id: 240, Name: EnergyCellHydrogen, Ref: ComponentsTemplate
   FuelValue: 100, type: int, display: true, formatter: WattHour
-  MarketPrice: 2310, display: true
+  MarketPrice: 3623, display: true
   Info: A hydrogen fuel cell used in a fusion reactor to initiate and sustain a fusion reaction., display: true
   ShowUser: Yes
 
@@ -7209,8 +7203,8 @@
   Info: A good old piece of wood you can use to make housing or furniture., display: true
   ShowUser: Yes
   MarketPrice: 1, display: true
-  StackSize: 50000
-  
+  StackSize: 5000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 244, Name: Cement, Ref: ComponentsTemplate
   Mass: 16.14, type: float, display: true, formatter: Kilogram
@@ -7236,8 +7230,8 @@
   Info: Refined Pentaxid Crystals that are highly unstable and can be easily excited into releasing huge quantities of energy., display: true
   ShowUser: Yes
   MarketPrice: 1400, display: true
-  StackSize: 50000
-  
+  StackSize: 5000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 247, Name: SteelPlateArmored, Ref: ComponentsTemplate
   ShowUser: Yes
@@ -7272,8 +7266,8 @@
   Info: Universally accepted as currency., display: true
   ShowUser: Yes
   MarketPrice: 2500, display: true
-  StackSize: 50000
-  
+  StackSize: 5000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 251, Name: GoldCoins, Ref: ComponentsTemplate
   # Info: bkiCurrency, display: true
@@ -7300,7 +7294,7 @@
   Mass: 59.4, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiPlayerBike, display: true
-  StackSize: 50000
+  StackSize: 1
   Category: Devices
   MapIcon: map_PlayerBike
   PickupToToolbar: true
@@ -7398,7 +7392,7 @@
   Info: Round ingots of Titanium used in many industrial applications and steel alloys., display: true
   ShowUser: Yes
   MarketPrice: 115
-  StackSize: 50000
+  StackSize: 5000
 }
 
 { Item Id: 265, Name: TitanPlates, Ref: ComponentsTemplate
@@ -7427,8 +7421,8 @@
   Info: Powdered Aluminium metal used in casting electroplating alloying and some incendiary devices., display: true
   ShowUser: Yes
   MarketPrice: 135, display: true
-  StackSize: 50000
-  
+  StackSize: 5000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 
 { Item Id: 268, Name: AluminiumCoil, Ref: ComponentsTemplate
@@ -7456,8 +7450,8 @@
   Info: A valuable and extremely dense metal used in a variety of applications from catalysts to thruster shielding., display: true
   ShowUser: Yes
   MarketPrice: 125, display: true
-  StackSize: 50000
-  
+  StackSize: 5000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 
 { Item Id: 271, Name: PlatinOunce, Ref: ComponentsTemplate
@@ -7704,8 +7698,8 @@
   Mass: 0.2, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 2, display: true
-  StackSize: 50000
-  
+  StackSize: 2000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 800"
 }
 { Item Id: 306, Name: AkuaWine, Ref: FoodTemplate
 
@@ -8057,7 +8051,7 @@
   Mass: 75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   FuelValue: 300, type: int, display: true, formatter: WattHour
-  MarketPrice: 65026, display: true
+  MarketPrice: 7276, display: true
   ShowUser: Yes
   Info: bkiFusionCell, display: true
 
@@ -8175,7 +8169,7 @@
 
 # Alien SV Homing Plasma
 { Item Id: 331, Name: WeaponSVAntimatterCannonWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: @models/Blocks/WeaponsShip/WeaponSSPlasmaPrefab
   MarketPrice: 1, display: true
@@ -8184,7 +8178,7 @@
   Canhold: false
   Material: HWS_material_weapon_energy, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 200
 
   CustomIcon: PulseLaserMSWeapon
   Mass: 1682, type: float, display: false, formatter: Kilogram
@@ -8534,6 +8528,8 @@
   Mass: 20, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 550, display: true
+  StackSize: 2000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 800"
   ShowUser: Yes
   { Child 0
     Class: Eat
@@ -9522,7 +9518,7 @@
   Canhold: false
   Candrop: false
   HoldType: 6
-  StackSize: 50000
+  StackSize: 1
   ShowUser: No
   { Child 0
     Class: Melee
@@ -10343,7 +10339,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -10481,7 +10477,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -10518,7 +10514,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -10588,7 +10584,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   Canhold: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -10632,7 +10628,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   Canhold: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -10672,7 +10668,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   Canhold: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -10717,7 +10713,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -10752,7 +10748,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -10783,7 +10779,7 @@
   MarketPrice: 1, display: true
   Material: human, display: true
   HoldType: 20
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -10872,7 +10868,7 @@
   MarketPrice: 1, display: true
   Material: human, display: true
   HoldType: 20
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -10943,7 +10939,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -11065,7 +11061,7 @@
   Meshfile: Entities/Items/Weapons/Enemies/RangedAttackPrefab
   MarketPrice: 1, display: true
   Material: human, display: true
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   HoldType: 20
@@ -11092,7 +11088,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -11315,7 +11311,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   VolumeCapacity: 10, type: float, display: true, formatter: Liter
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Canhold: false
   Category: Weapons/Items
   Info: bkiPlayerArmor, display: true
@@ -11355,7 +11351,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   VolumeCapacity: 20, type: float, display: true, formatter: Liter
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Canhold: false
   Category: Weapons/Items
   Info: bkiPlayerArmor, display: true
@@ -11389,7 +11385,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   VolumeCapacity: 30, type: float, display: true, formatter: Liter
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Canhold: false
   Category: Weapons/Items
   Info: bkiPlayerArmor, display: true
@@ -11520,7 +11516,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Canhold: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
 }
@@ -11725,7 +11721,7 @@
   Info: bkiNightVision, display: true
   Canhold: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   IsNightVisionItem: true
   MarketPrice: 852, display: true
@@ -11740,7 +11736,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Canhold: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   IsOreScannerItem: true
 
@@ -11761,7 +11757,7 @@
   # Info: bkiNightVision, display: true
   Canhold: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   IsRadarItem: true
   Range: 1250, type: int, display: true
@@ -11886,7 +11882,7 @@
   Material: metalitem, display: false
   Canhold: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   ShowUser: No
   Mass: 40.0, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -11915,7 +11911,7 @@
   Volume: 0.1, type: float, display: true, formatter: Liter
   Canhold: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
 
  # UnlockCost: 0, display: true
@@ -11927,7 +11923,7 @@
 # HWS Event items. From 799 downwards
 
 { Item Id: 798, Name: HWSEventHalloweenPumpkinShell, Ref: ComponentsTemplate
-  StackSize: 50000
+  StackSize: 2000
 
   CustomIcon: FriedVegetables
   MarketPrice: 1, display: true
@@ -11950,7 +11946,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_devices_kinetic, display: false
   HoldType: 0
-  StackSize: 50000
+  StackSize: 1
   Canhold: false
   Category: Weapons/Items
 
@@ -12022,7 +12018,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 6001, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: bkiWeaponHandheldIgnoringAtmo, display: true
   Mass: 6.8, type: float, display: true, formatter: Kilogram
@@ -12848,7 +12844,7 @@
 # === Faction and Faction-Upgrade turret weapon and ammo (921-999) ===
 
 { Item Id: 921, Name: TurretMinigunFactionWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: @models/Blocks/Turrets/TurretMSMinigunPrefab
   MarketPrice: 1, display: true
@@ -12857,7 +12853,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 200
   Mass: 8500, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
@@ -12908,8 +12904,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
   Canhold: false
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   MarketPrice: 2, display: true
   Mass: 0.06, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -12930,8 +12926,8 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 200
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   Mass: 5615, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
@@ -12973,8 +12969,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: Base, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 10.1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -13014,7 +13010,7 @@
   }
 }
 { Item Id: 929, Name: TurretCannonFactionWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: @models/Blocks/Turrets/ModularTurret1/SinglePlasmaTurretBluePrefab
   MarketPrice: 1, display: true
@@ -13023,7 +13019,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 200
   Mass: 6150, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
@@ -13072,8 +13068,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: "Base,MS", display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 0.9, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -13089,7 +13085,7 @@
   MarketPrice: 1, display: true
 }
 { Item Id: 933, Name: TurretRocketFactionWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: @models/Blocks/Turrets/ModularTurret1/SingleMissileTurretBluePrefab
   MarketPrice: 1, display: true
@@ -13098,7 +13094,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 200
   Mass: 5777, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
@@ -13141,8 +13137,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: MS, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 49, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -13187,7 +13183,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 250
   Mass: 19800, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
@@ -13228,8 +13224,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: Base, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 870, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -13269,7 +13265,7 @@
   }
 }
 { Item Id: 941, Name: TurretRailgunFactionWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: @models/Blocks/Turrets/ModularTurret1/SingleMissileTurretBluePrefab
   MarketPrice: 1, display: true
@@ -13278,7 +13274,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 200
   Mass: 5777, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
@@ -13321,8 +13317,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: MS, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 49, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -13359,7 +13355,7 @@
   }
 }
 { Item Id: 945, Name: TurretPulseLaserFactionWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
@@ -13368,7 +13364,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 200
   Mass: 11760, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
@@ -13414,8 +13410,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: MS, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 15, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -13450,7 +13446,7 @@
   }
 }
 { Item Id: 949, Name: TurretPlasmaFactionWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: @models/Blocks/Turrets/RealisticTurret/TurretGVPlasmaPrefab
   MarketPrice: 1, display: true
@@ -13459,7 +13455,7 @@
   Canhold: false
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 200
   Mass: 8490, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
@@ -13501,8 +13497,8 @@
   Material: HWS_material_weapon_kinetic, display: true
   AllowPlacingAt: MS, display: false
   HoldType: 0
-  StackSize: 50000
-  
+  StackSize: 1000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   Mass: 50, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -13543,7 +13539,7 @@
 #  CATEGORIE: Commodity Trade Items id 1000 - 1100
 
 { Item Id: 1000, Name: TradingGoodsTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
@@ -13556,7 +13552,7 @@
   Info: InfoNeeded, display: true
   Category: Components
   ShowUser: No
-  StackSize: 50000
+  StackSize: 200
 
 }
 { Item Id: 1001, Name: RawDiamond, Ref: TradingGoodsTemplate
@@ -13717,7 +13713,7 @@
   HoldType: 0
   Mass: 0, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  StackSize: 50000
+  StackSize: 1
   Info: bkiReportsGlobalInfo, display: true
   Category: Components
   ShowUser: No
@@ -13910,7 +13906,7 @@
   HoldType: 0
   Mass: 1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  StackSize: 50000
+  StackSize: 1
   Info: SuitPropsGlobal, display: true
   Category: Deco Blocks
   ShowUser: No
@@ -14057,7 +14053,7 @@
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 16
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Mass: 8, type: float, display: false, formatter: Kilogram
   Info: bkiDrill, display: true
@@ -14182,7 +14178,7 @@
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 14
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
 
   Mass: 2.1, type: float, display: true, formatter: Kilogram
@@ -14253,7 +14249,7 @@
   HoldType: 0
   Mass: 0.1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  StackSize: 50000
+  StackSize: 1
   Info: bkiKeysGeneral, display: true
   Category: Components
   ShowUser: No
@@ -14293,7 +14289,7 @@
   Info: Don't write anything here, display: true
   Category: Components
 
-  StackSize: 50000
+  StackSize: 1
   ShowUser: Yes
 }
 
@@ -14374,7 +14370,7 @@
 # =============================================================================
 
 { Item Id: 1502, Name: RocketPodMSWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: @models/Blocks/WeaponsShip/WeaponSSMissilePrefab
   MarketPrice: 1, display: true
@@ -14384,7 +14380,7 @@
   CustomIcon: WeaponSV05
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
-  StackSize: 50000
+  StackSize: 200
   Mass: 521, type: float, display: false, formatter: Kilogram
   Category: Weapons/Items
   { Child 0
@@ -14419,7 +14415,7 @@
   CustomIcon: GrenadeLauncher
   Crosshair: @hws_crosshairs/crosshair_grenade_launcher
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   Info: A UCH multiple-grenade launcher designed to use 40mm Frag Grenades against enemy entrenchments., display: true
   Mass: 12.3, type: float, display: true, formatter: Kilogram
@@ -14458,7 +14454,7 @@
 
 
 { Item Id: 1598, Name: HWSValentinesRecipe, Ref: FoodTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Mass: 0.17, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -14470,7 +14466,7 @@
 
 
 { Item Id: 1599, Name: HWSValentinesCake, Ref: FoodTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Mass: 0.7, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -14491,14 +14487,14 @@
 }
 
 { Item Id: 1600, Name: FragGrenade
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
 
   Meshfile: Entities/Items/Weapons/Projectiles/sniperBulletPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   CustomIcon: FragGrenade
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 473, display: true
-  StackSize: 50000
+  StackSize: 1000
   ShowUser: Yes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -14525,13 +14521,13 @@
 }
 # CV Rocket Launcher Ammo
 { Item Id: 1602, Name: LightRocketCV
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
 
   Meshfile: Entities/Items/Weapons/Projectiles/rocket01Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 1360, display: true
-  StackSize: 50000
+  StackSize: 1000
   AllowPlacingAt: MS, display: false
   CustomIcon: LightRocketCV
   Mass: 24, type: float, display: true, formatter: Kilogram
@@ -14587,7 +14583,7 @@
 # ---------------------------------------------------------------------------------------------------------- HWS Fishing
 
 { Item Id: 1604, Name: HWSFishRod
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
@@ -14600,7 +14596,7 @@
   Info: InfoNeeded, display: true
   Category: Weapons/Items
   ShowUser: Yes
-  StackSize: 50000
+  StackSize: 1
 }
 
 { Item Id: 1605, Name: HWSFishBait, Ref: FoodTemplate
@@ -14652,27 +14648,27 @@
 # ----------------------------------------------------------------------------------------------------------------------
 # ---------------------------------------------------------------------------------------------- HWS Elemental Hand Guns
 { Item Id: 1698, Name: HWSElementalAmmoTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Meshfile: Entities/Misc/DummyPrefab
   Material: HWS_material_elements, display: true
   Category: Weapons/Items
   ShowUser: No
-  StackSize: 50000
+  StackSize: 1000
   Canhold: false
   HoldType: 0
 }
 
 { Item Id: 1699, Name: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Meshfile: Entities/Misc/DummyPrefab
   Material: HWS_material_elements, display: true
   Category: Weapons/Items
   ShowUser: No
-  StackSize: 50000
+  StackSize: 200
   Canhold: false
   HoldType: 0
 }
@@ -14684,7 +14680,7 @@
   Material: HWS_material_aquaitem, display: true
   MarketPrice: 30003, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
@@ -14728,7 +14724,7 @@
   Material: HWS_material_terraitem, display: true
   MarketPrice: 30003, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
@@ -14772,7 +14768,7 @@
   Material: HWS_material_pyroitem, display: true
   MarketPrice: 30003, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
@@ -14816,7 +14812,7 @@
   Material: HWS_material_obsidianitem, display: true
   MarketPrice: 90009, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
@@ -14860,7 +14856,7 @@
   Material: HWS_material_luxitem, display: true
   MarketPrice: 30003, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
   Mass: 5, type: float, display: true, formatter: Kilogram
@@ -14904,7 +14900,7 @@
   Material: HWS_material_noxitem, display: true
   MarketPrice: 30003, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
@@ -14948,7 +14944,7 @@
   Material: HWS_material_strangeletitem, display: true
   MarketPrice: 10001, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
   Mass: 15, type: float, display: true, formatter: Kilogram
@@ -15228,7 +15224,7 @@
 # ----------------------------------------------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------------------------- HWS Entity Weapons
 { Item Id: 1999, Name: HWSSkeletonWeapon, Ref: MeleeTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   HoldType: 20
   MarketPrice: 1, display: true
@@ -15243,14 +15239,14 @@
   }
 }
 { Item Id: 2000, Name: HWSAquaElementalWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Meshfile: Entities/Items/Weapons/Enemies/RangedAttackPrefab
   MarketPrice: 1, display: true
   Material: HWS_material_aquaitem, display: true
   HoldType: 20
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -15270,7 +15266,7 @@
 }
 
 { Item Id: 2001, Name: HWSAquaElementalMeleeWeapon, Ref: MeleeTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   HoldType: 21
   MarketPrice: 1, display: true
@@ -15286,14 +15282,14 @@
 }
 
 { Item Id: 2002, Name: HWSTerraElementalWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Meshfile: Entities/Items/Weapons/Enemies/RangedAttackPrefab
   MarketPrice: 1, display: true
   Material: HWS_material_terraitem, display: true
   HoldType: 20
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -15313,7 +15309,7 @@
 }
 
 { Item Id: 2003, Name: HWSTerraElementalMeleeWeapon, Ref: MeleeTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   HoldType: 21
   MarketPrice: 1, display: true
@@ -15329,14 +15325,14 @@
 }
 
 { Item Id: 2004, Name: HWSPyroElementalWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Meshfile: Entities/Items/Weapons/Enemies/RangedAttackPrefab
   MarketPrice: 1, display: true
   Material: HWS_material_pyroitem, display: true
   HoldType: 20
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -15356,7 +15352,7 @@
 }
 
 { Item Id: 2005, Name: HWSPyroElementalMeleeWeapon, Ref: MeleeTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   HoldType: 21
   MarketPrice: 1, display: true
@@ -15372,14 +15368,14 @@
 }
 
 { Item Id: 2006, Name: HWSObsidianElementalWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Meshfile: Entities/Items/Weapons/Enemies/RangedAttackPrefab
   MarketPrice: 1, display: true
   Material: HWS_material_obsidianitem, display: true
   HoldType: 20
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -15399,7 +15395,7 @@
 }
 
 { Item Id: 2007, Name: HWSObsidianElementalMeleeWeapon, Ref: MeleeTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   HoldType: 21
   MarketPrice: 1, display: true
@@ -15415,14 +15411,14 @@
 }
 
 { Item Id: 2008, Name: HWSLuxElementalWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Meshfile: Entities/Items/Weapons/Enemies/RangedAttackPrefab
   MarketPrice: 1, display: true
   Material: HWS_material_luxitem, display: true
   HoldType: 20
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -15442,7 +15438,7 @@
 }
 
 { Item Id: 2009, Name: HWSLuxElementalMeleeWeapon, Ref: MeleeTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   HoldType: 21
   MarketPrice: 1, display: true
@@ -15458,14 +15454,14 @@
 }
 
 { Item Id: 2010, Name: HWSNoxElementalWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Meshfile: Entities/Items/Weapons/Enemies/RangedAttackPrefab
   MarketPrice: 1, display: true
   Material: HWS_material_noxitem, display: true
   HoldType: 20
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -15485,7 +15481,7 @@
 }
 
 { Item Id: 2011, Name: HWSNoxElementalMeleeWeapon, Ref: MeleeTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   HoldType: 21
   MarketPrice: 1, display: true
@@ -15501,14 +15497,14 @@
 }
 
 { Item Id: 2012, Name: HWSStrangeletElementalWeapon
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Meshfile: Entities/Items/Weapons/Enemies/RangedAttackPrefab
   MarketPrice: 1, display: true
   Material: HWS_material_strangeletitem, display: true
   HoldType: 20
-  StackSize: 50000
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   Mass: 12, type: float, display: false, formatter: Kilogram
@@ -15528,7 +15524,7 @@
 }
 
 { Item Id: 2013, Name: HWSStrangeletElementalMeleeWeapon, Ref: MeleeTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   HoldType: 21
   MarketPrice: 1, display: true
@@ -15546,7 +15542,7 @@
 # ----------------------------------------------------------------------------------------------------------------------
 # ---------------------------------------------------------------------------------------------------- HWS Entities Ammo
 { Item Id: 2250, Name: HWSAquaElementalAmmo
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   ShowUser: No
   MarketPrice: 1, display: true
@@ -15579,7 +15575,7 @@
 }
 
 { Item Id: 2251, Name: HWSTerraElementalAmmo
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   ShowUser: No
   MarketPrice: 1, display: true
@@ -15612,7 +15608,7 @@
 }
 
 { Item Id: 2252, Name: HWSPyroElementalAmmo
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   ShowUser: No
   MarketPrice: 1, display: true
@@ -15645,7 +15641,7 @@
 }
 
 { Item Id: 2253, Name: HWSObsidianElementalAmmo
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   ShowUser: No
   MarketPrice: 1, display: true
@@ -15678,7 +15674,7 @@
 }
 
 { Item Id: 2254, Name: HWSLuxElementalAmmo
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   ShowUser: No
   MarketPrice: 1, display: true
@@ -15711,7 +15707,7 @@
 }
 
 { Item Id: 2255, Name: HWSNoxElementalAmmo
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   ShowUser: No
   MarketPrice: 1, display: true
@@ -15744,7 +15740,7 @@
 }
 
 { Item Id: 2256, Name: HWSStrangeletElementalAmmo
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   ShowUser: No
   MarketPrice: 1, display: true
@@ -15785,7 +15781,7 @@
 # T5. Penetration (direct damage impact through Blocks, hit where cursor aims to)
 # ----------------------------------------------------------------------------------------------------------------- Aqua
 { Item Id: 3000, Name: HWSAquaTurretBAT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -15811,7 +15807,7 @@
   }
 }
 { Item Id: 3001, Name: HWSAquaTurretBAT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -15837,7 +15833,7 @@
   }
 }
 { Item Id: 3002, Name: HWSAquaTurretBAT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -15873,7 +15869,7 @@
   }
 }
 { Item Id: 3003, Name: HWSAquaTurretBAT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -15910,7 +15906,7 @@
   }
 }
 { Item Id: 3004, Name: HWSAquaTurretBAT5Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -15948,7 +15944,7 @@
 }
 # ---------------------------------------------------------------------------------------------------------------- Terra
 { Item Id: 3005, Name: HWSTerraTurretBAT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -15974,7 +15970,7 @@
   }
 }
 { Item Id: 3006, Name: HWSTerraTurretBAT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16000,7 +15996,7 @@
   }
 }
 { Item Id: 3007, Name: HWSTerraTurretBAT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16035,7 +16031,7 @@
   }
 }
 { Item Id: 3008, Name: HWSTerraTurretBAT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16073,7 +16069,7 @@
   }
 }
 { Item Id: 3009, Name: HWSTerraTurretBAT5Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16111,7 +16107,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------------- Pyro
 { Item Id: 3010, Name: HWSPyroTurretBAT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16137,7 +16133,7 @@
   }
 }
 { Item Id: 3011, Name: HWSPyroTurretBAT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16163,7 +16159,7 @@
   }
 }
 { Item Id: 3012, Name: HWSPyroTurretBAT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16198,7 +16194,7 @@
   }
 }
 { Item Id: 3013, Name: HWSPyroTurretBAT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16235,7 +16231,7 @@
   }
 }
 { Item Id: 3014, Name: HWSPyroTurretBAT5Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16273,7 +16269,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------- Obsidian
 { Item Id: 3015, Name: HWSObsidianTurretBAT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16299,7 +16295,7 @@
   }
 }
 { Item Id: 3016, Name: HWSObsidianTurretBAT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16325,7 +16321,7 @@
   }
 }
 { Item Id: 3017, Name: HWSObsidianTurretBAT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16360,7 +16356,7 @@
   }
 }
 { Item Id: 3018, Name: HWSObsidianTurretBAT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16397,7 +16393,7 @@
   }
 }
 { Item Id: 3019, Name: HWSObsidianTurretBAT5Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16435,7 +16431,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Lux
 { Item Id: 3020, Name: HWSLuxTurretBAT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16461,7 +16457,7 @@
   }
 }
 { Item Id: 3021, Name: HWSLuxTurretBAT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16487,7 +16483,7 @@
   }
 }
 { Item Id: 3022, Name: HWSLuxTurretBAT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16522,7 +16518,7 @@
   }
 }
 { Item Id: 3023, Name: HWSLuxTurretBAT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16559,7 +16555,7 @@
   }
 }
 { Item Id: 3024, Name: HWSLuxTurretBAT5Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16597,7 +16593,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Nox
 { Item Id: 3025, Name: HWSNoxTurretBAT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16623,7 +16619,7 @@
   }
 }
 { Item Id: 3026, Name: HWSNoxTurretBAT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16649,7 +16645,7 @@
   }
 }
 { Item Id: 3027, Name: HWSNoxTurretBAT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16684,7 +16680,7 @@
   }
 }
 { Item Id: 3028, Name: HWSNoxTurretBAT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16721,7 +16717,7 @@
   }
 }
 { Item Id: 3029, Name: HWSNoxTurretBAT5Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16759,7 +16755,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Strangelet
 { Item Id: 3030, Name: HWSStrangeletTurretBAT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16785,7 +16781,7 @@
   }
 }
 { Item Id: 3031, Name: HWSStrangeletTurretBAT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16811,7 +16807,7 @@
   }
 }
 { Item Id: 3032, Name: HWSStrangeletTurretBAT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16846,7 +16842,7 @@
   }
 }
 { Item Id: 3033, Name: HWSStrangeletTurretBAT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16884,7 +16880,7 @@
   }
 }
 { Item Id: 3034, Name: HWSStrangeletTurretBAT5Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16933,7 +16929,7 @@
 # T3 Gun. Penetration (direct damage impact through Blocks, hit where cursor aims to)
 # ------------------------------------------------------------------------------------------------------- Aqua Turret CV
 { Item Id: 3035, Name: HWSAquaTurretCVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -16959,7 +16955,7 @@
   }
 }
 { Item Id: 3036, Name: HWSAquaTurretCVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17000,7 +16996,7 @@
 
 }
 { Item Id: 3037, Name: HWSAquaTurretCVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17042,7 +17038,7 @@
 
 }
 { Item Id: 3038, Name: HWSAquaTurretCVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17084,7 +17080,7 @@
 }
 # ---------------------------------------------------------------------------------------------------------- Aqua Gun CV
 { Item Id: 3039, Name: HWSAquaGunCVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSAquaGunCVT1
   MarketPrice: 1, display: true
@@ -17111,7 +17107,7 @@
   }
 }
 { Item Id: 3040, Name: HWSAquaGunCVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSAquaGunCVT2
   MarketPrice: 1, display: true
@@ -17153,7 +17149,7 @@
 
 }
 { Item Id: 3041, Name: HWSAquaGunCVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSAquaGunCVT3
   MarketPrice: 1, display: true
@@ -17197,7 +17193,7 @@
 }
 # ------------------------------------------------------------------------------------------------------ Terra Turret CV
 { Item Id: 3042, Name: HWSTerraTurretCVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17223,7 +17219,7 @@
   }
 }
 { Item Id: 3043, Name: HWSTerraTurretCVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17264,7 +17260,7 @@
 
 }
 { Item Id: 3044, Name: HWSTerraTurretCVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17306,7 +17302,7 @@
 
 }
 { Item Id: 3045, Name: HWSTerraTurretCVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17348,7 +17344,7 @@
 }
 # --------------------------------------------------------------------------------------------------------- Terra Gun CV
 { Item Id: 3046, Name: HWSTerraGunCVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSTerraGunCVT1
   MarketPrice: 1, display: true
@@ -17375,7 +17371,7 @@
   }
 }
 { Item Id: 3047, Name: HWSTerraGunCVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSTerraGunCVT2
   MarketPrice: 1, display: true
@@ -17417,7 +17413,7 @@
 
 }
 { Item Id: 3048, Name: HWSTerraGunCVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSTerraGunCVT3
   MarketPrice: 1, display: true
@@ -17461,7 +17457,7 @@
 }
 # ------------------------------------------------------------------------------------------------------- Pyro Turret CV
 { Item Id: 3049, Name: HWSPyroTurretCVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17487,7 +17483,7 @@
   }
 }
 { Item Id: 3050, Name: HWSPyroTurretCVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17528,7 +17524,7 @@
 
 }
 { Item Id: 3051, Name: HWSPyroTurretCVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17570,7 +17566,7 @@
 
 }
 { Item Id: 3052, Name: HWSPyroTurretCVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17612,7 +17608,7 @@
 }
 # ---------------------------------------------------------------------------------------------------------- Pyro Gun CV
 { Item Id: 3053, Name: HWSPyroGunCVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSPyroGunCVT1
   MarketPrice: 1, display: true
@@ -17639,7 +17635,7 @@
   }
 }
 { Item Id: 3054, Name: HWSPyroGunCVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSPyroGunCVT2
   MarketPrice: 1, display: true
@@ -17681,7 +17677,7 @@
 
 }
 { Item Id: 3055, Name: HWSPyroGunCVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSPyroGunCVT3
   MarketPrice: 1, display: true
@@ -17725,7 +17721,7 @@
 }
 # --------------------------------------------------------------------------------------------------- Obsidian Turret CV
 { Item Id: 3056, Name: HWSObsidianTurretCVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17751,7 +17747,7 @@
   }
 }
 { Item Id: 3057, Name: HWSObsidianTurretCVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17792,7 +17788,7 @@
 
 }
 { Item Id: 3058, Name: HWSObsidianTurretCVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17834,7 +17830,7 @@
 
 }
 { Item Id: 3059, Name: HWSObsidianTurretCVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -17876,7 +17872,7 @@
 }
 # ------------------------------------------------------------------------------------------------------ Obsidian Gun CV
 { Item Id: 3060, Name: HWSObsidianGunCVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSObsidianGunCVT1
   MarketPrice: 1, display: true
@@ -17903,7 +17899,7 @@
   }
 }
 { Item Id: 3061, Name: HWSObsidianGunCVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSObsidianGunCVT2
   MarketPrice: 1, display: true
@@ -17945,7 +17941,7 @@
 
 }
 { Item Id: 3062, Name: HWSObsidianGunCVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSObsidianGunCVT3
   MarketPrice: 1, display: true
@@ -17989,7 +17985,7 @@
 }
 # -------------------------------------------------------------------------------------------------------- Lux Turret CV
 { Item Id: 3063, Name: HWSLuxTurretCVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18015,7 +18011,7 @@
   }
 }
 { Item Id: 3064, Name: HWSLuxTurretCVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18056,7 +18052,7 @@
 
 }
 { Item Id: 3065, Name: HWSLuxTurretCVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18098,7 +18094,7 @@
 
 }
 { Item Id: 3066, Name: HWSLuxTurretCVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18140,7 +18136,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Lux Gun CV
 { Item Id: 3067, Name: HWSLuxGunCVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSLuxGunCVT1
   MarketPrice: 1, display: true
@@ -18167,7 +18163,7 @@
   }
 }
 { Item Id: 3068, Name: HWSLuxGunCVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSLuxGunCVT2
   MarketPrice: 1, display: true
@@ -18209,7 +18205,7 @@
 
 }
 { Item Id: 3069, Name: HWSLuxGunCVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSLuxGunCVT3
   MarketPrice: 1, display: true
@@ -18253,7 +18249,7 @@
 }
 # -------------------------------------------------------------------------------------------------------- Nox Turret CV
 { Item Id: 3070, Name: HWSNoxTurretCVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18279,7 +18275,7 @@
   }
 }
 { Item Id: 3071, Name: HWSNoxTurretCVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18320,7 +18316,7 @@
 
 }
 { Item Id: 3072, Name: HWSNoxTurretCVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18362,7 +18358,7 @@
 
 }
 { Item Id: 3073, Name: HWSNoxTurretCVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18404,7 +18400,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Nox Gun CV
 { Item Id: 3074, Name: HWSNoxGunCVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSNoxGunCVT1
   MarketPrice: 1, display: true
@@ -18431,7 +18427,7 @@
   }
 }
 { Item Id: 3075, Name: HWSNoxGunCVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSNoxGunCVT2
   MarketPrice: 1, display: true
@@ -18473,7 +18469,7 @@
 
 }
 { Item Id: 3076, Name: HWSNoxGunCVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSNoxGunCVT3
   MarketPrice: 1, display: true
@@ -18517,7 +18513,7 @@
 }
 # ------------------------------------------------------------------------------------------------- Strangelet Turret CV
 { Item Id: 3077, Name: HWSStrangeletTurretCVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18543,7 +18539,7 @@
   }
 }
 { Item Id: 3078, Name: HWSStrangeletTurretCVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18584,7 +18580,7 @@
 
 }
 { Item Id: 3079, Name: HWSStrangeletTurretCVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18626,7 +18622,7 @@
 
 }
 { Item Id: 3080, Name: HWSStrangeletTurretCVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18668,7 +18664,7 @@
 }
 # ---------------------------------------------------------------------------------------------------- Strangelet Gun CV
 { Item Id: 3081, Name: HWSStrangeletGunCVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSStrangeletGunCVT1
   MarketPrice: 1, display: true
@@ -18695,7 +18691,7 @@
   }
 }
 { Item Id: 3082, Name: HWSStrangeletGunCVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSStrangeletGunCVT2
   MarketPrice: 1, display: true
@@ -18737,7 +18733,7 @@
 
 }
 { Item Id: 3083, Name: HWSStrangeletGunCVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSStrangeletGunCVT3
   MarketPrice: 1, display: true
@@ -18791,7 +18787,7 @@
 # T2 Gun. Penetration (direct damage impact through Blocks, hit where cursor aims to)
 # ------------------------------------------------------------------------------------------------------- Aqua Turret HV
 { Item Id: 3084, Name: HWSAquaTurretHVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18816,7 +18812,7 @@
   }
 }
 { Item Id: 3085, Name: HWSAquaTurretHVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18855,7 +18851,7 @@
   }
 }
 { Item Id: 3086, Name: HWSAquaTurretHVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18895,7 +18891,7 @@
   }
 }
 { Item Id: 3087, Name: HWSAquaTurretHVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -18936,7 +18932,7 @@
 }
 # ---------------------------------------------------------------------------------------------------------- Aqua Gun HV
 { Item Id: 3088, Name: HWSAquaGunHVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSAquaGunHVT1
   MarketPrice: 1, display: true
@@ -18962,7 +18958,7 @@
   }
 }
 { Item Id: 3089, Name: HWSAquaGunHVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSAquaGunHVT2
   MarketPrice: 1, display: true
@@ -19006,7 +19002,7 @@
 }
 # ------------------------------------------------------------------------------------------------------ Terra Turret HV
 { Item Id: 3090, Name: HWSTerraTurretHVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19031,7 +19027,7 @@
   }
 }
 { Item Id: 3091, Name: HWSTerraTurretHVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19071,7 +19067,7 @@
 
 }
 { Item Id: 3092, Name: HWSTerraTurretHVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19111,7 +19107,7 @@
   }
 }
 { Item Id: 3093, Name: HWSTerraTurretHVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19152,7 +19148,7 @@
 }
 # --------------------------------------------------------------------------------------------------------- Terra Gun HV
 { Item Id: 3094, Name: HWSTerraGunHVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSTerraGunHVT1
   MarketPrice: 1, display: true
@@ -19178,7 +19174,7 @@
   }
 }
 { Item Id: 3095, Name: HWSTerraGunHVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSTerraGunHVT2
   MarketPrice: 1, display: true
@@ -19221,7 +19217,7 @@
 }
 # ------------------------------------------------------------------------------------------------------- Pyro Turret HV
 { Item Id: 3096, Name: HWSPyroTurretHVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19246,7 +19242,7 @@
   }
 }
 { Item Id: 3097, Name: HWSPyroTurretHVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19286,7 +19282,7 @@
 
 }
 { Item Id: 3098, Name: HWSPyroTurretHVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19326,7 +19322,7 @@
   }
 }
 { Item Id: 3099, Name: HWSPyroTurretHVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19367,7 +19363,7 @@
 }
 # ---------------------------------------------------------------------------------------------------------- Pyro Gun HV
 { Item Id: 3100, Name: HWSPyroGunHVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSPyroGunHVT1
   MarketPrice: 1, display: true
@@ -19393,7 +19389,7 @@
   }
 }
 { Item Id: 3101, Name: HWSPyroGunHVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSPyroGunHVT2
   MarketPrice: 1, display: true
@@ -19435,7 +19431,7 @@
 }
 # --------------------------------------------------------------------------------------------------- Obsidian Turret HV
 { Item Id: 3102, Name: HWSObsidianTurretHVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19460,7 +19456,7 @@
   }
 }
 { Item Id: 3103, Name: HWSObsidianTurretHVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19500,7 +19496,7 @@
 
 }
 { Item Id: 3104, Name: HWSObsidianTurretHVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19540,7 +19536,7 @@
   }
 }
 { Item Id: 3105, Name: HWSObsidianTurretHVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19581,7 +19577,7 @@
 }
 # ------------------------------------------------------------------------------------------------------ Obsidian Gun HV
 { Item Id: 3106, Name: HWSObsidianGunHVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSObsidianGunHVT1
   MarketPrice: 1, display: true
@@ -19607,7 +19603,7 @@
   }
 }
 { Item Id: 3107, Name: HWSObsidianGunHVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSObsidianGunHVT2
   MarketPrice: 1, display: true
@@ -19649,7 +19645,7 @@
 }
 # -------------------------------------------------------------------------------------------------------- Lux Turret HV
 { Item Id: 3108, Name: HWSLuxTurretHVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19674,7 +19670,7 @@
   }
 }
 { Item Id: 3109, Name: HWSLuxTurretHVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19714,7 +19710,7 @@
 
 }
 { Item Id: 3110, Name: HWSLuxTurretHVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19754,7 +19750,7 @@
   }
 }
 { Item Id: 3111, Name: HWSLuxTurretHVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19795,7 +19791,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Lux Gun HV
 { Item Id: 3112, Name: HWSLuxGunHVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSLuxGunHVT1
   MarketPrice: 1, display: true
@@ -19821,7 +19817,7 @@
   }
 }
 { Item Id: 3113, Name: HWSLuxGunHVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSLuxGunHVT2
   MarketPrice: 1, display: true
@@ -19863,7 +19859,7 @@
 }
 # -------------------------------------------------------------------------------------------------------- Nox Turret HV
 { Item Id: 3114, Name: HWSNoxTurretHVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19888,7 +19884,7 @@
   }
 }
 { Item Id: 3115, Name: HWSNoxTurretHVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19928,7 +19924,7 @@
 
 }
 { Item Id: 3116, Name: HWSNoxTurretHVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -19968,7 +19964,7 @@
   }
 }
 { Item Id: 3117, Name: HWSNoxTurretHVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -20009,7 +20005,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Nox Gun HV
 { Item Id: 3118, Name: HWSNoxGunHVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSNoxGunHVT1
   MarketPrice: 1, display: true
@@ -20035,7 +20031,7 @@
   }
 }
 { Item Id: 3119, Name: HWSNoxGunHVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSNoxGunHVT2
   MarketPrice: 1, display: true
@@ -20078,7 +20074,7 @@
 }
 # ------------------------------------------------------------------------------------------------- Strangelet Turret HV
 { Item Id: 3120, Name: HWSStrangeletTurretHVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -20103,7 +20099,7 @@
   }
 }
 { Item Id: 3121, Name: HWSStrangeletTurretHVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -20143,7 +20139,7 @@
 
 }
 { Item Id: 3122, Name: HWSStrangeletTurretHVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -20183,7 +20179,7 @@
   }
 }
 { Item Id: 3123, Name: HWSStrangeletTurretHVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -20225,7 +20221,7 @@
 }
 # ---------------------------------------------------------------------------------------------------- Strangelet Gun HV
 { Item Id: 3124, Name: HWSStrangeletGunHVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSStrangeletGunHVT1
   MarketPrice: 1, display: true
@@ -20251,7 +20247,7 @@
   }
 }
 { Item Id: 3125, Name: HWSStrangeletGunHVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSStrangeletGunHVT2
   MarketPrice: 1, display: true
@@ -20304,7 +20300,7 @@
 # T4 Gun. Penetration (direct damage impact through Blocks, hit where cursor aims to)
 # ------------------------------------------------------------------------------------------------------- Aqua Turret SV
 { Item Id: 3126, Name: HWSAquaTurretSVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
@@ -20330,7 +20326,7 @@
   }
 }
 { Item Id: 3127, Name: HWSAquaTurretSVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
@@ -20373,7 +20369,7 @@
 }
 # ---------------------------------------------------------------------------------------------------------- Aqua Gun SV
 { Item Id: 3128, Name: HWSAquaGunSVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSAquaGunSVT1
   MarketPrice: 1, display: true
@@ -20399,7 +20395,7 @@
  }
 }
 { Item Id: 3129, Name: HWSAquaGunSVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSAquaGunSVT2
   MarketPrice: 1, display: true
@@ -20439,7 +20435,7 @@
 
 }
 { Item Id: 3130, Name: HWSAquaGunSVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSAquaGunSVT3
   MarketPrice: 1, display: true
@@ -20481,7 +20477,7 @@
 
 }
 { Item Id: 3131, Name: HWSAquaGunSVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSAquaGunSVT4
   MarketPrice: 1, display: true
@@ -20524,7 +20520,7 @@
 }
 # ------------------------------------------------------------------------------------------------------ Terra Turret SV
 { Item Id: 3132, Name: HWSTerraTurretSVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
@@ -20550,7 +20546,7 @@
   }
 }
 { Item Id: 3133, Name: HWSTerraTurretSVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -20591,7 +20587,7 @@
 }
 # --------------------------------------------------------------------------------------------------------- Terra Gun SV
 { Item Id: 3134, Name: HWSTerraGunSVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSTerraGunSVT1
   MarketPrice: 1, display: true
@@ -20617,7 +20613,7 @@
   }
 }
 { Item Id: 3135, Name: HWSTerraGunSVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSTerraGunSVT2
   MarketPrice: 1, display: true
@@ -20658,7 +20654,7 @@
 
 }
 { Item Id: 3136, Name: HWSTerraGunSVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSTerraGunSVT3
   MarketPrice: 1, display: true
@@ -20700,7 +20696,7 @@
 
 }
 { Item Id: 3137, Name: HWSTerraGunSVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSTerraGunSVT4
   MarketPrice: 1, display: true
@@ -20743,7 +20739,7 @@
 }
 # ------------------------------------------------------------------------------------------------------- Pyro Turret SV
 { Item Id: 3138, Name: HWSPyroTurretSVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
@@ -20769,7 +20765,7 @@
   }
 }
 { Item Id: 3139, Name: HWSPyroTurretSVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -20810,7 +20806,7 @@
 }
 # ---------------------------------------------------------------------------------------------------------- Pyro Gun SV
 { Item Id: 3140, Name: HWSPyroGunSVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSPyroGunSVT1
   MarketPrice: 1, display: true
@@ -20836,7 +20832,7 @@
   }
 }
 { Item Id: 3141, Name: HWSPyroGunSVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSPyroGunSVT2
   MarketPrice: 1, display: true
@@ -20877,7 +20873,7 @@
 
 }
 { Item Id: 3142, Name: HWSPyroGunSVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSPyroGunSVT3
   MarketPrice: 1, display: true
@@ -20918,7 +20914,7 @@
   }
 }
 { Item Id: 3143, Name: HWSPyroGunSVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSPyroGunSVT4
   MarketPrice: 1, display: true
@@ -20961,7 +20957,7 @@
 }
 # --------------------------------------------------------------------------------------------------- Obsidian Turret SV
 { Item Id: 3144, Name: HWSObsidianTurretSVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
@@ -20987,7 +20983,7 @@
   }
 }
 { Item Id: 3145, Name: HWSObsidianTurretSVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -21029,7 +21025,7 @@
 }
 # ------------------------------------------------------------------------------------------------------ Obsidian Gun SV
 { Item Id: 3146, Name: HWSObsidianGunSVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSObsidianGunSVT1
   MarketPrice: 1, display: true
@@ -21055,7 +21051,7 @@
   }
 }
 { Item Id: 3147, Name: HWSObsidianGunSVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSObsidianGunSVT2
   MarketPrice: 1, display: true
@@ -21096,7 +21092,7 @@
 
 }
 { Item Id: 3148, Name: HWSObsidianGunSVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSObsidianGunSVT3
   MarketPrice: 1, display: true
@@ -21137,7 +21133,7 @@
   }
 }
 { Item Id: 3149, Name: HWSObsidianGunSVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSObsidianGunSVT4
   MarketPrice: 1, display: true
@@ -21180,7 +21176,7 @@
 }
 # -------------------------------------------------------------------------------------------------------- Lux Turret SV
 { Item Id: 3150, Name: HWSLuxTurretSVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
@@ -21206,7 +21202,7 @@
   }
 }
 { Item Id: 3151, Name: HWSLuxTurretSVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
@@ -21249,7 +21245,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Lux Gun SV
 { Item Id: 3152, Name: HWSLuxGunSVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSLuxGunSVT1
   MarketPrice: 1, display: true
@@ -21275,7 +21271,7 @@
   }
 }
 { Item Id: 3153, Name: HWSLuxGunSVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSLuxGunSVT2
   MarketPrice: 1, display: true
@@ -21316,7 +21312,7 @@
 
 }
 { Item Id: 3154, Name: HWSLuxGunSVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSLuxGunSVT3
   MarketPrice: 1, display: true
@@ -21357,7 +21353,7 @@
   }
 }
 { Item Id: 3155, Name: HWSLuxGunSVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSLuxGunSVT4
   MarketPrice: 1, display: true
@@ -21400,7 +21396,7 @@
 }
 # -------------------------------------------------------------------------------------------------------- Nox Turret SV
 { Item Id: 3156, Name: HWSNoxTurretSVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
@@ -21426,7 +21422,7 @@
   }
 }
 { Item Id: 3157, Name: HWSNoxTurretSVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -21468,7 +21464,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Nox Gun SV
 { Item Id: 3158, Name: HWSNoxGunSVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSNoxGunSVT1
   MarketPrice: 1, display: true
@@ -21494,7 +21490,7 @@
   }
 }
 { Item Id: 3159, Name: HWSNoxGunSVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSNoxGunSVT2
   MarketPrice: 1, display: true
@@ -21535,7 +21531,7 @@
 
 }
 { Item Id: 3160, Name: HWSNoxGunSVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSNoxGunSVT3
   MarketPrice: 1, display: true
@@ -21576,7 +21572,7 @@
   }
 }
 { Item Id: 3161, Name: HWSNoxGunSVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSNoxGunSVT4
   MarketPrice: 1, display: true
@@ -21619,7 +21615,7 @@
 }
 # ------------------------------------------------------------------------------------------------- Strangelet Turret SV
 { Item Id: 3162, Name: HWSStrangeletTurretSVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 1, display: true
@@ -21645,7 +21641,7 @@
   }
 }
 { Item Id: 3163, Name: HWSStrangeletTurretSVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -21687,7 +21683,7 @@
 }
 # ---------------------------------------------------------------------------------------------------- Strangelet Gun SV
 { Item Id: 3164, Name: HWSStrangeletGunSVT1Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSStrangeletGunSVT1
   MarketPrice: 1, display: true
@@ -21713,7 +21709,7 @@
   }
 }
 { Item Id: 3165, Name: HWSStrangeletGunSVT2Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSStrangeletGunSVT2
   MarketPrice: 1, display: true
@@ -21754,7 +21750,7 @@
 
 }
 { Item Id: 3166, Name: HWSStrangeletGunSVT3Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSStrangeletGunSVT3
   MarketPrice: 1, display: true
@@ -21795,7 +21791,7 @@
   }
 }
 { Item Id: 3167, Name: HWSStrangeletGunSVT4Weapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSStrangeletGunSVT4
   MarketPrice: 1, display: true
@@ -21839,7 +21835,7 @@
 # ------------------------------------------------------------------------------------ Elemental BA Chaos Turret Section
 # ----------------------------------------------------------------------------------------------------------------- Aqua
 { Item Id: 3168, Name: HWSAquaChaosTurretBAWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -21865,7 +21861,7 @@
 }
 # ---------------------------------------------------------------------------------------------------------------- Terra
 { Item Id: 3169, Name: HWSTerraChaosTurretBAWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -21891,7 +21887,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------------- Pyro
 { Item Id: 3170, Name: HWSPyroChaosTurretBAWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -21917,7 +21913,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------- Obsidian
 { Item Id: 3171, Name: HWSObsidianChaosTurretBAWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -21943,7 +21939,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Lux
 { Item Id: 3172, Name: HWSLuxChaosTurretBAWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -21969,7 +21965,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Nox
 { Item Id: 3173, Name: HWSNoxChaosTurretBAWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -21995,7 +21991,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Strangelet
 { Item Id: 3174, Name: HWSStrangeletChaosTurretBAWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22023,7 +22019,7 @@
 # ------------------------------------------------------------------------------------ Elemental CV Chaos Turret Section
 # ----------------------------------------------------------------------------------------------------------------- Aqua
 { Item Id: 3175, Name: HWSAquaChaosTurretCVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22049,7 +22045,7 @@
 }
 # ---------------------------------------------------------------------------------------------------------------- Terra
 { Item Id: 3176, Name: HWSTerraChaosTurretCVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22075,7 +22071,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------------- Pyro
 { Item Id: 3177, Name: HWSPyroChaosTurretCVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22101,7 +22097,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------- Obsidian
 { Item Id: 3178, Name: HWSObsidianChaosTurretCVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22127,7 +22123,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Lux
 { Item Id: 3179, Name: HWSLuxChaosTurretCVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22153,7 +22149,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Nox
 { Item Id: 3180, Name: HWSNoxChaosTurretCVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22179,7 +22175,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Strangelet
 { Item Id: 3181, Name: HWSStrangeletChaosTurretCVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22207,7 +22203,7 @@
 # ------------------------------------------------------------------------------------ Elemental HV Chaos Turret Section
 # ----------------------------------------------------------------------------------------------------------------- Aqua
 { Item Id: 3182, Name: HWSAquaChaosTurretHVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22233,7 +22229,7 @@
 }
 # ---------------------------------------------------------------------------------------------------------------- Terra
 { Item Id: 3183, Name: HWSTerraChaosTurretHVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22259,7 +22255,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------------- Pyro
 { Item Id: 3184, Name: HWSPyroChaosTurretHVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22285,7 +22281,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------- Obsidian
 { Item Id: 3185, Name: HWSObsidianChaosTurretHVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22311,7 +22307,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Lux
 { Item Id: 3186, Name: HWSLuxChaosTurretHVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22337,7 +22333,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Nox
 { Item Id: 3187, Name: HWSNoxChaosTurretHVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22363,7 +22359,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Strangelet
 { Item Id: 3188, Name: HWSStrangeletChaosTurretHVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22391,7 +22387,7 @@
 # ------------------------------------------------------------------------------------ Elemental SV Chaos Turret Section
 # ----------------------------------------------------------------------------------------------------------------- Aqua
 { Item Id: 3189, Name: HWSAquaChaosTurretSVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22417,7 +22413,7 @@
 }
 # ---------------------------------------------------------------------------------------------------------------- Terra
 { Item Id: 3190, Name: HWSTerraChaosTurretSVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22443,7 +22439,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------------- Pyro
 { Item Id: 3191, Name: HWSPyroChaosTurretSVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22469,7 +22465,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------- Obsidian
 { Item Id: 3192, Name: HWSObsidianChaosTurretSVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22495,7 +22491,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Lux
 { Item Id: 3193, Name: HWSLuxChaosTurretSVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22521,7 +22517,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Nox
 { Item Id: 3194, Name: HWSNoxChaosTurretSVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22547,7 +22543,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Strangelet
 { Item Id: 3195, Name: HWSStrangeletChaosTurretSVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 1, display: true
@@ -22575,7 +22571,7 @@
 # --------------------------------------------------------------------------------------- Elemental SV Chaos Gun Section
 # ----------------------------------------------------------------------------------------------------------------- Aqua
 { Item Id: 3196, Name: HWSAquaChaosGunSVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSAquaChaosGunSV
   MarketPrice: 1, display: true
@@ -22603,7 +22599,7 @@
 }
 # ---------------------------------------------------------------------------------------------------------------- Terra
 { Item Id: 3197, Name: HWSTerraChaosGunSVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSTerraChaosGunSV
   MarketPrice: 1, display: true
@@ -22629,7 +22625,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------------- Pyro
 { Item Id: 3198, Name: HWSPyroChaosGunSVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSPyroChaosGunSV
   MarketPrice: 1, display: true
@@ -22655,7 +22651,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------- Obsidian
 { Item Id: 3199, Name: HWSObsidianChaosGunSVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSObsidianChaosGunSV
   MarketPrice: 1, display: true
@@ -22681,7 +22677,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Lux
 { Item Id: 3200, Name: HWSLuxChaosGunSVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSLuxChaosGunSV
   MarketPrice: 1, display: true
@@ -22707,7 +22703,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Nox
 { Item Id: 3201, Name: HWSNoxChaosGunSVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSNoxChaosGunSV
   MarketPrice: 1, display: true
@@ -22733,7 +22729,7 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Strangelet
 { Item Id: 3202, Name: HWSStrangeletChaosGunSVWeapon, Ref: HWSElementalWeaponTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   CustomIcon: HWSStrangeletChaosGunSV
   MarketPrice: 1, display: true
@@ -26619,7 +26615,7 @@
 
 # -------------------------------------------------------------------------------------------------------- HWS Elements
 { Item Id: 3910, Name: HWSElementTemplate
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 320"
 
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -26628,7 +26624,7 @@
   HoldType: 0
   Mass: 10, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  StackSize: 50000
+  StackSize: 400
   Info: HWS_ItemInfo_HWSElementFluidAquaTemplate, display: true
   Category: Components
   ShowUser: No
@@ -26816,6 +26812,22 @@
   CustomIcon: Satellite
   ShowUser: Yes
 }
+{ Item Id: 3954, Name: EGSWebRouterCharge, Ref: HWSElementTemplate
+  Info: HWS_ItemInfo_EGSWebRouterCharge, display: true
+  Mass: 10, type: float, display: true, formatter: ton
+  Volume: 0, type: float, display: false, formatter: Liter
+  MarketPrice: 99, display: true
+  CustomIcon: EGSWebRouterCharge
+  ShowUser: Yes
+}
+{ Item Id: 3955, Name: EGSWebPremium, Ref: HWSElementTemplate
+  Info: HWS_ItemInfo_EGSWebPremium, display: true
+  Mass: 10, type: float, display: true, formatter: ton
+  Volume: 0, type: float, display: false, formatter: Liter
+  MarketPrice: 99, display: true
+  CustomIcon: EGSWebPremium
+  ShowUser: Yes
+}
 # ------------------------------------------------------------------------------------------------------- HWS+ Resources
 { Item Id: 3935, Name: HWSTungstenOre, Ref: OreTemplate
   Meshfile: Entities/Items/Ores/NeodymiumOrePrefab
@@ -26833,7 +26845,7 @@
   MarketPrice: 225, display: true
   Info: HWS_ItemInfo_HWSTungstenIngot, display: true
 
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 3937, Name: HWSChromiteOre, Ref: OreTemplate
   Meshfile: Entities/Items/Ores/MagnesiumOrePrefab
@@ -26851,7 +26863,7 @@
   MarketPrice: 205, display: true
   Info: HWS_ItemInfo_HWSChromium, display: true
 
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 3939, Name: HWSBismuthOre, Ref: OreTemplate
   Meshfile: Entities/Items/Ores/TitanOrePrefab
@@ -26869,7 +26881,7 @@
   MarketPrice: 210, display: true
   Info: HWS_ItemInfo_HWSBismuthIngot, display: true
 
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 3941, Name: HWSElementalWater, Ref: ComponentsTemplate
   Meshfile: Entities/Items/Ores/AluminiumOrePrefab
@@ -26929,10 +26941,10 @@
   MarketPrice: 235, display: true
   Info: HWS_ItemInfo_HWSTantal, display: true
 
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 2000"
 }
 { Item Id: 3945, Name: HWSCarbonOre, Ref: OreTemplate
-  Meshfile: Entities/Misc/DummyPrefab
+  Meshfile: Entities/Items/Ores/NeodymiumOrePrefab
   ShowUser: Yes
   Mass: 3.52, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -27007,7 +27019,7 @@
 }
 # -------------------------------------------------------------------------------------------------------- HWS Origin XP
 { Item Id: 4086, Name: HWSAllOriginXP
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 100000, display: true
@@ -27020,11 +27032,11 @@
   Info: HWSOriginXPInfo, display: true
   Category: Components
   ShowUser: Yes
-  StackSize: 50000
+  StackSize: 200
 
 }
 { Item Id: 4087, Name: HWSDealerOriginXP
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 700000, display: true
@@ -27034,14 +27046,14 @@
   HoldType: 0
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  StackSize: 50000
+  StackSize: 200
 
   Info: HWSOriginXPInfo, display: true
   Category: Components
   ShowUser: Yes
 }
 { Item Id: 4088, Name: HWSEngineerOriginXP
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 700000, display: true
@@ -27051,14 +27063,14 @@
   HoldType: 0
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  StackSize: 50000
+  StackSize: 200
 
   Info: HWSOriginXPInfo, display: true
   Category: Components
   ShowUser: Yes
 }
 { Item Id: 4089, Name: HWSExplorerOriginXP
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 700000, display: true
@@ -27068,14 +27080,14 @@
   HoldType: 0
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  StackSize: 50000
+  StackSize: 200
 
   Info: HWSOriginXPInfo, display: true
   Category: Components
   ShowUser: Yes
 }
 { Item Id: 4090, Name: HWSFighterOriginXP
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Misc/DummyPrefab
   MarketPrice: 700000, display: true
@@ -27085,7 +27097,7 @@
   HoldType: 0
   Mass: 0.01, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  StackSize: 50000
+  StackSize: 200
 
   Info: HWSOriginXPInfo, display: true
   Category: Components
@@ -27098,9 +27110,10 @@
   Meshfile: @hws_itemmodels/HWSDealerOriginGun
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 100000, display: true
+  MarketPrice: 1000000, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
+  DropOnDeath: false
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
@@ -27142,9 +27155,10 @@
   Meshfile: @hws_itemmodels/HWSEngineerOriginGun
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 100000, display: true
+  MarketPrice: 1000000, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
+  DropOnDeath: false
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
@@ -27185,9 +27199,10 @@
   Meshfile: @hws_itemmodels/HWSExplorerOriginGun
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 100000, display: true
+  MarketPrice: 1000000, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
+  DropOnDeath: false
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
@@ -27228,9 +27243,10 @@
   Meshfile: @hws_itemmodels/HWSFighterOriginGun
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
-  MarketPrice: 100000, display: true
+  MarketPrice: 1000000, display: true
   HoldType: 15
-  StackSize: 50000
+  StackSize: 1
+  DropOnDeath: false
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
   Mass: 10, type: float, display: true, formatter: Kilogram
@@ -27267,7 +27283,7 @@
   TechTreeNames: ""
 }
 { Item Id: 4095, Name: HWSOriginGunAmmo
-  
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Meshfile: @hws_projectiles/HWSProjectileAllOriginGun
   DropMeshfile: @hws_itemmodels/HWSDealerOriginGun
   Material: HWS_material_weapon_kinetic, display: true
@@ -27276,7 +27292,7 @@
   Canhold: false
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
-  StackSize: 50000
+  StackSize: 1000
 
   Mass: 5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter

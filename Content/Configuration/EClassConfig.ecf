@@ -824,11 +824,6 @@
   AsteroidBlockValueType: CarbonResource
   MapIcon: map_CarbonResource
 }
-{ Entity Name: AsteroidTungsten, Ref: AsteroidIron
-  Mesh: Asteroids/Resources/AsteroidCarbonPrefab
-  AsteroidBlockValueType: CarbonResource
-  MapIcon: map_CarbonResource
-}
 
 # 3d Model Underground Resources
 { Entity Name: IronResource
@@ -914,10 +909,6 @@
   AsteroidBlockValueType: AluminiumResource
 }
 { Entity Name: CarbonResource, Ref: IronResource
-  Mesh: Asteroids/Resources/CarbonResourcePrefab
-  AsteroidBlockValueType: CarbonResource
-}
-{ Entity Name: HWSTungstenResource, Ref: IronResource
   Mesh: Asteroids/Resources/CarbonResourcePrefab
   AsteroidBlockValueType: CarbonResource
 }
@@ -2331,10 +2322,10 @@
     AttackableTypes: "Player"
   }
   { Child GroupDirectionSensor
-	TickIfLead: true
-	TimeBetweeenTicks: 0.2
-	ScanElevation:true
-	ScanWater:true
+    TickIfLead: true
+    TimeBetweeenTicks: 0.2
+    ScanElevation:true
+    ScanWater:true
   }
   PoolCount: 10
 }
@@ -2367,10 +2358,10 @@
     AttackableTypes: "Player,HV,PlayerBike"
   }
   { Child GroupDirectionSensor
-	TickIfLead: true
-	TimeBetweeenTicks: 0.2
-	ScanElevation:true
-	ScanWater:true
+    TickIfLead: true
+    TimeBetweeenTicks: 0.2
+    ScanElevation:true
+    ScanWater:true
   }
   PoolCount: 10
 }
@@ -2933,24 +2924,24 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
   }
 
   { Child VariableOverride
     SpeedCalm: 0.4
     SpeedAlerted: 0.75
-	SpeedAttack: 1.0
+    SpeedAttack: 1.0
   }
 
   { Child Hints
-	AttackApproachTarget: 10
-	AttackOptimalDistance: 25
+    AttackApproachTarget: 10
+    AttackOptimalDistance: 25
   }
 
   { Child VisionSensor
-	VisibleDistance: 130
-	ViewAngle: 100
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone"
+    VisibleDistance: 130
+    ViewAngle: 100
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone"
   }
 
   { Child TargetSensor
@@ -2958,20 +2949,20 @@
   }
 
   { Child StuckSensor
-	Use: 0
+    Use: 0
   }
   { Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 10
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:10 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 10
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:10 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
@@ -3700,17 +3691,17 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/HerbivoreLowAlert"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/HerbivoreFlee"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/HerbivoreFlee"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/HerbivoreFlee"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/HerbivoreLowAlert"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/HerbivoreFlee"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/HerbivoreFlee"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/HerbivoreFlee"
   }
 
 
 #  { Child Hints
-#	AttackApproachTarget: 50
+#    AttackApproachTarget: 50
 # }
 
   { Child VariableOverride
@@ -3721,25 +3712,25 @@
   }
   # vision sensor parameters, if absent, vision sensor if off
   { Child VisionSensor
-	VisibleDistance: 90 # how far can the animal see
-	ViewAngle: 200      # view angle of the animal (vision cone from the head)
+    VisibleDistance: 90 # how far can the animal see
+    ViewAngle: 200      # view angle of the animal (vision cone from the head)
   }
 # alert sensor parameters, used by behavior selectors
 # !! distance based alerts will add 0 alert at max distance, max alert at 0 distance - linear (50% alert at 50% distance))!!
-  {	Child AlertSensor
-	AlertLevel1: 20, param1: 0          # Alert level, max alert value, alert drop wait
-	AlertLevel2: 80, param1: 5
-	AlertLevel3: 100, param1: 15
-	AlertLevelDrop:10
-	AlertAddFromVisionMinNoMovement:0   # how much alert will be added per second when entity is visible
-	AlertAddFromVisionMovement:200      # how much alert will be added for moving entities
-	AlertVisionMaxSpeed:2               # at 0 speed, we will add 0 alert, at max speed we will add Alert...Movement per second, if the speed of entity is more than the max speed, it will be clamped to the max speed
-	AlertAddFromAutoAlert:40            # auto alert ignores vision, depends only on distance
-	MinDistanceToAutoAlert:20           # if entity is closer, it will add alert per frame
-	NoiseMaxDistance:50					# max. distance to listen to noises
-	NoiseAlertMultiplier:1			    # noise strength conversion to alert
-	DamageAlertMultiplier:60            # damage to alert conversion
-	AlertFromFriendDeath:60             # alert if group member is killed
+  {    Child AlertSensor
+    AlertLevel1: 20, param1: 0          # Alert level, max alert value, alert drop wait
+    AlertLevel2: 80, param1: 5
+    AlertLevel3: 100, param1: 15
+    AlertLevelDrop:10
+    AlertAddFromVisionMinNoMovement:0   # how much alert will be added per second when entity is visible
+    AlertAddFromVisionMovement:200      # how much alert will be added for moving entities
+    AlertVisionMaxSpeed:2               # at 0 speed, we will add 0 alert, at max speed we will add Alert...Movement per second, if the speed of entity is more than the max speed, it will be clamped to the max speed
+    AlertAddFromAutoAlert:40            # auto alert ignores vision, depends only on distance
+    MinDistanceToAutoAlert:20           # if entity is closer, it will add alert per frame
+    NoiseMaxDistance:50                    # max. distance to listen to noises
+    NoiseAlertMultiplier:1                # noise strength conversion to alert
+    DamageAlertMultiplier:60            # damage to alert conversion
+    AlertFromFriendDeath:60             # alert if group member is killed
   }
 }
 
@@ -3820,15 +3811,15 @@
   AlertLevel2: 80, param1: 5
   AlertLevel3: 100, param1: 15
   AlertLevelDrop:10
-	AlertAddFromVisionMinNoMovement:0   # how much alert will be added per second when entity is visible
-	AlertAddFromVisionMovement:200      # how much alert will be added for moving entities
-	AlertVisionMaxSpeed:2               # at 0 speed, we will add 0 alert, at max speed we will add Alert...Movement per second, if the speed of entity is more than the max speed, it will be clamped to the max speed
-	AlertAddFromAutoAlert:40            # auto alert ignores vision, depends only on distance
-	MinDistanceToAutoAlert:20           # if entity is closer, it will add alert per frame
+    AlertAddFromVisionMinNoMovement:0   # how much alert will be added per second when entity is visible
+    AlertAddFromVisionMovement:200      # how much alert will be added for moving entities
+    AlertVisionMaxSpeed:2               # at 0 speed, we will add 0 alert, at max speed we will add Alert...Movement per second, if the speed of entity is more than the max speed, it will be clamped to the max speed
+    AlertAddFromAutoAlert:40            # auto alert ignores vision, depends only on distance
+    MinDistanceToAutoAlert:20           # if entity is closer, it will add alert per frame
   NoiseMaxDistance:50         # max. distance to listen to noises
   NoiseAlertMultiplier:1          # noise strength conversion to alert
-	DamageAlertMultiplier:60            # damage to alert conversion
-	AlertFromFriendDeath:60             # alert if group member is killed
+    DamageAlertMultiplier:60            # damage to alert conversion
+    AlertFromFriendDeath:60             # alert if group member is killed
   }
 
 
@@ -3865,7 +3856,7 @@
   }
 
   { Child VisionSensor
-	VisibleDistance: 100
+    VisibleDistance: 100
   }
 }
 
@@ -3910,34 +3901,34 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/BasicLifeCycle"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/BasicLifeCycle"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child Hints
-	AttackWaitAfterAttack: 0
-	AttackRoarBeforeAttack: 10
-	IsHunting:0
-	AttackMaxCount:4
-	AttackRandomDirection:10
+    AttackWaitAfterAttack: 0
+    AttackRoarBeforeAttack: 10
+    IsHunting:0
+    AttackMaxCount:4
+    AttackRandomDirection:10
   }
 
   { Child VariableOverride
-	MinimalDistanceToTarget: 4.0
-	MeleeAttackDistance: 5.0
+    MinimalDistanceToTarget: 4.0
+    MeleeAttackDistance: 5.0
     SpeedCalm: 0.3
     SpeedAlerted: 1.0
     SpeedAttack: 1.5
-	SpeedFlee: 1.0
+    SpeedFlee: 1.0
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 360
+    VisibleDistance: 50
+    ViewAngle: 360
   }
 
   { Child TargetSensor
@@ -3945,18 +3936,18 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 60, param1: 20
-	AlertLevel3SwithToOnDmg: true
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:100
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:10
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 60, param1: 20
+    AlertLevel3SwithToOnDmg: true
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:100
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:10
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
@@ -4000,25 +3991,25 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.12
     SpeedAlerted: 0.5
     SpeedAttack: 2.25
-	SpeedFlee: 1.8
+    SpeedFlee: 1.8
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 360
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike"
+    VisibleDistance: 50
+    ViewAngle: 360
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike"
   }
 
   { Child TargetSensor
@@ -4026,35 +4017,35 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.5
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.5
   }
 
 # fear sensor params
   { Child FearSensor
     MaxFear: 60 # maximal fear of the animal
 
-	FearDrop: 20 # how much fear will drop per frame
-	FearDropPerFriend: 10 # fear drop per frame for each group member around
-	FearDropMaxFromFriends: 50
-	MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
+    FearDrop: 20 # how much fear will drop per frame
+    FearDropPerFriend: 10 # fear drop per frame for each group member around
+    FearDropMaxFromFriends: 50
+    MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
 
-	MinDistanceToFearAnEnemy: 0
-	FearFromEnemy: 0
-	FearFromFriendDeath: 30
-	FearFromDamageMultiplier: 0.3 # damage to fear conversion
-	FearFromNoiseMaxDistance: 30  # max distance to convert noise to fear
-	FearFromNoiseMultiplier: 0.2  # noise to fear conversion multiplier
-	FearPropagationDamageMultiplier: 0.5 # fear from damage propagation to group members
+    MinDistanceToFearAnEnemy: 0
+    FearFromEnemy: 0
+    FearFromFriendDeath: 30
+    FearFromDamageMultiplier: 0.3 # damage to fear conversion
+    FearFromNoiseMaxDistance: 30  # max distance to convert noise to fear
+    FearFromNoiseMultiplier: 0.2  # noise to fear conversion multiplier
+    FearPropagationDamageMultiplier: 0.5 # fear from damage propagation to group members
   }
 
 }
@@ -4093,25 +4084,25 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.12
     SpeedAlerted: 0.5
     SpeedAttack: 2.25
-	SpeedFlee: 1.8
+    SpeedFlee: 1.8
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 360
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike"
+    VisibleDistance: 50
+    ViewAngle: 360
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike"
   }
 
   { Child TargetSensor
@@ -4119,34 +4110,34 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 # fear sensor params
   { Child FearSensor
     MaxFear: 60 # maximal fear of the animal
 
-	FearDrop: 20 # how much fear will drop per frame
-	FearDropPerFriend: 10 # fear drop per frame for each group member around
-	FearDropMaxFromFriends: 50
-	MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
+    FearDrop: 20 # how much fear will drop per frame
+    FearDropPerFriend: 10 # fear drop per frame for each group member around
+    FearDropMaxFromFriends: 50
+    MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
 # if closer, the agent will get feat from beign near to enemy, at max distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per second (linear)
-	MinDistanceToFearAnEnemy: 0
-	FearFromEnemy: 0
-	FearFromFriendDeath: 30
-	FearFromDamageMultiplier: 0.3 # damage to fear conversion
-	FearFromNoiseMaxDistance: 30  # max distance to convert noise to fear
-	FearFromNoiseMultiplier: 0.2  # noise to fear conversion multiplier
-	FearPropagationDamageMultiplier: 0.5 # fear from damage propagation to group members
+    MinDistanceToFearAnEnemy: 0
+    FearFromEnemy: 0
+    FearFromFriendDeath: 30
+    FearFromDamageMultiplier: 0.3 # damage to fear conversion
+    FearFromNoiseMaxDistance: 30  # max distance to convert noise to fear
+    FearFromNoiseMultiplier: 0.2  # noise to fear conversion multiplier
+    FearPropagationDamageMultiplier: 0.5 # fear from damage propagation to group members
   }
 
 }
@@ -4186,25 +4177,25 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.24
     SpeedAlerted: 0.6
     SpeedAttack: 3
-	SpeedFlee: 2.4
+    SpeedFlee: 2.4
   }
 
   { Child VisionSensor
-	VisibleDistance: 30
-	ViewAngle: 360
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+    VisibleDistance: 30
+    ViewAngle: 360
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
   { Child TargetSensor
@@ -4212,34 +4203,34 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 # fear sensor params
   { Child FearSensor
     MaxFear: 60 # maximal fear of the animal
 
-	FearDrop: 20 # how much fear will drop per frame
-	FearDropPerFriend: 10 # fear drop per frame for each group member around
-	FearDropMaxFromFriends: 50
-	MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
+    FearDrop: 20 # how much fear will drop per frame
+    FearDropPerFriend: 10 # fear drop per frame for each group member around
+    FearDropMaxFromFriends: 50
+    MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
 
-	MinDistanceToFearAnEnemy: 0 # if closer, the agent will get feat from beign near to enemy, at max distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per second (linear)
-	FearFromEnemy: 0
-	FearFromFriendDeath: 15
-	FearFromDamageMultiplier: 0.3 # damage to fear conversion
-	FearFromNoiseMaxDistance: 45  # max distance to convert noise to fear
-	FearFromNoiseMultiplier: 0.2  # noise to fear conversion multiplier
-	FearPropagationDamageMultiplier: 0.8 # fear from damage propagation to group members
+    MinDistanceToFearAnEnemy: 0 # if closer, the agent will get feat from beign near to enemy, at max distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per second (linear)
+    FearFromEnemy: 0
+    FearFromFriendDeath: 15
+    FearFromDamageMultiplier: 0.3 # damage to fear conversion
+    FearFromNoiseMaxDistance: 45  # max distance to convert noise to fear
+    FearFromNoiseMultiplier: 0.2  # noise to fear conversion multiplier
+    FearPropagationDamageMultiplier: 0.8 # fear from damage propagation to group members
   }
 
 }
@@ -4269,24 +4260,24 @@
     SpeedCalm: 0.2
     SpeedAlerted: 0.8
     SpeedAttack: 2.6
-	SpeedFlee: 2.3
+    SpeedFlee: 2.3
   }
 
   { Child FearSensor
     MaxFear: 60 # maximal fear of the animal
 
-	FearDrop: 20 # how much fear will drop per frame
-	FearDropPerFriend: 10 # fear drop per frame for each group member around
-	FearDropMaxFromFriends: 50
-	MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
+    FearDrop: 20 # how much fear will drop per frame
+    FearDropPerFriend: 10 # fear drop per frame for each group member around
+    FearDropMaxFromFriends: 50
+    MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
 
-	MinDistanceToFearAnEnemy: 0
-	FearFromEnemy: 0
-	FearFromFriendDeath: 10
-	FearFromDamageMultiplier: 0.3 # damage to fear conversion
-	FearFromNoiseMaxDistance: 15  # max distance to convert noise to fear
-	FearFromNoiseMultiplier: 0.1  # noise to fear conversion multiplier
-	FearPropagationDamageMultiplier: 0.3 # fear from damage propagation to group members
+    MinDistanceToFearAnEnemy: 0
+    FearFromEnemy: 0
+    FearFromFriendDeath: 10
+    FearFromDamageMultiplier: 0.3 # damage to fear conversion
+    FearFromNoiseMaxDistance: 15  # max distance to convert noise to fear
+    FearFromNoiseMultiplier: 0.1  # noise to fear conversion multiplier
+    FearPropagationDamageMultiplier: 0.3 # fear from damage propagation to group members
   }
 }
 { Entity Name: Spider02Small, Ref: Spider01Small
@@ -4315,24 +4306,24 @@
     SpeedCalm: 0.2
     SpeedAlerted: 0.8
     SpeedAttack: 2.6
-	SpeedFlee: 2.3
+    SpeedFlee: 2.3
   }
 
   { Child FearSensor
     MaxFear: 60 # maximal fear of the animal
 
-	FearDrop: 20 # how much fear will drop per frame
-	FearDropPerFriend: 10 # fear drop per frame for each group member around
-	FearDropMaxFromFriends: 50
-	MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
+    FearDrop: 20 # how much fear will drop per frame
+    FearDropPerFriend: 10 # fear drop per frame for each group member around
+    FearDropMaxFromFriends: 50
+    MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
 
-	MinDistanceToFearAnEnemy: 0
-	FearFromEnemy: 0
-	FearFromFriendDeath: 10
-	FearFromDamageMultiplier: 0.3 # damage to fear conversion
-	FearFromNoiseMaxDistance: 15  # max distance to convert noise to fear
-	FearFromNoiseMultiplier: 0.1  # noise to fear conversion multiplier
-	FearPropagationDamageMultiplier: 0.3 # fear from damage propagation to group members
+    MinDistanceToFearAnEnemy: 0
+    FearFromEnemy: 0
+    FearFromFriendDeath: 10
+    FearFromDamageMultiplier: 0.3 # damage to fear conversion
+    FearFromNoiseMaxDistance: 15  # max distance to convert noise to fear
+    FearFromNoiseMultiplier: 0.1  # noise to fear conversion multiplier
+    FearPropagationDamageMultiplier: 0.3 # fear from damage propagation to group members
   }
 }
 { Entity Name: Spider02Baby, Ref: Spider01Baby
@@ -4361,24 +4352,24 @@
     SpeedCalm: 0.6
     SpeedAlerted: 1
     SpeedAttack: 2.0
-	SpeedFlee: 3.5
+    SpeedFlee: 3.5
   }
 
   { Child FearSensor
     MaxFear: 60 # maximal fear of the animal
 
-	FearDrop: 20 # how much fear will drop per frame
-	FearDropPerFriend: 10 # fear drop per frame for each group member around
-	FearDropMaxFromFriends: 50
-	MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
+    FearDrop: 20 # how much fear will drop per frame
+    FearDropPerFriend: 10 # fear drop per frame for each group member around
+    FearDropMaxFromFriends: 50
+    MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
 
-	MinDistanceToFearAnEnemy: 0
-	FearFromEnemy: 0
-	FearFromFriendDeath: 10
-	FearFromDamageMultiplier: 0.3 # damage to fear conversion
-	FearFromNoiseMaxDistance: 15  # max distance to convert noise to fear
-	FearFromNoiseMultiplier: 0.1  # noise to fear conversion multiplier
-	FearPropagationDamageMultiplier: 0.3 # fear from damage propagation to group members
+    MinDistanceToFearAnEnemy: 0
+    FearFromEnemy: 0
+    FearFromFriendDeath: 10
+    FearFromDamageMultiplier: 0.3 # damage to fear conversion
+    FearFromNoiseMaxDistance: 15  # max distance to convert noise to fear
+    FearFromNoiseMultiplier: 0.1  # noise to fear conversion multiplier
+    FearPropagationDamageMultiplier: 0.3 # fear from damage propagation to group members
   }
 }
 
@@ -4393,24 +4384,24 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child Hints
-	ReturnHome: 100
-	IsRanged: 100
+    ReturnHome: 100
+    IsRanged: 100
   }
 
   { Child VariableOverride
     SpeedCalm: 0.2
     SpeedAlerted: 0.6
     SpeedAttack: 2.5
-	SpeedFlee: 2.5
+    SpeedFlee: 2.5
   }
 }
 { Entity Name: Spider03Small, Ref: Spider01Small
@@ -4473,33 +4464,33 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/AlienBug01
+    BehaviorName: Behaviors/HiLevelTrees/AlienBug01
   }
 
   { Child VisionSensor
-	VisibleDistance: 30
-	ViewAngle: 360
+    VisibleDistance: 30
+    ViewAngle: 360
   }
 
   { Child FearSensor
     MaxFear: 60 # maximal fear of the animal
 
-	FearDrop: 3 # how much fear will drop per frame
-	FearDropPerFriend: 2 # fear drop per frame for each group member around
-	FearDropMaxFromFriends: 50
-	MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
+    FearDrop: 3 # how much fear will drop per frame
+    FearDropPerFriend: 2 # fear drop per frame for each group member around
+    FearDropMaxFromFriends: 50
+    MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
 
-	MinDistanceToFearAnEnemy: 0
-	FearFromEnemy: 0
-	FearFromFriendDeath: 90
-	FearFromDamageMultiplier: 2.0 # damage to fear conversion
-	FearFromNoiseMaxDistance: 20  # max distance to convert noise to fear
-	FearFromNoiseMultiplier: 0.2  # noise to fear conversion multiplier
-	FearPropagationDamageMultiplier: 1.0 # fear from damage propagation to group members
+    MinDistanceToFearAnEnemy: 0
+    FearFromEnemy: 0
+    FearFromFriendDeath: 90
+    FearFromDamageMultiplier: 2.0 # damage to fear conversion
+    FearFromNoiseMaxDistance: 20  # max distance to convert noise to fear
+    FearFromNoiseMultiplier: 0.2  # noise to fear conversion multiplier
+    FearPropagationDamageMultiplier: 1.0 # fear from damage propagation to group members
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
+    AlertLevel1: 15, param1: 0
   }
 
 }
@@ -4767,36 +4758,36 @@
 
   # AI Properties
   #{ Child MainBehavior
-  #	BehaviorName: Behaviors/PlanetLife/BehaviorAlienBug03
+  #    BehaviorName: Behaviors/PlanetLife/BehaviorAlienBug03
   #}
 
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child Hints
     IsRanged: 100
-	#AttackApproachTarget: 0
-	#AttackOptimalDistance: 40
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 3
-	SearchRandomDistanceMult: 0.5
+    #AttackApproachTarget: 0
+    #AttackOptimalDistance: 40
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 3
+    SearchRandomDistanceMult: 0.5
   }
 
   { Child VariableOverride
     SpeedCalm: 0.2
     SpeedAlerted: 0.5
-	SpeedAttack: 1.0
+    SpeedAttack: 1.0
   }
 
   { Child VisionSensor
-	VisibleDistance: 70
-	ViewAngle: 360
+    VisibleDistance: 70
+    ViewAngle: 360
   }
 
   { Child TargetSensor
@@ -4804,17 +4795,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 20, param1: 10
-	AlertLevel3: 40, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 20, param1: 10
+    AlertLevel3: 40, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
@@ -4854,32 +4845,32 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.2
     SpeedAlerted: 0.5
-	SpeedAttack: 1.3
+    SpeedAttack: 1.3
   }
 
   { Child Hints
     IsRanged: 100
-	#AttackApproachTarget: 0
-	AttackOptimalDistance: 40
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 3
-	SearchRandomDistanceMult: 0.5
+    #AttackApproachTarget: 0
+    AttackOptimalDistance: 40
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 3
+    SearchRandomDistanceMult: 0.5
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 110
+    VisibleDistance: 50
+    ViewAngle: 110
   }
 
   { Child TargetSensor
@@ -4887,18 +4878,18 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 30, param1: 2
-	AlertLevel3: 40, param1: 20
-	AlertLevel3SwithToOnDmg: true
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:10 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 30, param1: 2
+    AlertLevel3: 40, param1: 20
+    AlertLevel3SwithToOnDmg: true
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:10 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
@@ -4985,21 +4976,21 @@
     FearPropagationDamageMultiplier: 1.0 # fear from damage propagation to group members
   }
 
-  {	Child AlertSensor   # alert sensor parameters, used by behavior selectors
+  {    Child AlertSensor   # alert sensor parameters, used by behavior selectors
     # !! distance based alerts will add 0 alert at max distance, max alert at 0 distance - linear (50% alert at 50% distance))!!
-	AlertLevel1: 20, param1: 0          # Alert level, max alert value, alert drop wait
-	AlertLevel2: 80, param1: 5			#  - max alert value for alert level - this level will be from last alert level max value to this alert level max value (0-20, 21-80...
-	AlertLevel3: 100, param1: 15        #  - alert drop wait - when alert level is higher as the min value for the current level (80-100) (example - alert 85) and the alert drops to the min value(80), it will not drop to lower alert level for "alert drop wait" seconds
-	AlertLevelDrop:10					# how fast does the alert drop per second. If any alert was added this frame the alert will not drop at all
-	AlertAddFromVisionMinNoMovement:0   # how much alert will be added per second when entity is visible
-	AlertAddFromVisionMovement:200      # how much alert will be added for moving entities
-	AlertVisionMaxSpeed:2               # at 0 speed, we will add 0 alert, at max speed we will add Alert...Movement per second, if the speed of entity is more than the max speed, it will be clamped to the max speed
-	AlertAddFromAutoAlert:40            # auto alert ignores vision, depends only on distance
-	MinDistanceToAutoAlert:20           # if entity is closer, it will add alert per frame
-	NoiseMaxDistance:50					# max. distance to listen to noises
-	NoiseAlertMultiplier:1			    # noise strength conversion to alert
-	DamageAlertMultiplier:60            # damage to alert conversion
-	AlertFromFriendDeath:60             # alert if group member is killed
+    AlertLevel1: 20, param1: 0          # Alert level, max alert value, alert drop wait
+    AlertLevel2: 80, param1: 5            #  - max alert value for alert level - this level will be from last alert level max value to this alert level max value (0-20, 21-80...
+    AlertLevel3: 100, param1: 15        #  - alert drop wait - when alert level is higher as the min value for the current level (80-100) (example - alert 85) and the alert drops to the min value(80), it will not drop to lower alert level for "alert drop wait" seconds
+    AlertLevelDrop:10                    # how fast does the alert drop per second. If any alert was added this frame the alert will not drop at all
+    AlertAddFromVisionMinNoMovement:0   # how much alert will be added per second when entity is visible
+    AlertAddFromVisionMovement:200      # how much alert will be added for moving entities
+    AlertVisionMaxSpeed:2               # at 0 speed, we will add 0 alert, at max speed we will add Alert...Movement per second, if the speed of entity is more than the max speed, it will be clamped to the max speed
+    AlertAddFromAutoAlert:40            # auto alert ignores vision, depends only on distance
+    MinDistanceToAutoAlert:20           # if entity is closer, it will add alert per frame
+    NoiseMaxDistance:50                    # max. distance to listen to noises
+    NoiseAlertMultiplier:1                # noise strength conversion to alert
+    DamageAlertMultiplier:60            # damage to alert conversion
+    AlertFromFriendDeath:60             # alert if group member is killed
   }
 
   { Child DebugSensor                  # Debug sensor paras
@@ -5052,30 +5043,30 @@
   AllowInSpawners: true
 
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
   }
 
 
   { Child VariableOverride
     SpeedCalm: 0.4
     SpeedAlerted: 1.75
-	SpeedAttack: 2.0
+    SpeedAttack: 2.0
   }
 
   { Child Hints
-	AttackApproachTarget: 40
-	AttackOptimalDistance: 40
-	SearchAdvanceTime: 2.0
-	SearchWaitTime: 3
-	SearchRandomDistanceMult: 2.75
-	FireWeaponBlendInTime: 0.5
-	FireWeaponDurationMultiplier: 2.0
+    AttackApproachTarget: 40
+    AttackOptimalDistance: 40
+    SearchAdvanceTime: 2.0
+    SearchWaitTime: 3
+    SearchRandomDistanceMult: 2.75
+    FireWeaponBlendInTime: 0.5
+    FireWeaponDurationMultiplier: 2.0
   }
 
   { Child VisionSensor
-	VisibleDistance: 120
-	ViewAngle: 110
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike,PlayerDrone"
+    VisibleDistance: 120
+    ViewAngle: 110
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike,PlayerDrone"
   }
 
   { Child TargetSensor
@@ -5083,21 +5074,21 @@
   }
 
   { Child StuckSensor
-	Use: 0
+    Use: 0
   }
 
   { Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop:5 # slow alert drop
-	AlertAddFromVisionMinNoMovement:10 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:120
-	NoiseAlertMultiplier:1.5
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop:5 # slow alert drop
+    AlertAddFromVisionMinNoMovement:10 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:120
+    NoiseAlertMultiplier:1.5
   }
 }
 
@@ -5109,11 +5100,11 @@
   MeshDead: Enemies/Zirax/ZiraxYellowDeadPrefab
   ItemsOnEnterGame: ZiraxLaserWeapon
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 90
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 90
   }
   { Child VisionSensor
-	VisibleDistance: 125
+    VisibleDistance: 125
   }
 }
 
@@ -5127,15 +5118,15 @@
 
   { Child VariableOverride
     SpeedAlerted: 1.75
-	SpeedAttack: 2.25
+    SpeedAttack: 2.25
   }
   { Child Hints
-	AttackApproachTarget: 90
-	AttackOptimalDistance: 10
-	SearchAdvanceTime: 3.0
-	SearchWaitTime: 0.5
-	SearchRandomDistanceMult: 3.8
-	FireWeaponDurationMultiplier: 1.0
+    AttackApproachTarget: 90
+    AttackOptimalDistance: 10
+    SearchAdvanceTime: 3.0
+    SearchWaitTime: 0.5
+    SearchRandomDistanceMult: 3.8
+    FireWeaponDurationMultiplier: 1.0
   }
 
 
@@ -5152,16 +5143,16 @@
   { Child VariableOverride
     SpeedCalm: 0.4
     SpeedAlerted: 1.25
-	SpeedAttack: 1.25
+    SpeedAttack: 1.25
   }
 
   { Child Hints
-  	FireWeaponDurationMultiplier: 0.3
-	FireWeaponBlendInTime: 0.7
-	AttackOptimalDistance: 80
+      FireWeaponDurationMultiplier: 0.3
+    FireWeaponBlendInTime: 0.7
+    AttackOptimalDistance: 80
   }
   { Child VisionSensor
-	VisibleDistance: 130
+    VisibleDistance: 130
   }
 
 }
@@ -5174,17 +5165,17 @@
   MeshDead: Enemies/Zirax/ZiraxPurpleDeadPrefab
   ItemsOnEnterGame: ZiraxSniperWeapon
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 90
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 90
   }
   { Child VariableOverride
     SpeedCalm: 0.1
     SpeedAlerted: 1.5
-	SpeedAttack: 1.5
+    SpeedAttack: 1.5
   }
   { Child VisionSensor
-	VisibleDistance: 120
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike,PlayerDrone"
+    VisibleDistance: 120
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike,PlayerDrone"
   }
 
   { Child TargetSensor
@@ -5203,21 +5194,21 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/ZiraxTest
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTest
   }
 
   { Child VariableOverride
     SpeedCalm: 0.3
     SpeedAlerted: 0.3
     SpeedAttack: 0.3
-	SpeedFlee: 0.3
-	MeleeAttackDistance: 1.0       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	MinimalDistanceToTarget: 2.0   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+    SpeedFlee: 0.3
+    MeleeAttackDistance: 1.0       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+    MinimalDistanceToTarget: 2.0   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
   }
 
   { Child VisionSensor
-	VisibleDistance: 200
-	ViewAngle: 360
+    VisibleDistance: 200
+    ViewAngle: 360
   }
 
   { Child TargetSensor
@@ -5226,22 +5217,22 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevelDrop:0 # slow alert drop
-	AlertAddFromVisionMinNoMovement:100 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevelDrop:0 # slow alert drop
+    AlertAddFromVisionMinNoMovement:100 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
 { Entity Name: ZiraxTestFire, Ref: ZiraxTest
 
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/ZiraxTestFiring
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTestFiring
   }
 }
 
@@ -5249,7 +5240,7 @@
   RotateSpeedMovement: 600
 
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/ZiraxTestNetwork
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTestNetwork
   }
 }
 
@@ -5312,7 +5303,7 @@
 #
   # AI Properties
 #   { Child MainBehavior
-# 	BehaviorName: Behaviors/HiLevelTrees/ZiraxBaseAttackTest
+#     BehaviorName: Behaviors/HiLevelTrees/ZiraxBaseAttackTest
  #  }
 
 #   { Child TargetSensor
@@ -5326,7 +5317,7 @@
 
   # # AI Properties
   # { Child MainBehavior
-	# BehaviorName: Behaviors/HiLevelTrees/ZiraxBaseAttackTest
+    # BehaviorName: Behaviors/HiLevelTrees/ZiraxBaseAttackTest
   # }
   # #TODO remove sensors
   # { Child TargetSensor
@@ -5338,15 +5329,15 @@
     # SpeedCalm: 0.3
     # SpeedAlerted: 0.3
     # SpeedAttack: 1.0
-	# SpeedFlee: 1.0
-	# MeleeAttackDistance: 4.0       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	# MinimalDistanceToTarget: 3.0   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+    # SpeedFlee: 1.0
+    # MeleeAttackDistance: 4.0       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+    # MinimalDistanceToTarget: 3.0   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
     # FireDuration: 1.0
   # }
 
   # { Child VisionSensor
-	# VisibleDistance: 200
-	# ViewAngle: 360
+    # VisibleDistance: 200
+    # ViewAngle: 360
   # }
 # }
 
@@ -5360,23 +5351,23 @@
 
   # # AI Properties
   # { Child MainBehavior
-	# BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
+    # BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
   # }
 
   # { Child VariableOverride
     # SpeedCalm: 0.3
     # SpeedAlerted: 0.3
     # SpeedAttack: 1.0
-	# SpeedFlee: 1.0
-	# MeleeAttackDistance: 4.0       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	# MinimalDistanceToTarget: 3.0   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+    # SpeedFlee: 1.0
+    # MeleeAttackDistance: 4.0       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+    # MinimalDistanceToTarget: 3.0   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
     # FireDuration: 1.0
   # }
 
   # #TODO remove sensors
   # { Child VisionSensor
-	# VisibleDistance: 200
-	# ViewAngle: 360
+    # VisibleDistance: 200
+    # ViewAngle: 360
   # }
   # #
   # { Child TargetSensor
@@ -5460,41 +5451,41 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
   }
 
   { Child VariableOverride
     SpeedCalm: 0.3
     SpeedAlerted: 0.75
-	SpeedAttack: 1.1
+    SpeedAttack: 1.1
   }
 
   { Child Hints
-	AttackApproachTarget: 50
-	AttackOptimalDistance: 20
-	IdleMaxWaitTime: 3
+    AttackApproachTarget: 50
+    AttackOptimalDistance: 20
+    IdleMaxWaitTime: 3
   }
 
   { Child VisionSensor
-	VisibleDistance: 88
-	ViewAngle: 110
+    VisibleDistance: 88
+    ViewAngle: 110
   }
 
   { Child StuckSensor
-	Use: 0
+    Use: 0
   }
   { Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 10
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:10 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 10
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:10 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
@@ -5549,27 +5540,27 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.8
     SpeedAlerted: 1.65
     SpeedAttack: 3.5
-	SpeedFlee: 2.25
-	MeleeAttackDistance: 5.0
-	MinimalDistanceToTarget: 2.0
+    SpeedFlee: 2.25
+    MeleeAttackDistance: 5.0
+    MinimalDistanceToTarget: 2.0
   }
 
   { Child VisionSensor
-	VisibleDistance: 150
-	ViewAngle: 320
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone,PlayerBike"
+    VisibleDistance: 150
+    ViewAngle: 320
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone,PlayerBike"
   }
 
   { Child TargetSensor
@@ -5577,17 +5568,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.75
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.75
   }
 }
 { Entity Name: TotalHorror, Ref: PredatorTemplate
@@ -5637,9 +5628,9 @@
   FadingEnabled: false     # otherwise problems when switching to dead model
 
   { Child VisionSensor
-	VisibleDistance: 120
-	ViewAngle: 110
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone"
+    VisibleDistance: 120
+    ViewAngle: 110
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone"
   }
 
   { Child TargetSensor
@@ -5685,32 +5676,32 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child Hints
     AttackUseRetreatRoar: 100
-	AttackMaxCount: 5
+    AttackMaxCount: 5
   }
 
   { Child VariableOverride
     SpeedCalm: 0.5
     SpeedAlerted: 1.4
     SpeedAttack: 1.75
-	SpeedFlee: 1.8
-	MeleeAttackDistance: 3.0       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	MinimalDistanceToTarget: 2.0   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+    SpeedFlee: 1.8
+    MeleeAttackDistance: 3.0       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+    MinimalDistanceToTarget: 2.0   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
   }
 
   { Child VisionSensor
-	VisibleDistance: 70
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone,PlayerBike"
+    VisibleDistance: 70
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone,PlayerBike"
   }
 
   { Child TargetSensor
@@ -5718,17 +5709,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:1.5
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:1.5
   }
 }
 
@@ -5757,9 +5748,9 @@
     SpeedCalm: 0.6
     SpeedAlerted: 1.6
     SpeedAttack: 2.0
-	SpeedFlee: 1.8
-	MeleeAttackDistance: 4.0       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	MinimalDistanceToTarget: 2.0   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+    SpeedFlee: 1.8
+    MeleeAttackDistance: 4.0       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+    MinimalDistanceToTarget: 2.0   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
   }
 }
 
@@ -5787,8 +5778,8 @@
   # }
 
   # { Child VariableOverride
-	# MeleeAttackDistance: 3.0
-	# MinimalDistanceToTarget: 2.0
+    # MeleeAttackDistance: 3.0
+    # MinimalDistanceToTarget: 2.0
   # }
 
 # }
@@ -5838,24 +5829,24 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.3
     SpeedAlerted: 1.3
     SpeedAttack: 1.8
-	SpeedFlee: 1.5
+    SpeedFlee: 1.5
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 180
+    VisibleDistance: 50
+    ViewAngle: 180
   }
 
   { Child TargetSensor
@@ -5863,17 +5854,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
@@ -5922,31 +5913,31 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.4
     SpeedAlerted: 2.0
     SpeedAttack: 3.0
-	SpeedFlee: 5.0
-	MeleeAttackDistance: 2.25
-	MinimalDistanceToTarget: 1.25
+    SpeedFlee: 5.0
+    MeleeAttackDistance: 2.25
+    MinimalDistanceToTarget: 1.25
   }
 
   { Child Hints
-	BasicAttackStances: 1.0
+    BasicAttackStances: 1.0
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 240
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone,PlayerBike"
+    VisibleDistance: 50
+    ViewAngle: 240
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone,PlayerBike"
   }
 
   { Child TargetSensor
@@ -5954,17 +5945,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:75
-	NoiseAlertMultiplier:1.0
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:75
+    NoiseAlertMultiplier:1.0
   }
   AllowUserInstantiate: true
   AllowInSpawners: true
@@ -6028,31 +6019,31 @@
 
     # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/BasicLifeCycle"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/CirclingMeleeAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/BasicLifeCycle"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/CirclingMeleeAttack"
   }
 
   { Child Hints
-	IsHunting: 100
+    IsHunting: 100
   }
 
   { Child VariableOverride
     SpeedCalm: 0.3
     SpeedAlerted: 2.5
     SpeedAttack: 3.0
-	SpeedFlee: 4.5
-	MeleeAttackDistance: 2.25
-	MinimalDistanceToTarget: 0.75
+    SpeedFlee: 4.5
+    MeleeAttackDistance: 2.25
+    MinimalDistanceToTarget: 0.75
   }
 
   { Child VisionSensor
-	VisibleDistance: 75
-	ViewAngle: 240
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone"
+    VisibleDistance: 75
+    ViewAngle: 240
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone"
   }
 
   { Child TargetSensor
@@ -6060,15 +6051,15 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
   NoiseMaxDistance:50
   NoiseAlertMultiplier:0.3
   }
@@ -6111,16 +6102,16 @@
 
     # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"
-	Slot3: "SlotAlertedNoTarget, Behaviors/AnimalSpecific/Raptor02/Raptor02_SearchTarget"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"
+    Slot3: "SlotAlertedNoTarget, Behaviors/AnimalSpecific/Raptor02/Raptor02_SearchTarget"
   Slot4: "SlotSearchTarget,    Behaviors/AnimalSpecific/Raptor02/Raptor02_SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/AnimalSpecific/Raptor02/Raptor02_SeePrey"
+    Slot5: "SlotAttackTarget,    Behaviors/AnimalSpecific/Raptor02/Raptor02_SeePrey"
   }
 
   { Child Hints
-	IsHunting: 100
+    IsHunting: 100
   IsScavenger: 100
   }
 
@@ -6128,32 +6119,32 @@
     SpeedCalm: 0.3
     SpeedAlerted: 1.5
     SpeedAttack: 3
-	  SpeedFlee: 1.5
-	  MeleeAttackDistance: 2.0
+      SpeedFlee: 1.5
+      MeleeAttackDistance: 2.0
   }
 
-  {	Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 360
+  {    Child VisionSensor
+    VisibleDistance: 50
+    ViewAngle: 360
   }
 
-  {	Child TargetSensor
+  {    Child TargetSensor
     AttackableTypes: "Player, PlayerBike, Animal"
     TargetableTypes: "Player, PlayerBike, Animal, HV, SV, CV"
   }
 
-  {	Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+  {    Child AlertSensor
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 
   { Child HideSensor            #Hide sensor parameters, if absent, hide sensor if off
@@ -6203,7 +6194,7 @@
     SpeedCalm: 0.4
     SpeedAlerted: 2.5
     SpeedAttack: 3.0
-	SpeedFlee: 2.5
+    SpeedFlee: 2.5
   }
 
   # Sound settings
@@ -6255,35 +6246,35 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/BasicLifeCycle"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/BasicLifeCycle"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child Hints
-	AttackWaitAfterAttack: 0
-	AttackRoarBeforeAttack: 10
-	IsHunting:100
-	AttackMaxCount:4
-	AttackRandomDirection:10
+    AttackWaitAfterAttack: 0
+    AttackRoarBeforeAttack: 10
+    IsHunting:100
+    AttackMaxCount:4
+    AttackRandomDirection:10
   }
 
   { Child VariableOverride
-	MinimalDistanceToTarget: 3.0
-	MeleeAttackDistance: 4.5
+    MinimalDistanceToTarget: 3.0
+    MeleeAttackDistance: 4.5
     SpeedCalm: 0.5
     SpeedAlerted: 2.25
     SpeedAttack: 2.75
-	SpeedFlee: 3.0
+    SpeedFlee: 3.0
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike"
+    VisibleDistance: 50
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike"
   }
 
   { Child TargetSensor
@@ -6291,18 +6282,18 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevel3SwithToOnDmg: true
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:10
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevel3SwithToOnDmg: true
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:10
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
   AllowInSpawners: true
 }
@@ -6343,28 +6334,28 @@
 
     # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.4
     SpeedAlerted: 1.2
     SpeedAttack: 1.4
-	SpeedFlee: 1.0
+    SpeedFlee: 1.0
   }
 
   { Child Hints
-	AttackOnFriendDamage: 100
+    AttackOnFriendDamage: 100
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 180
+    VisibleDistance: 50
+    ViewAngle: 180
   }
 
   { Child TargetSensor
@@ -6372,18 +6363,18 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 30, param1: 2
-	AlertLevel3: 40, param1: 20
-	AlertLevel3SwithToOnDmg: true
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:80
-	NoiseAlertMultiplier:0.6
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 30, param1: 2
+    AlertLevel3: 40, param1: 20
+    AlertLevel3SwithToOnDmg: true
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:80
+    NoiseAlertMultiplier:0.6
   }
 }
 
@@ -6404,9 +6395,9 @@
     SpeedCalm: 0.5
     SpeedAlerted: 1.4
     SpeedAttack: 1.6
-	SpeedFlee: 1.5
-	MinimalDistanceToTarget: 1.2
-	MeleeAttackDistance: 2.5
+    SpeedFlee: 1.5
+    MinimalDistanceToTarget: 1.2
+    MeleeAttackDistance: 2.5
   }
 }
 
@@ -6555,34 +6546,34 @@
 
     # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/BasicLifeCycle"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalOtyughAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/BasicLifeCycle"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalOtyughAttack"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.4
     SpeedAlerted: 2.0
     SpeedAttack: 2.75
-	SpeedFlee: 2.0
-	MeleeAttackDistance: 4.0
-	MinimalDistanceToTarget: 3.0
+    SpeedFlee: 2.0
+    MeleeAttackDistance: 4.0
+    MinimalDistanceToTarget: 3.0
   }
 
   { Child Hints
-	AttackWaitAfterAttack: 0
-	AttackRoarBeforeAttack: 15
-	IsHunting:100
-	MeleeWeaponIndex:0
-	RangedWeaponIndex:1
+    AttackWaitAfterAttack: 0
+    AttackRoarBeforeAttack: 15
+    IsHunting:100
+    MeleeWeaponIndex:0
+    RangedWeaponIndex:1
   }
 
   { Child VisionSensor
-	VisibleDistance: 90
-	ViewAngle: 180
+    VisibleDistance: 90
+    ViewAngle: 180
   }
 
   { Child TargetSensor
@@ -6590,17 +6581,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 30, param1: 2
-	AlertLevel3: 40, param1: 10
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:95
-	NoiseAlertMultiplier:1.0
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 30, param1: 2
+    AlertLevel3: 40, param1: 10
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:95
+    NoiseAlertMultiplier:1.0
   }
 }
 
@@ -6643,12 +6634,12 @@
   GroupLeaderPriority: 1
 
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/HerbivoreLowAlert"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/HerbivoreFlee"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/HerbivoreFlee"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/HerbivoreFlee"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/HerbivoreLowAlert"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/HerbivoreFlee"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/HerbivoreFlee"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/HerbivoreFlee"
   }
 
   { Child VariableOverride
@@ -6659,32 +6650,32 @@
   }
 
   { Child GroupDirectionSensor
-	TickIfLead: true
-	TimeBetweeenTicks: 0.2
-	ScanElevation:true
-	ScanWater:true
-	#ScanBiome ?? how?
+    TickIfLead: true
+    TimeBetweeenTicks: 0.2
+    ScanElevation:true
+    ScanWater:true
+    #ScanBiome ?? how?
   }
 
   { Child VisionSensor
-	VisibleDistance: 90
-	ViewAngle: 200
+    VisibleDistance: 90
+    ViewAngle: 200
   }
 
   { Child AlertSensor
-	AlertLevel1: 20, param1: 0
-	AlertLevel2: 80, param1: 5
-	AlertLevel3: 100, param1: 15
-	AlertLevelDrop:10
-	AlertAddFromVisionMinNoMovement:0
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:40
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:1
-	DamageAlertMultiplier:60
-	AlertFromFriendDeath:60
+    AlertLevel1: 20, param1: 0
+    AlertLevel2: 80, param1: 5
+    AlertLevel3: 100, param1: 15
+    AlertLevelDrop:10
+    AlertAddFromVisionMinNoMovement:0
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:40
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:1
+    DamageAlertMultiplier:60
+    AlertFromFriendDeath:60
   }
   AllowInSpawners: true
 }
@@ -6706,7 +6697,7 @@
   GroupLeaderPriority: 0
 
   { Child MainBehavior
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/AnimalBabyPlay"
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/AnimalBabyPlay"
   }
 
   { Child VariableOverride
@@ -6766,15 +6757,15 @@
   NavigateInWater: true
 
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/Telluropod
-	Slot1: "SlotLifeCycle,    Behaviors/Activities/BasicLifeCycle"
-	Slot2: "SlotAlerted,      Behaviors/Activities/SearchTarget"
-	Slot3: "SlotAttackTarget, Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/Telluropod
+    Slot1: "SlotLifeCycle,    Behaviors/Activities/BasicLifeCycle"
+    Slot2: "SlotAlerted,      Behaviors/Activities/SearchTarget"
+    Slot3: "SlotAttackTarget, Behaviors/Activities/AnimalAttack"
   }
 
   { Child Hints
-	HintReturnHome: 100
-	IsAmphibian: 100
+    HintReturnHome: 100
+    IsAmphibian: 100
   }
 
   { Child VariableOverride
@@ -6782,36 +6773,36 @@
     SpeedAlerted: 1.2
     SpeedAttack: 1.9
     SpeedFlee: 1.5
-	MeleeAttackDistance: 2.3
-	MinimalDistanceToTarget: 1.5
+    MeleeAttackDistance: 2.3
+    MinimalDistanceToTarget: 1.5
   }
 
   { Child GroupDirectionSensor
-	TickIfLead: true
-	TimeBetweeenTicks: 0.2
-	ScanElevation:true
-	ScanWater:true
+    TickIfLead: true
+    TimeBetweeenTicks: 0.2
+    ScanElevation:true
+    ScanWater:true
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 360
+    VisibleDistance: 50
+    ViewAngle: 360
   }
 
   { Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 20, param1: 5
-	AlertLevel3: 30, param1: 30
-	AlertLevelDrop:10
-	AlertAddFromVisionMinNoMovement:15
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:40
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:1
-	DamageAlertMultiplier:60
-	AlertFromFriendDeath:60
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 20, param1: 5
+    AlertLevel3: 30, param1: 30
+    AlertLevelDrop:10
+    AlertAddFromVisionMinNoMovement:15
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:40
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:1
+    DamageAlertMultiplier:60
+    AlertFromFriendDeath:60
   }
 }
 
@@ -6847,30 +6838,30 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.4
     SpeedAlerted: 1.5
     SpeedAttack: 2.0
-	SpeedFlee: 2.0
-	MeleeAttackDistance: 2.0
-	MinimalDistanceToTarget: 1.5
+    SpeedFlee: 2.0
+    MeleeAttackDistance: 2.0
+    MinimalDistanceToTarget: 1.5
   }
 
   { Child Hints
-	BasicAttackStances: 1.0
+    BasicAttackStances: 1.0
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 180
+    VisibleDistance: 50
+    ViewAngle: 180
   }
 
   { Child TargetSensor
@@ -6878,17 +6869,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 
   AllowUserInstantiate: false
@@ -6933,24 +6924,24 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.12
     SpeedAlerted: 0.3
     SpeedAttack: 1.5
-	SpeedFlee: 1.2
+    SpeedFlee: 1.2
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 360
+    VisibleDistance: 50
+    ViewAngle: 360
   }
 
   { Child TargetSensor
@@ -6958,34 +6949,34 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 
   { Child FearSensor
     MaxFear: 60 # maximal fear of the animal
 
-	FearDrop: 20 # how much fear will drop per frame
-	FearDropPerFriend: 10 # fear drop per frame for each group member around
-	FearDropMaxFromFriends: 50
-	MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
+    FearDrop: 20 # how much fear will drop per frame
+    FearDropPerFriend: 10 # fear drop per frame for each group member around
+    FearDropMaxFromFriends: 50
+    MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
 
-	MinDistanceToFearAnEnemy: 0
-	FearFromEnemy: 0
-	FearFromFriendDeath: 30
-	FearFromDamageMultiplier: 0.3 # damage to fear conversion
-	FearFromNoiseMaxDistance: 30  # max distance to convert noise to fear
-	FearFromNoiseMultiplier: 0.2  # noise to fear conversion multiplier
-	FearPropagationDamageMultiplier: 0.5 # fear from damage propagation to group members
+    MinDistanceToFearAnEnemy: 0
+    FearFromEnemy: 0
+    FearFromFriendDeath: 30
+    FearFromDamageMultiplier: 0.3 # damage to fear conversion
+    FearFromNoiseMaxDistance: 30  # max distance to convert noise to fear
+    FearFromNoiseMultiplier: 0.2  # noise to fear conversion multiplier
+    FearPropagationDamageMultiplier: 0.5 # fear from damage propagation to group members
   }
 }
 
@@ -7027,32 +7018,32 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child Hints
-	AttackMaxCount: 3
-	AttackRandomDirection: 100
+    AttackMaxCount: 3
+    AttackRandomDirection: 100
   }
 
   { Child VariableOverride
     SpeedCalm: 0.12
     SpeedAlerted: 0.4
     SpeedAttack: 3.2
-	SpeedFlee: 2.8
-	MeleeAttackDistance: 2.2       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	MinimalDistanceToTarget: 1.3   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+    SpeedFlee: 2.8
+    MeleeAttackDistance: 2.2       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+    MinimalDistanceToTarget: 1.3   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
   }
 
   { Child VisionSensor
-	VisibleDistance: 125
-	ViewAngle: 360
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike,PlayerDrone"
+    VisibleDistance: 125
+    ViewAngle: 360
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike,PlayerDrone"
   }
 
   { Child TargetSensor
@@ -7060,34 +7051,34 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:100
-	NoiseAlertMultiplier:2.0
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:100
+    NoiseAlertMultiplier:2.0
   }
 # fear sensor params
   { Child FearSensor
     MaxFear: 100 # maximal fear of the animal
 
-	FearDrop: 20 # how much fear will drop per frame
-	FearDropPerFriend: 10 # fear drop per frame for each group member around
-	FearDropMaxFromFriends: 50
-	MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
+    FearDrop: 20 # how much fear will drop per frame
+    FearDropPerFriend: 10 # fear drop per frame for each group member around
+    FearDropMaxFromFriends: 50
+    MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
 # if closer, the agent will get feat from beign near to enemy, at max distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per second (linear)
-	MinDistanceToFearAnEnemy: 0
-	FearFromEnemy: 0
-	FearFromFriendDeath: 30
-	FearFromDamageMultiplier: 0.3 # damage to fear conversion
-	FearFromNoiseMaxDistance: 30  # max distance to convert noise to fear
-	FearFromNoiseMultiplier: 0.2  # noise to fear conversion multiplier
-	FearPropagationDamageMultiplier: 0.5 # fear from damage propagation to group members
+    MinDistanceToFearAnEnemy: 0
+    FearFromEnemy: 0
+    FearFromFriendDeath: 30
+    FearFromDamageMultiplier: 0.3 # damage to fear conversion
+    FearFromNoiseMaxDistance: 30  # max distance to convert noise to fear
+    FearFromNoiseMultiplier: 0.2  # noise to fear conversion multiplier
+    FearPropagationDamageMultiplier: 0.5 # fear from damage propagation to group members
   }
 
 }
@@ -7132,17 +7123,17 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child Hints
-	AttackRandomDirection: 100
-	AttackMaxCount: 4
+    AttackRandomDirection: 100
+    AttackMaxCount: 4
   }
 
 
@@ -7150,17 +7141,17 @@
     SpeedCalm: 0.3
     SpeedAlerted: 1.5
     SpeedAttack: 2.0
-	SpeedFlee: 1.5
-	# the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	MeleeAttackDistance: 2.0
-	# if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
-	MinimalDistanceToTarget: 1.2
+    SpeedFlee: 1.5
+    # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+    MeleeAttackDistance: 2.0
+    # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+    MinimalDistanceToTarget: 1.2
   }
 
   { Child VisionSensor
-	VisibleDistance: 60
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone,PlayerBike"
+    VisibleDistance: 60
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone,PlayerBike"
   }
 
   { Child TargetSensor
@@ -7168,17 +7159,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
@@ -7220,17 +7211,17 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child Hints
-	AttackRandomDirection: 100
-	AttackMaxCount: 4
+    AttackRandomDirection: 100
+    AttackMaxCount: 4
   }
 
 
@@ -7238,17 +7229,17 @@
     SpeedCalm: 0.3
     SpeedAlerted: 1.5
     SpeedAttack: 2.0
-	SpeedFlee: 2
-	# the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	MeleeAttackDistance: 2.0
-	# if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
-	MinimalDistanceToTarget: 1.2
+    SpeedFlee: 2
+    # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+    MeleeAttackDistance: 2.0
+    # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+    MinimalDistanceToTarget: 1.2
   }
 
   { Child VisionSensor
-	VisibleDistance: 60
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone,PlayerBike"
+    VisibleDistance: 60
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone,PlayerBike"
   }
 
   { Child TargetSensor
@@ -7256,17 +7247,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
@@ -7309,17 +7300,17 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child Hints
-	AttackRandomDirection: 100
-	AttackMaxCount: 4
+    AttackRandomDirection: 100
+    AttackMaxCount: 4
   }
 
 
@@ -7327,17 +7318,17 @@
     SpeedCalm: 0.6
     SpeedAlerted: 2
     SpeedAttack: 2
-	SpeedFlee: 3
-	# the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	MeleeAttackDistance: 2.0
-	# if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
-	MinimalDistanceToTarget: 1.2
+    SpeedFlee: 3
+    # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+    MeleeAttackDistance: 2.0
+    # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+    MinimalDistanceToTarget: 1.2
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,PlayerBike"
+    VisibleDistance: 50
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,PlayerBike"
   }
 
   { Child TargetSensor
@@ -7345,17 +7336,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:0 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
@@ -7389,16 +7380,16 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/HerbivoreLowAlert"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/SearchTarget"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/HerbivoreLowAlert"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/SearchTarget"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
 #  { Child Hints
-#	AttackOnFriendDamage: 100
+#    AttackOnFriendDamage: 100
 #  }
 
 
@@ -7406,24 +7397,24 @@
     SpeedCalm: 0.45
     SpeedAlerted: 1.75
     SpeedAttack: 3.0
-	SpeedFlee: 2.6
-	# the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	MeleeAttackDistance: 3.3
-	# if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
-	MinimalDistanceToTarget: 1.5
+    SpeedFlee: 2.6
+    # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+    MeleeAttackDistance: 3.3
+    # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+    MinimalDistanceToTarget: 1.5
   }
 
   { Child GroupDirectionSensor
-	TickIfLead: true
-	TimeBetweeenTicks: 0.2
-	ScanElevation:true
-	ScanWater:true
+    TickIfLead: true
+    TimeBetweeenTicks: 0.2
+    ScanElevation:true
+    ScanWater:true
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,PlayerBike"
+    VisibleDistance: 50
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,PlayerBike"
   }
 
   { Child TargetSensor
@@ -7431,23 +7422,23 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 16, param1: 0
-	AlertLevel3: 50, param1: 20
-	AlertLevel2SwithToOnDmg: true
-	AlertLevel2SwithToOnDmgIncludeGroup:true
-	AlertLevel3SwithToOnDmg: true
-	AlertLevel3SwithToOnDmgIncludeGroup:true
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 16, param1: 0
+    AlertLevel3: 50, param1: 20
+    AlertLevel2SwithToOnDmg: true
+    AlertLevel2SwithToOnDmgIncludeGroup:true
+    AlertLevel3SwithToOnDmg: true
+    AlertLevel3SwithToOnDmgIncludeGroup:true
 
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:10 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.5
-	AlertFromFriendDeath: 100
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:10 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.5
+    AlertFromFriendDeath: 100
   }
 }
 
@@ -7465,27 +7456,27 @@
   MotionAnimationSpeedMultiplier: 2.5
 
   { Child MainBehavior
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/AnimalBabyPlay"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/HerbivoreBabyHideOrRun"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/HerbivoreBabyHideOrRun"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/HerbivoreBabyHideOrRun"
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/AnimalBabyPlay"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/HerbivoreBabyHideOrRun"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/HerbivoreBabyHideOrRun"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/HerbivoreBabyHideOrRun"
   }
 
   { Child Hints
-	LCBabyExplorePlayer: 100
+    LCBabyExplorePlayer: 100
   }
 
   { Child VariableOverride
     SpeedCalm: 0.75
     SpeedAlerted: 1.65
     SpeedAttack: 3.0
-	SpeedFlee: 2.6
-	MeleeAttackDistance: 1.5
-	MinimalDistanceToTarget: 1.0
+    SpeedFlee: 2.6
+    MeleeAttackDistance: 1.5
+    MinimalDistanceToTarget: 1.0
   }
 
   { Child AlertSensor
-	AlertLevel3: 50, param1: 120
+    AlertLevel3: 50, param1: 120
   }
 }
 
@@ -7526,27 +7517,27 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttackCreepy"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttackCreepy"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.3
     SpeedAlerted: 0.8
     SpeedAttack: 1.5
-	SpeedFlee: 1.0
-	MeleeAttackDistance: 2.0       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	MinimalDistanceToTarget: 1.2   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+    SpeedFlee: 1.0
+    MeleeAttackDistance: 2.0       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+    MinimalDistanceToTarget: 1.2   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
   }
 
   { Child VisionSensor
-	VisibleDistance: 60
-	ViewAngle: 270
-	VisibleTypes: "Player,HV,PlayerBike"
+    VisibleDistance: 60
+    ViewAngle: 270
+    VisibleTypes: "Player,HV,PlayerBike"
   }
 
   { Child TargetSensor
@@ -7554,17 +7545,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 30, param1: 2
-	AlertLevel3: 40, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:20 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 30, param1: 2
+    AlertLevel3: 40, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:20 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
@@ -7606,31 +7597,31 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.3
     SpeedAlerted: 0.8
     SpeedAttack: 1.2
-	SpeedFlee: 1.0
-	MeleeAttackDistance: 2.5       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	MinimalDistanceToTarget: 1.2   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+    SpeedFlee: 1.0
+    MeleeAttackDistance: 2.5       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+    MinimalDistanceToTarget: 1.2   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
   }
 
   { Child Hints
-	AttackRoarBeforeAttack: 10
+    AttackRoarBeforeAttack: 10
   }
 
   { Child VisionSensor
-	VisibleDistance: 70
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone,PlayerBike"
+    VisibleDistance: 70
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone,PlayerBike"
   }
 
   { Child TargetSensor
@@ -7638,17 +7629,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 30, param1: 2
-	AlertLevel3: 40, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:2 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:15
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 30, param1: 2
+    AlertLevel3: 40, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:2 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:15
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 { Entity Name: GolemIce, Ref: GolemDesert
@@ -7723,31 +7714,31 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.3
     SpeedAlerted: 0.75
     SpeedAttack: 1.5
-	SpeedFlee: 1.25
-	MeleeAttackDistance: 3.0       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	MinimalDistanceToTarget: 1.2   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+    SpeedFlee: 1.25
+    MeleeAttackDistance: 3.0       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+    MinimalDistanceToTarget: 1.2   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
   }
 
   { Child Hints
-	AttackRoarBeforeAttack: 0
+    AttackRoarBeforeAttack: 0
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone,PlayerBike"
+    VisibleDistance: 50
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerDrone,PlayerBike"
   }
 
   { Child TargetSensor
@@ -7755,17 +7746,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 30, param1: 2
-	AlertLevel3: 40, param1: 20
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:2 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:15
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 30, param1: 2
+    AlertLevel3: 40, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:2 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:15
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 
 }
@@ -7810,38 +7801,38 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
+    BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
   }
 
 #  { Child GroupDirectionSensor
-#	TickIfLead: true
-#	TimeBetweeenTicks: 0.2
-#	ScanElevation:false
-#	ScanWater:false
+#    TickIfLead: true
+#    TimeBetweeenTicks: 0.2
+#    ScanElevation:false
+#    ScanWater:false
 #  }
 
   { Child VariableOverride
     SpeedCalm: 0.35
     SpeedAlerted: 0.6
-	SpeedAttack: 0.6
+    SpeedAttack: 0.6
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 40
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 3
-	SearchRandomDistanceMult: 0.5
-  	FireWeaponDurationMultiplier: 0.3
-	FireWeaponBlendInTime: 0.5
-	UseMeleeAttack: 0
-	WeaponAtAlert: 100
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 40
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 3
+    SearchRandomDistanceMult: 0.5
+      FireWeaponDurationMultiplier: 0.3
+    FireWeaponBlendInTime: 0.5
+    UseMeleeAttack: 0
+    WeaponAtAlert: 100
   }
 
   { Child VisionSensor
-	VisibleDistance: 80
-	ViewAngle: 110
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+    VisibleDistance: 80
+    ViewAngle: 110
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
   { Child TargetSensor
@@ -7849,21 +7840,21 @@
   }
 
   { Child StuckSensor
-	Use: 0
+    Use: 0
   }
 
   { Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:10 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:10 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 
   JumpHeight: 0
@@ -7940,37 +7931,37 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
+    BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
   }
 
   { Child GroupDirectionSensor
-	TickIfLead: true
-	TimeBetweeenTicks: 0.2
-	ScanElevation:false
-	ScanWater:false
+    TickIfLead: true
+    TimeBetweeenTicks: 0.2
+    ScanElevation:false
+    ScanWater:false
   }
 
   { Child VariableOverride
     SpeedCalm: 0.25
     SpeedAlerted: 1.5
-	SpeedAttack: 1.5
+    SpeedAttack: 1.5
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 90
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 3
-	SearchRandomDistanceMult: 0.5
-  	FireWeaponDurationMultiplier: 1.0
-	FireWeaponBlendInTime: 0.5
-	UseMeleeAttack: 0
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 90
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 3
+    SearchRandomDistanceMult: 0.5
+      FireWeaponDurationMultiplier: 1.0
+    FireWeaponBlendInTime: 0.5
+    UseMeleeAttack: 0
   }
 
   { Child VisionSensor
-	VisibleDistance: 120
-	ViewAngle: 110
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+    VisibleDistance: 120
+    ViewAngle: 110
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
   { Child TargetSensor
@@ -7978,21 +7969,21 @@
   }
 
   { Child StuckSensor
-	Use: 0
+    Use: 0
   }
 
   { Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:10 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:10 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 { Entity Name: AssaultCyborgSentinel, Ref: AssaultCyborgOld
@@ -8040,37 +8031,37 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
+    BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
   }
 
   { Child GroupDirectionSensor
-	TickIfLead: true
-	TimeBetweeenTicks: 0.2
-	ScanElevation:false
-	ScanWater:false
+    TickIfLead: true
+    TimeBetweeenTicks: 0.2
+    ScanElevation:false
+    ScanWater:false
   }
 
   { Child VariableOverride
     SpeedCalm: 0.25
     SpeedAlerted: 1.5
-	SpeedAttack: 1.75
+    SpeedAttack: 1.75
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 90
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 3
-	SearchRandomDistanceMult: 0.5
-  	FireWeaponDurationMultiplier: 1.0
-	FireWeaponBlendInTime: 0.5
-	UseMeleeAttack: 0
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 90
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 3
+    SearchRandomDistanceMult: 0.5
+      FireWeaponDurationMultiplier: 1.0
+    FireWeaponBlendInTime: 0.5
+    UseMeleeAttack: 0
   }
 
   { Child VisionSensor
-	VisibleDistance: 130
-	ViewAngle: 110
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike,PlayerDrone"
+    VisibleDistance: 130
+    ViewAngle: 110
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike,PlayerDrone"
   }
 
   { Child TargetSensor
@@ -8078,21 +8069,21 @@
   }
 
   { Child StuckSensor
-	Use: 0
+    Use: 0
   }
 
   { Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:10 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:80
-	NoiseAlertMultiplier:0.8
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:10 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:80
+    NoiseAlertMultiplier:0.8
   }
 }
 { Entity Name: AssaultCyborgDamaged, Ref: AssaultCyborg
@@ -8174,37 +8165,37 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
+    BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
   }
 
   { Child GroupDirectionSensor
-	TickIfLead: true
-	TimeBetweeenTicks: 0.2
-	ScanElevation:false
-	ScanWater:false
+    TickIfLead: true
+    TimeBetweeenTicks: 0.2
+    ScanElevation:false
+    ScanWater:false
   }
 
   { Child VariableOverride
     SpeedCalm: 0.2
     SpeedAlerted: 1.3
-	SpeedAttack: 2.0
+    SpeedAttack: 2.0
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 40
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 3
-	SearchRandomDistanceMult: 1.5
-  	FireWeaponDurationMultiplier: 0.3
-	FireWeaponBlendInTime: 0.5
-	UseMeleeAttack: 100
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 40
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 3
+    SearchRandomDistanceMult: 1.5
+      FireWeaponDurationMultiplier: 0.3
+    FireWeaponBlendInTime: 0.5
+    UseMeleeAttack: 100
   }
 
   { Child VisionSensor
-	VisibleDistance: 110
-	ViewAngle: 110
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+    VisibleDistance: 110
+    ViewAngle: 110
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
   { Child TargetSensor
@@ -8212,21 +8203,21 @@
   }
 
   { Child StuckSensor
-	Use: 0
+    Use: 0
   }
 
   { Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:10 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:10 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
@@ -8247,7 +8238,7 @@
   ItemsOnEnterGame: TalonCrossbowWeapon
 
   { Child Hints
-	UseMeleeAttack: 0
+    UseMeleeAttack: 0
   }
 }
 { Entity Name: TalonAdvancedGreen, Ref: TalonGuardian
@@ -8291,7 +8282,7 @@
 { Entity Name: TalonGuardianBaseAttack, Ref: TalonGuardianCrossbow
   RpFactor: 0    # no reputation change for base attack entities
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
+    BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
   }
 }
 
@@ -8307,7 +8298,7 @@
   MapIcon: map_flag
 
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonShamanCommands
+    BehaviorName: Behaviors/HiLevelTrees/TalonShamanCommands
   }
 
 }
@@ -8318,7 +8309,7 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonBaseAttackMeleeAnimal
+    BehaviorName: Behaviors/HiLevelTrees/TalonBaseAttackMeleeAnimal
   }
 
   { Child Hints
@@ -8326,8 +8317,8 @@
   }
 
   { Child VisionSensor
-	VisibleDistance: 120
-	ViewAngle: 360
+    VisibleDistance: 120
+    ViewAngle: 360
   }
 
   { Child TargetSensor
@@ -8335,7 +8326,7 @@
   }
 
   { Child StuckSensor
-	Use: 1
+    Use: 1
   }
 }
 
@@ -8345,7 +8336,7 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonBaseAttackMeleeAnimal
+    BehaviorName: Behaviors/HiLevelTrees/TalonBaseAttackMeleeAnimal
   }
 
   { Child Hints
@@ -8353,8 +8344,8 @@
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 360
+    VisibleDistance: 50
+    ViewAngle: 360
   }
 
   { Child TargetSensor
@@ -8362,7 +8353,7 @@
   }
 
   { Child StuckSensor
-	Use: 1
+    Use: 1
   }
 }
 
@@ -8372,7 +8363,7 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonBaseAttackMeleeAnimal
+    BehaviorName: Behaviors/HiLevelTrees/TalonBaseAttackMeleeAnimal
   }
 
   { Child Hints
@@ -8380,8 +8371,8 @@
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 360
+    VisibleDistance: 50
+    ViewAngle: 360
   }
 
   { Child TargetSensor
@@ -8389,7 +8380,7 @@
   }
 
   { Child StuckSensor
-	Use: 1
+    Use: 1
   }
 }
 
@@ -8399,7 +8390,7 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonBaseAttackMeleeAnimal
+    BehaviorName: Behaviors/HiLevelTrees/TalonBaseAttackMeleeAnimal
   }
 
   { Child Hints
@@ -8407,8 +8398,8 @@
   }
 
   { Child VisionSensor
-	VisibleDistance: 80
-	ViewAngle: 360
+    VisibleDistance: 80
+    ViewAngle: 360
   }
 
   { Child TargetSensor
@@ -8416,7 +8407,7 @@
   }
 
   { Child StuckSensor
-	Use: 1
+    Use: 1
   }
 }
 
@@ -8430,7 +8421,7 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonBaseAttackRangedAnimal
+    BehaviorName: Behaviors/HiLevelTrees/TalonBaseAttackRangedAnimal
   }
 
   { Child Hints
@@ -8438,8 +8429,8 @@
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 360
+    VisibleDistance: 50
+    ViewAngle: 360
   }
 
 
@@ -8448,7 +8439,7 @@
   }
 
   { Child StuckSensor
-	Use: 1
+    Use: 1
   }
 }
 
@@ -8481,14 +8472,14 @@
   AttackWidthAngle: 190
 
   { Child VisionSensor
-	VisibleSubTypes: "BA"
-	VisibleDistance: 150
+    VisibleSubTypes: "BA"
+    VisibleDistance: 150
   }
 
   { Child VariableOverride
     SpeedCalm: 0.6
     SpeedAlerted: 0.9
-	SpeedAttack: 1.5
+    SpeedAttack: 1.5
   }
 }
 
@@ -8504,14 +8495,14 @@
   RpFactor: 0    # no reputation change for base attack entities
 
   { Child VisionSensor
-	VisibleSubTypes: "BA"
-	VisibleDistance: 150
+    VisibleSubTypes: "BA"
+    VisibleDistance: 150
   }
 
   { Child VariableOverride
     SpeedCalm: 0.6
     SpeedAlerted: 0.9
-	SpeedAttack: 1.6
+    SpeedAttack: 1.6
   }
 }
 
@@ -8694,38 +8685,38 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
+    BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
   }
 
 #  { Child GroupDirectionSensor
-#	TickIfLead: true
-#	TimeBetweeenTicks: 0.2
-#	ScanElevation:false
-#	ScanWater:false
+#    TickIfLead: true
+#    TimeBetweeenTicks: 0.2
+#    ScanElevation:false
+#    ScanWater:false
 #  }
 
   { Child VariableOverride
     SpeedCalm: 0.25
     SpeedAlerted: 1.0
-	SpeedAttack: 1.75
+    SpeedAttack: 1.75
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 40
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 3
-	SearchRandomDistanceMult: 0.5
-  	FireWeaponDurationMultiplier: 0.3
-	FireWeaponBlendInTime: 0.5
-	UseMeleeAttack: 0
-	WeaponAtAlert: 100
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 40
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 3
+    SearchRandomDistanceMult: 0.5
+      FireWeaponDurationMultiplier: 0.3
+    FireWeaponBlendInTime: 0.5
+    UseMeleeAttack: 0
+    WeaponAtAlert: 100
   }
 
   { Child VisionSensor
-	VisibleDistance: 110
-	ViewAngle: 110
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike,PlayerDrone"
+    VisibleDistance: 110
+    ViewAngle: 110
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike,PlayerDrone"
   }
 
   { Child TargetSensor
@@ -8733,21 +8724,21 @@
   }
 
   { Child StuckSensor
-	Use: 0
+    Use: 0
   }
 
   { Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:10 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:10 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 { Entity Name: HumanCivilianMale2, Ref: HumanCivilianMale1  #Male
@@ -8946,38 +8937,38 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
+    BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
   }
 
 #  { Child GroupDirectionSensor
-#	TickIfLead: true
-#	TimeBetweeenTicks: 0.2
-#	ScanElevation:false
-#	ScanWater:false
+#    TickIfLead: true
+#    TimeBetweeenTicks: 0.2
+#    ScanElevation:false
+#    ScanWater:false
 #  }
 
   { Child VariableOverride
     SpeedCalm: 0.2
     SpeedAlerted: 0.3
-	SpeedAttack: 0.6
+    SpeedAttack: 0.6
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 40
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 3
-	SearchRandomDistanceMult: 0.5
-  	FireWeaponDurationMultiplier: 0.3
-	FireWeaponBlendInTime: 0.5
-	UseMeleeAttack: 0
-	WeaponAtAlert: 100
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 40
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 3
+    SearchRandomDistanceMult: 0.5
+      FireWeaponDurationMultiplier: 0.3
+    FireWeaponBlendInTime: 0.5
+    UseMeleeAttack: 0
+    WeaponAtAlert: 100
   }
 
   { Child VisionSensor
-	VisibleDistance: 80
-	ViewAngle: 110
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+    VisibleDistance: 80
+    ViewAngle: 110
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
   { Child TargetSensor
@@ -8985,21 +8976,21 @@
   }
 
   { Child StuckSensor
-	Use: 0
+    Use: 0
   }
 
   { Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:10 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:10 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
@@ -9074,38 +9065,38 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
+    BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
   }
 
 #  { Child GroupDirectionSensor
-#	TickIfLead: true
-#	TimeBetweeenTicks: 0.2
-#	ScanElevation:false
-#	ScanWater:false
+#    TickIfLead: true
+#    TimeBetweeenTicks: 0.2
+#    ScanElevation:false
+#    ScanWater:false
 #  }
 
   { Child VariableOverride
     SpeedCalm: 0.2
     SpeedAlerted: 0.3
-	SpeedAttack: 0.6
+    SpeedAttack: 0.6
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 40
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 3
-	SearchRandomDistanceMult: 0.5
-  	FireWeaponDurationMultiplier: 0.3
-	FireWeaponBlendInTime: 0.5
-	UseMeleeAttack: 0
-	WeaponAtAlert: 100
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 40
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 3
+    SearchRandomDistanceMult: 0.5
+      FireWeaponDurationMultiplier: 0.3
+    FireWeaponBlendInTime: 0.5
+    UseMeleeAttack: 0
+    WeaponAtAlert: 100
   }
 
   { Child VisionSensor
-	VisibleDistance: 120
-	ViewAngle: 110
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+    VisibleDistance: 120
+    ViewAngle: 110
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
   { Child TargetSensor
@@ -9113,21 +9104,21 @@
   }
 
   { Child StuckSensor
-	Use: 0
+    Use: 0
   }
 
   { Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:10 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:10 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 { Entity Name: HumanCivilianMale2Static, Ref: HumanCivilianMale1Static  #Male
@@ -9272,38 +9263,38 @@
 
   # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
+    BehaviorName: Behaviors/HiLevelTrees/TalonGuardianCommands
   }
 
 #  { Child GroupDirectionSensor
-#	TickIfLead: true
-#	TimeBetweeenTicks: 0.2
-#	ScanElevation:false
-#	ScanWater:false
+#    TickIfLead: true
+#    TimeBetweeenTicks: 0.2
+#    ScanElevation:false
+#    ScanWater:false
 #  }
 
   { Child VariableOverride
     SpeedCalm: 0.2
     SpeedAlerted: 0.3
-	SpeedAttack: 0.6
+    SpeedAttack: 0.6
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 40
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 3
-	SearchRandomDistanceMult: 0.5
-  	FireWeaponDurationMultiplier: 0.3
-	FireWeaponBlendInTime: 0.5
-	UseMeleeAttack: 0
-	WeaponAtAlert: 100
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 40
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 3
+    SearchRandomDistanceMult: 0.5
+      FireWeaponDurationMultiplier: 0.3
+    FireWeaponBlendInTime: 0.5
+    UseMeleeAttack: 0
+    WeaponAtAlert: 100
   }
 
   { Child VisionSensor
-	VisibleDistance: 80
-	ViewAngle: 110
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+    VisibleDistance: 80
+    ViewAngle: 110
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
   { Child TargetSensor
@@ -9311,21 +9302,21 @@
   }
 
   { Child StuckSensor
-	Use: 0
+    Use: 0
   }
 
   { Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop:10 # slow alert drop
-	AlertAddFromVisionMinNoMovement:10 # no alert when not moving
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:10 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:20
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 { Entity Name: EngineerCyborgStatic, Ref: DamagedCyborgStatic
@@ -9419,7 +9410,7 @@
   MaxHealth: 1000
 
   { Child Hints
-	UseMeleeAttack: 0
+    UseMeleeAttack: 0
   }
 }
 { Entity Name: TalonGuardianInfectedGreen, Ref: TalonGuardian
@@ -9530,20 +9521,20 @@
   AllowUserInstantiate: true
   AllowInSpawners: false
 
-  # AI Properties 
+  # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/BasicLifeCycle"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AttackAlienBug02"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/BasicLifeCycle"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AttackAlienBug02"
   }
 
   { Child Hints
-	AttackRandomDirection: 100
-	AttackMaxCount: 4
-	IsAttackJumping: 100
+    AttackRandomDirection: 100
+    AttackMaxCount: 4
+    IsAttackJumping: 100
   }
 
 
@@ -9551,18 +9542,18 @@
     SpeedCalm: 0.3
     SpeedAlerted: 1.5
     SpeedAttack: 2.0
-	SpeedFlee: 1.5
-	SpeedCircle: 1.5
-	# the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	MeleeAttackDistance: 2.0
-	# if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
-	MinimalDistanceToTarget: 1.2
+    SpeedFlee: 1.5
+    SpeedCircle: 1.5
+    # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+    MeleeAttackDistance: 2.0
+    # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+    MinimalDistanceToTarget: 1.2
   }
 
   { Child VisionSensor
-	VisibleDistance: 70
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,PlayerBike"
+    VisibleDistance: 70
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,PlayerBike"
   }
 
   { Child TargetSensor
@@ -9570,17 +9561,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 # slow alert drop 
-	AlertAddFromVisionMinNoMovement:200 # no alert when not moving 
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:30
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 50, param1: 2
+    AlertLevel3: 80, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:200 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:30
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
@@ -9606,42 +9597,42 @@
   AllowInSpawners: false
 
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/BasicLifeCycle"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AttackAlienBug03"
+    BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+    Slot1: "SlotLifeCycle,       Behaviors/Activities/BasicLifeCycle"
+    Slot2: "SlotLowAlert,        Behaviors/Activities/BasicLifeCycle"
+    Slot3: "SlotAlertedNoTarget, Behaviors/Activities/BasicLifeCycle"
+    Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+    Slot5: "SlotAttackTarget,    Behaviors/Activities/AttackAlienBug03"
   }
 
   { Child Hints
     IsRanged: 100
-	#AttackApproachTarget: 0   
-	#AttackOptimalDistance: 40 
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 3
-	SearchRandomDistanceMult: 0.5
+    #AttackApproachTarget: 0
+    #AttackOptimalDistance: 40
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 3
+    SearchRandomDistanceMult: 0.5
   }
 
   { Child EventAgentSpawner
-	EntityClass:   "AlienBug02SpawnedGroup"
-	SpawnParticle: "alien_bug03_spawn"
+    EntityClass:   "AlienBug02SpawnedGroup"
+    SpawnParticle: "alien_bug03_spawn"
     SpawnSfx:      "Enemies/AlienBugs/AlienBug03/AlienBug03_SfxSpawn"
-	MaxCountInGroup: 4
+    MaxCountInGroup: 4
 
-	SpawnParticleNodeName: "SpawnParticleNode"
-	SpawnNodeName:         "SpawnNode"
+    SpawnParticleNodeName: "SpawnParticleNode"
+    SpawnNodeName:         "SpawnNode"
   }
 
   { Child VariableOverride
     SpeedCalm: 0.2
     SpeedAlerted: 0.5
-	SpeedAttack: 1.0
+    SpeedAttack: 1.0
   }
 
   { Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 360
+    VisibleDistance: 50
+    ViewAngle: 360
   }
 
   { Child TargetSensor
@@ -9649,17 +9640,17 @@
   }
 
   { Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 20, param1: 10
-	AlertLevel3: 40, param1: 20
-	AlertLevelDrop:10 # slow alert drop 
-	AlertAddFromVisionMinNoMovement:200 # no alert when not moving 
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:30
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+    AlertLevel1: 15, param1: 0
+    AlertLevel2: 20, param1: 10
+    AlertLevel3: 40, param1: 20
+    AlertLevelDrop:10 # slow alert drop
+    AlertAddFromVisionMinNoMovement:200 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:2
+    AlertAddFromAutoAlert:30
+    MinDistanceToAutoAlert:30
+    NoiseMaxDistance:50
+    NoiseAlertMultiplier:0.3
   }
 }
 
@@ -9700,10 +9691,10 @@
 
   Prefab: AlienHumanoid
 
-  # Determines particle effect  
+  # Determines particle effect
   SurfaceCategory: human
 
-  # General entity properties 
+  # General entity properties
   ViewAngle: 180
   MaxHealth: 440
   # XpFactor: 3
@@ -9714,7 +9705,7 @@
   RotateSpeed: 500
   RotateSpeedMovement: 500
 
-  # Sound settings 
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Zirax/Zirax_SfxRandom
   SfxAlertTime: 50.0
@@ -9733,30 +9724,30 @@
   AllowInSpawners: true
 
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
   }
 
 
   { Child VariableOverride
     SpeedCalm: 0.4
     SpeedAlerted: 2.0
-	SpeedAttack: 2.25
+    SpeedAttack: 2.25
   }
 
   { Child Hints
-	AttackApproachTarget: 40
-	AttackOptimalDistance: 60
-	SearchAdvanceTime: 5.0
-	SearchWaitTime: 6
-	SearchRandomDistanceMult: 2.75
-	FireWeaponBlendInTime: 0.25
-	FireWeaponDurationMultiplier: 2.0
+    AttackApproachTarget: 40
+    AttackOptimalDistance: 60
+    SearchAdvanceTime: 5.0
+    SearchWaitTime: 6
+    SearchRandomDistanceMult: 2.75
+    FireWeaponBlendInTime: 0.25
+    FireWeaponDurationMultiplier: 2.0
   }
 
   { Child VisionSensor
-	VisibleDistance: 150
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike,PlayerDrone"
+    VisibleDistance: 150
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike,PlayerDrone"
   }
 
   { Child TargetSensor
@@ -9764,21 +9755,21 @@
   }
 
   { Child StuckSensor
-	Use: 0
+    Use: 0
   }
 
   { Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop:5 # slow alert drop 
-	AlertAddFromVisionMinNoMovement:10 # no alert when not moving 
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:3
-	AlertAddFromAutoAlert:40
-	MinDistanceToAutoAlert:50
-	NoiseMaxDistance:100
-	NoiseAlertMultiplier:2.5
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop:5 # slow alert drop
+    AlertAddFromVisionMinNoMovement:10 # no alert when not moving
+    AlertAddFromVisionMovement:200
+    AlertVisionMaxSpeed:3
+    AlertAddFromAutoAlert:40
+    MinDistanceToAutoAlert:50
+    NoiseMaxDistance:100
+    NoiseAlertMultiplier:2.5
   }
 }
 
@@ -9790,11 +9781,11 @@
   MeshDead: Enemies/Zirax/ZiraxBlueDeadPrefab
   ItemsOnEnterGame: ScifiCannon
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 90
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 90
   }
   { Child VisionSensor
-	VisibleDistance: 150
+    VisibleDistance: 150
   }
 }
 
@@ -9809,16 +9800,16 @@
   { Child VariableOverride
     SpeedCalm: 0.4
     SpeedAlerted: 2.00
-	SpeedAttack: 2.5
+    SpeedAttack: 2.5
   }
 
   { Child Hints
-	AttackApproachTarget: 90
-	AttackOptimalDistance: 10
-	SearchAdvanceTime: 3.0
-	SearchWaitTime: 0.5
-	SearchRandomDistanceMult: 3.8
-	FireWeaponDurationMultiplier: 0.1
+    AttackApproachTarget: 90
+    AttackOptimalDistance: 10
+    SearchAdvanceTime: 3.0
+    SearchWaitTime: 0.5
+    SearchRandomDistanceMult: 3.8
+    FireWeaponDurationMultiplier: 0.1
   }
 
 }
@@ -9831,15 +9822,15 @@
   MeshDead: Enemies/Zirax/ZiraxBlueDeadPrefab
   ItemsOnEnterGame: Sniper
   { Child Hints
-  	FireWeaponDurationMultiplier: 0.3
-	FireWeaponBlendInTime: 0.7
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 100
+      FireWeaponDurationMultiplier: 0.3
+    FireWeaponBlendInTime: 0.7
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 100
   }
   { Child VisionSensor
-	VisibleDistance: 150
-	ViewAngle: 100
-	VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike,PlayerDrone"
+    VisibleDistance: 150
+    ViewAngle: 100
+    VisibleTypes: "Player,HV,SV,CV,BA,PlayerBike,PlayerDrone"
   }
 
   { Child TargetSensor
@@ -9872,7 +9863,7 @@
 
   AITarget-1: DroneDetection, param1: "Player,BA,SV,HV,CV", param2: EntityShipSV
 
-  # General properties 
+  # General properties
   HandItem: DroneBaseAttackRocketWeapon
   ItemsOnEnterGame: DroneBaseAttackRocketWeapon
   IsEnemy: true
@@ -9887,15 +9878,15 @@
   PanicSpeed: 20.0
   Speed: 50.0
 
-  SpawnYAdd: 30     # drones shall always spawn 15meters above ground 
+  SpawnYAdd: 30     # drones shall always spawn 15meters above ground
 
   ParticleOnDeath: drone_explosion02
   # TimeStayAfterDeath: 150
   TimeStayAfterDeath: 300
   LootListOnDeath: 151
 
-  # Sound Setting 
-  SfxRandomTime: 80.0   # It will play the roam every [X/2, X] seconds 
+  # Sound Setting
+  SfxRandomTime: 80.0   # It will play the roam every [X/2, X] seconds
   # SfxRandom: Enemies/Drone/DroneLarge_SfxRandom
   SfxRandom: Enemies/Drone/SwellsRushesAssortment_start
 
@@ -9916,7 +9907,7 @@
   { Child VariableOverride
     SpeedCalm: 10.0
     SpeedAlerted: 20.0
-	SpeedAttack: 30.0
+    SpeedAttack: 30.0
   }
 }
 # ========= Advanced Drones =========
@@ -9938,7 +9929,7 @@
   ViewAngle: 360
   ViewRange: 1500
 
-  # AI properties 
+  # AI properties
   # AITask-1: DroneFindTargetIfHurt
   # AITask-2: DroneAttackTarget
   # AITask-3: DroneHuntAfterLostDetection, param1: 50
@@ -9948,7 +9939,7 @@
 
   AITarget-1: DroneDetection, param1: "Player,BA,SV,HV,CV", param2: EntityShipSV
 
-  # General properties 
+  # General properties
   HandItem: pulseLaserDrone
   ItemsOnEnterGame: pulseLaserDrone
   IsEnemy: true
@@ -9962,14 +9953,14 @@
   PanicSpeed: 100.0
   Speed: 80.0
 
-  SpawnYAdd: 50     # drones shall always spawn 15meters above ground 
+  SpawnYAdd: 50     # drones shall always spawn 15meters above ground
 
   ParticleOnDeath: drone_explosion02
   TimeStayAfterDeath: 300
   LootListOnDeath: 159
 
-  # Sound Setting 
-  SfxRandomTime: 50.0   # It will play the roam every [X/2, X] seconds 
+  # Sound Setting
+  SfxRandomTime: 50.0   # It will play the roam every [X/2, X] seconds
   SfxRandom: Enemies/Drone/SwellsRushesAssortment_start
 
   SfxAlertTime: 50.0   # It will play the roam every [X/2, X] seconds
@@ -9986,7 +9977,7 @@
   { Child VariableOverride
     SpeedCalm: 50.0
     SpeedAlerted: 60.0
-	SpeedAttack: 70.0
+    SpeedAttack: 70.0
   }
 }
 # === Arbitrator Aerial Fighter ===
@@ -10010,7 +10001,7 @@
   ViewAngle: 360
   ViewRange: 1500
 
-  # AI properties 
+  # AI properties
   # AITask-1: DroneFindTargetIfHurt
   # AITask-2: DroneAttackTarget
   # AITask-3: DroneHuntAfterLostDetection, param1: 50
@@ -10020,7 +10011,7 @@
 
   AITarget-1: DroneDetection, param1: "Player,BA,SV,HV,CV", param2: EntityShipSV
 
-  # General properties 
+  # General properties
   HandItem: RocketLauncherSSHomingWeapon
   ItemsOnEnterGame: RocketLauncherSSHomingWeapon
   IsEnemy: true
@@ -10034,14 +10025,14 @@
   PanicSpeed: 100.0
   Speed: 80.0
 
-  SpawnYAdd: 50     # drones shall always spawn 15meters above ground 
+  SpawnYAdd: 50     # drones shall always spawn 15meters above ground
 
   ParticleOnDeath: drone_explosion02
   TimeStayAfterDeath: 300
   LootListOnDeath: 159
 
-  # Sound Setting 
-  SfxRandomTime: 50.0   # It will play the roam every [X/2, X] seconds 
+  # Sound Setting
+  SfxRandomTime: 50.0   # It will play the roam every [X/2, X] seconds
   SfxRandom: Enemies/Drone/SwellsRushesAssortment_start
 
   SfxAlertTime: 50.0   # It will play the roam every [X/2, X] seconds
@@ -10058,7 +10049,7 @@
   { Child VariableOverride
     SpeedCalm: 50.0
     SpeedAlerted: 60.0
-	SpeedAttack: 70.0
+    SpeedAttack: 70.0
   }
 }
 # =========== Legacy T2 Troops =============
@@ -10081,10 +10072,10 @@
   ViewAngle: 360
   ViewRange: 1000
 
-  # AI properties 
+  # AI properties
   AITarget-1: DroneDetection, param1: "BA", param2: EntityShipSV
 
-  # General properties 
+  # General properties
   HandItem: BombLauncherWeapon
   ItemsOnEnterGame: BombLauncherWeapon
   IsEnemy: true
@@ -10092,15 +10083,15 @@
   # XpFactor: 1.5
   XpFactor: 15.0
 
-  SpawnYAdd: 25     # drones shall always spawn 15meters above ground 
+  SpawnYAdd: 25     # drones shall always spawn 15meters above ground
 
   ParticleOnDeath: drone_explosion02
   # TimeStayAfterDeath: 150
   TimeStayAfterDeath: 300
   LootListOnDeath: 160
 
-  # Sound Setting 
-  SfxRandomTime: 50.0   # It will play the roam every [X/2, X] seconds 
+  # Sound Setting
+  SfxRandomTime: 50.0   # It will play the roam every [X/2, X] seconds
   SfxRandom: Enemies/Drone/DroneSmall_SfxRandom
   # SfxRandom: Enemies/Drone/ROBOTICMechMovement01
 
@@ -10132,17 +10123,17 @@
   MaxHealth: 650
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 40
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 3
-	SearchRandomDistanceMult: 1.5
-  	FireWeaponDurationMultiplier: 0.3
-	FireWeaponBlendInTime: 0.5
-	UseMeleeAttack: 0
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 40
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 3
+    SearchRandomDistanceMult: 1.5
+      FireWeaponDurationMultiplier: 0.3
+    FireWeaponBlendInTime: 0.5
+    UseMeleeAttack: 0
   }
   { Child VisionSensor
-	VisibleDistance: 150
+    VisibleDistance: 150
   }
 }
 # ======
@@ -10164,10 +10155,10 @@
   ViewAngle: 360
   ViewRange: 1000
 
-  # AI properties 
+  # AI properties
   AITarget-1: DroneDetection, param1: "BA", param2: EntityShipSV
 
-  # General properties 
+  # General properties
   HandItem: RocketLauncherSSHomingWeapon
   ItemsOnEnterGame: RocketLauncherSSHomingWeapon
   IsEnemy: true
@@ -10175,15 +10166,15 @@
   # XpFactor: 1.5
   XpFactor: 10.0
 
-  SpawnYAdd: 40     # drones shall always spawn 15meters above ground 
+  SpawnYAdd: 40     # drones shall always spawn 15meters above ground
 
   ParticleOnDeath: drone_explosion02
   # TimeStayAfterDeath: 150
   TimeStayAfterDeath: 120
   LootListOnDeath: 16
 
-  # Sound Setting 
-  SfxRandomTime: 50.0   # It will play the roam every [X/2, X] seconds 
+  # Sound Setting
+  SfxRandomTime: 50.0   # It will play the roam every [X/2, X] seconds
   SfxRandom: Enemies/Drone/DroneLarge_SfxRandom
 
   SfxAlertTime: 25.0   # It will play the roam every [X/2, X] seconds
@@ -10225,7 +10216,45 @@
 }
 
 # ----------------------------------------------------------------------------------------------------------------------
-# --------------------------------------------------------------------------------------------------- HWS Aqua Elemental
+# -------------------------------------------------------------------------------------------- HWS Aqua Elemental Static
+{ Entity Name: HWSAquaElementalStatic, Ref: AlienTemplateBAI
+  Mesh: @hws_eclassmodels/HWSAquaElemental
+  MeshDead: @hws_eclassmodels/HWSAquaElementalDead
+  Prefab: AlienHumanoid
+  HeadTransform: Head
+
+  Material: HWS_material_aquanpc
+  SurfaceCategory: human
+
+  Faction: Aqua
+  MaxHealth: 8000
+  XpFactor: 3.12
+
+  RightHandJointName: "WeaponNode"
+  ItemsOnEnterGame: "HWSAquaElementalWeapon"
+
+  RotateToGround: false
+
+  # Sound settings
+  SfxRandomTime: 50.0
+  SfxRandom: Enemies/Zirax/Zirax_SfxRandom
+  SfxAlertTime: 25.0
+  SfxAlert: Enemies/Zirax/Zirax_SfxRandom
+  SfxHurt:  Enemies/Zirax/Zirax_SfxHurt
+  SfxDeath: Enemies/Zirax/Zirax_SfxDeath
+
+  LootListOnDeath: 100
+  FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
+
+  UpdateClusterInfo: true
+  AllowUserInstantiate: true
+  AllowInSpawners: true
+
+  # AI properties
+  AITask-1: FleeOnHurt
+  #AITask-2: Wander, param1: true  # param1: if set to true use indoor pathing
+}
+# --------------------------------------------------------------------------------------------- HWS Aqua Elemental Range
 { Entity Name: HWSAquaElemental, Ref: AlienTemplateBAI
   Mesh: @hws_eclassmodels/HWSAquaElemental
   MeshDead: @hws_eclassmodels/HWSAquaElementalDead
@@ -10248,7 +10277,7 @@
   RotateSpeed: 100
   MotionAnimationSpeedMultiplier: 5.0
 
-  # Sound settings 
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Zirax/Zirax_SfxRandom
   SfxAlertTime: 25.0
@@ -10263,55 +10292,56 @@
   AllowUserInstantiate: true
   AllowInSpawners: true
 
-  # AI Properties 
+  # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
   }
 
   { Child VariableOverride
     SpeedCalm: 1.5
     SpeedAlerted: 2.0
-	SpeedAttack: 10.0
+    SpeedAttack: 10.0
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 120
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 0
-	SearchRandomDistanceMult: 0.3
-	FireWeaponBlendInTime: 0.3
-	FireWeaponDurationMultiplier: 0.3
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 120
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 0
+    SearchRandomDistanceMult: 0.3
+    FireWeaponBlendInTime: 0.3
+    FireWeaponDurationMultiplier: 0.3
   }
 
-  {	Child VisionSensor
-	VisibleDistance: 120
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+  {    Child VisionSensor
+    VisibleDistance: 120
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {	Child TargetSensor
+  {    Child TargetSensor
     AttackableTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {	Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop: 10 # slow alert drop 
-	AlertAddFromVisionMinNoMovement: 120 # no alert when not moving 
-	AlertAddFromVisionMovement: 200
-	AlertVisionMaxSpeed: 2
-	AlertAddFromAutoAlert: 30
-	MinDistanceToAutoAlert: 120
-	NoiseMaxDistance: 120
-	NoiseAlertMultiplier: 0.3
+  {    Child AlertSensor
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop: 10 # slow alert drop
+    AlertAddFromVisionMinNoMovement: 120 # no alert when not moving
+    AlertAddFromVisionMovement: 200
+    AlertVisionMaxSpeed: 2
+    AlertAddFromAutoAlert: 30
+    MinDistanceToAutoAlert: 120
+    NoiseMaxDistance: 120
+    NoiseAlertMultiplier: 0.3
   }
 }
+# --------------------------------------------------------------------------------------------- HWS Aqua Elemental Melee
 { Entity Name: HWSAquaElementalMelee, Ref: AlienTemplate
   Mesh: @hws_eclassmodels/HWSAquaElementalMelee
   MeshDead: @hws_eclassmodels/HWSAquaElementalMeleeDead
-  Prefab: AlienHumanoid
+  Prefab: AlienLarge
   HeadTransform: Raycast
 
   SurfaceCategory: human
@@ -10333,7 +10363,7 @@
   NightApproachSpeed: 2.5
   PanicSpeed: 0.8
 
-  # Sound settings 
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Zirax/Zirax_SfxRandom
   SfxAlertTime: 25.0
@@ -10353,7 +10383,45 @@
   FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
 }
 # ----------------------------------------------------------------------------------------------------------------------
-# -------------------------------------------------------------------------------------------------- HWS Terra Elemental
+# ------------------------------------------------------------------------------------------- HWS Terra Elemental Static
+{ Entity Name: HWSTerraElementalStatic, Ref: AlienTemplateBAI
+  Mesh: @hws_eclassmodels/HWSTerraElemental
+  MeshDead: @hws_eclassmodels/HWSTerraElementalDead
+  Prefab: AlienHumanoid
+  HeadTransform: Head
+
+  Material: HWS_material_terranpc
+  SurfaceCategory: human
+
+  Faction: Terra
+  MaxHealth: 8000
+  XpFactor: 3.12
+
+  RightHandJointName: "WeaponNode"
+  ItemsOnEnterGame: "HWSTerraElementalWeapon"
+
+  RotateToGround: false
+
+  # Sound settings
+  SfxRandomTime: 50.0
+  SfxRandom: Enemies/Zirax/Zirax_SfxRandom
+  SfxAlertTime: 25.0
+  SfxAlert: Enemies/Zirax/Zirax_SfxRandom
+  SfxHurt:  Enemies/Zirax/Zirax_SfxHurt
+  SfxDeath: Enemies/Zirax/Zirax_SfxDeath
+
+  LootListOnDeath: 100
+  FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
+
+  UpdateClusterInfo: true
+  AllowUserInstantiate: true
+  AllowInSpawners: true
+
+  # AI properties
+  AITask-1: FleeOnHurt
+  #AITask-2: Wander, param1: true  # param1: if set to true use indoor pathing
+}
+# -------------------------------------------------------------------------------------------- HWS Terra Elemental Range
 { Entity Name: HWSTerraElemental, Ref: AlienTemplateBAI
   Mesh: @hws_eclassmodels/HWSTerraElemental
   MeshDead: @hws_eclassmodels/HWSTerraElementalDead
@@ -10376,7 +10444,7 @@
   RotateSpeed: 100
   MotionAnimationSpeedMultiplier: 5.0
 
-  # Sound settings 
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Zirax/Zirax_SfxRandom
   SfxAlertTime: 25.0
@@ -10391,55 +10459,56 @@
   AllowUserInstantiate: true
   AllowInSpawners: true
 
-  # AI Properties 
+  # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
   }
 
   { Child VariableOverride
     SpeedCalm: 1.5
     SpeedAlerted: 2.0
-	SpeedAttack: 10.0
+    SpeedAttack: 10.0
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 120
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 0
-	SearchRandomDistanceMult: 0.3
-	FireWeaponBlendInTime: 0.3
-	FireWeaponDurationMultiplier: 0.3
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 120
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 0
+    SearchRandomDistanceMult: 0.3
+    FireWeaponBlendInTime: 0.3
+    FireWeaponDurationMultiplier: 0.3
   }
 
-  {	Child VisionSensor
-	VisibleDistance: 120
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+  {    Child VisionSensor
+    VisibleDistance: 120
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {	Child TargetSensor
+  {    Child TargetSensor
     AttackableTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {	Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop: 10 # slow alert drop 
-	AlertAddFromVisionMinNoMovement: 120 # no alert when not moving 
-	AlertAddFromVisionMovement: 200
-	AlertVisionMaxSpeed: 2
-	AlertAddFromAutoAlert: 30
-	MinDistanceToAutoAlert: 120
-	NoiseMaxDistance: 120
-	NoiseAlertMultiplier: 0.3
+  {    Child AlertSensor
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop: 10 # slow alert drop
+    AlertAddFromVisionMinNoMovement: 120 # no alert when not moving
+    AlertAddFromVisionMovement: 200
+    AlertVisionMaxSpeed: 2
+    AlertAddFromAutoAlert: 30
+    MinDistanceToAutoAlert: 120
+    NoiseMaxDistance: 120
+    NoiseAlertMultiplier: 0.3
   }
 }
+# -------------------------------------------------------------------------------------------- HWS Terra Elemental Melee
 { Entity Name: HWSTerraElementalMelee, Ref: AlienTemplate
   Mesh: @hws_eclassmodels/HWSTerraElementalMelee
   MeshDead: @hws_eclassmodels/HWSTerraElementalMeleeDead
-  Prefab: AlienHumanoid
+  Prefab: AlienLarge
   HeadTransform: Raycast
 
   SurfaceCategory: human
@@ -10461,7 +10530,7 @@
   NightApproachSpeed: 0.5
   PanicSpeed: 0.8
 
-  # Sound settings 
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Zirax/Zirax_SfxRandom
   SfxAlertTime: 25.0
@@ -10481,7 +10550,45 @@
   FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
 }
 # ----------------------------------------------------------------------------------------------------------------------
-# --------------------------------------------------------------------------------------------------- HWS Pyro Elemental
+# -------------------------------------------------------------------------------------------- HWS Pyro Elemental Static
+{ Entity Name: HWSPyroElementalStatic, Ref: AlienTemplateBAI
+  Mesh: @hws_eclassmodels/HWSPyroElemental
+  MeshDead: @hws_eclassmodels/HWSPyroElementalDead
+  Prefab: AlienHumanoid
+  HeadTransform: Head
+
+  Material: HWS_material_pyronpc
+  SurfaceCategory: human
+
+  Faction: Pyro
+  MaxHealth: 8000
+  XpFactor: 3.12
+
+  RightHandJointName: "WeaponNode"
+  ItemsOnEnterGame: "HWSPyroElementalWeapon"
+
+  RotateToGround: false
+
+  # Sound settings
+  SfxRandomTime: 50.0
+  SfxRandom: Enemies/Zirax/Zirax_SfxRandom
+  SfxAlertTime: 25.0
+  SfxAlert: Enemies/Zirax/Zirax_SfxRandom
+  SfxHurt:  Enemies/Zirax/Zirax_SfxHurt
+  SfxDeath: Enemies/Zirax/Zirax_SfxDeath
+
+  LootListOnDeath: 100
+  FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
+
+  UpdateClusterInfo: true
+  AllowUserInstantiate: true
+  AllowInSpawners: true
+
+  # AI properties
+  AITask-1: FleeOnHurt
+  #AITask-2: Wander, param1: true  # param1: if set to true use indoor pathing
+}
+# --------------------------------------------------------------------------------------------- HWS Pyro Elemental Range
 { Entity Name: HWSPyroElemental, Ref: AlienTemplateBAI
   Mesh: @hws_eclassmodels/HWSPyroElemental
   MeshDead: @hws_eclassmodels/HWSPyroElementalDead
@@ -10504,7 +10611,7 @@
   RotateSpeed: 100
   MotionAnimationSpeedMultiplier: 5.0
 
-  # Sound settings 
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Zirax/Zirax_SfxRandom
   SfxAlertTime: 25.0
@@ -10519,55 +10626,56 @@
   AllowUserInstantiate: true
   AllowInSpawners: true
 
-  # AI Properties 
+  # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
   }
 
   { Child VariableOverride
     SpeedCalm: 1.5
     SpeedAlerted: 2.0
-	SpeedAttack: 10.0
+    SpeedAttack: 10.0
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 120
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 0
-	SearchRandomDistanceMult: 0.3
-	FireWeaponBlendInTime: 0.3
-	FireWeaponDurationMultiplier: 0.3
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 120
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 0
+    SearchRandomDistanceMult: 0.3
+    FireWeaponBlendInTime: 0.3
+    FireWeaponDurationMultiplier: 0.3
   }
 
-  {	Child VisionSensor
-	VisibleDistance: 120
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+  {    Child VisionSensor
+    VisibleDistance: 120
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {	Child TargetSensor
+  {    Child TargetSensor
     AttackableTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {	Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop: 10 # slow alert drop 
-	AlertAddFromVisionMinNoMovement: 120 # no alert when not moving 
-	AlertAddFromVisionMovement: 200
-	AlertVisionMaxSpeed: 2
-	AlertAddFromAutoAlert: 30
-	MinDistanceToAutoAlert: 120
-	NoiseMaxDistance: 120
-	NoiseAlertMultiplier: 0.3
+  {    Child AlertSensor
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop: 10 # slow alert drop
+    AlertAddFromVisionMinNoMovement: 120 # no alert when not moving
+    AlertAddFromVisionMovement: 200
+    AlertVisionMaxSpeed: 2
+    AlertAddFromAutoAlert: 30
+    MinDistanceToAutoAlert: 120
+    NoiseMaxDistance: 120
+    NoiseAlertMultiplier: 0.3
   }
 }
+# --------------------------------------------------------------------------------------------- HWS Pyro Elemental Melee
 { Entity Name: HWSPyroElementalMelee, Ref: AlienTemplate
   Mesh: @hws_eclassmodels/HWSPyroElementalMelee
   MeshDead: @hws_eclassmodels/HWSPyroElementalMeleeDead
-  Prefab: AlienHumanoid
+  Prefab: AlienLarge
   HeadTransform: Raycast
 
   SurfaceCategory: human
@@ -10589,7 +10697,7 @@
   NightApproachSpeed: 0.5
   PanicSpeed: 0.8
 
-  # Sound settings 
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Zirax/Zirax_SfxRandom
   SfxAlertTime: 25.0
@@ -10609,7 +10717,7 @@
   FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
 }
 # ----------------------------------------------------------------------------------------------------------------------
-# ----------------------------------------------------------------------------------------------- HWS Obisidan Elemental
+# ----------------------------------------------------------------------------------------- HWS Obsidian Elemental Range
 { Entity Name: HWSObsidianElemental, Ref: AlienTemplateBAI
   Mesh: @hws_eclassmodels/HWSObsidianElemental
   MeshDead: @hws_eclassmodels/HWSObsidianElementalDead
@@ -10632,7 +10740,7 @@
   RotateSpeed: 100
   MotionAnimationSpeedMultiplier: 5.0
 
-  # Sound settings 
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Zirax/Zirax_SfxRandom
   SfxAlertTime: 25.0
@@ -10647,55 +10755,56 @@
   AllowUserInstantiate: true
   AllowInSpawners: true
 
-  # AI Properties 
+  # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
   }
 
   { Child VariableOverride
     SpeedCalm: 1.5
     SpeedAlerted: 2.0
-	SpeedAttack: 10.0
+    SpeedAttack: 10.0
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 120
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 0
-	SearchRandomDistanceMult: 0.3
-	FireWeaponBlendInTime: 0.3
-	FireWeaponDurationMultiplier: 0.3
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 120
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 0
+    SearchRandomDistanceMult: 0.3
+    FireWeaponBlendInTime: 0.3
+    FireWeaponDurationMultiplier: 0.3
   }
 
-  {	Child VisionSensor
-	VisibleDistance: 120
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+  {    Child VisionSensor
+    VisibleDistance: 120
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {	Child TargetSensor
+  {    Child TargetSensor
     AttackableTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {	Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop: 10 # slow alert drop 
-	AlertAddFromVisionMinNoMovement: 120 # no alert when not moving 
-	AlertAddFromVisionMovement: 200
-	AlertVisionMaxSpeed: 2
-	AlertAddFromAutoAlert: 30
-	MinDistanceToAutoAlert: 120
-	NoiseMaxDistance: 120
-	NoiseAlertMultiplier: 0.3
+  {    Child AlertSensor
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop: 10 # slow alert drop
+    AlertAddFromVisionMinNoMovement: 120 # no alert when not moving
+    AlertAddFromVisionMovement: 200
+    AlertVisionMaxSpeed: 2
+    AlertAddFromAutoAlert: 30
+    MinDistanceToAutoAlert: 120
+    NoiseMaxDistance: 120
+    NoiseAlertMultiplier: 0.3
   }
 }
+# ----------------------------------------------------------------------------------------- HWS Obsidian Elemental Melee
 { Entity Name: HWSObsidianElementalMelee, Ref: AlienTemplate
   Mesh: @hws_eclassmodels/HWSObsidianElementalMelee
   MeshDead: @hws_eclassmodels/HWSObsidianElementalMeleeDead
-  Prefab: AlienHumanoid
+  Prefab: AlienLarge
   HeadTransform: Raycast
 
   SurfaceCategory: human
@@ -10717,7 +10826,7 @@
   NightApproachSpeed: 0.5
   PanicSpeed: 0.8
 
-  # Sound settings 
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Zirax/Zirax_SfxRandom
   SfxAlertTime: 25.0
@@ -10737,7 +10846,7 @@
   FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
 }
 # ----------------------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------- HWS Lux Elemental
+# ---------------------------------------------------------------------------------------------- HWS Lux Elemental Range
 { Entity Name: HWSLuxElemental, Ref: AlienTemplateBAI
   Mesh: @hws_eclassmodels/HWSLuxElemental
   MeshDead: @hws_eclassmodels/HWSLuxElementalDead
@@ -10760,7 +10869,7 @@
   RotateSpeed: 100
   MotionAnimationSpeedMultiplier: 5.0
 
-  # Sound settings 
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Zirax/Zirax_SfxRandom
   SfxAlertTime: 25.0
@@ -10775,55 +10884,56 @@
   AllowUserInstantiate: true
   AllowInSpawners: true
 
-  # AI Properties 
+  # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
   }
 
   { Child VariableOverride
     SpeedCalm: 1.5
     SpeedAlerted: 2.0
-	SpeedAttack: 10.0
+    SpeedAttack: 10.0
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 120
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 0
-	SearchRandomDistanceMult: 0.3
-	FireWeaponBlendInTime: 0.3
-	FireWeaponDurationMultiplier: 0.3
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 120
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 0
+    SearchRandomDistanceMult: 0.3
+    FireWeaponBlendInTime: 0.3
+    FireWeaponDurationMultiplier: 0.3
   }
 
-  {	Child VisionSensor
-	VisibleDistance: 120
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+  {    Child VisionSensor
+    VisibleDistance: 120
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {	Child TargetSensor
+  {    Child TargetSensor
     AttackableTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {	Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop: 10 # slow alert drop 
-	AlertAddFromVisionMinNoMovement: 120 # no alert when not moving 
-	AlertAddFromVisionMovement: 200
-	AlertVisionMaxSpeed: 2
-	AlertAddFromAutoAlert: 30
-	MinDistanceToAutoAlert: 120
-	NoiseMaxDistance: 120
-	NoiseAlertMultiplier: 0.3
+  {    Child AlertSensor
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop: 10 # slow alert drop
+    AlertAddFromVisionMinNoMovement: 120 # no alert when not moving
+    AlertAddFromVisionMovement: 200
+    AlertVisionMaxSpeed: 2
+    AlertAddFromAutoAlert: 30
+    MinDistanceToAutoAlert: 120
+    NoiseMaxDistance: 120
+    NoiseAlertMultiplier: 0.3
   }
 }
+# ---------------------------------------------------------------------------------------------- HWS Lux Elemental Melee
 { Entity Name: HWSLuxElementalMelee, Ref: AlienTemplate
   Mesh: @hws_eclassmodels/HWSLuxElementalMelee
   MeshDead: @hws_eclassmodels/HWSLuxElementalMeleeDead
-  Prefab: AlienHumanoid
+  Prefab: AlienLarge
   HeadTransform: Raycast
 
   SurfaceCategory: human
@@ -10845,7 +10955,7 @@
   NightApproachSpeed: 0.5
   PanicSpeed: 0.8
 
-  # Sound settings 
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Zirax/Zirax_SfxRandom
   SfxAlertTime: 25.0
@@ -10865,7 +10975,7 @@
   FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
 }
 # ----------------------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------- HWS Nox Elemental
+# ---------------------------------------------------------------------------------------------- HWS Nox Elemental Range
 { Entity Name: HWSNoxElemental, Ref: AlienTemplateBAI
   Mesh: @hws_eclassmodels/HWSNoxElemental
   MeshDead: @hws_eclassmodels/HWSNoxElementalDead
@@ -10888,7 +10998,7 @@
   RotateSpeed: 100
   MotionAnimationSpeedMultiplier: 5.0
 
-  # Sound settings 
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Zirax/Zirax_SfxRandom
   SfxAlertTime: 25.0
@@ -10903,55 +11013,56 @@
   AllowUserInstantiate: true
   AllowInSpawners: true
 
-  # AI Properties 
+  # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
   }
 
   { Child VariableOverride
     SpeedCalm: 1.5
     SpeedAlerted: 2.0
-	SpeedAttack: 10.0
+    SpeedAttack: 10.0
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 120
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 0
-	SearchRandomDistanceMult: 0.3
-	FireWeaponBlendInTime: 0.3
-	FireWeaponDurationMultiplier: 0.3
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 120
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 0
+    SearchRandomDistanceMult: 0.3
+    FireWeaponBlendInTime: 0.3
+    FireWeaponDurationMultiplier: 0.3
   }
 
-  {	Child VisionSensor
-	VisibleDistance: 120
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+  {    Child VisionSensor
+    VisibleDistance: 120
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {	Child TargetSensor
+  {    Child TargetSensor
     AttackableTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {	Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop: 10 # slow alert drop 
-	AlertAddFromVisionMinNoMovement: 120 # no alert when not moving 
-	AlertAddFromVisionMovement: 200
-	AlertVisionMaxSpeed: 2
-	AlertAddFromAutoAlert: 30
-	MinDistanceToAutoAlert: 120
-	NoiseMaxDistance: 120
-	NoiseAlertMultiplier: 0.3
+  {    Child AlertSensor
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop: 10 # slow alert drop
+    AlertAddFromVisionMinNoMovement: 120 # no alert when not moving
+    AlertAddFromVisionMovement: 200
+    AlertVisionMaxSpeed: 2
+    AlertAddFromAutoAlert: 30
+    MinDistanceToAutoAlert: 120
+    NoiseMaxDistance: 120
+    NoiseAlertMultiplier: 0.3
   }
 }
+# ---------------------------------------------------------------------------------------------- HWS Nox Elemental Melee
 { Entity Name: HWSNoxElementalMelee, Ref: AlienTemplate
   Mesh: @hws_eclassmodels/HWSNoxElementalMelee
   MeshDead: @hws_eclassmodels/HWSNoxElementalMeleeDead
-  Prefab: AlienHumanoid
+  Prefab: AlienLarge
   HeadTransform: Raycast
 
   SurfaceCategory: human
@@ -10973,7 +11084,7 @@
   NightApproachSpeed: 0.5
   PanicSpeed: 0.8
 
-  # Sound settings 
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Zirax/Zirax_SfxRandom
   SfxAlertTime: 25.0
@@ -10992,9 +11103,8 @@
   AllowUserInstantiate: true
   FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
 }
-
 # ----------------------------------------------------------------------------------------------------------------------
-# --------------------------------------------------------------------------------------------- HWS Strangelet Elemental
+# --------------------------------------------------------------------------------------- HWS Strangelet Elemental Range
 { Entity Name: HWSStrangeletElemental, Ref: AlienTemplateBAI
   Mesh: @hws_eclassmodels/HWSStrangeletElemental
   MeshDead: @hws_eclassmodels/HWSStrangeletElementalDead
@@ -11004,7 +11114,7 @@
   Material: HWS_material_strangeletnpc
   SurfaceCategory: human
 
-  Faction: Strangelet
+  Faction: Chaos
   MaxHealth: 8000
   XpFactor: 3.12
 
@@ -11017,7 +11127,7 @@
   RotateSpeed: 100
   MotionAnimationSpeedMultiplier: 5.0
 
-  # Sound settings 
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Zirax/Zirax_SfxRandom
   SfxAlertTime: 25.0
@@ -11032,61 +11142,62 @@
   AllowUserInstantiate: true
   AllowInSpawners: true
 
-  # AI Properties 
+  # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
   }
 
   { Child VariableOverride
     SpeedCalm: 1.5
     SpeedAlerted: 2.0
-	SpeedAttack: 10.0
+    SpeedAttack: 10.0
   }
 
   { Child Hints
-	AttackApproachTarget: 0
-	AttackOptimalDistance: 120
-	SearchAdvanceTime: 1.0
-	SearchWaitTime: 0
-	SearchRandomDistanceMult: 0.3
-	FireWeaponBlendInTime: 0.3
-	FireWeaponDurationMultiplier: 0.3
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 120
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 0
+    SearchRandomDistanceMult: 0.3
+    FireWeaponBlendInTime: 0.3
+    FireWeaponDurationMultiplier: 0.3
   }
 
-  {	Child VisionSensor
-	VisibleDistance: 120
-	ViewAngle: 180
-	VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+  {    Child VisionSensor
+    VisibleDistance: 120
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {	Child TargetSensor
+  {    Child TargetSensor
     AttackableTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {	Child AlertSensor
-	AlertLevel1: 10, param1: 0
-	AlertLevel2: 40, param1: 2
-	AlertLevel3: 60, param1: 50
-	AlertLevelDrop: 10 # slow alert drop 
-	AlertAddFromVisionMinNoMovement: 120 # no alert when not moving 
-	AlertAddFromVisionMovement: 200
-	AlertVisionMaxSpeed: 2
-	AlertAddFromAutoAlert: 30
-	MinDistanceToAutoAlert: 120
-	NoiseMaxDistance: 120
-	NoiseAlertMultiplier: 0.3
+  {    Child AlertSensor
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop: 10 # slow alert drop
+    AlertAddFromVisionMinNoMovement: 120 # no alert when not moving
+    AlertAddFromVisionMovement: 200
+    AlertVisionMaxSpeed: 2
+    AlertAddFromAutoAlert: 30
+    MinDistanceToAutoAlert: 120
+    NoiseMaxDistance: 120
+    NoiseAlertMultiplier: 0.3
   }
 }
+# --------------------------------------------------------------------------------------- HWS Strangelet Elemental Melee
 { Entity Name: HWSStrangeletElementalMelee, Ref: AlienTemplate
   Mesh: @hws_eclassmodels/HWSStrangeletElementalMelee
   MeshDead: @hws_eclassmodels/HWSStrangeletElementalMeleeDead
-  Prefab: AlienHumanoid
+  Prefab: AlienLarge
   HeadTransform: Raycast
 
   SurfaceCategory: human
   Material: HWS_material_strangeletnpc
 
-  Faction: Strangelet
+  Faction: Chaos
   MaxHealth: 8000
   LootListOnDeath: 104
 
