@@ -29,11 +29,32 @@
   StarCount: "0, 0"   # random value between these two. This is the absolute MAX amount of Stars available for the party below
   Radius: "0, 707"  # inner and outer radius of galaxy in LY (no random!). For Nebulas!!
 
-  #NebulaCount: "150, 300"                     # 150-300 random value min/max
+  NebulaCount: "150, 300"                     # 150-300 random value min/max
   # Nebula Colors (only temporary until we add better support for it): 3 color gradients are supported, you need to set at least two colors but can use any number of colors for the gradients
-  NebulaColors1: "1,0,0,   1,0,0,   1,0,0"  # red, purple, blue
-  NebulaColors2: "0,1,0,   0,1,0,   0,1,0"  # red, purple, blue
-  NebulaColors3: "0,0,1,   0,0,1,   0,0,1"  # red, purple, blue
+
+# Nebula Colors
+  NebulaColors1: "0.8,0.5,0.003,  0.5,0.2,0,  0.2,0.1,0,  0.1,0.06,0.02,  0.25,0.14,0.05,  0.35,0.3,0.1,  0.7,0.7,0.25,  0.9,0.6,0.2"
+  NebulaColors2: "0.1,0,0,  0.7,0,0,  1,0,0,  0.5,0,0.5,  0.8,0,1,  0.1,0,0.7,  0.3,0,2"
+  NebulaColors3: "0,0.5,0,  0,1,0,  0,1,1,  0,0.6,0.9,  0,0.3,1,  0,0,0.5,  0,0,0.2,  0,0,0.9"
+
+  NebulaColors4: "0,0.1,0.7,  0,0.15,0,  0,0.25,0,  0,0.2,0.2,  0,1,1,  0,1,0,  0.25,0.35,0.25,  0.15,0.25,0.05"
+  NebulaColors5: "0.8,0.5,0.003,  0.5,0.2,0,  0.2,0.1,0,  0.1,0.06,0.02,  0.25,0.14,0.05,  0.35,0.3,0.1,  0.7,0.7,0.25,  0.9,0.6,0.2"
+  NebulaColors6: "0,0,0.1,  0,0.01,0.25,  0,0.015,0.5,  0,0.15,0.35,  0,0.05,0.45,  0,0.1,0.2,  0.2,0.01,1,  0.2,0.2,1"
+  NebulaColors7: "0.05,0,0,  0.1,0,0,  0.65,0,0,  0.9,0.05,0,  0.05,0.02,0,  0.025,0.01,0,  0.2,0.1,0,  0.7,0.2,0"
+  NebulaColors8: "0,0,0.1,  0,0,0.3,  0,0,1,  0,0.1,1,  0.1,0.1,0.5,  0,0.05,0.3,  0.05,0.05,0.2,  0,0.1,0.9"
+  NebulaColors9: "0.4,0.2,0.12,  0.4,0.24,0.16,  0.2,0.12,0.08,  0.24,0.24,0.08,  0.24,0.16,0.16,  0.8,0.64,0.48,  1,0.48,0,  0.48,0.12,0"
+  NebulaColors10: "0,0.02,0,  0,0.03,0,  0,0.05,0.03,  0.03,0.05,0.03,  0,0.07,0.04,  0,0.05,0.05,  0.03,0.05,0.03,  0.01,0.03,0.02"
+  NebulaColors11: "0,0.025,0.2,  0.05,0.05,0.3,  0.05,0.15,0.25,  0.1,0.17,0.45,  0.17,0.27,0.5,  0.22,0.32,0.5,  0.15,0.2,0.5"
+  NebulaColors12: "0.03,0,0,  0.05,0,0,  0.075,0,0,  0.1,0.02,0,  0.1,0.00,0,  0.05,0,0,  0.03,0,0"
+  NebulaColors13: "0.026,0.012,0.008,  0.045,0.02,0.016,  0.04,0.03,0.04,  0.07,0.04,0.03,  0.1,0.07,0.04,  0.15,0.1,0.02,  0.1,0.05,0.02"
+  NebulaColors14: "0,0.02,0,  0.02,0.02,0,  0.05,0.04,0, 0.1,0.08,0,  0.1,0.2,0.1,  0,0.2,0"
+  NebulaColors15: "0.5,0.1,0.1,  0.3,0,0,  0.3,0.3,0.4,  0.4,0.35,0.35"
+  NebulaColors16: "1,0.16,0,     1.0,0.4,0,     1.0,0.20,0,   1.0,0.13,0.0,      0.22,0.79,0.7"
+  NebulaColors17: "0.005,0.062,0.083,   0.050,0.045,0.055,    0.005,0.060,0.085,   0.050,0.053,0.048,   0.004,0.003,0.008,    0.075,0.067,0.068,  0.500,0.080,0.120"
+  NebulaColors18: "0.008,0.000,0.012,   0.010,0.010,0.015,    0.000,0.02,0.02,   0.025,0.000,0.01,   0.1,0.22,0.2,    0.07,0.06,0.000,  0.025,0.10,0.070"
+  NebulaColors19: "0.5,0.5,0.5,  0.5,0.45,0.25,  0.5,0.3,0.1,  0.5,0.45,0"
+  NebulaColors20: "0.025,0.007,0.007,  0.017,0.007,0.007,  0.025,0.007,0.025"
+
  # you can restrict the display the galaxy (this will not break savegames). f.e. for server owners that want to uncover the galaxy step by step.
   # Concept: Universe starts with 150 random + 20 fixed stars. Once the first Star Fragment is decrypted, the Universe will get expanded by specific variable values LY.
 
@@ -74,26 +95,26 @@
 { GalaxyConfig, Name: HW-PvP
   StarClass: HW-PvP
   Model: SunGeneric
-  ModelColor: "0.2, 0.5, 0.3"
-  ModelColor2: "1, 0.5, 0.1"
-  ModelBrightness: 1.5
-  ModelNoiseTiling: 350
-  ModelCoronaSpikesSize: 0.7
-  ModelPlasmaArcsSize: 0.4
-  ModelFlareBrightness: 0.1
-  Probability: 1
-  SizeClass: 13
-  Color: "1, 0.5, 0.1"
-  SurfaceTemperature: "5000, 74000"
+  Probability: 0.8
+  SizeClass: 12
+  Color: "0.9,1,1"
+  ModelColor: "0.9,1.1,1.4"
+  ModelColor2: "0.2,0.25,0.4"
+  ModelBrightness: 0.85
+  ModelNoiseTiling: 400
+  ModelCoronaSpikesSize: 1
+  ModelPlasmaArcsSize: 0.5
+  ModelFlareBrightness: 0.25
+  SurfaceTemperature: "2500, 4000"
   Mass: 0.3
   Radius: 0.4
   Luminosity: 0.002
-  ColorName: Bright Red
+  ColorName: Green
   Age: 49
   InnerSystem: "10, 50"
   HabitableHot: "40, 100"
   HabitableTemperate: "90, 150"
   HabitableCold: "140, 200"
   OuterSystem: "190, 250"
-  Description: "[c][ff7700]WARNING: [b]PvP![/b][-][/c] Dedicated Resources and events making it the perfect PvP battleground in the whole universe. Make sure to prepare VERY WELL before entering!"
+  Description: "Find more information about HWS+ at https://empyrion-homeworld.net"
 }
