@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1682523340
+CRC: 3969656248
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d8aa197ec0a439b3d8d97dde20686521
+    Hash: 1c58ec24e975544aea008f8558c11677
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 0c0817af03c4b473c1a0d60474c18af3
+    Hash: 3755d6da682a87b78f977dfc47a58ce3
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -27,6 +27,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 54
   Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
 - Class: 65
   Script: {instanceID: 0}
 - Class: 74
@@ -36,12 +38,6 @@ ClassTypes:
 - Class: 83
   Script: {instanceID: 0}
 - Class: 84
-  Script: {instanceID: 0}
-- Class: 90
-  Script: {instanceID: 0}
-- Class: 91
-  Script: {instanceID: 0}
-- Class: 95
   Script: {instanceID: 0}
 - Class: 108
   Script: {instanceID: 0}
@@ -65,6 +61,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 199
   Script: {instanceID: 0}
+- Class: 205
+  Script: {instanceID: 0}
 - Class: 328
   Script: {instanceID: 0}
 - Class: 329
@@ -74,7 +72,6 @@ Assets:
 - Assets/hws_blockmodels/HWSPlants/textures/Capsule_03_normal.png
 - Assets/hws_blockmodels/white.jpg
 - Assets/hws_blockmodels/HWSBlockFirework/HWSBlockFireworkGeorgine.prefab
-- Assets/hws_blockmodels/HWSProfVoid/source/Cientifico_ROOTSHJnt.controller
 - Assets/hws_blockmodels/HWSBlockElementalStone/Import/HWSBlockElementalStone.Textures/Light.png
 - Assets/hws_blockmodels/HWSBlockSpikesTrap/Textures/OPM0041_4K_Occlusion.png
 - Assets/hws_blockmodels/HWSPlants/textures/Capsule_03_baseColor.png
@@ -90,14 +87,13 @@ Assets:
 - Assets/hws_blockmodels/HWSBlockFirework/Import/firework-start.wav
 - Assets/hws_blockmodels/HWSElementalGuns/HWSElementalGunSVT3.prefab
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Plane.030.asset
+- Assets/hws_blockmodels/Generator.prefab
 - Assets/hws_blockmodels/HWSButton/Button.mat
 - Assets/hws_blockmodels/HWSToxicCrate/untitled.Textures/lambert1_normal.png
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Materials/Ground.002.asset
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Cylinder.020.asset
 - Assets/hws_blockmodels/HWSPlants/source/Capsule_01_occlusionRoughnessMetallic.png
-- Assets/hws_blockmodels/HWSLift/HWSLift5B.prefab
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Textures/FireworkRocket5.png
-- Assets/hws_blockmodels/HWSLift/Materials/Material.mat
 - Assets/hws_blockmodels/HWSPlants/source/Capsule_01_baseColor.png
 - Assets/hws_blockmodels/HWSPlants/source/Capsule_01_normal.png
 - Assets/hws_blockmodels/HWSDecoBlockComputer/scene.Textures/mini_computer_metallicRoughness.metallicRoughness.asset
@@ -107,7 +103,6 @@ Assets:
 - Assets/hws_blockmodels/HWSShieldExtender/Textures/shield_generator_emmisive.png
 - Assets/hws_blockmodels/HWSElementalGuns/HWSElementalGunCVT1.prefab
 - Assets/hws_blockmodels/HWSBlockElementalStone/Import/HWSBlockElementalStone.Meshes/Cone.001.asset
-- Assets/hws_blockmodels/HWSProfVoid/test.anim
 - Assets/hws_blockmodels/HWSDecoBlockComputer/scene.Meshes/pPipe16_mini_computer_0.asset
 - Assets/hws_blockmodels/HWSElementalGuns/HWSElementalGunHVT3.prefab
 - Assets/hws_blockmodels/HWSDecoBlockComputer/scene.Meshes/pCube239_mini_computer_0.asset
@@ -135,6 +130,7 @@ Assets:
 - Assets/hws_blockmodels/HWSDecoBlockComputer/scene.Meshes/pPipe13_mini_computer_0.asset
 - Assets/hws_blockmodels/HWSPlants/source/Capsule_01_emissive.png
 - Assets/hws_blockmodels/HWSButton/Chasis.mat
+- Assets/hws_blockmodels/HWSLift/HWSLift1B.prefab
 - Assets/hws_blockmodels/HWSElementalGuns/HWSElementalGunSVT4.prefab
 - Assets/hws_blockmodels/HWSPlants/textures/Capsule_01_emissive.png
 - Assets/hws_blockmodels/HWSDecoBlockComputer/scene.Meshes/pCube216_mini_computer_0.asset
@@ -149,7 +145,6 @@ Assets:
 - Assets/hws_blockmodels/HWSLift/HWSLift4BUp.anim
 - Assets/hws_blockmodels/HWSWarpDriveT3/Texture2D/WarpDrive_n.png
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Meshes/Cube.006.asset
-- Assets/hws_blockmodels/HWSLift/HWSLift1B.prefab
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Meshes/Cube.008.asset
 - Assets/hws_blockmodels/HWSLogistics/HWSLogistics.Textures/Placeable_baseColor.png
 - Assets/hws_blockmodels/HWSLootBox2/LootBox2Close.anim
@@ -180,9 +175,10 @@ Assets:
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Cylinder.021.asset
 - Assets/hws_blockmodels/HWSBlockFirework/HWSBlockFireworkMine.prefab
 - Assets/hws_blockmodels/HWSBlockElementalStone/HWSBlockElementalStone.prefab
-- Assets/hws_blockmodels/HWSLogistics/HWSLogistics.Textures/TerminalVideo.mp4
+- Assets/hws_blockmodels/HWSLift/HWSLift2B.prefab
 - Assets/hws_blockmodels/HWSDecoBlockComputer/scene.Meshes/pCube248_mini_computer_0.asset
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Cylinder.014.asset
+- Assets/hws_blockmodels/HWSLogistics/HWSLogistics.Textures/TerminalVideo.mp4
 - Assets/hws_blockmodels/HWSToxicCrate/untitled.prefab
 - Assets/hws_blockmodels/HWSLootBox3/LootBox3Open.anim
 - Assets/hws_blockmodels/EmpShader-BlockColored-HWS.shader
@@ -199,6 +195,7 @@ Assets:
 - Assets/hws_blockmodels/HWSBlockSpikesTrap/Textures/OPM0041_4K_Roughness.png
 - Assets/hws_blockmodels/HWSShieldExtender/ShieldExtender.anim
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Cylinder.024.asset
+- Assets/hws_blockmodels/HWSLift/HWSLift5B.prefab
 - Assets/hws_blockmodels/HWSChaosElements/HWSChaosLux.prefab
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Cylinder.007.asset
 - Assets/hws_blockmodels/HWSWarpDriveT3/Texture2D/TechStuff.mat
@@ -210,7 +207,6 @@ Assets:
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.prefab
 - Assets/hws_blockmodels/HWSPlants/textures/Capsule_01_occlusionRoughnessMetallic@channels=B.png
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Meshes/Cube.005.asset
-- Assets/hws_blockmodels/HWSLift/HWSLift4B.prefab
 - Assets/hws_blockmodels/HWSToxicCrate/untitled.Meshes/defaultMaterial.asset
 - Assets/hws_blockmodels/HWSPlants/textures/Capsule_02_normal.png
 - Assets/hws_blockmodels/HWSBlockElementalStone/Import/HWSBlockElementalStone.Meshes/Cone.004.asset
@@ -253,7 +249,6 @@ Assets:
 - Assets/hws_blockmodels/HWSToxicCrate/untitled.Textures/lambert1_metallicRoughness.metallicRoughness.asset
 - Assets/hws_blockmodels/HWSLootBox2/LootBox2Open.anim
 - Assets/hws_blockmodels/HWSDecoBlockComputer/scene.Meshes/pCube238_mini_computer_0.asset
-- Assets/hws_blockmodels/HWSLift/HWSLift3B.prefab
 - Assets/hws_blockmodels/HWSElementalGuns/HWSElementalGunSVT1.prefab
 - Assets/hws_blockmodels/HWSLift/Textures/tech_pedestal_ROUGHNESS.png
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Meshes/Cube.002.asset
@@ -261,7 +256,6 @@ Assets:
 - Assets/hws_blockmodels/HWSWarpDriveT3/Mesh/WarpDrive_D2.obj
 - Assets/hws_blockmodels/HWSBlockElementalStone/Import/HWSBlockElementalStone.Materials/Fire.asset
 - Assets/hws_blockmodels/HWSBlockElementalStone/Import/HWSBlockElementalStone.Meshes/Cone.003.asset
-- Assets/hws_blockmodels/HWSLift/HWSLift2B.prefab
 - Assets/hws_blockmodels/HWSShieldExtender/Textures/shield_generator.png
 - Assets/hws_blockmodels/HWSToxicCrate/untitled.Textures/lambert1_metallicRoughness.png
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Cylinder.012.asset
@@ -272,15 +266,15 @@ Assets:
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Materials/Material.008.asset
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Textures/FireworkRocket4.png
 - Assets/hws_blockmodels/HWSShieldExtender/Materials/Shield_generator_lambert5.mat
-- Assets/hws_blockmodels/HWSLift/Materials/tech_pedestal-tech_pedestal_mat.mat
+- Assets/hws_blockmodels/HWSWarpDriveT3/Texture2D/WarpDrive_s.png
 - Assets/hws_blockmodels/HWSBlockElementalStone/Import/HWSBlockElementalStone.Textures/Earth.png
 - Assets/hws_blockmodels/HWSElementalGuns/HWSElementalGunSVT5.prefab
-- Assets/hws_blockmodels/HWSWarpDriveT3/Texture2D/WarpDrive_s.png
 - Assets/hws_blockmodels/HWSBlockElementalStone/Import/HWSBlockElementalStone.Materials/ElementalStone.asset
 - Assets/hws_blockmodels/HWSDecoBlockComputer/scene.Meshes/pCube242_mini_computer_0.asset
 - Assets/hws_blockmodels/HWSDecoBlockComputer/scene.Meshes/pCylinder37_mini_computer_0.asset
 - Assets/hws_blockmodels/HWSLogistics/HWSLogistics.Meshes/UserTerminal_Body_Placeable_0.asset
 - Assets/hws_blockmodels/HWSShieldExtender/HWSShieldRechargeExtender.prefab
+- Assets/hws_blockmodels/uploads_files_2524355_Generator.fbx
 - Assets/hws_blockmodels/HWSLootBox/Close.anim
 - Assets/hws_blockmodels/HWSDecoBlockComputer/scene.Meshes/pCube243_mini_computer_0.asset
 - Assets/hws_blockmodels/HWSLogistics/HWSLogistics.Materials/Placeable.asset
@@ -299,30 +293,27 @@ Assets:
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Cylinder.003.asset
 - Assets/hws_blockmodels/HWSElementalGuns/HWSElementalGunHVT2.prefab
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Materials/Capsule_01.001.asset
-- Assets/hws_blockmodels/HWSLift/tech_pedestal.fbx
+- Assets/hws_blockmodels/HWSWarpDriveT3/Texture2D/Shell.mat
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Meshes/Cube.004.asset
 - Assets/hws_blockmodels/HWSBlockFirework/HWSBlockFireworkBees.prefab
-- Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Materials/Leafs.asset
+- Assets/hws_blockmodels/HWSLift/HWSLift3B.prefab
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Cube.006.asset
-- Assets/hws_blockmodels/HWSWarpDriveT3/Texture2D/Shell.mat
 - Assets/hws_blockmodels/HWSLogistics/HWSLogistics.Textures/Placeable_emissive.png
 - Assets/hws_blockmodels/HWSBlockFirework/HWSBlockFireworkPalm.prefab
 - Assets/hws_blockmodels/HWSPlants/textures/Capsule_01_occlusionRoughnessMetallic@channels=R.png
 - Assets/hws_blockmodels/HWSBlockFirework/HWSBlockFireworkCrossover.prefab
 - Assets/hws_blockmodels/HWSToxicCrate/untitled.Textures/lambert1_emissive.jpg
+- Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Materials/Leafs.asset
 - Assets/hws_blockmodels/HWSBlockFirework/HWSBlockFireworkWhiteFlares.prefab
-- Assets/hws_blockmodels/HWSProfVoid/Scientist.controller
 - Assets/hws_blockmodels/HWSBlockFirework/HWSBlockFireworkRedPion.prefab
 - Assets/hws_blockmodels/HWSPlants/source/Capsule_02_baseColor.png
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Textures/FireworkRocket1.png
 - Assets/hws_blockmodels/HWSLogistics/HWSLogisticsPrefab.prefab
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Plane.018.asset
-- Assets/hws_blockmodels/HWSProfVoid/HWSProfVoid.prefab
 - Assets/hws_blockmodels/HWSWarpDriveT3/Mesh/WarpDrive_D1.obj
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Meshes/Cube.003.asset
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/BezierCurve.002.asset
 - Assets/hws_blockmodels/HWSLogistics/HWSLogistics.Textures/Terminal.png
-- Assets/hws_blockmodels/HWSProfVoid/textures/MM_Scientific_text.png
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Textures/FireworkBox.jpg
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Materials/Material.006.asset
 - Assets/hws_blockmodels/HWSLift/HWSLift4BDown.anim
@@ -332,7 +323,7 @@ Assets:
 - Assets/hws_blockmodels/HWSLogistics/HWSLogistics.Materials/Material.001.asset
 - Assets/hws_blockmodels/HWSToxicCrate/HWSToxicCrate.prefab
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/BezierCurve.001.asset
-- Assets/hws_blockmodels/HWSPlants/textures/Capsule_02_occlusionRoughnessMetallic@channels=G.png
+- Assets/hws_blockmodels/HWSLift/HWSLift4B.prefab
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Cube.005.asset
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Plane.029.asset
 - Assets/hws_blockmodels/HWSToxicCrate/untitled.Materials/lambert1.asset
@@ -340,11 +331,13 @@ Assets:
 - Assets/hws_blockmodels/HWSBlockElementalStone/Import/HWSBlockElementalStone.Meshes/Cone.006.asset
 - Assets/hws_blockmodels/HWSBlockFirework/HWSBlockFireworkOsier.prefab
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Cylinder.005.asset
+- Assets/hws_blockmodels/HWSPlants/textures/Capsule_02_occlusionRoughnessMetallic@channels=G.png
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Textures/FireworkRocket2.png
 - Assets/hws_blockmodels/HWSShieldExtender/HWSShieldCapacityExtender.prefab
 - Assets/hws_blockmodels/HWSBlockElementalStone/Import/HWSBlockElementalStone.Materials/Water.asset
 - Assets/hws_blockmodels/HWSDecoBlockComputer/scene.Meshes/pCube223_mini_computer_0.asset
 - Assets/hws_blockmodels/HWSLift/Textures/tech_pedestal_COL.png
+- Assets/hws_blockmodels/HWSLift/HWSLift.fbx
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Cylinder.008.asset
 - Assets/hws_blockmodels/HWSBlockFirework/HWSBlockFireworkGold.prefab
 - Assets/hws_blockmodels/HWSLift/Textures/tech_pedestal_METALLIC.png
@@ -357,7 +350,6 @@ Assets:
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Materials/Material.007.asset
 - Assets/hws_blockmodels/HWSLift/HWSLift5BUp.anim
 - Assets/hws_blockmodels/HWSLootBox/HWSLootBox.prefab
-- Assets/hws_blockmodels/HWSProfVoid/source/Scientist.fbx
 - Assets/hws_blockmodels/HWSBlockFirework/HWSBlockFireworkMine2.prefab
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Meshes/Cube.010.asset
 - Assets/hws_blockmodels/HWSPlants/source/PlantCapsule_Substance.Meshes/Cylinder.013.asset
