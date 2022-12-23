@@ -1817,7 +1817,7 @@
   HandItem: BombLauncherWeapon
   ItemsOnEnterGame: BombLauncherWeapon
   IsEnemy: true
-  MaxHealth: 21000
+  MaxHealth: 20000
   # XpFactor: 1.5
   XpFactor: 15.0
 
@@ -1867,7 +1867,7 @@
   SurfaceCategory: metal
 
   DroneType: SpaceDrone
-  MaxHealth: 10000
+  MaxHealth: 9000
   # XpFactor: 2
   XpFactor: 12.5
 
@@ -1920,7 +1920,7 @@
   Mesh: Enemies/Drones/EnemyDroneBomberPrefab
   MeshDead: Enemies/Drones/EnemyDroneBomberDmgPrefab
 
-  MaxHealth: 15000
+  MaxHealth: 14000
   # XpFactor: 2
   XpFactor: 12.5
 
@@ -1936,7 +1936,7 @@
   MeshDead: Enemies/Drones/KrielDroneDmgPrefab
   Faction: Kriel
 
-  MaxHealth: 17500
+  MaxHealth: 17000
   # XpFactor: 2
   XpFactor: 10
 
@@ -1951,7 +1951,7 @@
   MeshDead: Enemies/Drones/PolarisDrone02DestroyedPrefab
   Faction: Polaris
 
-  MaxHealth: 11000
+  MaxHealth: 10000
   # XpFactor: 2
   XpFactor: 10
 
@@ -1966,7 +1966,7 @@
   MeshDead: Enemies/Drones/PolarisDrone04DestroyedPrefab
   Faction: Trader
 
-  MaxHealth: 14500
+  MaxHealth: 14000
   # XpFactor: 2
   XpFactor: 10
 
@@ -1981,7 +1981,7 @@
   MeshDead: Enemies/Drones/LegacyDroneCrabDmgPrefab
   Faction: TheLegacy
 
-  MaxHealth: 25000
+  MaxHealth: 24000
   # XpFactor: 2
   XpFactor: 10
 
@@ -1996,7 +1996,7 @@
   MeshDead: Enemies/Drones/PolarisDrone02DestroyedPrefab
   Faction: Pirates
 
-  MaxHealth: 10000
+  MaxHealth: 9000
   # XpFactor: 2
   XpFactor: 10
 
@@ -2011,7 +2011,7 @@
   MeshDead: Enemies/Drones/PolarisDrone04DestroyedPrefab
   Faction: Pirates
 
-  MaxHealth: 10000
+  MaxHealth: 9000
   # XpFactor: 2
   XpFactor: 10
 
@@ -2033,7 +2033,7 @@
 
   Prefab: FarDrone
   DroneType: FarDrone
-  #MaxHealth: 1500
+  #MaxHealth: 1000
   #ModelType: Custom
   #Prefab: Drone
   #AvatarController: Custom
@@ -2428,7 +2428,7 @@
   HeadTransform: head
 
   # General entity properties
-  MaxHealth: 600
+  MaxHealth: 500
   XpFactor: 2
   HandItem: MeleeSpinosaurus
   RotateToGround: true
@@ -2471,7 +2471,7 @@
   # Faction: Alien
 
   # # General entity properties
-  # MaxHealth: 1500
+  # MaxHealth: 1400
   # # XpFactor: 1.5
   # XpFactor: 10.5
   # # RightHandJointName: R_Hand_bone1
@@ -2516,7 +2516,7 @@
 
   # Prefab: AlienLarge
 
-  # MaxHealth: 1700
+  # MaxHealth: 1600
   # XpFactor: 11.7
 
   # # Sound settings
@@ -2559,7 +2559,7 @@
   Faction: Predator
 
   # General entity properties
-  MaxHealth: 1200
+  MaxHealth: 1100
   # XpFactor: 1.2
   XpFactor: 2.0
   HandItem: MeleePlantMonster
@@ -2601,7 +2601,7 @@
   HeadTransform: Head
 
   # General entity properties
-  MaxHealth: 1200
+  MaxHealth: 1100
   # XpFactor: 1.5
   XpFactor: 2.0
   HandItem: MeleeCaveWorm
@@ -2646,7 +2646,7 @@
 
   Prefab: AlienLarge
 
-  MaxHealth: 2000
+  MaxHealth: 1900
   XpFactor: 3.5
   HandItem: MeleeWoodWalker
 
@@ -2691,7 +2691,7 @@
   Faction: Kriel
 
   ViewAngle: 180
-  MaxHealth: 750
+  MaxHealth: 700
   # XpFactor: 1.2
   XpFactor: 3.5
   HandItem: MeleeHexapod
@@ -2776,7 +2776,7 @@
   Faction: Zirax
 
   # General entity properties
-  MaxHealth: 500
+  MaxHealth: 400
   XpFactor: 2.5
   ItemsOnEnterGame: minigunTurretRobot
   RightHandJointName: Gunjoint
@@ -2833,7 +2833,7 @@
 
   # General entity properties
   ViewAngle: 120
-  MaxHealth: 5000
+  MaxHealth: 4000
   # XpFactor: 1
   XpFactor: 15
   HandItem: MeleeArmoredGolem
@@ -2885,7 +2885,7 @@
 
   # General entity properties
   ViewAngle: 120
-  MaxHealth: 7500
+  MaxHealth: 7000
   XpFactor: 20
   HandItem: MeleeArmoredGolem
   ItemsOnEnterGame: AssaultMechWeapon
@@ -3716,8 +3716,8 @@
     ViewAngle: 200      # view angle of the animal (vision cone from the head)
   }
 # alert sensor parameters, used by behavior selectors
-# !! distance based alerts will add 0 alert at max distance, max alert at 0 distance - linear (50% alert at 50% distance))!!
-  {    Child AlertSensor
+# distance based alerts will add 0 alert at max distance, max alert at 0 distance - linear (50% alert at 50% distance))
+  { Child AlertSensor
     AlertLevel1: 20, param1: 0          # Alert level, max alert value, alert drop wait
     AlertLevel2: 80, param1: 5
     AlertLevel3: 100, param1: 15
@@ -3806,7 +3806,7 @@
   }
 
   { Child AlertSensor   # alert sensor parameters, used by behavior selectors
-    # !! distance based alerts will add 0 alert at max distance, max alert at 0 distance - linear (50% alert at 50% distance))!!
+    # distance based alerts will add 0 alert at max distance, max alert at 0 distance - linear (50% alert at 50% distance))
   AlertLevel1: 20, param1: 0          # Alert level, max alert value, alert drop wait
   AlertLevel2: 80, param1: 5
   AlertLevel3: 100, param1: 15
@@ -4976,8 +4976,8 @@
     FearPropagationDamageMultiplier: 1.0 # fear from damage propagation to group members
   }
 
-  {    Child AlertSensor   # alert sensor parameters, used by behavior selectors
-    # !! distance based alerts will add 0 alert at max distance, max alert at 0 distance - linear (50% alert at 50% distance))!!
+  { Child AlertSensor   # alert sensor parameters, used by behavior selectors
+    # distance based alerts will add 0 alert at max distance, max alert at 0 distance - linear (50% alert at 50% distance))
     AlertLevel1: 20, param1: 0          # Alert level, max alert value, alert drop wait
     AlertLevel2: 80, param1: 5            #  - max alert value for alert level - this level will be from last alert level max value to this alert level max value (0-20, 21-80...
     AlertLevel3: 100, param1: 15        #  - alert drop wait - when alert level is higher as the min value for the current level (80-100) (example - alert 85) and the alert drops to the min value(80), it will not drop to lower alert level for "alert drop wait" seconds
@@ -6123,17 +6123,17 @@
       MeleeAttackDistance: 2.0
   }
 
-  {    Child VisionSensor
+  { Child VisionSensor
     VisibleDistance: 50
     ViewAngle: 360
   }
 
-  {    Child TargetSensor
+  { Child TargetSensor
     AttackableTypes: "Player, PlayerBike, Animal"
     TargetableTypes: "Player, PlayerBike, Animal, HV, SV, CV"
   }
 
-  {    Child AlertSensor
+  { Child AlertSensor
     AlertLevel1: 15, param1: 0
     AlertLevel2: 50, param1: 2
     AlertLevel3: 80, param1: 20
@@ -10313,17 +10313,17 @@
     FireWeaponDurationMultiplier: 0.3
   }
 
-  {    Child VisionSensor
+  { Child VisionSensor
     VisibleDistance: 120
     ViewAngle: 180
     VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {    Child TargetSensor
+  { Child TargetSensor
     AttackableTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {    Child AlertSensor
+  { Child AlertSensor
     AlertLevel1: 10, param1: 0
     AlertLevel2: 40, param1: 2
     AlertLevel3: 60, param1: 50
@@ -10480,17 +10480,17 @@
     FireWeaponDurationMultiplier: 0.3
   }
 
-  {    Child VisionSensor
+  { Child VisionSensor
     VisibleDistance: 120
     ViewAngle: 180
     VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {    Child TargetSensor
+  { Child TargetSensor
     AttackableTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {    Child AlertSensor
+  { Child AlertSensor
     AlertLevel1: 10, param1: 0
     AlertLevel2: 40, param1: 2
     AlertLevel3: 60, param1: 50
@@ -10647,17 +10647,17 @@
     FireWeaponDurationMultiplier: 0.3
   }
 
-  {    Child VisionSensor
+  { Child VisionSensor
     VisibleDistance: 120
     ViewAngle: 180
     VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {    Child TargetSensor
+  { Child TargetSensor
     AttackableTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {    Child AlertSensor
+  { Child AlertSensor
     AlertLevel1: 10, param1: 0
     AlertLevel2: 40, param1: 2
     AlertLevel3: 60, param1: 50
@@ -10776,17 +10776,17 @@
     FireWeaponDurationMultiplier: 0.3
   }
 
-  {    Child VisionSensor
+  { Child VisionSensor
     VisibleDistance: 120
     ViewAngle: 180
     VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {    Child TargetSensor
+  { Child TargetSensor
     AttackableTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {    Child AlertSensor
+  { Child AlertSensor
     AlertLevel1: 10, param1: 0
     AlertLevel2: 40, param1: 2
     AlertLevel3: 60, param1: 50
@@ -10905,17 +10905,17 @@
     FireWeaponDurationMultiplier: 0.3
   }
 
-  {    Child VisionSensor
+  { Child VisionSensor
     VisibleDistance: 120
     ViewAngle: 180
     VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {    Child TargetSensor
+  { Child TargetSensor
     AttackableTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {    Child AlertSensor
+  { Child AlertSensor
     AlertLevel1: 10, param1: 0
     AlertLevel2: 40, param1: 2
     AlertLevel3: 60, param1: 50
@@ -11034,17 +11034,17 @@
     FireWeaponDurationMultiplier: 0.3
   }
 
-  {    Child VisionSensor
+  { Child VisionSensor
     VisibleDistance: 120
     ViewAngle: 180
     VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {    Child TargetSensor
+  { Child TargetSensor
     AttackableTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {    Child AlertSensor
+  { Child AlertSensor
     AlertLevel1: 10, param1: 0
     AlertLevel2: 40, param1: 2
     AlertLevel3: 60, param1: 50
@@ -11163,17 +11163,17 @@
     FireWeaponDurationMultiplier: 0.3
   }
 
-  {    Child VisionSensor
+  { Child VisionSensor
     VisibleDistance: 120
     ViewAngle: 180
     VisibleTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {    Child TargetSensor
+  { Child TargetSensor
     AttackableTypes: "Player,HV,SV,CV,PlayerBike"
   }
 
-  {    Child AlertSensor
+  { Child AlertSensor
     AlertLevel1: 10, param1: 0
     AlertLevel2: 40, param1: 2
     AlertLevel3: 60, param1: 50

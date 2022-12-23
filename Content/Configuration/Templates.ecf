@@ -358,7 +358,7 @@
   CraftTime: 5
   Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
   { Child Inputs
-    PromethiumPellets: 10
+    PromethiumPellets: 25
     HydrogenBottle: 10
   }
 }
@@ -369,9 +369,8 @@
   Target: "AdvC"
   { Child Inputs
     PromethiumPellets: 50
-    EnergyCellHydrogen: 50
     HydrogenBottle: 20
-    SteelPlate: 1
+	SteelPlate: 1
   }
 }
 
@@ -465,11 +464,11 @@
 }
 
 { Template Name: TitanPlates
-  OutputCount: 1
+  OutputCount: 10
   CraftTime: 5
   Target: "BaseC,LargeC,AdvC"
   { Child Inputs
-    TitanRods: 4
+    TitanRods: 5
   }
 }
 
@@ -1747,11 +1746,6 @@
   CraftTime: 50 #C2 12
   Target:
   { Child Inputs
-    CapacitorComponent: 5
-    TitanPlates: 20
-    Motor: 4
-    FluxCoil: 5
-    AutoMinerCore: 1
   }
 }
 
@@ -1759,14 +1753,6 @@
   CraftTime: 100 #D1 15
   Target:
   { Child Inputs
-    CapacitorComponent: 10
-    TitanPlates: 20
-    Motor: 4
-    FluxCoil: 5
-    ZascosiumAlloy: 25
-    PowerCoil: 5
-    LaserKit: 1
-    # AutoMinerCore: 1
   }
 }
 
@@ -1774,14 +1760,6 @@
   CraftTime: 150 #D1 20
   Target:
   { Child Inputs
-    TitanPlates: 20
-    Motor: 4
-    FluxCoil: 5
-    CapacitorComponent: 15
-    ZascosiumAlloy: 75
-    PowerCoil: 10
-    LaserKit: 2
-    # AutoMinerCore: 1
   }
 }
 
@@ -3270,13 +3248,14 @@
 { Template Name: HWSElementalMultitool
   CraftTime: 15 #C2 12
   Target: "AdvC"
+  DeconOverride: Continue
   { Child Inputs
-    HWSElementAquaCrystal: 1
-    HWSElementTerraCrystal: 1
-    HWSElementPyroCrystal: 1
-    HWSElementLuxCrystal: 1
-    HWSElementNoxCrystal: 1
-    HWSElementStrangeletRefined: 1
+    HWSElementAquaCrystal: 2
+    HWSElementTerraCrystal: 2
+    HWSElementPyroCrystal: 2
+    HWSElementLuxCrystal: 2
+    HWSElementNoxCrystal: 2
+    HWSElementStrangeletRefined: 2
   }
 }
 # ===============
@@ -4726,7 +4705,7 @@
  # =======================
 { Template Name: PowerBar
   DeconOverride: Stop
-  CraftTime: 8
+  CraftTime: 3
   Target: "FoodP,SurvC,SmallC,HoverC,BaseC,SuitC"
   { Child Inputs
     PlantProtein: 2
@@ -5485,7 +5464,7 @@
 { Template Name: SmallOptronicBridge
   BaseItem: true
   DeconOverride: Stop
-  CraftTime: 600
+  CraftTime: 300
   Target: "AdvC"
   { Child Inputs
     GoldIngot: 25
@@ -5496,7 +5475,7 @@
 { Template Name: SmallOptronicMatrix
   DeconOverride: Stop
   BaseItem: true
-  CraftTime: 900
+  CraftTime: 450
   Target: "AdvC"
   { Child Inputs
     GoldIngot: 30
@@ -5507,7 +5486,7 @@
 { Template Name: LargeOptronicBridge
   BaseItem: true
   DeconOverride: Stop
-  CraftTime: 600
+  CraftTime: 300
   Target: "AdvC"
   { Child Inputs
     GoldIngot: 50
@@ -5519,7 +5498,7 @@
 { Template Name: LargeOptronicMatrix
   DeconOverride: Stop
   BaseItem: true
-  CraftTime: 900
+  CraftTime: 450
   Target: "AdvC"
   { Child Inputs
     GoldIngot: 75
@@ -5546,7 +5525,7 @@
   }
 }
 { Template Name: ConstructorSurvival
-  CraftTime: 45
+  CraftTime: 20
   Target: "SuitC,SurvC"
   { Child Inputs
     IronOre: 3
@@ -5965,7 +5944,7 @@
 }
 
 { Template Name: HWSElementAquaCrystal
-  CraftTime: 600
+  CraftTime: 30
   OutputCount: 1
   BaseItem: true
   Target: "LargeC, AdvC"
@@ -5977,7 +5956,7 @@
 }
 
 { Template Name: HWSElementTerraCrystal
-  CraftTime: 600
+  CraftTime: 30
   OutputCount: 1
   BaseItem: true
   Target: "LargeC, AdvC"
@@ -5989,7 +5968,7 @@
 }
 
 { Template Name: HWSElementPyroCrystal
-  CraftTime: 600
+  CraftTime: 30
   OutputCount: 1
   BaseItem: true
   Target: "LargeC, AdvC"
@@ -6001,7 +5980,7 @@
 }
 
 { Template Name: HWSElementLuxCrystal
-  CraftTime: 600
+  CraftTime: 30
   OutputCount: 1
   BaseItem: true
   Target: "LargeC, AdvC"
@@ -6013,7 +5992,7 @@
 }
 
 { Template Name: HWSElementNoxCrystal
-  CraftTime: 600
+  CraftTime: 30
   OutputCount: 1
   BaseItem: true
   Target: "LargeC, AdvC"
@@ -6179,7 +6158,7 @@
 { Template Name: HWSAquaTurretBABlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 4
   }
@@ -6188,7 +6167,7 @@
 { Template Name: HWSTerraTurretBABlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementTerraCrystal: 4
   }
@@ -6197,7 +6176,7 @@
 { Template Name: HWSPyroTurretBABlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementPyroCrystal: 4
   }
@@ -6206,7 +6185,7 @@
 { Template Name: HWSObsidianTurretBABlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 4
     HWSElementTerraCrystal: 4
@@ -6217,7 +6196,7 @@
 { Template Name: HWSLuxTurretBABlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementLuxCrystal: 4
   }
@@ -6226,7 +6205,7 @@
 { Template Name: HWSNoxTurretBABlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementNoxCrystal: 4
   }
@@ -6235,7 +6214,7 @@
 { Template Name: HWSStrangeletTurretBABlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementStrangeletRefined: 4
   }
@@ -6244,7 +6223,7 @@
 { Template Name: HWSAquaTurretCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 4
   }
@@ -6253,7 +6232,7 @@
 { Template Name: HWSTerraTurretCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementTerraCrystal: 4
   }
@@ -6262,7 +6241,7 @@
 { Template Name: HWSPyroTurretCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementPyroCrystal: 4
   }
@@ -6271,7 +6250,7 @@
 { Template Name: HWSObsidianTurretCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 4
     HWSElementTerraCrystal: 4
@@ -6282,7 +6261,7 @@
 { Template Name: HWSLuxTurretCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementLuxCrystal: 4
   }
@@ -6291,7 +6270,7 @@
 { Template Name: HWSNoxTurretCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementNoxCrystal: 4
   }
@@ -6300,7 +6279,7 @@
 { Template Name: HWSStrangeletTurretCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementStrangeletRefined: 4
   }
@@ -6309,7 +6288,7 @@
 { Template Name: HWSAquaTurretHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 2
   }
@@ -6318,7 +6297,7 @@
 { Template Name: HWSTerraTurretHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementTerraCrystal: 2
   }
@@ -6327,7 +6306,7 @@
 { Template Name: HWSPyroTurretHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementPyroCrystal: 2
   }
@@ -6336,7 +6315,7 @@
 { Template Name: HWSObsidianTurretHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 2
     HWSElementTerraCrystal: 2
@@ -6347,7 +6326,7 @@
 { Template Name: HWSLuxTurretHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementLuxCrystal: 2
   }
@@ -6356,7 +6335,7 @@
 { Template Name: HWSNoxTurretHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementNoxCrystal: 2
   }
@@ -6365,7 +6344,7 @@
 { Template Name: HWSStrangeletTurretHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementStrangeletRefined: 2
   }
@@ -6374,7 +6353,7 @@
 { Template Name: HWSAquaTurretSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 2
   }
@@ -6383,7 +6362,7 @@
 { Template Name: HWSTerraTurretSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementTerraCrystal: 2
   }
@@ -6392,7 +6371,7 @@
 { Template Name: HWSPyroTurretSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementPyroCrystal: 2
   }
@@ -6401,7 +6380,7 @@
 { Template Name: HWSObsidianTurretSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 2
     HWSElementTerraCrystal: 2
@@ -6412,7 +6391,7 @@
 { Template Name: HWSLuxTurretSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementLuxCrystal: 2
   }
@@ -6421,7 +6400,7 @@
 { Template Name: HWSNoxTurretSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementNoxCrystal: 2
   }
@@ -6430,7 +6409,7 @@
 { Template Name: HWSStrangeletTurretSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementStrangeletRefined: 2
   }
@@ -6440,7 +6419,7 @@
 { Template Name: HWSAquaGunCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 3
   }
@@ -6449,7 +6428,7 @@
 { Template Name: HWSTerraGunCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementTerraCrystal: 3
   }
@@ -6458,7 +6437,7 @@
 { Template Name: HWSPyroGunCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementPyroCrystal: 3
   }
@@ -6467,7 +6446,7 @@
 { Template Name: HWSObsidianGunCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 3
     HWSElementTerraCrystal: 3
@@ -6478,7 +6457,7 @@
 { Template Name: HWSLuxGunCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementLuxCrystal: 3
   }
@@ -6487,7 +6466,7 @@
 { Template Name: HWSNoxGunCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementNoxCrystal: 3
   }
@@ -6496,7 +6475,7 @@
 { Template Name: HWSStrangeletGunCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementStrangeletRefined: 3
   }
@@ -6505,7 +6484,7 @@
 { Template Name: HWSAquaGunHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 1
   }
@@ -6514,7 +6493,7 @@
 { Template Name: HWSTerraGunHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementTerraCrystal: 1
   }
@@ -6523,7 +6502,7 @@
 { Template Name: HWSPyroGunHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementPyroCrystal: 1
   }
@@ -6532,7 +6511,7 @@
 { Template Name: HWSObsidianGunHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 1
     HWSElementTerraCrystal: 1
@@ -6543,7 +6522,7 @@
 { Template Name: HWSLuxGunHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementLuxCrystal: 1
   }
@@ -6552,7 +6531,7 @@
 { Template Name: HWSNoxGunHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementNoxCrystal: 1
   }
@@ -6561,7 +6540,7 @@
 { Template Name: HWSStrangeletGunHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementStrangeletRefined: 1
   }
@@ -6570,7 +6549,7 @@
 { Template Name: HWSAquaGunSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 1
   }
@@ -6579,7 +6558,7 @@
 { Template Name: HWSTerraGunSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementTerraCrystal: 1
   }
@@ -6588,7 +6567,7 @@
 { Template Name: HWSPyroGunSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementPyroCrystal: 1
   }
@@ -6597,7 +6576,7 @@
 { Template Name: HWSObsidianGunSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 1
     HWSElementTerraCrystal: 1
@@ -6608,7 +6587,7 @@
 { Template Name: HWSLuxGunSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementLuxCrystal: 1
   }
@@ -6617,7 +6596,7 @@
 { Template Name: HWSNoxGunSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementNoxCrystal: 1
   }
@@ -6626,7 +6605,7 @@
 { Template Name: HWSStrangeletGunSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementStrangeletRefined: 1
   }
@@ -6637,7 +6616,7 @@
 { Template Name: HWSAquaGun
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 1
   }
@@ -6646,7 +6625,7 @@
 { Template Name: HWSTerraGun
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementTerraCrystal: 1
   }
@@ -6655,7 +6634,7 @@
 { Template Name: HWSPyroGun
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementPyroCrystal: 1
   }
@@ -6664,7 +6643,7 @@
 { Template Name: HWSObsidianGun
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementAquaCrystal: 1
     HWSElementTerraCrystal: 1
@@ -6675,7 +6654,7 @@
 { Template Name: HWSLuxGun
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementLuxCrystal: 1
   }
@@ -6684,7 +6663,7 @@
 { Template Name: HWSNoxGun
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementNoxCrystal: 1
   }
@@ -6693,44 +6672,49 @@
 { Template Name: HWSStrangeletGun
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSElementStrangeletRefined: 1
   }
 }
+# --------------------------------------------------------------------------------------------------- HWS Elemental Ammo
 # ----------------------------------------------------------------------------------------------- HWS Elemental Gun Ammo
 # ----------------------------------------------------------------------------------------------------------------- Aqua
 { Template Name: HWSAquaGunAmmo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaFluid: 1
   }
 }
 # ---------------------------------------------------------------------------------------------------------------- Terra
 { Template Name: HWSTerraGunAmmo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraFluid: 1
   }
 }
 # ----------------------------------------------------------------------------------------------------------------- Pyro
 { Template Name: HWSPyroGunAmmo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroFluid: 1
   }
 }
 # ------------------------------------------------------------------------------------------------------------- Obsidian
 { Template Name: HWSObsidianGunAmmo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaFluid: 1
     HWSElementTerraFluid: 1
@@ -6739,27 +6723,30 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Lux
 { Template Name: HWSLuxGunAmmo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxFluid: 1
   }
 }
 # ------------------------------------------------------------------------------------------------------------------ Nox
 { Template Name: HWSNoxGunAmmo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxFluid: 1
   }
 }
 # ----------------------------------------------------------------------------------------------------------- Strangelet
 { Template Name: HWSStrangeletGunAmmo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 1
   }
@@ -6767,43 +6754,48 @@
 # ----------------------------------------------------------------------------------------- HWS Elemental BA Turret Ammo
 # ----------------------------------------------------------------------------------------------------------------- Aqua
 { Template Name: HWSAquaBAT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementAquaSolid: 1
   }
 }
 { Template Name: HWSAquaBAT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementAquaFluid: 1
   }
 }
 { Template Name: HWSAquaBAT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaFluid: 1
   }
 }
 { Template Name: HWSAquaBAT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaFluid: 5
   }
 }
 { Template Name: HWSAquaBAT5Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementAquaFluid: 1
@@ -6812,43 +6804,48 @@
 }
 # ---------------------------------------------------------------------------------------------------------------- Terra
 { Template Name: HWSTerraBAT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraGas: 1
     HWSElementTerraSolid: 1
   }
 }
 { Template Name: HWSTerraBAT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraGas: 1
     HWSElementTerraFluid: 1
   }
 }
 { Template Name: HWSTerraBAT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraFluid: 1
   }
 }
 { Template Name: HWSTerraBAT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraFluid: 5
   }
 }
 { Template Name: HWSTerraBAT5Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraGas: 1
     HWSElementTerraFluid: 1
@@ -6857,43 +6854,48 @@
 }
 # ----------------------------------------------------------------------------------------------------------------- Pyro
 { Template Name: HWSPyroBAT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroGas: 1
     HWSElementPyroSolid: 1
   }
 }
 { Template Name: HWSPyroBAT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroGas: 1
     HWSElementPyroFluid: 1
   }
 }
 { Template Name: HWSPyroBAT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroFluid: 1
   }
 }
 { Template Name: HWSPyroBAT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroFluid: 5
   }
 }
 { Template Name: HWSPyroBAT5Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroGas: 1
     HWSElementPyroFluid: 1
@@ -6902,9 +6904,10 @@
 }
 # ------------------------------------------------------------------------------------------------------------- Obsidian
 { Template Name: HWSObsidianBAT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -6912,9 +6915,10 @@
   }
 }
 { Template Name: HWSObsidianBAT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -6922,9 +6926,10 @@
   }
 }
 { Template Name: HWSObsidianBAT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -6932,9 +6937,10 @@
   }
 }
 { Template Name: HWSObsidianBAT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -6942,9 +6948,10 @@
   }
 }
 { Template Name: HWSObsidianBAT5Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -6953,43 +6960,48 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Lux
 { Template Name: HWSLuxBAT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxGas: 1
     HWSElementLuxSolid: 1
   }
 }
 { Template Name: HWSLuxBAT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxGas: 1
     HWSElementLuxFluid: 1
   }
 }
 { Template Name: HWSLuxBAT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxFluid: 1
   }
 }
 { Template Name: HWSLuxBAT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxFluid: 5
   }
 }
 { Template Name: HWSLuxBAT5Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxGas: 1
     HWSElementLuxFluid: 1
@@ -6998,43 +7010,48 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Nox
 { Template Name: HWSNoxBAT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxGas: 1
     HWSElementNoxSolid: 1
   }
 }
 { Template Name: HWSNoxBAT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxGas: 1
     HWSElementNoxFluid: 1
   }
 }
 { Template Name: HWSNoxBAT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxFluid: 1
   }
 }
 { Template Name: HWSNoxBAT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxFluid: 5
   }
 }
 { Template Name: HWSNoxBAT5Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxGas: 1
     HWSElementNoxFluid: 1
@@ -7043,41 +7060,46 @@
 }
 # ----------------------------------------------------------------------------------------------------------- Strangelet
 { Template Name: HWSStrangeletBAT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 5
   }
 }
 { Template Name: HWSStrangeletBAT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 4
   }
 }
 { Template Name: HWSStrangeletBAT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 2
   }
 }
 { Template Name: HWSStrangeletBAT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 3
   }
 }
 { Template Name: HWSStrangeletBAT5Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 10
   }
@@ -7085,114 +7107,127 @@
 # ----------------------------------------------------------------------------------------- HWS Elemental CV Turret Ammo
 # ----------------------------------------------------------------------------------------------------------------- Aqua
 { Template Name: HWSAquaCVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementAquaSolid: 1
   }
 }
 { Template Name: HWSAquaCVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementAquaFluid: 1
   }
 }
 { Template Name: HWSAquaCVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaFluid: 1
   }
 }
 { Template Name: HWSAquaCVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaFluid: 5
   }
 }
 # ---------------------------------------------------------------------------------------------------------------- Terra
 { Template Name: HWSTerraCVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraGas: 1
     HWSElementTerraSolid: 1
   }
 }
 { Template Name: HWSTerraCVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraGas: 1
     HWSElementTerraFluid: 1
   }
 }
 { Template Name: HWSTerraCVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraFluid: 1
   }
 }
 { Template Name: HWSTerraCVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraFluid: 5
   }
 }
 # ----------------------------------------------------------------------------------------------------------------- Pyro
 { Template Name: HWSPyroCVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroGas: 1
     HWSElementPyroSolid: 1
   }
 }
 { Template Name: HWSPyroCVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroGas: 1
     HWSElementPyroFluid: 1
   }
 }
 { Template Name: HWSPyroCVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroFluid: 1
   }
 }
 { Template Name: HWSPyroCVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroFluid: 5
   }
 }
 # ------------------------------------------------------------------------------------------------------------- Obsidian
 { Template Name: HWSObsidianCVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -7200,9 +7235,10 @@
   }
 }
 { Template Name: HWSObsidianCVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -7210,9 +7246,10 @@
   }
 }
 { Template Name: HWSObsidianCVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -7220,9 +7257,10 @@
   }
 }
 { Template Name: HWSObsidianCVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -7231,103 +7269,115 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Lux
 { Template Name: HWSLuxCVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxGas: 1
     HWSElementLuxSolid: 1
   }
 }
 { Template Name: HWSLuxCVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxGas: 1
     HWSElementLuxFluid: 1
   }
 }
 { Template Name: HWSLuxCVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxFluid: 1
   }
 }
 { Template Name: HWSLuxCVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxFluid: 5
   }
 }
 # ------------------------------------------------------------------------------------------------------------------ Nox
 { Template Name: HWSNoxCVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxGas: 1
     HWSElementNoxSolid: 1
   }
 }
 { Template Name: HWSNoxCVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxGas: 1
     HWSElementNoxFluid: 1
   }
 }
 { Template Name: HWSNoxCVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxFluid: 1
   }
 }
 { Template Name: HWSNoxCVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxFluid: 5
   }
 }
 # ----------------------------------------------------------------------------------------------------------- Strangelet
 { Template Name: HWSStrangeletCVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 5
   }
 }
 { Template Name: HWSStrangeletCVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 4
   }
 }
 { Template Name: HWSStrangeletCVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 2
   }
 }
 { Template Name: HWSStrangeletCVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 3
   }
@@ -7335,114 +7385,127 @@
 # ----------------------------------------------------------------------------------------- HWS Elemental HV Turret Ammo
 # ----------------------------------------------------------------------------------------------------------------- Aqua
 { Template Name: HWSAquaHVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementAquaSolid: 1
   }
 }
 { Template Name: HWSAquaHVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementAquaFluid: 1
   }
 }
 { Template Name: HWSAquaHVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaFluid: 1
   }
 }
 { Template Name: HWSAquaHVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaFluid: 5
   }
 }
 # ---------------------------------------------------------------------------------------------------------------- Terra
 { Template Name: HWSTerraHVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraGas: 1
     HWSElementTerraSolid: 1
   }
 }
 { Template Name: HWSTerraHVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraGas: 1
     HWSElementTerraFluid: 1
   }
 }
 { Template Name: HWSTerraHVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraFluid: 1
   }
 }
 { Template Name: HWSTerraHVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraFluid: 5
   }
 }
 # ----------------------------------------------------------------------------------------------------------------- Pyro
 { Template Name: HWSPyroHVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroGas: 1
     HWSElementPyroSolid: 1
   }
 }
 { Template Name: HWSPyroHVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroGas: 1
     HWSElementPyroFluid: 1
   }
 }
 { Template Name: HWSPyroHVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroFluid: 1
   }
 }
 { Template Name: HWSPyroHVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroFluid: 5
   }
 }
 # ------------------------------------------------------------------------------------------------------------- Obsidian
 { Template Name: HWSObsidianHVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -7450,9 +7513,10 @@
   }
 }
 { Template Name: HWSObsidianHVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -7460,9 +7524,10 @@
   }
 }
 { Template Name: HWSObsidianHVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -7470,9 +7535,10 @@
   }
 }
 { Template Name: HWSObsidianHVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -7481,103 +7547,115 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Lux
 { Template Name: HWSLuxHVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxGas: 1
     HWSElementLuxSolid: 1
   }
 }
 { Template Name: HWSLuxHVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxGas: 1
     HWSElementLuxFluid: 1
   }
 }
 { Template Name: HWSLuxHVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxFluid: 1
   }
 }
 { Template Name: HWSLuxHVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxFluid: 5
   }
 }
 # ------------------------------------------------------------------------------------------------------------------ Nox
 { Template Name: HWSNoxHVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxGas: 1
     HWSElementNoxSolid: 1
   }
 }
 { Template Name: HWSNoxHVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxGas: 1
     HWSElementNoxFluid: 1
   }
 }
 { Template Name: HWSNoxHVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxFluid: 1
   }
 }
 { Template Name: HWSNoxHVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxFluid: 5
   }
 }
 # ----------------------------------------------------------------------------------------------------------- Strangelet
 { Template Name: HWSStrangeletHVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 5
   }
 }
 { Template Name: HWSStrangeletHVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 4
   }
 }
 { Template Name: HWSStrangeletHVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 2
   }
 }
 { Template Name: HWSStrangeletHVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 3
   }
@@ -7585,114 +7663,127 @@
 # ----------------------------------------------------------------------------------------- HWS Elemental SV Turret Ammo
 # ----------------------------------------------------------------------------------------------------------------- Aqua
 { Template Name: HWSAquaSVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementAquaSolid: 1
   }
 }
 { Template Name: HWSAquaSVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementAquaFluid: 1
   }
 }
 { Template Name: HWSAquaSVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaFluid: 1
   }
 }
 { Template Name: HWSAquaSVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaFluid: 5
   }
 }
 # ---------------------------------------------------------------------------------------------------------------- Terra
 { Template Name: HWSTerraSVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraGas: 1
     HWSElementTerraSolid: 1
   }
 }
 { Template Name: HWSTerraSVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraGas: 1
     HWSElementTerraFluid: 1
   }
 }
 { Template Name: HWSTerraSVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraFluid: 1
   }
 }
 { Template Name: HWSTerraSVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementTerraFluid: 5
   }
 }
 # ----------------------------------------------------------------------------------------------------------------- Pyro
 { Template Name: HWSPyroSVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroGas: 1
     HWSElementPyroSolid: 1
   }
 }
 { Template Name: HWSPyroSVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroGas: 1
     HWSElementPyroFluid: 1
   }
 }
 { Template Name: HWSPyroSVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroFluid: 1
   }
 }
 { Template Name: HWSPyroSVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementPyroFluid: 5
   }
 }
 # ------------------------------------------------------------------------------------------------------------- Obsidian
 { Template Name: HWSObsidianSVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -7700,9 +7791,10 @@
   }
 }
 { Template Name: HWSObsidianSVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -7710,9 +7802,10 @@
   }
 }
 { Template Name: HWSObsidianSVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -7720,9 +7813,10 @@
   }
 }
 { Template Name: HWSObsidianSVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementAquaGas: 1
     HWSElementTerraSolid: 1
@@ -7731,103 +7825,115 @@
 }
 # ------------------------------------------------------------------------------------------------------------------ Lux
 { Template Name: HWSLuxSVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxGas: 1
     HWSElementLuxSolid: 1
   }
 }
 { Template Name: HWSLuxSVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxGas: 1
     HWSElementLuxFluid: 1
   }
 }
 { Template Name: HWSLuxSVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxFluid: 1
   }
 }
 { Template Name: HWSLuxSVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementLuxFluid: 5
   }
 }
 # ------------------------------------------------------------------------------------------------------------------ Nox
 { Template Name: HWSNoxSVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxGas: 1
     HWSElementNoxSolid: 1
   }
 }
 { Template Name: HWSNoxSVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxGas: 1
     HWSElementNoxFluid: 1
   }
 }
 { Template Name: HWSNoxSVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxFluid: 1
   }
 }
 { Template Name: HWSNoxSVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementNoxFluid: 5
   }
 }
 # ----------------------------------------------------------------------------------------------------------- Strangelet
 { Template Name: HWSStrangeletSVT1Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 5
   }
 }
 { Template Name: HWSStrangeletSVT2Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 4
   }
 }
 { Template Name: HWSStrangeletSVT3Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 2
   }
 }
 { Template Name: HWSStrangeletSVT4Ammo
+  DeconOverride: Continue
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: ""
   { Child Inputs
     HWSElementStrangelet: 3
   }
@@ -7838,7 +7944,7 @@
 { Template Name: HWSChaosTurretBABlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSTantal: 4
     HWSTungstenIngot: 4
@@ -7854,7 +7960,7 @@
 { Template Name: HWSChaosTurretCVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSTantal: 4
     HWSTungstenIngot: 4
@@ -7870,7 +7976,7 @@
 { Template Name: HWSChaosTurretHVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSTantal: 2
     HWSTungstenIngot: 2
@@ -7886,7 +7992,7 @@
 { Template Name: HWSChaosTurretSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSTantal: 2
     HWSTungstenIngot: 2
@@ -7904,7 +8010,7 @@
 { Template Name: HWSChaosGunSVBlocks
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSTantal: 1
     HWSTungstenIngot: 1
@@ -7921,7 +8027,7 @@
 { Template Name: HWSChaosShieldGeneratorBlocksSmall
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSTantal: 2
     HWSTungstenIngot: 2
@@ -7937,7 +8043,7 @@
 { Template Name: HWSChaosShieldGeneratorBlocksLarge
   CraftTime: 40
   OutputCount: 1
-  Target: "AdvC"
+  Target: "LargeC,AdvC"
   { Child Inputs
     HWSTantal: 4
     HWSTungstenIngot: 4
@@ -8098,6 +8204,7 @@
 
 # ------------------------------------------------------------------------------------------------------ HWS Lift Blocks
 { Template Name: HWSLiftBlocks
+  DeconOverride: Continue
   CraftTime: 15
   OutputCount: 1
   Target: "BaseC,LargeC,AdvC"

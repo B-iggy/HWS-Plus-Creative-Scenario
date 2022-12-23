@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 735304855
+CRC: 4244330815
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0a445214f85d1645741c34d2529fd1db
+    Hash: 90cc20448034275f8cd6cfd6f09cd498
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 0af95a41c01f22ffae87183b936a0a38
+    Hash: 5db373c738ed94abbd3af480b015ebca
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -163,4 +163,4 @@ Assets:
 - Assets/hws_eclassmodels/HWSElementals/HWSAquaElementalMelee_dedi.prefab
 - Assets/hws_eclassmodels/Textures/HWSNebula2.mat
 Dependencies:
-- C:/Program Files (x86)/Steam/steamapps/common/Empyrion - Galactic Survival/BlockModelsAndSuitPropsModding/Bundles/hws_decalmodels
+- E:/Games/Steam/steamapps/common/Empyrion - Galactic Survival/BlockModelsAndSuitPropsModding/Bundles/hws_decalmodels

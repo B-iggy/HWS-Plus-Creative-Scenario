@@ -6,38 +6,98 @@
   Epsilon: 0
   Ghyst: 0
   Serdu: 0
-  Abyssal: 8500
-  Talon: 16500
-  Polaris: 16500
-  Pirates: 12020
+  Abyssal: 0
+  Talon: 12500
+  Polaris: 13500
+  Pirates: 6500
   Kriel: 0
   Trader: 16500
   Colonists: 15000
-  Tesch: 13500
+  Tesch: 0
+  Farr: 16500
+  Wastelanders: 18001
+  ARC: 12001
+  EGS: 15000
+}
+{ Reputation Name: "Engineer:1"
+  Zirax: 0
+  Xenu: 0
+  Rados: 0
+  Epsilon: 0
+  Ghyst: 0
+  Serdu: 0
+  Abyssal: 0
+  Talon: 12500
+  Polaris: 13500
+  Pirates: 6500
+  Kriel: 0
+  Trader: 16500
+  Colonists: 15000
+  Tesch: 0
+  Farr: 18001
+  Wastelanders: 12001
+  ARC: 12001
+  EGS: 15000
+}
+{ Reputation Name: "Fighter:2"
+  Zirax: 0
+  Xenu: 0
+  Rados: 0
+  Epsilon: 0
+  Ghyst: 0
+  Serdu: 0
+  Abyssal: 0
+  Talon: 12500
+  Polaris: 13500
+  Pirates: 18001
+  Kriel: 0
+  Trader: 16500
+  Colonists: 15000
+  Tesch: 0
   Farr: 16500
   Wastelanders: 12001
   ARC: 12001
   EGS: 15000
+}
+{ Reputation Name: "Dealer:3"
+  Zirax: 0
+  Xenu: 0
+  Rados: 0
+  Epsilon: 0
+  Ghyst: 0
+  Serdu: 0
+  Abyssal: 0
+  Talon: 12500
+  Polaris: 13500
+  Pirates: 6500
+  Kriel: 0
+  Trader: 18001
+  Colonists: 15000
+  Tesch: 0
+  Farr: 16500
+  Wastelanders: 12001
+  ARC: 12001
+  EGS: 18001
 }
 
 # Matrix defining reputation points that you get when you do actions to this faction
 # Example: if you killed a member of Zirax your reputation is decreased by 300 points
 # => define this matrix before defining any trigger or threshold levels and rivalry values
 { Reputation Name: "Action.Reputation"
-  Order:                   "Zirax,  Talon, Polaris, Pirates, Kriel, Trader, Colonists,  Xenu,  Rados, Epsilon, Ghyst,   Serdu, Abyssal,  Tesch,   Farr,  Wastelanders,    ARC"
-  AttackedMember:          " -0.12, -0.12,  -0.12,   -0.12,  -0.12,  -0.12,     -0.12, -0.12,  -0.12,   -0.12, -0.12,   -0.12,   -0.12,  -0.12,  -0.12,         -0.12,  -0.12" # value is multiplied with damage points || Drops to NeutralMin
-  KilledMember:            " -300,  -300,    -300,    -300,   -300,   -300,      -300, -300,    -300,    -300,  -300,    -300,    -300,   -300,   -300,          -300,   -300" # NOT multiplied with damage points || Drops to UnfriendlyMax
-  DestroyBlock:            "  -30,   -30,     -30,     -30,    -30,    -30,       -30,  -30,     -30,     -30,   -30,     -30,     -30,    -30,    -30,           -30,    -30"
-  ShieldAttacked:          "  -30,   -30,     -30,     -30,    -30,    -30,       -30,  -30,     -30,     -30,   -30,     -30,     -30,    -30,    -30,           -30,    -30"
-  OpenContainer:           " -200,  -200,    -200,    -200,   -200,   -200,      -200, -200,    -200,    -200,  -200,    -200,    -200,   -200,   -200,          -200,   -200"
-  AttackedPrey:            "  0.1,  -0.1,       0,       0,      0,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,             0,      0" # multiplied with damage points
-  AttackedPredator:        "  0.1,   0.3,     0.1,     0.1,    0.1,    0.1,       0.1,  0.1,     0.1,     0.1,   0.1,     0.1,     0.1,    0.1,    0.1,           0.1,    0.1" # multiplied with damage points
-  StructSpawnedInTerritory:" -100,  -100,    -100,    -100,   -100,   -100,      -100, -100,    -100,    -100,  -100,    -100,    -100,   -100,   -100,          -100,   -100"
-  StructStayInTerritory:   "  -25,   -50,     -25,     -50,    -25,    -25,       -25,  -25,     -25,     -25,   -25,     -25,     -25,    -25,    -25,           -25,    -25" # every 5min realtime and only WITH pilot
-  OreMined:                "  -15,    -5,     -30,     -15,    -20,    -20,       -20,  -20,     -20,     -20,   -20,     -20,     -20,    -20,    -20,           -20,    -20" # about every 10 ores
-  PlantHarvest:            "    0,     0,       0,       0,      0,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,             0,      0"
-  PlantDestroy:            "    0,     0,       0,       0,      0,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,             0,      0"
-  OutsideHostileTerritory: "    0,     0,       0,       0,      0,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,             0,      0"
+  Order:                   "Zirax,  Talon, Polaris, Pirates, Kriel, Trader, Colonists,  Xenu,  Rados, Epsilon, Ghyst,   Serdu, Abyssal,  Tesch,   Farr,  Wastelanders,    ARC,   EGS"
+  AttackedMember:          " -0.12, -0.12,  -0.12,   -0.12,  -0.12,  -0.12,     -0.12, -0.12,  -0.12,   -0.12, -0.12,   -0.12,   -0.12,  -0.12,  -0.12,         -0.12,  -0.12,   0" # value is multiplied with damage points || Drops to NeutralMin
+  KilledMember:            " -300,  -300,    -300,    -300,   -300,   -300,      -300, -300,    -300,    -300,  -300,    -300,    -300,   -300,   -300,          -300,   -300,   0" # NOT multiplied with damage points || Drops to UnfriendlyMax
+  DestroyBlock:            "  -30,   -30,     -30,     -30,    -30,    -30,       -30,  -30,     -30,     -30,   -30,     -30,     -30,    -30,    -30,           -30,    -30,   0"
+  ShieldAttacked:          "  -30,   -30,     -30,     -30,    -30,    -30,       -30,  -30,     -30,     -30,   -30,     -30,     -30,    -30,    -30,           -30,    -30,   0"
+  OpenContainer:           " -200,  -200,    -200,    -200,   -200,   -200,      -200, -200,    -200,    -200,  -200,    -200,    -200,   -200,   -200,          -200,   -200,   0"
+  AttackedPrey:            "  0.1,  -0.1,       0,       0,      0,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,             0,      0,   0" # multiplied with damage points
+  AttackedPredator:        "  0.1,   0.3,     0.1,     0.1,    0.1,    0.1,       0.1,  0.1,     0.1,     0.1,   0.1,     0.1,     0.1,    0.1,    0.1,           0.1,    0.1,   0" # multiplied with damage points
+  StructSpawnedInTerritory:" -100,  -100,    -100,    -100,   -100,   -100,      -100, -100,    -100,    -100,  -100,    -100,    -100,   -100,   -100,          -100,   -100,   0"
+  StructStayInTerritory:   "  -25,   -50,     -25,     -50,    -25,    -25,       -25,  -25,     -25,     -25,   -25,     -25,     -25,    -25,    -25,           -25,    -25,   0" # every 5min realtime and only WITH pilot
+  OreMined:                "  -15,    -5,     -30,     -15,    -20,    -20,       -20,  -20,     -20,     -20,   -20,     -20,     -20,    -20,    -20,           -20,    -20,   0" # about every 10 ores
+  PlantHarvest:            "    0,     0,       0,       0,      0,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,             0,      0,   0"
+  PlantDestroy:            "    0,     0,       0,       0,      0,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,             0,      0,   0"
+  OutsideHostileTerritory: "    0,     0,       0,       0,      0,      0,         0,    0,       0,       0,     0,       0,       0,      0,      0,             0,      0,   0"
 }
 
 # If one of these actions was executed, the reputation level will get set back at least to that value
@@ -46,7 +106,7 @@
 { Reputation Name: "Action.TriggerLevel"
   # AttackedMember:  "NeutralMin"
   KilledMember:    "UnfriendlyMax"
-  DestroyBlock:    "NeutralMin"
+  DestroyBlock:    "UnfriendlyMax"
   ShieldAttacked:  "NeutralMin"
   OpenContainer:   "NeutralMin"
 }
@@ -57,7 +117,7 @@
 { Reputation Name: "Action.ThresholdLevel"
   StructSpawnedInTerritory: "Honored"
   StructStayInTerritory:    "Friendly"
-  OreMined:                 "Friendly"
+  OreMined:                 "Honored"
   PlantHarvest:             "Friendly"
   PlantDestroy:             "Honored"
 }

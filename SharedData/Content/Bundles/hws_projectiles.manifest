@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 126548895
+CRC: 1820441434
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1b170fedcf5b15edbce4e952a5fc6d74
+    Hash: 905c1c9094155c980242242fc48fce81
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 5b77d7d368ee4f2f8942607425b8860a
+    Hash: 61af05b9d9b99498efa7aa0e7e17dc09
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -41,12 +41,12 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/hws_projectiles/HWSTerraBeamTiny.prefab
-- Assets/hws_projectiles/HWSPyroProjectileMedium.prefab
+- Assets/hws_projectiles/HWSPyroBeamMedium.prefab
 - Assets/hws_projectiles/HWSAquaBeamMedium.prefab
 - Assets/hws_projectiles/HWSLuxProjectileMedium.prefab
 - Assets/hws_projectiles/HWSNoxProjectileLarge.prefab
 - Assets/hws_projectiles/HWSLuxBeamSmall.prefab
+- Assets/hws_projectiles/HWSTerraBeamTiny.prefab
 - Assets/hws_projectiles/HWSNoxBeamTiny.prefab
 - Assets/hws_projectiles/HWSTerraBeamLarge.prefab
 - Assets/hws_projectiles/HWSPyroBeamTiny.prefab
@@ -74,10 +74,10 @@ Assets:
 - Assets/hws_projectiles/HWSStrangeletBeamTiny.prefab
 - Assets/hws_projectiles/HWSObsidianProjectileSmall.prefab
 - Assets/hws_projectiles/HWSPyroBeamSmall.prefab
-- Assets/hws_projectiles/HWSLuxProjectileLarge.prefab
-- Assets/hws_projectiles/HWSLuxProjectileSmall.prefab
-- Assets/hws_projectiles/HWSProjectileAllOriginGun.prefab
 - Assets/hws_projectiles/test.prefab
+- Assets/hws_projectiles/HWSLuxProjectileLarge.prefab
+- Assets/hws_projectiles/HWSProjectileAllOriginGun.prefab
+- Assets/hws_projectiles/HWSLuxProjectileSmall.prefab
 - Assets/hws_projectiles/HWSObsidianBeamLarge.prefab
 - Assets/hws_projectiles/HWSStrangeletBeam.prefab
 - Assets/hws_projectiles/HWSTerraBeam.prefab
@@ -104,9 +104,9 @@ Assets:
 - Assets/hws_projectiles/HWSPyroProjectileLarge.prefab
 - Assets/hws_projectiles/HWSAquaBeamLarge.prefab
 - Assets/hws_projectiles/HWSStrangeletProjectileSmall.prefab
-- Assets/hws_projectiles/HWSPyroBeamMedium.prefab
-- Assets/hws_projectiles/HWSNoxProjectileSmall.prefab
 - Assets/hws_projectiles/HWSPyroBeam.prefab
+- Assets/hws_projectiles/HWSNoxProjectileSmall.prefab
 - Assets/hws_projectiles/HWSObsidianProjectileTiny.prefab
 - Assets/hws_projectiles/HWSLuxProjectileTiny.prefab
+- Assets/hws_projectiles/HWSPyroProjectileMedium.prefab
 Dependencies: []

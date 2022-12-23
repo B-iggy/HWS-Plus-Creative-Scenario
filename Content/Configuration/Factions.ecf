@@ -342,7 +342,6 @@
   Unfriendly: true
   ClaimTerritory: true
   Discovery: true
-  AttackNPC: true
 }
 
 { Faction Id: 38, Name: "Terra"
@@ -351,7 +350,6 @@
   Unfriendly: true
   ClaimTerritory: true
   Discovery: true
-  AttackNPC: true
 }
 
 { Faction Id: 39, Name: "Pyro"
@@ -360,7 +358,6 @@
   Unfriendly: true
   ClaimTerritory: true
   Discovery: true
-  AttackNPC: true
 }
 
 { Faction Id: 40, Name: "Obsidian"
@@ -369,7 +366,6 @@
   Unfriendly: true
   ClaimTerritory: true
   Discovery: true
-  AttackNPC: true
 }
 
 { Faction Id: 41, Name: "Lux"
@@ -378,7 +374,6 @@
   Unfriendly: true
   ClaimTerritory: true
   Discovery: true
-  AttackNPC: true
 }
 
 { Faction Id: 42, Name: "Nox"
@@ -387,16 +382,14 @@
   Unfriendly: true
   ClaimTerritory: true
   Discovery: true
-  AttackNPC: true
 }
 
-{ Faction Id: 43, Name: "Strangelet"
-  Abbrev: Strangelet
+{ Faction Id: 43, Name: "Chaos"
+  Abbrev: Chaos
   Color: "0.9, 0.1, 0.9"
   Unfriendly: true
   ClaimTerritory: true
   Discovery: true
-  AttackNPC: true
 }
 
 # ------------------------------------------------------------------------------------------------------- HWS MP Faction

@@ -1172,7 +1172,7 @@
 }
 # Adds about 75 health
 { StatusEffect Name: MedikitApplied
-  Duration: 5.1
+  Duration: 5
   Name: MedikitApplied
   Type: healthup
   Stack: extend
@@ -1181,7 +1181,7 @@
 
   { Child Modify0
     Stat: health
-    Amount: 15
+    Amount: 50
     Rate: 1
   }
 }
