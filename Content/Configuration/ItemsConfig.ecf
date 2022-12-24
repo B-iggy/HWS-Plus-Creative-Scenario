@@ -194,7 +194,7 @@
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
     PfxMuzzle: MuzzleFlash2
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage'] + 10"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -253,7 +253,7 @@
     Tracer: Weapons/Projectiles/TracerOrange1
     TracerPerBullet: 2
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage'] - 5"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -290,7 +290,7 @@
     Tracer: Weapons/Projectiles/TracerOrange1
     TracerPerBullet: 1
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
      RadialText: Stabilizer - OFF
      RadialDesc: Multiple Heat Sinks allow this weapon to be fired at maximum damage output # add text
@@ -349,7 +349,7 @@
     Tracer: Weapons/Projectiles/TracerOrange1
     TracerPerBullet: 2
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage'] - 4"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -396,7 +396,7 @@
     Automatic: false
     BulletSpread: 0.03, display: true
     Recoil: 1.1, display: true
-    Damage: 132, display: true
+    Damage: 150, display: true
     AmmoCapacity: 6, display: true
     AmmoType: 12.7mmBullet, display: true
     # ReloadDelay: 3.7, display: true
@@ -411,7 +411,7 @@
     Tracer: Weapons/Projectiles/TracerOrange1
     TracerPerBullet: 1
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -556,7 +556,7 @@
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
     PfxMuzzle: MuzzleFlash4
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -1067,7 +1067,7 @@
     Tracer: Weapons/Projectiles/TracerLaserShotBlue
     TracerPerBullet: 1
 
-    DamageMultiplier_Group: HWS_EWS_Energy
+    DamageMultiplier_Group: HWS_EWS_Energy_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -1146,7 +1146,7 @@
     Tracer: Weapons/Projectiles/TracerOrange1
     TracerPerBullet: 2
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage'] - 5"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -1208,7 +1208,7 @@
     Tracer: Weapons/Projectiles/TracerLaserShotRed
     TracerPerBullet: 1
 
-    DamageMultiplier_Group: HWS_EWS_Energy
+    DamageMultiplier_Group: HWS_EWS_Energy_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -1314,7 +1314,7 @@
     TracerPerBullet: 1
     TracerSpeed: 250
 
-    DamageMultiplier_Group: HWS_EWS_Energy
+    DamageMultiplier_Group: HWS_EWS_Energy_HHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -1356,7 +1356,7 @@
     Automatic: false
     BulletSpread: 0.023, display: true
     Recoil: 0.88, display: true
-    Damage: 180, display: true
+    Damage: 200, display: true
     AmmoCapacity: 8, display: true
     AmmoType: 12.7mmBullet, display: true
     ReloadDelay: 4.25, display: true
@@ -1371,7 +1371,7 @@
     Tracer: Weapons/Projectiles/TracerOrange1
     TracerPerBullet: 1
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -1614,7 +1614,7 @@
     SfxBegin: Weapons/Player/Sniper/desert_eagle
     # SfxBegin: Weapons/Player/Pistol/AWDS_AR_ Heavy Single
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -1758,7 +1758,7 @@
     SfxReload: Weapons/Player/Reload/HeavyWeaponReloadNormal
     # SfxReload: Weapons/Player/Drill/WaltherP99MagInQuick01
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 
   UnlockCost: 0, display: true
@@ -1783,7 +1783,7 @@
     NoiseStrength: 100, display: false
     BulletSpread: 0.06, display: true
     Recoil: 0.36, display: true
-    Damage: 72, display: true
+    Damage: 84, display: true
     AmmoCapacity: 45, display: true
     ReloadDelay: 3.75, display: true
     # SfxBegin: Weapons/ProjectileWeapons/Automatic/FAL_50-42_Modern_start
@@ -1793,7 +1793,7 @@
     SfxLoop: Weapons/ProjectileWeapons/Automatic/M14_Heavy_loop
     SfxStop: Weapons/ProjectileWeapons/Automatic/M14_Heavy_end
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -1837,7 +1837,7 @@
     BulletSpread: 0.011, display: true
     Recoil: 0.728, display: true
     AmmoType: 15mmBullet, display: true
-    Damage: 270, display: true
+    Damage: 245, display: true
     AmmoCapacity: 10, display: true
     ReloadDelay: 5, display: true
     # Buff: "OpenWound,FractureOpen"
@@ -1846,8 +1846,9 @@
     SfxBegin: Weapons/Player/Sniper/weapon_sniper_004
     #SfxBegin: Weapons/Player/Sniper/Resistance-SniperRifle-01-Single_Shot-03
     # PfxMuzzle: MuzzleFlash5
+    PenetrationDepth: 3, display: true
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_HHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -1893,7 +1894,7 @@
     NoiseStrength: 200, display: false
     BulletSpread: 0.25, display: false
     Recoil: 0.3, display: true
-    Damage: 60, display: true
+    Damage: 65, display: true
     AmmoCapacity: 250, display: true
     AmmoType: PulseLaserChargeRifle, display: true
     Automatic: true
@@ -1907,7 +1908,7 @@
     Tracer: Weapons/Projectiles/TracerLaserShotRed
     TracerPerBullet: 2
 
-    DamageMultiplier_Group: HWS_EWS_Energy
+    DamageMultiplier_Group: HWS_EWS_Energy_HHW
 
     Mod.Damage: "Damage + Player.Skills['Damage'] - 3"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -1925,7 +1926,7 @@
     Range: 200, display: false
     NoiseStrength: 100, display: false
     Recoil: 1.05, display: true
-    Damage: 90, display: true
+    Damage: 100, display: true
     BulletSpread: 0.7, display: false
     AmmoCapacity: 250, display: true
     AmmoType: PulseLaserChargeRifle, display: true
@@ -1941,7 +1942,7 @@
     Tracer: Weapons/Projectiles/TracerLaserShotRed
     TracerPerBullet: 1
 
-    DamageMultiplier_Group: HWS_EWS_Energy
+    DamageMultiplier_Group: HWS_EWS_Energy_HHW
 
     RadialText: Stabilizer - OFF
     RadialDesc: Multiple Heat Sinks allow this weapon to be fired at maximum damage output # add text
@@ -1976,14 +1977,14 @@
     BulletSpread: 0.1
     RaySpread: 0.475, display: true
     Recoil: 1.38, display: true
-    Damage: 60, display: true
+    Damage: 70, display: true
     AmmoCapacity: 11, display: true
     ReloadDelay: 3, display: true
     # Buff: "OpenWound,Mutilation"
     # Buff_chance: "0.2,0.1"
     SfxBegin: Weapons/Player/Shotgun/Resistance-ShotGun-01-Single_Shot-05
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -2019,7 +2020,7 @@
   RepairDisabled: true, display: true
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
-    Damage: 117, display: true
+    Damage: 135, display: true
     ROF: 0.17, type: float, display: true, formatter: ROF
     ReloadDelay: 3.7, display: true
     # Buff: "RadiationBurn,DermalBurn"
@@ -2040,7 +2041,7 @@
     Tracer: Weapons/Projectiles/TracerLaserShotBlue
     TracerPerBullet: 1
 
-    DamageMultiplier_Group: HWS_EWS_Energy
+    DamageMultiplier_Group: HWS_EWS_Energy_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -2113,7 +2114,7 @@
     TracerPerBullet: 1
     TracerSpeed: 250
 
-    DamageMultiplier_Group: HWS_EWS_Energy
+    DamageMultiplier_Group: HWS_EWS_Energy_HHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage'] + 5"
@@ -2153,7 +2154,7 @@
     Range: 110, display: false
     BulletSpread: 0.075, display: true
     Recoil: 0.25, display: true
-    Damage: 57, display: true
+    Damage: 65, display: true
     AllowRemote: true
     Automatic: true, display: true
     AmmoCapacity: 24, display: true
@@ -2162,7 +2163,7 @@
     # Buff_chance: 0.2
     SfxBegin: Weapons/Player/Pistol/AWDS_AR_ HK53_Heavy_Single
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -2243,12 +2244,14 @@
     Class: PlaceExplosives
     AllowRemote: false
     BlastRadius: 3
-    Damage: 1100, display: true
-    BlastDamage: 550
+    Damage: 1000, display: true
+    BlastDamage: 500
     ROF: 1, type: float
     Range: 2
     NoiseStrength: 100, display: false
     SfxBegin: UseActions/ExplosivesAttach
+
+    DamageMultiplier_Group: HWS_EWS_Kinetic
   }
 
   UnlockCost: 7, display: true
@@ -2355,12 +2358,12 @@
     Recoil: 0.16, display: true
     Range: 99, display: false
     RangeSpace: 180, display: true
-    Damage: 79, display: true
+    Damage: 80, display: true
     AmmoCapacity: 28, display: true
     ReloadDelay: 2.375, display: true
     SfxBegin: Weapons/Player/LaserPistol/BLASTERLargeFastKickback
 
-    DamageMultiplier_Group: HWS_EWS_Energy
+    DamageMultiplier_Group: HWS_EWS_Energy_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -2407,7 +2410,7 @@
     SfxLoop: Weapons/ProjectileWeapons/Automatic/FAL_50-42_Modern_loop
     SfxStop: Weapons/ProjectileWeapons/Automatic/FAL_50-42_Modern_end
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -2448,7 +2451,7 @@
     AmmoType: 5.8mmBullet, display: true
     ReloadDelay: 2.945, display: true
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -2493,7 +2496,7 @@
     BulletSpread: 0.09, display: false
     Recoil: 0.192, display: true
     Automatic: true, display: true
-    Damage: 72, display: true
+    Damage: 84, display: true
     NoiseStrength: 120, display: false
     AmmoCapacity: 50, display: true
     AmmoType: PulseLaserChargeRifle, display: true
@@ -2510,7 +2513,7 @@
     SfxNoAmmo: Weapons/Misc/G36DryFire
     SfxReload: Weapons/Player/Reload/RifleReloadNormal
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -2573,7 +2576,7 @@
     # PfxMuzzle: MuzzleFlashSurvivalTool          # for Class: Ranged, we need to use this
     # PfxMuzzle: MuzzleFlashSurvivalToolV2
 
-    DamageMultiplier_Group: HWS_EWS_Energy
+    DamageMultiplier_Group: HWS_EWS_Energy_LHW
 
     RadialText: rdlDefence # add text
     RadialDesc: rdlDefenceDescST # add text
@@ -2966,7 +2969,7 @@
     Buff: "Fire"
     Buff_chance: 1
     Automatic: true
-    Damage: 70
+    Damage: 50
     Radius: 3
     AmmoCapacity: 750, display: true
     AmmoType: BioFuel, display: true
@@ -2984,7 +2987,7 @@
     SfxReload: UseActions/oxygen_tank_release_air
     # SfxReload: Weapons/Player/Drill/WaltherP99MagInQuick01
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 
   UnlockCost: 0
@@ -3175,15 +3178,15 @@
   Volume: 0, type: float, display: false, formatter: Liter
   { Child 0
     Class: Projectile
-    Damage: 330, display: true
+    Damage: 190, display: true
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 230, display: true
+    BlastDamage: 235, display: true
     Speed: 50
     Range: 500
     Ballistic: False
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_HHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -3301,13 +3304,13 @@
     Damage: 620, display: true
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 205, display: true
+    BlastDamage: 195, display: true
     Speed: 75
     Range: 450
     NoiseStrength: 100, display: false
     Ballistic: false
 
-    DamageMultiplier_Group: HWS_EWS_Energy
+    DamageMultiplier_Group: HWS_EWS_Energy_HHW
   }
 
   UnlockLevel: 1
@@ -3321,17 +3324,17 @@
   MarketPrice: 1572, display: true
   { Child 0
     Class: Projectile
-    Damage: 350
+    Damage: 300
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 260, display: true
-    Speed: 50
-    HomingSpeed: 3
+    BlastDamage: 180, display: true
+    Speed: 65
+    HomingSpeed: 4
     Range: 600
     RangeSpace: 1000, display: true
     Ballistic: false
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_HHW
   }
 
   UnlockLevel: 1
@@ -3354,17 +3357,17 @@
   MarketPrice: 587, display: true
   { Child 0
     Class: Projectile
-    Damage: 1500, display: true
+    Damage: 1250, display: true
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 450, display: true
+    BlastDamage: 380, display: true
     Speed: 90
     Range: 450
     NoiseStrength: 80, display: false
     Ballistic: false
     HomingSpeed: 2, display: true
 
-    DamageMultiplier_Group: HWS_EWS_Energy
+    DamageMultiplier_Group: HWS_EWS_Energy_HHW
   }
 
   UnlockLevel: 1
@@ -3387,19 +3390,19 @@
   MarketPrice: 100, display: true
   { Child 0
     Class: Projectile
-    Damage: 200, display: true
+    Damage: 10, display: true
     BlastParticleIndex: 15
     BlastRadius: 1, display: true
-    BlastDamage: 200, display: true
+    BlastDamage: 15, display: true
     Speed: 150
-    Range: 10
+    Range: 7
     BulletsPerShot: 8
     BulletSpread: 5
     NoiseStrength: 80, display: false
     Ballistic: true
     # HomingSpeed: 2, display: true
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 
   UnlockCost: 4500, display: true
@@ -3417,10 +3420,10 @@
   ShowUser: No
   { Child 0
     Class: Projectile
-    Damage: 120
+    Damage: 84
     BlastParticleIndex: 11
     BlastRadius: 2
-    BlastDamage: 60
+    BlastDamage: 42
     Speed: 30
     HomingSpeed: 0.0
     Range: 100
@@ -3428,7 +3431,7 @@
     Buff: "DermalBurn,Stunned,IncreaseRadiation"
     Buff_chance: "0.8,0.015,0.005"
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 
@@ -3471,7 +3474,7 @@
     ROF: 0, type: float
     Range: 30, display: true
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
-    Damage: 35, display: true
+    Damage: 21, display: true
     AmmoCapacity: 250, display: true
     AmmoUnlimited: true
     AmmoType: OtyughFireBall, display: true
@@ -9739,12 +9742,12 @@
     Class: Melee
     ROF: 0, type: float
     Range: 3.5
-    Damage: 100
+    Damage: 65
     SfxBegin: Enemies/Crawler/Crawler_SfxAttack
     Buff: "PoisonBit,OpenWound,DermalParasite"
     Buff_chance: "0.3,0.15,0.1"
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 519, Name: MeleeAlienBug01, Ref: MeleeTemplate
@@ -9830,13 +9833,13 @@
     Class: Melee
     ROF: 0, type: float
     Range: 2.5
-    Damage: 50
+    Damage: 35
     Sphere: 0.05
     SfxBegin: Enemies/Spiders/Spiders_SfxAttack
     Buff: "PoisonBit,Stunned"
     Buff_chance: "0.05,0.015"
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 526, Name: MeleeSpider02, Ref: MeleeTemplate
@@ -9846,10 +9849,12 @@
     Class: Melee
     ROF: 0, type: float
     Range: 3.5
-    Damage: 170
+    Damage: 105
     SfxBegin: Enemies/CaveWorm/CritterSFX-Short_3
     Buff: "PoisonBit,Stunned"
     Buff_chance: "0.08,0.02"
+
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 527, Name: MeleeSpider03, Ref: MeleeTemplate
@@ -9859,12 +9864,12 @@
     Class: Melee
     ROF: 0, type: float
     Range: 3.5
-    Damage: 180
+    Damage: 120
     SfxBegin: Enemies/CaveWorm/CritterSFX-Short_3
     Buff: "PoisonBit,Stunned"
     Buff_chance: "0.1,0.04"
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 528, Name: MeleeRaptor, Ref: MeleeTemplate
@@ -9937,12 +9942,12 @@
     Class: Melee
     ROF: 2, type: float
     Range: 3.5
-    Damage: 120
+    Damage: 75
     SfxBegin: Enemies/CaveWorm/CritterSFX-Short_3
     Buff: "PoisonBit,OpenWound,DermalParasite"
     Buff_chance: "0.2,0.15,0.02"
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 
@@ -9959,7 +9964,7 @@
     Buff: "PoisonBit,Stunned"
     Buff_chance: "0.05,0.015"
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 535, Name: MeleeAssassin, Ref: MeleeTemplate
@@ -10011,12 +10016,12 @@
     Class: Melee
     ROF: 0, type: float
     Range: 4.0
-    Damage: 200
+    Damage: 120
     SfxBegin: Enemies/Triceratops/Triceratops_SfxAttack
     Buff: "OpenWound,FractureClosed,FractureOpen,Mutilation,BrokenLeg"
     Buff_chance: "0.4,0.25,0.1,0.01,0.25"
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 
@@ -10074,7 +10079,7 @@
   #  Buff: "PoisonBit,Stunned"
   #  Buff_chance: "0.05,0.015"
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 543, Name: MeleeSpider02Small, Ref: MeleeTemplate
@@ -10110,12 +10115,12 @@
     Class: Melee
     ROF: 0, type: float
     Range: 2
-    Damage: 90
+    Damage: 60
     SfxBegin: Enemies/CaveWorm/CritterSFX-Short_3
     Buff: "PoisonBit,Stunned"
     Buff_chance: "0.1,0.04"
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 546, Name: MeleeSpider03Baby, Ref: MeleeTemplate
@@ -10125,12 +10130,12 @@
     Class: Melee
     ROF: 0, type: float
     Range: 2
-    Damage: 45
+    Damage: 30
     SfxBegin: Enemies/CaveWorm/CritterSFX-Short_3
     Buff: "PoisonBit,Stunned"
   #  Buff_chance: "0.1,0.04"
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 547, Name: MeleeAlienBug02Small, Ref: MeleeTemplate
@@ -10252,7 +10257,7 @@
     Damage: 150, display: true
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 500, display: true
+    BlastDamage: 300, display: true
     HomingSpeed: 1
     Speed: 30
     Range: 360
@@ -10324,7 +10329,7 @@
   # Meshfile: Entities/Items/Weapons/Projectiles/LaserShot02
   { Child 0
     Class: Projectile
-    Damage: 100, display: true
+    Damage: 60, display: true
     BlastParticleIndex: 0
     BlastRadius: 0
     BlastDamage: 0
@@ -10349,7 +10354,7 @@
     ROF: 1, type: float
     Range: 300      # Drone will attack from: Range*WeaponRangeFactor
     Automatic: false
-    Damage: 85
+    Damage: 60
     AmmoCapacity: 200
     NoiseStrength: 150, display: false
     AmmoUnlimited: true
@@ -10488,7 +10493,7 @@
     Range: 80, display: false
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
     Automatic: true
-    Damage: 7
+    Damage: 8
     AmmoCapacity: 200
     AmmoUnlimited: true
     AmmoType: 8.3mmBullet, display: true
@@ -10508,7 +10513,7 @@
     Tracer: Weapons/Projectiles/TracerOrange1
     TracerPerBullet: 2
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 568, Name: ZiraxMinigunWeapon
@@ -10526,7 +10531,7 @@
     Range: 100, display: false
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
     Automatic: true
-    Damage: 24, display: true
+    Damage: 28, display: true
     AmmoCapacity: 250, display: true
     AmmoUnlimited: true
     AmmoType: 8.3mmBullet, display: true
@@ -10549,7 +10554,7 @@
     TracerPerBullet: 1
     # MaxFireAngle: 20  #(default is 5)
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 569, Name: ZiraxLaserWeapon, Ref: ZiraxMinigunWeapon
@@ -10561,7 +10566,7 @@
     Class: Ranged
     ROF: 0.8, type: float, display: true, formatter: ROF
     Range: 120, display: false
-    Damage: 60, display: true
+    Damage: 70, display: true
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
     Automatic: true
     SfxBegin: Weapons/Player/LaserRifle/BLASTERComplexFireTriggerDigitalDischarge
@@ -10576,6 +10581,9 @@
     BulletSpread: 0.77, display: true
     TracerSpeed: 200
     # MaxFireAngle: 20  #(default is 5)
+
+   DamageMultiplier_Group: HWS_EWS_Energy_LHW
+
   }
 }
 # Player used Sentry Gun
@@ -10619,7 +10627,7 @@
     Tracer: Weapons/Projectiles/TracerOrange1
     TracerPerBullet: 2
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 # Alien Sentry Gun
@@ -10659,7 +10667,7 @@
     Tracer: Weapons/Projectiles/TracerLaserShotRed
     TracerPerBullet: 1
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 # Alien Sentry Gun
@@ -10699,7 +10707,7 @@
     Tracer: Weapons/Projectiles/TracerLaserShotRed
     TracerPerBullet: 1
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 573, Name: minigunDroneAttackBase, Ref: minigunDroneSmall
@@ -10742,7 +10750,7 @@
     ParticleTransform:     # Particle1 contains the destroy blocks effect
     # MaxFireAngle: 20  #(default is 5)
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 575, Name: ZiraxRocketWeapon
@@ -10790,7 +10798,7 @@
     ROF: 0, type: float
     Range: 20, display: false
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
-    Damage: 160, display: true
+    Damage: 110, display: true
     AmmoCapacity: 250, display: true
     AmmoUnlimited: true
     AmmoType: SlimeSpider, display: true
@@ -10812,7 +10820,7 @@
   ShowUser: No
   { Child 0
     Class: Projectile
-    Damage: 84
+    Damage: 98
     BlastParticleIndex: 0
     BlastRadius: 0
     BlastDamage: 0
@@ -10823,7 +10831,7 @@
     Buff: Stunned
     Buff_chance: 0.9
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 578, Name: TraderWeapon, Ref: ZiraxLaserWeapon
@@ -10854,7 +10862,7 @@
     ROF: 0.8, type: float, display: true, formatter: ROF
     Range: 100, display: true
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
-    Damage: 78, display: true
+    Damage: 91, display: true
     Automatic: false
     SfxBegin: Weapons/Player/LaserRifle/BLASTERComplexFireTriggerDigitalDischarge
     SfxLoop: Weapons/Enemies/Zirax/mute     # define new Zirax and not extend from MinigunZirax
@@ -10879,7 +10887,7 @@
     ROF: 0, type: float
     Range: 35, display: true
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
-    Damage: 45, display: true
+    Damage: 52, display: true
     AmmoCapacity: 250, display: true
     AmmoUnlimited: true
     AmmoType: SlimeAlienBug, display: true
@@ -10900,7 +10908,7 @@
   ShowUser: No
   { Child 0
     Class: Projectile
-    Damage: 72
+    Damage: 84
     BlastParticleIndex: 0
     BlastRadius: 1
     BlastDamage: 15
@@ -10911,7 +10919,7 @@
     Buff: "DermalBurn,Stunned,IncreaseRadiation"
     Buff_chance: "0.8,0.015,0.005"
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 582, Name: MechanoidWeapon, Ref: ZiraxMinigunWeapon
@@ -10922,7 +10930,7 @@
     ROF: 1.0, type: float, display: true, formatter: ROF
     Range: 90, display: false
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
-    Damage: 54, display: true
+    Damage: 63, display: true
     Automatic: false
     Buff: "DermalBurn"
     Buff_chance: 0.03
@@ -10951,7 +10959,7 @@
     Range: 300, display: false
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
     Automatic: true
-    Damage: 60, display: true
+    Damage: 70, display: true
     AmmoCapacity: 250, display: true
     AmmoUnlimited: true
     AmmoType: 15mmBullet, display: true
@@ -10973,7 +10981,7 @@
     TracerPerBullet: 1
     # MaxFireAngle: 30  # need a big value (default is 5) as the mechs have the weapon far from the center > CHECK
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 
@@ -11044,7 +11052,7 @@
   { Child 0
     ROF: 2, type: float
     Range: 120, display: false
-    Damage: 90, display: true
+    Damage: 95, display: true
     Automatic: false
     Buff: "OpenWound"
     Buff_chance: 0.07
@@ -11074,7 +11082,7 @@
     ROF: 0, type: float
     Range: 30, display: true
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
-    Damage: 33, display: true
+    Damage: 38, display: true
     AmmoCapacity: 250, display: true
     AmmoUnlimited: true
     AmmoType: SlimeAlienBug, display: true
@@ -11139,7 +11147,7 @@
     Damage: 70, display: true
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 700, display: true
+    BlastDamage: 300, display: true
     Buff: "BrokenLeg,FractureClosed,Mutilation"
     Buff_chance: "0.1,0.05,0.05"
     Speed: 35
@@ -11206,7 +11214,7 @@
     Range: 75, display: true
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
     Automatic: false
-    Damage: 42, display: true
+    Damage: 48, display: true
     AmmoCapacity: 20, display: true
     AmmoUnlimited: true
     AmmoType: CrossbowBolt, display: true
@@ -11216,7 +11224,7 @@
     PfxMuzzle: MuzzleCrossbowSmoke
     # MaxFireAngle: 20  #(default is 5)
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 596, Name: CrossbowBolt
@@ -11229,7 +11237,7 @@
   ShowUser: No
   { Child 0
     Class: Projectile
-    Damage: 72
+    Damage: 80
     BlastParticleIndex: 0
     BlastRadius: 0
     BlastDamage: 0
@@ -11239,7 +11247,7 @@
     Buff: "OpenWound,PoisonBit"
     Buff_chance: "0.1,0.25"
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 }
 { Item Id: 597, Name: TalonShamaneDrainPower
@@ -12050,7 +12058,7 @@
     Recoil: 0, display: true
     IgnoreAtmo: true, display: true
     Automatic: true, display: true
-    Damage: 150, display: true
+    Damage: 95, display: true
     AmmoCapacity: 40, display: true
     AmmoType: PulseLaserChargeRifle, display: true
     ReloadDelay: 3.0, display: true
@@ -12065,7 +12073,7 @@
     Tracer: Weapons/Projectiles/TracerLaserShotRed
     TracerPerBullet: 1
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
   { Child 1
     Class: Zoom
@@ -12110,7 +12118,7 @@
     Damage: 100, display: true
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 500, display: true
+    BlastDamage: 450, display: true
     Speed: 30
     Range: 360
     Ballistic: false
@@ -12193,10 +12201,10 @@
   ShowUser: No
   { Child 0
     Class: Projectile
-    Damage: 10000, display: true
+    Damage: 2800, display: true
     BlastParticleIndex: 3
     BlastRadius: 4, display: true
-    BlastDamage: 10000, display: true
+    BlastDamage: 3000, display: true
     Speed: 165
     Range: 635
     SpeedSpace: 210
@@ -14518,14 +14526,14 @@
     Damage: 25
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 360, display: true
+    BlastDamage: 230, display: true
     Speed: 35
     Range: 45
     SpeedSpace: 40
     RangeSpace: 100
     Ballistic: true
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
 
   UnlockLevel: 1
