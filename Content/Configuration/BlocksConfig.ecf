@@ -49,10 +49,13 @@
 # DropMeshfile: Entities/Misc/DropContainerNewPrefab  > Defines the container visible when dropped; Small variants: BagSmallNewPrefab, BagSmallChristmasPrefab; Large variants: DropContainerNewPrefab; Old: BagSmallPrefab, DropContainerPrefab
 # DropInventoryEntity: DropContainer   > defines which box variant is dropped when this item/device is dropping from a destroyed cargo container (!)
 # ShieldMultiplier: AnyStringPossible   # only for Class:ShieldGenerator devices; Allows to set a parameter that can be used in the DamageMultiplier of a weapon in the ItemsConfig.ecf
+# ShieldHitCooldown: 11, type: int, display: true   = ShieldHitCooldown (int): cooldown in seconds after being hit until the shield starts recharging (default: 5s)
 # RepairToTemplate: false # allow excluding (rare or special) blocks from reparing to template to avoid exploits.
 # == Special: Dialogues ==
 # ExecuteOnActivate: YourDialogState   # Adding a dialogue state from the dialogues.ecf will allow the block/device to activate that dialogue by facing the block and clicking F; Note: Does not require 'IsActivatable' or other properties; Note: If device already has 'IsActivatable' or other activatable-state/Access (F-button, like containers, levers etc) their Access-function will be executed primarily BUT the dialogue will be run (invisible) never the less!
 # ExecuteOnCollide: YourDialogState    # Adding a dialogue state from the dialogues.ecf will allow the block/device to activate that dialogue by touching/pressing against that block. (similar to ExecuteOnActivate!)
+# DialogueSingleUserAccess: true       # Only one player at a time can access the dialogue triggered by the device/blocks
+#
 # == Special: Skills ==
 # Use "Player.Skills['skillname']" to set a skill entry in the dialogues.ecf.
 # The skill values can be used to modify properties of blocks and items: Damage, BlastDamage, BulletSpread, ReloadDelay, Recoil, RangeAU und RangeLY
@@ -18673,8 +18676,8 @@
   CPUIn: 45000, type: int, display: true
   HitPoints: 500, type: int, display: true
   EnergyDynamicGroup: RepairBay
-  RepairPerSecond: 100000, display: true
-# TODO RepairToBlueprintTimeFac: 0.1
+  RepairPerSecond: 50000, display: true
+  RepairToBlueprintTimeFac: 0.5
   Repairs: "MS,SS,GV", display: true
   IsDuplicateable: false
   MaxCount: 1, type: int, display: true
@@ -19065,6 +19068,7 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   CPUIn: 100000, type: int, display: true
   IsRepairToBlueprint: false
+  RepairToBlueprintTimeFac: 0.5
 
   UnlockCost: 17, display: true
   UnlockLevel: 15, display: true
@@ -20592,12 +20596,13 @@
   Model: @models/Blocks/Misc/RepairBayT2Prefab
 
   IsRepairToBlueprint: true
-  RepairPerSecond: 200000, display: true
+  RepairPerSecond: 100000, display: true
   Mass: 34556, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: true, formatter: Liter
   EnergyIn: 20000, type: int, display: true, formatter: Watt
   CPUIn: 68000, type: int, display: true
 
+  RepairToBlueprintTimeFac: 0.1
   Info: bkiRepairBayT2, display: true
   UnlockCost: 25, display: true
   UnlockLevel: 20, display: true
@@ -24172,6 +24177,7 @@
   IsRepairToBlueprint: true
   Info: bkiRepairBayT2, display: true
   RepairPerSecond: 100000, display: true
+  RepairToBlueprintTimeFac: 0.1
   UnlockCost: 25, display: true
   UnlockLevel: 20, display: true
   TechTreeParent: RepairBayCV
@@ -28767,6 +28773,14 @@
   UpgradeTo: null
 }
 
+# Shield Info
+# If shield is shot to 0%, there is a 10 second hardcoded cooldown you can't change.
+# After that 10 second the ShieldCooldown property kicks in. This property also kicks in, if the Shield
+# was turned off in the Control Panel or pressing X and then on again.
+# ShieldHitCooldown kicks in if shield is being hit and when it should start recharging again
+# ShieldPerCrystal | ShieldCapacity / Custom X Pentaxid (Cost for 100% Shield) = Y (ShieldPerCrystal)
+# Recharge back to 100% | ShieldCapacity / Custom X seconds = Y (ShieldRecharge)
+# ShieldCooldown must be always >= (greater or equal than) ShieldHitCooldown! Otherwise player just toggle X.
 { Block Id: 1808, Name: ShieldGeneratorBA
   Class: ShieldGenerator
   IndexName: ShieldGenerator
@@ -28805,8 +28819,9 @@
   EnergyInIdle: 1000, type: int, display: true, formatter: Watt
   ShieldCapacity: 150000, type: int, display: true
   ShieldRecharge: 2500, type: int, display: true # full in 70 sec
-  ShieldCooldown: 10, type: int, display: true
-  ShieldPerCrystal: 300, type: int, display: true # 400 Pentaxid in total
+  ShieldCooldown: 30, type: int, display: true
+  ShieldHitCooldown: 30, type: int, display: true
+  ShieldPerCrystal: 300, type: int, display: true
   UpgradeTo: ShieldGeneratorBAT2, display: true
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -28842,7 +28857,8 @@
   EnergyInIdle: 650, type: int, display: true, formatter: Watt
   ShieldCapacity: 100000, type: int, display: true
   ShieldRecharge: 1650, type: int, display: true      # full in 100 sec
-  ShieldCooldown: 45, type: int, display: true
+  ShieldCooldown: 30, type: int, display: true
+  ShieldHitCooldown: 30, type: int, display: true
   ShieldPerCrystal: 200, type: int, display: true # 600 Pentaxid in total
   UpgradeTo: ShieldGeneratorCVT2, display: true
 
@@ -28869,7 +28885,8 @@
   EnergyInIdle: 120, type: int, display: true, formatter: Watt
   ShieldCapacity: 30000, type: int, display: true
   ShieldRecharge: 500, type: int, display: true # full in 130 sec
-  ShieldCooldown: 55, type: int, display: true
+  ShieldCooldown: 10, type: int, display: true
+  ShieldHitCooldown: 10, type: int, display: true
   ShieldPerCrystal: 150, type: int, display: true # 200 Pentaxid in total
   UpgradeTo: null
   BlastParticleIndex: 8
@@ -28905,7 +28922,8 @@
   EnergyInIdle: 1400, type: int, display: true, formatter: Watt
   ShieldCapacity: 200000, type: int, display: true
   ShieldRecharge: 4000, type: int, display: true # full in 70 sec
-  ShieldCooldown: 35, type: int, display: true
+  ShieldCooldown: 20, type: int, display: true
+  ShieldHitCooldown: 20, type: int, display: true
   ShieldPerCrystal: 250, type: int, display: true # 700 Pentaxid in total
   # PickupTarget: ShieldGeneratorCV    # Avoid getting back T2 and then be able to place T1 and T2
   UpgradeTo: null
@@ -28934,6 +28952,7 @@
   ShieldCapacity: 300000, type: int, display: true
   ShieldRecharge: 6000, type: int, display: true # full in 40 sec
   ShieldCooldown: 20, type: int, display: true
+  ShieldHitCooldown: 20, type: int, display: true
   ShieldPerCrystal: 350, type: int, display: true # 500 Pentaxid in total
   # PickupTarget: ShieldGeneratorBA   # Avoid getting back T2 and then be able to place T1 and T2
   UpgradeTo: null
@@ -28954,7 +28973,8 @@
   EnergyInIdle: 500, type: int, display: true, formatter: Watt
   ShieldCapacity: 20000, type: int, display: true
   ShieldRecharge: 350, type: int, display: true     # recharge rate per sec
-  ShieldCooldown: 15, type: int, display: true   # in seconds
+  ShieldCooldown: 10, type: int, display: true   # in seconds
+  ShieldHitCooldown: 10, type: int, display: true
   UpgradeTo: null
 
   UnlockCost: 0
@@ -29454,7 +29474,8 @@
   CPUIn: 3000, type: int, display: true
   ShieldCapacity: 40000, type: int, display: true
   ShieldRecharge: 800, type: int, display: true # full in 130 sec
-  ShieldCooldown: 55, type: int, display: true
+  ShieldCooldown: 15, type: int, display: true
+  ShieldHitCooldown: 15, type: int, display: true
   ShieldPerCrystal: 160, type: int, display: true # 300 Pentaxid in total
   UpgradeTo: null
   BlastParticleIndex: 8
@@ -44465,7 +44486,7 @@
   ShieldCapacity: 450000, type: int, display: true
   ShieldRecharge: 13500, type: int, display: true # full in 70 sec
   ShieldCooldown: 25, type: int, display: true
-  ShieldPerCrystal: 275, type: int, display: true # 400 Pentaxid in total
+  ShieldPerCrystal: 275, type: int, display: true
   ParticleName: @hws_blastparticles/HWSAquaShieldExplosionLarge
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44527,7 +44548,7 @@
   ShieldCapacity: 65000, type: int, display: true
   ShieldRecharge: 1800, type: int, display: true # full in 70 sec
   ShieldCooldown: 5, type: int, display: true
-  ShieldPerCrystal: 145, type: int, display: true # 400 Pentaxid in total
+  ShieldPerCrystal: 145, type: int, display: true
   ParticleName: @hws_blastparticles/HWSTerraShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44588,7 +44609,7 @@
   ShieldCapacity: 450000, type: int, display: true
   ShieldRecharge: 13500, type: int, display: true # full in 70 sec
   ShieldCooldown: 25, type: int, display: true
-  ShieldPerCrystal: 37500, type: int, display: true # 400 Pentaxid in total
+  ShieldPerCrystal: 37500, type: int, display: true
   ParticleName: @hws_blastparticles/HWSTerraShieldExplosionLarge
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44650,7 +44671,7 @@
   ShieldCapacity: 65000, type: int, display: true
   ShieldRecharge: 1800, type: int, display: true # full in 70 sec
   ShieldCooldown: 5, type: int, display: true
-  ShieldPerCrystal: 250, type: int, display: true # 400 Pentaxid in total
+  ShieldPerCrystal: 250, type: int, display: true
   ParticleName: @hws_blastparticles/HWSPyroShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 2
@@ -44711,7 +44732,7 @@
   ShieldCapacity: 450000, type: int, display: true
   ShieldRecharge: 13500, type: int, display: true # full in 70 sec
   ShieldCooldown: 25, type: int, display: true
-  ShieldPerCrystal: 500, type: int, display: true # 400 Pentaxid in total
+  ShieldPerCrystal: 500, type: int, display: true
   ParticleName: @hws_blastparticles/HWSPyroShieldExplosionLarge
   BlastParticleIndex: 8
   BlastRadius: 2
@@ -44773,7 +44794,7 @@
   ShieldCapacity: 65000, type: int, display: true
   ShieldRecharge: 1800, type: int, display: true # full in 70 sec
   ShieldCooldown: 5, type: int, display: true
-  ShieldPerCrystal: 145, type: int, display: true # 400 Pentaxid in total
+  ShieldPerCrystal: 145, type: int, display: true
   ParticleName: @hws_blastparticles/HWSObsidianShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44834,7 +44855,7 @@
   ShieldCapacity: 450000, type: int, display: true
   ShieldRecharge: 13500, type: int, display: true # full in 70 sec
   ShieldCooldown: 25, type: int, display: true
-  ShieldPerCrystal: 275, type: int, display: true # 400 Pentaxid in total
+  ShieldPerCrystal: 275, type: int, display: true
   ParticleName: @hws_blastparticles/HWSObsidianShieldExplosionLarge
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44896,7 +44917,7 @@
   ShieldCapacity: 65000, type: int, display: true
   ShieldRecharge: 2800, type: int, display: true # full in 70 sec
   ShieldCooldown: 5, type: int, display: true
-  ShieldPerCrystal: 145, type: int, display: true # 400 Pentaxid in total
+  ShieldPerCrystal: 145, type: int, display: true
   ParticleName: @hws_blastparticles/HWSLuxShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44957,7 +44978,7 @@
   ShieldCapacity: 450000, type: int, display: true
   ShieldRecharge: 20500, type: int, display: true # full in 70 sec
   ShieldCooldown: 25, type: int, display: true
-  ShieldPerCrystal: 275, type: int, display: true # 400 Pentaxid in total
+  ShieldPerCrystal: 275, type: int, display: true
   ParticleName: @hws_blastparticles/HWSLuxShieldExplosionLarge
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -45019,7 +45040,7 @@
   ShieldCapacity: 65000, type: int, display: true
   ShieldRecharge: 1800, type: int, display: true # full in 70 sec
   ShieldCooldown: 5, type: int, display: true
-  ShieldPerCrystal: 145, type: int, display: true # 400 Pentaxid in total
+  ShieldPerCrystal: 145, type: int, display: true
   ParticleName: @hws_blastparticles/HWSNoxShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -45080,7 +45101,7 @@
   ShieldCapacity: 450000, type: int, display: true
   ShieldRecharge: 13500, type: int, display: true # full in 70 sec
   ShieldCooldown: 25, type: int, display: true
-  ShieldPerCrystal: 275, type: int, display: true # 400 Pentaxid in total
+  ShieldPerCrystal: 275, type: int, display: true
   ParticleName: @hws_blastparticles/HWSNoxShieldExplosionLarge
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -45142,7 +45163,7 @@
   ShieldCapacity: 65000, type: int, display: true
   ShieldRecharge: 1800, type: int, display: true # full in 70 sec
   ShieldCooldown: 5, type: int, display: true
-  ShieldPerCrystal: 145, type: int, display: true # 400 Pentaxid in total
+  ShieldPerCrystal: 145, type: int, display: true
   ParticleName: @hws_blastparticles/HWSStrangeletShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -45203,7 +45224,7 @@
   ShieldCapacity: 450000, type: int, display: true
   ShieldRecharge: 13500, type: int, display: true # full in 70 sec
   ShieldCooldown: 25, type: int, display: true
-  ShieldPerCrystal: 275, type: int, display: true # 400 Pentaxid in total
+  ShieldPerCrystal: 275, type: int, display: true
   ParticleName: @hws_blastparticles/HWSStrangeletShieldExplosionLarge
   BlastParticleIndex: 8
   BlastRadius: 3
