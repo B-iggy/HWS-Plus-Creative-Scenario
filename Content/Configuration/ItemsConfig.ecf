@@ -7,21 +7,26 @@
 #== Buffs/Debuffs/Buffmod==
 # BuffMod: "StatusID_01, DurationFactor, ValueFactor, PreventsOnExpired(Optional);"
 # BuffMod: "MedikitBandages, 0.5, 0.5, true; MedikitApplied, -0.2, 2"
+# Explanation:
+# - Time factor modifies the actual time that the status is active   (set a 0 = no changes); example: duration = 1200 > Buffmod -0.1 =  [ 1200 + (1200*(-0.1)])] = 1080
+# - Value factor modifies the intensity of all effects (damage, heal, speedmodifier...) (set a 0 = no changes); same calculation than for timeFactor
+# - Prevent on expire is a boolean that cancels the onexpire effects if true; example: Infected wound expires to Sepsis. Using AntibioticPills to buffmod Infected Wound protects from Sepis when Infected Wound expires.
 #== Armor Suits and Boosters
-# Booster-Items need to be set in the Armors "SlotItems" section to work with the armor
-# SlotItems can only have 15 entries at the moment; In case you add more, the boosters beyond 15 will vanish when dropped into a booster slot of the armor
+# Booster-Items need to be set in the Armors "SlotItems" section to be allowed with the armor
+# SlotItems can only have 15 entries max!
+# NOTE: Should you modify the "SlotItems" boost names list, all boosts in existing savegames will change (as in the savegame only an index in this list is stored)
 # = Armor/Booster props
-# Armor:
-# Oxygen:
-# Radiation:
-# Heat:
-# Cold:
-# PowerFac:
-# SpeedFac:
-# StaminaFac:
-# JetpackFac:
-# JumpFac:
-# FoodFac:
+# Armor: <int> Adds the given value to the total HP
+# Oxygen: <int> Adds the given value to the total O2 volume  : # OxygenConsumptionPerMinute = 12.5f;  => consume 500 units of oxygen in 40 min
+# Radiation: <int> You are protected from RAD up to this value
+# Heat:  <int> You are protected from high temperatures up to this value
+# Cold: <int> You are protected from low temerpatures down to this value
+# PowerFac: <float>
+# SpeedFac: <float>
+# StaminaFac: <float>  # calculations are based on 20 stamina per second while running
+# JetpackFac: <float>  # no armor : 2.5 units removed per tick.  armor : 5* JetpackFac per tick
+# JumpFac: <float>
+# FoodFac: <float> #  calculations are based on 70 minutes
 #
 #== Information about weapon types ==
 # Class:Ranged > Damage is defined in the weapon; the Ammotype of those weapons only hold statistic parameters (mass, volume, cost etc)
@@ -31,10 +36,17 @@
 # All weapon types have a DAMAGE value ( refered to as 'base damage')
 # LauncherSS type weapons can also have a BLAST damage, defined by BlastDamage & BlastRadius. Note that the BlastDamage is ADDED on top of the weapons base DAMAGE for the CENTER (hit) block (only)! The calculation for the combinded Damage for this block can e approximated by the following formula: (Damage + BlastDamage) - (BlastDamage / BlastRadius)
 # Weapons can have multipliers to modify the base/blast damage
+# Shield is/can be handled seperately!
+#
 # Syntax examples:
 # DamageMultiplier_1: <value>, param1: <material1>|<material2>  ; NOTE: You can add the parameter "Material: " to an creature/NPC entry in the EClassConfig and use the string set there as reference at this point in the Itemsconfig (for the weapon being more or less effective against a certain creature/NPC!)
 # BlastDamageMultiplier_1: <value>, param1: <material1>|<material2>
 # >> Available materials: head, body, dirt, stone, rock, metallight, metal, metalhard, woodsoft, wood, woodhard, concrete, concrete, hull, hullarmored, hullcombat, shield
+#
+#= -- Shield modifiers for weapons --
+# ShieldDamagePenFac: 0.2, display: true    = ShieldDamagePenFac, float: 0.0-1.0 -> how much % of damage goes through the shield
+# BlastShieldDamagePenFac, float: 0.3       = how much % of blast damage goes through the shield; range 0.0-1.0
+#
 # -- BlastDamage/Radius/Effect setup --
 # BlastParticleIndex: "3"  => which prefab/particle is used (1-16; Not that not all numbers have an explosion animiation/effect)
 # BlastRadius: "4"   => damage radius
@@ -615,6 +627,7 @@
   }
   { Child 1
     Class: Zoom
+    ZoomOverlay: Entities/Items/Weapons/SniperScopes/ScopeNew03
     ZoomOut: 40
     ZoomIn: 40
     RedDot: true
@@ -12083,12 +12096,310 @@
     RedDot: true
   }
 }
+
+{ +Item Id: 803, Name: TalonCrossbowTribalPlayer   # Ref: TalonCrossbowPlayer
+  Meshfile: Entities/Items/Weapons/Crossbow/TalonCrossbowPlayerPrefab
+  CustomIcon: TalonCrossbowWeaponCharged
+  PickupToToolbar: true
+  Material: metalweapon
+  MarketPrice: 1200, display: true
+  HoldType: 15
+  StackSize: 1
+  Category: Weapons/Items
+  Info: bkiTalonCrossbowTribalPlayer, display: true
+  Mass: 6, type: float, display: true, formatter: Kilogram
+  Volume: 4, type: float, display: true, formatter: Liter
+  Durability: 500, display: false
+  DegradationProb: 0.05, type: float, display: false
+  SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
+  RepairDisabled: true, display: true
+  OverrideTradingConstraints: true # even if other constraints exist allow trading this item
+  { Child 0
+    Class: Ranged
+    AllowRemote: false
+    AllowAt: "UnderWater, Planet, Space"
+    ROF: 0.2, type: float, display: true, formatter: ROF
+    Range: 90, display: false
+    NoiseStrength: 60, display: false
+    CameraShake: 1
+    Automatic: false
+    BulletSpread: 0.2, display: true
+    Recoil: 0.8, display: true
+    Damage: 90, display: true
+    AmmoCapacity: 1, display: true
+    AmmoType: CrossbowBoltPlayer, display: true
+    ReloadDelay: 2.5, display: true
+    SfxBegin: Weapons/Enemies/Talon/CrossbowShot
+    PfxMuzzle: MuzzleCrossbowSmoke
+    Tracer: Weapons/Projectiles/TracerOrange1
+    TracerPerBullet: 1
+    # MaxFireAngle: 20  #(default is 5)
+
+    DamageMultiplier_1: 1.5, param1: head, display: DmgMultiplierHead
+    DamageMultiplier_2: 0, param1: dirt|stone|rock|wood|hullarmored|hullcombat
+    DamageMultiplier_3: 0, param1: shield
+  }
+  { Child 1
+    Class: Zoom
+    ZoomOverlay: Entities/Items/Weapons/SniperScopes/ScopeNew02
+    ZoomOut: 40
+    ZoomIn: 40
+    RedDot: true
+  }
+}
+
+{ +Item Id: 804, Name: CrossbowBoltPlayer
+  Meshfile: Entities/Misc/DummyPrefab
+  CustomIcon: MeleeTalonGuardianCharged
+  DropMeshfile: Entities/Misc/BagSmallNewPrefab   #Available variants: BagSmallChristmasPrefab
+  Material: metalweapon
+  HoldType: 0
+  MarketPrice: 1, display: true
+  Canhold: false
+  StackSize: 2000
+  Info: bkiCrossbowBoltPlayer, display: true
+  Category: Weapons/Items
+  Mass: 0.01, type: float, display: true, formatter: Kilogram
+  Volume: 0.01, type: float, display: true, formatter: Liter
+
+ # UnlockLevel: 1
+ # TechTreeNames: Hidden
+}
+
+{ +Item Id: 805, Name: CyborgRifleWeapon, Ref: ZiraxMinigunWeapon
+  Meshfile: Entities/Items/Weapons/Enemies/CyborgSniperPrefab
+  { Child 0
+    Class: Ranged
+    ROF: 0.4, type: float
+    Range: 50, display: false
+    IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
+    Automatic: true
+    Damage: 35, display: true
+    AmmoCapacity: 250, display: true
+    AmmoUnlimited: true
+    AmmoType: 5.8mmBullet, display: true
+    BulletSpread: 0.7, display: true
+    ReloadDelay: 6.3, display: true
+    SfxBegin: Weapons/ProjectileWeapons/Automatic/HK416_Modern_start
+    SfxLoop: Weapons/ProjectileWeapons/Automatic/HK416_Modern_loop
+    SfxStop: Weapons/ProjectileWeapons/Automatic/HK416_Modern_end
+    SfxNoAmmo: Weapons/Misc/AK47DryFire01
+    SfxReload: Weapons/Player/Reload/RifleReloadNormal
+    PfxMuzzle: MuzzleFlash1
+    Tracer: Weapons/Projectiles/TracerOrange1
+    TracerPerBullet: 5
+    # MaxFireAngle: 20  #(default is 5)
+
+    DamageMultiplier_1: 0, param1: wood|stone|dirt
+    DamageMultiplier_2: 5, param1: metal|metalhard
+  }
+}
+
+{ +Item Id: 806, Name: LaserCarbine
+  Meshfile: Entities/Items/Weapons/Rifles/LaserCarbinePrefab
+  PickupToToolbar: true
+  MarketPrice: 3750, display: true
+  Material: metalweapon
+  HoldType: 15
+  StackSize: 1
+  Category: Weapons/Items
+  Info: bkiWeaponHandheldIgnoringAtmo, display: true
+  Mass: 4.2, type: float, display: true, formatter: Kilogram
+  Volume: 5, type: float, display: true, formatter: Liter
+  Durability: 500, display: false
+  DegradationProb: 0.125, type: float, display: false
+  SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
+  { Child 0
+    Class: Ranged
+    AllowRemote: false
+    ROF: 0.11, type: float, display: true, formatter: ROF
+    Range: 160, display: false
+    Automatic: true, display: true
+    BulletSpread: 0.12, display: true
+    Recoil: 0.25, display: true
+    IgnoreAtmo: true, display: true
+    Damage: 57, display: true
+    NoiseStrength: 50, display: false
+    CameraShake: 1
+    AmmoCapacity: 32, display: true
+    AmmoType: PulseLaserChargeRifle, display: true
+    ReloadDelay: 2.25, display: true
+    ParticleTransform: Muzzle/Particle1
+    SfxBegin: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_start
+    # SfxLoop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_loop
+    SfxStop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_end
+    # SfxBegin: Weapons/Player/LaserRifle/BLASTERComplexFireTriggerDigitalDischarge
+    SfxNoAmmo: Weapons/Misc/G36DryFire
+    SfxReload: Weapons/Player/Reload/RifleReloadNormal
+    PfxMuzzle: SniperMuzzleLaserRed
+    Tracer: Weapons/Projectiles/TracerLaserShotRed
+    TracerPerBullet: 1
+
+    DamageMultiplier_1: 1.25, param1: head, display: DmgMultiplierHead
+    DamageMultiplier_2: 0, param1: dirt|stone|rock|wood|hullarmored|hullcombat
+    DamageMultiplier_3: 0, param1: shield
+  }
+  { Child 1
+    Class: Zoom
+    ZoomOverlay: Entities/Items/Weapons/SniperScopes/ScopeNew02
+    ZoomOut: 40
+    ZoomIn: 30
+    RedDot: true
+  }
+  { Child 6
+    Class: Movements
+    StandingLocation: "0.0, 0.010, 0.0"
+    StandingRotation: "0.0, 0.0, 0.0"
+    AimingLocation: "0.0, 0.0, 0.0"
+    AimingRotation: "0.0, 0.0, 0.0"
+    RunningLocation: "0.05, 0.0, 0.05"
+    RunningRotation: "-15, -45, 7"
+    CrouchingLocation: "0.0, 0.0, 0.1"
+    CrouchingRotation: "0.0, 0.0, 0.0"
+    RecoilLocation: "0.12, 0.0, 0.0"
+    RecoilRotation: "0.0, 0.0, 0.0"
+    WalkMovement: "0.010"
+    RunMovement: "0.02"
+  }
+
+  UnlockCost: 15, display: true
+  UnlockLevel: 20, display: true
+  TechTreeParent: LaserRifle
+  TechTreeNames: Weapons
+}
+
+{ +Item Id: 807, Name: SMG
+  Meshfile: Entities/Items/Weapons/Pistols/SMGPrefab
+  PickupToToolbar: true
+  MarketPrice: 1123, display: true
+  Material: metalweapon
+  HoldType: 14
+  StackSize: 1
+  Category: Weapons/Items
+  # Info: bkiWeaponHandheld, display: true
+  Mass: 4, type: float, display: true, formatter: Kilogram
+  Volume: 5, type: float, display: true, formatter: Liter
+  Durability: 500, display: false
+  DegradationProb: 0.08, type: float, display: false
+  SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
+  { Child 0
+    Class: Ranged
+    AllowRemote: false
+    ROF: 0.052, type: float, display: true, formatter: ROF
+    Range: 85, display: false
+    NoiseStrength: 100, display: false
+    CameraShake: 1
+    Automatic: true, display: true
+    BulletSpread: 0.3, display: true
+    Recoil: 0.7, display: true
+    Damage: 38, display: true
+    AmmoCapacity: 32, display: true
+    AmmoType: 50Caliber, display: true
+    ReloadDelay: 1.8, display: true
+    # SfxBegin: Weapons/ProjectileWeapons/Automatic/HK416_Heavy_start
+    SfxLoop: Weapons/ProjectileWeapons/Automatic/HK416_Heavy_loop
+    SfxStop: Weapons/ProjectileWeapons/Automatic/HK416_Heavy_end
+    SfxNoAmmo: Weapons/Misc/AK47DryFire01
+    SfxReload: Weapons/Player/Reload/RifleReloadNormal
+    PfxMuzzle: MuzzleFlash1
+    Tracer: Weapons/Projectiles/TracerOrange1
+    TracerPerBullet: 5
+
+    DamageMultiplier_1: 3.5, param1: head, display: DmgMultiplierHead
+    DamageMultiplier_2: 0, param1: dirt|stone|rock|wood|hullarmored|hullcombat
+    DamageMultiplier_3: 0, param1: shield
+  }
+  { Child 1
+    Class: Zoom
+    ZoomOut: 40
+    ZoomIn: 40
+    # RedDot: true
+  }
+  UnlockCost: 7, display: true
+  UnlockLevel: 5, display: true
+  TechTreeParent: Pistol
+  TechTreeNames: Weapons
+}
+
+{ +Item Id: 808, Name: LaserSMG
+  Meshfile: Entities/Items/Weapons/Pistols/LaserSMGPrefab
+  PickupToToolbar: true
+  MarketPrice: 3267, display: true
+  Material: metalweapon
+  HoldType: 14
+  StackSize: 1
+  Category: Weapons/Items
+  Info: bkiWeaponHandheldIgnoringAtmo, display: true
+  Mass: 4.2, type: float, display: true, formatter: Kilogram
+  Volume: 5, type: float, display: true, formatter: Liter
+  Durability: 500, display: false
+  DegradationProb: 0.125, type: float, display: false
+  SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
+  { Child 0
+    Class: Ranged
+    AllowRemote: false
+    ROF: 0.06, type: float, display: true, formatter: ROF
+    Range: 95, display: false
+    Automatic: true, display: true
+    BulletSpread: 0.25, display: true
+    Recoil: 0.55, display: true
+    IgnoreAtmo: true, display: true
+    Damage: 48, display: true
+    NoiseStrength: 50, display: false
+    CameraShake: 1
+    AmmoCapacity: 42, display: true
+    AmmoType: PulseLaserChargePistol, display: true
+    ReloadDelay: 2, display: true
+    ParticleTransform: Muzzle/Particle1
+    SfxBegin: Weapons/SS/LaserSS/BLASTERLargeFastKickback(stereo)
+    # SfxLoop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_loop
+    SfxStop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_end
+    # SfxBegin: Weapons/Player/LaserRifle/BLASTERComplexFireTriggerDigitalDischarge
+    SfxNoAmmo: Weapons/Misc/G36DryFire
+    SfxReload: Weapons/Player/Reload/RifleReloadNormal
+    PfxMuzzle: SniperMuzzleLaserRed
+    Tracer: Weapons/Projectiles/TracerLaserShotRed
+    TracerPerBullet: 1
+
+    DamageMultiplier_1: 1.25, param1: head, display: DmgMultiplierHead
+    DamageMultiplier_2: 0, param1: dirt|stone|rock|wood|hullarmored|hullcombat
+    DamageMultiplier_3: 0, param1: shield
+  }
+  { Child 1
+    Class: Zoom
+    ZoomOut: 40
+    ZoomIn: 40
+    # RedDot: true
+  }
+  { Child 6
+    Class: Movements
+    StandingLocation: "0.0, 0.010, 0.0"
+    StandingRotation: "0.0, 0.0, 0.0"
+    AimingLocation: "0.0, 0.0, 0.0"
+    AimingRotation: "0.0, 0.0, 0.0"
+    RunningLocation: "0.05, 0.0, 0.05"
+    RunningRotation: "0.0, 0.0, 0.0"
+    CrouchingLocation: "0.0, 0.0, 0.1"
+    CrouchingRotation: "0.0, 0.0, 0.0"
+    RecoilLocation: "0.12, 0.0, 0.0"
+    RecoilRotation: "0.0, 0.0, 0.0"
+    WalkMovement: "0.010"
+    RunMovement: "0.02"
+  }
+
+  UnlockCost: 12, display: true
+  UnlockLevel: 15, display: true
+  TechTreeParent: LaserPistol
+  TechTreeNames: Weapons
+}
+
 # CATEGORIE: New Drone Weapon Items id 850 - 900
 { Item Id: 850, Name: rocketlauncherDroneLarge
   Meshfile: Entities/Enemies/Drones/Weapons/GunMountInvisiblePrefab
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12110,6 +12421,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 25
   Canhold: false
   Category: Weapons/Items
   ShowUser: No
@@ -12131,6 +12443,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12152,6 +12465,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 25
   Canhold: false
   Category: Weapons/Items
   ShowUser: No
@@ -12175,6 +12489,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12219,6 +12534,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12241,6 +12557,7 @@
   # Meshfile: Entities/Items/Weapons/Projectiles/LaserImpulseRed01LongPrefab
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 25
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12261,6 +12578,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12283,6 +12601,7 @@
   # Meshfile: Entities/Items/Weapons/Projectiles/LaserImpulseRed01LongPrefab
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 25
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12324,6 +12643,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 25
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12344,6 +12664,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 25
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12386,6 +12707,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12430,6 +12752,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12451,6 +12774,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 25
   Canhold: false
   Category: Weapons/Items
   ShowUser: No
@@ -12472,6 +12796,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 25
   Canhold: false
   Category: Weapons/Items
   ShowUser: No
@@ -12483,6 +12808,7 @@
     Damage: 45
     AmmoCapacity: 200
     AmmoUnlimited: true
+    IgnoreAtmo: true
     AmmoType: highexplosiveantitank, display: true
     ReloadDelay: 3.1
     SfxBegin: Weapons/Player/Misc/Single/Cannon_2_short
@@ -12499,6 +12825,7 @@
   HoldType: 0
   MarketPrice: 2, display: true
   Canhold: false
+  StackSize: 4000
   Info: bkiAmmo, display: true
   Category: Weapons/Items
   Mass: 0.01, type: float, display: true, formatter: Kilogram
@@ -12509,6 +12836,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 25
   Canhold: false
   Category: Weapons/Items
   ShowUser: No
@@ -12529,6 +12857,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 25
   Canhold: false
   Category: Weapons/Items
   ShowUser: No
@@ -12552,6 +12881,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12573,6 +12903,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 25
   Canhold: false
   Category: Weapons/Items
   ShowUser: No
@@ -12596,6 +12927,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12621,6 +12953,7 @@
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 1, display: true
   HoldType: 0
+  StackSize: 25
   Canhold: false
   Category: Weapons/Items
   ShowUser: No
@@ -12645,6 +12978,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 1
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12673,6 +13007,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 25
   Category: Weapons/Items
   ShowUser: No
   { Child 0
@@ -12695,6 +13030,7 @@
   MarketPrice: 1, display: true
   Material: HWS_material_weapon_kinetic, display: true
   HoldType: 0
+  StackSize: 25
   Canhold: false
   Category: Weapons/Items
   ShowUser: No
@@ -12722,6 +13058,7 @@
   HoldType: 0
   MarketPrice: 2, display: true
   Canhold: false
+  StackSize: 4000
   Info: bkiAmmo, display: true
   Category: Weapons/Items
   Mass: 0.01, type: float, display: true, formatter: Kilogram
