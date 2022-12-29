@@ -7088,6 +7088,108 @@
 
 }
 
+{ +Entity Name: RipperDogWild, Ref: PredatorBAITemplate
+  Mesh: Enemies/RipperDog/RipperDogPrefab
+  MeshDead: Enemies/RipperDog/RipperDogDeadPrefab
+  HeadTransform: Head
+  Faction: Predator
+
+  Prefab: AnimalSmall
+
+  MaxHealth: 400
+  XpFactor: 3.12
+  HandItem: MeleeRipperDog
+  RotateToGround: true
+  RotateSpeedMovement: 360
+
+  /* Determines particle effect  */
+  SurfaceCategory: human
+
+  /* Sound settings */
+  SfxRandomTime: 50.0
+  SfxRandom: Enemies/Ripperdog/Ripperdog_SfxRandom
+
+  SfxAlertTime: 25.0
+  SfxAlert: Enemies/Ripperdog/Ripperdog_SfxAlert
+  SfxHurt:  Enemies/Ripperdog/Ripperdog_SfxHurt
+  SfxDeath: Enemies/Ripperdog/Ripperdog_SfxDeath
+
+  MotionAnimationSpeedMultiplier: 1.2
+
+  LootListOnDeath: 20
+
+  UpdateClusterInfo: true
+  AllowUserInstantiate: true
+  AllowInSpawners: true
+  FadingEnabled: false
+
+  /* AI Properties */
+  { Child MainBehavior
+	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+  }
+
+  { Child Hints
+	AttackMaxCount: 3
+	AttackRandomDirection: 100
+  }
+
+  { Child VariableOverride
+    SpeedCalm: 0.12
+    SpeedAlerted: 0.6
+    SpeedAttack: 3
+	SpeedFlee: 2.8
+	MeleeAttackDistance: 2.2       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+	MinimalDistanceToTarget: 1.3   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+  }
+
+  {	Child VisionSensor
+	VisibleDistance: 50
+	ViewAngle: 210
+  }
+
+  {	Child TargetSensor
+    AttackableTypes: "Player,PlayerBike"
+  }
+
+  {	Child AlertSensor
+	AlertLevel1: 15, param1: 0
+	AlertLevel2: 50, param1: 2
+	AlertLevel3: 80, param1: 20
+	AlertLevelDrop:10 /* slow alert drop */
+	AlertAddFromVisionMinNoMovement:0 /* no alert when not moving */
+	AlertAddFromVisionMovement:200
+	AlertVisionMaxSpeed:2
+	AlertAddFromAutoAlert:30
+	MinDistanceToAutoAlert:20
+	NoiseMaxDistance:50
+	NoiseAlertMultiplier:0.3
+  }
+
+  {	Child FearSensor /* fear sensor params */
+    MaxFear: 40 /* maximal fear of the animal*/
+
+	FearDrop: 20 /* how much fear will drop per frame */
+	FearDropPerFriend: 10 /* fear drop per frame for each group member around */
+	FearDropMaxFromFriends: 50
+	MaxFriendDistance: 10 /* if the group member is further, it will not help in decreasing fear */
+
+	MinDistanceToFearAnEnemy: 0 /* if closer, the agent will get feat from beign near to enemy, at max
+distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per second (linear) */
+	FearFromEnemy: 0
+	FearFromFriendDeath: 30
+	FearFromDamageMultiplier: 0.3 /* damage to fear conversion */
+	FearFromNoiseMaxDistance: 30  /* max distance to convert noise to fear */
+	FearFromNoiseMultiplier: 0.2  /* noise to fear conversion multiplier */
+	FearPropagationDamageMultiplier: 0.5 /* fear from damage propagation to group members */
+  }
+
+}
+
 { Entity Name: AlienBug02, Ref: PredatorBAITemplate
   Mesh: Enemies/AlienBugs/AlienBug02Prefab
   MeshDead: Enemies/AlienBugs/AlienBug02DeadPrefab

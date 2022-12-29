@@ -249,12 +249,6 @@
 
 # Normal AI ===
 
-
-{ EGroup Name: Ntys
-  NTY: "1, 1"
-  SpawnInSameDirection:true
-}
-
 { EGroup Name: AssaultCyborgs
   AssaultCyborgSentinel: "2, 2"
   AlienCivilian1: "1, 1"
