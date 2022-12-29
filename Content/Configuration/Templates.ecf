@@ -3303,6 +3303,15 @@
   }
 }
 
+{ +Template Name: SMG
+  CraftTime: 20 #A2 1
+  Target: "SmallC,HoverC,BaseC,LargeC,AdvC"
+  { Child Inputs
+    MechanicalComponents: 5
+    Electronics: 2
+  }
+}
+
 { Template Name: AssaultRifle
   CraftTime: 30 #A2 5.8mmBullet 3
   Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"

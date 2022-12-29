@@ -2374,6 +2374,7 @@
   AvatarController: BAIAnimalBase
   Parent: Enemies
   IsEnemy: true
+  EntityType: NPCFighter
   RotateSpeedMovement: 180
 
   # Determines particle effect
@@ -2413,6 +2414,10 @@
 
   AllowUserInstantiate: false
   PoolCount: 10
+
+  {	Child TargetSensor
+    AttackableTypes: "Player,PlayerBike,HV,Animal,Civilian,Cyborg,NPCFighter,Trader"
+  }
 }
 
 ## ==================================================
@@ -8123,7 +8128,7 @@
   Faction: Talon
   ModelType: NoRagdoll
   Prefab: AlienHumanoid
-  EntityType: Animal
+  EntityType: NPCFighter
   Parent: Enemies
   IsEnemy: false
 
@@ -9344,16 +9349,20 @@
 
 { Entity Name: HexapodInfected, Ref: Hexapod
   Mesh: Enemies/HexapodInfectedPrefab
+  EntityType: NPCFighter
   Faction: TheLegacy
   MeshDead: Enemies/HexapodInfectedDeadPrefab
   HeadTransform: Head
+  SfxHurt: Enemies/TotalHorror/TotalHorror_SfxHurt
 }
 { Entity Name: AlienAssassinInfected, Ref: AlienAssassinGrey
+  EntityType: NPCFighter
   Mesh: Enemies/AlienAssassin/AlienAssassinInfectedPrefab
   MeshDead: Enemies/AlienAssassin/AlienAssassinInfectedDeadPrefab
   HeadTransform: Head
   Faction: TheLegacy
   MaxHealth: 750
+  SfxHurt: Enemies/TotalHorror/TotalHorror_SfxHurt
 }
 { Entity Name: SoldierAlienInfected, Ref: SoldierAlienAssaultRifle
   MaxHealth: 700
@@ -9365,6 +9374,7 @@
   HeadTransform: AlienHead
   RightHandJointName: RightHand
   Faction: TheLegacy
+  SfxHurt: Enemies/TotalHorror/TotalHorror_SfxHurt
 }
 { Entity Name: SoldierHumanMaleInfected, Ref: ZiraxMinigun
   MaxHealth: 1400
@@ -9426,8 +9436,8 @@
   MaxHealth: 1200
 }
 { Entity Name: TalonGuardianInfectedRed, Ref: TalonGuardian
-  Mesh: Enemies/TalonGuardian/TalonGuardianRedInfectedPrefab
-  MeshDead: Enemies/TalonGuardian/TalonGuardianRedInfectedDeadPrefab
+  Mesh: Enemies/TalonGuardian/BAI/TalonGuardianRedInfectedPrefab
+  MeshDead: Enemies/TalonGuardian/BAI/TalonGuardianRedInfectedDeadPrefab
   Faction: TheLegacy
   MaxHealth: 1200
 }

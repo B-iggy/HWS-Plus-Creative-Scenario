@@ -249,6 +249,12 @@
 
 # Normal AI ===
 
+
+{ EGroup Name: Ntys
+  NTY: "1, 1"
+  SpawnInSameDirection:true
+}
+
 { EGroup Name: AssaultCyborgs
   AssaultCyborgSentinel: "2, 2"
   AlienCivilian1: "1, 1"
@@ -415,7 +421,10 @@
 }
 
 { EGroup Name: RipperDogs
-  RipperDog: "1, 1"
+  RipperDog: "1, 2"
+}
+{ EGroup Name: RipperDogsWildGroup
+  RipperDogWild: "3, 4"
 }
 
 { EGroup Name: Otyughs
