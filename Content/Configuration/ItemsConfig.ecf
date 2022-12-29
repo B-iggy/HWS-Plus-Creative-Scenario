@@ -47,6 +47,10 @@
 # ShieldDamagePenFac: 0.2, display: true    = ShieldDamagePenFac, float: 0.0-1.0 -> how much % of damage goes through the shield
 # BlastShieldDamagePenFac, float: 0.3       = how much % of blast damage goes through the shield; range 0.0-1.0
 #
+# Syntax examples:
+# DamageMultiplier_1: <value>, param1: <material1>|<material2>  ; NOTE: You can add the parameter "Material: " to an creature/NPC entry in the EClassConfig and use the string set there as reference at this point in the Itemsconfig (for the weapon being more or less effective against a certain creature/NPC!)
+# BlastDamageMultiplier_1: <value>, param1: <material1>|<material2>
+# >> Available materials: head, body, dirt, stone, rock, metallight, metal, metalhard, woodsoft, wood, woodhard, concrete, concrete, hull, hullarmored, hullcombat, shield
 # -- BlastDamage/Radius/Effect setup --
 # BlastParticleIndex: "3"  => which prefab/particle is used (1-16; Not that not all numbers have an explosion animiation/effect)
 # BlastRadius: "4"   => damage radius
@@ -54,6 +58,9 @@
 # -- Shields --
 # SHIELD: weapons fired at shiels will NOT apply their BlastDamage! Only the base damage is applied. Using BlastDamageMultiplier with shields does NOT do anyhting! (BlastDamageMultiplier is always 0)
 # SHIELD: the Class: ShieldGenerator (BlocksConfig.ecf) can have a parameter 'ShieldMultiplier: AnyStringPossible' > The value 'AnyStringPossible' can be used in the DamageMultiplier setup to define shield-block specific damage multipliers! If not used, damage multiplier = 1
+# --
+# TracerIsBeam: true => sets tracer into a continuous beam set by y-axis of tracer mesh
+# PenetrationDepth: 10, display: true => Allows weapons to divert excess damage into the blocks behind the one hit if the first one is destroyed
 # --
 #
 # Categories:
@@ -163,6 +170,7 @@
     Class: Zoom
     ZoomOut: 40
     ZoomIn: 40
+    # RedDot: true
   }
   UnlockLevel: 1
   TechTreeNames: Weapons
@@ -225,7 +233,7 @@
   UnlockLevel: 3, display: true
   TechTreeNames: Weapons
 }
-{ +Item Id: 5, Name: Minigun
+{ Item Id: 5, Name: Minigun
   Meshfile: Entities\Items\Weapons\ScifiMinigun\MinigunPrefab
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
@@ -307,6 +315,21 @@
      RadialText: Stabilizer - OFF
      RadialDesc: Multiple Heat Sinks allow this weapon to be fired at maximum damage output # add text
      RadialIcon: Radial_Upgrade
+  }
+  { Child 6
+    Class: Movements
+    StandingLocation: "-0.05, 0.02, 0.05"
+    StandingRotation: "0.0, 0.0, -1.25"
+    AimingLocation: "0.0, 0.0, 0.0"
+    AimingRotation: "-0.5, 0.6, 1"
+    RunningLocation: "-0.05, 0.1, 0.05"
+    RunningRotation: "30, -45, 7"
+    CrouchingLocation: "0.0, 0.025, 0.0"
+    CrouchingRotation: "15, -30, 5"
+    RecoilLocation: "0.05, -0.1, 0.0"
+    RecoilRotation: "0.0, 0.0, 0.0"
+    WalkMovement: "0.010"
+    RunMovement: "0.02"
   }
 
   UnlockCost: 17, display: true
@@ -590,7 +613,8 @@
   TechTreeNames: Weapons
 }
 { Item Id: 10, Name: RocketLauncher #T1
-  Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/SciFiGrenadeLauncherBlackPrefab
+  Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/RocketLauncherAK9Prefab
+  CustomIcon: RocketLauncherAK9
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 6498, display: true
@@ -904,6 +928,21 @@
     RadialDesc: rdlDeconstructTxt
     RadialIcon: Radial_Deconstruct
   }
+  { Child 6
+    Class: Movements
+    StandingLocation: "0.0, 0.010, 0.025"
+    StandingRotation: "0.0, 0.0, 0.0"
+    AimingLocation: "0.0, 0.0, 0.0"
+    AimingRotation: "0.0, 0.0, 0.0"
+    RunningLocation: "0.05, 0.0, 0.05"
+    RunningRotation: "-15, -45, 5"
+    CrouchingLocation: "0.0, 0.0, 0.1"
+    CrouchingRotation: "0.0, 0.0, 0.0"
+    RecoilLocation: "0.0, 0.0, 0.0"
+    RecoilRotation: "0.0, 0.0, 0.0"
+    WalkMovement: "0.010"
+    RunMovement: "0.02"
+  }
 
   UnlockCost: 3, display: true
   UnlockLevel: 3, display: true
@@ -1042,7 +1081,7 @@
   # TechTreeParent: ColorTool
   # TechTreeNames: Tools
 }
-{ +Item Id: 14, Name: LaserPistol
+{ Item Id: 14, Name: LaserPistol
   Meshfile: Entities/Items/Weapons/Pistols/LaserPistolPrefab
   # Meshfile: Entities/Items/Weapons/Pistols/ScifiEnergyPistol3T1Prefab
   # Meshfile: Entities/Items/Weapons/Pistols/SciFiPistol2BluePrefab
@@ -1178,7 +1217,8 @@
   TechTreeNames: Weapons
 }
 { Item Id: 16, Name: LaserRifle
-  Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle4Prefab
+  Meshfile: Entities/Items/Weapons/Rifles/LaserRiflePrefab
+  CustomIcon: LaserRifleV2
   PickupToToolbar: true
   Material: HWS_material_weapon_energy, display: true
   MarketPrice: 139113, display: true
@@ -1249,6 +1289,21 @@
     ZoomOut: 40
     ZoomIn: 15
     RedDot: true
+  }
+  { Child 6
+    Class: Movements
+    StandingLocation: "-0.05, 0.010, 0.05"
+    StandingRotation: "0.0, 0.0, 0.0"
+    AimingLocation: "0.0, 0.0, 0.0"
+    AimingRotation: "0.0, 0.0, 0.0"
+    RunningLocation: "0.05, 0.0, 0.05"
+    RunningRotation: "-15, -45, 7"
+    CrouchingLocation: "0.0, 0.0, 0.1"
+    CrouchingRotation: "0.0, 0.0, 0.0"
+    RecoilLocation: "0.12, 0.0, 0.0"
+    RecoilRotation: "0.0, 0.0, 0.0"
+    WalkMovement: "0.010"
+    RunMovement: "0.02"
   }
 
   UnlockCost: 20, display: true
@@ -1596,6 +1651,21 @@
     # RadialDesc: rdlStoneRemovalTxt
     # RadialIcon: Radial_StoneRemoval
   # }
+  { Child 6
+    Class: Movements
+    StandingLocation: "0.0, 0.010, 0.025"
+    StandingRotation: "0.0, 0.0, 0.0"
+    AimingLocation: "0.0, 0.0, 0.0"
+    AimingRotation: "0.0, 0.0, 0.0"
+    RunningLocation: "0.05, 0.0, 0.05"
+    RunningRotation: "-15, -45, 7"
+    CrouchingLocation: "0.0, 0.0, 0.1"
+    CrouchingRotation: "0.0, 0.0, 0.0"
+    RecoilLocation: "0.0, 0.0, 0.0"
+    RecoilRotation: "0.0, 0.0, 0.0"
+    WalkMovement: "0.010"
+    RunMovement: "0.02"
+  }
 
   UnlockCost: 10, display: true
   UnlockLevel: 7, display: true
@@ -1603,7 +1673,8 @@
   TechTreeNames: Tools
 }
 { Item Id: 20, Name: PistolT2, Ref: Pistol
-  Meshfile: Entities/Items/Weapons/Pistols/SciFiPistol4BlackT2Prefab
+  Meshfile: Entities/Items/Weapons/Pistols/HandGunPrefab
+  CustomIcon: HandCannon
   PickupToToolbar: true
   Durability: 500, display: false
   MarketPrice: 627, display: true
@@ -1773,6 +1844,21 @@
 
     DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
+  { Child 6
+    Class: Movements
+    StandingLocation: "0.0, 0.010, 0.025"
+    StandingRotation: "0.0, 0.0, 0.0"
+    AimingLocation: "0.0, 0.0, 0.0"
+    AimingRotation: "0.0, 0.0, 0.0"
+    RunningLocation: "0.05, 0.0, 0.05"
+    RunningRotation: "15, -45, 7"
+    CrouchingLocation: "0.0, 0.0, 0.1"
+    CrouchingRotation: "0.0, 0.0, 0.0"
+    RecoilLocation: "0.0, 0.0, 0.0"
+    RecoilRotation: "0.0, 0.0, 0.0"
+    WalkMovement: "0.010"
+    RunMovement: "0.02"
+  }
 
   UnlockCost: 0, display: true
   UnlockLevel: 1, display: true
@@ -1877,6 +1963,21 @@
     ZoomIn: 5
     RedDot: true
   }
+  { Child 6
+    Class: Movements
+    StandingLocation: "0.0, 0.010, 0.025"
+    StandingRotation: "0.0, 0.0, 0.0"
+    AimingLocation: "0.0, 0.0, 0.0"
+    AimingRotation: "0.0, 0.0, 0.0"
+    RunningLocation: "0.05, 0.0, 0.05"
+    RunningRotation: "-15, -45, 7"
+    CrouchingLocation: "0.0, 0.0, 0.1"
+    CrouchingRotation: "0.0, 0.0, 0.0"
+    RecoilLocation: "0.05, 0.0, 0.0"
+    RecoilRotation: "3, 0.0, 0.0"
+    WalkMovement: "0.010"
+    RunMovement: "0.02"
+  }
 
   UnlockCost: 0
   UnlockLevel: 25
@@ -1961,6 +2062,21 @@
     RadialDesc: Multiple Heat Sinks allow this weapon to be fired at maximum damage output # add text
     RadialIcon: Radial_Upgrade
   }
+  { Child 6
+    Class: Movements
+    StandingLocation: "-0.05, 0.02, 0.05"
+    StandingRotation: "0.0, 0.0, -1.25"
+    AimingLocation: "0.0, 0.0, 0.0"
+    AimingRotation: "-0.5, 0.6, 1"
+    RunningLocation: "-0.05, -0.05, 0.05"
+    RunningRotation: "-15, -45, 7"
+    CrouchingLocation: "0.0, 0.025, 0.0"
+    CrouchingRotation: "15, -30, 5"
+    RecoilLocation: "0.05, -0.1, 0.0"
+    RecoilRotation: "0.0, 0.0, 0.0"
+    WalkMovement: "0.010"
+    RunMovement: "0.02"
+  }
 
   UnlockCost: 0
   UnlockLevel: 25
@@ -2023,6 +2139,7 @@
 }
 { Item Id: 28, Name: LaserRifleEpic, Ref: LaserRifle
   Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle4EpicPrefab
+  CustomIcon: LaserRifleEpic
   # HoldType: 16           # no weapon shaking animation
   PickupToToolbar: true
   MarketPrice: 200001, display: true
@@ -2068,6 +2185,21 @@
     ZoomOut: 40
     ZoomIn: 5
     RedDot: true
+  }
+  { Child 6
+    Class: Movements
+    StandingLocation: "0.0, 0.010, 0.025"
+    StandingRotation: "0.0, 0.0, 0.0"
+    AimingLocation: "0.0, 0.0, 0.0"
+    AimingRotation: "0.0, 0.0, 0.0"
+    RunningLocation: "0.05, 0.0, 0.05"
+    RunningRotation: "-15, -45, 7"
+    CrouchingLocation: "0.0, 0.0, 0.1"
+    CrouchingRotation: "0.0, 0.0, 0.0"
+    RecoilLocation: "0.05, 0.0, 0.0"
+    RecoilRotation: "3, 0.0, 0.0"
+    WalkMovement: "0.010"
+    RunMovement: "0.02"
   }
 
   UnlockCost: 0
@@ -2151,6 +2283,7 @@
 }
 { Item Id: 30, Name: PistolEpic, Ref: Pistol
   Meshfile: Entities/Items/Weapons/Pistols/SciFiPistol4EpicPrefab
+  CustomIcon: PistolEpic
   PickupToToolbar: true
   MarketPrice: 100001, display: true
   Info: "An improved automatic pistol developed by the Zirax after examining UCH weapons retrieved from the Titan's Wreckage. The technology to repair this weapon does not exist yet.", display: true
@@ -2273,6 +2406,7 @@
 }
 { Item Id: 33, Name: RocketLauncherT2, Ref: RocketLauncher
   Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/SciFiGrenadeLauncherT2Prefab
+  CustomIcon: RocketLauncherT2
   PickupToToolbar: true
   MarketPrice: 11018, display: true
   Durability: 100, display: false
@@ -2312,6 +2446,7 @@
 }
 { Item Id: 34, Name: RocketLauncherEpic, Ref: RocketLauncher
   Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/SciFiGrenadeLauncherEpicPrefab
+  CustomIcon: RocketLauncherEpic
   PickupToToolbar: true
   MarketPrice: 250001, display: true
   Info: "A refined version of the standard UCH Rocket Launcher developed by the Zirax after examining UCH weapons retrieved from the Titan's Wreckage. The technology to repair this weapon does not exist yet.", display: true
@@ -2358,7 +2493,8 @@
   # TechTreeNames: Weapons
 }
 { Item Id: 35, Name: LaserPistolT2, Ref: LaserPistol
-  Meshfile: Entities/Items/Weapons/Pistols/ScifiEnergyPistol3Prefab
+  Meshfile: Entities/Items/Weapons/Pistols/BlasterPrefab
+  CustomIcon: Blaster
   PickupToToolbar: true
   MarketPrice: 39327, display: true
   # Damage: 100, display: true
@@ -2541,6 +2677,21 @@
     ZoomIn: 10
     RedDot: true
   }
+  { Child 6
+    Class: Movements
+    StandingLocation: "0.0, 0.010, 0.025"
+    StandingRotation: "0.0, 0.0, 0.0"
+    AimingLocation: "0.0, 0.0, 0.0"
+    AimingRotation: "0.0, 0.0, 0.0"
+    RunningLocation: "0.05, 0.0, 0.05"
+    RunningRotation: "-15, -45, 7"
+    CrouchingLocation: "0.0, 0.0, 0.1"
+    CrouchingRotation: "0.0, 0.0, 0.0"
+    RecoilLocation: "0.08, 0.0, 0.0"
+    RecoilRotation: "5, 0.0, 0.0"
+    WalkMovement: "0.010"
+    RunMovement: "0.02"
+  }
 
   UnlockCost: 0
   UnlockLevel: 25
@@ -2705,6 +2856,21 @@
     RadialDesc: bkiDetector
     RadialIcon: Radial_Upgrade
   }
+  { Child 6
+    Class: Movements
+    StandingLocation: "0.0, 0.010, 0.025"
+    StandingRotation: "0.0, 0.0, 0.0"
+    AimingLocation: "0.0, 0.0, 0.0"
+    AimingRotation: "0.0, 0.0, 0.0"
+    RunningLocation: "0.05, 0.0, 0.05"
+    RunningRotation: "-15, -45, 7"
+    CrouchingLocation: "0.0, 0.0, 0.1"
+    CrouchingRotation: "0.0, 0.0, 0.0"
+    RecoilLocation: "0.0, 0.0, 0.0"
+    RecoilRotation: "0.0, 0.0, 0.0"
+    WalkMovement: "0.010"
+    RunMovement: "0.02"
+  }
   UnlockLevel: 1
   TechTreeNames: Tools
 }
@@ -2771,8 +2937,8 @@
 }
 
 { Item Id: 42, Name: FlameThrower
-  Meshfile: Entities/Items/Weapons/Flamethrower/SciFiFlamethrowerPrefab
-  DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  Meshfile: Entities/Items/Weapons/Flamethrower/FlamethrowerV2Prefab
+  CustomIcon: FlamethrowerV2
   PickupToToolbar: true
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 39474, display: true
@@ -2825,6 +2991,21 @@
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/100)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
     Mod.Recoil: "Math.Max(0.01, Recoil - Player.Skills['Recoil']/100)"
+  }
+ { Child 6
+    Class: Movements
+    StandingLocation: "-0.05, 0.03, 0.05"
+    StandingRotation: "0.0, 0.0, -1.25"
+    AimingLocation: "0.0, 0.0, 0.0"
+    AimingRotation: "-0.05, 0.6, 1"
+    RunningLocation: "-0.05, 0.02, 0.05"
+    RunningRotation: "-15, -45, 10"
+    CrouchingLocation: "0.0, 0.025, 0.0"
+    CrouchingRotation: "15, -30, 5"
+    RecoilLocation: "0.010, 0.0, 0.0"
+    RecoilRotation: "0.0, 0.0, -0.05"
+    WalkMovement: "0.010"
+    RunMovement: "0.02"
   }
 
   UnlockCost: 4500, display: true
@@ -2994,8 +3175,9 @@
     PfxMuzzle: land_predator_fire_breath
     #ParticleTransform: Muzzle/Flamethrower_v1  # particle effect shown at muzzle
     #             SfxBegin: Weapons/Player/Drill/THRUSTERFlangerShiftingBurningAirHot_start
-    SfxLoop: Weapons/Player/Drill/THRUSTERFlangerShiftingBurningAirHot_loop
+    # SfxLoop: Weapons/Player/Drill/THRUSTERFlangerShiftingBurningAirHot_loop
     SfxBegin: Weapons/Player/Drill/weapon_flame_005_start
+    SfxLoop: Weapons/Player/Drill/weapon_flame_005_loop
     SfxStop: Weapons/Player/Drill/Mute
     SfxReload: UseActions/oxygen_tank_release_air
     # SfxReload: Weapons/Player/Drill/WaltherP99MagInQuick01
@@ -3228,17 +3410,17 @@
   UnlockLevel: 1
   TechTreeNames: Hidden
 }
-{ +Item Id: 53, Name: 8.3mmBullet, Ref: 50Caliber
+{ Item Id: 53, Name: 8.3mmBullet, Ref: 50Caliber
   MarketPrice: 12, display: true
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
-{ +Item Id: 54, Name: 5.8mmBullet, Ref: 50Caliber
+{ Item Id: 54, Name: 5.8mmBullet, Ref: 50Caliber
   MarketPrice: 22, display: true
   Mass: 0.02, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
-{ +Item Id: 55, Name: 12.7mmBullet, Ref: 50Caliber
+{ Item Id: 55, Name: 12.7mmBullet, Ref: 50Caliber
   MarketPrice: 45, display: true
   Mass: 0.06, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -11744,6 +11926,14 @@
   ShowUser: No
 }
 
+{ Item Id: 658, Name: TransportationBoostEpic, Ref: ArmorBoostTemplate
+  VolumeCapacity: 500, type: float, display: true, formatter: Liter
+  MarketPrice: 300, display: true
+  FoodFac: 0.1, type: float, display: true
+  StaminaFac: 0.5, type: float, display: true
+
+  ShowUser: Yes
+}
 # CATEGORIE: ARMOR EQUIPMENT id 620 - 699
 
 { Item Id: 700, Name: NightVision
@@ -11764,6 +11954,7 @@
 { Item Id: 701, Name: OreScanner
   # Class: ArmorBoost
   Info: bkiOreScanner, display: true
+  PickupToToolbar: true
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_devices_kinetic, display: false
@@ -11933,7 +12124,7 @@
   }
 }
 
-{ +Item Id: 708, Name: PDA
+{ Item Id: 708, Name: PDA
   Info: bkiPDA, display: true
   CustomIcon: Tablet
   LifetimeOnDrop: 1200
@@ -12097,7 +12288,7 @@
   }
 }
 
-{ +Item Id: 803, Name: TalonCrossbowTribalPlayer   # Ref: TalonCrossbowPlayer
+{ Item Id: 803, Name: TalonCrossbowTribalPlayer   # Ref: TalonCrossbowPlayer
   Meshfile: Entities/Items/Weapons/Crossbow/TalonCrossbowPlayerPrefab
   CustomIcon: TalonCrossbowWeaponCharged
   PickupToToolbar: true
@@ -12148,7 +12339,7 @@
   }
 }
 
-{ +Item Id: 804, Name: CrossbowBoltPlayer
+{ Item Id: 804, Name: CrossbowBoltPlayer
   Meshfile: Entities/Misc/DummyPrefab
   CustomIcon: MeleeTalonGuardianCharged
   DropMeshfile: Entities/Misc/BagSmallNewPrefab   #Available variants: BagSmallChristmasPrefab
@@ -12166,7 +12357,7 @@
  # TechTreeNames: Hidden
 }
 
-{ +Item Id: 805, Name: CyborgRifleWeapon, Ref: ZiraxMinigunWeapon
+{ Item Id: 805, Name: CyborgRifleWeapon, Ref: ZiraxMinigunWeapon
   Meshfile: Entities/Items/Weapons/Enemies/CyborgSniperPrefab
   { Child 0
     Class: Ranged
@@ -12195,7 +12386,7 @@
   }
 }
 
-{ +Item Id: 806, Name: LaserCarbine
+{ Item Id: 806, Name: LaserCarbine
   Meshfile: Entities/Items/Weapons/Rifles/LaserCarbinePrefab
   PickupToToolbar: true
   MarketPrice: 3750, display: true
@@ -12235,9 +12426,7 @@
     Tracer: Weapons/Projectiles/TracerLaserShotRed
     TracerPerBullet: 1
 
-    DamageMultiplier_1: 1.25, param1: head, display: DmgMultiplierHead
-    DamageMultiplier_2: 0, param1: dirt|stone|rock|wood|hullarmored|hullcombat
-    DamageMultiplier_3: 0, param1: shield
+    DamageMultiplier_Group: HWS_EWS_Energy_LHW
   }
   { Child 1
     Class: Zoom
@@ -12262,13 +12451,13 @@
     RunMovement: "0.02"
   }
 
-  UnlockCost: 15, display: true
-  UnlockLevel: 20, display: true
+  UnlockCost: 70, display: true
+  UnlockLevel: 25, display: true
   TechTreeParent: LaserRifle
   TechTreeNames: Weapons
 }
 
-{ +Item Id: 807, Name: SMG
+{ Item Id: 807, Name: SMG
   Meshfile: Entities/Items/Weapons/Pistols/SMGPrefab
   PickupToToolbar: true
   MarketPrice: 1123, display: true
@@ -12305,9 +12494,7 @@
     Tracer: Weapons/Projectiles/TracerOrange1
     TracerPerBullet: 5
 
-    DamageMultiplier_1: 3.5, param1: head, display: DmgMultiplierHead
-    DamageMultiplier_2: 0, param1: dirt|stone|rock|wood|hullarmored|hullcombat
-    DamageMultiplier_3: 0, param1: shield
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
   { Child 1
     Class: Zoom
@@ -12321,7 +12508,7 @@
   TechTreeNames: Weapons
 }
 
-{ +Item Id: 808, Name: LaserSMG
+{ Item Id: 808, Name: LaserSMG
   Meshfile: Entities/Items/Weapons/Pistols/LaserSMGPrefab
   PickupToToolbar: true
   MarketPrice: 3267, display: true
@@ -12361,9 +12548,7 @@
     Tracer: Weapons/Projectiles/TracerLaserShotRed
     TracerPerBullet: 1
 
-    DamageMultiplier_1: 1.25, param1: head, display: DmgMultiplierHead
-    DamageMultiplier_2: 0, param1: dirt|stone|rock|wood|hullarmored|hullcombat
-    DamageMultiplier_3: 0, param1: shield
+    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
   }
   { Child 1
     Class: Zoom
@@ -12387,8 +12572,8 @@
     RunMovement: "0.02"
   }
 
-  UnlockCost: 12, display: true
-  UnlockLevel: 15, display: true
+  UnlockCost: 50, display: true
+  UnlockLevel: 25, display: true
   TechTreeParent: LaserPistol
   TechTreeNames: Weapons
 }
@@ -14055,7 +14240,7 @@
   Mass: 0.8, type: float, display: true, formatter: Kilogram
   Volume: 1625, type: float, display: true, formatter: Liter
 }
-{ +Item Id: 1022, Name: FishMeat, Ref: TradingGoodsTemplate
+{ Item Id: 1022, Name: FishMeat, Ref: TradingGoodsTemplate
   CustomIcon: Meat
   ShowUser: Yes
   MarketPrice: 15, display: true
@@ -14253,6 +14438,15 @@
   Info: bkiRingOfTheHouseOfAbyssal, display: true
   ShowUser: Yes
 }
+{ Item Id: 1104, Name: Presents, Ref: ComponentsTemplate
+  StackSize: 4000
+  # CustomIcon: Tablet
+  Mass: 1, type: float, display: true, formatter: Kilogram
+  Volume: 1, type: float, display: true, formatter: Liter
+  Info: bkiPresents, display: true
+  ShowUser: Yes
+  MarketPrice: 5, display: true
+}
 # ========================================= Suit Props ==========================
 { Item Id: 1150, Name: SuitPropsTemplate
   Meshfile: Entities/Misc/DummyPrefab
@@ -14323,82 +14517,82 @@
   ShowUser: Yes
 }
 
-{ +Item Id: 1157, Name: HWSHelmetRipGame1, Ref: SuitPropsTemplate
+{ Item Id: 1157, Name: HWSHelmetRipGame1, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame1
   ShowUser: Yes
 }
-{ +Item Id: 1158, Name: HWSHelmetRipGame2, Ref: SuitPropsTemplate
+{ Item Id: 1158, Name: HWSHelmetRipGame2, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame2
   ShowUser: Yes
 }
-{ +Item Id: 1159, Name: HWSHelmetRipGame3, Ref: SuitPropsTemplate
+{ Item Id: 1159, Name: HWSHelmetRipGame3, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame3
   ShowUser: Yes
 }
-{ +Item Id: 1160, Name: HWSHelmetRipGame4, Ref: SuitPropsTemplate
+{ Item Id: 1160, Name: HWSHelmetRipGame4, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame4
   ShowUser: Yes
 }
-{ +Item Id: 1161, Name: HWSHelmetRipGame5, Ref: SuitPropsTemplate
+{ Item Id: 1161, Name: HWSHelmetRipGame5, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame5
   ShowUser: Yes
 }
-{ +Item Id: 1162, Name: HWSHelmetRipGame6, Ref: SuitPropsTemplate
+{ Item Id: 1162, Name: HWSHelmetRipGame6, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame6
   ShowUser: Yes
 }
-{ +Item Id: 1163, Name: HWSHelmetRipGame7, Ref: SuitPropsTemplate
+{ Item Id: 1163, Name: HWSHelmetRipGame7, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame7
   ShowUser: Yes
 }
-{ +Item Id: 1164, Name: HWSHelmetRipGame8, Ref: SuitPropsTemplate
+{ Item Id: 1164, Name: HWSHelmetRipGame8, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame8
   ShowUser: Yes
 }
-{ +Item Id: 1165, Name: HWSHelmetRipGame9, Ref: SuitPropsTemplate
+{ Item Id: 1165, Name: HWSHelmetRipGame9, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame9
   ShowUser: Yes
 }
-{ +Item Id: 1166, Name: HWSHelmetRipGame10, Ref: SuitPropsTemplate
+{ Item Id: 1166, Name: HWSHelmetRipGame10, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame10
   ShowUser: Yes
 }
-{ +Item Id: 1167, Name: HWSHelmetRipGame11, Ref: SuitPropsTemplate
+{ Item Id: 1167, Name: HWSHelmetRipGame11, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame11
   ShowUser: Yes
 }
-{ +Item Id: 1168, Name: HWSHelmetRipGame12, Ref: SuitPropsTemplate
+{ Item Id: 1168, Name: HWSHelmetRipGame12, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame12
   ShowUser: Yes
 }
-{ +Item Id: 1169, Name: HWSHelmetRipGame13, Ref: SuitPropsTemplate
+{ Item Id: 1169, Name: HWSHelmetRipGame13, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame13
   ShowUser: Yes
 }
-{ +Item Id: 1170, Name: HWSHelmetRipGame14, Ref: SuitPropsTemplate
+{ Item Id: 1170, Name: HWSHelmetRipGame14, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame14
   ShowUser: Yes
 }
-{ +Item Id: 1171, Name: HWSHelmetRipGame15, Ref: SuitPropsTemplate
+{ Item Id: 1171, Name: HWSHelmetRipGame15, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame15
   ShowUser: Yes
 }
-{ +Item Id: 1172, Name: HWSHelmetRipGame16, Ref: SuitPropsTemplate
+{ Item Id: 1172, Name: HWSHelmetRipGame16, Ref: SuitPropsTemplate
   Info: bkiHWSHelmetRipGame, display: true
   PropHead: @hws_headdecorations/HWSHelmetRipGame16
   ShowUser: Yes
@@ -14446,8 +14640,9 @@
     PfxMuzzle: flamethrower_v1
     #ParticleTransform: Muzzle/Flamethrower_v1  # particle effect shown at muzzle
     #             SfxBegin: Weapons/Player/Drill/THRUSTERFlangerShiftingBurningAirHot_start
-    SfxLoop: Weapons/Player/Drill/THRUSTERFlangerShiftingBurningAirHot_loop
+    # SfxLoop: Weapons/Player/Drill/THRUSTERFlangerShiftingBurningAirHot_loop     
     SfxBegin: Weapons/Player/Drill/weapon_flame_005_start
+    SfxLoop: Weapons/Player/Drill/weapon_flame_005_loop
     SfxStop: Weapons/Player/Drill/Mute
     SfxReload: UseActions/oxygen_tank_release_air
     # SfxReload: Weapons/Player/Drill/WaltherP99MagInQuick01
@@ -14721,6 +14916,79 @@
   Info: bkiTraderToken, display: true
   ShowUser: Yes
   # MarketPrice: 4500, display: true
+}
+
+{ Item Id: 1317, Name: TutorialSurvivalTool, Ref: KeysTemplate     #Video Manual Consumable
+  CustomIcon: Tablet
+  DropOnDeath: false
+  Info: bkiTutorialSurvivalTool, display: true
+  Meshfile: Entities/Misc/DummyPrefab
+  DropMeshfile: Entities/Misc/PDADropPrefab   #Available variants: BagSmallChristmasPrefab
+  Material: metal
+  Mass: 0, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: true, formatter: Liter
+  Canhold: false
+  HoldType: 0
+  StackSize: 4000
+  ShowUser: No
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+  }
+}
+{ Item Id: 1318, Name: TutorialHVBuilding, Ref: KeysTemplate     #Video Manual Consumable
+  CustomIcon: Tablet
+  DropOnDeath: false
+  Info: bkiTutorialHVBuilding, display: true
+  Meshfile: Entities/Misc/DummyPrefab
+  DropMeshfile: Entities/Misc/PDADropPrefab   #Available variants: BagSmallChristmasPrefab
+  Material: metal
+  Mass: 0, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: true, formatter: Liter
+  Canhold: false
+  HoldType: 0
+  StackSize: 4000
+  ShowUser: No
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+  }
+}
+{ Item Id: 1319, Name: TutorialBABuilding, Ref: KeysTemplate     #Video Manual Consumable
+  CustomIcon: Tablet
+  DropOnDeath: false
+  Info: bkiTutorialBABuilding, display: true
+  Meshfile: Entities/Misc/DummyPrefab
+  DropMeshfile: Entities/Misc/PDADropPrefab   #Available variants: BagSmallChristmasPrefab
+  Material: metal
+  Mass: 0, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: true, formatter: Liter
+  Canhold: false
+  HoldType: 0
+  StackSize: 4000
+  ShowUser: No
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+  }
+}
+{ Item Id: 1320, Name: TutorialHUDViewPlayer, Ref: KeysTemplate     #Video Manual Consumable
+  CustomIcon: Tablet
+  DropOnDeath: false
+  Info: bkiTutorialHUDViewPlayer, display: true
+  Meshfile: Entities/Misc/DummyPrefab
+  DropMeshfile: Entities/Misc/PDADropPrefab   #Available variants: BagSmallChristmasPrefab
+  Material: metal
+  Mass: 0, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: true, formatter: Liter
+  Canhold: false
+  HoldType: 0
+  StackSize: 4000
+  ShowUser: No
+  { Child 0
+    Class: Eat
+    ROF: 1, type: float
+  }
 }
 # =============================================================================
 
@@ -15210,12 +15478,12 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
-    Range: 750, display: true
+    Range: 625, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.25, display: true
     CameraShake: 3
     Automatic: true
-    AmmoCapacity: 10, display: true
+    AmmoCapacity: 5, display: true
     AmmoType: HWSLuxGunAmmo, display: true
     ReloadDelay: 5, display: true
     # SfxBegin: Weapons/Player/RocketLauncher/FLYBYMissile02Slow
@@ -15328,7 +15596,7 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSAquaExplosionSmall
     BlastRadius: 2, display: true
-    BlastDamage: 750, display: true
+    BlastDamage: 500, display: true
     HomingSpeed: 1.0
     Speed: 100, display: true
     Range: 500, display: true
@@ -15358,7 +15626,7 @@
     BlastParticleName: @hws_blastparticles/HWSTerraExplosionSmall
     HomingSpeed: 1.0
     BlastRadius: 2, display: true
-    BlastDamage: 750, display: true
+    BlastDamage: 500, display: true
     Speed: 100, display: true
     Range: 500, display: true
     SpeedSpace: 200, display: true
@@ -15386,7 +15654,7 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSPyroExplosionSmall
     BlastRadius: 3, display: true
-    BlastDamage: 1100, display: true
+    BlastDamage: 750, display: true
     HomingSpeed: 1.0
     Speed: 100, display: true
     Range: 500, display: true
@@ -15415,7 +15683,7 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSObsidianExplosionSmall
     BlastRadius: 2, display: true
-    BlastDamage: 750, display: true
+    BlastDamage: 500, display: true
     HomingSpeed: 1.0
     Speed: 100, display: true
     Range: 500, display: true
@@ -15444,12 +15712,12 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSLuxExplosionSmall
     BlastRadius: 2, display: true
-    BlastDamage: 750, display: true
+    BlastDamage: 500, display: true
     HomingSpeed: 1.0
-    Speed: 150, display: true
-    Range: 750, display: true
-    SpeedSpace: 300, display: true
-    RangeSpace: 750, display: true
+    Speed: 160, display: true
+    Range: 625, display: true
+    SpeedSpace: 320, display: true
+    RangeSpace: 625, display: true
     Ballistic: true
     Buff: "Fire"
     Buff_chance: "1.0"
@@ -15473,7 +15741,7 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSNoxExplosionSmall
     BlastRadius: 2, display: true
-    BlastDamage: 750, display: true
+    BlastDamage: 500, display: true
     HomingSpeed: 1.0
     Speed: 100, display: true
     Range: 250, display: true
@@ -15502,7 +15770,7 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSStrangeletExplosionSmall
     BlastRadius: 2, display: true
-    BlastDamage: 750, display: true
+    BlastDamage: 500, display: true
     HomingSpeed: 1.0
     Speed: 100, display: true
     Range: 500, display: true
@@ -16066,6 +16334,70 @@
   UnlockLevel: 1
   TechTreeNames: Hidden
 }
+
+
+{ Item Id: 2999, Name: CHEMRAIL, Ref: Sniper2    # Version CFG-MK4-57(IN) for A19 Into items config id used - 4007
+  Meshfile: Entities/Items/Weapons/Rifles/LaserRiflePrefab
+  PickupToToolbar: true
+  MarketPrice: 650000001, display: true
+  Info: "The latest military development. High power electrochemical autocannon.", display: true
+  OverrideTradingConstraints: false # even if other constraints exist allow trading this item
+  Durability: 200, display: false
+  CustomIcon: LaserRifleV2
+  DegradationProb: 0.95, type: float, display: false
+  RepairDisabled: true, display: true
+  SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
+  { Child 0
+    ROF: 0.1, type: float, display: true, formatter: ROF
+    Range: 500, display: true
+    RangeSpace: 700, display: true
+    NoiseStrength: 110, display: false
+    BulletSpread: 0.11, display: true
+    Recoil: 0.260, display: true
+    AmmoType: RailgunBullet, display: true
+    Damage: 150, display: true
+    AmmoCapacity: 26, display: true
+    Automatic: true
+    ReloadDelay: 4.5, display: true
+    Buff: "OpenWound,FractureOpen"
+    Buff_chance: "1.0,0.5"
+    # AmmoType: PulseLaserChargeRifle, display: true
+    SfxBegin: Weapons/Player/Sniper/weapon_sniper_004
+    #SfxBegin: Weapons/Player/Sniper/Resistance-SniperRifle-01-Single_Shot-03
+    # PfxMuzzle: MuzzleFlash5
+    PenetrationDepth: 4, display: true
+
+    Tracer: Weapons/Projectiles/sniperBulletPrefab
+    TracerPerBullet: 1
+    TracerSpeed: 500
+
+    DamageMultiplier_Group: HWS_EWS_Kinetic_HHW
+
+    Mod.Damage: "Damage + Player.Skills['Damage']"
+    # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
+    Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/105)"
+    Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/90)"
+    Mod.Recoil: "Math.Max(0.01, Recoil - Player.Skills['Recoil']/130)"
+  }
+  { Child 1
+    Class: Zoom
+    ZoomOverlay: Entities/Items/Weapons/SniperScopes/ScopeNew
+	  ZoomOut: 40
+    ZoomIn: 5
+    RedDot: true
+  }
+
+  UnlockCost: 0
+  UnlockLevel: 25
+  TechTreeParent: ""
+  TechTreeNames: Hidden
+  # UnlockCost: 0, display: true
+  # UnlockLevel: 15, display: true
+  # TechTreeParent: Sniper2
+  # TechTreeNames: Weapons
+}
+
+
 # ----------------------------------------------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------------------- HWS Elemental Weapons BA
 # Weapon categories available:

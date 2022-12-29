@@ -797,9 +797,7 @@
   CraftTime: 1 #A1 1 600hp
   Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
   { Child Inputs
-    Cement: 1
-    RockDust: 2
-    WaterJug: 2
+    Cement: 4
   }
 }
 
@@ -3538,6 +3536,18 @@
   # }
 # }
 
+{ +Template Name: LaserSMG
+  CraftTime: 30 #D1 25
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    MechanicalComponents: 4
+    Electronics: 3
+    ZascosiumAlloy: 30
+    FluxCoil: 2
+    LaserKit: 1
+  }
+}
+
 { Template Name: LaserRifle
   CraftTime: 30 #D1 25
   Target: "LargeC,AdvC"
@@ -3547,6 +3557,17 @@
     PowerCoil: 1
     ZascosiumAlloy: 50
     LaserKit: 1
+  }
+}
+
+{ +Template Name: LaserCarbine
+  CraftTime: 30 #D1 25
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    FluxCoil: 2
+    EnergyMatrix: 1
+    LaserKit: 1
+    LaserRifle: 1
   }
 }
 

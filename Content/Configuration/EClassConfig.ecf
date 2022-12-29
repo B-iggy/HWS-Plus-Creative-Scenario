@@ -9420,8 +9420,8 @@
   MaxHealth: 1200
 }
 { Entity Name: TalonGuardianInfectedBlue, Ref: TalonGuardian
-  Mesh: Enemies/TalonGuardian/TalonGuardianBlueInfectedPrefab
-  MeshDead: Enemies/TalonGuardian/TalonGuardianBlueInfectedDeadPrefab
+  Mesh: Enemies/TalonGuardian/BAI/TalonGuardianBlueInfectedPrefab
+  MeshDead: Enemies/TalonGuardian/BAI/TalonGuardianBlueInfectedDeadPrefab
   Faction: TheLegacy
   MaxHealth: 1200
 }
