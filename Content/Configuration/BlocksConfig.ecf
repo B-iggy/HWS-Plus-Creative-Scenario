@@ -2464,7 +2464,7 @@
   StackSize: 200
   BlockColor: "110,110,110"
   Category: Devices
-  Torque: 100, type: int, display: true, formatter: NewtonMeter
+  Torque: 115, type: int, display: true, formatter: NewtonMeter
   EnergyDynamicGroup: RCS
   EnergyIn: 30, type: int, display: true, formatter: Watt
   HitPoints: 25, type: int, display: true
@@ -5407,7 +5407,7 @@
   BlockColor: "110,110,110"
   Category: Devices
   HitPoints: 90, type: int, display: true
-  Torque: 10000, type: int, display: true, formatter: NewtonMeter
+  Torque: 13000, type: int, display: true, formatter: NewtonMeter
   # Torque: 2000000, type: int, display: true, formatter: NewtonMeter
   EnergyDynamicGroup: RCS
   EnergyIn: 100, type: int, display: true, formatter: Watt
@@ -6273,7 +6273,7 @@
   TemplateRoot: ThrusterSVRoundBlocks
   Info: bkiThruster, display: true
   HitPoints: 300, type: int, display: true
-  ThrusterForce: 170, type: int, display: true, formatter: Newton
+  ThrusterForce: 210, type: int, display: true, formatter: Newton
   EnergyIn: 70, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
   CPUIn: 135, type: int, display: true
@@ -6342,7 +6342,7 @@
   TemplateRoot: ThrusterMSRoundBlocks
   Info: bkiThruster, display: true
   HitPoints: 1000, type: int, display: true
-  ThrusterForce: 18100, type: int, display: true, formatter: Newton
+  ThrusterForce: 20000, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.1, type: float, display: true
   EnergyIn: 840, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
@@ -6404,7 +6404,7 @@
   Info: bkiThrusterDirectional, display: true
   HitPoints: 150, type: int, display: true
   # ThrusterForce: 40, type: int, display: true, formatter: Newton
-  ThrusterForce: 75, type: int, display: true, formatter: Newton
+  ThrusterForce: 83, type: int, display: true, formatter: Newton
   EnergyIn: 35, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
   CPUIn: 100, type: int, display: true
@@ -6459,7 +6459,7 @@
   Info: bkiThrusterDirectional, display: true
   Mass: 2361, type: float, display: true, formatter: Kilogram
   HitPoints: 500, type: int, display: true
-  ThrusterForce: 7200, type: int, display: true, formatter: Newton
+  ThrusterForce: 7950, type: int, display: true, formatter: Newton
   EnergyIn: 600, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
   CPUIn: 4250, type: int, display: true
@@ -6521,7 +6521,7 @@
   TemplateRoot: ThrusterMSRound2x2Blocks
   Info: bkiThruster, display: true
   HitPoints: 3000, type: int, display: true
-  ThrusterForce: 192100, type: int, display: true, formatter: Newton
+  ThrusterForce: 211500, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.2, type: float, display: true
   EnergyIn: 6720, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
@@ -7496,7 +7496,7 @@
   TemplateRoot: ThrusterMSRound3x3Blocks
   Info: bkiThruster, display: true
   HitPoints: 16750, type: int, display: true
-  ThrusterForce: 920000, type: int, display: true, formatter: Newton
+  ThrusterForce: 1012000, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.3, type: float, display: true
   EnergyIn: 26460, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
@@ -8240,7 +8240,7 @@
   Info: bkiBlockGroup, display: true
   IsOxygenTight: true, display: true
   HitPoints: 300, type: int, display: true
-  ThrusterForce: 170, type: int, display: true, formatter: Newton
+  ThrusterForce: 190, type: int, display: true, formatter: Newton
   EnergyIn: 70, type: int, display: true, formatter: Watt
   CPUIn: 135, type: int, display: true
 
@@ -8374,7 +8374,7 @@
   Mass: 520, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   CPUIn: 165, type: int, display: true
-  ThrusterForce: 230, type: int, display: true, formatter: Newton
+  ThrusterForce: 253, type: int, display: true, formatter: Newton
   EnergyIn: 117, type: int, display: true, formatter: Watt
   Temperature: 584, display: true
   Radiation: 8, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
@@ -8394,7 +8394,7 @@
   HitPoints: 350, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 406, type: float, display: true, formatter: Kilogram
-  ThrusterForce: 275, type: int, display: true, formatter: Newton
+  ThrusterForce: 303, type: int, display: true, formatter: Newton
   EnergyIn: 38, type: int, display: true, formatter: Watt
   CPUIn: 200, type: int, display: true
   Temperature: 369, display: true
@@ -8421,7 +8421,7 @@
   HitPoints: 400, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 842, type: float, display: true, formatter: Kilogram
-  ThrusterForce: 380, type: int, display: true, formatter: Newton
+  ThrusterForce: 418, type: int, display: true, formatter: Newton
   EnergyIn: 160, type: int, display: true, formatter: Watt
   CPUIn: 250, type: int, display: true
   Radiation: 12, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
@@ -9727,7 +9727,7 @@
   Mass: 183, type: float, display: true, formatter: Kilogram
   HitPoints: 80, type: int, display: true
   # ThrusterForce: 7, type: int, display: true, formatter: Newton
-  ThrusterForce: 55, type: int, display: true, formatter: Newton
+  ThrusterForce: 60, type: int, display: true, formatter: Newton
   EnergyIn: 25, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
   CPUIn: 100, type: int, display: true
@@ -9779,7 +9779,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 268, type: float, display: true, formatter: Kilogram
   HitPoints: 180, type: int, display: true
-  ThrusterForce: 130, type: int, display: true, formatter: Newton
+  ThrusterForce: 143, type: int, display: true, formatter: Newton
   EnergyIn: 50, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
   CPUIn: 135, type: int, display: true
@@ -10230,7 +10230,7 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   IsIgnoreLC: true
   HitPoints: 60, type: int, display: true
-  ThrusterForce: 500, type: int, display: false, formatter: Newton
+  ThrusterForce: 550, type: int, display: false, formatter: Newton
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 25, type: int, display: true
   EnergyDynamicGroup: HoverEngine
@@ -10279,7 +10279,7 @@
   BlockColor: "110,110,110"
   Category: Devices
   # Torque: 30, type: int, display: true, formatter: NewtonMeter
-  Torque: 80, type: int, display: true, formatter: NewtonMeter
+  Torque: 92, type: int, display: true, formatter: NewtonMeter
   EnergyDynamicGroup: RCS
   EnergyIn: 30, type: int, display: true, formatter: Watt
   HitPoints: 50, type: int, display: true
@@ -12133,7 +12133,7 @@
   IsIgnoreLC: true
   Info: bkiThruster, display: true
   HitPoints: 3200, type: int, display: true
-  ThrusterForce: 7240, type: int, display: true, formatter: Newton
+  ThrusterForce: 7950, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.85, type: float, display: true
   EnergyIn: 1012, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
@@ -12164,7 +12164,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3060, type: float, display: true, formatter: Kilogram
   HitPoints: 4500, type: int, display: true
-  ThrusterForce: 11040, type: int, display: true, formatter: Newton
+  ThrusterForce: 12150, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 2.15, type: float, display: true
   EnergyIn: 1250, type: int, display: true, formatter: Watt
   CPUIn: 1920, type: int, display: true
@@ -12190,7 +12190,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4833, type: float, display: true, formatter: Kilogram
   HitPoints: 6000, type: int, display: true
-  ThrusterForce: 15290, type: int, display: true, formatter: Newton
+  ThrusterForce: 16820, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 2.5, type: float, display: true
   EnergyIn: 1560, type: int, display: true, formatter: Watt
   CPUIn: 2495, type: int, display: true
@@ -12214,9 +12214,9 @@
   MarketPrice: 11618, display: true
   SizeInBlocks: "1,3,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 743, type: float, display: true, formatter: Kilogram
-  HitPoints: 225, type: int, display: true
-  ThrusterForce: 300, type: int, display: true, formatter: Newton
+  Mass: 675, type: float, display: true, formatter: Kilogram
+  HitPoints: 300, type: int, display: true
+  ThrusterForce: 385, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.2, type: float, display: true
   EnergyIn: 145, type: int, display: true, formatter: Watt
   CPUIn: 220, type: int, display: true
@@ -12244,7 +12244,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 1240, type: float, display: true, formatter: Kilogram
   HitPoints: 850, type: int, display: true
-  ThrusterForce: 2075, type: int, display: true, formatter: Newton
+  ThrusterForce: 2285, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.5, type: float, display: true
   EnergyIn: 500, type: int, display: true, formatter: Watt
   CPUIn: 940, type: int, display: true
@@ -14212,7 +14212,7 @@
   Info: bkiBlockGroup, display: true
   IsOxygenTight: true, display: true
   HitPoints: 1550, type: int, display: true
-  ThrusterForce: 18100, type: int, display: true, formatter: Newton
+  ThrusterForce: 20000, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.1, type: float, display: true
   EnergyIn: 840, type: int, display: true, formatter: Watt
   CPUIn: 7500, type: int, display: true
@@ -14311,7 +14311,7 @@
   IsIgnoreLC: true
   IsOxygenTight: true, display: true
   HitPoints: 3000, type: int, display: true
-  ThrusterForce: 192100, type: int, display: true, formatter: Newton
+  ThrusterForce: 211500, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.2, type: float, display: true
   EnergyIn: 6720, type: int, display: true, formatter: Watt
   CPUIn: 40000, type: int, display: true
@@ -14727,7 +14727,7 @@
   IsOxygenTight: true, display: true
   HitPoints: 16750, type: int, display: true
   IsIgnoreLC: true
-  ThrusterForce: 192100, type: int, display: true, formatter: Newton
+  ThrusterForce: 211500, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.3, type: float, display: true
   EnergyIn: 26460, type: int, display: true, formatter: Watt
   CPUIn: 110000, type: int, display: true
@@ -15986,7 +15986,7 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   Category: Devices
   HitPoints: 150, type: int, display: true
-  Torque: 150000, type: int, display: true, formatter: NewtonMeter
+  Torque: 230000, type: int, display: true, formatter: NewtonMeter
   # Torque: 20000, type: int, display: true, formatter: NewtonMeter
   EnergyDynamicGroup: RCS
   EnergyIn: 250, type: int, display: true, formatter: Watt
@@ -18537,7 +18537,7 @@
   Info: bkiBlockGroup, display: true
   IsOxygenTight: true, display: true
   HitPoints: 200, type: int, display: true
-  ThrusterForce: 130, type: int, display: true, formatter: Newton
+  ThrusterForce: 143, type: int, display: true, formatter: Newton
   EnergyIn: 50, type: int, display: true, formatter: Watt
   CPUIn: 135, type: int, display: true
   Temperature: 255, display: true
@@ -23240,7 +23240,7 @@
   Mass: 743, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   HitPoints: 300, type: int, display: true
-  ThrusterForce: 250, type: int, display: true, formatter: Newton
+  ThrusterForce: 275, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.35, type: float, display: true
   EnergyIn: 85, type: int, display: true, formatter: Watt
   CPUIn: 220, type: int, display: true
@@ -24093,7 +24093,7 @@
   CPUIn: 400, type: int, display: true
 
   Torque: 10, type: int, display: true, formatter: NewtonMeter
-  ThrusterForce: 20, type: int, display: true, formatter: Newton
+  ThrusterForce: 22, type: int, display: true, formatter: Newton
   HVEngineForce: 12, type: int, display: true, formatter: Newton
   HVEngineDampCoef: 8, type: float, display: false, formatter: Hardness
   HVEngineDampPow: 1.5, type: float, display: false, formatter: Hardness
@@ -25460,7 +25460,7 @@
 
 { Block Id: 1585, Name: ThrusterJetRound2x5x2V2, Ref: ThrusterJetRound2x5x2
   Model: @models/Blocks/Thrusters/ThrusterJetRound2x5x2V2Prefab
-  ThrusterForce: 1003, type: int, display: true, formatter: Newton
+  ThrusterForce: 1105, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 2.0, type: float, display: true
   MarketPrice: 24979, display: true
 
@@ -25575,7 +25575,7 @@
 { Block Id: 1591, Name: ThrusterJetRound3x10x3V2, Ref: ThrusterJetRound3x10x3
   MarketPrice: 39849, display: true
   Model: @models/Blocks/Thrusters/ThrusterJetRound3x10x3V2Prefab
-  ThrusterForce: 3331, type: int, display: true, formatter: Newton
+  ThrusterForce: 3650, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 2.5, type: float, display: true
   Torque: 432, type: int, display: true, formatter: NewtonMeter
 
@@ -25588,7 +25588,7 @@
 { Block Id: 1592, Name: ThrusterJetRound3x13x3V2, Ref: ThrusterJetRound3x13x3
   MarketPrice: 17846, display: true
   Model: @models/Blocks/Thrusters/ThrusterJetRound3x13x3V2Prefab
-  ThrusterForce: 4222, type: int, display: true, formatter: Newton
+  ThrusterForce: 4650, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 3.0, type: float, display: true
   Torque: 864, type: int, display: true, formatter: NewtonMeter
 
@@ -28415,7 +28415,7 @@
   Mass: 485, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   CPUIn: 165, type: int, display: true
-  ThrusterForce: 185, type: int, display: true, formatter: Newton
+  ThrusterForce: 204, type: int, display: true, formatter: Newton
   EnergyIn: 75, type: int, display: true, formatter: Watt
   Temperature: 150, display: true
   TemplateRoot: ThrusterGVRoundNormalT2
@@ -28442,7 +28442,7 @@
   HitPoints: 350, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 390, type: float, display: true, formatter: Kilogram
-  ThrusterForce: 235, type: int, display: true, formatter: Newton
+  ThrusterForce: 258, type: int, display: true, formatter: Newton
   EnergyIn: 75, type: int, display: true, formatter: Watt
   CPUIn: 200, type: int, display: true
   Temperature: 120, display: true
@@ -28469,7 +28469,7 @@
   HitPoints: 400, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 473, type: float, display: true, formatter: Kilogram
-  ThrusterForce: 345, type: int, display: true, formatter: Newton
+  ThrusterForce: 380, type: int, display: true, formatter: Newton
   EnergyIn: 120, type: int, display: true, formatter: Watt
   CPUIn: 250, type: int, display: true
   Temperature: 180, display: true
@@ -32512,7 +32512,7 @@
   EnergyIn: 2500, type: int, display: true, formatter: Watt
   HitPoints: 35000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 150, type: int, display: true
   Zoom: 5, type: float
   CPUIn: 82500, type: int, display: true
 }
@@ -32559,7 +32559,7 @@
   EnergyIn: 3000, type: int, display: true, formatter: Watt
   HitPoints: 40000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
   CPUIn: 110000, type: int, display: true
 }
@@ -32605,7 +32605,7 @@
   EnergyIn: 2500, type: int, display: true, formatter: Watt
   HitPoints: 35000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   Zoom: 5, type: float
   CPUIn: 65000, type: int, display: true
 }
@@ -32652,7 +32652,7 @@
   EnergyIn: 3000, type: int, display: true, formatter: Watt
   HitPoints: 40000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 180, type: int, display: true
   Zoom: 5, type: float
   CPUIn: 75000, type: int, display: true
 }
@@ -32698,7 +32698,7 @@
   EnergyIn: 3650, type: int, display: true, formatter: Watt
   HitPoints: 46500, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
   CPUIn: 140000, type: int, display: true
 }
@@ -32777,7 +32777,7 @@
   Mass: 17500, type: float, display: true, formatter: Kilogram
   HitPoints: 43750, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 150, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSTerraTurretBAT2
@@ -32822,7 +32822,7 @@
   Mass: 20000, type: float, display: true, formatter: Kilogram
   HitPoints: 50000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSTerraTurretBAT3
@@ -32867,7 +32867,7 @@
   Mass: 17500, type: float, display: true, formatter: Kilogram
   HitPoints: 43750, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSTerraTurretBAT4
@@ -32912,7 +32912,7 @@
   Mass: 20000, type: float, display: true, formatter: Kilogram
   HitPoints: 50000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 180, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSTerraTurretBAT5
@@ -32957,7 +32957,7 @@
   Mass: 23250, type: float, display: true, formatter: Kilogram
   HitPoints: 58000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
 # ------------------------------------------------------------------------------------------------------- Pyro Turret BA
@@ -33034,7 +33034,7 @@
   Mass: 17500, type: float, display: true, formatter: Kilogram
   HitPoints: 35000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 150, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSPyroTurretBAT2
@@ -33079,7 +33079,7 @@
   Mass: 20000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSPyroTurretBAT3
@@ -33124,7 +33124,7 @@
   Mass: 17500, type: float, display: true, formatter: Kilogram
   HitPoints: 35000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSPyroTurretBAT4
@@ -33169,7 +33169,7 @@
   Mass: 20000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 180, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSPyroTurretBAT5
@@ -33214,7 +33214,7 @@
   Mass: 23250, type: float, display: true, formatter: Kilogram
   HitPoints: 46500, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
 # --------------------------------------------------------------------------------------------------- Obsidian Turret BA
@@ -33291,7 +33291,7 @@
   Mass: 17500, type: float, display: true, formatter: Kilogram
   HitPoints: 35000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 150, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSObsidianTurretBAT2
@@ -33336,7 +33336,7 @@
   Mass: 20000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSObsidianTurretBAT3
@@ -33381,7 +33381,7 @@
   Mass: 17500, type: float, display: true, formatter: Kilogram
   HitPoints: 35000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSObsidianTurretBAT4
@@ -33426,7 +33426,7 @@
   Mass: 20000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 180, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSObsidianTurretBAT5
@@ -33471,7 +33471,7 @@
   Mass: 23250, type: float, display: true, formatter: Kilogram
   HitPoints: 46500, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
 # -------------------------------------------------------------------------------------------------------- Lux Turret BA
@@ -33593,7 +33593,7 @@
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 145, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSLuxTurretBAT3
@@ -33638,7 +33638,7 @@
   Mass: 13125, type: float, display: true, formatter: Kilogram
   HitPoints: 35000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 180, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSLuxTurretBAT4
@@ -33683,7 +33683,7 @@
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 200, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSLuxTurretBAT5
@@ -33728,7 +33728,7 @@
   Mass: 17400, type: float, display: true, formatter: Kilogram
   HitPoints: 46500, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
 }
 # -------------------------------------------------------------------------------------------------------- Nox Turret BA
@@ -33805,7 +33805,7 @@
   Mass: 17500, type: float, display: true, formatter: Kilogram
   HitPoints: 35000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 130, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSNoxTurretBAT2
@@ -33850,7 +33850,7 @@
   Mass: 20000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 105, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSNoxTurretBAT3
@@ -33895,7 +33895,7 @@
   Mass: 17500, type: float, display: true, formatter: Kilogram
   HitPoints: 35000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSNoxTurretBAT4
@@ -33940,7 +33940,7 @@
   Mass: 2000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSNoxTurretBAT5
@@ -33985,7 +33985,7 @@
   Mass: 23250, type: float, display: true, formatter: Kilogram
   HitPoints: 46500, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 80, type: int, display: true
   Zoom: 5, type: float
 }
 # ------------------------------------------------------------------------------------------------- Strangelet Turret BA
@@ -34062,7 +34062,7 @@
   Mass: 26250, type: float, display: true, formatter: Kilogram
   HitPoints: 35000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 150, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSStrangeletTurretBAT2
@@ -34107,7 +34107,7 @@
   Mass: 30000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSStrangeletTurretBAT3
@@ -34152,7 +34152,7 @@
   Mass: 26250, type: float, display: true, formatter: Kilogram
   HitPoints: 35000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSStrangeletTurretBAT4
@@ -34197,7 +34197,7 @@
   Mass: 30000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 180, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSStrangeletTurretBAT5
@@ -34242,7 +34242,7 @@
   Mass: 34850, type: float, display: true, formatter: Kilogram
   HitPoints: 46500, type: int, display: true
 
-  RotSpeed: 170, type: int, display: true
+  RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
 # ----------------------------------------------------------------------------------------------------------------------
@@ -34314,7 +34314,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 50000, type: int, display: true
-  RotSpeed: 255, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   EnergyIn: 2000, type: int, display: true, formatter: Watt
   CPUIn: 137500, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
@@ -34363,7 +34363,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 62500, type: int, display: true
-  RotSpeed: 255, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   EnergyIn: 2000, type: int, display: true, formatter: Watt
   CPUIn: 137500, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
@@ -34412,7 +34412,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 50000, type: int, display: true
-  RotSpeed: 255, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   EnergyIn: 1250, type: int, display: true, formatter: Watt
   CPUIn: 137500, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
@@ -34461,7 +34461,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 50000, type: int, display: true
-  RotSpeed: 255, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   EnergyIn: 2000, type: int, display: true, formatter: Watt
   CPUIn: 137500, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
@@ -34510,7 +34510,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 50000, type: int, display: true
-  RotSpeed: 255, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   EnergyIn: 2000, type: int, display: true, formatter: Watt
   CPUIn: 137500, type: int, display: true
   Mass: 11250, type: float, display: true, formatter: Kilogram
@@ -34559,7 +34559,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 50000, type: int, display: true
-  RotSpeed: 255, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   EnergyIn: 2000, type: int, display: true, formatter: Watt
   CPUIn: 137500, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
@@ -34608,7 +34608,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 50000, type: int, display: true
-  RotSpeed: 255, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   EnergyIn: 3500, type: int, display: true, formatter: Watt
   CPUIn: 206250, type: int, display: true
   Mass: 22500, type: float, display: true, formatter: Kilogram
@@ -34702,7 +34702,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 23250, type: float, display: true, formatter: Kilogram
   HitPoints: 31000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSAquaTurretCVT2
@@ -34750,7 +34750,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 18750, type: float, display: true, formatter: Kilogram
   HitPoints: 25000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 180, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSAquaTurretCVT3
@@ -34798,7 +34798,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 23250, type: float, display: true, formatter: Kilogram
   HitPoints: 31000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 200, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSAquaTurretCVT4
@@ -34926,7 +34926,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 23250, type: float, display: true, formatter: Kilogram
   HitPoints: 38750, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSTerraTurretCVT2
@@ -34974,7 +34974,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 18750, type: float, display: true, formatter: Kilogram
   HitPoints: 31250, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 180, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSTerraTurretCVT3
@@ -35022,7 +35022,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 23250, type: float, display: true, formatter: Kilogram
   HitPoints: 38750, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 200, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSTerraTurretCVT4
@@ -35150,7 +35150,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 23250, type: float, display: true, formatter: Kilogram
   HitPoints: 31000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSPyroTurretCVT2
@@ -35198,7 +35198,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 18750, type: float, display: true, formatter: Kilogram
   HitPoints: 25000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 180, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSPyroTurretCVT3
@@ -35246,7 +35246,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 23250, type: float, display: true, formatter: Kilogram
   HitPoints: 31000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 200, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSPyroTurretCVT4
@@ -35374,7 +35374,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 23250, type: float, display: true, formatter: Kilogram
   HitPoints: 31000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSObsidianTurretCVT2
@@ -35422,7 +35422,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 18750, type: float, display: true, formatter: Kilogram
   HitPoints: 25000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 180, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSObsidianTurretCVT3
@@ -35470,7 +35470,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 23250, type: float, display: true, formatter: Kilogram
   HitPoints: 31000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 200, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSObsidianTurretCVT4
@@ -35598,7 +35598,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 17500, type: float, display: true, formatter: Kilogram
   HitPoints: 31000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 150, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSLuxTurretCVT2
@@ -35646,7 +35646,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 14000, type: float, display: true, formatter: Kilogram
   HitPoints: 25000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 190, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSLuxTurretCVT3
@@ -35694,7 +35694,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 17500, type: float, display: true, formatter: Kilogram
   HitPoints: 31000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 220, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSLuxTurretCVT4
@@ -35742,7 +35742,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 19500, type: float, display: true, formatter: Kilogram
   HitPoints: 35000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 130, type: int, display: true
   Zoom: 5, type: float
 }
 # -------------------------------------------------------------------------------------------------------- Nox Turret CV
@@ -35870,7 +35870,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 18750, type: float, display: true, formatter: Kilogram
   HitPoints: 25000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSNoxTurretCVT3
@@ -35918,7 +35918,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 23250, type: float, display: true, formatter: Kilogram
   HitPoints: 31000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 180, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSNoxTurretCVT4
@@ -35966,7 +35966,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 26250, type: float, display: true, formatter: Kilogram
   HitPoints: 35000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
 # ------------------------------------------------------------------------------------------------- Strangelet Turret CV
@@ -36046,7 +36046,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 34800, type: float, display: true, formatter: Kilogram
   HitPoints: 31000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSStrangeletTurretCVT2
@@ -36094,7 +36094,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 28000, type: float, display: true, formatter: Kilogram
   HitPoints: 25000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 180, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSStrangeletTurretCVT3
@@ -36142,7 +36142,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 34800, type: float, display: true, formatter: Kilogram
   HitPoints: 31000, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  RotSpeed: 200, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSStrangeletTurretCVT4
@@ -36263,7 +36263,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 38750, type: int, display: true
-  RotSpeed: 180, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   EnergyIn: 4650, type: int, display: true, formatter: Watt
   CPUIn: 231250, type: int, display: true
   Mass: 17400, type: float, display: true, formatter: Kilogram
@@ -36312,7 +36312,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 48000, type: int, display: true
-  RotSpeed: 180, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   EnergyIn: 4650, type: int, display: true, formatter: Watt
   CPUIn: 231250, type: int, display: true
   Mass: 17400, type: float, display: true, formatter: Kilogram
@@ -36361,7 +36361,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 38750, type: int, display: true
-  RotSpeed: 180, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   EnergyIn: 3500, type: int, display: true, formatter: Watt
   CPUIn: 231250, type: int, display: true
   Mass: 17400, type: float, display: true, formatter: Kilogram
@@ -36410,7 +36410,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 38750, type: int, display: true
-  RotSpeed: 180, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   EnergyIn: 4650, type: int, display: true, formatter: Watt
   CPUIn: 231250, type: int, display: true
   Mass: 17400, type: float, display: true, formatter: Kilogram
@@ -36508,7 +36508,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 38750, type: int, display: true
-  RotSpeed: 180, type: int, display: true
+  RotSpeed: 140, type: int, display: true
   EnergyIn: 4650, type: int, display: true, formatter: Watt
   CPUIn: 231250, type: int, display: true
   Mass: 17400, type: float, display: true, formatter: Kilogram
@@ -36557,7 +36557,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 38750, type: int, display: true
-  RotSpeed: 180, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   EnergyIn: 6975, type: int, display: true, formatter: Watt
   CPUIn: 346800, type: int, display: true
   Mass: 26150, type: float, display: true, formatter: Kilogram
@@ -38028,7 +38028,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3400, type: float, display: true, formatter: Kilogram
   HitPoints: 5600, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSAquaTurretHVT2
@@ -38077,7 +38077,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
   HitPoints: 5000, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSAquaTurretHVT3
@@ -38125,7 +38125,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3500, type: float, display: true, formatter: Kilogram
   HitPoints: 5850, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSAquaTurretHVT4
@@ -38173,7 +38173,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4000, type: float, display: true, formatter: Kilogram
   HitPoints: 6500, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 85, type: int, display: true
   Zoom: 5, type: float
 }
 # ------------------------------------------------------------------------------------------------------ Terra Turret HV
@@ -38252,7 +38252,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3400, type: float, display: true, formatter: Kilogram
   HitPoints: 7000, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSTerraTurretHVT2
@@ -38300,7 +38300,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3750, type: float, display: true, formatter: Kilogram
   HitPoints: 6250, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSTerraTurretHVT3
@@ -38348,7 +38348,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3500, type: float, display: true, formatter: Kilogram
   HitPoints: 7300, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSTerraTurretHVT4
@@ -38396,7 +38396,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4000, type: float, display: true, formatter: Kilogram
   HitPoints: 8125, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 85, type: int, display: true
   Zoom: 5, type: float
 }
 # ------------------------------------------------------------------------------------------------------- Pyro Turret HV
@@ -38475,7 +38475,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3400, type: float, display: true, formatter: Kilogram
   HitPoints: 5600, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSPyroTurretHVT2
@@ -38523,7 +38523,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
   HitPoints: 5000, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSPyroTurretHVT3
@@ -38571,7 +38571,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3500, type: float, display: true, formatter: Kilogram
   HitPoints: 5850, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSPyroTurretHVT4
@@ -38619,7 +38619,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4000, type: float, display: true, formatter: Kilogram
   HitPoints: 6500, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 85, type: int, display: true
   Zoom: 5, type: float
 }
 # --------------------------------------------------------------------------------------------------- Obsidian Turret HV
@@ -38698,7 +38698,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3400, type: float, display: true, formatter: Kilogram
   HitPoints: 5600, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSObsidianTurretHVT2
@@ -38746,7 +38746,7 @@
    Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
   HitPoints: 5000, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSObsidianTurretHVT3
@@ -38794,7 +38794,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3500, type: float, display: true, formatter: Kilogram
   HitPoints: 5850, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSObsidianTurretHVT4
@@ -38842,7 +38842,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4000, type: float, display: true, formatter: Kilogram
   HitPoints: 6500, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 85, type: int, display: true
   Zoom: 5, type: float
 }
 # -------------------------------------------------------------------------------------------------------- Lux Turret HV
@@ -38921,7 +38921,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 2550, type: float, display: true, formatter: Kilogram
   HitPoints: 5600, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSLuxTurretHVT2
@@ -38969,7 +38969,7 @@
    Volume: 0, type: float, display: false, formatter: Liter
   Mass: 2800, type: float, display: true, formatter: Kilogram
   HitPoints: 5000, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSLuxTurretHVT3
@@ -39017,7 +39017,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 2625, type: float, display: true, formatter: Kilogram
   HitPoints: 5850, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 160, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSLuxTurretHVT4
@@ -39065,7 +39065,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
   HitPoints: 6500, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
 # -------------------------------------------------------------------------------------------------------- Nox Turret HV
@@ -39144,7 +39144,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3400, type: float, display: true, formatter: Kilogram
   HitPoints: 5600, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 80, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSNoxTurretHVT2
@@ -39192,7 +39192,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
   HitPoints: 5000, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSNoxTurretHVT3
@@ -39240,7 +39240,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3500, type: float, display: true, formatter: Kilogram
   HitPoints: 5850, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSNoxTurretHVT4
@@ -39288,7 +39288,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4000, type: float, display: true, formatter: Kilogram
   HitPoints: 6500, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 65, type: int, display: true
   Zoom: 5, type: float
 }
 # ------------------------------------------------------------------------------------------------- Strangelet Turret HV
@@ -39367,7 +39367,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 5100, type: float, display: true, formatter: Kilogram
   HitPoints: 5600, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSStrangeletTurretHVT2
@@ -39415,7 +39415,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4500, type: float, display: true, formatter: Kilogram
   HitPoints: 5000, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSStrangeletTurretHVT3
@@ -39463,7 +39463,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 5250, type: float, display: true, formatter: Kilogram
   HitPoints: 5850, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSStrangeletTurretHVT4
@@ -39511,7 +39511,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 6000, type: float, display: true, formatter: Kilogram
   HitPoints: 6500, type: int, display: true
-  RotSpeed: 70, type: int, display: true
+  RotSpeed: 85, type: int, display: true
   Zoom: 5, type: float
 }
 # ----------------------------------------------------------------------------------------------------------------------
@@ -39584,7 +39584,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 7000, type: int, display: true
-  RotSpeed: 105, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   EnergyIn: 360, type: int, display: true, formatter: Watt
   CPUIn: 6000, type: int, display: true
   Mass: 2550, type: float, display: true, formatter: Kilogram
@@ -39633,7 +39633,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 8750, type: int, display: true
-  RotSpeed: 105, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   EnergyIn: 360, type: int, display: true, formatter: Watt
   CPUIn: 6000, type: int, display: true
   Mass: 2550, type: float, display: true, formatter: Kilogram
@@ -39682,7 +39682,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 7000, type: int, display: true
-  RotSpeed: 105, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   EnergyIn: 270, type: int, display: true, formatter: Watt
   CPUIn: 6000, type: int, display: true
   Mass: 2550, type: float, display: true, formatter: Kilogram
@@ -39731,7 +39731,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 7000, type: int, display: true
-  RotSpeed: 105, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   EnergyIn: 360, type: int, display: true, formatter: Watt
   CPUIn: 6000, type: int, display: true
   Mass: 2550, type: float, display: true, formatter: Kilogram
@@ -39780,7 +39780,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 7000, type: int, display: true
-  RotSpeed: 105, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   EnergyIn: 360, type: int, display: true, formatter: Watt
   CPUIn: 6000, type: int, display: true
   Mass: 1900, type: float, display: true, formatter: Kilogram
@@ -39829,7 +39829,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 7000, type: int, display: true
-  RotSpeed: 105, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   EnergyIn: 360, type: int, display: true, formatter: Watt
   CPUIn: 6000, type: int, display: true
   Mass: 2550, type: float, display: true, formatter: Kilogram
@@ -39878,7 +39878,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 7000, type: int, display: true
-  RotSpeed: 105, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   EnergyIn: 540, type: int, display: true, formatter: Watt
   CPUIn: 9000, type: int, display: true
   Mass: 3800, type: float, display: true, formatter: Kilogram
@@ -40962,7 +40962,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
   HitPoints: 4200, type: int, display: true
-  RotSpeed: 20, type: int, display: true
+  RotSpeed: 25, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSAquaTurretSVT2
@@ -41010,7 +41010,7 @@
   EnergyIn: 500, type: int, display: true, formatter: Watt
   CPUIn: 4600, type: int, display: true
   HitPoints: 4350, type: int, display: true
-  RotSpeed: 20, type: int, display: true
+  RotSpeed: 50, type: int, display: true
   Zoom: 5, type: float
 }
 # ------------------------------------------------------------------------------------------------------ Terra Turret SV
@@ -41089,7 +41089,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
   HitPoints: 5250, type: int, display: true
-  RotSpeed: 20, type: int, display: true
+  RotSpeed: 25, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSTerraTurretSVT2
@@ -41137,7 +41137,7 @@
   EnergyIn: 500, type: int, display: true, formatter: Watt
   CPUIn: 4600, type: int, display: true
   HitPoints: 5400, type: int, display: true
-  RotSpeed: 20, type: int, display: true
+  RotSpeed: 50, type: int, display: true
   Zoom: 5, type: float
 }
 # ------------------------------------------------------------------------------------------------------- Pyro Turret SV
@@ -41216,7 +41216,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
   HitPoints: 4200, type: int, display: true
-  RotSpeed: 20, type: int, display: true
+  RotSpeed: 25, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSPyroTurretSVT2
@@ -41264,7 +41264,7 @@
   EnergyIn: 375, type: int, display: true, formatter: Watt
   CPUIn: 4600, type: int, display: true
   HitPoints: 4350, type: int, display: true
-  RotSpeed: 20, type: int, display: true
+  RotSpeed: 50, type: int, display: true
   Zoom: 5, type: float
 }
 # --------------------------------------------------------------------------------------------------- Obsidian Turret SV
@@ -41343,7 +41343,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
   HitPoints: 4200, type: int, display: true
-  RotSpeed: 20, type: int, display: true
+  RotSpeed: 25, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSObsidianTurretSVT2
@@ -41391,7 +41391,7 @@
   EnergyIn: 500, type: int, display: true, formatter: Watt
   CPUIn: 4600, type: int, display: true
   HitPoints: 4350, type: int, display: true
-  RotSpeed: 20, type: int, display: true
+  RotSpeed: 50, type: int, display: true
   Zoom: 5, type: float
 }
 # -------------------------------------------------------------------------------------------------------- Lux Turret SV
@@ -41470,7 +41470,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 2250, type: float, display: true, formatter: Kilogram
   HitPoints: 4200, type: int, display: true
-  RotSpeed: 20, type: int, display: true
+  RotSpeed: 30, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSLuxTurretSVT2
@@ -41518,7 +41518,7 @@
   EnergyIn: 500, type: int, display: true, formatter: Watt
   CPUIn: 4600, type: int, display: true
   HitPoints: 4350, type: int, display: true
-  RotSpeed: 20, type: int, display: true
+  RotSpeed: 60, type: int, display: true
   Zoom: 5, type: float
 }
 # -------------------------------------------------------------------------------------------------------- Nox Turret SV
@@ -41645,7 +41645,7 @@
   EnergyIn: 500, type: int, display: true, formatter: Watt
   CPUIn: 4600, type: int, display: true
   HitPoints: 4350, type: int, display: true
-  RotSpeed: 20, type: int, display: true
+  RotSpeed: 40, type: int, display: true
   Zoom: 5, type: float
 }
 # ------------------------------------------------------------------------------------------------- Strangelet Turret SV
@@ -41724,7 +41724,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4500, type: float, display: true, formatter: Kilogram
   HitPoints: 4200, type: int, display: true
-  RotSpeed: 20, type: int, display: true
+  RotSpeed: 25, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSStrangeletTurretSVT2
@@ -41772,7 +41772,7 @@
   EnergyIn: 750, type: int, display: true, formatter: Watt
   CPUIn: 6900, type: int, display: true
   HitPoints: 4350, type: int, display: true
-  RotSpeed: 20, type: int, display: true
+  RotSpeed: 50, type: int, display: true
   Zoom: 5, type: float
 }
 # ----------------------------------------------------------------------------------------------------------------------
@@ -41843,7 +41843,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 5250, type: int, display: true
-  RotSpeed: 30, type: int, display: true
+  RotSpeed: 35, type: int, display: true
   EnergyIn: 337, type: int, display: true, formatter: Watt
   CPUIn: 5600, type: int, display: true
   Mass: 2250, type: float, display: true, formatter: Kilogram
@@ -41892,7 +41892,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 6500, type: int, display: true
-  RotSpeed: 30, type: int, display: true
+  RotSpeed: 35, type: int, display: true
   EnergyIn: 337, type: int, display: true, formatter: Watt
   CPUIn: 5600, type: int, display: true
   Mass: 2250, type: float, display: true, formatter: Kilogram
@@ -41941,7 +41941,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 5250, type: int, display: true
-  RotSpeed: 30, type: int, display: true
+  RotSpeed: 35, type: int, display: true
   EnergyIn: 250, type: int, display: true, formatter: Watt
   CPUIn: 5600, type: int, display: true
   Mass: 2250, type: float, display: true, formatter: Kilogram
@@ -41990,7 +41990,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 5250, type: int, display: true
-  RotSpeed: 30, type: int, display: true
+  RotSpeed: 35, type: int, display: true
   EnergyIn: 337, type: int, display: true, formatter: Watt
   CPUIn: 5600, type: int, display: true
   Mass: 2250, type: float, display: true, formatter: Kilogram
@@ -42039,7 +42039,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 5250, type: int, display: true
-  RotSpeed: 30, type: int, display: true
+  RotSpeed: 40, type: int, display: true
   EnergyIn: 337, type: int, display: true, formatter: Watt
   CPUIn: 5600, type: int, display: true
   Mass: 1600, type: float, display: true, formatter: Kilogram
@@ -42137,7 +42137,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   HitPoints: 5250, type: int, display: true
-  RotSpeed: 30, type: int, display: true
+  RotSpeed: 35, type: int, display: true
   EnergyIn: 500, type: int, display: true, formatter: Watt
   CPUIn: 8400, type: int, display: true
   Mass: 3375, type: float, display: true, formatter: Kilogram

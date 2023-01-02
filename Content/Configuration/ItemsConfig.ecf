@@ -24062,6 +24062,7 @@
     Range: 650, display: true
     SpeedSpace: 720, display: true
     RangeSpace: 1200, display: true
+    HomingSpeed: 2.5
     Ballistic: false
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
@@ -24130,6 +24131,7 @@
     SpeedSpace: 720, display: true
     RangeSpace: 1200, display: true
     Ballistic: false
+    HomingSpeed: 2.5
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24197,6 +24199,7 @@
     SpeedSpace: 720, display: true
     RangeSpace: 1200, display: true
     Ballistic: false
+    HomingSpeed: 2.5
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24264,6 +24267,7 @@
     SpeedSpace: 720, display: true
     RangeSpace: 1200, display: true
     Ballistic: false
+    HomingSpeed: 2.5
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24331,6 +24335,7 @@
     SpeedSpace: 945, display: true
     RangeSpace: 1350, display: true
     Ballistic: false
+    HomingSpeed: 3
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24398,6 +24403,7 @@
     SpeedSpace: 360, display: true
     RangeSpace: 600, display: true
     Ballistic: false
+    HomingSpeed: 2
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24465,6 +24471,7 @@
     SpeedSpace: 720, display: true
     RangeSpace: 1200, display: true
     Ballistic: true
+    HomingSpeed: 2.5
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24533,6 +24540,7 @@
     SpeedSpace: 420, display: true
     RangeSpace: 700, display: true
     Ballistic: false
+    HomingSpeed: 3
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24600,6 +24608,7 @@
     SpeedSpace: 420, display: true
     RangeSpace: 700, display: true
     Ballistic: false
+    HomingSpeed: 3
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24667,6 +24676,7 @@
     SpeedSpace: 420, display: true
     RangeSpace: 700, display: true
     Ballistic: false
+    HomingSpeed: 3
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24734,6 +24744,7 @@
     SpeedSpace: 420, display: true
     RangeSpace: 700, display: true
     Ballistic: false
+    HomingSpeed: 3
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24801,6 +24812,7 @@
     SpeedSpace: 480, display: true
     RangeSpace: 800, display: true
     Ballistic: false
+    HomingSpeed: 3.5
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24868,6 +24880,7 @@
     SpeedSpace: 210, display: true
     RangeSpace: 350, display: true
     Ballistic: false
+    HomingSpeed: 2.5
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -24935,6 +24948,7 @@
     SpeedSpace: 420, display: true
     RangeSpace: 700, display: true
     Ballistic: false
+    HomingSpeed: 3
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25003,6 +25017,7 @@
     SpeedSpace: 400, display: true
     RangeSpace: 670, display: true
     Ballistic: false
+    HomingSpeed: 3.5
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25071,6 +25086,7 @@
     SpeedSpace: 400, display: true
     RangeSpace: 670, display: true
     Ballistic: false
+    HomingSpeed: 3.5
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25138,6 +25154,7 @@
     SpeedSpace: 400, display: true
     RangeSpace: 670, display: true
     Ballistic: false
+    HomingSpeed: 3.5
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25205,6 +25222,7 @@
     SpeedSpace: 400, display: true
     RangeSpace: 670, display: true
     Ballistic: false
+    HomingSpeed: 3
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25272,6 +25290,7 @@
     SpeedSpace: 530, display: true
     RangeSpace: 770, display: true
     Ballistic: false
+    HomingSpeed: 4
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25339,6 +25358,7 @@
     SpeedSpace: 200, display: true
     RangeSpace: 335, display: true
     Ballistic: false
+    HomingSpeed: 2.5
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
@@ -25405,7 +25425,8 @@
     Range: 480, display: true
     SpeedSpace: 400, display: true
     RangeSpace: 670, display: true
-    Ballistic: true
+    Ballistic: false
+    HomingSpeed: 3.5
     # Buff: "FractureOpen,OpenWound,BrokenLeg"
     # Buff_chance: "0.2,0.7,0.4"
 
