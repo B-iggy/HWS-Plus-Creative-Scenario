@@ -1,3 +1,5 @@
+⚠ Discontinued here in github. I keep the Workshop Creative Scenario Up to date. Go check it out there.
+
 # HWS+ Creative Scenario
 
 ## Info
