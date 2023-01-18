@@ -1,5 +1,3 @@
-⚠ Discontinued here in github. I keep the Workshop Creative Scenario Up to date. Go check it out there.
-
 # HWS+ Creative Scenario
 
 ## Info
@@ -67,7 +65,7 @@ Constructive feedback about the HWS+ Config files are most welcome in form of ["
 
 
 ## Licence
-HWS © 2022 by RexXxuS is licensed under Attribution-NonCommercial-NoDerivatives 4.0 International
+HWS © 2023 by RexXxuS is licensed under Attribution-NonCommercial-NoDerivatives 4.0 International
 https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
 
 Additionally: This Scenario is available for private use only. It is NOT permitted to host a public server with this Scenario and of course to re-use it and put it in any form in the Workshop.
