@@ -16416,9 +16416,8 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS # Projectile Splash
-    CheckObstructed: true
     AllowAt: "Space,Planet"
-    ROF: 2.5, type: float, display: true, formatter: ROF
+    ROF: 2.6, type: float, display: true, formatter: ROF
     Range: 650, display: false
     RangeSpace: 1150, display: false
     AmmoCapacity: 10, display: true
@@ -16442,9 +16441,8 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS # Projectile Splash
-    CheckObstructed: true
     AllowAt: "Space,Planet"
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 2.3, type: float, display: true, formatter: ROF
     Range: 800, display: false
     RangeSpace: 1350, display: false
     AmmoCapacity: 20, display: true
@@ -16468,16 +16466,15 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 1.1, type: float, display: true, formatter: ROF
+    ROF: 1.125, type: float, display: true, formatter: ROF
     Range: 850, display: true
     RangeSpace: 1350, display: true
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 850
-    Damage: 2520, display: true
+    Damage: 1600, display: true
     AmmoCapacity: 50, display: true
     AutoReload: true
     AmmoType: HWSAquaBAT3Ammo, display: true
@@ -16504,16 +16501,15 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 0.1, type: float, display: true, formatter: ROF
+    ROF: 0.15, type: float, display: true, formatter: ROF
     Range: 750, display: true
     RangeSpace: 1150, display: true
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
-    Damage: 420, display: true
+    Damage: 360, display: true
     AmmoCapacity: 200, display: true
     AutoReload: true
     AmmoType: HWSAquaBAT4Ammo, display: true
@@ -16541,7 +16537,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 2.3, type: float, display: true, formatter: ROF
@@ -16550,7 +16545,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
-    Damage: 10000, display: true
+    Damage: 8500, display: true
     AmmoCapacity: 25, display: true
     AutoReload: true
     AmmoType: HWSAquaBAT5Ammo, display: true
@@ -16579,7 +16574,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: false
@@ -16605,7 +16599,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 800, display: false
@@ -16631,7 +16624,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 1.5, type: float, display: true, formatter: ROF
@@ -16640,7 +16632,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 850
-    Damage: 2520, display: true
+    Damage: 1600, display: true
     AmmoCapacity: 75, display: true
     AutoReload: true
     AmmoType: HWSTerraBAT3Ammo, display: true
@@ -16666,7 +16658,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 0.2, type: float, display: true, formatter: ROF
@@ -16675,7 +16666,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
-    Damage: 420, display: true
+    Damage: 360, display: true
     AmmoCapacity: 300, display: true
     AutoReload: true
     AmmoType: HWSTerraBAT4Ammo, display: true
@@ -16704,7 +16695,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 3, type: float, display: true, formatter: ROF
@@ -16713,7 +16703,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
-    Damage: 10000, display: true
+    Damage: 8500, display: true
     AmmoCapacity: 35, display: true
     AutoReload: true
     AmmoType: HWSTerraBAT5Ammo, display: true
@@ -16742,7 +16732,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: false
@@ -16768,7 +16757,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 800, display: false
@@ -16794,7 +16782,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 1.5, type: float, display: true, formatter: ROF
@@ -16803,7 +16790,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 850
-    Damage: 2520, display: true
+    Damage: 1600, display: true
     AmmoCapacity: 50, display: true
     AutoReload: true
     AmmoType: HWSPyroBAT3Ammo, display: true
@@ -16829,7 +16816,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 0.2, type: float, display: true, formatter: ROF
@@ -16838,7 +16824,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
-    Damage: 420, display: true
+    Damage: 360, display: true
     AmmoCapacity: 200, display: true
     AutoReload: true
     AmmoType: HWSPyroBAT4Ammo, display: true
@@ -16866,7 +16852,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 3, type: float, display: true, formatter: ROF
@@ -16875,7 +16860,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
-    Damage: 10000, display: true
+    Damage: 8500, display: true
     AmmoCapacity: 25, display: true
     AutoReload: true
     AmmoType: HWSPyroBAT5Ammo, display: true
@@ -16904,7 +16889,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: false
@@ -16930,7 +16914,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 800, display: false
@@ -16956,7 +16939,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 1.5, type: float, display: true, formatter: ROF
@@ -16965,7 +16947,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 850
-    Damage: 2520, display: true
+    Damage: 1600, display: true
     AmmoCapacity: 50, display: true
     AutoReload: true
     AmmoType: HWSObsidianBAT3Ammo, display: true
@@ -16991,7 +16973,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 0.2, type: float, display: true, formatter: ROF
@@ -17000,7 +16981,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
-    Damage: 420, display: true
+    Damage: 360, display: true
     AmmoCapacity: 200, display: true
     AutoReload: true
     AmmoType: HWSObsidianBAT4Ammo, display: true
@@ -17028,7 +17009,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 3, type: float, display: true, formatter: ROF
@@ -17037,7 +17017,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
-    Damage: 10000, display: true
+    Damage: 8500, display: true
     AmmoCapacity: 25, display: true
     AutoReload: true
     AmmoType: HWSObsidianBAT5Ammo, display: true
@@ -17066,7 +17046,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 800, display: false
@@ -17092,7 +17071,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 950, display: false
@@ -17118,7 +17096,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 1.5, type: float, display: true, formatter: ROF
@@ -17127,7 +17104,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 1000
-    Damage: 2520, display: true
+    Damage: 1600, display: true
     AmmoCapacity: 25, display: true
     AutoReload: true
     AmmoType: HWSLuxBAT3Ammo, display: true
@@ -17153,7 +17130,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 0.2, type: float, display: true, formatter: ROF
@@ -17162,7 +17138,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
-    Damage: 420, display: true
+    Damage: 360, display: true
     AmmoCapacity: 100, display: true
     AutoReload: true
     AmmoType: HWSLuxBAT4Ammo, display: true
@@ -17190,7 +17166,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 3, type: float, display: true, formatter: ROF
@@ -17199,7 +17174,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 1550
-    Damage: 10000, display: true
+    Damage: 8500, display: true
     AmmoCapacity: 12, display: true
     AutoReload: true
     AmmoType: HWSLuxBAT5Ammo, display: true
@@ -17228,7 +17203,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 325, display: false
@@ -17254,7 +17228,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 400, display: false
@@ -17280,7 +17253,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 1.5, type: float, display: true, formatter: ROF
@@ -17289,7 +17261,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 425
-    Damage: 2520, display: true
+    Damage: 1600, display: true
     AmmoCapacity: 50, display: true
     AutoReload: true
     AmmoType: HWSNoxBAT3Ammo, display: true
@@ -17315,7 +17287,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 0.2, type: float, display: true, formatter: ROF
@@ -17324,7 +17295,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
-    Damage: 420, display: true
+    Damage: 360, display: true
     AmmoCapacity: 200, display: true
     AutoReload: true
     AmmoType: HWSNoxBAT4Ammo, display: true
@@ -17352,7 +17323,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 3, type: float, display: true, formatter: ROF
@@ -17361,7 +17331,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 450
-    Damage: 10000, display: true
+    Damage: 8500, display: true
     AmmoCapacity: 25, display: true
     AutoReload: true
     AmmoType: HWSNoxBAT5Ammo, display: true
@@ -17390,7 +17360,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: false
@@ -17416,7 +17385,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 800, display: false
@@ -17442,7 +17410,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 1.5, type: float, display: true, formatter: ROF
@@ -17451,7 +17418,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 850
-    Damage: 2520, display: true
+    Damage: 1600, display: true
     AmmoCapacity: 50, display: true
     AutoReload: true
     AmmoType: HWSStrangeletBAT3Ammo, display: true
@@ -17477,7 +17444,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 0.2, type: float, display: true, formatter: ROF
@@ -17486,7 +17452,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
-    Damage: 420, display: true
+    Damage: 360, display: true
     AmmoCapacity: 100, display: true
     AutoReload: true
     AmmoType: HWSStrangeletBAT4Ammo, display: true
@@ -17515,7 +17481,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged # Projectile Hitscan
-    CheckObstructed: true
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
     ROF: 3, type: float, display: true, formatter: ROF
@@ -17524,7 +17489,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
-    Damage: 10000, display: true
+    Damage: 8500, display: true
     AmmoCapacity: 100, display: true
     AutoReload: true
     AmmoType: HWSStrangeletBAT5Ammo, display: true
@@ -17564,7 +17529,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: Space
     ROF: 2.6, type: float, display: true, formatter: ROF
     Range: 650, display: true
@@ -17591,12 +17555,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
-    ROF: 1.2, type: float, display: true, formatter: ROF
+    ROF: 1.125, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
-    Damage: 2100, display: true
+    Damage: 1400, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSAquaCVT2Ammo, display: true
@@ -17632,12 +17595,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
-    ROF: 0.1, type: float, display: true, formatter: ROF
+    ROF: 0.15, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 1000, display: true
-    Damage: 400, display: true
+    Damage: 330, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSAquaCVT3Ammo, display: true
@@ -17674,12 +17636,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 2.4, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8500, display: true
+    Damage: 7500, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSAquaCVT4Ammo, display: true
@@ -17744,12 +17705,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
-    ROF: 1, type: float, display: true, formatter: ROF
+    ROF: 0.9, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
-    Damage: 1100, display: true
+    Damage: 750, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSAquaCVT2Ammo, display: true
@@ -17786,12 +17746,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 2.4, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8500, display: true
+    Damage: 8000, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSAquaCVT4Ammo, display: true
@@ -17828,7 +17787,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
@@ -17855,12 +17813,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
-    Damage: 2100, display: true
+    Damage: 1400, display: true
     Automatic: true
     AmmoCapacity: 75, display: true
     AmmoType: HWSTerraCVT2Ammo, display: true
@@ -17896,12 +17853,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 1000, display: true
-    Damage: 400, display: true
+    Damage: 330, display: true
     Automatic: true
     AmmoCapacity: 300, display: true
     AmmoType: HWSTerraCVT3Ammo, display: true
@@ -17938,12 +17894,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8500, display: true
+    Damage: 7500, display: true
     Automatic: true
     AmmoCapacity: 35, display: true
     AmmoType: HWSTerraCVT4Ammo, display: true
@@ -18008,12 +17963,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 1.2, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
-    Damage: 1100, display: true
+    Damage: 750, display: true
     Automatic: true
     AmmoCapacity: 75, display: true
     AmmoType: HWSTerraCVT2Ammo, display: true
@@ -18050,12 +18004,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8500, display: true
+    Damage: 8000, display: true
     Automatic: true
     AmmoCapacity: 30, display: true
     AmmoType: HWSTerraCVT4Ammo, display: true
@@ -18092,7 +18045,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
@@ -18119,12 +18071,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
-    Damage: 2100, display: true
+    Damage: 1400, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSPyroCVT2Ammo, display: true
@@ -18160,12 +18111,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 1000, display: true
-    Damage: 400, display: true
+    Damage: 330, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSPyroCVT3Ammo, display: true
@@ -18202,12 +18152,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8500, display: true
+    Damage: 7500, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSPyroCVT4Ammo, display: true
@@ -18272,12 +18221,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 1.2, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
-    Damage: 1100, display: true
+    Damage: 750, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSPyroCVT2Ammo, display: true
@@ -18314,12 +18262,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8500, display: true
+    Damage: 8000, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSPyroCVT4Ammo, display: true
@@ -18356,7 +18303,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
@@ -18383,12 +18329,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
-    Damage: 2100, display: true
+    Damage: 1600, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSObsidianCVT2Ammo, display: true
@@ -18424,12 +18369,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 1000, display: true
-    Damage: 400, display: true
+    Damage: 330, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSObsidianCVT3Ammo, display: true
@@ -18466,12 +18410,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8500, display: true
+    Damage: 7500, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSObsidianCVT4Ammo, display: true
@@ -18536,12 +18479,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 1.2, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
-    Damage: 1100, display: true
+    Damage: 750, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSObsidianCVT2Ammo, display: true
@@ -18578,12 +18520,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8500, display: true
+    Damage: 8000, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSObsidianCVT4Ammo, display: true
@@ -18620,7 +18561,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 750, display: true
@@ -18647,12 +18587,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 750, display: true
     RangeSpace: 1350, display: true
-    Damage: 2100, display: true
+    Damage: 1400, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSLuxCVT2Ammo, display: true
@@ -18688,12 +18627,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 690, display: true
     RangeSpace: 1150, display: true
-    Damage: 400, display: true
+    Damage: 330, display: true
     Automatic: true
     AmmoCapacity: 100, display: true
     AmmoType: HWSLuxCVT3Ammo, display: true
@@ -18730,12 +18668,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 800, display: true
     RangeSpace: 1400, display: true
-    Damage: 8500, display: true
+    Damage: 7500, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSLuxCVT4Ammo, display: true
@@ -18800,12 +18737,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 1.2, type: float, display: true, formatter: ROF
     Range: 750, display: true
     RangeSpace: 1350, display: true
-    Damage: 1100, display: true
+    Damage: 750, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSLuxCVT2Ammo, display: true
@@ -18842,12 +18778,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 800, display: true
     RangeSpace: 1400, display: true
-    Damage: 8500, display: true
+    Damage: 8000, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSLuxCVT4Ammo, display: true
@@ -18884,7 +18819,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 325, display: true
@@ -18911,12 +18845,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 325, display: true
     RangeSpace: 600, display: true
-    Damage: 2100, display: true
+    Damage: 1400, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSNoxCVT2Ammo, display: true
@@ -18952,12 +18885,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 300, display: true
     RangeSpace: 500, display: true
-    Damage: 400, display: true
+    Damage: 330, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSNoxCVT3Ammo, display: true
@@ -18994,12 +18926,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 350, display: true
     RangeSpace: 625, display: true
-    Damage: 8500, display: true
+    Damage: 7500, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSNoxCVT4Ammo, display: true
@@ -19064,12 +18995,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 1.2, type: float, display: true, formatter: ROF
     Range: 325, display: true
     RangeSpace: 600, display: true
-    Damage: 1100, display: true
+    Damage: 750, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSNoxCVT2Ammo, display: true
@@ -19106,12 +19036,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 350, display: true
     RangeSpace: 625, display: true
-    Damage: 8500, display: true
+    Damage: 8000, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSNoxCVT4Ammo, display: true
@@ -19148,7 +19077,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
@@ -19175,12 +19103,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
-    Damage: 2100, display: true
+    Damage: 1400, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSStrangeletCVT2Ammo, display: true
@@ -19216,12 +19143,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 1000, display: true
-    Damage: 400, display: true
+    Damage: 330, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSStrangeletCVT3Ammo, display: true
@@ -19258,12 +19184,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8500, display: true
+    Damage: 7500, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSStrangeletCVT4Ammo, display: true
@@ -19328,12 +19253,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 1.2, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
-    Damage: 1100, display: true
+    Damage: 750, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSStrangeletCVT2Ammo, display: true
@@ -19370,12 +19294,11 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     AllowAt: Space
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8500, display: true
+    Damage: 8000, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSStrangeletCVT4Ammo, display: true
@@ -19422,8 +19345,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
-    ROF: 1.1, type: float, display: true, formatter: ROF
+    ROF: 1.125, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Automatic: true
@@ -19448,11 +19370,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.38, type: float, display: true, formatter: ROF
+    ROF: 0.45, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
-    Damage: 180, display: true
+    Damage: 150, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSAquaHVT2Ammo, display: true
@@ -19487,11 +19408,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.1, type: float, display: true, formatter: ROF
+    ROF: 0.15, type: float, display: true, formatter: ROF
     Range: 460, display: true
     RangeSpace: 650, display: true
-    Damage: 110, display: true
+    Damage: 90, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSAquaHVT3Ammo, display: true
@@ -19527,11 +19447,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1400, display: true
+    Damage: 1200, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSAquaHVT4Ammo, display: true
@@ -19596,7 +19515,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 1.6, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
@@ -19637,7 +19555,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
@@ -19663,11 +19580,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.5, type: float, display: true, formatter: ROF
+    ROF: 0.6, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
-    Damage: 180, display: true
+    Damage: 150, display: true
     Automatic: true
     AmmoCapacity: 75, display: true
     AmmoType: HWSTerraHVT2Ammo, display: true
@@ -19703,11 +19619,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 460, display: true
     RangeSpace: 650, display: true
-    Damage: 110, display: true
+    Damage: 90, display: true
     Automatic: true
     AmmoCapacity: 300, display: true
     AmmoType: HWSTerraHVT3Ammo, display: true
@@ -19743,11 +19658,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1400, display: true
+    Damage: 1200, display: true
     Automatic: true
     AmmoCapacity: 35, display: true
     AmmoType: HWSTerraHVT4Ammo, display: true
@@ -19811,7 +19725,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2.2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
@@ -19852,7 +19765,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
@@ -19878,11 +19790,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.5, type: float, display: true, formatter: ROF
+    ROF: 0.6, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
-    Damage: 180, display: true
+    Damage: 150, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSPyroHVT2Ammo, display: true
@@ -19918,11 +19829,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 460, display: true
     RangeSpace: 650, display: true
-    Damage: 110, display: true
+    Damage: 90, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSPyroHVT3Ammo, display: true
@@ -19958,11 +19868,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1400, display: true
+    Damage: 1200, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSPyroHVT4Ammo, display: true
@@ -20026,7 +19935,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2.2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
@@ -20067,7 +19975,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
@@ -20093,11 +20000,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.5, type: float, display: true, formatter: ROF
+    ROF: 0.6, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
-    Damage: 180, display: true
+    Damage: 150, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSObsidianHVT2Ammo, display: true
@@ -20133,11 +20039,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 460, display: true
     RangeSpace: 650, display: true
-    Damage: 110, display: true
+    Damage: 90, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSObsidianHVT3Ammo, display: true
@@ -20173,11 +20078,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1400, display: true
+    Damage: 1200, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSObsidianHVT4Ammo, display: true
@@ -20241,7 +20145,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2.2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
@@ -20282,7 +20185,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 800, display: true
@@ -20308,11 +20210,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.5, type: float, display: true, formatter: ROF
+    ROF: 0.6, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 800, display: true
-    Damage: 180, display: true
+    Damage: 150, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSLuxHVT2Ammo, display: true
@@ -20348,11 +20249,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 560, display: true
     RangeSpace: 750, display: true
-    Damage: 110, display: true
+    Damage: 90, display: true
     Automatic: true
     AmmoCapacity: 100, display: true
     AmmoType: HWSLuxHVT3Ammo, display: true
@@ -20388,11 +20288,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 900, display: true
-    Damage: 1400, display: true
+    Damage: 1200, display: true
     Automatic: true
     AmmoCapacity: 12, display: true
     AmmoType: HWSLuxHVT4Ammo, display: true
@@ -20456,7 +20355,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2.2, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 900, display: true
@@ -20497,7 +20395,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 250, display: true
     RangeSpace: 350, display: true
@@ -20523,11 +20420,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.5, type: float, display: true, formatter: ROF
+    ROF: 0.6, type: float, display: true, formatter: ROF
     Range: 250, display: true
     RangeSpace: 350, display: true
-    Damage: 180, display: true
+    Damage: 150, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSNoxHVT2Ammo, display: true
@@ -20563,11 +20459,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 230, display: true
     RangeSpace: 325, display: true
-    Damage: 110, display: true
+    Damage: 90, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSNoxHVT3Ammo, display: true
@@ -20603,11 +20498,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 275, display: true
     RangeSpace: 400, display: true
-    Damage: 1400, display: true
+    Damage: 1200, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSNoxHVT4Ammo, display: true
@@ -20671,7 +20565,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2.2, type: float, display: true, formatter: ROF
     Range: 275, display: true
     RangeSpace: 400, display: true
@@ -20712,7 +20605,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
@@ -20738,11 +20630,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.5, type: float, display: true, formatter: ROF
+    ROF: 0.6, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
-    Damage: 180, display: true
+    Damage: 150, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSStrangeletHVT2Ammo, display: true
@@ -20778,11 +20669,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 460, display: true
     RangeSpace: 650, display: true
-    Damage: 110, display: true
+    Damage: 90, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSStrangeletHVT3Ammo, display: true
@@ -20818,11 +20708,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1400, display: true
+    Damage: 1200, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSStrangeletHVT4Ammo, display: true
@@ -20887,7 +20776,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2.2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
@@ -20939,7 +20827,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
@@ -20966,8 +20853,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.2, type: float, display: true, formatter: ROF
+    ROF: 0.3, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
     Damage: 100, display: true
@@ -21035,11 +20921,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.3, type: float, display: true, formatter: ROF
+    ROF: 0.375, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
-    Damage: 160, display: true
+    Damage: 70, display: true
     Automatic: true
     BulletSpread: 0, display: true
     AmmoCapacity: 50, display: true
@@ -21075,11 +20960,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.1, type: float, display: true, formatter: ROF
+    ROF: 0.15, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
-    Damage: 100, display: true
+    Damage: 80, display: true
     Automatic: true
     AmmoCapacity: 100, display: true
     AmmoType: HWSAquaSVT3Ammo, display: true
@@ -21117,11 +21001,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 1.875, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 1100, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSAquaSVT4Ammo, display: true
@@ -21159,7 +21042,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
@@ -21185,7 +21067,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.4, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
@@ -21253,11 +21134,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.4, type: float, display: true, formatter: ROF
+    ROF: 0.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
-    Damage: 160, display: true
+    Damage: 70, display: true
     Automatic: true
     AmmoCapacity: 75, display: true
     AmmoType: HWSTerraSVT2Ammo, display: true
@@ -21294,11 +21174,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
-    Damage: 100, display: true
+    Damage: 80, display: true
     Automatic: true
     AmmoCapacity: 150, display: true
     AmmoType: HWSTerraSVT3Ammo, display: true
@@ -21336,11 +21215,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 1100, display: true
     Automatic: true
     AmmoCapacity: 30, display: true
     AmmoType: HWSTerraSVT4Ammo, display: true
@@ -21378,7 +21256,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
@@ -21404,7 +21281,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.4, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
@@ -21472,11 +21348,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.4, type: float, display: true, formatter: ROF
+    ROF: 0.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
-    Damage: 160, display: true
+    Damage: 70, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSPyroSVT2Ammo, display: true
@@ -21513,11 +21388,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
-    Damage: 100, display: true
+    Damage: 80, display: true
     Automatic: true
     AmmoCapacity: 100, display: true
     AmmoType: HWSPyroSVT3Ammo, display: true
@@ -21554,11 +21428,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 1100, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSPyroSVT4Ammo, display: true
@@ -21596,7 +21469,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
@@ -21622,7 +21494,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.4, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
@@ -21691,11 +21562,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.4, type: float, display: true, formatter: ROF
+    ROF: 0.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
-    Damage: 160, display: true
+    Damage: 70, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSObsidianSVT2Ammo, display: true
@@ -21732,11 +21602,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
-    Damage: 100, display: true
+    Damage: 80, display: true
     Automatic: true
     AmmoCapacity: 100, display: true
     AmmoType: HWSObsidianSVT3Ammo, display: true
@@ -21773,11 +21642,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 1100, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSObsidianSVT4Ammo, display: true
@@ -21815,7 +21683,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 580, display: true
     RangeSpace: 770, display: true
@@ -21842,7 +21709,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.4, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 700, display: true
@@ -21911,11 +21777,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.4, type: float, display: true, formatter: ROF
+    ROF: 0.5, type: float, display: true, formatter: ROF
     Range: 580, display: true
     RangeSpace: 770, display: true
-    Damage: 160, display: true
+    Damage: 70, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSLuxSVT2Ammo, display: true
@@ -21952,11 +21817,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 700, display: true
-    Damage: 100, display: true
+    Damage: 80, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSLuxSVT3Ammo, display: true
@@ -21993,11 +21857,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 630, display: true
     RangeSpace: 900, display: true
-    Damage: 1200, display: true
+    Damage: 1100, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSLuxSVT4Ammo, display: true
@@ -22035,7 +21898,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 240, display: true
     RangeSpace: 335, display: true
@@ -22061,7 +21923,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.4, type: float, display: true, formatter: ROF
     Range: 225, display: true
     RangeSpace: 300, display: true
@@ -22130,11 +21991,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.4, type: float, display: true, formatter: ROF
+    ROF: 0.5, type: float, display: true, formatter: ROF
     Range: 240, display: true
     RangeSpace: 335, display: true
-    Damage: 160, display: true
+    Damage: 70, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSNoxSVT2Ammo, display: true
@@ -22171,11 +22031,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 225, display: true
     RangeSpace: 300, display: true
-    Damage: 100, display: true
+    Damage: 80, display: true
     Automatic: true
     AmmoCapacity: 100, display: true
     AmmoType: HWSNoxSVT3Ammo, display: true
@@ -22212,11 +22071,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 265, display: true
     RangeSpace: 400, display: true
-    Damage: 1200, display: true
+    Damage: 1100, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSNoxSVT4Ammo, display: true
@@ -22254,7 +22112,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
@@ -22280,7 +22137,6 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.4, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
@@ -22349,11 +22205,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
-    ROF: 0.4, type: float, display: true, formatter: ROF
+    ROF: 0.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
-    Damage: 160, display: true
+    Damage: 70, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSStrangeletSVT2Ammo, display: true
@@ -22390,11 +22245,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
-    Damage: 100, display: true
+    Damage: 80, display: true
     Automatic: true
     AmmoCapacity: 100, display: true
     AmmoType: HWSStrangeletSVT3Ammo, display: true
@@ -22431,11 +22285,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    CheckObstructed: true
     ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 1100, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSStrangeletSVT4Ammo, display: true
@@ -22473,9 +22326,8 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
-    ROF: 1.6, type: float, display: true, formatter: ROF
+    ROF: 1.725, type: float, display: true, formatter: ROF
     Range: 800, display: true
     RangeSpace: 1350, display: true
     AmmoCapacity: 25, display: false      # no need to display since unlimited ammo
@@ -22499,7 +22351,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 2.3, type: float, display: true, formatter: ROF
     Range: 800, display: true
@@ -22525,7 +22376,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 2.3, type: float, display: true, formatter: ROF
     Range: 800, display: true
@@ -22551,7 +22401,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 2.3, type: float, display: true, formatter: ROF
     Range: 800, display: true
@@ -22577,7 +22426,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 2.3, type: float, display: true, formatter: ROF
     Range: 800, display: true
@@ -22603,7 +22451,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 2.3, type: float, display: true, formatter: ROF
     Range: 400, display: true
@@ -22629,7 +22476,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 2.3, type: float, display: true, formatter: ROF
     Range: 800, display: true
@@ -22657,7 +22503,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: Space
     ROF: 1.9, type: float, display: true, formatter: ROF
     Range: 650, display: true
@@ -22683,7 +22528,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: Space
     ROF: 2.6, type: float, display: true, formatter: ROF
     Range: 650, display: true
@@ -22709,7 +22553,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: Space
     ROF: 2.6, type: float, display: true, formatter: ROF
     Range: 650, display: true
@@ -22735,7 +22578,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: Space
     ROF: 2.6, type: float, display: true, formatter: ROF
     Range: 650, display: true
@@ -22761,7 +22603,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: Space
     ROF: 2.6, type: float, display: true, formatter: ROF
     Range: 750, display: true
@@ -22787,7 +22628,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: Space
     ROF: 2.6, type: float, display: true, formatter: ROF
     Range: 390, display: true
@@ -22813,7 +22653,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: Space
     ROF: 2.6, type: float, display: true, formatter: ROF
     Range: 650, display: true
@@ -22841,7 +22680,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 0.8, type: float, display: true, formatter: ROF
     Range: 500, display: true
@@ -22867,7 +22705,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 1.125, type: float, display: true, formatter: ROF
     Range: 500, display: true
@@ -22893,7 +22730,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 1.125, type: float, display: true, formatter: ROF
     Range: 500, display: true
@@ -22919,7 +22755,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 1.125, type: float, display: true, formatter: ROF
     Range: 500, display: true
@@ -22945,7 +22780,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 1.125, type: float, display: true, formatter: ROF
     Range: 600, display: true
@@ -22971,7 +22805,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 1.125, type: float, display: true, formatter: ROF
     Range: 250, display: true
@@ -22997,7 +22830,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 1.125, type: float, display: true, formatter: ROF
     Range: 500, display: true
@@ -23025,7 +22857,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 1.125, type: float, display: true, formatter: ROF
     Range: 480, display: true
@@ -23051,7 +22882,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
@@ -23077,7 +22907,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
@@ -23103,7 +22932,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
@@ -23129,7 +22957,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 580, display: true
@@ -23155,7 +22982,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 240, display: true
@@ -23181,7 +23007,6 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    CheckObstructed: true
     AllowAt: "Space,Planet"
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 480, display: true

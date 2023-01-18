@@ -1300,14 +1300,14 @@
   }
 }
 { Template Name: CPUExtenderBAT2
-  CraftTime: 160 #A2 1
-  Target: "BaseC,LargeC,AdvC"
+  CraftTime: 120 #A2 1
+  Target: "SurvC,SmallC,HoverC,BaseC,LargeC,AdvC"
   { Child Inputs
     SteelPlate: 12
     Electronics: 8
     Computer: 10
     OpticalFiber: 6
-    FluxCoil: 4
+    PlasticMaterial: 20
   }
 }
 { Template Name: CPUExtenderBAT3
