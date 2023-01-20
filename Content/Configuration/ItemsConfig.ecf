@@ -146,7 +146,7 @@
     Automatic: false
     BulletSpread: 0.2, display: true
     Recoil: 0.5, display: true
-    Damage: 33, display: true
+    Damage: 38, display: true
     AmmoCapacity: 15, display: true
     AmmoType: 50Caliber, display: true
     ReloadDelay: 2.1, display: true
@@ -258,7 +258,7 @@
     Automatic: true, display: true
     BulletSpread: 0.3, display: true
     Recoil: 0.7, display: true
-    Damage: 42, display: true
+    Damage: 52, display: true
     AmmoCapacity: 300, display: true
     AmmoType: 8.3mmBullet, display: true
     ReloadDelay: 6.5, display: true
@@ -294,7 +294,7 @@
     CameraShake: 1
     BulletSpread: 0.75, display: true
     Recoil: 2.0, display: true
-    Damage: 72, display: true
+    Damage: 86, display: true
     AmmoCapacity: 300, display: true
     AmmoType: 8.3mmBullet, display: true
     ReloadDelay: 6.5, display: true
@@ -361,7 +361,7 @@
     Automatic: true, display: true
     BulletSpread: 0.1, display: true
     Recoil: 0.4, display: true
-    Damage: 35, display: true
+    Damage: 42, display: true
     NoiseStrength: 50, display: false
     CameraShake: 1
     AmmoCapacity: 25, display: true
@@ -431,7 +431,7 @@
     Automatic: false
     BulletSpread: 0.03, display: true
     Recoil: 1.1, display: true
-    Damage: 150, display: true
+    Damage: 165, display: true
     AmmoCapacity: 6, display: true
     AmmoType: 12.7mmBullet, display: true
     # ReloadDelay: 3.7, display: true
@@ -579,7 +579,7 @@
     BulletSpread: 0.2
     RaySpread: 1, display: true
     Recoil: 1.68, display: true
-    Damage: 54, display: true
+    Damage: 58, display: true
     AmmoCapacity: 7, display: true
     AmmoType: ShotgunShells, display: true
     ReloadDelay: 3, display: true
@@ -1108,7 +1108,7 @@
     Automatic: true
     BulletSpread: 0, display: true
     Recoil: 0.2, display: true
-    Damage: 51, display: true
+    Damage: 60, display: true
     AmmoCapacity: 20, display: true
     AmmoType: PulseLaserChargePistol, display: true
     ReloadDelay: 2.5, display: true
@@ -1177,7 +1177,7 @@
     Automatic: true, display: true
     BulletSpread: 0.16, display: true
     Recoil: 1.0, display: true
-    Damage: 60, display: true
+    Damage: 70, display: true
     AmmoCapacity: 30, display: true
     AmmoType: 5.8mmBullet, display: true
     ReloadDelay: 3.1, display: true
@@ -1243,7 +1243,7 @@
     Recoil: 0.3, display: true
     IgnoreAtmo: true, display: true
     Automatic: true, display: true
-    Damage: 82, display: true
+    Damage: 95, display: true
     AmmoCapacity: 25, display: true
     AmmoType: PulseLaserChargeRifle, display: true
     ReloadDelay: 3.0, display: true
@@ -1689,7 +1689,7 @@
     NoiseStrength: 60, display: false
     BulletSpread: 0.15, display: true
     Recoil: 0.64, display: true
-    Damage: 42, display: true
+    Damage: 50, display: true
     AllowRemote: true
     AmmoCapacity: 15, display: true
     ReloadDelay: 2.375, display: true
@@ -1882,7 +1882,7 @@
     NoiseStrength: 100, display: false
     BulletSpread: 0.06, display: true
     Recoil: 0.36, display: true
-    Damage: 84, display: true
+    Damage: 90, display: true
     AmmoCapacity: 45, display: true
     ReloadDelay: 3.75, display: true
     # SfxBegin: Weapons/ProjectileWeapons/Automatic/FAL_50-42_Modern_start
@@ -2008,7 +2008,7 @@
     NoiseStrength: 200, display: false
     BulletSpread: 0.25, display: false
     Recoil: 0.3, display: true
-    Damage: 65, display: true
+    Damage: 73, display: true
     AmmoCapacity: 250, display: true
     AmmoType: PulseLaserChargeRifle, display: true
     Automatic: true
@@ -2106,7 +2106,7 @@
     BulletSpread: 0.1
     RaySpread: 0.475, display: true
     Recoil: 1.38, display: true
-    Damage: 70, display: true
+    Damage: 75, display: true
     AmmoCapacity: 11, display: true
     ReloadDelay: 3, display: true
     # Buff: "OpenWound,Mutilation"
@@ -2150,7 +2150,7 @@
   RepairDisabled: true, display: true
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
-    Damage: 135, display: true
+    Damage: 146, display: true
     ROF: 0.17, type: float, display: true, formatter: ROF
     ReloadDelay: 3.7, display: true
     # Buff: "RadiationBurn,DermalBurn"
@@ -2300,7 +2300,7 @@
     Range: 110, display: false
     BulletSpread: 0.075, display: true
     Recoil: 0.25, display: true
-    Damage: 65, display: true
+    Damage: 70, display: true
     AllowRemote: true
     Automatic: true, display: true
     AmmoCapacity: 24, display: true
@@ -2507,7 +2507,7 @@
     Recoil: 0.16, display: true
     Range: 99, display: false
     RangeSpace: 180, display: true
-    Damage: 80, display: true
+    Damage: 93, display: true
     AmmoCapacity: 28, display: true
     ReloadDelay: 2.375, display: true
     SfxBegin: Weapons/Player/LaserPistol/BLASTERLargeFastKickback
@@ -2546,7 +2546,7 @@
     Range: 185, display: false
     BulletSpread: 0.12, display: true
     Recoil: 0.48, display: true
-    Damage: 45, display: true
+    Damage: 52, display: true
     AmmoCapacity: 30, display: true
     ReloadDelay: 2.945, display: true
     # SfxBegin: Weapons/Player/AssaultRifle/AWDS_AR_HK416_start
@@ -2595,7 +2595,7 @@
     BulletSpread: 0.075, display: true
     Recoil: 0.32, display: true
     Automatic: true, display: true
-    Damage: 45, display: true
+    Damage: 54, display: true
     AmmoCapacity: 35, display: true
     AmmoType: 5.8mmBullet, display: true
     ReloadDelay: 2.945, display: true
@@ -2645,7 +2645,7 @@
     BulletSpread: 0.09, display: false
     Recoil: 0.192, display: true
     Automatic: true, display: true
-    Damage: 84, display: true
+    Damage: 90, display: true
     NoiseStrength: 120, display: false
     AmmoCapacity: 50, display: true
     AmmoType: PulseLaserChargeRifle, display: true
@@ -10722,15 +10722,15 @@
   Mass: 12, type: float, display: false, formatter: Kilogram
   { Child 0
     Class: Ranged
-    ROF: 0.1, type: float
+    ROF: 0.15, type: float
     Range: 100, display: false
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
     Automatic: true
-    Damage: 28, display: true
+    Damage: 26, display: true
     AmmoCapacity: 250, display: true
     AmmoUnlimited: true
     AmmoType: 8.3mmBullet, display: true
-    BulletSpread: 1.15, display: true
+    BulletSpread: 1.35, display: true
     ReloadDelay: 6.3, display: true
     Buff: "OpenWound"
     Buff_chance: 0.03
@@ -10761,7 +10761,7 @@
     Class: Ranged
     ROF: 0.8, type: float, display: true, formatter: ROF
     Range: 120, display: false
-    Damage: 70, display: true
+    Damage: 65, display: true
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
     Automatic: true
     SfxBegin: Weapons/Player/LaserRifle/BLASTERComplexFireTriggerDigitalDischarge
@@ -10931,7 +10931,7 @@
     BulletsPerShot: 7
     BulletSpread: 0
     RaySpread: 1.6, display: true
-    Damage: 46, display: true
+    Damage: 42, display: true
     Buff: "OpenWound,Mutilation"
     Buff_chance: "0.15,0.05"
     AmmoCapacity: 15, display: true
@@ -19450,7 +19450,7 @@
     ROF: 1.5, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 1100, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSAquaHVT4Ammo, display: true
@@ -19518,7 +19518,7 @@
     ROF: 1.6, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1400, display: true
+    Damage: 1250, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSAquaHVT4Ammo, display: true
@@ -19661,7 +19661,7 @@
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 1100, display: true
     Automatic: true
     AmmoCapacity: 35, display: true
     AmmoType: HWSTerraHVT4Ammo, display: true
@@ -19728,7 +19728,7 @@
     ROF: 2.2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1400, display: true
+    Damage: 1250, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSTerraHVT4Ammo, display: true
@@ -19871,7 +19871,7 @@
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 1100, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSPyroHVT4Ammo, display: true
@@ -19938,7 +19938,7 @@
     ROF: 2.2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1400, display: true
+    Damage: 1250, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSPyroHVT4Ammo, display: true
@@ -20081,7 +20081,7 @@
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 1100, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSObsidianHVT4Ammo, display: true
@@ -20148,7 +20148,7 @@
     ROF: 2.2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1400, display: true
+    Damage: 1250, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSObsidianHVT4Ammo, display: true
@@ -20291,7 +20291,7 @@
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 900, display: true
-    Damage: 1200, display: true
+    Damage: 1100, display: true
     Automatic: true
     AmmoCapacity: 12, display: true
     AmmoType: HWSLuxHVT4Ammo, display: true
@@ -20358,7 +20358,7 @@
     ROF: 2.2, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 900, display: true
-    Damage: 1400, display: true
+    Damage: 1250, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSLuxHVT4Ammo, display: true
@@ -20501,7 +20501,7 @@
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 275, display: true
     RangeSpace: 400, display: true
-    Damage: 1200, display: true
+    Damage: 1100, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSNoxHVT4Ammo, display: true
@@ -20568,7 +20568,7 @@
     ROF: 2.2, type: float, display: true, formatter: ROF
     Range: 275, display: true
     RangeSpace: 400, display: true
-    Damage: 1400, display: true
+    Damage: 1250, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSNoxHVT4Ammo, display: true
@@ -20711,7 +20711,7 @@
     ROF: 2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 1100, display: true
     Automatic: true
     AmmoCapacity: 25, display: true
     AmmoType: HWSStrangeletHVT4Ammo, display: true
@@ -20779,7 +20779,7 @@
     ROF: 2.2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1400, display: true
+    Damage: 1250, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSStrangeletHVT4Ammo, display: true
@@ -21004,7 +21004,7 @@
     ROF: 1.875, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1100, display: true
+    Damage: 1000, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSAquaSVT4Ammo, display: true
@@ -21218,7 +21218,7 @@
     ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1100, display: true
+    Damage: 1000, display: true
     Automatic: true
     AmmoCapacity: 30, display: true
     AmmoType: HWSTerraSVT4Ammo, display: true
@@ -21431,7 +21431,7 @@
     ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1100, display: true
+    Damage: 1000, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSPyroSVT4Ammo, display: true
@@ -21645,7 +21645,7 @@
     ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1100, display: true
+    Damage: 1000, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSObsidianSVT4Ammo, display: true
@@ -21860,7 +21860,7 @@
     ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 630, display: true
     RangeSpace: 900, display: true
-    Damage: 1100, display: true
+    Damage: 1000, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSLuxSVT4Ammo, display: true
@@ -22074,7 +22074,7 @@
     ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 265, display: true
     RangeSpace: 400, display: true
-    Damage: 1100, display: true
+    Damage: 1000, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSNoxSVT4Ammo, display: true
@@ -22288,7 +22288,7 @@
     ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1100, display: true
+    Damage: 1000, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSStrangeletSVT4Ammo, display: true

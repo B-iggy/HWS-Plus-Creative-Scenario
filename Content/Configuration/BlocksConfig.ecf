@@ -2188,7 +2188,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
 
-  HitPoints: 300, type: int, display: true
+  HitPoints: 200, type: int, display: true
   UnlockCost: 7, display: true
   UnlockLevel: 10, display: true
   TechTreeParent: CockpitBlocksCV
@@ -6659,6 +6659,7 @@
   Mass: 2080, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   StackSize: 10000
+  HitPoints: 80, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
   Info: bkiGrowingPotSimple, display: true
   Category: BuildingBlocks
@@ -9058,6 +9059,7 @@
   Mass: 0.2, type: float, display: true, formatter: Kilogram
   CPUIn: 50, type: int, display: true
   StackSize: 200
+  HitPoints: 50, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   ModelScaleLocked: true
   IsActivateable: true
@@ -10508,6 +10510,7 @@
   Group: cpgEquipment
   IsAccessible: true, type: bool
   IsLockable: true
+  HitPoints: 50, type: int, display: true
   BuffNameActivate: StaminaRecover, display: StatusEffect
   # CanPickup: true
   ShowUser: Yes
@@ -10520,6 +10523,7 @@
   IsAccessible: true, type: bool
   Class: PassengerSeat
   IsLockable: true
+  HitPoints: 60, type: int, display: true
   BuffNameActivate: StaminaRecover, display: StatusEffect
   # CanPickup: true
   Model: @models2/Entities/Decorations/HomeSweetHome/SofaPrefab
@@ -10536,6 +10540,7 @@
   LootList: 63
   Group: cpgEquipment
   IsLockable: true
+  HitPoints: 60, type: int, display: true
   Model: @models2/Entities/Decorations/HomeSweetHome/KitchenCounterPrefab
   SizeInBlocks: "1,1,2", display: true
   SymType: 4
@@ -10548,6 +10553,7 @@
   Class: PassengerSeat
   IsAccessible: true, type: bool
   IsLockable: true
+  HitPoints: 50, type: int, display: true
   BuffNameActivate: StaminaRecover, display: StatusEffect
   # CanPickup: true
   Model: @models2/Entities/Decorations/HomeSweetHome/KitchenTablePrefab
@@ -10556,6 +10562,7 @@
 { Block Id: 616, Name: TableTV, Ref: DecoTemplate
   MarketPrice: 1, display: true
   # CanPickup: true
+  HitPoints: 40, type: int, display: true
   Info: bkiDecoModel, display: true
   Model: @models2/Entities/Decorations/HomeSweetHome/TableTVPrefab
   ShowUser: Yes
@@ -10563,6 +10570,7 @@
 { Block Id: 617, Name: Bookshelf, Ref: DecoTemplate
   MarketPrice: 1, display: true
   # CanPickup: true
+  HitPoints: 30, type: int, display: true
   Info: bkiDecoModel, display: true
   Model: @models2/Entities/Decorations/HomeSweetHome/BookshelfPrefab
   SymType: 1
@@ -10573,6 +10581,7 @@
   # CanPickup: true
   Class: PassengerSeat
   Group: cpgEquipment
+  HitPoints: 50, type: int, display: true
   BlockColor: "170,170,170"
   Info: bkiDecoModel, display: true
   Model: @models2/Entities/Decorations/HomeSweetHome/ControlStationPrefab
@@ -10587,6 +10596,7 @@
   DropInventoryEntity: DropContainer
   IsAccessible: true, type: bool
   LootList: 62
+  HitPoints: 60, type: int, display: true
   Group: cpgEquipment
   IsLockable: true
   Model: @models2/Entities/Decorations/HomeSweetHome/BathroomCounterPrefab
@@ -10601,6 +10611,7 @@
   Class: PassengerSeat
   BlockColor: "220,220,220"
   Group: cpgEquipment
+  HitPoints: 50, type: int, display: true
   IsAccessible: true, type: bool
   IsLockable: true
   DebuffNamesActivate: "Indigestion,Hangover,BadTrip", display: EffectiveAgainst
@@ -10614,6 +10625,7 @@
   Group: cpgEquipment
   IsAccessible: true, type: bool
   IsLockable: true
+  HitPoints: 50, type: int, display: true
   # BuffNamesActivate: "ReduceRadiation,DecreaseBodyTemp,IncreaseBodyTemp", display: StatusEffect
   BuffNamesActivate: "ReduceRadiation,NeutralBodyTemp", display: StatusEffect
   DebuffNamesActivate: "Fire"
@@ -10639,6 +10651,7 @@
   BlockColor: "110,110,110"
   Shape: New
   Model: Cube
+  HitPoints: 65, type: int, display: true
   TemplateRoot: HullSmallBlocks
   AllowPlacingAt: "Base,MS", display: true
   Info: bkiDecoBlock, display: true
@@ -11405,6 +11418,7 @@
   Group: cpgEquipment
   IsAccessible: true, type: bool
   IsLockable: true
+  HitPoints: 50, type: int, display: true
   BuffNameActivate: StaminaRecover, display: StatusEffect
   Model: @models2/Entities/Decorations/Misc/BunkBedPrefab
   SizeInBlocks: "1,1,1", display: true
@@ -11848,6 +11862,7 @@
   TemplateRoot: WalkwayLargeBlocks
   IsAccessible: false, type: bool
   IsOxygenTight: false, display: true
+  HitPoints: 100, type: int, display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true
   # SizeInBlocks: "1,1,1", display: true
   # SizeInBlocksLocked: "Base,MS"
@@ -12030,6 +12045,7 @@
   # Info: bkiContainer, display: true
   # ModelOffset: "0,0.5,0"
   StackSize: 200
+  HitPoints: 100, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   ExecuteOnActivate: Quest_SkillTrainer_DNAUpgradeContainer
   IsActivateableInCP: true
@@ -18087,6 +18103,7 @@
   BuffNamesActivate: "IncreaseBodyTemp", display: StatusEffect
   DebuffNamesActivate: "Hangover,BadTrip", display: EffectiveAgainst
   # CanPickup: true
+  HitPoints: 50, type: int, display: true
   Model: @models2/Entities/Decorations/Sci-Fi_InteriorPack/ScifiBedPrefab
   EnergyIn: 0, type: int, display: true, formatter: Watt
   ShowUser: Yes
@@ -18097,6 +18114,7 @@
   IsAccessible: true, type: bool
   Class: PassengerSeat
   IsLockable: true
+  HitPoints: 50, type: int, display: true
   BuffNameActivate: StaminaRecover, display: StatusEffect
   # CanPickup: true
   Model: @models2/Entities/Decorations/Sci-Fi_InteriorPack/ScifiLargeSofaPrefab
@@ -18110,6 +18128,7 @@
   DropInventoryEntity: DropContainer
   IsAccessible: true, type: bool
   LootList: 65
+  HitPoints: 50, type: int, display: true
   Group: cpgEquipment
   IsLockable: true
   Model: @models2/Entities/Decorations/Sci-Fi_InteriorPack/ScifiNightstandPrefab
@@ -18156,6 +18175,7 @@
   Class: PassengerSeat
   IsAccessible: true, type: bool
   IsLockable: true
+  HitPoints: 50, type: int, display: true
   BuffNameActivate: StaminaRecover, display: StatusEffect
   # CanPickup: true
   Model: @models2/Entities/Decorations/Sci-Fi_InteriorPack/ScifiSofaPrefab
@@ -18169,6 +18189,7 @@
   IsLockable: true
   # CanPickup: true
   Class: Container
+  HitPoints: 50, type: int, display: true
   IndexName: Container
   DropInventoryEntity: DropContainer
   LootList: 64
@@ -18183,6 +18204,7 @@
   Class: PassengerSeat
   IsAccessible: true, type: bool
   IsLockable: true
+  HitPoints: 50, type: int, display: true
   Model: @models2/Entities/Decorations/Sci-Fi_InteriorPack/ScifiTablePrefab
   EnergyIn: 0, type: int, display: true, formatter: Watt
   BuffNameActivate: StaminaRecover, display: StatusEffect
@@ -18194,6 +18216,7 @@
   Group: cpgEquipment
   IsAccessible: true, type: bool
   IsLockable: true
+  HitPoints: 50, type: int, display: true
   Model: @models2/Entities/Decorations/Sci-Fi_InteriorPack/ScifiShowerPrefab
   BlockColor: "170,170,170"
   EnergyIn: 0, type: int, display: true, formatter: Watt
@@ -18270,6 +18293,7 @@
   # IsActivateable: true
   IsAccessible: true, type: bool
   IsLockable: true
+  HitPoints: 30, type: int, display: true
   BuffNameActivate: StaminaRecover, display: StatusEffect
   # CanPickup: true
   Model: @models2/Entities/Decorations/Sci-Fi_InteriorPack/ScifiChairPrefab
@@ -18281,6 +18305,7 @@
   Class: PassengerSeat
   IsAccessible: true, type: bool
   IsLockable: true
+  HitPoints: 50, type: int, display: true
   BuffNameActivate: StaminaRecover, display: StatusEffect
   # CanPickup: true
   Model: @models2/Entities/Decorations/Sci-Fi_InteriorPack/ScifiTableV2Prefab
@@ -18292,11 +18317,11 @@
   Group: cpgEquipment
   IsAccessible: true, type: bool
   TemplateRoot: ConsoleBlocks
+  HitPoints: 50, type: int, display: true
   Model: @models2/Entities/Decorations/Sci-Fi_InteriorPack/ScifiComputerTablePrefab
   EnergyIn: 1, type: int, display: true, formatter: Watt
   BlockColor: "110,110,110"
   ShowUser: Yes
-  HitPoints: 50, type: int, display: true
 }
 { Block Id: 1088, Name: ScifiMediaCenter, Ref: DecoTemplate
   MarketPrice: 1, display: true
@@ -18444,6 +18469,7 @@
   IsAccessible: true, type: bool
   IsActivateableInCP: true
   IsLockable: true
+  HitPoints: 50, type: int, display: true
   IsOxygenTight: false, display: true
   # CanPickup: true
   IsActivateable: true
@@ -18458,28 +18484,34 @@
 }
 { Block Id: 1098, Name: LCDNoFrame1x2, Ref: LCDNoFrame1x1
   MarketPrice: 1, display: true
+  HitPoints: 60, type: int, display: true
   Model: @models/Blocks/Misc/LCDNoFrame1x2Prefab
   SizeInBlocks: "2,1,1", display: true
 }
 { Block Id: 1099, Name: LCDFrame1x2, Ref: LCDNoFrame1x1
   MarketPrice: 1, display: true
+  HitPoints: 60, type: int, display: true
   Model: @models/Blocks/Misc/LCDFrame1x2Prefab
   SizeInBlocks: "2,1,1", display: true
 }
 { Block Id: 1100, Name: LCDNoFrame05x1, Ref: LCDNoFrame1x1
   MarketPrice: 1, display: true
+  HitPoints: 40, type: int, display: true
   Model: @models/Blocks/Misc/LCDNoFrame05x1Prefab
 }
 { Block Id: 1101, Name: LCDNoFrame02x1, Ref: LCDNoFrame1x1
   MarketPrice: 1, display: true
+  HitPoints: 30, type: int, display: true
   Model: @models/Blocks/Misc/LCDNoFrame02x1Prefab
 }
 { Block Id: 1102, Name: LCDNoFrame05x05, Ref: LCDNoFrame1x1
   MarketPrice: 1, display: true
+  HitPoints: 25, type: int, display: true
   Model: @models/Blocks/Misc/LCDNoFrame05x05Prefab
 }
 { Block Id: 1103, Name: LCDNoFrame02x05, Ref: LCDNoFrame1x1
   MarketPrice: 1, display: true
+  HitPoints: 25, type: int, display: true
   Model: @models/Blocks/Misc/LCDNoFrame02x05Prefab
 }
 { Block Id: 1104, Name: TurretGVTool, Ref: TurretDrillTemplate
@@ -20537,6 +20569,7 @@
   # SizeInBlocks: "1,1,1"
   IsActivateable: true
   IsLockable: true
+  HitPoints: 25, type: int, display: true
   Mass: 0.4, type: float, display: true, formatter: Kilogram
   AllowPlacingAt: "SS,GV", display: true
   Sound: UseActions/Lever
@@ -20558,6 +20591,7 @@
   # SizeInBlocks: "1,1,1"
   IsActivateable: true
   IsLockable: true
+  HitPoints: 25, type: int, display: true
   Mass: 0.4, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
   CPUIn: 3, type: int, display: true
@@ -20579,6 +20613,7 @@
   # SizeInBlocks: "1,1,1"
   IsActivateable: true
   IsLockable: true
+  HitPoints: 25, type: int, display: true
   Mass: 0.4, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
   CPUIn: 3, type: int, display: true
@@ -20594,6 +20629,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   # ModelOffset: "0,0.5,0"
   Place: Free
+  HitPoints: 25, type: int, display: true
   AllowPlacingAt: "SS,GV", display: false
   Info: bkiBlockGroup, display: true
   Mass: 0.4, type: float, display: true, formatter: Kilogram
@@ -20638,6 +20674,7 @@
   Group: cpgEquipment
   IsAccessible: true, type: bool
   IsLockable: true
+  HitPoints: 50, type: int, display: true
   Model: @models2/Entities/Decorations/Misc/ClosetPrefab
   SymType: 4
   ShowUser: No
@@ -20699,6 +20736,7 @@
   Texture: "6,93,93,93,93,93"
   TextureTable: 2    # 2 = concrete table
   BlockColor: "110,110,110"
+  HitPoints: 50, type: int, display: true
   AllowPlacingAt: Base, display: true
   Mass: 1880, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -20715,6 +20753,7 @@
   Texture: "6,70,70,70,70,70"
   TextureTable: 1    # 1 = wood table
   BlockColor: "123,73,46"
+  HitPoints: 30, type: int, display: true
   AllowPlacingAt: Base, display: true
   Mass: 795, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -20994,6 +21033,7 @@
   AllowPlacingAt: "Base,MS", display: true
   IsActivateable: true
   Place: Free
+  HitPoints: 100, type: int, display: true
   IsAccessible: true, type: bool
   # IsLockable: true
   IsOxygenTight: true, display: true
@@ -21020,6 +21060,7 @@
   # SizeInBlocks: "1,1,1"
   IsActivateable: true
   IsLockable: true
+  HitPoints: 25, type: int, display: true
   Mass: 1, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
   CPUIn: 10, type: int, display: true
@@ -21043,6 +21084,7 @@
   # SizeInBlocks: "1,1,1"
   IsActivateable: true
   IsLockable: true
+  HitPoints: 25, type: int, display: true
   Mass: 1, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
   CPUIn: 10, type: int, display: true
@@ -21082,6 +21124,7 @@
   # SizeInBlocks: "1,1,1"
   IsActivateable: true
   IsLockable: true
+  HitPoints: 25, type: int, display: true
   Mass: 1, type: float, display: true, formatter: Kilogram
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocksLocked: "Base,MS"
@@ -21145,6 +21188,7 @@
   BlockColor: "110,110,110"
   IsActivateable: true
   Place: Free
+  HitPoints: 100, type: int, display: true
   IsAccessible: true, type: bool
   # IsLockable: true
   IsOxygenTight: true, display: true
@@ -21168,6 +21212,7 @@
   IsTextureable: true   # !!!
   IsGPUInstance: false  # !!!
   Texture: 26
+  HitPoints: 100, type: int, display: true
   BlockColor: "170,5,5"
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocks: "1,1,1", display: true
@@ -21321,6 +21366,7 @@
 { Block Id: 1279, Name: ReceptionTable, Ref: DecoTemplate
   MarketPrice: 1, display: true
   # CanPickup: true
+  HitPoints: 50, type: int, display: true
   Model: @models2/Entities/Decorations/Misc/ReceptionTablePrefab
   SymType: 1
   ShowUser: Yes
@@ -21328,6 +21374,7 @@
 { Block Id: 1280, Name: SmallTable, Ref: DecoTemplate
   MarketPrice: 1, display: true
   # CanPickup: true
+  HitPoints: 50, type: int, display: true
   Model: @models2/Entities/Decorations/Misc/SmallTablePrefab
   ShowUser: Yes
 }
@@ -21352,6 +21399,7 @@
   DropInventoryEntity: DropContainer
   IsAccessible: true, type: bool
   LootList: 57
+  HitPoints: 50, type: int, display: true
   Model: @models2/Entities/Decorations/LaboratoryPack/Level4Prop2Prefab
   EnergyIn: 1, type: int, display: true, formatter: Watt
   ShowUser: Yes
@@ -21365,6 +21413,7 @@
   DropInventoryEntity: DropContainer
   IsAccessible: true, type: bool
   LootList: 58
+  HitPoints: 50, type: int, display: true
   Model: @models2/Entities/Decorations/LaboratoryPack/Level4Prop3Prefab
   EnergyIn: 1, type: int, display: true, formatter: Watt
   ShowUser: Yes
@@ -21384,6 +21433,7 @@
   DropInventoryEntity: DropContainer
   IsAccessible: true, type: bool
   LootList: 59
+  HitPoints: 60, type: int, display: true
   Model: @models2/Entities/Decorations/LaboratoryPack/Level5FreezerOpenedPrefab
   EnergyIn: 1, type: int, display: true, formatter: Watt
   ShowUser: Yes
@@ -22151,6 +22201,7 @@
   MarketPrice: 1, display: true
   # CanPickup: true
   Info: bkiDecoModel, display: true
+  HitPoints: 40, type: int, display: true
   Model: @models2/Entities/Decorations/Misc/ReceptionTableCornerPrefab
   SymType: 2
   ShowUser: Yes
@@ -22477,6 +22528,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   StackSize: 200
+  HitPoints: 150, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   Category: Devices
   IsAccessible: true, type: bool
@@ -22607,6 +22659,7 @@
   IsAccessible: true, type: bool
   IsOxygenTight: false, display: true
   ShowBlockName: true
+  HitPoints: 250, type: int, display: true
   StackSize: 200, display: true
   Mass: 1000, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
@@ -22632,6 +22685,7 @@
   # ModelOffset: "0,0.5,0"
   BlockColor: "0,15,100"
   StackSize: 200
+  HitPoints: 100, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   Category: Devices
   Mass: 200, type: float, display: true, formatter: Kilogram
@@ -22789,6 +22843,7 @@
   IsActivateableInCP: true
   IsOxygenTight: false, display: true
   IsLockable: true
+  HitPoints: 50, type: int, display: true
   Mass: 120, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   VolumeCapacity: 150, type: float, display: true, formatter: Liter
@@ -23078,6 +23133,7 @@
 { Block Id: 1398, Name: ReceptionTableThin, Ref: DecoTemplate
   MarketPrice: 1, display: true
   # CanPickup: true
+  HitPoints: 50, type: int, display: true
   Model: @models2/Entities/Decorations/Misc/ReceptionTableThinPrefab
   SymType: 1
   ShowUser: Yes
@@ -23086,6 +23142,7 @@
   MarketPrice: 1, display: true
   # CanPickup: true
   Info: bkiDecoModel, display: true
+  HitPoints: 30, type: int, display: true
   Model: @models2/Entities/Decorations/Misc/ReceptionTableCornerThinPrefab
   SymType: 2
   ShowUser: Yes
@@ -25163,6 +25220,7 @@
   Group: cpgEquipment
   IsAccessible: true, type: bool
   IsLockable: true
+  HitPoints: 50, type: int, display: true
   DebuffNamesActivate: "Indigestion,Hangover,BadTrip", display: EffectiveAgainst
   SfxBuffActivate: UseActions/BlockToilet
   ShowUser: Yes
@@ -27785,7 +27843,7 @@
   IsGPUInstance: false  # !!!
   Texture: 50
   Place: Free
-  HitPoints: 1500, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   Mass: 5660, type: float, display: true, formatter: Kilogram
   SizeInBlocks: "2,2,3", display: true
   IsOxygenTight: true, display: true
@@ -27800,7 +27858,7 @@
   IsGPUInstance: false  # !!!
   Texture: 50
   Place: Free
-  HitPoints: 2250, type: int, display: true
+  HitPoints: 1500, type: int, display: true
   Mass: 8500, type: float, display: true, formatter: Kilogram
   SizeInBlocks: "3,2,3", display: true
   IsOxygenTight: true, display: true
@@ -27816,7 +27874,7 @@
   IsGPUInstance: false  # !!!
   Texture: 50
   Place: Free
-  HitPoints: 3750, type: int, display: true
+  HitPoints: 2600, type: int, display: true
   Mass: 10590, type: float, display: true, formatter: Kilogram
   SizeInBlocks: "3,3,5", display: true
   IsOxygenTight: true, display: true
@@ -27980,6 +28038,7 @@
   IsOxygenTight: false, display: true
   TemplateRoot: DecoVesselBlocks
   BlockColor: "110,110,110"
+  HitPoints: 50, type: int, display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true
   SizeInBlocks: "1,3,1", display: true
   EnergyIn: 1, type: int, display: false, formatter: Watt
@@ -28003,12 +28062,16 @@
 }
 { Block Id: 1724, Name: SVDecoArmor1x, Ref: SVDecoAeroblister01
   MarketPrice: 1, display: true
+  Mass: 40, type: float, display: true, formatter: Kilogram
+  HitPoints: 75, type: int, display: true
   Model: @models/Blocks/SpaceshipParts/SVDecoArmor1xPrefab
   SizeInBlocks: "1,1,1", display: true
   # Place: Face
 }
 { Block Id: 1725, Name: SVDecoArmor2x, Ref: SVDecoAeroblister01
   MarketPrice: 1, display: true
+  HitPoints: 125, type: int, display: true
+  Mass: 100, type: float, display: true, formatter: Kilogram
   Model: @models/Blocks/SpaceshipParts/SVDecoArmor2xPrefab
   SizeInBlocks: "2,1,2", display: true
   # Place: Face
@@ -29070,7 +29133,7 @@
   IsGPUInstance: false  # !!!
   Texture: 50
   Place: Free
-  HitPoints: 1500, type: int, display: true
+  HitPoints: 1050, type: int, display: true
   Mass: 5160, type: float, display: true, formatter: Kilogram
   SizeInBlocks: "1,4,6", display: true
   IsOxygenTight: true, display: true
@@ -29085,7 +29148,7 @@
   IsGPUInstance: false  # !!!
   Texture: 50
   Place: Free
-  HitPoints: 3000, type: int, display: true
+  HitPoints: 2000, type: int, display: true
   Mass: 10330, type: float, display: true, formatter: Kilogram
   SizeInBlocks: "2,4,6", display: true
   IsOxygenTight: true, display: true
@@ -29100,7 +29163,7 @@
   IsGPUInstance: false  # !!!
   Texture: 50
   Place: Free
-  HitPoints: 4500, type: int, display: true
+  HitPoints: 3000, type: int, display: true
   Mass: 15500, type: float, display: true, formatter: Kilogram
   SizeInBlocks: "3,4,6", display: true
   IsOxygenTight: true, display: true
@@ -29115,7 +29178,7 @@
   IsGPUInstance: false  # !!!
   Texture: 50
   Place: Free
-  HitPoints: 7500, type: int, display: true
+  HitPoints: 4250, type: int, display: true
   Mass: 25830, type: float, display: true, formatter: Kilogram
   SizeInBlocks: "5,4,6", display: true
   IsOxygenTight: true, display: true
@@ -29130,7 +29193,7 @@
   IsGPUInstance: false  # !!!
   Texture: 50
   Place: Free
-  HitPoints: 10500, type: int, display: true
+  HitPoints: 6350, type: int, display: true
   Mass: 32250, type: float, display: true, formatter: Kilogram
   SizeInBlocks: "5,4,9", display: true
   IsOxygenTight: true, display: true
@@ -29145,7 +29208,7 @@
   IsGPUInstance: false  # !!!
   Texture: 50
   Place: Free
-  HitPoints: 18500, type: int, display: true
+  HitPoints: 8500, type: int, display: true
   Mass: 65000, type: float, display: true, formatter: Kilogram
   SizeInBlocks: "8,6,12", display: true
   IsOxygenTight: true, display: true
@@ -45695,6 +45758,7 @@
   SizeInBlocks: "1,1,1", display: true
   #ModelOffset: "0,1,0"
   StackSize: 200
+  HitPoints: 50, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
@@ -45719,6 +45783,7 @@
   AllowedInBlueprint: true, display: true
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocksLocked: "Base,MS"
+  HitPoints: 50, type: int, display: true
   SizeInBlocks: "1,1,1", display: true
   #ModelOffset: "0,1,0"
   StackSize: 200
@@ -45746,6 +45811,7 @@
   AllowedInBlueprint: true, display: true
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocksLocked: "Base,MS"
+  HitPoints: 50, type: int, display: true
   SizeInBlocks: "1,1,1", display: true
   #ModelOffset: "0,1,0"
   StackSize: 200
@@ -45768,6 +45834,7 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  HitPoints: 50, type: int, display: true
   PickupTarget: HWSLiftBlocks
   TemplateRoot: HWSLiftBlocks
   AllowedInBlueprint: true, display: true
@@ -45800,6 +45867,7 @@
   AllowedInBlueprint: true, display: true
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocksLocked: "Base,MS"
+  HitPoints: 50, type: int, display: true
   SizeInBlocks: "1,1,1", display: true
   #ModelOffset: "0,1,0"
   StackSize: 200
@@ -45824,6 +45892,7 @@
   # SizeInBlocks: "1,1,1"
   IsActivateable: true
   IsLockable: true
+  HitPoints: 25, type: int, display: true
   Mass: 1, type: float, display: true, formatter: Kilogram
   SizeInBlocks: "1,1,1", display: true
   AllowPlacingAt: "Base,MS", display: true
@@ -45848,6 +45917,7 @@
   # SizeInBlocks: "1,1,1"
   IsActivateable: true
   IsLockable: true
+  HitPoints: 25, type: int, display: true
   Mass: 1, type: float, display: true, formatter: Kilogram
   SizeInBlocks: "1,1,1", display: true
   AllowPlacingAt: "GV,SS", display: true
@@ -45989,6 +46059,7 @@
   #ModelOffset: "0,1,0"
   SizeInBlocksLocked: "Base,MS"
   StackSize: 200
+  HitPoints: 50, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
@@ -46022,6 +46093,7 @@
   #ModelOffset: "0,1,0"
   SizeInBlocksLocked: "Base,MS"
   StackSize: 200
+  HitPoints: 50, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
@@ -46055,6 +46127,7 @@
   #ModelOffset: "0,1,0"
   SizeInBlocksLocked: "Base,MS"
   StackSize: 200
+  HitPoints: 50, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
@@ -46089,6 +46162,7 @@
   # ModelOffset: "0,0.5,0"
   Category: Devices
   StackSize: 200
+  HitPoints: 150, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   ExecuteOnActivate: Quest_SkillTrainer_DNAUpgradeContainer
   VolumeCapacity: 8000, type: float, display: true, formatter: Liter
@@ -46130,6 +46204,7 @@
   # ModelOffset: "0,0.5,0"
   Category: Devices
   StackSize: 200
+  HitPoints: 50, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   VolumeCapacity: 8000, type: float, display: true, formatter: Liter
   CPUIn: 960, type: int, display: true
@@ -47919,6 +47994,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   StackSize: 200
+  HitPoints: 50, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
@@ -47943,6 +48019,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   StackSize: 200
+  HitPoints: 50, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
@@ -47967,6 +48044,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   StackSize: 200
+  HitPoints: 50, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
@@ -47986,6 +48064,7 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  HitPoints: 50, type: int, display: true
   AllowedInBlueprint: false, display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true
   SizeInBlocks: "1,1,1", display: true
@@ -48010,6 +48089,7 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  HitPoints: 50, type: int, display: true
   AllowedInBlueprint: false, display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true
   SizeInBlocks: "1,1,1", display: true
@@ -48034,6 +48114,7 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  HitPoints: 50, type: int, display: true
   AllowedInBlueprint: false, display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true
   SizeInBlocks: "1,1,1", display: true
@@ -48058,6 +48139,7 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  HitPoints: 50, type: int, display: true
   AllowedInBlueprint: false, display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true
   SizeInBlocks: "1,1,1", display: true
@@ -48087,6 +48169,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   StackSize: 200
+  HitPoints: 50, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
@@ -48111,6 +48194,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   StackSize: 200
+  HitPoints: 50, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
@@ -48135,6 +48219,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   StackSize: 200
+  HitPoints: 50, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
@@ -48154,6 +48239,7 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  HitPoints: 50, type: int, display: true
   AllowedInBlueprint: false, display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true
   SizeInBlocks: "1,1,1", display: true
@@ -48178,6 +48264,7 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  HitPoints: 50, type: int, display: true
   AllowedInBlueprint: false, display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true
   SizeInBlocks: "1,1,1", display: true
@@ -48202,6 +48289,7 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  HitPoints: 50, type: int, display: true
   AllowedInBlueprint: false, display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true
   SizeInBlocks: "1,1,1", display: true
@@ -48226,6 +48314,7 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  HitPoints: 50, type: int, display: true
   AllowedInBlueprint: false, display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true
   SizeInBlocks: "1,1,1", display: true
@@ -48250,6 +48339,7 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  HitPoints: 50, type: int, display: true
   AllowedInBlueprint: false, display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true
   SizeInBlocks: "1,1,1", display: true
@@ -48274,6 +48364,7 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  HitPoints: 50, type: int, display: true
   AllowedInBlueprint: false, display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true
   SizeInBlocks: "1,1,1", display: true
@@ -48298,6 +48389,7 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  HitPoints: 50, type: int, display: true
   AllowedInBlueprint: false, display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true
   SizeInBlocks: "1,1,1", display: true
@@ -48903,6 +48995,7 @@
   Material: HWS_material_devices_kinetic, display: true
   ShowBlockName: true
   Place: Free
+  HitPoints: 30, type: int, display: true
   AllowedInBlueprint: false, display: true
   AllowPlacingAt: "Base,MS,SS,GV", display: true
   SizeInBlocks: "1,1,1", display: true
@@ -54064,7 +54157,7 @@
   IsActivateableInCP: true
   IsLockable: true
   IsOxygenTight: false, display: true
-  Info: bkiConstructorAdvanced, display: true
+  Info: HWS_ElementalConstructor_Info, display: true
   # ModelOffset: "0,0.5,0"
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
