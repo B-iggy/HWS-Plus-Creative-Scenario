@@ -1759,7 +1759,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   Mass: 100, type: float, display: true, formatter: Kilogram
-  HitPoints: 900, type: int, display: true
+  HitPoints: 750, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   IsLockable: true
   IsIgnoreLC: true
@@ -1769,6 +1769,7 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
+  CPUIn: 500, type: int, display: true
   EnergyIn: 20, type: int, display: true, formatter: Watt
   BlastParticleIndex: 4
   BlastRadius: 2
@@ -2223,8 +2224,9 @@
   YawRotation: 150          # how far in degrees head of player can be rotated (default 75°)
   StackSize: 200
   Category: Devices
+  CPUIn: 500, type: int, display: true
   Mass: 284, type: float, display: true, formatter: Kilogram
-  HitPoints: 1500, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   EnergyIn: 20, type: int, display: true, formatter: Watt
   BlastParticleIndex: 10
   BlastRadius: 2
@@ -2464,11 +2466,11 @@
   StackSize: 200
   BlockColor: "110,110,110"
   Category: Devices
-  Torque: 115, type: int, display: true, formatter: NewtonMeter
+  Torque: 126, type: int, display: true, formatter: NewtonMeter
   EnergyDynamicGroup: RCS
   EnergyIn: 30, type: int, display: true, formatter: Watt
   HitPoints: 50, type: int, display: true
-  CPUIn: 275, type: int, display: true
+  CPUIn: 260, type: int, display: true
   BlastParticleIndex: 6
   BlastRadius: 3
   BlastDamage: 10
@@ -3904,7 +3906,7 @@
   VolumeCapacity: 1200, type: float, display: false, formatter: Liter
   StackSize: 200
   Category: Devices
-  HitPoints: 100, type: int, display: true
+  HitPoints: 200, type: int, display: true
   # EnergyIn: 1, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
   BlastParticleIndex: 11
@@ -5287,7 +5289,7 @@
   AllowPlacingAt: "SS,GV", display: true
   SizeInBlocks: "1,2,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 462, type: float, display: true, formatter: Kilogram
+  Mass: 460, type: float, display: true, formatter: Kilogram
   Info: bkiGenerator, display: true
   # ModelOffset: "0,0.5,0"
   StackSize: 200
@@ -5296,7 +5298,7 @@
   IsIgnoreLC: true
   HitPoints: 300, type: int, display: true
   EnergyOut: 1500, type: int, display: true, formatter: Watt
-  CPUIn: 850, type: int, display: true
+  CPUIn: 650, type: int, display: true
   Category: Devices
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -6278,7 +6280,7 @@
   ThrusterForce: 210, type: int, display: true, formatter: Newton
   EnergyIn: 70, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
-  CPUIn: 135, type: int, display: true
+  CPUIn: 122, type: int, display: true
   Temperature: 287, display: true
   Category: Devices
   BlastParticleIndex: 6
@@ -6409,7 +6411,7 @@
   ThrusterForce: 83, type: int, display: true, formatter: Newton
   EnergyIn: 35, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
-  CPUIn: 80, type: int, display: true
+  CPUIn: 72, type: int, display: true
   Category: Devices
   BlastParticleIndex: 4
   BlastRadius: 2
@@ -6522,10 +6524,10 @@
   IsIgnoreLC: true
   TemplateRoot: ThrusterMSRound2x2Blocks
   Info: bkiThruster, display: true
-  HitPoints: 3000, type: int, display: true
-  ThrusterForce: 211500, type: int, display: true, formatter: Newton
+  HitPoints: 5000, type: int, display: true
+  ThrusterForce: 215000, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.2, type: float, display: true
-  EnergyIn: 6720, type: int, display: true, formatter: Watt
+  EnergyIn: 6750, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
   CPUIn: 40000, type: int, display: true
   Category: Devices
@@ -6986,7 +6988,7 @@
   IsIgnoreLC: true
   HitPoints: 150, type: int, display: true
   EnergyOut: 770, type: int, display: true, formatter: Watt
-  CPUIn: 400, type: int, display: true
+  CPUIn: 300, type: int, display: true
   Category: Devices
   BlastParticleIndex: 9
   BlastRadius: 3
@@ -7491,7 +7493,7 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "3,6,3", display: true
   SizeInBlocksLocked: "Base,MS"
-  Mass: 62897, type: float, display: true, formatter: Kilogram
+  Mass: 62500, type: float, display: true, formatter: Kilogram
   IsDuplicateable: false
   IsActivateable: true
   IsOxygenTight: true, display: true
@@ -7499,11 +7501,11 @@
   TemplateRoot: ThrusterMSRound3x3Blocks
   Info: bkiThruster, display: true
   HitPoints: 16750, type: int, display: true
-  ThrusterForce: 1012000, type: int, display: true, formatter: Newton
+  ThrusterForce: 1010000, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.3, type: float, display: true
-  EnergyIn: 26460, type: int, display: true, formatter: Watt
+  EnergyIn: 26500, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
-  CPUIn: 110000, type: int, display: true
+  CPUIn: 125000, type: int, display: true
   Category: Devices
   BlastParticleIndex: 1
   BlastRadius: 3
@@ -8376,7 +8378,7 @@
   HitPoints: 300, type: int, display: true
   Mass: 375, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  CPUIn: 165, type: int, display: true
+  CPUIn: 148, type: int, display: true
   ThrusterForce: 253, type: int, display: true, formatter: Newton
   EnergyIn: 118, type: int, display: true, formatter: Watt
   Temperature: 584, display: true
@@ -8399,7 +8401,7 @@
   Mass: 423, type: float, display: true, formatter: Kilogram
   ThrusterForce: 303, type: int, display: true, formatter: Newton
   EnergyIn: 138, type: int, display: true, formatter: Watt
-  CPUIn: 200, type: int, display: true
+  CPUIn: 180, type: int, display: true
   Temperature: 369, display: true
   TemplateRoot: ThrusterSVRoundLarge
   BlastParticleIndex: 6
@@ -8426,7 +8428,7 @@
   Mass: 635, type: float, display: true, formatter: Kilogram
   ThrusterForce: 418, type: int, display: true, formatter: Newton
   EnergyIn: 163, type: int, display: true, formatter: Watt
-  CPUIn: 253, type: int, display: true
+  CPUIn: 228, type: int, display: true
   Radiation: 12, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
   Temperature: 773, display: true
   TemplateRoot: ThrusterSVRoundLargeT2
@@ -9595,7 +9597,7 @@
   TemplateRoot: FridgeBlocks
   VolumeCapacity: 5000, type: float, display: true, formatter: Liter
   CPUIn: 1000, type: int, display: true
-  HitPoints: 50, type: int, display: true
+  HitPoints: 80, type: int, display: true
   EnergyIn: 15, type: int, display: true, formatter: Watt
 
   BlastParticleIndex: 13
@@ -9731,12 +9733,12 @@
   SizeInBlocks: "1,1,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 183, type: float, display: true, formatter: Kilogram
-  HitPoints: 80, type: int, display: true
+  HitPoints: 180, type: int, display: true
   # ThrusterForce: 7, type: int, display: true, formatter: Newton
-  ThrusterForce: 60, type: int, display: true, formatter: Newton
-  EnergyIn: 25, type: int, display: true, formatter: Watt
+  ThrusterForce: 70, type: int, display: true, formatter: Newton
+  EnergyIn: 28, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
-  CPUIn: 100, type: int, display: true
+  CPUIn: 78, type: int, display: true
   Category: Devices
   BlastParticleIndex: 4
   BlastRadius: 2
@@ -9783,12 +9785,12 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,2,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 268, type: float, display: true, formatter: Kilogram
-  HitPoints: 180, type: int, display: true
-  ThrusterForce: 143, type: int, display: true, formatter: Newton
-  EnergyIn: 50, type: int, display: true, formatter: Watt
+  Mass: 310, type: float, display: true, formatter: Kilogram
+  HitPoints: 350, type: int, display: true
+  ThrusterForce: 162, type: int, display: true, formatter: Newton
+  EnergyIn: 56, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
-  CPUIn: 135, type: int, display: true
+  CPUIn: 148, type: int, display: true
   Category: Devices
   BlastParticleIndex: 6
   BlastRadius: 3
@@ -10235,9 +10237,9 @@
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   IsIgnoreLC: true
-  HitPoints: 60, type: int, display: true
-  ThrusterForce: 550, type: int, display: false, formatter: Newton
-  EnergyIn: 5, type: int, display: true, formatter: Watt
+  HitPoints: 100, type: int, display: true
+  ThrusterForce: 680, type: int, display: false, formatter: Newton
+  EnergyIn: 25, type: int, display: true, formatter: Watt
   CPUIn: 25, type: int, display: true
   EnergyDynamicGroup: HoverEngine
   Category: Devices
@@ -10274,7 +10276,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,1,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 265, type: float, display: true, formatter: Kilogram
+  Mass: 218, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsOxygenTight: false, display: true
   IsIgnoreLC: true
@@ -10285,11 +10287,11 @@
   BlockColor: "110,110,110"
   Category: Devices
   # Torque: 30, type: int, display: true, formatter: NewtonMeter
-  Torque: 92, type: int, display: true, formatter: NewtonMeter
+  Torque: 108, type: int, display: true, formatter: NewtonMeter
   EnergyDynamicGroup: RCS
-  EnergyIn: 30, type: int, display: true, formatter: Watt
+  EnergyIn: 24, type: int, display: true, formatter: Watt
   HitPoints: 80, type: int, display: true
-  CPUIn: 235, type: int, display: true
+  CPUIn: 215, type: int, display: true
   BlastParticleIndex: 4
   BlastRadius: 3
   BlastDamage: 18
@@ -12159,7 +12161,7 @@
   ThrusterBoosterFactor: 1.85, type: float, display: true
   EnergyIn: 1012, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
-  CPUIn: 3450, type: int, display: true
+  CPUIn: 3105, type: int, display: true
   Category: Devices
   OccupySizeInBlocks: true     # do not allow to place blocks in the middle
 
@@ -12189,7 +12191,7 @@
   ThrusterForce: 9200, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 2.15, type: float, display: true
   EnergyIn: 1250, type: int, display: true, formatter: Watt
-  CPUIn: 4600, type: int, display: true
+  CPUIn: 4140, type: int, display: true
   BlastRadius: 3
   BlastDamage: 63
   BlastDamageMultiplier_1: 2, param1: plants|dirt|stone|rock
@@ -12215,7 +12217,7 @@
   ThrusterForce: 12000, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 2.5, type: float, display: true
   EnergyIn: 1560, type: int, display: true, formatter: Watt
-  CPUIn: 5100, type: int, display: true
+  CPUIn: 4590, type: int, display: true
   BlastRadius: 3
   BlastDamage: 72
   BlastDamageMultiplier_1: 2, param1: plants|dirt|stone|rock
@@ -12241,7 +12243,7 @@
   ThrusterForce: 386, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.2, type: float, display: true
   EnergyIn: 138, type: int, display: true, formatter: Watt
-  CPUIn: 210, type: int, display: true
+  CPUIn: 190, type: int, display: true
   BlastParticleIndex: 4
   BlastRadius: 2
   BlastDamage: 20
@@ -12269,7 +12271,7 @@
   ThrusterForce: 2050, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.5, type: float, display: true
   EnergyIn: 500, type: int, display: true, formatter: Watt
-  CPUIn: 1020, type: int, display: true
+  CPUIn: 920, type: int, display: true
   BlastParticleIndex: 1
   BlastRadius: 2
   BlastDamage: 24
@@ -13083,7 +13085,7 @@
   BlockColor: "110,110,110"
   Category: Devices
   Info: bkiWarpDrive, display: true
-  HitPoints: 225, type: int, display: true
+  HitPoints: 450, type: int, display: true
   EnergyIn: 200, type: int, display: true, formatter: Watt
   CPUIn: 40000, type: int, display: true
   AttackTimeout: 35
@@ -18988,13 +18990,13 @@
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   CPUIn: 75, type: int, display: true
-  Torque: 20, type: int, display: true, formatter: NewtonMeter
+  Torque: 30, type: int, display: true, formatter: NewtonMeter
   # ThrusterForce: 1000, type: int, display: true, formatter: Newton
   # HVEngineDampPow: 0.85, type: float, display: false, formatter: Hardness
   # HVEngineDampCoef: 200, type: float, display: false, formatter: Hardness
 
-  HVEngineForce: 200, type: int, display: true, formatter: Newton
-  HVEngineDampCoef: 30, type: float, display: false, formatter: Hardness
+  HVEngineForce: 225, type: int, display: true, formatter: Newton
+  HVEngineDampCoef: 35, type: float, display: false, formatter: Hardness
   HVEngineDampPow: 1.5, type: float, display: false, formatter: Hardness
 
   HitPoints: 100, type: int, display: true
@@ -19089,11 +19091,11 @@
   EnergyIn: 40, type: int, display: true, formatter: Watt
   IsIgnoreLC: true
   CPUIn: 250, type: int, display: true
-  Torque: 80, type: int, display: true, formatter: NewtonMeter
-  HVEngineForce: 1000, type: int, display: true, formatter: Newton
-  HVEngineDampCoef: 100, type: float, display: false, formatter: Hardness
+  Torque: 120, type: int, display: true, formatter: NewtonMeter
+  HVEngineForce: 1350, type: int, display: true, formatter: Newton
+  HVEngineDampCoef: 125, type: float, display: false, formatter: Hardness
   HVEngineDampPow: 1.5, type: float, display: false, formatter: Hardness
-  HitPoints: 350, type: int, display: true
+  HitPoints: 450, type: int, display: true
 
   UnlockCost: 10, display: true
   UnlockLevel: 12, display: true
@@ -23325,13 +23327,13 @@
 { Block Id: 1417, Name: ThrusterGVJetRound1x3x1, Ref: ThrusterGVRoundNormal
   Model: @models/Blocks/Thrusters/ThrusterJetRound1x3x1Prefab
   MarketPrice: 11952, display: true
-  Mass: 743, type: float, display: true, formatter: Kilogram
+  Mass: 568, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  HitPoints: 300, type: int, display: true
-  ThrusterForce: 275, type: int, display: true, formatter: Newton
+  HitPoints: 385, type: int, display: true
+  ThrusterForce: 328, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.35, type: float, display: true
-  EnergyIn: 85, type: int, display: true, formatter: Watt
-  CPUIn: 220, type: int, display: true
+  EnergyIn: 110, type: int, display: true, formatter: Watt
+  CPUIn: 210, type: int, display: true
   Temperature: 150, display: true
   SizeInBlocks: "1,3,1", display: true
   TemplateRoot: ThrusterGVJetRound1x3x1
@@ -24303,7 +24305,8 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   Category: Devices
   Mass: 100, type: float, display: true, formatter: Kilogram
-  HitPoints: 1000, type: int, display: true
+  HitPoints: 650, type: int, display: true
+  CPUIn: 450, type: int, display: true
   EnergyIn: 20, type: int, display: true, formatter: Watt
   BlastParticleIndex: 10
   BlastRadius: 2
@@ -25554,7 +25557,7 @@
   ThrusterBoosterFactor: 1.65, type: float, display: true
   Mass: 1200, type: float, display: true, formatter: Kilogram
   HitPoints: 830, type: int, display: true
-  CPUIn: 1050, type: int, display: true
+  CPUIn: 950, type: int, display: true
   MarketPrice: 24979, display: true
 
   UnlockCost: 14, display: true
@@ -27345,7 +27348,7 @@
   Category: Devices
   EnergyIn: 1, type: int, display: true, formatter: Watt
   CPUIn: 750, type: int, display: true
-  HitPoints: 500, type: int, display: true
+  HitPoints: 200, type: int, display: true
   BlastParticleIndex: 13
   BlastRadius: 2
   BlastDamage: 5
@@ -28513,11 +28516,11 @@
   SizeInBlocks: "1,2,1", display: true
   MarketPrice: 7157, display: true
   HitPoints: 220, type: int, display: true
-  Mass: 485, type: float, display: true, formatter: Kilogram
+  Mass: 412, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  CPUIn: 165, type: int, display: true
-  ThrusterForce: 204, type: int, display: true, formatter: Newton
-  EnergyIn: 75, type: int, display: true, formatter: Watt
+  CPUIn: 163, type: int, display: true
+  ThrusterForce: 215, type: int, display: true, formatter: Newton
+  EnergyIn: 95, type: int, display: true, formatter: Watt
   Temperature: 150, display: true
   TemplateRoot: ThrusterGVRoundNormalT2
   BlastParticleIndex: 8
@@ -28540,12 +28543,12 @@
   Model: @models/Blocks/Thrusters/RoundThrusters/ThrusterGVRoundLargePrefab
   MarketPrice: 7407, display: true
   SizeInBlocks: "1,3,1", display: true
-  HitPoints: 350, type: int, display: true
+  HitPoints: 420, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 390, type: float, display: true, formatter: Kilogram
+  Mass: 465, type: float, display: true, formatter: Kilogram
   ThrusterForce: 258, type: int, display: true, formatter: Newton
-  EnergyIn: 75, type: int, display: true, formatter: Watt
-  CPUIn: 200, type: int, display: true
+  EnergyIn: 110, type: int, display: true, formatter: Watt
+  CPUIn: 198, type: int, display: true
   Temperature: 120, display: true
   TemplateRoot: ThrusterGVRoundLarge
   BlastParticleIndex: 6
@@ -28567,11 +28570,11 @@
   Model: @models/Blocks/Thrusters/RoundThrusters/ThrusterGVRoundLargeT2Prefab
   MarketPrice: 12814, display: true
   SizeInBlocks: "1,3,1", display: true
-  HitPoints: 400, type: int, display: true
+  HitPoints: 485, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 473, type: float, display: true, formatter: Kilogram
-  ThrusterForce: 380, type: int, display: true, formatter: Newton
-  EnergyIn: 120, type: int, display: true, formatter: Watt
+  Mass: 685, type: float, display: true, formatter: Kilogram
+  ThrusterForce: 365, type: int, display: true, formatter: Newton
+  EnergyIn: 126, type: int, display: true, formatter: Watt
   CPUIn: 250, type: int, display: true
   Temperature: 180, display: true
   TemplateRoot: ThrusterGVRoundLargeT2
@@ -45649,7 +45652,7 @@
   BlockColor: "110,110,110"
   Category: Devices
   Mass: 100.0, type: float, display: true, formatter: Kilogram
-  CPUIn: 2500, type: int, display: true
+  CPUIn: 2150, type: int, display: true
   EnergyIn: 150, type: int, display: true, formatter: Watt
   EnergyInIdle: 6, type: int, display: true, formatter: Watt
   HitPoints: 750, type: int, display: true
@@ -45693,7 +45696,7 @@
   BlockColor: "110,110,110"
   Category: Devices
   Mass: 100.0, type: float, display: true, formatter: Kilogram
-  CPUIn: 3500, type: int, display: true
+  CPUIn: 3150, type: int, display: true
   EnergyIn: 600, type: int, display: true, formatter: Watt
   EnergyInIdle: 24, type: int, display: true, formatter: Watt
   HitPoints: 750, type: int, display: true

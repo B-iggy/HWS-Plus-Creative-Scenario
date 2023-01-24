@@ -16442,7 +16442,7 @@
   { Child 0
     Class: LauncherSS # Projectile Splash
     AllowAt: "Space,Planet"
-    ROF: 2.3, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 800, display: false
     RangeSpace: 1350, display: false
     AmmoCapacity: 20, display: true
@@ -16450,7 +16450,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 4.5, display: true # adapt sound
+    ReloadDelay: 6, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16600,7 +16600,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 800, display: false
     RangeSpace: 1350, display: false
     AmmoCapacity: 25, display: true
@@ -16608,7 +16608,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 8, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16758,7 +16758,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 800, display: false
     RangeSpace: 1350, display: false
     AmmoCapacity: 20, display: true
@@ -16766,7 +16766,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 8, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16898,7 +16898,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 9, display: true # adapt sound
+    ReloadDelay: 12, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16915,7 +16915,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 800, display: false
     RangeSpace: 1350, display: false
     AmmoCapacity: 20, display: true
@@ -16923,7 +16923,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 6.75, display: true # adapt sound
+    ReloadDelay: 12, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17072,7 +17072,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 950, display: false
     RangeSpace: 1500, display: false
     AmmoCapacity: 10, display: true
@@ -17080,7 +17080,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 8, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17229,7 +17229,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 400, display: false
     RangeSpace: 675, display: false
     AmmoCapacity: 20, display: true
@@ -17237,7 +17237,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 8, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17386,7 +17386,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 800, display: false
     RangeSpace: 1350, display: false
     AmmoCapacity: 20, display: true
@@ -17394,7 +17394,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 8, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17530,7 +17530,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 2.6, type: float, display: true, formatter: ROF
+    ROF: 3.4, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Automatic: true
@@ -17679,7 +17679,7 @@
     Class: LauncherSS
     CheckObstructed: true
     AllowAt: Space
-    ROF: 2.6, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Automatic: true
@@ -17788,7 +17788,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Automatic: true
@@ -17937,7 +17937,7 @@
     Class: LauncherSS
     CheckObstructed: true
     AllowAt: Space
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Automatic: true
@@ -18046,7 +18046,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Automatic: true
@@ -18195,7 +18195,7 @@
     Class: LauncherSS
     CheckObstructed: true
     AllowAt: Space
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Automatic: true
@@ -18304,7 +18304,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Automatic: true
@@ -18453,7 +18453,7 @@
     Class: LauncherSS
     CheckObstructed: true
     AllowAt: Space
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Automatic: true
@@ -18562,7 +18562,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 750, display: true
     RangeSpace: 1350, display: true
     Automatic: true
@@ -18711,7 +18711,7 @@
     Class: LauncherSS
     CheckObstructed: true
     AllowAt: Space
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 750, display: true
     RangeSpace: 1350, display: true
     Automatic: true
@@ -18820,7 +18820,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 325, display: true
     RangeSpace: 600, display: true
     Automatic: true
@@ -18969,7 +18969,7 @@
     Class: LauncherSS
     CheckObstructed: true
     AllowAt: Space
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 325, display: true
     RangeSpace: 600, display: true
     Automatic: true
@@ -19078,7 +19078,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Automatic: true
@@ -19227,7 +19227,7 @@
     Class: LauncherSS
     CheckObstructed: true
     AllowAt: Space
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Automatic: true
@@ -19345,7 +19345,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 1.125, type: float, display: true, formatter: ROF
+    ROF: 1.875, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Automatic: true
@@ -19488,7 +19488,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 1.875, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Automatic: true
@@ -19555,7 +19555,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Automatic: true
@@ -19699,7 +19699,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Automatic: true
@@ -19765,7 +19765,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Automatic: true
@@ -19909,7 +19909,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Automatic: true
@@ -19975,7 +19975,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Automatic: true
@@ -20119,7 +20119,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Automatic: true
@@ -20185,7 +20185,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 800, display: true
     Automatic: true
@@ -20329,7 +20329,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 800, display: true
     Automatic: true
@@ -20395,7 +20395,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 250, display: true
     RangeSpace: 350, display: true
     Automatic: true
@@ -20605,7 +20605,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Automatic: true
@@ -20750,7 +20750,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Automatic: true
@@ -20827,7 +20827,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.25, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     Automatic: true
@@ -20895,7 +20895,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.25, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     Automatic: true
@@ -21042,7 +21042,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     Automatic: true
@@ -21108,7 +21108,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     Automatic: true
@@ -21256,7 +21256,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     Automatic: true
@@ -21322,7 +21322,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     Automatic: true
@@ -21469,7 +21469,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     Automatic: true
@@ -21536,7 +21536,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     Automatic: true
@@ -21683,7 +21683,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 580, display: true
     RangeSpace: 770, display: true
     Automatic: true
@@ -21751,7 +21751,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 580, display: true
     RangeSpace: 770, display: true
     Automatic: true
@@ -21898,7 +21898,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 240, display: true
     RangeSpace: 335, display: true
     Automatic: true
@@ -21965,7 +21965,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 240, display: true
     RangeSpace: 335, display: true
     Automatic: true
@@ -22112,7 +22112,7 @@
   Category: Weapons/Items
   { Child 0
     Class: LauncherSS
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     Automatic: true
@@ -22179,7 +22179,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     Automatic: true
@@ -22327,14 +22327,14 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.725, type: float, display: true, formatter: ROF
+    ROF: 2.25, type: float, display: true, formatter: ROF
     Range: 800, display: true
     RangeSpace: 1350, display: true
     AmmoCapacity: 25, display: false      # no need to display since unlimited ammo
     # AmmoUnlimited: true
     AmmoType: HWSAquaBAT2Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 3.4, display: true
+    ReloadDelay: 4.5, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22352,14 +22352,14 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 2.3, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 800, display: true
     RangeSpace: 1350, display: true
     AmmoCapacity: 35, display: false      # no need to display since unlimited ammo
     # AmmoUnlimited: true
     AmmoType: HWSTerraBAT2Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 6, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22377,14 +22377,14 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 2.3, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 800, display: true
     RangeSpace: 1350, display: true
     AmmoCapacity: 25, display: false      # no need to display since unlimited ammo
     # AmmoUnlimited: true
     AmmoType: HWSPyroBAT2Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 6, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22402,14 +22402,14 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 2.3, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 800, display: true
     RangeSpace: 1350, display: true
     AmmoCapacity: 25, display: false      # no need to display since unlimited ammo
     # AmmoUnlimited: true
     AmmoType: HWSObsidianBAT2Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 5, display: true
+    ReloadDelay: 9, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22427,14 +22427,14 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 2.3, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 800, display: true
     RangeSpace: 1350, display: true
     AmmoCapacity: 12, display: false      # no need to display since unlimited ammo
     # AmmoUnlimited: true
     AmmoType: HWSLuxBAT2Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 6, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22452,14 +22452,14 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 2.3, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 400, display: true
     RangeSpace: 675, display: true
     AmmoCapacity: 25, display: false      # no need to display since unlimited ammo
     # AmmoUnlimited: true
     AmmoType: HWSNoxBAT2Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 6, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22477,14 +22477,14 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 2.3, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 800, display: true
     RangeSpace: 1350, display: true
     AmmoCapacity: 25, display: false      # no need to display since unlimited ammo
     # AmmoUnlimited: true
     AmmoType: HWSStrangeletBAT2Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 6, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22504,7 +22504,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 1.9, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -22529,7 +22529,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 2.6, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     AmmoCapacity: 20, display: false      # no need to display since unlimited ammo
@@ -22554,7 +22554,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 2.6, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -22579,7 +22579,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 2.6, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -22604,7 +22604,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 2.6, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 750, display: true
     RangeSpace: 1350, display: true
     AmmoCapacity: 10, display: false      # no need to display since unlimited ammo
@@ -22629,7 +22629,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 2.6, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 390, display: true
     RangeSpace: 750, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -22654,7 +22654,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 2.6, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -22681,7 +22681,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 0.8, type: float, display: true, formatter: ROF
+    ROF: 1.4, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -22706,7 +22706,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.125, type: float, display: true, formatter: ROF
+    ROF: 2, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     AmmoCapacity: 20, display: false      # no need to display since unlimited ammo
@@ -22731,7 +22731,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.125, type: float, display: true, formatter: ROF
+    ROF: 2, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -22756,7 +22756,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.125, type: float, display: true, formatter: ROF
+    ROF: 2, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -22781,7 +22781,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.125, type: float, display: true, formatter: ROF
+    ROF: 2, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 800, display: true
     AmmoCapacity: 10, display: false      # no need to display since unlimited ammo
@@ -22806,7 +22806,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.125, type: float, display: true, formatter: ROF
+    ROF: 2, type: float, display: true, formatter: ROF
     Range: 250, display: true
     RangeSpace: 350, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -22831,7 +22831,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.125, type: float, display: true, formatter: ROF
+    ROF: 2, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -22858,7 +22858,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.125, type: float, display: true, formatter: ROF
+    ROF: 1.8, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -22883,7 +22883,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -22908,7 +22908,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -22933,7 +22933,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -22958,7 +22958,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 580, display: true
     RangeSpace: 770, display: true
     AmmoCapacity: 10, display: false      # no need to display since unlimited ammo
@@ -22983,7 +22983,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 240, display: true
     RangeSpace: 335, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -23008,7 +23008,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -23036,7 +23036,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 1.125, type: float, display: true, formatter: ROF
+    ROF: 1.8, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     Automatic: true
@@ -23064,7 +23064,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     AmmoCapacity: 20, display: false      # no need to display since unlimited ammo
@@ -23090,7 +23090,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -23116,7 +23116,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -23142,7 +23142,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 580, display: true
     RangeSpace: 770, display: true
     AmmoCapacity: 10, display: false      # no need to display since unlimited ammo
@@ -23168,7 +23168,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 240, display: true
     RangeSpace: 335, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
@@ -23194,7 +23194,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
