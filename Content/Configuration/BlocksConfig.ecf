@@ -5410,12 +5410,12 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
-  HitPoints: 200, type: int, display: true
-  Torque: 13000, type: int, display: true, formatter: NewtonMeter
+  HitPoints: 250, type: int, display: true
+  Torque: 13500, type: int, display: true, formatter: NewtonMeter
   # Torque: 2000000, type: int, display: true, formatter: NewtonMeter
   EnergyDynamicGroup: RCS
-  EnergyIn: 100, type: int, display: true, formatter: Watt
-  CPUIn: 20000, type: int, display: true
+  EnergyIn: 270, type: int, display: true, formatter: Watt
+  CPUIn: 12500, type: int, display: true
   BlastParticleIndex: 4
   BlastRadius: 3
   BlastDamage: 30
@@ -6338,19 +6338,19 @@
   SizeInBlocks: "1,2,1", display: true
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 9496, type: float, display: true, formatter: Kilogram
+  Mass: 5800, type: float, display: true, formatter: Kilogram
   IsDuplicateable: false
   IsActivateable: true
   IsOxygenTight: true, display: true
   IsIgnoreLC: true
   TemplateRoot: ThrusterMSRoundBlocks
   Info: bkiThruster, display: true
-  HitPoints: 1000, type: int, display: true
+  HitPoints: 1500, type: int, display: true
   ThrusterForce: 20000, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.1, type: float, display: true
-  EnergyIn: 840, type: int, display: true, formatter: Watt
+  EnergyIn: 1250, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
-  CPUIn: 7500, type: int, display: true
+  CPUIn: 6500, type: int, display: true
   Category: Devices
   BlastParticleIndex: 11
   BlastRadius: 2
@@ -6461,12 +6461,12 @@
   IsOxygenTight: true, display: true
   IsIgnoreLC: true
   Info: bkiThrusterDirectional, display: true
-  Mass: 2361, type: float, display: true, formatter: Kilogram
-  HitPoints: 500, type: int, display: true
-  ThrusterForce: 7950, type: int, display: true, formatter: Newton
-  EnergyIn: 600, type: int, display: true, formatter: Watt
+  Mass: 2400, type: float, display: true, formatter: Kilogram
+  HitPoints: 750, type: int, display: true
+  ThrusterForce: 8450, type: int, display: true, formatter: Newton
+  EnergyIn: 650, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
-  CPUIn: 4250, type: int, display: true
+  CPUIn: 3350, type: int, display: true
   Category: Devices
   BlastParticleIndex: 11
   BlastRadius: 2
@@ -6517,19 +6517,19 @@
   SizeInBlocks: "2,4,2", display: true
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 14833, type: float, display: true, formatter: Kilogram
+  Mass: 28150, type: float, display: true, formatter: Kilogram
   IsDuplicateable: false
   IsActivateable: true
   IsOxygenTight: true, display: true
   IsIgnoreLC: true
   TemplateRoot: ThrusterMSRound2x2Blocks
   Info: bkiThruster, display: true
-  HitPoints: 5000, type: int, display: true
+  HitPoints: 8500, type: int, display: true
   ThrusterForce: 215000, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.2, type: float, display: true
-  EnergyIn: 6750, type: int, display: true, formatter: Watt
+  EnergyIn: 9400, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
-  CPUIn: 40000, type: int, display: true
+  CPUIn: 43000, type: int, display: true
   Category: Devices
   BlastParticleIndex: 1
   BlastRadius: 3
@@ -6864,20 +6864,20 @@
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   EnergyOut: 25000, type: int, display: true, formatter: Watt
-  CPUIn: 25000, type: int, display: true
+  CPUIn: 16500, type: int, display: true
   Place: Free
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocks: "3,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 53508, type: float, display: true, formatter: Kilogram
+  Mass: 18250, type: float, display: true, formatter: Kilogram
   BlockColor: "110,110,110"
   SymType: 4
   IsOxygenTight: false, display: true
   IsIgnoreLC: true
   Info: bkiGenerator, display: true
   Category: Devices
-  HitPoints: 750, type: int, display: true
+  HitPoints: 1250, type: int, display: true
   IsActivateable: true
 
   BlastParticleIndex: 1
@@ -7493,19 +7493,19 @@
   AllowPlacingAt: MS, display: true
   SizeInBlocks: "3,6,3", display: true
   SizeInBlocksLocked: "Base,MS"
-  Mass: 62500, type: float, display: true, formatter: Kilogram
+  Mass: 71500, type: float, display: true, formatter: Kilogram
   IsDuplicateable: false
   IsActivateable: true
   IsOxygenTight: true, display: true
   IsIgnoreLC: true
   TemplateRoot: ThrusterMSRound3x3Blocks
   Info: bkiThruster, display: true
-  HitPoints: 16750, type: int, display: true
-  ThrusterForce: 1010000, type: int, display: true, formatter: Newton
+  HitPoints: 20500, type: int, display: true
+  ThrusterForce: 1015000, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.3, type: float, display: true
   EnergyIn: 26500, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Thruster
-  CPUIn: 125000, type: int, display: true
+  CPUIn: 110500, type: int, display: true
   Category: Devices
   BlastParticleIndex: 1
   BlastRadius: 3
@@ -7541,13 +7541,13 @@
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   EnergyOut: 2500, type: int, display: true, formatter: Watt
-  CPUIn: 4250, type: int, display: true
+  CPUIn: 2000, type: int, display: true
   Place: Free
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocks: "2,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 5920, type: float, display: true, formatter: Kilogram
+  Mass: 5750, type: float, display: true, formatter: Kilogram
   BlockColor: "110,110,110"
   # ModelOffset: "0,0.5,0"
   SymType: 4
@@ -7555,7 +7555,7 @@
   IsIgnoreLC: true
   Info: bkiGenerator, display: true
   Category: Devices
-  HitPoints: 500, type: int, display: true
+  HitPoints: 750, type: int, display: true
   IsActivateable: true
 
   BlastParticleIndex: 8
@@ -14234,14 +14234,14 @@
   SizeInBlocks: "1,2,1", display: true
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 9496, type: float, display: true, formatter: Kilogram
+  Mass: 5800, type: float, display: true, formatter: Kilogram
   Info: bkiBlockGroup, display: true
   IsOxygenTight: true, display: true
-  HitPoints: 1550, type: int, display: true
+  HitPoints: 1500, type: int, display: true
   ThrusterForce: 20000, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.1, type: float, display: true
-  EnergyIn: 840, type: int, display: true, formatter: Watt
-  CPUIn: 7500, type: int, display: true
+  EnergyIn: 1250, type: int, display: true, formatter: Watt
+  CPUIn: 6500, type: int, display: true
   Temperature: 892, display: true
   Radiation: 6, display: RadiationLevel
 
@@ -14332,15 +14332,15 @@
   SizeInBlocks: "2,4,2", display: true
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 14833, type: float, display: true, formatter: Kilogram
+  Mass: 28150, type: float, display: true, formatter: Kilogram
   Info: bkiBlockGroup, display: true
   IsIgnoreLC: true
   IsOxygenTight: true, display: true
-  HitPoints: 3000, type: int, display: true
-  ThrusterForce: 211500, type: int, display: true, formatter: Newton
+  HitPoints: 8500, type: int, display: true
+  ThrusterForce: 215000, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.2, type: float, display: true
-  EnergyIn: 6720, type: int, display: true, formatter: Watt
-  CPUIn: 40000, type: int, display: true
+  EnergyIn: 9400, type: int, display: true, formatter: Watt
+  CPUIn: 43000, type: int, display: true
   Temperature: 977, display: true
   Radiation: 8, display: RadiationLevel
 
@@ -14750,15 +14750,15 @@
   SizeInBlocksLocked: "MS"
   SizeInBlocks: "3,6,3", display: true
   Volume: 0, type: float, display: false, formatter: Liter    # more than max capacity
-  Mass: 62897, type: float, display: true, formatter: Kilogram
+  Mass: 71500, type: float, display: true, formatter: Kilogram
   Info: bkiBlockGroup, display: true
   IsOxygenTight: true, display: true
-  HitPoints: 16750, type: int, display: true
+  HitPoints: 20500, type: int, display: true
   IsIgnoreLC: true
-  ThrusterForce: 1012000, type: int, display: true, formatter: Newton
+  ThrusterForce: 1015000, type: int, display: true, formatter: Newton
   ThrusterBoosterFactor: 1.3, type: float, display: true
-  EnergyIn: 26460, type: int, display: true, formatter: Watt
-  CPUIn: 110000, type: int, display: true
+  EnergyIn: 26500, type: int, display: true, formatter: Watt
+  CPUIn: 110500, type: int, display: true
   Temperature: 1080, display: true
   Radiation: 15, display: RadiationLevel
 
@@ -16004,7 +16004,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 19165, type: float, display: true, formatter: Kilogram
+  Mass: 20500, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsOxygenTight: false, display: true
   IsIgnoreLC: true
@@ -16013,12 +16013,12 @@
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   Category: Devices
-  HitPoints: 300, type: int, display: true
-  Torque: 230000, type: int, display: true, formatter: NewtonMeter
+  HitPoints: 350, type: int, display: true
+  Torque: 215000, type: int, display: true, formatter: NewtonMeter
   # Torque: 20000, type: int, display: true, formatter: NewtonMeter
   EnergyDynamicGroup: RCS
-  EnergyIn: 250, type: int, display: true, formatter: Watt
-  CPUIn: 40000, type: int, display: true
+  EnergyIn: 3850, type: int, display: true, formatter: Watt
+  CPUIn: 37500, type: int, display: true
   BlastParticleIndex: 6
   BlastRadius: 3
   BlastDamage: 45
@@ -17618,11 +17618,11 @@
   Model: @models/Blocks/Mothership/generatorMST2Prefab
   EnergyOut: 190000, type: int, display: true, formatter: Watt
   MarketPrice: 98464, display: true
-  CPUIn: 150000, type: int, display: true
+  CPUIn: 95000, type: int, display: true
   SizeInBlocks: "6,2,2", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 149420, type: float, display: true, formatter: Kilogram
-  HitPoints: 2400, type: int, display: true
+  Mass: 114800, type: float, display: true, formatter: Kilogram
+  HitPoints: 4250, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
