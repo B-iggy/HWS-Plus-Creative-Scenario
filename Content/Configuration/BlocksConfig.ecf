@@ -9588,7 +9588,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 150, type: float, display: true, formatter: Kilogram
+  Mass: 650, type: float, display: true, formatter: Kilogram
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
@@ -9597,8 +9597,8 @@
   TemplateRoot: FridgeBlocks
   VolumeCapacity: 5000, type: float, display: true, formatter: Liter
   CPUIn: 1000, type: int, display: true
-  HitPoints: 80, type: int, display: true
-  EnergyIn: 15, type: int, display: true, formatter: Watt
+  HitPoints: 200, type: int, display: true
+  EnergyIn: 50, type: int, display: true, formatter: Watt
 
   BlastParticleIndex: 13
   BlastRadius: 2
@@ -9615,8 +9615,10 @@
   MarketPrice: 1, display: true
   VolumeCapacity: 3000, type: float, display: true, formatter: Liter
   CPUIn: 600, type: int, display: true
+  Mass: 500, type: float, display: true, formatter: Kilogram
+  HitPoints: 150, type: int, display: true
   Model: @models/Blocks/Mothership/FridgeT1Prefab
-  EnergyIn: 5, type: int, display: true, formatter: Watt
+  EnergyIn: 35, type: int, display: true, formatter: Watt
 }
 { Block Id: 585, Name: RockGreySmall01
   MarketPrice: 1, display: true
@@ -12820,7 +12822,7 @@
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocks: "2,2,2", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 13800, type: float, display: true, formatter: Kilogram
+  Mass: 12350, type: float, display: true, formatter: Kilogram
   SizeInBlocksLocked: "Base,MS"
   IsActivateable: true
   IsActivateableInCP: true
@@ -12832,10 +12834,10 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
-  HitPoints: 500, type: int, display: true
-  EnergyIn: 1500, type: int, display: true, formatter: Watt
-  CPUIn: 45000, type: int, display: true
-  EnergyInIdle: 5, type: int, display: true, formatter: Watt
+  HitPoints: 750, type: int, display: true
+  EnergyIn: 1250, type: int, display: true, formatter: Watt
+  CPUIn: 28500, type: int, display: true
+  EnergyInIdle: 12, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Constructor
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -13230,18 +13232,18 @@
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocks: "2,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
-  EnergyIn: 1, type: int, display: true, formatter: Watt
+  EnergyIn: 15, type: int, display: true, formatter: Watt
   VolumeCapacity: 14000, type: float, display: true, formatter: Liter
-  CPUIn: 200, type: int, display: true
+  CPUIn: 2850, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1975, type: float, display: true, formatter: Kilogram
+  Mass: 1450, type: float, display: true, formatter: Kilogram
   Info: bkiContainerAmmo, display: true
   # ModelOffset: "0,0.5,0"
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   ExecuteOnActivate: Quest_SkillTrainer_DNAUpgradeContainer
   Category: Devices
-  HitPoints: 300, type: int, display: true
+  HitPoints: 500, type: int, display: true
 
   BlastParticleIndex: 1
   BlastRadius: 3
@@ -16573,7 +16575,7 @@
   SizeInBlocks: "2,2,2", display: true
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 4114, type: float, display: true, formatter: Kilogram
+  Mass: 8250, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -16584,9 +16586,9 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
-  HitPoints: 450, type: int, display: true
-  EnergyIn: 750, type: int, display: true, formatter: Watt
-  CPUIn: 30000, type: int, display: true
+  HitPoints: 600, type: int, display: true
+  EnergyIn: 850, type: int, display: true, formatter: Watt
+  CPUIn: 20500, type: int, display: true
   EnergyInIdle: 10, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Constructor
   BlastParticleIndex: 9
@@ -16646,7 +16648,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 510, type: float, display: true, formatter: Kilogram
+  Mass: 850, type: float, display: true, formatter: Kilogram
   IsActivateable: true
   IsActivateableInCP: true
   IsLockable: true
@@ -16657,10 +16659,10 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
-  EnergyIn: 375, type: int, display: true, formatter: Watt
-  CPUIn: 7500, type: int, display: true
+  EnergyIn: 450, type: int, display: true, formatter: Watt
+  CPUIn: 6000, type: int, display: true
   EnergyInIdle: 30, type: int, display: true, formatter: Watt
-  HitPoints: 150, type: int, display: true
+  HitPoints: 300, type: int, display: true
   EnergyDynamicGroup: Constructor
   BlastParticleIndex: 10
   BlastRadius: 2
@@ -18283,8 +18285,8 @@
   SizeInBlocks: "2,1,1", display: true
   Mass: 130, type: float, display: true, formatter: Kilogram
   IsOxygenTight: false, display: true
-  VolumeCapacity: 250, type: float, display: true, formatter: Liter       # low value since placed on Base,MS,SS,GV
-  CPUIn: 1, type: int, display: true
+  VolumeCapacity: 8000, type: float, display: true, formatter: Liter       # low value since placed on Base,MS,SS,GV
+  CPUIn: 1500, type: int, display: true
   # IsDuplicateable: false         # problem with mirror Mantis: 03845
 }
 { Block Id: 1085, Name: ScifiChair, Ref: DecoTemplate
@@ -19159,7 +19161,7 @@
   Mass: 31825, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   EnergyIn: 3500, type: int, display: true, formatter: Watt
-  CPUIn: 25000, type: int, display: true
+  CPUIn: 18500, type: int, display: true
   EnergyInIdle: 50, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Constructor
   HitPoints: 1500, type: int, display: true
@@ -21425,6 +21427,8 @@
 { Block Id: 1284, Name: Freezer, Ref: FridgeMS02
   MarketPrice: 1, display: true
   CPUIn: 700, type: int, display: true
+  Mass: 400, type: float, display: true, formatter: Kilogram
+  HitPoints: 125, type: int, display: true
   VolumeCapacity: 3500, type: float, display: true, formatter: Liter
   Model: @models2/Entities/Decorations/LaboratoryPack/FreezerPrefab
 }
@@ -22575,8 +22579,8 @@
   Mass: 34700, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   HitPoints: 400, type: int, display: true
-  EnergyIn: 2250, type: int, display: true, formatter: Watt
-  CPUIn: 35000, type: int, display: true
+  EnergyIn: 2500, type: int, display: true, formatter: Watt
+  CPUIn: 30000, type: int, display: true
   EnergyInIdle: 10, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Constructor
 
@@ -24340,9 +24344,6 @@
   Info: bkiRepairBayConsole, display: true
   Model: @models/Blocks/Mothership/RepairConsolePrefab
   Mesh-Damage-1: Mesh/D0
-  Mesh-Damage-2: Mesh/D1
-  Mesh-Damage-3: Mesh/D2
-  Mesh-Damage-4: Mesh/D3
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
   Category: Devices
@@ -26177,7 +26178,7 @@
   HitPoints: 100, type: int, display: false
   Mass: 160, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  CPUIn: 5000, type: int, display: true
+  CPUIn: 1000, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   Range: 100, type: int, display: true
@@ -27121,7 +27122,7 @@
   IsOxygenTight: false, display: true
   Category: Devices
   EnergyIn: 1, type: int, display: true, formatter: Watt
-  HitPoints: 100, type: int, display: true
+  HitPoints: 250, type: int, display: true
   BlastParticleIndex: 5
   BlastRadius: 2
   BlastDamage: 5
@@ -27132,7 +27133,7 @@
   BlastDamageMultiplier_5: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
-  CPUIn: 1500, type: int, display: true
+  CPUIn: 1250, type: int, display: true
 
   # UnlockCost: 3, display: true
   # UnlockLevel: 1, display: true
@@ -27143,13 +27144,13 @@
   Model: @models/Blocks/Mothership/CargoContainerMediumPrefab
   SizeInBlocks: "2,1,1", display: true
   LootList: 76        # 128 slots
-  Mass: 1000, type: float, display: true, formatter: Kilogram
+  Mass: 1250, type: float, display: true, formatter: Kilogram
 
   Volume: 0, type: float, display: false, formatter: Liter
   VolumeCapacity: 16000, type: float, display: true, formatter: Liter
   HitPoints: 500, type: int, display: true
   IsOxygenTight: false, display: true
-  CPUIn: 3000, type: int, display: true
+  CPUIn: 2500, type: int, display: true
 
   # UnlockCost: 5, display: true
   # UnlockLevel: 3, display: true
@@ -27297,7 +27298,7 @@
   IsDuplicateable: false
   Category: Devices
   EnergyIn: 10, type: int, display: true, formatter: Watt
-  CPUIn: 2500, type: int, display: true
+  CPUIn: 2000, type: int, display: true
   HitPoints: 250, type: int, display: true
   BlastParticleIndex: 5
   BlastRadius: 2
@@ -27333,7 +27334,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   DropInventoryEntity: DropContainer
   AllowPlacingAt: "Base,MS", display: true
-  Mass: 616, type: float, display: true, formatter: Kilogram
+  Mass: 450, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
@@ -27346,8 +27347,8 @@
   IsDuplicateable: false  # keep false to avoid exploits when placing several blocks in a line and connect two or more CCs
   # IsTextureable: false
   Category: Devices
-  EnergyIn: 1, type: int, display: true, formatter: Watt
-  CPUIn: 750, type: int, display: true
+  EnergyIn: 5, type: int, display: true, formatter: Watt
+  CPUIn: 500, type: int, display: true
   HitPoints: 200, type: int, display: true
   BlastParticleIndex: 13
   BlastRadius: 2
@@ -27440,7 +27441,7 @@
   BlockColor: "62,30,10"
   Info: bkiContainerHarvest, display: true                                      # adapt
   EnergyIn: 10, type: int, display: true, formatter: Watt
-  CPUIn: 3000, type: int, display: true
+  CPUIn: 2500, type: int, display: true
   AllowPlacingAt: "MS", display: true
   LootList: 48
 
@@ -27946,7 +27947,7 @@
   Mass: 250, type: float, display: true, formatter: Kilogram
   HitPoints: 150, type: int, display: true
   VolumeCapacity: 8000, type: float, display: true, formatter: Liter
-  CPUIn: 1500, type: int, display: true
+  CPUIn: 1250, type: int, display: true
   TemplateRoot: ContainerLargeBlocks
   AllowPlacingAt: "Base,MS", display: true
   # IsDuplicateable: false         # problem with mirror Mantis: 03845
@@ -27961,7 +27962,7 @@
   HitPoints: 300, type: int, display: true
   Mass: 500, type: float, display: true, formatter: Kilogram
   VolumeCapacity: 16000, type: float, display: true, formatter: Liter
-  CPUIn: 3000, type: int, display: true
+  CPUIn: 2500, type: int, display: true
   TemplateRoot: ContainerLargeBlocks
   AllowPlacingAt: "Base,MS", display: true
   # IsDuplicateable: false         # problem with mirror Mantis: 03845
@@ -27976,7 +27977,7 @@
   Mass: 250, type: float, display: true, formatter: Kilogram
   IsOxygenTight: false, display: true
   VolumeCapacity: 8000, type: float, display: true, formatter: Liter
-  CPUIn: 1500, type: int, display: true
+  CPUIn: 1250, type: int, display: true
   TemplateRoot: ContainerLargeBlocks
   AllowPlacingAt: "Base,MS", display: true
   # IsDuplicateable: false         # problem with mirror Mantis: 03845
@@ -27991,7 +27992,7 @@
   Mass: 500, type: float, display: true, formatter: Kilogram
   IsOxygenTight: false, display: true
   VolumeCapacity: 16000, type: float, display: true, formatter: Liter
-  CPUIn: 3000, type: int, display: true
+  CPUIn: 2500, type: int, display: true
   TemplateRoot: ContainerLargeBlocks
   AllowPlacingAt: "Base,MS", display: true
   # IsDuplicateable: false         # problem with mirror Mantis: 03845
@@ -28598,9 +28599,9 @@
   LootList: 76        # 128 slots
   Model: @models/Blocks/Mothership/CargoPalette01Prefab
   HitPoints: 75, type: int, display: true
-  Mass: 300, type: float, display: true, formatter: Kilogram
+  Mass: 200, type: float, display: true, formatter: Kilogram
   VolumeCapacity: 4880, type: float, display: true, formatter: Liter
-  CPUIn: 950, type: int, display: true
+  CPUIn: 800, type: int, display: true
   TemplateRoot: ContainerLargeBlocks
   AllowPlacingAt: "Base,MS", display: true
   # IsDuplicateable: false         # problem with mirror Mantis: 03845
@@ -28611,9 +28612,9 @@
   LootList: 76        # 128 slots
   Model: @models/Blocks/Mothership/CargoPalette02Prefab
   HitPoints: 75, type: int, display: true
-  Mass: 300, type: float, display: true, formatter: Kilogram
+  Mass: 200, type: float, display: true, formatter: Kilogram
   VolumeCapacity: 5380, type: float, display: true, formatter: Liter
-  CPUIn: 1050, type: int, display: true
+  CPUIn: 875, type: int, display: true
   TemplateRoot: ContainerLargeBlocks
   AllowPlacingAt: "Base,MS", display: true
   # IsDuplicateable: false         # problem with mirror Mantis: 03845
@@ -28624,9 +28625,9 @@
   LootList: 76        # 128 slots
   HitPoints: 75, type: int, display: true
   Model: @models/Blocks/Mothership/CargoPalette03Prefab
-  Mass: 300, type: float, display: true, formatter: Kilogram
+  Mass: 200, type: float, display: true, formatter: Kilogram
   VolumeCapacity: 5130, type: float, display: true, formatter: Liter
-  CPUIn: 1000, type: int, display: true
+  CPUIn: 830, type: int, display: true
   TemplateRoot: ContainerLargeBlocks
   AllowPlacingAt: "Base,MS", display: true
   # IsDuplicateable: false         # problem with mirror Mantis: 03845
@@ -28636,10 +28637,10 @@
   MarketPrice: 1, display: true
   LootList: 76        # 128 slots
   Model: @models/Blocks/Mothership/CargoPalette04Prefab
-  Mass: 300, type: float, display: true, formatter: Kilogram
+  Mass: 200, type: float, display: true, formatter: Kilogram
   HitPoints: 75, type: int, display: true
   VolumeCapacity: 4880, type: float, display: true, formatter: Liter
-  CPUIn: 950, type: int, display: true
+  CPUIn: 800, type: int, display: true
   TemplateRoot: ContainerLargeBlocks
   AllowPlacingAt: "Base,MS", display: true
   # IsDuplicateable: false         # problem with mirror Mantis: 03845
@@ -28727,9 +28728,9 @@
   Model: @models/Blocks/Mothership/ContainerMS02LargePrefab
   SizeInBlocks: "2,1,1", display: true
   HitPoints: 300, type: int, display: true
-  Mass: 600, type: float, display: true, formatter: Kilogram
+  Mass: 450, type: float, display: true, formatter: Kilogram
   VolumeCapacity: 16000, type: float, display: true, formatter: Liter
-  CPUIn: 3000, type: int, display: true
+  CPUIn: 2500, type: int, display: true
   TemplateRoot: ContainerLargeBlocks
   AllowPlacingAt: "Base,MS", display: true
   # IsDuplicateable: false         # problem with mirror Mantis: 03845
@@ -28740,10 +28741,10 @@
   Model: @models/Blocks/Mothership/ContainerMS03LargePrefab
   SizeInBlocks: "2,1,1", display: true
   HitPoints: 150, type: int, display: true
-  Mass: 300, type: float, display: true, formatter: Kilogram
+  Mass: 225, type: float, display: true, formatter: Kilogram
   IsOxygenTight: false, display: true
   VolumeCapacity: 8000, type: float, display: true, formatter: Liter
-  CPUIn: 1500, type: int, display: true
+  CPUIn: 1250, type: int, display: true
   TemplateRoot: ContainerLargeBlocks
   AllowPlacingAt: "Base,MS", display: true
   # IsDuplicateable: false         # problem with mirror Mantis: 03845
@@ -28753,11 +28754,11 @@
   LootList: 76        # 128 slots
   Model: @models/Blocks/Mothership/ContainerMS04LargePrefab
   SizeInBlocks: "2,1,1", display: true
-  HitPoints: 300, type: int, display: true
-  Mass: 600, type: float, display: true, formatter: Kilogram
+  HitPoints: 325, type: int, display: true
+  Mass: 550, type: float, display: true, formatter: Kilogram
   IsOxygenTight: false, display: true
   VolumeCapacity: 16000, type: float, display: true, formatter: Liter
-  CPUIn: 3000, type: int, display: true
+  CPUIn: 2500, type: int, display: true
   TemplateRoot: ContainerLargeBlocks
   AllowPlacingAt: "Base,MS", display: true
   # IsDuplicateable: false         # problem with mirror Mantis: 03845
@@ -29097,10 +29098,10 @@
   MarketPrice: 1, display: true
   LootList: 76        # 128 slots
   Model: @models/Blocks/Mothership/ContainerMS05LargePrefab
-  HitPoints: 150, type: int, display: true
-  Mass: 600, type: float, display: true, formatter: Kilogram
+  HitPoints: 165, type: int, display: true
+  Mass: 275, type: float, display: true, formatter: Kilogram
   VolumeCapacity: 8000, type: float, display: true, formatter: Liter
-  CPUIn: 1500, type: int, display: true
+  CPUIn: 1250, type: int, display: true
   TemplateRoot: ContainerLargeBlocks
   AllowPlacingAt: "Base,MS", display: true
   # IsDuplicateable: false         # problem with mirror Mantis: 03845
@@ -43597,7 +43598,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 200, type: int, display: true, formatter: Watt
-  CPUIn: 40000, type: int, display: true
+  CPUIn: 4000, type: int, display: true
   HitPoints: 1000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
