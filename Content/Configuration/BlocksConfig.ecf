@@ -12361,7 +12361,7 @@
   BlastDamageMultiplier_6: 1.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 1050, type: int, display: true, formatter: Watt
-  CPUIn: 35000, type: int, display: true
+  CPUIn: 31500, type: int, display: true
   HitPoints: 21000, type: int, display: true
   RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
@@ -12412,7 +12412,7 @@
 
   
   EnergyIn: 1200, type: int, display: true, formatter: Watt
-  CPUIn: 65000, type: int, display: true
+  CPUIn: 58500, type: int, display: true
   HitPoints: 24000, type: int, display: true
   RotSpeed: 110, type: int, display: true
   Zoom: 5, type: float
@@ -19493,7 +19493,7 @@
   BlastDamageMultiplier_6: 1.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 900, type: int, display: true, formatter: Watt
-  CPUIn: 15000, type: int, display: true
+  CPUIn: 13500, type: int, display: true
   Mass: 13500, type: float, display: true, formatter: Kilogram
   HitPoints: 18000, type: int, display: true
   RotSpeed: 150, type: int, display: true
@@ -19539,7 +19539,7 @@
   BlastDamageMultiplier_6: 1.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 1200, type: int, display: true, formatter: Watt
-  CPUIn: 50000, type: int, display: true
+  CPUIn: 45000, type: int, display: true
   Mass: 18000, type: float, display: true, formatter: Kilogram
   HitPoints: 24000, type: int, display: true
 
@@ -19684,7 +19684,7 @@
   BlastDamageMultiplier_6: 1.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 900, type: int, display: true, formatter: Watt
-  CPUIn: 10000, type: int, display: true
+  CPUIn: 9000, type: int, display: true
   Mass: 13500, type: float, display: true, formatter: Kilogram
   HitPoints: 18000, type: int, display: true
   RotSpeed: 120, type: int, display: true
@@ -19732,7 +19732,7 @@
   BlastDamageMultiplier_6: 1.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 1050, type: int, display: true, formatter: Watt
-  CPUIn: 30000, type: int, display: true
+  CPUIn: 27000, type: int, display: true
   Mass: 15750, type: float, display: true, formatter: Kilogram
   HitPoints: 21000, type: int, display: true
   RotSpeed: 120, type: int, display: true
@@ -19782,7 +19782,7 @@
   BlastDamageMultiplier_6: 1.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 1650, type: int, display: true, formatter: Watt
-  CPUIn: 90000, type: int, display: true
+  CPUIn: 82000, type: int, display: true
   Mass: 82500, type: float, display: true, formatter: Kilogram
   HitPoints: 33000, type: int, display: true
   RotSpeed: 90, type: int, display: true
@@ -26602,10 +26602,10 @@
   Info: bkiTurretRetract, display: true
   Place: Free
   SizeInBlocks: "3,2,3", display: true
-  HitPoints: 27300, type: int, display: true
+  HitPoints: 28500, type: int, display: true
   Mass: 21000, type: float, display: true, formatter: Kilogram
   EnergyIn: 1365, type: int, display: true, formatter: Watt
-  CPUIn: 38500, type: int, display: true
+  CPUIn: 33500, type: int, display: true
 }
 { Block Id: 1653, Name: TurretBasePlasmaRetract, Ref: TurretBasePlasma
   MarketPrice: 1, display: true
@@ -26621,10 +26621,10 @@
   Info: bkiTurretRetract, display: true
   Place: Free
   SizeInBlocks: "3,2,3", display: true
-  HitPoints: 31000, type: int, display: true
+  HitPoints: 32500, type: int, display: true
   Mass: 24000, type: float, display: true, formatter: Kilogram
   EnergyIn: 1550, type: int, display: true, formatter: Watt
-  CPUIn: 71500, type: int, display: true
+  CPUIn: 63500, type: int, display: true
 }
 { Block Id: 1654, Name: TurretBaseCannonRetract, Ref: TurretBaseCannon
   MarketPrice: 1, display: true
@@ -26640,9 +26640,9 @@
   Info: bkiTurretRetract, display: true
   Place: Free
   SizeInBlocks: "3,2,3", display: true
-  HitPoints: 23400, type: int, display: true
+  HitPoints: 24000, type: int, display: true
   Mass: 18000, type: float, display: true, formatter: Kilogram
-  CPUIn: 16500, type: int, display: true
+  CPUIn: 14500, type: int, display: true
   EnergyIn: 1170, type: int, display: true, formatter: Watt
 }
 { Block Id: 1655, Name: TurretBaseRocketRetract, Ref: TurretBaseRocket
@@ -26659,10 +26659,10 @@
   Info: bkiTurretRetract, display: true
   Place: Free
   SizeInBlocks: "3,2,3", display: true
-  HitPoints: 31000, type: int, display: true
+  HitPoints: 32500, type: int, display: true
   Mass: 24000, type: float, display: true, formatter: Kilogram
   EnergyIn: 1550, type: int, display: true, formatter: Watt
-  CPUIn: 55000, type: int, display: true
+  CPUIn: 48000, type: int, display: true
 }
 { Block Id: 1656, Name: TurretBaseMinigunRetract, Ref: TurretBaseMinigun
   MarketPrice: 1, display: true
@@ -26678,10 +26678,10 @@
   Info: bkiTurretRetract, display: true
   Place: Free
   SizeInBlocks: "3,2,3", display: true
-  HitPoints: 23400, type: int, display: true
+  HitPoints: 24000, type: int, display: true
   Mass: 18000, type: float, display: true, formatter: Kilogram
   EnergyIn: 1170, type: int, display: true, formatter: Watt
-  CPUIn: 11000, type: int, display: true
+  CPUIn: 10000, type: int, display: true
 }
 { Block Id: 1657, Name: TurretBasePulseLaserRetract, Ref: TurretBasePulseLaser
   MarketPrice: 1, display: true
@@ -26697,8 +26697,8 @@
   Info: bkiTurretRetract, display: true
   Place: Free
   SizeInBlocks: "3,2,3", display: true
-  HitPoints: 27300, type: int, display: true
-  CPUIn: 33000, type: int, display: true
+  HitPoints: 28500, type: int, display: true
+  CPUIn: 29500, type: int, display: true
   Mass: 21000, type: float, display: true, formatter: Kilogram
   EnergyIn: 1365, type: int, display: true, formatter: Watt
 }
@@ -26716,10 +26716,10 @@
   Info: bkiTurretRetract, display: true
   Place: Free
   SizeInBlocks: "5,4,5", display: true
-  HitPoints: 42500, type: int, display: true
+  HitPoints: 45000, type: int, display: true
   Mass: 107250, type: float, display: true, formatter: Kilogram
   EnergyIn: 2125, type: int, display: true, formatter: Watt
-  CPUIn: 100000, type: int, display: true
+  CPUIn: 90000, type: int, display: true
 }
 
 # HV Turret Groups
@@ -31067,7 +31067,7 @@
   MaxCount: 4, type: int, display: true
   ForceMaxCount: true
   EnergyIn: 300, type: int, display: true, formatter: Watt
-  CPUOut: 327500, type: int, display: true
+  CPUOut: 452500, type: int, display: true
   CPUExtenderLevel: 4, type: int, display: true
   HitPoints: 950, type: int, display: true
   BlastRadius: 2
@@ -32623,11 +32623,11 @@
 
   Mass: 17500, type: float, display: true, formatter: Kilogram
   EnergyIn: 2500, type: int, display: true, formatter: Watt
-  HitPoints: 35000, type: int, display: true
+  HitPoints: 38500, type: int, display: true
 
   RotSpeed: 150, type: int, display: true
   Zoom: 5, type: float
-  CPUIn: 82500, type: int, display: true
+  CPUIn: 75000, type: int, display: true
 }
 { Block Name: HWSAquaTurretBAT2
   MarketPrice: 1, display: true
@@ -32670,11 +32670,11 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
   Mass: 20000, type: float, display: true, formatter: Kilogram
   EnergyIn: 3000, type: int, display: true, formatter: Watt
-  HitPoints: 40000, type: int, display: true
+  HitPoints: 44000, type: int, display: true
 
   RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
-  CPUIn: 110000, type: int, display: true
+  CPUIn: 98500, type: int, display: true
 }
 { Block Name: HWSAquaTurretBAT3
   MarketPrice: 1, display: true
@@ -32716,11 +32716,11 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
   Mass: 17500, type: float, display: true, formatter: Kilogram
   EnergyIn: 2500, type: int, display: true, formatter: Watt
-  HitPoints: 35000, type: int, display: true
+  HitPoints: 38500, type: int, display: true
 
   RotSpeed: 160, type: int, display: true
   Zoom: 5, type: float
-  CPUIn: 65000, type: int, display: true
+  CPUIn: 58500, type: int, display: true
 }
 { Block Name: HWSAquaTurretBAT4
   MarketPrice: 1, display: true
@@ -32767,7 +32767,7 @@
 
   RotSpeed: 180, type: int, display: true
   Zoom: 5, type: float
-  CPUIn: 75000, type: int, display: true
+  CPUIn: 67500, type: int, display: true
 }
 { Block Name: HWSAquaTurretBAT5
   MarketPrice: 1, display: true
@@ -32809,11 +32809,11 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
   Mass: 23250, type: float, display: true, formatter: Kilogram
   EnergyIn: 3650, type: int, display: true, formatter: Watt
-  HitPoints: 46500, type: int, display: true
+  HitPoints: 50000, type: int, display: true
 
   RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
-  CPUIn: 140000, type: int, display: true
+  CPUIn: 125000, type: int, display: true
 }
 # ------------------------------------------------------------------------------------------------------ Terra Turret BA
 { Block Name: HWSTerraTurretBABlocks
@@ -32886,9 +32886,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 2500, type: int, display: true, formatter: Watt
-  CPUIn: 82500, type: int, display: true
+  CPUIn: 75000, type: int, display: true
   Mass: 17500, type: float, display: true, formatter: Kilogram
-  HitPoints: 43750, type: int, display: true
+  HitPoints: 48125, type: int, display: true
 
   RotSpeed: 150, type: int, display: true
   Zoom: 5, type: float
@@ -32931,9 +32931,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 3000, type: int, display: true, formatter: Watt
-  CPUIn: 110000, type: int, display: true
+  CPUIn: 98500, type: int, display: true
   Mass: 20000, type: float, display: true, formatter: Kilogram
-  HitPoints: 50000, type: int, display: true
+  HitPoints: 55000, type: int, display: true
 
   RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
@@ -32976,9 +32976,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 2500, type: int, display: true, formatter: Watt
-  CPUIn: 65000, type: int, display: true
+  CPUIn: 58500, type: int, display: true
   Mass: 17500, type: float, display: true, formatter: Kilogram
-  HitPoints: 43750, type: int, display: true
+  HitPoints: 48125, type: int, display: true
 
   RotSpeed: 160, type: int, display: true
   Zoom: 5, type: float
@@ -33021,7 +33021,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 3000, type: int, display: true, formatter: Watt
-  CPUIn: 75000, type: int, display: true
+  CPUIn: 67500, type: int, display: true
   Mass: 20000, type: float, display: true, formatter: Kilogram
   HitPoints: 50000, type: int, display: true
 
@@ -33066,9 +33066,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 3650, type: int, display: true, formatter: Watt
-  CPUIn: 140000, type: int, display: true
+  CPUIn: 125000, type: int, display: true
   Mass: 23250, type: float, display: true, formatter: Kilogram
-  HitPoints: 58000, type: int, display: true
+  HitPoints: 62500, type: int, display: true
 
   RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
@@ -33143,9 +33143,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 1625, type: int, display: true, formatter: Watt
-  CPUIn: 82500, type: int, display: true
+  CPUIn: 75000, type: int, display: true
   Mass: 17500, type: float, display: true, formatter: Kilogram
-  HitPoints: 35000, type: int, display: true
+  HitPoints: 38500, type: int, display: true
 
   RotSpeed: 150, type: int, display: true
   Zoom: 5, type: float
@@ -33188,9 +33188,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 2000, type: int, display: true, formatter: Watt
-  CPUIn: 110000, type: int, display: true
+  CPUIn: 98500, type: int, display: true
   Mass: 20000, type: float, display: true, formatter: Kilogram
-  HitPoints: 40000, type: int, display: true
+  HitPoints: 44000, type: int, display: true
 
   RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
@@ -33233,9 +33233,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 1625, type: int, display: true, formatter: Watt
-  CPUIn: 65000, type: int, display: true
+  CPUIn: 58500, type: int, display: true
   Mass: 17500, type: float, display: true, formatter: Kilogram
-  HitPoints: 35000, type: int, display: true
+  HitPoints: 38500, type: int, display: true
 
   RotSpeed: 160, type: int, display: true
   Zoom: 5, type: float
@@ -33278,7 +33278,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 2000, type: int, display: true, formatter: Watt
-  CPUIn: 75000, type: int, display: true
+  CPUIn: 67500, type: int, display: true
   Mass: 20000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
@@ -33323,9 +33323,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 2485, type: int, display: true, formatter: Watt
-  CPUIn: 140000, type: int, display: true
+  CPUIn: 125000, type: int, display: true
   Mass: 23250, type: float, display: true, formatter: Kilogram
-  HitPoints: 46500, type: int, display: true
+  HitPoints: 50000, type: int, display: true
 
   RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
@@ -33400,9 +33400,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 2500, type: int, display: true, formatter: Watt
-  CPUIn: 82500, type: int, display: true
+  CPUIn: 75000, type: int, display: true
   Mass: 17500, type: float, display: true, formatter: Kilogram
-  HitPoints: 35000, type: int, display: true
+  HitPoints: 38500, type: int, display: true
 
   RotSpeed: 150, type: int, display: true
   Zoom: 5, type: float
@@ -33445,9 +33445,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 3000, type: int, display: true, formatter: Watt
-  CPUIn: 110000, type: int, display: true
+  CPUIn: 98500, type: int, display: true
   Mass: 20000, type: float, display: true, formatter: Kilogram
-  HitPoints: 40000, type: int, display: true
+  HitPoints: 44000, type: int, display: true
 
   RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
@@ -33490,9 +33490,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 2500, type: int, display: true, formatter: Watt
-  CPUIn: 65000, type: int, display: true
+  CPUIn: 58500, type: int, display: true
   Mass: 17500, type: float, display: true, formatter: Kilogram
-  HitPoints: 35000, type: int, display: true
+  HitPoints: 38500, type: int, display: true
 
   RotSpeed: 160, type: int, display: true
   Zoom: 5, type: float
@@ -33535,7 +33535,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 3000, type: int, display: true, formatter: Watt
-  CPUIn: 75000, type: int, display: true
+  CPUIn: 67500, type: int, display: true
   Mass: 20000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
@@ -33580,9 +33580,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 3650, type: int, display: true, formatter: Watt
-  CPUIn: 140000, type: int, display: true
+  CPUIn: 125000, type: int, display: true
   Mass: 23250, type: float, display: true, formatter: Kilogram
-  HitPoints: 46500, type: int, display: true
+  HitPoints: 50000, type: int, display: true
 
   RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
@@ -33657,9 +33657,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 2500, type: int, display: true, formatter: Watt
-  CPUIn: 82500, type: int, display: true
+  CPUIn: 75000, type: int, display: true
   Mass: 13125, type: float, display: true, formatter: Kilogram
-  HitPoints: 35000, type: int, display: true
+  HitPoints: 38500, type: int, display: true
 
   RotSpeed: 170, type: int, display: true
   Zoom: 5, type: float
@@ -33702,9 +33702,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 3000, type: int, display: true, formatter: Watt
-  CPUIn: 110000, type: int, display: true
+  CPUIn: 98500, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
-  HitPoints: 40000, type: int, display: true
+  HitPoints: 44000, type: int, display: true
 
   RotSpeed: 145, type: int, display: true
   Zoom: 5, type: float
@@ -33747,9 +33747,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 2500, type: int, display: true, formatter: Watt
-  CPUIn: 65000, type: int, display: true
+  CPUIn: 58500, type: int, display: true
   Mass: 13125, type: float, display: true, formatter: Kilogram
-  HitPoints: 35000, type: int, display: true
+  HitPoints: 38500, type: int, display: true
 
   RotSpeed: 180, type: int, display: true
   Zoom: 5, type: float
@@ -33792,7 +33792,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 3000, type: int, display: true, formatter: Watt
-  CPUIn: 75000, type: int, display: true
+  CPUIn: 67500, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
@@ -33837,9 +33837,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 3650, type: int, display: true, formatter: Watt
-  CPUIn: 140000, type: int, display: true
+  CPUIn: 125000, type: int, display: true
   Mass: 17400, type: float, display: true, formatter: Kilogram
-  HitPoints: 46500, type: int, display: true
+  HitPoints: 50000, type: int, display: true
 
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
@@ -33914,9 +33914,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 2500, type: int, display: true, formatter: Watt
-  CPUIn: 82500, type: int, display: true
+  CPUIn: 75000, type: int, display: true
   Mass: 17500, type: float, display: true, formatter: Kilogram
-  HitPoints: 35000, type: int, display: true
+  HitPoints: 38500, type: int, display: true
 
   RotSpeed: 130, type: int, display: true
   Zoom: 5, type: float
@@ -33959,9 +33959,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 3000, type: int, display: true, formatter: Watt
-  CPUIn: 110000, type: int, display: true
+  CPUIn: 98500, type: int, display: true
   Mass: 20000, type: float, display: true, formatter: Kilogram
-  HitPoints: 40000, type: int, display: true
+  HitPoints: 44000, type: int, display: true
 
   RotSpeed: 105, type: int, display: true
   Zoom: 5, type: float
@@ -34004,9 +34004,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 2500, type: int, display: true, formatter: Watt
-  CPUIn: 65000, type: int, display: true
+  CPUIn: 58500, type: int, display: true
   Mass: 17500, type: float, display: true, formatter: Kilogram
-  HitPoints: 35000, type: int, display: true
+  HitPoints: 38500, type: int, display: true
 
   RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
@@ -34049,7 +34049,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 3000, type: int, display: true, formatter: Watt
-  CPUIn: 75000, type: int, display: true
+  CPUIn: 67500, type: int, display: true
   Mass: 2000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
@@ -34094,9 +34094,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 3650, type: int, display: true, formatter: Watt
-  CPUIn: 140000, type: int, display: true
+  CPUIn: 125000, type: int, display: true
   Mass: 23250, type: float, display: true, formatter: Kilogram
-  HitPoints: 46500, type: int, display: true
+  HitPoints: 50000, type: int, display: true
 
   RotSpeed: 80, type: int, display: true
   Zoom: 5, type: float
@@ -34171,9 +34171,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 4250, type: int, display: true, formatter: Watt
-  CPUIn: 123750, type: int, display: true
+  CPUIn: 105000, type: int, display: true
   Mass: 26250, type: float, display: true, formatter: Kilogram
-  HitPoints: 35000, type: int, display: true
+  HitPoints: 38500, type: int, display: true
 
   RotSpeed: 150, type: int, display: true
   Zoom: 5, type: float
@@ -34216,9 +34216,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 5000, type: int, display: true, formatter: Watt
-  CPUIn: 165000, type: int, display: true
+  CPUIn: 138000, type: int, display: true
   Mass: 30000, type: float, display: true, formatter: Kilogram
-  HitPoints: 40000, type: int, display: true
+  HitPoints: 44000, type: int, display: true
 
   RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
@@ -34261,9 +34261,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 4250, type: int, display: true, formatter: Watt
-  CPUIn: 97500, type: int, display: true
+  CPUIn: 82000, type: int, display: true
   Mass: 26250, type: float, display: true, formatter: Kilogram
-  HitPoints: 35000, type: int, display: true
+  HitPoints: 38500, type: int, display: true
 
   RotSpeed: 160, type: int, display: true
   Zoom: 5, type: float
@@ -34306,7 +34306,7 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 5000, type: int, display: true, formatter: Watt
-  CPUIn: 112500, type: int, display: true
+  CPUIn: 94500, type: int, display: true
   Mass: 30000, type: float, display: true, formatter: Kilogram
   HitPoints: 40000, type: int, display: true
 
@@ -34351,9 +34351,9 @@
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
   EnergyIn: 5975, type: int, display: true, formatter: Watt
-  CPUIn: 210000, type: int, display: true
+  CPUIn: 175000, type: int, display: true
   Mass: 34850, type: float, display: true, formatter: Kilogram
-  HitPoints: 46500, type: int, display: true
+  HitPoints: 50000, type: int, display: true
 
   RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
@@ -34426,10 +34426,10 @@
   BlastDamageMultiplier_5: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
-  HitPoints: 50000, type: int, display: true
+  HitPoints: 55000, type: int, display: true
   RotSpeed: 160, type: int, display: true
   EnergyIn: 2000, type: int, display: true, formatter: Watt
-  CPUIn: 137500, type: int, display: true
+  CPUIn: 125000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -34475,10 +34475,10 @@
   BlastDamageMultiplier_5: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
-  HitPoints: 62500, type: int, display: true
+  HitPoints: 68750, type: int, display: true
   RotSpeed: 160, type: int, display: true
   EnergyIn: 2000, type: int, display: true, formatter: Watt
-  CPUIn: 137500, type: int, display: true
+  CPUIn: 125000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -34524,10 +34524,10 @@
   BlastDamageMultiplier_5: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
-  HitPoints: 50000, type: int, display: true
+  HitPoints: 55000, type: int, display: true
   RotSpeed: 160, type: int, display: true
   EnergyIn: 1250, type: int, display: true, formatter: Watt
-  CPUIn: 137500, type: int, display: true
+  CPUIn: 125000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -34573,10 +34573,10 @@
   BlastDamageMultiplier_5: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
-  HitPoints: 50000, type: int, display: true
+  HitPoints: 55000, type: int, display: true
   RotSpeed: 160, type: int, display: true
   EnergyIn: 2000, type: int, display: true, formatter: Watt
-  CPUIn: 137500, type: int, display: true
+  CPUIn: 125000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -34622,10 +34622,10 @@
   BlastDamageMultiplier_5: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
-  HitPoints: 50000, type: int, display: true
+  HitPoints: 55000, type: int, display: true
   RotSpeed: 160, type: int, display: true
   EnergyIn: 2000, type: int, display: true, formatter: Watt
-  CPUIn: 137500, type: int, display: true
+  CPUIn: 125000, type: int, display: true
   Mass: 11250, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -34671,10 +34671,10 @@
   BlastDamageMultiplier_5: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
-  HitPoints: 50000, type: int, display: true
+  HitPoints: 55000, type: int, display: true
   RotSpeed: 160, type: int, display: true
   EnergyIn: 2000, type: int, display: true, formatter: Watt
-  CPUIn: 137500, type: int, display: true
+  CPUIn: 125000, type: int, display: true
   Mass: 15000, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -34720,10 +34720,10 @@
   BlastDamageMultiplier_5: 1, param1: HWS_material_devices_kinetic|HWS_material_devices_energy
   BlastDamageMultiplier_6: 0.5, param1: HWS_material_aquadevicesmall|HWS_material_aquadevicelarge|HWS_material_terradevicesmall|HWS_material_terradevicelarge|HWS_material_pyrodevicesmall|HWS_material_pyrodevicelarge|HWS_material_obsidiandevicesmall|HWS_material_obsidiandevicelarge|HWS_material_luxdevicesmall|HWS_material_luxdevicelarge|HWS_material_noxdevicesmall|HWS_material_noxdevicelarge|HWS_material_strangeletdevicesmall|HWS_material_strangeletdevicelarge
 
-  HitPoints: 50000, type: int, display: true
+  HitPoints: 55000, type: int, display: true
   RotSpeed: 160, type: int, display: true
   EnergyIn: 7500, type: int, display: true, formatter: Watt
-  CPUIn: 247500, type: int, display: true
+  CPUIn: 172500, type: int, display: true
   Mass: 37500, type: float, display: true, formatter: Kilogram
   XpFactor: 2
   Zoom: 5, type: float
@@ -45362,7 +45362,7 @@
   IndexName: ShieldExtender
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 453440, display: true
-  ShieldCapacityBonus: 30000, type: int, display: true
+  ShieldCapacityBonus: 40000, type: int, display: true
   NPCModelRotation: false
   IsTextureable: true
   IsColorable: true
@@ -45407,7 +45407,7 @@
   IndexName: ShieldExtender
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 453440, display: true
-  ShieldRechargeBonus: 780, type: int, display: true
+  ShieldRechargeBonus: 810, type: int, display: true
   NPCModelRotation: false
   IsTextureable: true
   IsColorable: true
