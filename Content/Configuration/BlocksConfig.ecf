@@ -5363,7 +5363,8 @@
   BlastParticleIndex: 8
   BlastRadius: 3
   BlastDamage: 28
-  # --- для теста ебанул все параметры как для групп посмотрим что из этого выйдет. Try just put all the info from damage group - it is working well.
+  # --- Try just put all the info from damage group - it is working well.
+
   BlastDamageMultiplier_1: 2, param1: plants|dirt|stone|rock
   BlastDamageMultiplier_2: 10, param1: head|body|HWS_material_aquanpc|HWS_material_terranpc|HWS_material_pyronpc|HWS_material_obsidiannpc|HWS_material_luxnpc|HWS_material_noxnpc|HWS_material_strangeletnpc
   BlastDamageMultiplier_3: 7, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
@@ -30615,7 +30616,7 @@
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   EnergyIn: 20, type: int, display: true, formatter: Watt
-  CPUOut: 26000, type: int, display: true
+  CPUOut: 28500, type: int, display: true
   CPUExtenderLevel: 3, type: int, display: true
   HitPoints: 300, type: int, display: true
   AllowWander: true
@@ -44535,10 +44536,11 @@
   EnergyIn: 6000, type: int, display: true, formatter: Watt
   CPUIn: 18750, type: int, display: true
   EnergyInIdle: 450, type: int, display: true, formatter: Watt
-  ShieldCapacity: 65000, type: int, display: true
-  ShieldRecharge: 1800, type: int, display: true # full in 5 sec
-  ShieldCooldown: 5, type: int, display: true # 5 sec + 10 sec built-in
-  ShieldPerCrystal: 145, type: int, display: true # 500 Pentaxid in total
+  ShieldCapacity: 70000, type: int, display: true
+  ShieldRecharge: 1400, type: int, display: true # full in 5 sec
+  ShieldCooldown: 10, type: int, display: true
+  ShieldHitCooldown: 10, type: int, display: true
+  ShieldPerCrystal: 250, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSAquaShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44597,9 +44599,10 @@
   CPUIn: 300000, type: int, display: true
   EnergyInIdle: 5000, type: int, display: true, formatter: Watt
   ShieldCapacity: 450000, type: int, display: true
-  ShieldRecharge: 13500, type: int, display: true # full in 70 sec
+  ShieldRecharge: 9000, type: int, display: true # full in 70 sec
   ShieldCooldown: 25, type: int, display: true
-  ShieldPerCrystal: 275, type: int, display: true
+  ShieldHitCooldown: 25, type: int, display: true
+  ShieldPerCrystal: 300, type: int, display: true
   ParticleName: @hws_blastparticles/HWSAquaShieldExplosionLarge
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44658,10 +44661,11 @@
   EnergyIn: 6000, type: int, display: true, formatter: Watt
   CPUIn: 18750, type: int, display: true
   EnergyInIdle: 450, type: int, display: true, formatter: Watt
-  ShieldCapacity: 65000, type: int, display: true
-  ShieldRecharge: 1800, type: int, display: true # full in 70 sec
-  ShieldCooldown: 5, type: int, display: true
-  ShieldPerCrystal: 145, type: int, display: true
+  ShieldCapacity: 70000, type: int, display: true
+  ShieldRecharge: 1400, type: int, display: true # full in 5 sec
+  ShieldCooldown: 10, type: int, display: true
+  ShieldHitCooldown: 10, type: int, display: true
+  ShieldPerCrystal: 250, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSTerraShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44720,9 +44724,10 @@
   CPUIn: 300000, type: int, display: true
   EnergyInIdle: 5000, type: int, display: true, formatter: Watt
   ShieldCapacity: 450000, type: int, display: true
-  ShieldRecharge: 13500, type: int, display: true # full in 70 sec
+  ShieldRecharge: 9000, type: int, display: true # full in 70 sec
   ShieldCooldown: 25, type: int, display: true
-  ShieldPerCrystal: 37500, type: int, display: true
+  ShieldHitCooldown: 25, type: int, display: true
+  ShieldPerCrystal: 300, type: int, display: true
   ParticleName: @hws_blastparticles/HWSTerraShieldExplosionLarge
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44781,10 +44786,11 @@
   EnergyIn: 3000, type: int, display: true, formatter: Watt
   CPUIn: 18750, type: int, display: true
   EnergyInIdle: 225, type: int, display: true, formatter: Watt
-  ShieldCapacity: 65000, type: int, display: true
-  ShieldRecharge: 1800, type: int, display: true # full in 70 sec
-  ShieldCooldown: 5, type: int, display: true
-  ShieldPerCrystal: 250, type: int, display: true
+  ShieldCapacity: 70000, type: int, display: true
+  ShieldRecharge: 1400, type: int, display: true # full in 5 sec
+  ShieldCooldown: 10, type: int, display: true
+  ShieldHitCooldown: 10, type: int, display: true
+  ShieldPerCrystal: 250, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSPyroShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 2
@@ -44843,9 +44849,10 @@
   CPUIn: 300000, type: int, display: true
   EnergyInIdle: 2500, type: int, display: true, formatter: Watt
   ShieldCapacity: 450000, type: int, display: true
-  ShieldRecharge: 13500, type: int, display: true # full in 70 sec
+  ShieldRecharge: 9000, type: int, display: true # full in 70 sec
   ShieldCooldown: 25, type: int, display: true
-  ShieldPerCrystal: 500, type: int, display: true
+  ShieldHitCooldown: 25, type: int, display: true
+  ShieldPerCrystal: 300, type: int, display: true
   ParticleName: @hws_blastparticles/HWSPyroShieldExplosionLarge
   BlastParticleIndex: 8
   BlastRadius: 2
@@ -44904,10 +44911,11 @@
   EnergyIn: 6000, type: int, display: true, formatter: Watt
   CPUIn: 18750, type: int, display: true
   EnergyInIdle: 450, type: int, display: true, formatter: Watt
-  ShieldCapacity: 65000, type: int, display: true
-  ShieldRecharge: 1800, type: int, display: true # full in 70 sec
-  ShieldCooldown: 5, type: int, display: true
-  ShieldPerCrystal: 145, type: int, display: true
+  ShieldCapacity: 70000, type: int, display: true
+  ShieldRecharge: 1400, type: int, display: true # full in 5 sec
+  ShieldCooldown: 10, type: int, display: true
+  ShieldHitCooldown: 10, type: int, display: true
+  ShieldPerCrystal: 250, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSObsidianShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44966,9 +44974,10 @@
   CPUIn: 300000, type: int, display: true
   EnergyInIdle: 5000, type: int, display: true, formatter: Watt
   ShieldCapacity: 450000, type: int, display: true
-  ShieldRecharge: 13500, type: int, display: true # full in 70 sec
+  ShieldRecharge: 9000, type: int, display: true # full in 70 sec
   ShieldCooldown: 25, type: int, display: true
-  ShieldPerCrystal: 275, type: int, display: true
+  ShieldHitCooldown: 25, type: int, display: true
+  ShieldPerCrystal: 300, type: int, display: true
   ParticleName: @hws_blastparticles/HWSObsidianShieldExplosionLarge
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -45027,10 +45036,11 @@
   EnergyIn: 6000, type: int, display: true, formatter: Watt
   CPUIn: 18750, type: int, display: true
   EnergyInIdle: 450, type: int, display: true, formatter: Watt
-  ShieldCapacity: 65000, type: int, display: true
-  ShieldRecharge: 2800, type: int, display: true # full in 70 sec
-  ShieldCooldown: 5, type: int, display: true
-  ShieldPerCrystal: 145, type: int, display: true
+  ShieldCapacity: 70000, type: int, display: true
+  ShieldRecharge: 1400, type: int, display: true # full in 5 sec
+  ShieldCooldown: 10, type: int, display: true
+  ShieldHitCooldown: 10, type: int, display: true
+  ShieldPerCrystal: 250, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSLuxShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -45089,9 +45099,10 @@
   CPUIn: 300000, type: int, display: true
   EnergyInIdle: 5000, type: int, display: true, formatter: Watt
   ShieldCapacity: 450000, type: int, display: true
-  ShieldRecharge: 20500, type: int, display: true # full in 70 sec
+  ShieldRecharge: 9000, type: int, display: true # full in 70 sec
   ShieldCooldown: 25, type: int, display: true
-  ShieldPerCrystal: 275, type: int, display: true
+  ShieldHitCooldown: 25, type: int, display: true
+  ShieldPerCrystal: 300, type: int, display: true
   ParticleName: @hws_blastparticles/HWSLuxShieldExplosionLarge
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -45150,10 +45161,11 @@
   EnergyIn: 6000, type: int, display: true, formatter: Watt
   CPUIn: 18750, type: int, display: true
   EnergyInIdle: 450, type: int, display: true, formatter: Watt
-  ShieldCapacity: 65000, type: int, display: true
-  ShieldRecharge: 1800, type: int, display: true # full in 70 sec
-  ShieldCooldown: 5, type: int, display: true
-  ShieldPerCrystal: 145, type: int, display: true
+  ShieldCapacity: 70000, type: int, display: true
+  ShieldRecharge: 1400, type: int, display: true # full in 5 sec
+  ShieldCooldown: 10, type: int, display: true
+  ShieldHitCooldown: 10, type: int, display: true
+  ShieldPerCrystal: 250, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSNoxShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -45212,9 +45224,10 @@
   CPUIn: 300000, type: int, display: true
   EnergyInIdle: 5000, type: int, display: true, formatter: Watt
   ShieldCapacity: 450000, type: int, display: true
-  ShieldRecharge: 13500, type: int, display: true # full in 70 sec
+  ShieldRecharge: 9000, type: int, display: true # full in 70 sec
   ShieldCooldown: 25, type: int, display: true
-  ShieldPerCrystal: 275, type: int, display: true
+  ShieldHitCooldown: 25, type: int, display: true
+  ShieldPerCrystal: 300, type: int, display: true
   ParticleName: @hws_blastparticles/HWSNoxShieldExplosionLarge
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -45273,10 +45286,11 @@
   EnergyIn: 9000, type: int, display: true, formatter: Watt
   CPUIn: 28000, type: int, display: true
   EnergyInIdle: 675, type: int, display: true, formatter: Watt
-  ShieldCapacity: 65000, type: int, display: true
-  ShieldRecharge: 1800, type: int, display: true # full in 70 sec
-  ShieldCooldown: 5, type: int, display: true
-  ShieldPerCrystal: 145, type: int, display: true
+  ShieldCapacity: 70000, type: int, display: true
+  ShieldRecharge: 1400, type: int, display: true # full in 5 sec
+  ShieldCooldown: 15, type: int, display: true
+  ShieldHitCooldown: 15, type: int, display: true
+  ShieldPerCrystal: 225, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSStrangeletShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -45335,8 +45349,9 @@
   CPUIn: 450000, type: int, display: true
   EnergyInIdle: 7500, type: int, display: true, formatter: Watt
   ShieldCapacity: 450000, type: int, display: true
-  ShieldRecharge: 13500, type: int, display: true # full in 70 sec
-  ShieldCooldown: 25, type: int, display: true
+  ShieldRecharge: 8500, type: int, display: true # full in 70 sec
+  ShieldCooldown: 30, type: int, display: true
+  ShieldHitCooldown: 30, type: int, display: true
   ShieldPerCrystal: 275, type: int, display: true
   ParticleName: @hws_blastparticles/HWSStrangeletShieldExplosionLarge
   BlastParticleIndex: 8
@@ -45544,7 +45559,7 @@
   IndexName: ShieldExtender
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 378240, display: true
-  ShieldCapacityBonus: 4000, type: int, display: true
+  ShieldCapacityBonus: 5000, type: int, display: true
   NPCModelRotation: false
   IsTextureable: true
   IsColorable: true
