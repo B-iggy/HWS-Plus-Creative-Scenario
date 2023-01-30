@@ -23357,7 +23357,7 @@
     Range: 800
     SpeedSpace: 810
     RangeSpace: 1350
-    Ballistic: true
+    Ballistic: false
     Buff: "FractureOpen,BrokenLeg,Mutilation,Stunned"
     Buff_chance: "0.3,0.3,0.3,0.5"
 
@@ -23791,7 +23791,7 @@
     Speed: 325
     Range: 650
     SpeedSpace: 690
-    RangeSpace: 1350
+    RangeSpace: 1150
     Ballistic: false
     Buff: "FractureOpen,BrokenLeg,Mutilation,Stunned"
     Buff_chance: "0.3,0.3,0.3,0.5"
@@ -23822,7 +23822,7 @@
     Range: 800
     SpeedSpace: 810
     RangeSpace: 1350
-    Ballistic: true
+    Ballistic: false
     Buff: "FractureOpen,BrokenLeg,Mutilation,Stunned"
     Buff_chance: "0.3,0.3,0.3,0.5"
 

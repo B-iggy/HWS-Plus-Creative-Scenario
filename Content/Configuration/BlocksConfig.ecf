@@ -30639,7 +30639,7 @@
   MaxCount: 4, type: int, display: true
   ForceMaxCount: true
   EnergyIn: 30, type: int, display: true, formatter: Watt
-  CPUOut: 11250, type: int, display: true
+  CPUOut: 10000, type: int, display: true
   CPUExtenderLevel: 4, type: int, display: true
   HitPoints: 330, type: int, display: true
   BlastRadius: 2
@@ -45559,7 +45559,7 @@
   IndexName: ShieldExtender
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 378240, display: true
-  ShieldCapacityBonus: 5000, type: int, display: true
+  ShieldCapacityBonus: 4500, type: int, display: true
   NPCModelRotation: false
   IsTextureable: true
   IsColorable: true
