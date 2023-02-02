@@ -34374,7 +34374,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSAquaChaosTurretBA, HWSTerraChaosTurretBA, HWSPyroChaosTurretBA, HWSObsidianChaosTurretBA, HWSLuxChaosTurretBA, HWSNoxChaosTurretBA, HWSStrangeletChaosTurretBA"
-  MaxCount: 6, type: int, display: true
+  MaxCount: 8, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -39643,7 +39643,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSAquaChaosTurretHV, HWSTerraChaosTurretHV, HWSPyroChaosTurretHV, HWSObsidianChaosTurretHV, HWSLuxChaosTurretHV, HWSNoxChaosTurretHV, HWSStrangeletChaosTurretHV"
-  MaxCount: 4, type: int, display: true
+  MaxCount: 6, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -40019,7 +40019,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSAquaGunHVT1, HWSAquaGunHVT2"
-  MaxCount: 8, type: int, display: true
+  MaxCount: 10, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -40161,7 +40161,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSTerraGunHVT1, HWSTerraGunHVT2"
-  MaxCount: 8, type: int, display: true
+  MaxCount: 10, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -40303,7 +40303,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSPyroGunHVT1, HWSPyroGunHVT2"
-  MaxCount: 8, type: int, display: true
+  MaxCount: 10, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -40445,7 +40445,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSObsidianGunHVT1, HWSObsidianGunHVT2"
-  MaxCount: 8, type: int, display: true
+  MaxCount: 10, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -40587,7 +40587,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSLuxGunHVT1, HWSLuxGunHVT2"
-  MaxCount: 8, type: int, display: true
+  MaxCount: 10, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -40728,7 +40728,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSNoxGunHVT1, HWSNoxGunHVT2"
-  MaxCount: 8, type: int, display: true
+  MaxCount: 10, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -40869,7 +40869,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSStrangeletGunHVT1, HWSStrangeletGunHVT2"
-  MaxCount: 8, type: int, display: true
+  MaxCount: 10, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -42280,7 +42280,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSAquaGunSVT1, HWSAquaGunSVT2, HWSAquaGunSVT3, HWSAquaGunSVT4"
-  MaxCount: 16, type: int, display: true
+  MaxCount: 18, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -42531,7 +42531,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSTerraGunSVT1, HWSTerraGunSVT2, HWSTerraGunSVT3, HWSTerraGunSVT4"
-  MaxCount: 16, type: int, display: true
+  MaxCount: 18, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -42785,7 +42785,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSPyroGunSVT1, HWSPyroGunSVT2, HWSPyroGunSVT3, HWSPyroGunSVT4"
-  MaxCount: 16, type: int, display: true
+  MaxCount: 18, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -43036,7 +43036,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSObsidianGunSVT1, HWSObsidianGunSVT2, HWSObsidianGunSVT3, HWSObsidianGunSVT4"
-  MaxCount: 16, type: int, display: true
+  MaxCount: 18, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -43287,7 +43287,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSLuxGunSVT1, HWSLuxGunSVT2, HWSLuxGunSVT3, HWSLuxGunSVT4"
-  MaxCount: 16, type: int, display: true
+  MaxCount: 18, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -43536,7 +43536,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSNoxGunSVT1, HWSNoxGunSVT2, HWSNoxGunSVT3, HWSNoxGunSVT4"
-  MaxCount: 16, type: int, display: true
+  MaxCount: 18, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -43787,7 +43787,7 @@
   IsColorable: false
   Category: Weapons/Items
   ChildBlocks: "HWSStrangeletGunSVT1, HWSStrangeletGunSVT2, HWSStrangeletGunSVT3, HWSStrangeletGunSVT4"
-  MaxCount: 16, type: int, display: true
+  MaxCount: 18, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 

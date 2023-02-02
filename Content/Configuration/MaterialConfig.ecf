@@ -180,8 +180,8 @@
   particle_category: alien
   particle_destroy_category: alien
   stepsound: plants
-  stability_glue: 200
-  Mass: 10, type: float, display: false, formatter: Kilogram
+  stability_glue: 97500
+  Mass: 3900, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
   HitPoints: 150, type: int, display: false
   O2Content: 30, type: int, display: false
@@ -194,8 +194,8 @@
   particle_category: wood
   particle_destroy_category: wood
   stepsound: wood
-  stability_glue: 600
-  Mass: 30, type: float, display: false, formatter: Kilogram
+  stability_glue: 5400
+  Mass: 450, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
   HitPoints: 10, type: int, display: false
 }
@@ -205,8 +205,8 @@
   particle_category: stone
   particle_destroy_category: stone
   stepsound: stone
-  stability_glue: 24000
-  Mass: 2000, type: float, display: false, formatter: Kilogram
+  stability_glue: 72000
+  Mass: 4000, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
   HitPoints: 100, type: int, display: false
   ExplosionHardness: 1
@@ -217,8 +217,8 @@
   particle_category: stone
   particle_destroy_category: stone
   stepsound: stone
-  stability_glue: 26000
-  Mass: 2000, type: float, display: false, formatter: Kilogram
+  stability_glue: 124800
+  Mass: 5200, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
   HitPoints: 2200, type: int, display: false
   ExplosionHardness: 1
@@ -229,8 +229,8 @@
   particle_category: metal
   particle_destroy_category: metal
   stepsound: metal
-  stability_glue: 1000      # due to solar panel stability
-  Mass: 20, type: float, display: false, formatter: Kilogram
+  stability_glue: 3500      # due to solar panel stability
+  Mass: 100, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
   HitPoints: 25, type: int, display: false
 }
@@ -238,8 +238,8 @@
   damage_category: metal
   surface_category: metal
   stepsound: metal
-  stability_glue: 200
-  Mass: 20, type: float, display: false, formatter: Kilogram
+  stability_glue: 3000
+  Mass: 100, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
   HitPoints: 50, type: int, display: false
 }
@@ -249,8 +249,8 @@
   particle_category: metal
   particle_destroy_category: metal
   stepsound: metal
-  stability_glue: 200
-  Mass: 20, type: float, display: false, formatter: Kilogram
+  stability_glue: 3500
+  Mass: 100, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
   HitPoints: 80, type: int, display: false
 }
@@ -260,8 +260,8 @@
   particle_category: plastic
   particle_destroy_category: plastic
   stepsound: metal
-  stability_glue: 1280
-  Mass: 80, type: float, display: false, formatter: Kilogram
+  stability_glue: 2700
+  Mass: 180, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
   HitPoints: 25, type: int, display: false
   ExplosionHardness: 1
@@ -273,8 +273,8 @@
   particle_category: metal
   particle_destroy_category: metal
   stepsound: metal
-  stability_glue: 960
-  Mass: 80, type: float, display: false, formatter: Kilogram
+  stability_glue: 1200
+  Mass: 100, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
   HitPoints: 25, type: int, display: false
 }
@@ -284,8 +284,8 @@
   particle_category: metal
   particle_destroy_category: metal
   stepsound: metal
-  stability_glue: 2040
-  Mass: 120, type: float, display: false, formatter: Kilogram
+  stability_glue: 16000
+  Mass: 1000, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
   HitPoints: 50, type: int, display: false
 }
@@ -295,8 +295,8 @@
   particle_category: metal
   particle_destroy_category: metal
   stepsound: metal
-  stability_glue: 31200
-  Mass: 2400, type: float, display: false, formatter: Kilogram
+  stability_glue: 44100
+  Mass: 2450, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
   HitPoints: 1600, type: int, display: false
   ExplosionHardness: 1
@@ -307,8 +307,8 @@
   particle_category: metal
   particle_destroy_category: metal
   stepsound: metal
-  stability_glue: 53200
-  Mass: 3800, type: float, display: false, formatter: Kilogram
+  stability_glue: 88000
+  Mass: 4000, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
   HitPoints: 3500, type: int, display: false
   ExplosionHardness: 1
@@ -321,8 +321,8 @@
   particle_category: metal
   particle_destroy_category: metal
   stepsound: metal
-  stability_glue: 100
-  Mass: 20, type: float, display: false, formatter: Kilogram
+  stability_glue: 1600
+  Mass: 200, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
   HitPoints: 20, type: int, display: false
 }
@@ -332,8 +332,8 @@
   particle_category: metal
   particle_destroy_category: metal
   stepsound: metal
-  stability_glue: 100
-  Mass: 10, type: float, display: false, formatter: Kilogram
+  stability_glue: 1500
+  Mass: 150, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
   HitPoints: 20, type: int, display: false
 }
