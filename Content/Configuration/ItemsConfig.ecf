@@ -27174,7 +27174,7 @@
 { Item Id: 4095, Name: HWSOriginGunAmmo
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Meshfile: @hws_projectiles/HWSProjectileAllOriginGun
-  DropMeshfile: @hws_itemmodels/HWSDealerOriginGun
+  DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_weapon_kinetic, display: true
   MarketPrice: 1000, display: true
   HoldType: 0
