@@ -16417,7 +16417,7 @@
   { Child 0
     Class: LauncherSS # Projectile Splash
     AllowAt: "Space,Planet"
-    ROF: 2.4, type: float, display: true, formatter: ROF
+    ROF: 2.625, type: float, display: true, formatter: ROF
     Range: 650, display: false
     RangeSpace: 1150, display: false
     AmmoCapacity: 10, display: true
@@ -16425,7 +16425,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 5.25, display: true # adapt sound
+    ReloadDelay: 4.875, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16442,10 +16442,10 @@
   { Child 0
     Class: LauncherSS # Projectile Splash
     AllowAt: "Space,Planet"
-    ROF: 2.6, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 800, display: false
     RangeSpace: 1350, display: false
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSAquaBAT2Ammo, display: true
     NoiseStrength: 500, display: false
     CameraShake: 4
@@ -16468,7 +16468,7 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 1.125, type: float, display: true, formatter: ROF
+    ROF: 1.1, type: float, display: true, formatter: ROF
     Range: 850, display: true
     RangeSpace: 1350, display: true
     BulletSpread: 0.045, display: false
@@ -16515,7 +16515,7 @@
     AmmoType: HWSAquaBAT4Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 4.85, display: true # adapt sound
+    ReloadDelay: 4.5, display: true # adapt sound
     # SfxBegin: Weapons/Turret/laser_turret_fire2
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16539,19 +16539,19 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 2.3, type: float, display: true, formatter: ROF
+    ROF: 3.375, type: float, display: true, formatter: ROF
     Range: 900, display: true
     RangeSpace: 1400, display: true
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
     Damage: 8500, display: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AutoReload: true
     AmmoType: HWSAquaBAT5Ammo, display: true
     NoiseStrength: 650, display: false
     CameraShake: 2
-    ReloadDelay: 6.75, display: true # adapt sound
+    ReloadDelay: 7.5, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16575,7 +16575,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3.2, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: false
     RangeSpace: 1150, display: false
     AmmoCapacity: 15, display: true
@@ -16583,7 +16583,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 7, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16600,10 +16600,10 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 800, display: false
     RangeSpace: 1350, display: false
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 15, display: true
     AmmoType: HWSTerraBAT2Ammo, display: true
     NoiseStrength: 500, display: false
     CameraShake: 4
@@ -16672,7 +16672,7 @@
     AmmoType: HWSTerraBAT4Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 6.5, display: true # adapt sound
+    ReloadDelay: 6, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16697,19 +16697,19 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 900, display: true
     RangeSpace: 1400, display: true
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
     Damage: 8500, display: true
-    AmmoCapacity: 35, display: true
+    AmmoCapacity: 15, display: true
     AutoReload: true
     AmmoType: HWSTerraBAT5Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 9, display: true # adapt sound
+    ReloadDelay: 10, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16733,7 +16733,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3.2, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: false
     RangeSpace: 1150, display: false
     AmmoCapacity: 10, display: true
@@ -16741,7 +16741,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 7, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16758,10 +16758,10 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 800, display: false
     RangeSpace: 1350, display: false
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSPyroBAT2Ammo, display: true
     NoiseStrength: 500, display: false
     CameraShake: 4
@@ -16830,7 +16830,7 @@
     AmmoType: HWSPyroBAT4Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 6.5, display: true # adapt sound
+    ReloadDelay: 6, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16854,19 +16854,19 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 900, display: true
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
     Damage: 8500, display: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AutoReload: true
     AmmoType: HWSPyroBAT5Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 9, display: true # adapt sound
+    ReloadDelay: 10, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16890,7 +16890,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3.2, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: false
     RangeSpace: 1150, display: false
     AmmoCapacity: 10, display: true
@@ -16898,7 +16898,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 10.5, display: true # adapt sound
+    ReloadDelay: 9.75, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -16915,10 +16915,10 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 800, display: false
     RangeSpace: 1350, display: false
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSObsidianBAT2Ammo, display: true
     NoiseStrength: 500, display: false
     CameraShake: 4
@@ -16987,7 +16987,7 @@
     AmmoType: HWSObsidianBAT4Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 9.75, display: true # adapt sound
+    ReloadDelay: 9, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17011,19 +17011,19 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 900, display: true
     RangeSpace: 1400, display: true
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
     Damage: 8500, display: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AutoReload: true
     AmmoType: HWSObsidianBAT5Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 13.5, display: true # adapt sound
+    ReloadDelay: 15, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17047,7 +17047,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3.2, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 800, display: false
     RangeSpace: 1300, display: false
     AmmoCapacity: 5, display: true
@@ -17055,7 +17055,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 7, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17072,10 +17072,10 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 950, display: false
     RangeSpace: 1500, display: false
-    AmmoCapacity: 10, display: true
+    AmmoCapacity: 5, display: true
     AmmoType: HWSLuxBAT2Ammo, display: true
     NoiseStrength: 500, display: false
     CameraShake: 4
@@ -17144,7 +17144,7 @@
     AmmoType: HWSLuxBAT4Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 6.5, display: true # adapt sound
+    ReloadDelay: 6, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17168,19 +17168,19 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 1050, display: true
     RangeSpace: 1550, display: true
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 1550
     Damage: 8500, display: true
-    AmmoCapacity: 12, display: true
+    AmmoCapacity: 5, display: true
     AutoReload: true
     AmmoType: HWSLuxBAT5Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 9, display: true # adapt sound
+    ReloadDelay: 10, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17204,7 +17204,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3.2, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 325, display: false
     RangeSpace: 575, display: false
     AmmoCapacity: 10, display: true
@@ -17212,7 +17212,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 8, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17229,15 +17229,15 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 400, display: false
     RangeSpace: 675, display: false
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSNoxBAT2Ammo, display: true
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 8, display: true # adapt sound
+    ReloadDelay: 7, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17301,7 +17301,7 @@
     AmmoType: HWSNoxBAT4Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 6.5, display: true # adapt sound
+    ReloadDelay: 6, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17325,19 +17325,19 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 700, display: true
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 450
     Damage: 8500, display: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AutoReload: true
     AmmoType: HWSNoxBAT5Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 9, display: true # adapt sound
+    ReloadDelay: 10, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17361,7 +17361,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3.2, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: false
     RangeSpace: 1150, display: false
     AmmoCapacity: 10, display: true
@@ -17369,7 +17369,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 8, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17386,7 +17386,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 3.5, type: float, display: true, formatter: ROF
+    ROF: 4, type: float, display: true, formatter: ROF
     Range: 800, display: false
     RangeSpace: 1350, display: false
     AmmoCapacity: 20, display: true
@@ -17394,7 +17394,7 @@
     NoiseStrength: 500, display: false
     CameraShake: 4
     AutoReload: true
-    ReloadDelay: 8, display: true # adapt sound
+    ReloadDelay: 7, display: true # adapt sound
     # SfxBegin: Weapons/MS/Turret/Cannon_2
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_001
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17458,7 +17458,7 @@
     AmmoType: HWSStrangeletBAT4Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 6.5, display: true # adapt sound
+    ReloadDelay: 6, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17483,19 +17483,19 @@
     Class: Ranged # Projectile Hitscan
     IsShootThroughCrosshair: true
     AllowAt: "Space,Planet"
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 900, display: true
     RangeSpace: 1400, display: true
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
     Damage: 8500, display: true
-    AmmoCapacity: 100, display: true
+    AmmoCapacity: 10, display: true
     AutoReload: true
     AmmoType: HWSStrangeletBAT5Ammo, display: true
     NoiseStrength: 120, display: false
     CameraShake: 2
-    ReloadDelay: 9, display: true # adapt sound
+    ReloadDelay: 10, display: true # adapt sound
     # SfxBegin: Weapons/Player/Misc/Single/AWDSDracoHeavySingle
     # SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17530,7 +17530,7 @@
   { Child 0
     Class: LauncherSS
     AllowAt: Space
-    ROF: 3.4, type: float, display: true, formatter: ROF
+    ROF: 3.375, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Automatic: true
@@ -17605,7 +17605,7 @@
     AmmoType: HWSAquaCVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 4.875, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17637,16 +17637,16 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 2.4, type: float, display: true, formatter: ROF
+    ROF: 3.75, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
     Damage: 7500, display: true
     Automatic: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSAquaCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 7.5, display: true # adapt sound
+    ReloadDelay: 9, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17687,7 +17687,7 @@
     AmmoType: HWSAquaCVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4.5, display: true # adapt sound
+    ReloadDelay: 4.875, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17706,7 +17706,7 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 0.9, type: float, display: true, formatter: ROF
+    ROF: 0.94, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Damage: 750, display: true
@@ -17715,7 +17715,7 @@
     AmmoType: HWSAquaCVT2Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 2.25, display: true # adapt sound
+    ReloadDelay: 2.625, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17747,12 +17747,12 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 2.4, type: float, display: true, formatter: ROF
+    ROF: 3.375, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
     Damage: 8000, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSAquaCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -17863,7 +17863,7 @@
     AmmoType: HWSTerraCVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 8, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17895,16 +17895,16 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
     Damage: 7500, display: true
     Automatic: true
-    AmmoCapacity: 35, display: true
+    AmmoCapacity: 15, display: true
     AmmoType: HWSTerraCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 10, display: true # adapt sound
+    ReloadDelay: 12, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17945,7 +17945,7 @@
     AmmoType: HWSTerraCVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -17964,7 +17964,7 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 1.2, type: float, display: true, formatter: ROF
+    ROF: 1.25, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Damage: 750, display: true
@@ -17973,7 +17973,7 @@
     AmmoType: HWSTerraCVT2Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 3.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18005,12 +18005,12 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
     Damage: 8000, display: true
     Automatic: true
-    AmmoCapacity: 30, display: true
+    AmmoCapacity: 15, display: true
     AmmoType: HWSTerraCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -18121,7 +18121,7 @@
     AmmoType: HWSPyroCVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 8, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18153,16 +18153,16 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
     Damage: 7500, display: true
     Automatic: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSPyroCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 10, display: true # adapt sound
+    ReloadDelay: 12, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18203,7 +18203,7 @@
     AmmoType: HWSPyroCVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18222,7 +18222,7 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 1.2, type: float, display: true, formatter: ROF
+    ROF: 1.25, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Damage: 750, display: true
@@ -18231,7 +18231,7 @@
     AmmoType: HWSPyroCVT2Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 3.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18263,12 +18263,12 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
     Damage: 8000, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSPyroCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -18379,7 +18379,7 @@
     AmmoType: HWSObsidianCVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 12, display: true # adapt sound
+    ReloadDelay: 9.75, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18411,16 +18411,16 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
     Damage: 7500, display: true
     Automatic: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSObsidianCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 15, display: true # adapt sound
+    ReloadDelay: 18, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18461,7 +18461,7 @@
     AmmoType: HWSObsidianCVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 9, display: true # adapt sound
+    ReloadDelay: 9.75, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18480,7 +18480,7 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 1.2, type: float, display: true, formatter: ROF
+    ROF: 1.25, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Damage: 750, display: true
@@ -18489,7 +18489,7 @@
     AmmoType: HWSObsidianCVT2Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4.5, display: true # adapt sound
+    ReloadDelay: 5.25, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18521,12 +18521,12 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
     Damage: 8000, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSObsidianCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -18637,7 +18637,7 @@
     AmmoType: HWSLuxCVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 8, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18669,16 +18669,16 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 5, type: float, display: true, formatter: ROF
     Range: 800, display: true
     RangeSpace: 1400, display: true
     Damage: 7500, display: true
     Automatic: true
-    AmmoCapacity: 10, display: true
+    AmmoCapacity: 5, display: true
     AmmoType: HWSLuxCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 10, display: true # adapt sound
+    ReloadDelay: 12, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18719,7 +18719,7 @@
     AmmoType: HWSLuxCVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18738,7 +18738,7 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 1.2, type: float, display: true, formatter: ROF
+    ROF: 1.25, type: float, display: true, formatter: ROF
     Range: 750, display: true
     RangeSpace: 1350, display: true
     Damage: 750, display: true
@@ -18747,7 +18747,7 @@
     AmmoType: HWSLuxCVT2Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 3.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18779,12 +18779,12 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 800, display: true
     RangeSpace: 1400, display: true
     Damage: 8000, display: true
     Automatic: true
-    AmmoCapacity: 10, display: true
+    AmmoCapacity: 5, display: true
     AmmoType: HWSLuxCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -18895,7 +18895,7 @@
     AmmoType: HWSNoxCVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 8, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18927,16 +18927,16 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 5, type: float, display: true, formatter: ROF
     Range: 350, display: true
     RangeSpace: 625, display: true
     Damage: 7500, display: true
     Automatic: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSNoxCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 10, display: true # adapt sound
+    ReloadDelay: 12, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18977,7 +18977,7 @@
     AmmoType: HWSNoxCVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -18996,7 +18996,7 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 1.2, type: float, display: true, formatter: ROF
+    ROF: 1.25, type: float, display: true, formatter: ROF
     Range: 325, display: true
     RangeSpace: 600, display: true
     Damage: 750, display: true
@@ -19005,7 +19005,7 @@
     AmmoType: HWSNoxCVT2Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 3.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -19037,12 +19037,12 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 350, display: true
     RangeSpace: 625, display: true
     Damage: 8000, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSNoxCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -19153,7 +19153,7 @@
     AmmoType: HWSStrangeletCVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 8, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -19185,16 +19185,16 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
     Damage: 7500, display: true
     Automatic: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSStrangeletCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 10, display: true # adapt sound
+    ReloadDelay: 12, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -19235,7 +19235,7 @@
     AmmoType: HWSStrangeletCVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 6.5, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -19254,7 +19254,7 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 1.2, type: float, display: true, formatter: ROF
+    ROF: 1.25, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 1200, display: true
     Damage: 750, display: true
@@ -19263,7 +19263,7 @@
     AmmoType: HWSStrangeletCVT2Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 3.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -19295,12 +19295,12 @@
   { Child 0
     Class: Ranged
     AllowAt: Space
-    ROF: 3, type: float, display: true, formatter: ROF
+    ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
     Damage: 8000, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSStrangeletCVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -19370,7 +19370,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 0.45, type: float, display: true, formatter: ROF
+    ROF: 0.375, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Damage: 150, display: true
@@ -19417,7 +19417,7 @@
     AmmoType: HWSAquaHVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4.5, display: true # adapt sound
+    ReloadDelay: 3.75, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -19447,12 +19447,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 1.5, type: float, display: true, formatter: ROF
+    ROF: 2.25, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1100, display: true
+    Damage: 1050, display: true
     Automatic: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSAquaHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -19515,12 +19515,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 1.6, type: float, display: true, formatter: ROF
+    ROF: 2.625, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1250, display: true
+    Damage: 1200, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSAquaHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -19580,7 +19580,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 0.6, type: float, display: true, formatter: ROF
+    ROF: 0.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Damage: 150, display: true
@@ -19628,7 +19628,7 @@
     AmmoType: HWSTerraHVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -19658,12 +19658,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1100, display: true
+    Damage: 1050, display: true
     Automatic: true
-    AmmoCapacity: 35, display: true
+    AmmoCapacity: 15, display: true
     AmmoType: HWSTerraHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -19725,12 +19725,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2.2, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1250, display: true
+    Damage: 1200, display: true
     Automatic: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSTerraHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -19790,7 +19790,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 0.6, type: float, display: true, formatter: ROF
+    ROF: 0.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Damage: 150, display: true
@@ -19838,7 +19838,7 @@
     AmmoType: HWSPyroHVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -19868,12 +19868,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1100, display: true
+    Damage: 1050, display: true
     Automatic: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSPyroHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -19935,12 +19935,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2.2, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1250, display: true
+    Damage: 1200, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSPyroHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -20000,7 +20000,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 0.6, type: float, display: true, formatter: ROF
+    ROF: 0.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Damage: 150, display: true
@@ -20048,7 +20048,7 @@
     AmmoType: HWSObsidianHVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 9, display: true # adapt sound
+    ReloadDelay: 7.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -20078,12 +20078,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1100, display: true
+    Damage: 1050, display: true
     Automatic: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSObsidianHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -20145,12 +20145,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2.2, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1250, display: true
+    Damage: 1200, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSObsidianHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -20210,7 +20210,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 0.6, type: float, display: true, formatter: ROF
+    ROF: 0.5, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 800, display: true
     Damage: 150, display: true
@@ -20258,7 +20258,7 @@
     AmmoType: HWSLuxHVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -20288,12 +20288,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 900, display: true
-    Damage: 1100, display: true
+    Damage: 1050, display: true
     Automatic: true
-    AmmoCapacity: 12, display: true
+    AmmoCapacity: 5, display: true
     AmmoType: HWSLuxHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -20355,12 +20355,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2.2, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 900, display: true
-    Damage: 1250, display: true
+    Damage: 1200, display: true
     Automatic: true
-    AmmoCapacity: 10, display: true
+    AmmoCapacity: 5, display: true
     AmmoType: HWSLuxHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -20420,7 +20420,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 0.6, type: float, display: true, formatter: ROF
+    ROF: 0.5, type: float, display: true, formatter: ROF
     Range: 250, display: true
     RangeSpace: 350, display: true
     Damage: 150, display: true
@@ -20468,7 +20468,7 @@
     AmmoType: HWSNoxHVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -20498,12 +20498,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 275, display: true
     RangeSpace: 400, display: true
-    Damage: 1100, display: true
+    Damage: 1050, display: true
     Automatic: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSNoxHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -20539,7 +20539,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 250, display: true
     RangeSpace: 350, display: true
     Automatic: true
@@ -20565,12 +20565,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2.2, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 275, display: true
     RangeSpace: 400, display: true
-    Damage: 1250, display: true
+    Damage: 1200, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSNoxHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -20630,7 +20630,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 0.6, type: float, display: true, formatter: ROF
+    ROF: 0.5, type: float, display: true, formatter: ROF
     Range: 500, display: true
     RangeSpace: 700, display: true
     Damage: 150, display: true
@@ -20678,7 +20678,7 @@
     AmmoType: HWSStrangeletHVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -20708,12 +20708,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2, type: float, display: true, formatter: ROF
+    ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1100, display: true
+    Damage: 1050, display: true
     Automatic: true
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSStrangeletHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -20776,12 +20776,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2.2, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1250, display: true
+    Damage: 1200, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSStrangeletHVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -20835,7 +20835,7 @@
     AmmoType: HWSAquaSVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 3.375, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -20853,7 +20853,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 0.3, type: float, display: true, formatter: ROF
+    ROF: 0.225, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
     Damage: 100, display: true
@@ -20862,7 +20862,7 @@
     AmmoType: HWSAquaSVT2Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 2.25, display: true # adapt sound
+    ReloadDelay: 3, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -20963,7 +20963,7 @@
     ROF: 0.15, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
-    Damage: 80, display: true
+    Damage: 70, display: true
     Automatic: true
     AmmoCapacity: 100, display: true
     AmmoType: HWSAquaSVT3Ammo, display: true
@@ -21001,12 +21001,12 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 1.875, type: float, display: true, formatter: ROF
+    ROF: 2.625, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1000, display: true
+    Damage: 950, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSAquaSVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -21050,7 +21050,7 @@
     AmmoType: HWSTerraSVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4, display: true # adapt sound
+    ReloadDelay: 4.5, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21067,7 +21067,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 0.4, type: float, display: true, formatter: ROF
+    ROF: 0.3, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
     Damage: 100, display: true
@@ -21076,7 +21076,7 @@
     AmmoType: HWSTerraSVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 4, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21177,13 +21177,13 @@
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
-    Damage: 80, display: true
+    Damage: 70, display: true
     Automatic: true
     AmmoCapacity: 150, display: true
     AmmoType: HWSTerraSVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 3.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21215,16 +21215,16 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2.5, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1000, display: true
+    Damage: 950, display: true
     Automatic: true
-    AmmoCapacity: 30, display: true
+    AmmoCapacity: 15, display: true
     AmmoType: HWSTerraSVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 8, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21264,7 +21264,7 @@
     AmmoType: HWSPyroSVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4, display: true # adapt sound
+    ReloadDelay: 4.5, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21281,7 +21281,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 0.4, type: float, display: true, formatter: ROF
+    ROF: 0.3, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
     Damage: 100, display: true
@@ -21290,7 +21290,7 @@
     AmmoType: HWSPyroSVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 4, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21391,13 +21391,13 @@
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
-    Damage: 80, display: true
+    Damage: 70, display: true
     Automatic: true
     AmmoCapacity: 100, display: true
     AmmoType: HWSPyroSVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 3.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21428,16 +21428,16 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2.5, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1000, display: true
+    Damage: 950, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSPyroSVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 8, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21477,7 +21477,7 @@
     AmmoType: HWSObsidianSVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 6.75, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21494,7 +21494,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 0.4, type: float, display: true, formatter: ROF
+    ROF: 0.3, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
     Damage: 100, display: true
@@ -21503,7 +21503,7 @@
     AmmoType: HWSObsidianSVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4.5, display: true # adapt sound
+    ReloadDelay: 6, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21605,13 +21605,13 @@
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
-    Damage: 80, display: true
+    Damage: 70, display: true
     Automatic: true
     AmmoCapacity: 100, display: true
     AmmoType: HWSObsidianSVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4.5, display: true # adapt sound
+    ReloadDelay: 5.25, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21642,16 +21642,16 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2.5, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1000, display: true
+    Damage: 950, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSObsidianSVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 9, display: true # adapt sound
+    ReloadDelay: 12, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21691,7 +21691,7 @@
     AmmoType: HWSLuxSVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 4.5, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21709,7 +21709,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 0.4, type: float, display: true, formatter: ROF
+    ROF: 0.3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 700, display: true
     Damage: 100, display: true
@@ -21718,7 +21718,7 @@
     AmmoType: HWSLuxSVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 4, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21820,13 +21820,13 @@
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 700, display: true
-    Damage: 80, display: true
+    Damage: 70, display: true
     Automatic: true
     AmmoCapacity: 50, display: true
     AmmoType: HWSLuxSVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 3.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21857,16 +21857,16 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2.5, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 630, display: true
     RangeSpace: 900, display: true
-    Damage: 1000, display: true
+    Damage: 950, display: true
     Automatic: true
-    AmmoCapacity: 10, display: true
+    AmmoCapacity: 5, display: true
     AmmoType: HWSLuxSVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 8, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21906,7 +21906,7 @@
     AmmoType: HWSNoxSVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4, display: true # adapt sound
+    ReloadDelay: 4.5, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -21923,7 +21923,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 0.4, type: float, display: true, formatter: ROF
+    ROF: 0.3, type: float, display: true, formatter: ROF
     Range: 225, display: true
     RangeSpace: 300, display: true
     Damage: 100, display: true
@@ -21932,7 +21932,7 @@
     AmmoType: HWSNoxSVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 4, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22000,7 +22000,7 @@
     AmmoType: HWSNoxSVT2Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 2.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22034,13 +22034,13 @@
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 225, display: true
     RangeSpace: 300, display: true
-    Damage: 80, display: true
+    Damage: 70, display: true
     Automatic: true
     AmmoCapacity: 100, display: true
     AmmoType: HWSNoxSVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 3.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22071,16 +22071,16 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2.5, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 265, display: true
     RangeSpace: 400, display: true
-    Damage: 1000, display: true
+    Damage: 950, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSNoxSVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 8, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22120,7 +22120,7 @@
     AmmoType: HWSStrangeletSVT1Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 4, display: true # adapt sound
+    ReloadDelay: 4.5, display: true # adapt sound
     # SfxBegin: Weapons/SS/RocketHumanSS/flak88_fire03
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_002
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22137,7 +22137,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 0.4, type: float, display: true, formatter: ROF
+    ROF: 0.3, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
     Damage: 100, display: true
@@ -22146,7 +22146,7 @@
     AmmoType: HWSStrangeletSVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 4, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22248,13 +22248,13 @@
     ROF: 0.2, type: float, display: true, formatter: ROF
     Range: 450, display: true
     RangeSpace: 600, display: true
-    Damage: 80, display: true
+    Damage: 70, display: true
     Automatic: true
     AmmoCapacity: 100, display: true
     AmmoType: HWSStrangeletSVT3Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 3, display: true # adapt sound
+    ReloadDelay: 3.5, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22285,16 +22285,16 @@
   Category: Weapons/Items
   { Child 0
     Class: Ranged
-    ROF: 2.5, type: float, display: true, formatter: ROF
+    ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 1000, display: true
+    Damage: 950, display: true
     Automatic: true
     AmmoCapacity: 20, display: true
     AmmoType: HWSStrangeletSVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
-    ReloadDelay: 6, display: true # adapt sound
+    ReloadDelay: 8, display: true # adapt sound
     # SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     SfxNoAmmo: Weapons/Misc/weapon_outofammo_006
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22334,7 +22334,7 @@
     # AmmoUnlimited: true
     AmmoType: HWSAquaBAT2Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 4.2, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22858,14 +22858,14 @@
   { Child 0
     Class: LauncherSS
     AllowAt: "Space,Planet"
-    ROF: 1.8, type: float, display: true, formatter: ROF
+    ROF: 1.7, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     AmmoCapacity: 15, display: false      # no need to display since unlimited ammo
     # AmmoUnlimited: true
     AmmoType: HWSAquaSVT1Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 2.25, display: true
+    ReloadDelay: 2.5, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22890,7 +22890,7 @@
     # AmmoUnlimited: true
     AmmoType: HWSTerraSVT1Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 3, display: true
+    ReloadDelay: 3.375, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22915,7 +22915,7 @@
     # AmmoUnlimited: true
     AmmoType: HWSPyroSVT1Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 3, display: true
+    ReloadDelay: 3.375, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22940,7 +22940,7 @@
     # AmmoUnlimited: true
     AmmoType: HWSObsidianSVT1Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 5, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22965,7 +22965,7 @@
     # AmmoUnlimited: true
     AmmoType: HWSLuxSVT1Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 3, display: true
+    ReloadDelay: 3.375, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -22990,7 +22990,7 @@
     # AmmoUnlimited: true
     AmmoType: HWSNoxSVT1Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 3, display: true
+    ReloadDelay: 3.375, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -23015,7 +23015,7 @@
     # AmmoUnlimited: true
     AmmoType: HWSStrangeletSVT1Ammo, display: true
     NoiseStrength: 100, display: false
-    ReloadDelay: 3, display: true
+    ReloadDelay: 3.375, display: true
     # SfxBegin: Weapons/SS/RocketAlienSS/BLASTERComplexFireTriggerPowerfulRelease
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
@@ -23036,7 +23036,7 @@
   { Child 0
     Class: LauncherSS
     CheckObstructed: true
-    ROF: 1.8, type: float, display: true, formatter: ROF
+    ROF: 1.7, type: float, display: true, formatter: ROF
     Range: 480, display: true
     RangeSpace: 670, display: true
     Automatic: true
