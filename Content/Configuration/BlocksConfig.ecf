@@ -5786,7 +5786,7 @@
   MaxCount: 4, type: int, display: true
   BlastParticleIndex: 8
   BlastRadius: 3
-  BlastDamage: 80
+  BlastDamage: 45
   BlastDamageMultiplier_1: 2, param1: plants|dirt|stone|rock
   BlastDamageMultiplier_2: 10, param1: head|body|HWS_material_aquanpc|HWS_material_terranpc|HWS_material_pyronpc|HWS_material_obsidiannpc|HWS_material_luxnpc|HWS_material_noxnpc|HWS_material_strangeletnpc
   BlastDamageMultiplier_3: 7, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
@@ -5848,7 +5848,7 @@
   MaxCount: 6, type: int, display: true
   BlastParticleIndex: 5
   BlastRadius: 3
-  BlastDamage: 60
+  BlastDamage: 30
   BlastDamageMultiplier_1: 2, param1: plants|dirt|stone|rock
   BlastDamageMultiplier_2: 10, param1: head|body|HWS_material_aquanpc|HWS_material_terranpc|HWS_material_pyronpc|HWS_material_obsidiannpc|HWS_material_luxnpc|HWS_material_noxnpc|HWS_material_strangeletnpc
   BlastDamageMultiplier_3: 7, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
@@ -5911,7 +5911,7 @@
   MaxCount: 4, type: int, display: true
   BlastParticleIndex: 10
   BlastRadius: 3
-  BlastDamage: 60
+  BlastDamage: 35
   BlastDamageMultiplier_1: 2, param1: plants|dirt|stone|rock
   BlastDamageMultiplier_2: 10, param1: head|body|HWS_material_aquanpc|HWS_material_terranpc|HWS_material_pyronpc|HWS_material_obsidiannpc|HWS_material_luxnpc|HWS_material_noxnpc|HWS_material_strangeletnpc
   BlastDamageMultiplier_3: 7, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
@@ -5975,7 +5975,7 @@
   MaxCount: 4, type: int, display: true
   BlastParticleIndex: 10
   BlastRadius: 3
-  BlastDamage: 80
+  BlastDamage: 50
   BlastDamageMultiplier_1: 2, param1: plants|dirt|stone|rock
   BlastDamageMultiplier_2: 10, param1: head|body|HWS_material_aquanpc|HWS_material_terranpc|HWS_material_pyronpc|HWS_material_obsidiannpc|HWS_material_luxnpc|HWS_material_noxnpc|HWS_material_strangeletnpc
   BlastDamageMultiplier_3: 7, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
@@ -6038,7 +6038,7 @@
   MaxCount: 4, type: int, display: true
   BlastParticleIndex: 8
   BlastRadius: 3
-  BlastDamage: 80
+  BlastDamage: 55
   BlastDamageMultiplier_1: 2, param1: plants|dirt|stone|rock
   BlastDamageMultiplier_2: 10, param1: head|body|HWS_material_aquanpc|HWS_material_terranpc|HWS_material_pyronpc|HWS_material_obsidiannpc|HWS_material_luxnpc|HWS_material_noxnpc|HWS_material_strangeletnpc
   BlastDamageMultiplier_3: 7, param1: alien|hull|hullarmored|hullcombat|concrete|wood|plastic
