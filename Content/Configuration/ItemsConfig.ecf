@@ -1945,7 +1945,7 @@
     SfxBegin: Weapons/Player/Sniper/weapon_sniper_004
     #SfxBegin: Weapons/Player/Sniper/Resistance-SniperRifle-01-Single_Shot-03
     # PfxMuzzle: MuzzleFlash5
-    PenetrationDepth: 3, display: true
+    PenetrationDepth: 2, display: true
 
     DamageMultiplier_Group: HWS_EWS_Kinetic_HHW
 
@@ -16365,7 +16365,7 @@
     SfxBegin: Weapons/Player/Sniper/weapon_sniper_004
     #SfxBegin: Weapons/Player/Sniper/Resistance-SniperRifle-01-Single_Shot-03
     # PfxMuzzle: MuzzleFlash5
-    PenetrationDepth: 4, display: true
+    PenetrationDepth: 3, display: true
 
     Tracer: Weapons/Projectiles/sniperBulletPrefab
     TracerPerBullet: 1
@@ -16545,7 +16545,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
-    Damage: 8500, display: true
+    Damage: 4750, display: true
     AmmoCapacity: 10, display: true
     AutoReload: true
     AmmoType: HWSAquaBAT5Ammo, display: true
@@ -16557,7 +16557,7 @@
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
     PfxMuzzle: MuzzleFlashLightningLarge
 
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 4, display: true
     TracerPerBullet: 1
     Tracer: @hws_projectiles/HWSAquaProjectileSmall
 
@@ -16703,7 +16703,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
-    Damage: 8500, display: true
+    Damage: 4750, display: true
     AmmoCapacity: 15, display: true
     AutoReload: true
     AmmoType: HWSTerraBAT5Ammo, display: true
@@ -16715,7 +16715,7 @@
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
     PfxMuzzle: MuzzleFlashLightningLarge
 
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 4, display: true
     TracerPerBullet: 1
     Tracer: @hws_projectiles/HWSTerraProjectileSmall
 
@@ -16860,7 +16860,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
-    Damage: 8500, display: true
+    Damage: 4750, display: true
     AmmoCapacity: 10, display: true
     AutoReload: true
     AmmoType: HWSPyroBAT5Ammo, display: true
@@ -16872,7 +16872,7 @@
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
     PfxMuzzle: MuzzleFlashLightningLarge
 
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 4, display: true
     TracerPerBullet: 1
     Tracer: @hws_projectiles/HWSPyroProjectileSmall
 
@@ -17017,7 +17017,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
-    Damage: 8500, display: true
+    Damage: 4750, display: true
     AmmoCapacity: 10, display: true
     AutoReload: true
     AmmoType: HWSObsidianBAT5Ammo, display: true
@@ -17029,7 +17029,7 @@
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
     PfxMuzzle: MuzzleFlashLightningLarge
 
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 4, display: true
     TracerPerBullet: 1
     Tracer: @hws_projectiles/HWSObsidianProjectileSmall
 
@@ -17174,7 +17174,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 1550
-    Damage: 8500, display: true
+    Damage: 4750, display: true
     AmmoCapacity: 5, display: true
     AutoReload: true
     AmmoType: HWSLuxBAT5Ammo, display: true
@@ -17186,7 +17186,7 @@
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
     PfxMuzzle: MuzzleFlashLightningLarge
 
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 4, display: true
     TracerPerBullet: 1
     Tracer: @hws_projectiles/HWSLuxProjectileSmall
 
@@ -17331,7 +17331,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 450
-    Damage: 8500, display: true
+    Damage: 4750, display: true
     AmmoCapacity: 10, display: true
     AutoReload: true
     AmmoType: HWSNoxBAT5Ammo, display: true
@@ -17343,7 +17343,7 @@
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
     PfxMuzzle: MuzzleFlashLightningLarge
 
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 4, display: true
     TracerPerBullet: 1
     Tracer: @hws_projectiles/HWSNoxProjectileSmall
 
@@ -17489,7 +17489,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 900
-    Damage: 8500, display: true
+    Damage: 4750, display: true
     AmmoCapacity: 10, display: true
     AutoReload: true
     AmmoType: HWSStrangeletBAT5Ammo, display: true
@@ -17501,7 +17501,7 @@
     SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
     PfxMuzzle: MuzzleFlashLightningLarge
 
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 4, display: true
     TracerPerBullet: 1
     Tracer: @hws_projectiles/HWSStrangeletProjectileSmall
 
@@ -17640,7 +17640,7 @@
     ROF: 3.75, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 7500, display: true
+    Damage: 4200, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSAquaCVT4Ammo, display: true
@@ -17653,7 +17653,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSAquaProjectileSmall
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 1000
 
@@ -17750,7 +17750,7 @@
     ROF: 3.375, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8000, display: true
+    Damage: 4500, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSAquaCVT4Ammo, display: true
@@ -17763,7 +17763,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSAquaProjectileSmall
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 3, display: true
     TracerPerBullet: 1
     TracerSpeed: 1000
 
@@ -17898,7 +17898,7 @@
     ROF: 5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 7500, display: true
+    Damage: 4200, display: true
     Automatic: true
     AmmoCapacity: 15, display: true
     AmmoType: HWSTerraCVT4Ammo, display: true
@@ -17911,7 +17911,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSTerraProjectileSmall
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 1000
 
@@ -18008,7 +18008,7 @@
     ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8000, display: true
+    Damage: 4500, display: true
     Automatic: true
     AmmoCapacity: 15, display: true
     AmmoType: HWSTerraCVT4Ammo, display: true
@@ -18021,7 +18021,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSTerraProjectileSmall
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 3, display: true
     TracerPerBullet: 1
     TracerSpeed: 1000
 
@@ -18156,7 +18156,7 @@
     ROF: 5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 7500, display: true
+    Damage: 4200, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSPyroCVT4Ammo, display: true
@@ -18169,7 +18169,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSPyroProjectileSmall
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 1000
 
@@ -18266,7 +18266,7 @@
     ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8000, display: true
+    Damage: 4500, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSPyroCVT4Ammo, display: true
@@ -18279,7 +18279,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSPyroProjectileSmall
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 3, display: true
     TracerPerBullet: 1
     TracerSpeed: 1000
 
@@ -18414,7 +18414,7 @@
     ROF: 5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 7500, display: true
+    Damage: 4200, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSObsidianCVT4Ammo, display: true
@@ -18427,7 +18427,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSObsidianProjectileSmall
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 1000
 
@@ -18524,7 +18524,7 @@
     ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8000, display: true
+    Damage: 4500, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSObsidianCVT4Ammo, display: true
@@ -18537,7 +18537,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSObsidianProjectileSmall
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 3, display: true
     TracerPerBullet: 1
     TracerSpeed: 1000
 
@@ -18672,7 +18672,7 @@
     ROF: 5, type: float, display: true, formatter: ROF
     Range: 800, display: true
     RangeSpace: 1400, display: true
-    Damage: 7500, display: true
+    Damage: 4200, display: true
     Automatic: true
     AmmoCapacity: 5, display: true
     AmmoType: HWSLuxCVT4Ammo, display: true
@@ -18685,7 +18685,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSLuxProjectileSmall
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 1000
 
@@ -18782,7 +18782,7 @@
     ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 800, display: true
     RangeSpace: 1400, display: true
-    Damage: 8000, display: true
+    Damage: 4500, display: true
     Automatic: true
     AmmoCapacity: 5, display: true
     AmmoType: HWSLuxCVT4Ammo, display: true
@@ -18795,7 +18795,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSLuxProjectileSmall
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 3, display: true
     TracerPerBullet: 1
     TracerSpeed: 1000
 
@@ -18930,7 +18930,7 @@
     ROF: 5, type: float, display: true, formatter: ROF
     Range: 350, display: true
     RangeSpace: 625, display: true
-    Damage: 7500, display: true
+    Damage: 4200, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSNoxCVT4Ammo, display: true
@@ -18943,7 +18943,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSNoxProjectileSmall
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 1000
 
@@ -19040,7 +19040,7 @@
     ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 350, display: true
     RangeSpace: 625, display: true
-    Damage: 8000, display: true
+    Damage: 4500, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSNoxCVT4Ammo, display: true
@@ -19053,7 +19053,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSNoxProjectileSmall
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 3, display: true
     TracerPerBullet: 1
     TracerSpeed: 1000
 
@@ -19188,7 +19188,7 @@
     ROF: 5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 7500, display: true
+    Damage: 4200, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSStrangeletCVT4Ammo, display: true
@@ -19201,7 +19201,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSStrangeletProjectileSmall
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 1000
 
@@ -19298,7 +19298,7 @@
     ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 8000, display: true
+    Damage: 4500, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSStrangeletCVT4Ammo, display: true
@@ -19311,7 +19311,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSStrangeletProjectileSmall
-    PenetrationDepth: 10, display: true
+    PenetrationDepth: 3, display: true
     TracerPerBullet: 1
     TracerSpeed: 1000
 
@@ -19450,7 +19450,7 @@
     ROF: 2.25, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1050, display: true
+    Damage: 435, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSAquaHVT4Ammo, display: true
@@ -19463,7 +19463,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSAquaProjectileSmall
-    PenetrationDepth: 6, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -19518,7 +19518,7 @@
     ROF: 2.625, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 450, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSAquaHVT4Ammo, display: true
@@ -19531,7 +19531,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSAquaProjectileSmall
-    PenetrationDepth: 6, display: true
+    PenetrationDepth: 3, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -19661,7 +19661,7 @@
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1050, display: true
+    Damage: 435, display: true
     Automatic: true
     AmmoCapacity: 15, display: true
     AmmoType: HWSTerraHVT4Ammo, display: true
@@ -19674,7 +19674,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSTerraProjectileSmall
-    PenetrationDepth: 6, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -19728,7 +19728,7 @@
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 350, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSTerraHVT4Ammo, display: true
@@ -19741,7 +19741,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSTerraProjectileSmall
-    PenetrationDepth: 6, display: true
+    PenetrationDepth: 3, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -19871,7 +19871,7 @@
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1050, display: true
+    Damage: 435, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSPyroHVT4Ammo, display: true
@@ -19884,7 +19884,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSPyroProjectileSmall
-    PenetrationDepth: 6, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -19938,7 +19938,7 @@
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 450, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSPyroHVT4Ammo, display: true
@@ -19951,7 +19951,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSPyroProjectileSmall
-    PenetrationDepth: 6, display: true
+    PenetrationDepth: 3, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -20081,7 +20081,7 @@
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1050, display: true
+    Damage: 435, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSObsidianHVT4Ammo, display: true
@@ -20094,7 +20094,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSObsidianProjectileSmall
-    PenetrationDepth: 6, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -20148,7 +20148,7 @@
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 450, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSObsidianHVT4Ammo, display: true
@@ -20161,7 +20161,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSObsidianProjectileSmall
-    PenetrationDepth: 6, display: true
+    PenetrationDepth: 3, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -20291,7 +20291,7 @@
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 900, display: true
-    Damage: 1050, display: true
+    Damage: 435, display: true
     Automatic: true
     AmmoCapacity: 5, display: true
     AmmoType: HWSLuxHVT4Ammo, display: true
@@ -20304,7 +20304,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSLuxProjectileSmall
-    PenetrationDepth: 6, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 900
 
@@ -20358,7 +20358,7 @@
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 650, display: true
     RangeSpace: 900, display: true
-    Damage: 1200, display: true
+    Damage: 450, display: true
     Automatic: true
     AmmoCapacity: 5, display: true
     AmmoType: HWSLuxHVT4Ammo, display: true
@@ -20371,7 +20371,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSLuxProjectileSmall
-    PenetrationDepth: 6, display: true
+    PenetrationDepth: 3, display: true
     TracerPerBullet: 1
     TracerSpeed: 900
 
@@ -20501,7 +20501,7 @@
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 275, display: true
     RangeSpace: 400, display: true
-    Damage: 1050, display: true
+    Damage: 435, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSNoxHVT4Ammo, display: true
@@ -20514,7 +20514,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSNoxProjectileSmall
-    PenetrationDepth: 6, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 400
 
@@ -20568,7 +20568,7 @@
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 275, display: true
     RangeSpace: 400, display: true
-    Damage: 1200, display: true
+    Damage: 450, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSNoxHVT4Ammo, display: true
@@ -20581,7 +20581,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSNoxProjectileSmall
-    PenetrationDepth: 6, display: true
+    PenetrationDepth: 3, display: true
     TracerPerBullet: 1
     TracerSpeed: 400
 
@@ -20711,7 +20711,7 @@
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1050, display: true
+    Damage: 435, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSStrangeletHVT4Ammo, display: true
@@ -20724,7 +20724,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSStrangeletProjectileSmall
-    PenetrationDepth: 6, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -20779,7 +20779,7 @@
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 1200, display: true
+    Damage: 450, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSStrangeletHVT4Ammo, display: true
@@ -20792,7 +20792,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSStrangeletProjectileSmall
-    PenetrationDepth: 6, display: true
+    PenetrationDepth: 3, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -21004,7 +21004,7 @@
     ROF: 2.625, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 950, display: true
+    Damage: 415, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSAquaSVT4Ammo, display: true
@@ -21017,7 +21017,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSAquaProjectileMedium
-    PenetrationDepth: 5, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -21218,7 +21218,7 @@
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 950, display: true
+    Damage: 415, display: true
     Automatic: true
     AmmoCapacity: 15, display: true
     AmmoType: HWSTerraSVT4Ammo, display: true
@@ -21231,7 +21231,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSTerraProjectileMedium
-    PenetrationDepth: 5, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -21431,7 +21431,7 @@
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 950, display: true
+    Damage: 415, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSPyroSVT4Ammo, display: true
@@ -21444,7 +21444,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSPyroProjectileMedium
-    PenetrationDepth: 5, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -21645,7 +21645,7 @@
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 950, display: true
+    Damage: 415, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSObsidianSVT4Ammo, display: true
@@ -21658,7 +21658,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSObsidianProjectileMedium
-    PenetrationDepth: 5, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -21860,7 +21860,7 @@
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 630, display: true
     RangeSpace: 900, display: true
-    Damage: 950, display: true
+    Damage: 415, display: true
     Automatic: true
     AmmoCapacity: 5, display: true
     AmmoType: HWSLuxSVT4Ammo, display: true
@@ -21873,7 +21873,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSLuxProjectileMedium
-    PenetrationDepth: 5, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 600
 
@@ -22074,7 +22074,7 @@
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 265, display: true
     RangeSpace: 400, display: true
-    Damage: 950, display: true
+    Damage: 415, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
     AmmoType: HWSNoxSVT4Ammo, display: true
@@ -22087,7 +22087,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSNoxProjectileMedium
-    PenetrationDepth: 5, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 400
 
@@ -22288,9 +22288,9 @@
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 950, display: true
+    Damage: 415, display: true
     Automatic: true
-    AmmoCapacity: 20, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: HWSStrangeletSVT4Ammo, display: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -22301,7 +22301,7 @@
     PfxMuzzle: MuzzleFlashLightningLarge
 
     Tracer: @hws_projectiles/HWSStrangeletProjectileMedium
-    PenetrationDepth: 5, display: true
+    PenetrationDepth: 2, display: true
     TracerPerBullet: 1
     TracerSpeed: 800
 
@@ -24836,7 +24836,7 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSAquaExplosionSmall
     BlastRadius: 3, display: true
-    BlastDamage: 200, display: true
+    BlastDamage: 215, display: true
     Speed: 240, display: true
     Range: 480, display: true
     SpeedSpace: 400, display: true
@@ -24905,7 +24905,7 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSTerraExplosionSmall
     BlastRadius: 3, display: true
-    BlastDamage: 200, display: true
+    BlastDamage: 215, display: true
     Speed: 240, display: true
     Range: 480, display: true
     SpeedSpace: 400, display: true
@@ -24973,7 +24973,7 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSPyroExplosionSmall
     BlastRadius: 3, display: true
-    BlastDamage: 300, display: true
+    BlastDamage: 320, display: true
     Speed: 200, display: true
     Range: 480, display: true
     SpeedSpace: 400, display: true
@@ -25041,7 +25041,7 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSObsidianExplosionSmall
     BlastRadius: 3, display: true
-    BlastDamage: 200, display: true
+    BlastDamage: 215, display: true
     Speed: 200, display: true
     Range: 480, display: true
     SpeedSpace: 400, display: true
@@ -25109,7 +25109,7 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSLuxExplosionSmall
     BlastRadius: 3, display: true
-    BlastDamage: 200, display: true
+    BlastDamage: 215, display: true
     Speed: 380, display: true
     Range: 580, display: true
     SpeedSpace: 530, display: true
@@ -25177,7 +25177,7 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSNoxExplosionSmall
     BlastRadius: 3, display: true
-    BlastDamage: 200, display: true
+    BlastDamage: 215, display: true
     Speed: 120, display: true
     Range: 240, display: true
     SpeedSpace: 200, display: true
@@ -25245,7 +25245,7 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSStrangeletExplosionSmall
     BlastRadius: 3, display: true
-    BlastDamage: 200, display: true
+    BlastDamage: 215, display: true
     Speed: 200, display: true
     Range: 480, display: true
     SpeedSpace: 400, display: true
