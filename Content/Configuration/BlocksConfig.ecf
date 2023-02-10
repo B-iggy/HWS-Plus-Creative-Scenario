@@ -5777,7 +5777,7 @@
   AllowPlacingAt: "SS,GV", display: true
   SizeInBlocks: "1,6,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1200, type: float, display: true, formatter: Kilogram
+  Mass: 1500, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "110,110,110"
@@ -32383,7 +32383,7 @@
   Info: bkiBlockGroup, display: true
   IsOxygenTight: true, display: true
   AllowPlacingAt: "Base,MS", display: true
-  Mass: 3500, type: float, display: true, formatter: Kilogram
+  Mass: 5000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   StackSize: 10000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
@@ -40123,7 +40123,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1875, type: float, display: true, formatter: Kilogram
+  Mass: 2875, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "0,64,220"
@@ -40265,7 +40265,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1875, type: float, display: true, formatter: Kilogram
+  Mass: 2875, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "28,149,36"
@@ -40407,7 +40407,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1875, type: float, display: true, formatter: Kilogram
+  Mass: 2875, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "170,5,5"
@@ -40549,7 +40549,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1875, type: float, display: true, formatter: Kilogram
+  Mass: 2875, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "0,220,153"
@@ -40690,7 +40690,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1406, type: float, display: true, formatter: Kilogram
+  Mass: 2156, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "220,220,220"
@@ -40831,7 +40831,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1875, type: float, display: true, formatter: Kilogram
+  Mass: 2875, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "10,10,10"
@@ -40972,7 +40972,7 @@
   AllowPlacingAt: GV, display: true
   SizeInBlocks: "1,5,1", display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 2815, type: float, display: true, formatter: Kilogram
+  Mass: 4312, type: float, display: true, formatter: Kilogram
   Info: bkiWeaponShip, display: true
   Category: Weapons/Items
   BlockColor: "171,32,161"

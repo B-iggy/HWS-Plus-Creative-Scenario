@@ -3426,7 +3426,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 56, Name: 15mmBullet, Ref: 50Caliber
-  Mass: 0.2, type: float, display: true, formatter: Kilogram
+  Mass: 0.26, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 9, display: true
 }
@@ -6037,7 +6037,7 @@
   StackSize: 1000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
-  Mass: 12, type: float, display: true, formatter: Kilogram
+  Mass: 14.4, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6079,13 +6079,13 @@
   Canhold: false
   StackSize: 1000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
-  Mass: 20.6, type: float, display: true, formatter: Kilogram
+  Mass: 30, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
   { Child 0
     Class: Projectile
-    Damage: 360, display: true
+    Damage: 385, display: true
     BlastParticleIndex: 3
     BlastRadius: 2, display: true
     BlastDamage: 180, display: true
@@ -6114,7 +6114,7 @@
   StackSize: 1000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
-  Mass: 18, type: float, display: true, formatter: Kilogram
+  Mass: 24, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6167,7 +6167,7 @@
   StackSize: 1000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
-  Mass: 20, type: float, display: true, formatter: Kilogram
+  Mass: 2.4, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Category: Weapons/Items
@@ -6224,7 +6224,7 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   ShowUser: Yes
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 35, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6402,7 +6402,7 @@
   StackSize: 1000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
-  Mass: 12, type: float, display: true, formatter: Kilogram
+  Mass: 19.2, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6509,7 +6509,7 @@
   StackSize: 1000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
-  Mass: 47, type: float, display: true, formatter: Kilogram
+  Mass: 120, type: float, display: true, formatter: Kilogram
   Info: bkiAmmoExplosive, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Category: Weapons/Items
@@ -6576,7 +6576,7 @@
 { Item Id: 165, Name: FastRocketHoming, Ref: FastRocket
   Info: bkiAmmoHoming, display: true
   AllowPlacingAt: "SS,GV", display: false
-  Mass: 20, type: float, display: true, formatter: Kilogram
+  Mass: 25.3, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 454, display: true
   { Child 0
@@ -6760,7 +6760,7 @@
 }
 { Item Id: 174, Name: FastRocketGV, Ref: FlakRocket
   AllowPlacingAt: GV, display: false
-  Mass: 19, type: float, display: true, formatter: Kilogram
+  Mass: 28, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 703, display: true
   { Child 0
@@ -6937,7 +6937,7 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
   ShowUser: Yes
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 12, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -24347,7 +24347,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 15, type: float, display: true, formatter: Kilogram
+  Mass: 50, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_aquaitem, display: true
@@ -24378,7 +24378,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 10.8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_aquaitem, display: true
@@ -24390,7 +24390,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 50, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 7.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_aquaitem, display: true
@@ -24402,7 +24402,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 250, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 108, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_aquaitem, display: true
@@ -24415,7 +24415,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 15, type: float, display: true, formatter: Kilogram
+  Mass: 50, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_terraitem, display: true
@@ -24446,7 +24446,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 10.8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_terraitem, display: true
@@ -24458,7 +24458,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 50, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 7.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_terraitem, display: true
@@ -24470,7 +24470,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 250, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 108, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_terraitem, display: true
@@ -24483,7 +24483,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 15, type: float, display: true, formatter: Kilogram
+  Mass: 50, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_pyroitem, display: true
@@ -24514,7 +24514,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 10.8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_pyroitem, display: true
@@ -24526,7 +24526,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 50, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 7.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_pyroitem, display: true
@@ -24538,7 +24538,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 250, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 108, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_pyroitem, display: true
@@ -24551,7 +24551,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 15, type: float, display: true, formatter: Kilogram
+  Mass: 50, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_obsidianitem, display: true
@@ -24582,7 +24582,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 10.8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_obsidianitem, display: true
@@ -24594,7 +24594,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 7.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_obsidianitem, display: true
@@ -24606,7 +24606,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 108, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_obsidianitem, display: true
@@ -24619,7 +24619,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 140, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 7.5, type: float, display: true, formatter: Kilogram
+  Mass: 37.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_luxitem, display: true
@@ -24650,7 +24650,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 140, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 8.1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_luxitem, display: true
@@ -24662,7 +24662,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 70, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 5.63, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_luxitem, display: true
@@ -24674,7 +24674,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 350, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 81, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_luxitem, display: true
@@ -24687,7 +24687,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 15, type: float, display: true, formatter: Kilogram
+  Mass: 50, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_noxitem, display: true
@@ -24718,7 +24718,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 10.8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_noxitem, display: true
@@ -24730,7 +24730,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 75, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 7.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_noxitem, display: true
@@ -24742,7 +24742,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 375, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 108, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_noxitem, display: true
@@ -24755,7 +24755,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 500, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 15, type: float, display: true, formatter: Kilogram
+  Mass: 75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_strangeletitem, display: true
@@ -24786,7 +24786,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 400, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 16.2, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_strangeletitem, display: true
@@ -24798,7 +24798,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 200, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 11.25, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_strangeletitem, display: true
@@ -24810,7 +24810,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 300, display: true
   AllowPlacingAt: GV, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 162, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_strangeletitem, display: true
@@ -24824,7 +24824,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 20, type: float, display: true, formatter: Kilogram
+  Mass: 45, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_aquaitem, display: true
@@ -24856,7 +24856,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 9.6, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_aquaitem, display: true
@@ -24868,7 +24868,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 50, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 6.75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_aquaitem, display: true
@@ -24880,7 +24880,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 250, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 2, type: float, display: true, formatter: Kilogram
+  Mass: 94.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_aquaitem, display: true
@@ -24893,7 +24893,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 20, type: float, display: true, formatter: Kilogram
+  Mass: 45, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_terraitem, display: true
@@ -24924,7 +24924,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 9.6, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_terraitem, display: true
@@ -24936,7 +24936,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 50, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 6.75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_terraitem, display: true
@@ -24948,7 +24948,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 250, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 2, type: float, display: true, formatter: Kilogram
+  Mass: 94.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_terraitem, display: true
@@ -24961,7 +24961,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 20, type: float, display: true, formatter: Kilogram
+  Mass: 45, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_pyroitem, display: true
@@ -24992,7 +24992,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 9.6, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_pyroitem, display: true
@@ -25004,7 +25004,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 50, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 6.75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_pyroitem, display: true
@@ -25016,7 +25016,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 250, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 2, type: float, display: true, formatter: Kilogram
+  Mass: 94.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_pyroitem, display: true
@@ -25029,7 +25029,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 20, type: float, display: true, formatter: Kilogram
+  Mass: 45, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_obsidianitem, display: true
@@ -25060,7 +25060,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 9.6, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_obsidianitem, display: true
@@ -25072,7 +25072,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 6.75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_obsidianitem, display: true
@@ -25084,7 +25084,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 2, type: float, display: true, formatter: Kilogram
+  Mass: 94.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_obsidianitem, display: true
@@ -25097,7 +25097,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 140, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 10, type: float, display: true, formatter: Kilogram
+  Mass: 33.75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_luxitem, display: true
@@ -25128,7 +25128,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 140, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 7.2, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_luxitem, display: true
@@ -25140,7 +25140,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 70, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 5.06, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_luxitem, display: true
@@ -25152,7 +25152,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 350, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 70.8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_luxitem, display: true
@@ -25165,7 +25165,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 20, type: float, display: true, formatter: Kilogram
+  Mass: 45, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_noxitem, display: true
@@ -25196,7 +25196,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 9.6, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_noxitem, display: true
@@ -25208,7 +25208,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 75, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 6.75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_noxitem, display: true
@@ -25220,7 +25220,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 375, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 2, type: float, display: true, formatter: Kilogram
+  Mass: 94.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_noxitem, display: true
@@ -25233,7 +25233,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 500, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 20, type: float, display: true, formatter: Kilogram
+  Mass: 67.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_strangeletitem, display: true
@@ -25264,7 +25264,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 400, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 14.4, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_strangeletitem, display: true
@@ -25276,7 +25276,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 200, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 10.12, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_strangeletitem, display: true
@@ -25288,7 +25288,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 300, display: true
   AllowPlacingAt: SS, display: false
-  Mass: 2, type: float, display: true, formatter: Kilogram
+  Mass: 141.75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_strangeletitem, display: true
