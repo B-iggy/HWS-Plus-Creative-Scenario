@@ -3271,6 +3271,7 @@
 
 # Debug weapons
 { Item Id: 48, Name: RocketLauncherDebug, Ref: RocketLauncher
+  CustomIcon: RocketLauncherDebug
   Meshfile: Entities/Items/Weapons/SciFiGrenadeLauncher/ScifiGrenadeLauncherDebugPrefab
   MarketPrice: 1, display: true
   PickupToToolbar: true
@@ -6148,7 +6149,7 @@
   StackSize: 1000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
-  Mass: 0.5, type: float, display: true, formatter: Kilogram
+  Mass: 0.78, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 18, display: true
   Info: bkiAmmo, display: true
@@ -6260,7 +6261,7 @@
   StackSize: 1000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
-  Mass: 870, type: float, display: true, formatter: Kilogram
+  Mass: 2475, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   MarketPrice: 3073, display: true
@@ -6297,7 +6298,7 @@
   StackSize: 1000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
-  Mass: 140, type: float, display: true, formatter: Kilogram
+  Mass: 59, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6329,7 +6330,7 @@
   StackSize: 1000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
-  Mass: 76, type: float, display: true, formatter: Kilogram
+  Mass: 375, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6438,7 +6439,7 @@
   StackSize: 1000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
-  Mass: 10.1, type: float, display: true, formatter: Kilogram
+  Mass: 118.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6474,7 +6475,7 @@
   StackSize: 1000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
-  Mass: 32, type: float, display: true, formatter: Kilogram
+  Mass: 337.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
@@ -6600,6 +6601,7 @@
 
 { Item Id: 166, Name: FlakRocketMS, Ref: FlakRocket
   AllowPlacingAt: MS, display: false
+  Mass: 88.5, type: float, display: true, formatter: Kilogram
   MarketPrice: 149, display: true
   { Child 0
     Damage: 250, display: true
@@ -6618,7 +6620,7 @@
 }
 
 { Item Id: 167, Name: LargeRocketMS, Ref: LargeRocket
-  Mass: 840, type: float, display: true, formatter: Kilogram
+  Mass: 1950, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   AllowPlacingAt: MS, display: false
   MarketPrice: 3136, display: true
@@ -6640,7 +6642,7 @@
 
 { Item Id: 168, Name: PulseLaserChargeBA, Ref: PulseLaserChargeMS
   AllowPlacingAt: Base, display: false
-  Mass: 140, type: float, display: true, formatter: Kilogram
+  Mass: 79, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 89, display: true
   { Child 0
@@ -6659,7 +6661,7 @@
 
 { Item Id: 169, Name: FastRocketBA, Ref: FastRocketMS
   AllowPlacingAt: Base, display: false
-  Mass: 76, type: float, display: true, formatter: Kilogram
+  Mass: 500, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 1801, display: true
   { Child 0
@@ -6680,7 +6682,7 @@
 
 { Item Id: 170, Name: TurretBAPlasmaCharge, Ref: TurretMSPlasmaCharge
   AllowPlacingAt: Base, display: false
-  Mass: 35, type: float, display: true, formatter: Kilogram
+  Mass: 450, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 468, display: true
   { Child 0
@@ -6707,7 +6709,7 @@
   StackSize: 1000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
   Canhold: false
-  Mass: 150, type: float, display: true, formatter: Kilogram
+  Mass: 45, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Category: Weapons/Items
@@ -15156,7 +15158,7 @@
   StackSize: 1000
   AllowPlacingAt: MS, display: false
   CustomIcon: LightRocketCV
-  Mass: 24, type: float, display: true, formatter: Kilogram
+  Mass: 132.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A variant of the SGM-220 designed for ship-to-ship bombardments. It has a reinforced shell to achieve higher penetration at lower explosive damage., display: true
   Category: Weapons/Items
@@ -23217,7 +23219,7 @@
   Meshfile: @hws_projectiles/HWSAquaProjectileLarge
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base", display: false
-  Mass: 50, type: float, display: true, formatter: Kilogram
+  Mass: 1105, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: 410mm High-Explosive anti-ship Artillery shell designed for heavy artillery cannons affixed to naval warships and static fortresses., display: true
   MarketPrice: 100, display: true
@@ -23246,7 +23248,7 @@
   Meshfile: @hws_projectiles/HWSAquaProjectileMedium
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base", display: false
-  Mass: 50, type: float, display: true, formatter: Kilogram
+  Mass: 1280, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: 410mm High-Explosive anti-ship Artillery shell designed for heavy artillery cannons affixed to naval warships and static fortresses., display: true
   MarketPrice: 100, display: true
@@ -23279,7 +23281,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_aquaitem, display: true
   Category: Weapons/Items
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 258, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 3503, Name: HWSAquaBAT4Ammo, Ref: HWSElementalAmmoTemplate
@@ -23290,7 +23292,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_aquaitem, display: true
   Category: Weapons/Items
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 83, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 3504, Name: HWSAquaBAT5Ammo, Ref: HWSElementalAmmoTemplate
@@ -23301,7 +23303,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_aquaitem, display: true
   Category: Weapons/Items
-  Mass: 2, type: float, display: true, formatter: Kilogram
+  Mass: 2405, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 # ---------------------------------------------------------------------------------------------------------------- Terra
@@ -23310,7 +23312,7 @@
   Meshfile: @hws_projectiles/HWSTerraProjectileLarge
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base", display: false
-  Mass: 50, type: float, display: true, formatter: Kilogram
+  Mass: 1105, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: 410mm High-Explosive anti-ship Artillery shell designed for heavy artillery cannons affixed to naval warships and static fortresses., display: true
   MarketPrice: 100, display: true
@@ -23339,7 +23341,7 @@
   Meshfile: @hws_projectiles/HWSTerraProjectileMedium
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base", display: false
-  Mass: 50, type: float, display: true, formatter: Kilogram
+  Mass: 1280, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: 410mm High-Explosive anti-ship Artillery shell designed for heavy artillery cannons affixed to naval warships and static fortresses., display: true
   MarketPrice: 100, display: true
@@ -23372,7 +23374,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_terraitem, display: true
   Category: Weapons/Items
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 258, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 3508, Name: HWSTerraBAT4Ammo, Ref: HWSElementalAmmoTemplate
@@ -23383,7 +23385,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_terraitem, display: true
   Category: Weapons/Items
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 83, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 3509, Name: HWSTerraBAT5Ammo, Ref: HWSElementalAmmoTemplate
@@ -23394,7 +23396,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_terraitem, display: true
   Category: Weapons/Items
-  Mass: 2, type: float, display: true, formatter: Kilogram
+  Mass: 2405, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 # ----------------------------------------------------------------------------------------------------------------- Pyro
@@ -23403,7 +23405,7 @@
   Meshfile: @hws_projectiles/HWSPyroProjectileLarge
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base", display: false
-  Mass: 50, type: float, display: true, formatter: Kilogram
+  Mass: 1105, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: 410mm High-Explosive anti-ship Artillery shell designed for heavy artillery cannons affixed to naval warships and static fortresses., display: true
   MarketPrice: 100, display: true
@@ -23432,7 +23434,7 @@
   Meshfile: @hws_projectiles/HWSPyroProjectileMedium
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base", display: false
-  Mass: 50, type: float, display: true, formatter: Kilogram
+  Mass: 1280, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: 410mm High-Explosive anti-ship Artillery shell designed for heavy artillery cannons affixed to naval warships and static fortresses., display: true
   MarketPrice: 100, display: true
@@ -23465,7 +23467,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_pyroitem, display: true
   Category: Weapons/Items
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 258, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 3513, Name: HWSPyroBAT4Ammo, Ref: HWSElementalAmmoTemplate
@@ -23476,7 +23478,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_pyroitem, display: true
   Category: Weapons/Items
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 83, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 3514, Name: HWSPyroBAT5Ammo, Ref: HWSElementalAmmoTemplate
@@ -23487,7 +23489,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_pyroitem, display: true
   Category: Weapons/Items
-  Mass: 2, type: float, display: true, formatter: Kilogram
+  Mass: 2405, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 # ------------------------------------------------------------------------------------------------------------- Obsidian
@@ -23496,7 +23498,7 @@
   Meshfile: @hws_projectiles/HWSObsidianProjectileLarge
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base", display: false
-  Mass: 50, type: float, display: true, formatter: Kilogram
+  Mass: 1105, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: 410mm High-Explosive anti-ship Artillery shell designed for heavy artillery cannons affixed to naval warships and static fortresses., display: true
   MarketPrice: 150, display: true
@@ -23525,7 +23527,7 @@
   Meshfile: @hws_projectiles/HWSObsidianProjectileMedium
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base", display: false
-  Mass: 50, type: float, display: true, formatter: Kilogram
+  Mass: 1280, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: 410mm High-Explosive anti-ship Artillery shell designed for heavy artillery cannons affixed to naval warships and static fortresses., display: true
   MarketPrice: 150, display: true
@@ -23558,7 +23560,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_obsidianitem, display: true
   Category: Weapons/Items
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 258, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 3518, Name: HWSObsidianBAT4Ammo, Ref: HWSElementalAmmoTemplate
@@ -23569,7 +23571,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_obsidianitem, display: true
   Category: Weapons/Items
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 83, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 3519, Name: HWSObsidianBAT5Ammo, Ref: HWSElementalAmmoTemplate
@@ -23580,7 +23582,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_obsidianitem, display: true
   Category: Weapons/Items
-  Mass: 2, type: float, display: true, formatter: Kilogram
+  Mass: 2405, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 # ------------------------------------------------------------------------------------------------------------------ Lux
@@ -23589,7 +23591,7 @@
   Meshfile: @hws_projectiles/HWSLuxProjectileLarge
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base", display: false
-  Mass: 25, type: float, display: true, formatter: Kilogram
+  Mass: 830, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: 410mm High-Explosive anti-ship Artillery shell designed for heavy artillery cannons affixed to naval warships and static fortresses., display: true
   MarketPrice: 140, display: true
@@ -23618,7 +23620,7 @@
   Meshfile: @hws_projectiles/HWSLuxProjectileMedium
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base", display: false
-  Mass: 25, type: float, display: true, formatter: Kilogram
+  Mass: 960, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: 410mm High-Explosive anti-ship Artillery shell designed for heavy artillery cannons affixed to naval warships and static fortresses., display: true
   MarketPrice: 140, display: true
@@ -23651,7 +23653,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_luxitem, display: true
   Category: Weapons/Items
-  Mass: 0.5, type: float, display: true, formatter: Kilogram
+  Mass: 194, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 3523, Name: HWSLuxBAT4Ammo, Ref: HWSElementalAmmoTemplate
@@ -23673,7 +23675,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_luxitem, display: true
   Category: Weapons/Items
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 1804, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 # ------------------------------------------------------------------------------------------------------------------ Nox
@@ -23682,7 +23684,7 @@
   Meshfile: @hws_projectiles/HWSNoxProjectileLarge
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base", display: false
-  Mass: 50, type: float, display: true, formatter: Kilogram
+  Mass: 1105, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: 410mm High-Explosive anti-ship Artillery shell designed for heavy artillery cannons affixed to naval warships and static fortresses., display: true
   MarketPrice: 150, display: true
@@ -23711,7 +23713,7 @@
   Meshfile: @hws_projectiles/HWSNoxProjectileMedium
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base", display: false
-  Mass: 50, type: float, display: true, formatter: Kilogram
+  Mass: 1280, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: 410mm High-Explosive anti-ship Artillery shell designed for heavy artillery cannons affixed to naval warships and static fortresses., display: true
   MarketPrice: 150, display: true
@@ -23744,7 +23746,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_noxitem, display: true
   Category: Weapons/Items
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 258, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 3528, Name: HWSNoxBAT4Ammo, Ref: HWSElementalAmmoTemplate
@@ -23755,7 +23757,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_noxitem, display: true
   Category: Weapons/Items
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 83, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 3529, Name: HWSNoxBAT5Ammo, Ref: HWSElementalAmmoTemplate
@@ -23766,7 +23768,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_noxitem, display: true
   Category: Weapons/Items
-  Mass: 2, type: float, display: true, formatter: Kilogram
+  Mass: 2405, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 # ----------------------------------------------------------------------------------------------------------- Strangelet
@@ -23775,7 +23777,7 @@
   Meshfile: @hws_projectiles/HWSStrangeletProjectileLarge
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base", display: false
-  Mass: 50, type: float, display: true, formatter: Kilogram
+  Mass: 1658, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: 410mm High-Explosive anti-ship Artillery shell designed for heavy artillery cannons affixed to naval warships and static fortresses., display: true
   MarketPrice: 500, display: true
@@ -23804,7 +23806,7 @@
   Meshfile: @hws_projectiles/HWSStrangeletProjectileMedium
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   AllowPlacingAt: "Base", display: false
-  Mass: 50, type: float, display: true, formatter: Kilogram
+  Mass: 1920, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: 410mm High-Explosive anti-ship Artillery shell designed for heavy artillery cannons affixed to naval warships and static fortresses., display: true
   MarketPrice: 400, display: true
@@ -23837,7 +23839,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_strangeletitem, display: true
   Category: Weapons/Items
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 387, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 3533, Name: HWSStrangeletBAT4Ammo, Ref: HWSElementalAmmoTemplate
@@ -23848,7 +23850,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_strangeletitem, display: true
   Category: Weapons/Items
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 125, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 { Item Id: 3534, Name: HWSStrangeletBAT5Ammo, Ref: HWSElementalAmmoTemplate
@@ -23859,7 +23861,7 @@
   Info: bkiAmmo, display: true
   Material: HWS_material_strangeletitem, display: true
   Category: Weapons/Items
-  Mass: 2, type: float, display: true, formatter: Kilogram
+  Mass: 3608, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 }
 # -------------------------------------------------------------------------------------------- Elemental CV Ammo Section
@@ -23870,7 +23872,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 40, type: float, display: true, formatter: Kilogram
+  Mass: 1165, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_aquaitem, display: true
@@ -23901,7 +23903,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 235, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_aquaitem, display: true
@@ -23913,7 +23915,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 50, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_aquaitem, display: true
@@ -23925,7 +23927,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 250, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 3, type: float, display: true, formatter: Kilogram
+  Mass: 2185, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_aquaitem, display: true
@@ -23938,7 +23940,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 40, type: float, display: true, formatter: Kilogram
+  Mass: 1165, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_terraitem, display: true
@@ -23969,7 +23971,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 235, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_terraitem, display: true
@@ -23981,7 +23983,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 50, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_terraitem, display: true
@@ -23993,7 +23995,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 250, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 3, type: float, display: true, formatter: Kilogram
+  Mass: 2185, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_terraitem, display: true
@@ -24006,7 +24008,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 40, type: float, display: true, formatter: Kilogram
+  Mass: 1165, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_pyroitem, display: true
@@ -24037,7 +24039,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 100, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 235, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_pyroitem, display: true
@@ -24049,7 +24051,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 50, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_pyroitem, display: true
@@ -24061,7 +24063,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 250, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 3, type: float, display: true, formatter: Kilogram
+  Mass: 2185, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_pyroitem, display: true
@@ -24074,7 +24076,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 40, type: float, display: true, formatter: Kilogram
+  Mass: 1165, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_obsidianitem, display: true
@@ -24105,7 +24107,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 235, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_obsidianitem, display: true
@@ -24117,7 +24119,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_obsidianitem, display: true
@@ -24129,7 +24131,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 3, type: float, display: true, formatter: Kilogram
+  Mass: 2185, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_obsidianitem, display: true
@@ -24142,7 +24144,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 140, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 20, type: float, display: true, formatter: Kilogram
+  Mass: 874, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_luxitem, display: true
@@ -24173,7 +24175,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 140, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 176, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_luxitem, display: true
@@ -24185,7 +24187,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 70, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 57, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_luxitem, display: true
@@ -24197,7 +24199,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 350, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1.5, type: float, display: true, formatter: Kilogram
+  Mass: 1640, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_luxitem, display: true
@@ -24210,7 +24212,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 40, type: float, display: true, formatter: Kilogram
+  Mass: 1165, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_noxitem, display: true
@@ -24241,7 +24243,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 150, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 235, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_noxitem, display: true
@@ -24253,7 +24255,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 75, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 75, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_noxitem, display: true
@@ -24265,7 +24267,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 375, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 3, type: float, display: true, formatter: Kilogram
+  Mass: 2185, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_noxitem, display: true
@@ -24278,7 +24280,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 500, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 40, type: float, display: true, formatter: Kilogram
+  Mass: 1748, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmoExplosive, display: true
   Material: HWS_material_strangeletitem, display: true
@@ -24309,7 +24311,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 400, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 352, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_strangeletitem, display: true
@@ -24321,7 +24323,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 200, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 1, type: float, display: true, formatter: Kilogram
+  Mass: 114, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_strangeletitem, display: true
@@ -24333,7 +24335,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 300, display: true
   AllowPlacingAt: MS, display: false
-  Mass: 3, type: float, display: true, formatter: Kilogram
+  Mass: 3281, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiAmmo, display: true
   Material: HWS_material_strangeletitem, display: true
