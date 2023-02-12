@@ -676,6 +676,30 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
+{ Material Name: HWS_material_chaosblocksmall
+  damage_category: HWS_material_chaosblocksmall
+  surface_category: human
+  particle_category: alien
+  particle_destroy_category: wood
+  stepsound: plants
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_chaosblocklarge
+  damage_category: HWS_material_chaosblocklarge
+  surface_category: human
+  particle_category: alien
+  particle_destroy_category: wood
+  stepsound: plants
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
 # ----------------------------------------------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------------------- Elemental Device Materials
 # Small: HV / SV
@@ -851,6 +875,30 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
+{ Material Name: HWS_material_chaosdevicesmall
+  damage_category: HWS_material_chaosdevicesmall
+  surface_category: human
+  particle_category: alien
+  particle_destroy_category: wood
+  stepsound: plants
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_chaosdevicelarge
+  damage_category: HWS_material_chaosdevicelarge
+  surface_category: human
+  particle_category: alien
+  particle_destroy_category: wood
+  stepsound: plants
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
 # ----------------------------------------------------------------------------------------------------------------------
 # ---------------------------------------------------------------------------------------------- Elemental NPC Materials
 { Material Name: HWS_material_aquanpc
@@ -927,6 +975,18 @@
 }
 { Material Name: HWS_material_strangeletnpc
   damage_category: HWS_material_strangeletnpc
+  surface_category: human
+  particle_category: alien
+  particle_destroy_category: alien
+  stepsound: plants
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_chaosnpc
+  damage_category: HWS_material_chaosnpc
   surface_category: human
   particle_category: alien
   particle_destroy_category: alien
@@ -1026,6 +1086,18 @@
 }
 { Material Name: HWS_material_strangeletitem
   damage_category: HWS_material_strangeletitem
+  surface_category: human
+  particle_category: alien
+  particle_destroy_category: alien
+  stepsound: plants
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_chaositem
+  damage_category: HWS_material_chaositem
   surface_category: human
   particle_category: alien
   particle_destroy_category: alien

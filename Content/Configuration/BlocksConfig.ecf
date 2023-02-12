@@ -31357,7 +31357,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   StackSize: 10000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
-  CPUIn: 1, type: int, display: true
+  CPUIn: 2, type: int, display: true
 
   BlockSizeScale: 8
   Category: BuildingBlocks
@@ -31480,19 +31480,16 @@
   BlockSizeScale: 2
   ChildShapes: "Cube, CutCornerE, CutCornerB, SlicedCornerA1, CornerHalfB, CornerSmallC, CornerC, CornerHalfA3, RampCMedium, RampA, RampC, CornerRoundB, CornerRoundADouble, RoundCornerA, CubeRoundConnectorA, EdgeRound, Cylinder, RampRoundFTriple, RampRoundF, SmallCornerRoundB, SmallCornerRoundA, SphereHalf, Cone, ConeB, CutCornerC, Cylinder6Way, CornerRoundATriple, CornerA, CornerHalfA1, CornerDoubleA3, CornerSmallB, PyramidA"
 }
-
 { Block Name: HWSStrangeletBlockThinSmall, Ref: HWSStrangeletBlockSmall
   MarketPrice: 1, display: true
   ChildShapes: "Wall, WallLShape, WallSloped, WallSloped3Corner, WallSlopedC, WallSlopedCMediumright, WallSlopedAright, WallSlopedCMediumleft, WallSlopedAleft, WallCornerRoundB, WallSlopedRound, WallEdgeRound, WallEdgeRound3Way, WallCornerRoundA, WallCornerRoundC, WallSloped3CornerLow, WallCorner, WallLow, CubeHalf, RampADouble, RampCLow, RampBMedium, RampD, CutCornerEMedium, Beam, CylinderThin, CylinderThinTJoint, CylinderL, PipesFence, FenceTop, RampCHalf, CornerHalfA3Medium"
 }
-
 # ============================ Extended 1 ============================
 # BA / CV
 { Block Name: HWSStrangeletBlockSmallExtended, Ref: HWSStrangeletBlockSmall
   MarketPrice: 1, display: true
   ChildShapes: "CornerCMedium, CornerSmallCMedium, CornerSmallA, SmallCornerRoundC, RampRoundDDouble, NotchedC, NotchedA, NotchedCMedium, CubeQuarter, CylinderThinXJoint, CornerDoubleA1, CutCornerA, CornerDoubleB3, SlicedCornerD, EdgeRoundMedium, RampB, CornerRoundBMedium, CornerRoundBLow, CornerRoundAMedium, CornerRoundALow, EdgeRoundMediumHalf, EdgeRoundLow, PipesFenceDiagonal, FenceTopDiagonal, CubeRoundConnectorBleft, CubeRoundConnectorBright, CylinderRoundTransition, WallEdge, RampRoundConnectorBleft, RampRoundConnectorBright, RampRoundConnectorAleft, RampRoundConnectorAright"
 }
-
 # ============================ Extended 2 ============================
 # BA / CV
 { Block Name: HWSStrangeletBlockSmallExtended2, Ref: HWSStrangeletBlockSmall
@@ -31517,8 +31514,182 @@
   MarketPrice: 1, display: true
   ChildShapes: "CubeLShape, CubeRoundTransitionleft, CubeRoundTransitionright, RampEHalf, CutCornerDLow, RampConnectorCleft, RampConnectorCright, NotchedBMedium, NotchedCLow, CutCornerD, CutCornerDMedium, CorridorWallA, CorridorEdgeA, CorridorPillarA, CorridorWallB, CorridorEdgeB, CorridorEdgeC, CorridorPillarB, CorridorPillarC, CorridorRoof, CorridorRoofCorner, CorridorRoofCornerRound, CorridorBulkyWallA, CorridorBulkyWallAWindowed, CorridorBulkyWallB, CorridorBulkyWallBWindowed, CorridorRampA, CorridorRampB, DoorframeA, DoorframeB, DoorframeC, CorridorRoofCornerInverted"
 }
-
 { Block Name: HWSStrangeletBlockSmallExtended6, Ref: HWSStrangeletBlockSmall
+  MarketPrice: 1, display: true
+  ChildShapes: "WallMediumDouble, RampBDouble, SmallCornerRoundB2, CubeSteppedEdge, CubeQuarterEdge, CubeHalfRamp, CubeHalfCubeConnector, CornerSmallCMediumLow, WallLowDouble, CubeRoundConnectorAMedium, CubeRoundConnectorALow, CornerSmallBMediumLow, WallSlopedBold, CylinderCubeConnector, CylinderCubeHalfConnector, CylinderWallConnector"
+}
+
+
+# ----------------------------------------------------------------------------------------------------------- EWS:
+# ----------------------------------------------------------------------------------------------------------- Chaos
+{ Block Name: HWSChaosBlocksLarge
+  Material: HWS_material_chaosblocklarge, display: true
+  MarketPrice: 200, display: true
+  DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  Texture: 282
+  BlockColor: "176,34,58"
+  IsTextureable: false
+  IsColorable: false
+  Shape: Invisible
+  Info: bkiBlockGroup, display: true
+  IsOxygenTight: true, display: true
+  AllowPlacingAt: "Base,MS", display: true
+  Mass: 5000, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: false, formatter: Liter
+  StackSize: 10000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
+  CPUIn: 3, type: int, display: true
+
+  BlockSizeScale: 8
+  Category: BuildingBlocks
+  ChildBlocks: "HWSChaosBlockLarge, HWSChaosBlockThinLarge, HWSChaosBlockLargeExtended, HWSChaosBlockLargeExtended2, HWSChaosBlockLargeExtended3, HWSChaosBlockLargeExtended4, HWSChaosBlockLargeExtended5, HWSChaosBlockLargeExtended6"
+
+  TechTreeNames: Hidden
+}
+{ Block Name: HWSChaosBlockLarge
+  MarketPrice: 1, display: true
+  DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  Material: HWS_material_chaosblocklarge, display: true
+  Texture: 282
+  BlockColor: "176,34,58"
+  IsTextureable: false
+  IsColorable: false
+  Shape: New
+  Place: Free
+  Model: Cube
+  TemplateRoot: HWSChaosBlocksLarge
+  AllowPlacingAt: "Base,MS", display: true
+  HitPoints: 3250, type: int, display: true
+  StackSize: 10000
+  CPUIn: 3, type: int, display: true
+
+  Mass: 5000, type: float, display: true, formatter: Kilogram
+  BlockSizeScale: 8
+  ChildShapes: "Cube, CutCornerE, CutCornerB, SlicedCornerA1, CornerHalfB, CornerSmallC, CornerC, CornerHalfA3, RampCMedium, RampA, RampC, CornerRoundB, CornerRoundADouble, RoundCornerA, CubeRoundConnectorA, EdgeRound, Cylinder, RampRoundFTriple, RampRoundF, SmallCornerRoundB, SmallCornerRoundA, SphereHalf, Cone, ConeB, CutCornerC, Cylinder6Way, CornerRoundATriple, CornerA, CornerHalfA1, CornerDoubleA3, CornerSmallB, PyramidA"
+}
+
+{ Block Name: HWSChaosBlockThinLarge, Ref: HWSChaosBlockLarge
+  MarketPrice: 1, display: true
+  ChildShapes: "Wall, WallLShape, WallSloped, WallSloped3Corner, WallSlopedC, WallSlopedCMediumright, WallSlopedAright, WallSlopedCMediumleft, WallSlopedAleft, WallCornerRoundB, WallSlopedRound, WallEdgeRound, WallEdgeRound3Way, WallCornerRoundA, WallCornerRoundC, WallSloped3CornerLow, WallCorner, WallLow, CubeHalf, RampADouble, RampCLow, RampBMedium, RampD, CutCornerEMedium, Beam, CylinderThin, CylinderThinTJoint, CylinderL, PipesFence, FenceTop, RampCHalf, CornerHalfA3Medium"
+}
+
+# ============================ Extended 1 ============================
+# BA / CV
+{ Block Name: HWSChaosBlockLargeExtended, Ref: HWSChaosBlockLarge
+  MarketPrice: 1, display: true
+  ChildShapes: "CornerCMedium, CornerSmallCMedium, CornerSmallA, SmallCornerRoundC, RampRoundDDouble, NotchedC, NotchedA, NotchedCMedium, CubeQuarter, CylinderThinXJoint, CornerDoubleA1, CutCornerA, CornerDoubleB3, SlicedCornerD, EdgeRoundMedium, RampB, CornerRoundBMedium, CornerRoundBLow, CornerRoundAMedium, CornerRoundALow, EdgeRoundMediumHalf, EdgeRoundLow, PipesFenceDiagonal, FenceTopDiagonal, CubeRoundConnectorBleft, CubeRoundConnectorBright, CylinderRoundTransition, WallEdge, RampRoundConnectorBleft, RampRoundConnectorBright, RampRoundConnectorAleft, RampRoundConnectorAright"
+}
+
+# ============================ Extended 2 ============================
+# BA / CV
+{ Block Name: HWSChaosBlockLargeExtended2, Ref: HWSChaosBlockLarge
+  MarketPrice: 1, display: true
+  ChildShapes: "WallLShapeMedium, WallLShapeLow, RampDLow, RampE, RampCMediumQuarter, RampConnectorBleft, RampConnectorBright, CubeEighth, SlicedCornerA2, SlicedCornerA1Medium, SlicedCornerDMedium, NotchedB, BeamQuarter, WallCornerSloped, RampADoubleHalf, RampBDoubleHalf, WallUShape, WallDouble, WallSlopedCDoubleMedium, WallSlopedCDoubleLow, CorridorPillarD, CubeDummy, RampCMediumHalfright, RampCMediumHalfleft, WallSlopedCDouble, WallSlopedBDouble, WallSlopedBDoubleMedium, WallSlopedADouble, RampAHalfright, RampAHalfleft, CylinderFramed, CubeFramed"
+}
+# ============================ Extended 3 ============================
+# BA / CV
+{ Block Name: HWSChaosBlockLargeExtended3, Ref: HWSChaosBlockLarge
+  MarketPrice: 1, display: true
+  ChildShapes: "CubeSliced, CubeStepped, RampConnectorDleft, RampConnectorDright, RampConnectorEleft, RampConnectorFright, CubeDummy, CubeDummy, CornerDoubleA2, CornerDoubleB2, CornerDoubleB1, CornerSmallBMedium, CornerSmallBLow, CornerHalfA3Low, CornerSmallCLow, CornerB, CornerHalfA2, CornerCLow, CornerHalfC, CornerRoundBMediumQuarter, CornerRoundBLowQuarter, PipesX, PipesFenceKinked, CubeDummy, PipesL, PipesT, CylinderThin6Way, CornerRoundAMediumQuarter, CornerRoundALowQuarter, EdgeRoundLowHalf, EdgeRoundLowQuarter, EdgeRoundLowEighth"
+}
+# ============================ Extended 4 ============================
+# BA / CV
+{ Block Name: HWSChaosBlockLargeExtended4, Ref: HWSChaosBlockLarge
+  MarketPrice: 1, display: true
+  ChildShapes: "EdgeRoundThin, EdgeRoundMediumHalfDouble, RampRoundE, EdgeRoundThin, EdgeRoundMediumHalfDouble, CubeRoundTransitionleft, CubeDummy, CubeDummy, PipesL, CubeDummy, CubeRoundTransitionright, EdgeRoundHalf, EdgeRoundDoubleA, EdgeRoundDoubleAHalf, EdgeRoundMediumQuarter, RampEHalf, RampRoundADouble, RampRoundADoubleHalf, RampRoundBDouble, RampRoundC, RampConnectorAleft, RampConnectorAright, SlicedCornerA1Low, SlicedCornerB1, SlicedCornerB2, SlicedCornerB1Medium, SlicedCornerB2Medium, CylinderThin3Way, CylinderThin4Way, CylinderThin5Way, CubeDummy"
+}
+# ============================ Extended 5 ============================
+# BA / CV
+{ Block Name: HWSChaosBlockLargeExtended5, Ref: HWSChaosBlockLarge
+  MarketPrice: 1, display: true
+  ChildShapes: "CubeLShape, CubeRoundTransitionleft, CubeRoundTransitionright, RampEHalf, CutCornerDLow, RampConnectorCleft, RampConnectorCright, NotchedBMedium, NotchedCLow, CutCornerD, CutCornerDMedium, CorridorWallA, CorridorEdgeA, CorridorPillarA, CorridorWallB, CorridorEdgeB, CorridorEdgeC, CorridorPillarB, CorridorPillarC, CorridorRoof, CorridorRoofCorner, CorridorRoofCornerRound, CorridorBulkyWallA, CorridorBulkyWallAWindowed, CorridorBulkyWallB, CorridorBulkyWallBWindowed, CorridorRampA, CorridorRampB, DoorframeA, DoorframeB, DoorframeC, CorridorRoofCornerInverted"
+}
+
+{ Block Name: HWSChaosBlockLargeExtended6, Ref: HWSChaosBlockLarge
+  MarketPrice: 1, display: true
+  ChildShapes: "WallMediumDouble, RampBDouble, SmallCornerRoundB2, CubeSteppedEdge, CubeQuarterEdge, CubeHalfRamp, CubeHalfCubeConnector, CornerSmallCMediumLow, WallLowDouble, CubeRoundConnectorAMedium, CubeRoundConnectorALow, CornerSmallBMediumLow, WallSlopedBold, CylinderCubeConnector, CylinderCubeHalfConnector, CylinderWallConnector"
+}
+
+{ Block Name: HWSChaosBlocksSmall
+  Material: HWS_material_chaosblocksmall, display: true
+  MarketPrice: 100, display: true
+  DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  Texture: 282
+  BlockColor: "176,34,58"
+  IsTextureable: false
+  IsColorable: false
+  Shape: Invisible
+  Info: bkiBlockGroup, display: true
+  IsOxygenTight: true, display: true
+  AllowPlacingAt: "SS,GV", display: true
+  Mass: 52, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: false, formatter: Liter
+  StackSize: 10000
+  Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
+  CPUIn: 3, type: int, display: true
+
+  BlockSizeScale: 2
+  Category: BuildingBlocks
+  ChildBlocks: "HWSChaosBlockSmall, HWSChaosBlockThinSmall, HWSChaosBlockSmallExtended, HWSChaosBlockSmallExtended2, HWSChaosBlockSmallExtended3, HWSChaosBlockSmallExtended4, HWSChaosBlockSmallExtended5, HWSChaosBlockSmallExtended6"
+
+  TechTreeNames: Hidden
+}
+{ Block Name: HWSChaosBlockSmall
+  MarketPrice: 1, display: true
+  DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  Material: HWS_material_chaosblocksmall, display: true
+  Texture: 282
+  BlockColor: "176,34,58"
+  IsTextureable: false
+  IsColorable: false
+  Shape: New
+  Place: Free
+  Model: Cube
+  TemplateRoot: HWSChaosBlocksSmall
+  AllowPlacingAt: "SS,GV", display: true
+  HitPoints: 450, type: int, display: true
+  StackSize: 10000
+  CPUIn: 3, type: int, display: true
+
+  Mass: 52, type: float, display: true, formatter: Kilogram
+  BlockSizeScale: 2
+  ChildShapes: "Cube, CutCornerE, CutCornerB, SlicedCornerA1, CornerHalfB, CornerSmallC, CornerC, CornerHalfA3, RampCMedium, RampA, RampC, CornerRoundB, CornerRoundADouble, RoundCornerA, CubeRoundConnectorA, EdgeRound, Cylinder, RampRoundFTriple, RampRoundF, SmallCornerRoundB, SmallCornerRoundA, SphereHalf, Cone, ConeB, CutCornerC, Cylinder6Way, CornerRoundATriple, CornerA, CornerHalfA1, CornerDoubleA3, CornerSmallB, PyramidA"
+}
+{ Block Name: HWSChaosBlockThinSmall, Ref: HWSChaosBlockSmall
+  MarketPrice: 1, display: true
+  ChildShapes: "Wall, WallLShape, WallSloped, WallSloped3Corner, WallSlopedC, WallSlopedCMediumright, WallSlopedAright, WallSlopedCMediumleft, WallSlopedAleft, WallCornerRoundB, WallSlopedRound, WallEdgeRound, WallEdgeRound3Way, WallCornerRoundA, WallCornerRoundC, WallSloped3CornerLow, WallCorner, WallLow, CubeHalf, RampADouble, RampCLow, RampBMedium, RampD, CutCornerEMedium, Beam, CylinderThin, CylinderThinTJoint, CylinderL, PipesFence, FenceTop, RampCHalf, CornerHalfA3Medium"
+}
+# ============================ Extended 1 ============================
+# BA / CV
+{ Block Name: HWSChaosBlockSmallExtended, Ref: HWSChaosBlockSmall
+  MarketPrice: 1, display: true
+  ChildShapes: "CornerCMedium, CornerSmallCMedium, CornerSmallA, SmallCornerRoundC, RampRoundDDouble, NotchedC, NotchedA, NotchedCMedium, CubeQuarter, CylinderThinXJoint, CornerDoubleA1, CutCornerA, CornerDoubleB3, SlicedCornerD, EdgeRoundMedium, RampB, CornerRoundBMedium, CornerRoundBLow, CornerRoundAMedium, CornerRoundALow, EdgeRoundMediumHalf, EdgeRoundLow, PipesFenceDiagonal, FenceTopDiagonal, CubeRoundConnectorBleft, CubeRoundConnectorBright, CylinderRoundTransition, WallEdge, RampRoundConnectorBleft, RampRoundConnectorBright, RampRoundConnectorAleft, RampRoundConnectorAright"
+}
+# ============================ Extended 2 ============================
+# BA / CV
+{ Block Name: HWSChaosBlockSmallExtended2, Ref: HWSChaosBlockSmall
+  MarketPrice: 1, display: true
+  ChildShapes: "WallLShapeMedium, WallLShapeLow, RampDLow, RampE, RampCMediumQuarter, RampConnectorBleft, RampConnectorBright, CubeEighth, SlicedCornerA2, SlicedCornerA1Medium, SlicedCornerDMedium, NotchedB, BeamQuarter, WallCornerSloped, RampADoubleHalf, RampBDoubleHalf, WallUShape, WallDouble, WallSlopedCDoubleMedium, WallSlopedCDoubleLow, CorridorPillarD, CubeDummy, RampCMediumHalfright, RampCMediumHalfleft, WallSlopedCDouble, WallSlopedBDouble, WallSlopedBDoubleMedium, WallSlopedADouble, RampAHalfright, RampAHalfleft, CylinderFramed, CubeFramed"
+}
+# ============================ Extended 3 ============================
+# BA / CV
+{ Block Name: HWSChaosBlockSmallExtended3, Ref: HWSChaosBlockSmall
+  MarketPrice: 1, display: true
+  ChildShapes: "CubeSliced, CubeStepped, RampConnectorDleft, RampConnectorDright, RampConnectorEleft, RampConnectorFright, CubeDummy, CubeDummy, CornerDoubleA2, CornerDoubleB2, CornerDoubleB1, CornerSmallBMedium, CornerSmallBLow, CornerHalfA3Low, CornerSmallCLow, CornerB, CornerHalfA2, CornerCLow, CornerHalfC, CornerRoundBMediumQuarter, CornerRoundBLowQuarter, PipesX, PipesFenceKinked, CubeDummy, PipesL, PipesT, CylinderThin6Way, CornerRoundAMediumQuarter, CornerRoundALowQuarter, EdgeRoundLowHalf, EdgeRoundLowQuarter, EdgeRoundLowEighth"
+}
+# ============================ Extended 4 ============================
+# BA / CV
+{ Block Name: HWSChaosBlockSmallExtended4, Ref: HWSChaosBlockSmall
+  MarketPrice: 1, display: true
+  ChildShapes: "EdgeRoundThin, EdgeRoundMediumHalfDouble, RampRoundE, EdgeRoundThin, EdgeRoundMediumHalfDouble, CubeRoundTransitionleft, CubeDummy, CubeDummy, PipesL, CubeDummy, CubeRoundTransitionright, EdgeRoundHalf, EdgeRoundDoubleA, EdgeRoundDoubleAHalf, EdgeRoundMediumQuarter, RampEHalf, RampRoundADouble, RampRoundADoubleHalf, RampRoundBDouble, RampRoundC, RampConnectorAleft, RampConnectorAright, SlicedCornerA1Low, SlicedCornerB1, SlicedCornerB2, SlicedCornerB1Medium, SlicedCornerB2Medium, CylinderThin3Way, CylinderThin4Way, CylinderThin5Way, CubeDummy"
+}
+# ============================ Extended 5 ============================
+# BA / CV
+{ Block Name: HWSChaosBlockSmallExtended5, Ref: HWSChaosBlockSmall
+  MarketPrice: 1, display: true
+  ChildShapes: "CubeLShape, CubeRoundTransitionleft, CubeRoundTransitionright, RampEHalf, CutCornerDLow, RampConnectorCleft, RampConnectorCright, NotchedBMedium, NotchedCLow, CutCornerD, CutCornerDMedium, CorridorWallA, CorridorEdgeA, CorridorPillarA, CorridorWallB, CorridorEdgeB, CorridorEdgeC, CorridorPillarB, CorridorPillarC, CorridorRoof, CorridorRoofCorner, CorridorRoofCornerRound, CorridorBulkyWallA, CorridorBulkyWallAWindowed, CorridorBulkyWallB, CorridorBulkyWallBWindowed, CorridorRampA, CorridorRampB, DoorframeA, DoorframeB, DoorframeC, CorridorRoofCornerInverted"
+}
+{ Block Name: HWSChaosBlockSmallExtended6, Ref: HWSChaosBlockSmall
   MarketPrice: 1, display: true
   ChildShapes: "WallMediumDouble, RampBDouble, SmallCornerRoundB2, CubeSteppedEdge, CubeQuarterEdge, CubeHalfRamp, CubeHalfCubeConnector, CornerSmallCMediumLow, WallLowDouble, CubeRoundConnectorAMedium, CubeRoundConnectorALow, CornerSmallBMediumLow, WallSlopedBold, CylinderCubeConnector, CylinderCubeHalfConnector, CylinderWallConnector"
 }

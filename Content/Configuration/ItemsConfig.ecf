@@ -26908,7 +26908,7 @@
   MarketPrice: 7000000000, display: true
   Info: HWS_ItemInfo_HWSElementNoxEssence, display: true
 }
-# -------------------------------------------------------------------------------------------------------- HWS Origin XP
+# -------------------------------------------------------------------------------------------------------- HWS DNA
 { Item Id: 4086, Name: HWSAllOriginXP
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
