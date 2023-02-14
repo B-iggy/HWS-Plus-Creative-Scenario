@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 487676217
+CRC: 1496817807
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1b03177f0224125005646d85193d9ad3
+    Hash: 45e9b1def31dac36e8f474f2029bff1d
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 298d3a9d8bce3b2ec0cbb90fa365bee6
+    Hash: 2f28ddfa985a19849f1513963c9c2708
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -281,4 +281,4 @@ Assets:
 - Assets/hws_blockmodels/HWSBlockFirework/HWSBlockFireworkMine2.prefab
 - Assets/hws_blockmodels/HWSBlockFirework/Import/HWSBlockFireworkBlocks.Meshes/Cube.010.asset
 Dependencies:
-- E:/Games/Steam/steamapps/common/Empyrion - Galactic Survival/BlockModelsAndSuitPropsModding/Bundles/hwsre_blocksmodels
+- E:/Games/Steam/steamapps/common/Unity/BlockModelsAndSuitPropsModding/Bundles/hwsre_blockmodels
