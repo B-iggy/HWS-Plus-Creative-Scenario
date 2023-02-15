@@ -1243,7 +1243,7 @@
     Recoil: 0.3, display: true
     IgnoreAtmo: true, display: true
     Automatic: true, display: true
-    Damage: 95, display: true
+    Damage: 108, display: true
     AmmoCapacity: 25, display: true
     AmmoType: PulseLaserChargeRifle, display: true
     ReloadDelay: 3.0, display: true
@@ -2625,7 +2625,7 @@
   # Meshfile: Entities/Items/Weapons/PulseRifle/PulseRifleEpicPrefab
   PickupToToolbar: true
   MarketPrice: 250001, display: true
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_kinetic, display: true
   HoldType: 15
   StackSize: 1
   Category: Weapons/Items
@@ -2645,7 +2645,7 @@
     BulletSpread: 0.09, display: false
     Recoil: 0.192, display: true
     Automatic: true, display: true
-    Damage: 90, display: true
+    Damage: 72, display: true
     NoiseStrength: 120, display: false
     AmmoCapacity: 50, display: true
     AmmoType: PulseLaserChargeRifle, display: true
@@ -10728,7 +10728,7 @@
     Range: 100, display: false
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
     Automatic: true
-    Damage: 26, display: true
+    Damage: 20, display: true
     AmmoCapacity: 250, display: true
     AmmoUnlimited: true
     AmmoType: 8.3mmBullet, display: true
@@ -10930,10 +10930,10 @@
     Range: 60, display: false
 	IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
     Automatic: false
-    BulletsPerShot: 7
+    BulletsPerShot: 8
     BulletSpread: 0
-    RaySpread: 1.6, display: true
-    Damage: 42, display: true
+    RaySpread: 1.5, display: true
+    Damage: 35, display: true
     Buff: "OpenWound,Mutilation"
     Buff_chance: "0.15,0.05"
     AmmoCapacity: 15, display: true
@@ -11523,10 +11523,10 @@
   Category: Weapons/Items
   Info: bkiPlayerArmor, display: true
 
-  Durability: 400, display: true
-  DegradationFac: 0.2, type: float, display: false    # do not display anymore
+  Durability: 500, display: true
+  DegradationFac: 0.15, type: float, display: false    # do not display anymore
   Oxygen: 375, type: int, display: true    # OxygenConsumptionPerMinute = 12.5f;  => consume 500 units of oxygen in 40 min
-  Armor: 100, type: int, display: true
+  Armor: 175, type: int, display: true
   Heat: 10, type: int, display: true
   Cold: 10, type: int, display: true
   Radiation: 2, type: int, display: true
@@ -11554,7 +11554,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_devices_kinetic, display: false
-  Mass: 48, type: float, display: false, formatter: Kilogram
+  Mass: 45, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   VolumeCapacity: 20, type: float, display: true, formatter: Liter
   HoldType: 0
@@ -11563,10 +11563,10 @@
   Category: Weapons/Items
   Info: bkiPlayerArmor, display: true
 
-  Durability: 600, display: true
-  DegradationFac: 0.2, type: float, display: false    # do not display anymore
+  Durability: 750, display: true
+  DegradationFac: 0.125, type: float, display: false    # do not display anymore
   Oxygen: 550, type: int, display: true
-  Armor: 150, type: int, display: true
+  Armor: 260, type: int, display: true
   Heat: 20, type: int, display: true
   Cold: 20, type: int, display: true
   Radiation: 4, type: int, display: true
@@ -11591,7 +11591,7 @@
   Meshfile: Entities/Misc/DummyPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Material: HWS_material_devices_kinetic, display: false
-  Mass: 88, type: float, display: false, formatter: Kilogram
+  Mass: 90, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   VolumeCapacity: 30, type: float, display: true, formatter: Liter
   HoldType: 0
@@ -11600,10 +11600,10 @@
   Category: Weapons/Items
   Info: bkiPlayerArmor, display: true
 
-  Durability: 800, display: true
-  DegradationFac: 0.2, type: float, display: false    # do not display anymore
+  Durability: 1000, display: true
+  DegradationFac: 0.1, type: float, display: false    # do not display anymore
   Oxygen: 725, type: int, display: true
-  Armor: 200, type: int, display: true
+  Armor: 350, type: int, display: true
   Heat: 30, type: int, display: true
   Cold: 30, type: int, display: true
   Radiation: 6, type: int, display: true
@@ -11627,14 +11627,14 @@
   RecipeName: LightArmorEpic
   MarketPrice: 333000, display: true
   Info: Light Armor reinforced with enhanced elements with increased protection and durability., display: true
-  Mass: 37, type: float, display: false, formatter: Kilogram
+  Mass: 37.5, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   VolumeCapacity: 40, type: float, display: true, formatter: Liter
 
-  Durability: 500, display: true
-  DegradationFac: 0.1, type: float, display: false    # do not display anymore
+  Durability: 625, display: true
+  DegradationFac: 0.125, type: float, display: false    # do not display anymore
   Oxygen: 475, type: int, display: true    # OxygenConsumptionPerMinute = 12.5f;  => consume 500 units of oxygen in 40 min
-  Armor: 150, type: int, display: true
+  Armor: 265, type: int, display: true
   Heat: 20, type: int, display: true
   Cold: 20, type: int, display: true
   Radiation: 6, type: int, display: true
@@ -11661,23 +11661,24 @@
   Info: Medium Armor reinforced with enhanced elements with increased protection and durability., display: true
   VolumeCapacity: 50, type: float, display: true, formatter: Liter
 
-  Durability: 750, display: true
+  Durability: 940, display: true
+  DegradationFac: 0.1, type: float, display: false    # do not display anymore
   Oxygen: 600, type: int, display: true
-  Armor: 250, type: int, display: true
+  Armor: 435, type: int, display: true
   Heat: 90, type: int, display: true
   Cold: 100, type: int, display: true
   Radiation: 7, type: int, display: true
   FallDamageFac: 0.3, type: float, display: true
-  PowerFac: 0.3, type: float, display: true  # better: 0.085
-  SpeedFac: 0.5, type: float, display: true  # better: 0.085
-  JumpFac: 1.5, type: float, display: true
+  PowerFac: 0.47, type: float, display: true  # better: 0.085
+  SpeedFac: 0.68, type: float, display: true  # better: 0.085
+  JumpFac: 1.4, type: float, display: true
   JetpackFac: 1.8, type: float, display: true
   FoodFac: 0.5, type: float, display: true
   StaminaFac: 0.7, type: float, display: true
 
   NrSlots: 3, type: int, display: true
 
-  Mass: 79, type: float, display: false, formatter: Kilogram
+  Mass: 68, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 
   IsEquippableWithoutLocker: true
@@ -11696,9 +11697,10 @@
   VolumeCapacity: 60, type: float, display: true, formatter: Liter
   Info: Heavy Armor reinforced with enhanced elements with increased protection and durability., display: true
 
-  Durability: 1000, display: true
+  Durability: 1350, display: true
+  DegradationFac: 0.075, type: float, display: false    # do not display anymore
   Oxygen: 1000, type: int, display: true
-  Armor: 500, type: int, display: true
+  Armor: 875, type: int, display: true
   Heat: 150, type: int, display: true
   Cold: 250, type: int, display: true
   Radiation: 15, type: int, display: true
@@ -11711,7 +11713,7 @@
   StaminaFac: 1.1, type: float, display: true
   NrSlots: 4, type: int, display: true
 
-  Mass: 112, type: float, display: false, formatter: Kilogram
+  Mass: 135, type: float, display: false, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
 
   IsEquippableWithoutLocker: true
@@ -11741,16 +11743,16 @@
 }
 { Item Id: 621, Name: ArmorBoost, Ref: ArmorBoostTemplate
   MarketPrice: 5000, display: true
-  Armor: 50, type: int, display: true
+  Armor: 75, type: int, display: true
   Heat: -3, type: int, display: true
   Cold: -2, type: int, display: true
   Radiation: 1, type: int, display: true
-  PowerFac: -0.04, type: float, display: true
-  SpeedFac: -0.06, type: float, display: true
-  StaminaFac: 0.2, type: float, display: true
-  JetpackFac: 0.2, type: float, display: true
-  JumpFac: -0.04, type: float, display: true
-  FoodFac: 0.26, type: float, display: true
+  PowerFac: -0.03, type: float, display: true
+  SpeedFac: -0.045, type: float, display: true
+  StaminaFac: 0.15, type: float, display: true
+  JetpackFac: 0.15, type: float, display: true
+  JumpFac: -0.03, type: float, display: true
+  FoodFac: 0.3, type: float, display: true
 
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 5.5, type: float, display: true, formatter: Kilogram
@@ -11766,7 +11768,7 @@
 }
 { Item Id: 623, Name: MultiBoost, Ref: ArmorBoostTemplate
   MarketPrice: 5000, display: true
-  Armor: 15, type: int, display: true
+  Armor: 25, type: int, display: true
   Oxygen: 25, type: int, display: true
   Radiation: 1, type: int, display: true
   Heat: 6, type: int, display: true
@@ -11785,7 +11787,7 @@
 }
 { Item Id: 624, Name: OxygenBoost, Ref: ArmorBoostTemplate
   MarketPrice: 5000, display: true
-  Armor: -10, type: int, display: true
+  Armor: -8, type: int, display: true
   Oxygen: 150, type: int, display: true
   PowerFac: -0.03, type: float, display: true
   SpeedFac: -0.03, type: float, display: true
@@ -11805,7 +11807,7 @@
 }
 { Item Id: 626, Name: MobilityBoost, Ref: ArmorBoostTemplate
   MarketPrice: 5000, display: true
-  Armor: -25, type: int, display: true
+  Armor: -20, type: int, display: true
   PowerFac: 0.15, type: float, display: true
   SpeedFac: 0.15, type: float, display: true
   StaminaFac: -0.2, type: float, display: true
@@ -11829,7 +11831,7 @@
 }
 { Item Id: 628, Name: EVABoost, Ref: ArmorBoostTemplate
   MarketPrice: 2932, display: true
-  Armor: -80, type: int, display: true
+  Armor: -65, type: int, display: true
   Heat: -15, type: int, display: true
   Cold: 190, type: int, display: true
   JetpackFac: 0.1, type: float, display: true
@@ -11855,11 +11857,11 @@
 # Epic Armor Booster
 { Item Id: 650, Name: ArmorBoostEpic, Ref: ArmorBoost
   MarketPrice: 100000.00, display: true
-  Armor: 100, type: int, display: true
+  Armor: 150, type: int, display: true
   Heat: -6, type: int, display: true
   Cold: -6, type: int, display: true
   Radiation: 2, type: int, display: true
-  SpeedFac: -0.1, type: float, display: true
+  SpeedFac: -0.075, type: float, display: true
 
   ShowUser: Yes
 }
@@ -11871,7 +11873,7 @@
 }
 { Item Id: 652, Name: MultiBoostEpic, Ref: MultiBoost
   MarketPrice: 100000.00, display: true
-  Armor: 25, type: int, display: true
+  Armor: 40, type: int, display: true
   Oxygen: 50, type: int, display: true
   Radiation: 3, type: int, display: true
   Heat: 10, type: int, display: true
@@ -11922,7 +11924,7 @@
 }
 { Item Id: 657, Name: EVABoostEpic, Ref: EVABoost
   MarketPrice: 100000.00, display: true
-  Armor: -40, type: int, display: true
+  Armor: -35, type: int, display: true
   Cold: 300, type: int, display: true
 
   ShowUser: No
@@ -12411,7 +12413,7 @@
     BulletSpread: 0.12, display: true
     Recoil: 0.25, display: true
     IgnoreAtmo: true, display: true
-    Damage: 57, display: true
+    Damage: 60, display: true
     NoiseStrength: 50, display: false
     CameraShake: 1
     AmmoCapacity: 32, display: true
@@ -12481,9 +12483,9 @@
     NoiseStrength: 100, display: false
     CameraShake: 1
     Automatic: true, display: true
-    BulletSpread: 0.3, display: true
+    BulletSpread: 0.32, display: true
     Recoil: 0.7, display: true
-    Damage: 38, display: true
+    Damage: 30, display: true
     AmmoCapacity: 32, display: true
     AmmoType: 50Caliber, display: true
     ReloadDelay: 1.8, display: true
@@ -12533,7 +12535,7 @@
     BulletSpread: 0.25, display: true
     Recoil: 0.55, display: true
     IgnoreAtmo: true, display: true
-    Damage: 48, display: true
+    Damage: 38, display: true
     NoiseStrength: 50, display: false
     CameraShake: 1
     AmmoCapacity: 42, display: true
@@ -12550,7 +12552,7 @@
     Tracer: Weapons/Projectiles/TracerLaserShotRed
     TracerPerBullet: 1
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
+    DamageMultiplier_Group: HWS_EWS_Energy_LHW
   }
   { Child 1
     Class: Zoom
@@ -15593,7 +15595,7 @@
   Mass: 10, type: float, display: true, formatter: Kilogram
   { Child 0
     Class: Projectile
-    Damage: 1000, display: true
+    Damage: 850, display: true
     NoiseStrength: 100, display: false
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSAquaExplosionSmall
@@ -15622,7 +15624,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Projectile
-    Damage: 1000, display: true
+    Damage: 850, display: true
     NoiseStrength: 100, display: false
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSTerraExplosionSmall
@@ -15651,7 +15653,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Projectile
-    Damage: 1000, display: true
+    Damage: 850, display: true
     NoiseStrength: 100, display: false
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSPyroExplosionSmall
@@ -15680,7 +15682,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Projectile
-    Damage: 1000, display: true
+    Damage: 850, display: true
     NoiseStrength: 100, display: false
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSObsidianExplosionSmall
@@ -15709,7 +15711,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Projectile
-    Damage: 1000, display: true
+    Damage: 850, display: true
     NoiseStrength: 100, display: false
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSLuxExplosionSmall
@@ -15738,7 +15740,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Projectile
-    Damage: 1000, display: true
+    Damage: 850, display: true
     NoiseStrength: 100, display: false
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSNoxExplosionSmall
@@ -15767,7 +15769,7 @@
   Category: Weapons/Items
   { Child 0
     Class: Projectile
-    Damage: 1000, display: true
+    Damage: 850, display: true
     NoiseStrength: 100, display: false
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSStrangeletExplosionSmall
@@ -27017,7 +27019,7 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
-    Damage: 500, display: true
+    Damage: 375, display: true
     Range: 500, display: true
     RangeSpace: 1000, display: true
     NoiseStrength: 190, display: false
@@ -27061,7 +27063,7 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
-    Damage: 500, display: true
+    Damage: 375, display: true
     Range: 500, display: true
     RangeSpace: 1000, display: true
     NoiseStrength: 190, display: false
@@ -27105,7 +27107,7 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 0.9, type: float, display: true, formatter: ROF
-    Damage: 500, display: true
+    Damage: 375, display: true
     Range: 500, display: true
     RangeSpace: 1000, display: true
     NoiseStrength: 190, display: false
@@ -27149,7 +27151,7 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 0.5, type: float, display: true, formatter: ROF
-    Damage: 500, display: true
+    Damage: 375, display: true
     Range: 500, display: true
     RangeSpace: 1000, display: true
     NoiseStrength: 190, display: false
@@ -27189,10 +27191,10 @@
   Volume: 0, type: float, display: false, formatter: Liter
   { Child 0
     Class: Projectile
-    Damage: 500
+    Damage: 375
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 300, display: true
+    BlastDamage: 250, display: true
     Speed: 50
     Range: 500
     RangeSpace: 1000
