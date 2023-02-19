@@ -132,24 +132,24 @@
   Info: "A standard-issue sidearm for personel defense. It's rated for underwater use.", display: true
   Mass: 2.1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  Durability: 500, display: false
+  Durability: 450, display: false
   DegradationProb: 1.0, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: Ranged
     AllowRemote: true
     AllowAt: "UnderWater,Space,Planet", display: true
-    ROF: 0.2, type: float, display: true, formatter: ROF
-    Range: 110, display: false
+    ROF: 0.185, type: float, display: true, formatter: ROF
+    Range: 90, display: false
     NoiseStrength: 40, display: false
     CameraShake: 1
     Automatic: false
-    BulletSpread: 0.2, display: true
-    Recoil: 0.5, display: true
-    Damage: 38, display: true
+    BulletSpread: 0.25, display: true
+    Recoil: 0.4, display: true
+    Damage: 39, display: true
     AmmoCapacity: 15, display: true
     AmmoType: 50Caliber, display: true
-    ReloadDelay: 2.1, display: true
+    ReloadDelay: 2.25, display: true
     SfxBegin: Weapons/Player/Pistol/AWDS_AR_ Heavy Single
     SfxNoAmmo: Weapons/Misc/MagnumDryFire
     SfxReload: Weapons/Player/Reload/PistolReloadNormal
@@ -187,24 +187,24 @@
   # Info: bkiWeaponHandheld, display: true
   Mass: 6.2, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  Durability: 500, display: false
+  Durability: 150, display: false
   DegradationProb: 1.0, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: Ranged
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
-    Range: 60, display: false
+    Range: 45, display: false
     NoiseStrength: 180, display: false
     CameraShake: 3
     Automatic: false
     BulletsPerShot: 8
-    BulletSpread: 0.3
-    # Buff: "OpenWound,Mutilation"
-    # Buff_chance: "0.1,0.03"
-    RaySpread: 1.25, display: true
+    BulletSpread: 0.13
+  #  Buff: "OpenWound,FractureOpen"
+  #  Buff_chance: "0.1,0.05"
+    RaySpread: 0.65, display: true
     Recoil: 2.5, display: true
-    Damage: 60, display: true
+    Damage: 26, display: true
     AmmoCapacity: 5, display: true
     AmmoType: ShotgunShells, display: true
     ReloadDelay: 4, display: true
@@ -216,7 +216,7 @@
 
     DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] + 10"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/500)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -244,26 +244,26 @@
   Info: "A portable rotary cannon for manned emplacements. This weapon has safeties in place to prevent personal injury. Change mode with RMB.", display: true
   Mass: 39, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  Durability: 500, display: false
-  DegradationProb: 0.08, type: float, display: false
+  Durability: 8750, display: false
+  DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
   RadialMenu: true
   { Child 0
     Class: Ranged
     AllowRemote: false
-    ROF: 0.1, type: float, display: true, formatter: ROF
-    Range: 150, display: false
+    ROF: 0.09, type: float, display: true, formatter: ROF
+    Range: 225, display: false
     NoiseStrength: 200, display: false
     CameraShake: 1
     Automatic: true, display: true
-    BulletSpread: 0.3, display: true
+    BulletSpread: 0.35, display: true
     Recoil: 0.7, display: true
-    Damage: 52, display: true
-    AmmoCapacity: 300, display: true
+    Damage: 62, display: true
+    AmmoCapacity: 250, display: true
     AmmoType: 8.3mmBullet, display: true
     ReloadDelay: 6.5, display: true
-    # Buff: "OpenWound"
-    # Buff_chance: 0.07
+  #  Buff: "OpenWound,FractureClosed,FractureOpen"
+  #  Buff_chance: "0.1,0.05,0.07"
     SfxBegin: Weapons/Player/Minigun/minigun_start
     SfxLoop: Weapons/Player/Minigun/minigun_loop
     SfxStop: Weapons/Player/Minigun/minigun_end
@@ -273,9 +273,9 @@
     Tracer: Weapons/Projectiles/TracerOrange1
     TracerPerBullet: 2
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
+    DamageMultiplier_Group: HWS_EWS_Kinetic_MHW
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 5"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/500)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/90)"
@@ -288,19 +288,19 @@
   { Child 1
     Class: Ranged
     AllowRemote: false
-    ROF: 0.1, type: float, display: true, formatter: ROF
-    Range: 150, display: false
+    ROF: 0.08, type: float, display: true, formatter: ROF
+    Range: 146, display: false
     NoiseStrength: 120, display: false
     CameraShake: 1
-    BulletSpread: 0.75, display: true
-    Recoil: 2.0, display: true
-    Damage: 86, display: true
-    AmmoCapacity: 300, display: true
+    BulletSpread: 0.7, display: true
+    Recoil: 1.5, display: true
+    Damage: 77, display: true
+    AmmoCapacity: 250, display: true
     AmmoType: 8.3mmBullet, display: true
     ReloadDelay: 6.5, display: true
     Automatic: true, display: true
-    # Buff: "OpenWound"
-    # Buff_chance: 0.06
+  #  Buff: "OpenWound,FractureClosed,FractureOpen"
+  #  Buff_chance: "0.1,0.05,0.07"
     SfxBegin: Weapons/Player/Minigun/minigun_start
     SfxLoop: Weapons/Player/Minigun/minigun_loop
     SfxStop: Weapons/Player/Minigun/minigun_end
@@ -348,27 +348,27 @@
   StackSize: 1
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
-  Mass: 4.2, type: float, display: true, formatter: Kilogram
+  Mass: 3.8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  Durability: 500, display: false
-  DegradationProb: 0.125, type: float, display: false
+  Durability: 2500, display: false
+  DegradationProb: 1.0, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
   { Child 0
     Class: Ranged
     AllowRemote: false
-    ROF: 0.1, type: float, display: true, formatter: ROF
+    ROF: 0.12, type: float, display: true, formatter: ROF
     Range: 170, display: false
     Automatic: true, display: true
-    BulletSpread: 0.1, display: true
-    Recoil: 0.4, display: true
+    BulletSpread: 0.16, display: true
+    Recoil: 0.36, display: true
     Damage: 42, display: true
     NoiseStrength: 50, display: false
     CameraShake: 1
-    AmmoCapacity: 25, display: true
+    AmmoCapacity: 30, display: true
     AmmoType: 5.8mmBullet, display: true
-    ReloadDelay: 3.1, display: true
-    # Buff: "OpenWound"
-    # Buff_chance: 0.05
+    ReloadDelay: 3.2, display: true
+  #  Buff: "OpenWound"
+  #  Buff_chance: 0.05
     SfxBegin: Weapons/Player/AssaultRifle/AWDS_AR_HK416_start
     SfxLoop: Weapons/Player/AssaultRifle/AWDS_AR_HK416_loop
     SfxStop: Weapons/Player/AssaultRifle/AWDS_AR_HK416_end
@@ -386,7 +386,7 @@
 
     DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 4"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/500)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -418,26 +418,25 @@
   Info: "A long ranged anti-personel and anti-materiel rifle weapon with a telescopic sight that has become the standard LRSW.", display: true
   Mass: 9.1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  Durability: 500, display: false
-  DegradationProb: 1.25, type: float, display: false
+  Durability: 300, display: false
+  DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: Ranged
     AllowRemote: false
-    ROF: 0.5, type: float, display: true, formatter: ROF
-    Range: 303, display: false
+    ROF: 0.6, type: float, display: true, formatter: ROF
+    Range: 350, display: false
     NoiseStrength: 150, display: false
     CameraShake: 2
     Automatic: false
     BulletSpread: 0.03, display: true
-    Recoil: 1.1, display: true
-    Damage: 165, display: true
-    AmmoCapacity: 6, display: true
+    Recoil: 1.25, display: true
+    Damage: 175, display: true
+    AmmoCapacity: 5, display: true
     AmmoType: 12.7mmBullet, display: true
-    # ReloadDelay: 3.7, display: true
-    ReloadDelay: 4.1, display: true
-    # Buff: "OpenWound"
-    # Buff_chance: 0.2
+    ReloadDelay: 4.3, display: true
+  # Buff: "OpenWound,FractureClosed,FractureOpen"
+  # Buff_chance: "0.3,0.2,0.1"
     # SfxBegin: Weapons/Player/Sniper/desert_eagle
     SfxBegin: Weapons/Player/Rifle/M24
     SfxNoAmmo: Weapons/Misc/AK47DryFire01
@@ -562,29 +561,29 @@
   StackSize: 1
   Category: Weapons/Items
   Info: "An advanced semi-automatic combat shotgun used by elite personel for close quarters combat. It has a larger magazine and more stopping power than it's standard issue counterpart.", display: true
-  Mass: 9.1, type: float, display: true, formatter: Kilogram
+  Mass: 6.7, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  Durability: 500, display: false
-  DegradationProb: 0.75, type: float, display: false
+  Durability: 200, display: false
+  DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: Ranged
     AllowRemote: false
     ROF: 0.85, type: float, display: true, formatter: ROF
-    Range: 66, display: false
+    Range: 55, display: false
     NoiseStrength: 180, display: false
     CameraShake: 3
     Automatic: false
     BulletsPerShot: 8
-    BulletSpread: 0.2
-    RaySpread: 1, display: true
-    Recoil: 1.68, display: true
-    Damage: 58, display: true
+    BulletSpread: 0.12
+    RaySpread: 0.6, display: true
+    Recoil: 1.72, display: true
+    Damage: 31, display: true
     AmmoCapacity: 7, display: true
     AmmoType: ShotgunShells, display: true
-    ReloadDelay: 3, display: true
-    # Buff: "OpenWound,Mutilation"
-    # Buff_chance: "0.1,0.03"
+    ReloadDelay: 3.3, display: true
+  # Buff: "OpenWound,FractureOpen"
+  # Buff_chance: "0.2,0.1"
     SfxBegin: Weapons/Player/Shotgun/w1200_fire
     # SfxBegin: Weapons/Player/Shotgun/Resistance-ShotGun-01-Single_Shot-03
     SfxNoAmmo: Weapons/Misc/PumpgunDryFire02
@@ -622,24 +621,25 @@
   StackSize: 1
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
-  Mass: 25, type: float, display: true, formatter: Kilogram
+  Mass: 13.2, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #just for display - BlastRadius and BlastDamage is controlled by "SlowRocket"
 
-  Durability: 100, display: false
+  Durability: 50, display: false
   DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 3.7, type: float, display: true, formatter: ROF
-    Range: 200, display: false
+    ROF: 4, type: float, display: true, formatter: ROF
+    Range: 253, display: false
+    RangeSpace: 400, display: false
     NoiseStrength: 190, display: false
-    Recoil: 7, display: true
+    Recoil: 8.5, display: true
     CameraShake: 3
-    AmmoCapacity: 6, display: true
+    AmmoCapacity: 1, display: true
     AmmoType: SlowRocket, display: true
-    ReloadDelay: 4.5, display: true
+    ReloadDelay: 4.0, display: true
     SfxBegin: Weapons/Player/RocketLauncher/FLYBYMissile02Slow
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
     SfxReload: Weapons/Player/Reload/RifleReloadSlow
@@ -652,7 +652,7 @@
   { Child 1
     Class: Zoom
     ZoomOverlay: Entities/Items/Weapons/SniperScopes/ScopeNew03
-    ZoomOut: 40
+    ZoomOut: 90
     ZoomIn: 40
     RedDot: true
   }
@@ -1094,21 +1094,22 @@
   Info: "Utilizing a pulsed laser array this weapon can produce collimated hard light beams that ignore atmospheric density and deal extreme thermal damage to the target.", display: true
   Mass: 2.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  Durability: 500, display: false
+  Durability: 800, display: false
   DegradationProb: 1.0, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: Ranged
     AllowRemote: false
-    ROF: 0.35, type: float, display: true, formatter: ROF
-    Range: 90, display: false
+    ROF: 0.25, type: float, display: true, formatter: ROF
+    Range: 75, display: false
+    RangeSpace: 95, display: true
     NoiseStrength: 20, display: false
     CameraShake: 1
     IgnoreAtmo: true, display: true
     Automatic: true
-    BulletSpread: 0, display: true
+    BulletSpread: 0.125, display: true
     Recoil: 0.2, display: true
-    Damage: 60, display: true
+    Damage: 63, display: true
     AmmoCapacity: 20, display: true
     AmmoType: PulseLaserChargePistol, display: true
     ReloadDelay: 2.5, display: true
@@ -1164,25 +1165,24 @@
   Info: "A lightweight squad automatic weapon that's standard issue for military and tactical personel for rear support. It has superior range and damage over speed.", display: true
   Mass: 4, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  Durability: 500, display: false
-  DegradationProb: 0.40, type: float, display: false
+  Durability: 1200, display: false
+  DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
   { Child 0
     Class: Ranged
     AllowRemote: false
-    ROF: 0.2, type: float, display: true, formatter: ROF
-    Range: 170, display: false
+    ROF: 0.19, type: float, display: true, formatter: ROF
+    Range: 235, display: false
     NoiseStrength: 100, display: false
     CameraShake: 1
     Automatic: true, display: true
-    BulletSpread: 0.16, display: true
-    Recoil: 1.0, display: true
+    BulletSpread: 0.08, display: true
+    Recoil: 0.63, display: true
     Damage: 70, display: true
-    AmmoCapacity: 30, display: true
+    AmmoCapacity: 20, display: true
     AmmoType: 5.8mmBullet, display: true
-    ReloadDelay: 3.1, display: true
-    # Buff: "OpenWound"
-    # Buff_chance: 0.08
+    ReloadDelay: 3.4, display: true
+    
     # SfxBegin: Weapons/ProjectileWeapons/Automatic/HK416_Modern_start
     # SfxLoop: Weapons/ProjectileWeapons/Automatic/HK416_Modern_loop
     # SfxStop: Weapons/ProjectileWeapons/Automatic/HK416_Modern_end
@@ -1200,7 +1200,7 @@
 
     DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 5"
+    # Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/300)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -1228,28 +1228,29 @@
   Info: "Utilizing a pulsed laser array this weapon can produce collimated hard light beams that ignore atmospheric density and deal extreme thermal damage to the target.", display: true
   Mass: 5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  Durability: 500, display: false
-  DegradationProb: 0.33, type: float, display: false
+  Durability: 3150, display: false
+  DegradationProb: 1.0, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   # Damage: 135, display: true
   { Child 0
     Class: Ranged
     AllowRemote: false
-    ROF: 0.25, type: float, display: true, formatter: ROF
-    Range: 150, display: false
+    ROF: 0.21, type: float, display: true, formatter: ROF
+    Range: 200, display: false
+    RangeSpace: 250, display: false
     NoiseStrength: 40, display: false
     CameraShake: 1
-    BulletSpread: 0, display: false
-    Recoil: 0.3, display: true
+    BulletSpread: 0.04, display: false
+    Recoil: 0.28, display: true
     IgnoreAtmo: true, display: true
     Automatic: true, display: true
-    Damage: 108, display: true
-    AmmoCapacity: 25, display: true
+    Damage: 112, display: true
+    AmmoCapacity: 35, display: true
     AmmoType: PulseLaserChargeRifle, display: true
     ReloadDelay: 3.0, display: true
     # ParticleTransform: Muzzle/Particle1
     # Buff: "DermalBurn"
-    # Buff_chance: 0.08
+    # Buff_chance: 0.05
 	SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
     # SfxBegin: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_start
     # SfxLoop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_loop
@@ -1321,7 +1322,7 @@
   StackSize: 1
   Category: Weapons/Items
   Info: bkiWeaponHandheldIgnoringAtmo, display: true
-  Mass: 55, type: float, display: true, formatter: Kilogram
+  Mass: 45, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   #just for display - BlastRadius and BlastDamage is controlled by "SciFiCannonPlasmaCharge"
   Damage: 1000, display: true
@@ -1335,8 +1336,9 @@
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 1.9, type: float, display: true, formatter: ROF
-    Range: 360, display: false
+    ROF: 2, type: float, display: true, formatter: ROF
+    Range: 280, display: false
+    RangeSpace: 420, display: false 
     NoiseStrength: 120, display: false
     CameraShake: 3
     Automatic: true
@@ -1361,12 +1363,13 @@
     AllowRemote: false
     ROF: 5, type: float, display: true, formatter: ROF
     Range: 250, display: false
-    Damage: 920, display: true
+    RangeSpace: 350, display: false
+    Damage: 635, display: true
     NoiseStrength: 180, display: false
     CameraShake: 4
     Automatic: false
     BulletSpread: 0.2, display: true
-    Recoil: 0.5, display: true
+    Recoil: 1, display: true
     IgnoreAtmo: true, display: true
     AmmoCapacity: 5, display: true
     AmmoType: SciFiCannonPlasmaCharge, display: true
@@ -1409,27 +1412,27 @@
   StackSize: 1
   Category: Weapons/Items
   Info: "A long ranged anti-materiel rifle with advanced telescopic sights and aim stabilizers allowing longer shots with more penetrative power against armored targets.", display: true
-  Mass: 10, type: float, display: true, formatter: Kilogram
+  Mass: 10.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  Durability: 500, display: false
-  DegradationProb: 1.5, type: float, display: false
+  Durability: 300, display: false
+  DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: Ranged
     AllowRemote: false
-    ROF: 0.425, type: float, display: true, formatter: ROF
-    Range: 400, display: false
+    ROF: 0.5, type: float, display: true, formatter: ROF
+    Range: 420, display: false
     NoiseStrength: 100, display: false
     CameraShake: 2
     Automatic: false
-    BulletSpread: 0.023, display: true
-    Recoil: 0.88, display: true
-    Damage: 200, display: true
-    AmmoCapacity: 8, display: true
+    BulletSpread: 0.02, display: true
+    Recoil: 1.0, display: true
+    Damage: 210, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: 12.7mmBullet, display: true
-    ReloadDelay: 4.25, display: true
-    # Buff: "OpenWound"
-    # Buff_chance: 0.6
+    ReloadDelay: 4.5, display: true
+  #  Buff: "OpenWound,FractureClosed,FractureOpen"
+  #  Buff_chance: "0.35,0.25,0.1"
 	SfxBegin: Weapons/Player/Sniper/weapon_sniper_004
     # SfxBegin: Weapons/Player/Sniper/Resistance-SniperRifle-02-Single_Shot-01
     SfxNoAmmo: Weapons/Misc/AK47DryFire01
@@ -1439,7 +1442,7 @@
     Tracer: Weapons/Projectiles/TracerOrange1
     TracerPerBullet: 1
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
+    DamageMultiplier_Group: HWS_EWS_Kinetic_MHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -1676,25 +1679,26 @@
   Meshfile: Entities/Items/Weapons/Pistols/HandGunPrefab
   CustomIcon: HandCannon
   PickupToToolbar: true
-  Durability: 500, display: false
+  Durability: 480, display: false
   MarketPrice: 627, display: true
   Info: "A specialist sidearm with a larger magazine and holosight. It possesses superior stopping power and can operate underwater."", display: true
-  DegradationProb: 0.75, type: float, display: false
+  Mass: 2.3, type: float, display: true, formatter: Kilogram
+  DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: Ranged
     AllowAt: "UnderWater,Space,Planet"
-    ROF: 0.17, type: float, display: true, formatter: ROF
-    Range: 135, display: false
+    ROF: 0.2, type: float, display: true, formatter: ROF
+    Range: 115, display: false
     NoiseStrength: 60, display: false
-    BulletSpread: 0.15, display: true
-    Recoil: 0.64, display: true
+    BulletSpread: 0.2, display: true
+    Recoil: 0.65, display: true
     Damage: 50, display: true
     AllowRemote: true
-    AmmoCapacity: 15, display: true
+    AmmoCapacity: 12, display: true
     ReloadDelay: 2.375, display: true
-    # Buff: "OpenWound"
-    # Buff_chance: 0.25
+   # Buff: "OpenWound"
+   # Buff_chance: 0.05
     SfxBegin: Weapons/Player/Sniper/desert_eagle
     # SfxBegin: Weapons/Player/Pistol/AWDS_AR_ Heavy Single
 
@@ -1871,26 +1875,30 @@
   PickupToToolbar: true
   MarketPrice: 100001, display: true
   Info: bkiEpicWeapon, display: true
+  Mass: 4.3, type: float, display: true, formatter: Kilogram
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
-  Durability: 500, display: false
-  DegradationProb: 0.045, type: float, display: false
+  Durability: 2700, display: false
+  DegradationProb: 1.0, type: float, display: false
   RepairDisabled: true, display: true
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
   { Child 0
-    ROF: 0.170, type: float, display: true, formatter: ROF
-    Range: 198, display: false
+    ROF: 0.16, type: float, display: true, formatter: ROF
+    Range: 293, display: false
     NoiseStrength: 100, display: false
-    BulletSpread: 0.06, display: true
-    Recoil: 0.36, display: true
-    Damage: 90, display: true
-    AmmoCapacity: 45, display: true
-    ReloadDelay: 3.75, display: true
+    BulletSpread: 0.05, display: true
+    Recoil: 0.41, display: true
+    Damage: 92, display: true
+    AmmoCapacity: 30, display: true
+    ReloadDelay: 3, display: true
     # SfxBegin: Weapons/ProjectileWeapons/Automatic/FAL_50-42_Modern_start
     # SfxLoop: Weapons/ProjectileWeapons/Automatic/FAL_50-42_Modern_loop
     # SfxStop: Weapons/ProjectileWeapons/Automatic/FAL_50-42_Modern_end
     SfxBegin: Weapons/ProjectileWeapons/Automatic/M14_Heavy_start
     SfxLoop: Weapons/ProjectileWeapons/Automatic/M14_Heavy_loop
     SfxStop: Weapons/ProjectileWeapons/Automatic/M14_Heavy_end
+
+  # Buff: "OpenWound,FractureClosed,FractureOpen"
+  # Buff_chance: "0.1,0.05,0.3"
 
     DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
@@ -1924,30 +1932,31 @@
   MarketPrice: 200001, display: true
   Info: bkiEpicWeapon, display: true
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
-  Durability: 500, display: false
-  DegradationProb: 0.48, type: float, display: false
+  Durability: 250, display: false
+  DegradationProb: 1, type: float, display: false
+  Mass: 14.2, type: float, display: true, formatter: Kilogram
   RepairDisabled: true, display: true
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
-    ROF: 0.425, type: float, display: true, formatter: ROF
-    Range: 550, display: true
-    RangeSpace: 700, display: true
+    ROF: 0.45, type: float, display: true, formatter: ROF
+    Range: 530, display: true
+    RangeSpace: 550, display: true
     NoiseStrength: 100, display: false
-    BulletSpread: 0.011, display: true
-    Recoil: 0.728, display: true
-    AmmoType: 15mmBullet, display: true
-    Damage: 245, display: true
+    BulletSpread: 0.01, display: true
+    Recoil: 0.85, display: true
+    AmmoType: 12.7mmBullet, display: true
+    Damage: 250, display: true
     AmmoCapacity: 10, display: true
     ReloadDelay: 5, display: true
-    # Buff: "OpenWound,FractureOpen"
-    # Buff_chance: "0.6,0.3"
+  #  Buff: "OpenWound,FractureClosed,FractureOpen"
+  #  Buff_chance: "0.5,0.35,0.2"
     # AmmoType: PulseLaserChargeRifle, display: true
     SfxBegin: Weapons/Player/Sniper/weapon_sniper_004
     #SfxBegin: Weapons/Player/Sniper/Resistance-SniperRifle-01-Single_Shot-03
     # PfxMuzzle: MuzzleFlash5
     PenetrationDepth: 2, display: true
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic_HHW
+    DamageMultiplier_Group: HWS_EWS_Kinetic_MHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -1996,25 +2005,28 @@
   MarketPrice: 250001, display: true
   Info: "An experimental rotary laser cannon developed by the Zirax after examining UCH weapons retrieved from the Titan's Wreckage. It's equipped with a secondary firing mode activated with RMB. The technology to repair this weapon does not exist yet.", display: true
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
-  Durability: 500, display: false
-  DegradationProb: 0.025, type: float, display: false
+  Durability: 13500, display: false
+  Mass: 45, type: float, display: true, formatter: Kilogram
+  DegradationProb: 1, type: float, display: false
   RepairDisabled: true, display: true
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
   RadialMenu: true
   { Child 0        # Normal Mode
     Class: Ranged
-    ROF: 0.1, type: float, display: true, formatter: ROF
-    Range: 178, display: false
+    ROF: 0.08, type: float, display: true, formatter: ROF
+    Range: 180, display: false
+    RangeSpace: 225, display: true
     NoiseStrength: 200, display: false
     BulletSpread: 0.25, display: false
-    Recoil: 0.3, display: true
-    Damage: 73, display: true
-    AmmoCapacity: 250, display: true
+    Recoil: 0.35, display: true
+    Damage: 98, display: true
+    IgnoreAtmo: true
+    AmmoCapacity: 300, display: true
     AmmoType: PulseLaserChargeRifle, display: true
     Automatic: true
-    ReloadDelay: 3.149, display: true
-    # Buff: "RadiationBurn,DermalBurn"
-    # Buff_chance: "0.08,0.08"
+    ReloadDelay: 5, display: true
+  #  Buff: "RadiationBurn,DermalBurn"
+  #  Buff_chance: "0.02,0.08"
     SfxBegin: Weapons/Player/Minigun/minigun2_start
     SfxLoop: Weapons/Player/Minigun/minigun2_loop
     SfxStop: Weapons/Player/Minigun/minigun2_end
@@ -2022,9 +2034,9 @@
     Tracer: Weapons/Projectiles/TracerLaserShotRed
     TracerPerBullet: 2
 
-    DamageMultiplier_Group: HWS_EWS_Energy_HHW
+    DamageMultiplier_Group: HWS_EWS_Energy_MHW
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 3"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     # Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/300)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -2036,19 +2048,21 @@
   }
   { Child 1       # Beam Mode
     Class: Ranged
-    ROF: 0.1, type: float, display: true, formatter: ROF
-    Range: 200, display: false
+    ROF: 0.07, type: float, display: true, formatter: ROF
+    Range: 118, display: false
+    RangeSpace: 147, display: true
+    IgnoreAtmo: true
     NoiseStrength: 100, display: false
-    Recoil: 1.05, display: true
-    Damage: 100, display: true
-    BulletSpread: 0.7, display: false
-    AmmoCapacity: 250, display: true
+    Recoil: 0.85, display: true
+    Damage: 121, display: true
+    BulletSpread: 0.5, display: false
+    AmmoCapacity: 300, display: true
     AmmoType: PulseLaserChargeRifle, display: true
     Automatic: true
-    ReloadDelay: 3.149, display: true
+    ReloadDelay: 5, display: true
     Bullet_use_per_shot: 2
-    # Buff: "RadiationBurn,DermalBurn,Stunned"
-    # Buff_chance: "0.08,0.08,0.08"
+  #  Buff: "RadiationBurn,DermalBurn"
+  #  Buff_chance: "0.02,0.08"
     SfxBegin: Weapons/Player/Minigun/minigun2_start
     SfxLoop: Weapons/Player/Minigun/minigun2_loop
     SfxStop: Weapons/Player/Minigun/minigun2_end
@@ -2056,7 +2070,7 @@
     Tracer: Weapons/Projectiles/TracerLaserShotRed
     TracerPerBullet: 1
 
-    DamageMultiplier_Group: HWS_EWS_Energy_HHW
+    DamageMultiplier_Group: HWS_EWS_Energy_LHW
 
     RadialText: Stabilizer - OFF
     RadialDesc: Multiple Heat Sinks allow this weapon to be fired at maximum damage output # add text
@@ -2093,24 +2107,25 @@
   MarketPrice: 250001, display: true
   Info: "An advanced combat shotgun developed by the Zirax after examining UCH weapons retrieved from the Titan's Wreckage. The technology to repair this weapon does not exist yet.", display: true
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
-  Durability: 500, display: false
-  DegradationProb: 0.7, type: float, display: false
+  Durability: 350, display: false
+  Mass: 7.3, type: float, display: true, formatter: Kilogram
+  DegradationProb: 1, type: float, display: false
   RepairDisabled: true, display: true
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: Ranged
-    ROF: 0.3, type: float, display: true, formatter: ROF
+    ROF: 0.45, type: float, display: true, formatter: ROF
     Automatic: true, display: true
-    Range: 79, display: false
+    Range: 70, display: false
     NoiseStrength: 120, display: false
     BulletSpread: 0.1
-    RaySpread: 0.475, display: true
+    RaySpread: 0.58, display: true
     Recoil: 1.38, display: true
-    Damage: 75, display: true
-    AmmoCapacity: 11, display: true
-    ReloadDelay: 3, display: true
-    # Buff: "OpenWound,Mutilation"
-    # Buff_chance: "0.2,0.1"
+    Damage: 37, display: true
+    AmmoCapacity: 10, display: true
+    ReloadDelay: 3.2, display: true
+  # Buff: "OpenWound,FractureOpen"
+  # Buff_chance: "0.25,0.13"
     SfxBegin: Weapons/Player/Shotgun/Resistance-ShotGun-01-Single_Shot-05
 
     DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
@@ -2145,21 +2160,24 @@
   MarketPrice: 200001, display: true
   Info: "A superior plasma rifle developed by the Zirax after examining UCH weapons retrieved from the Titan's Wreckage. The technology to repair this weapon does not exist yet.", display: true
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
-  Durability: 500, display: false
-  DegradationProb: 0.1, type: float, display: false
+  Durability: 5400, display: false
+  Mass: 4.8, type: float, display: true, formatter: Kilogram
+  DegradationProb: 1.0, type: float, display: false
   RepairDisabled: true, display: true
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Damage: 146, display: true
-    ROF: 0.17, type: float, display: true, formatter: ROF
-    ReloadDelay: 3.7, display: true
-    # Buff: "RadiationBurn,DermalBurn"
-    # Buff_chance: "0.05,0.2"
+    ROF: 0.18, type: float, display: true, formatter: ROF
+    ReloadDelay: 3.3, display: true
+  #  Buff: "RadiationBurn,DermalBurn"
+  #  Buff_chance: "0.01,0.1"
     # CameraShake: 0
+    BulletSpread: 0.02, display: false
     Recoil: 0.17, display: true
-    AmmoCapacity: 30, display: true
+    AmmoCapacity: 45, display: true
     AmmoType: PulseLaserChargeRifle, display: true
-    Range: 200, display: false
+    Range: 230, display: false
+    RangeSpace: 287, display: false
     NoiseStrength: 80, display: false
 	SfxBegin: Weapons/Player/LaserRifle/BLASTERComplexFireTriggerDigitalDischarge
     # SfxBegin: Weapons/Player/Tools/WeaponLightning_start
@@ -2217,35 +2235,39 @@
   MarketPrice: 200001, display: true
   Info: "An experimental plasma cannon developed by the Zirax after examining UCH weapons retrieved from the Titan's Wreckage. It's equipped with an Anti-Ship mode that can be activated with RMB. The technology to repair this weapon does not exist yet.", display: true
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
-  Durability: 500, display: false
-  DegradationProb: 0.66, type: float, display: false
+  Durability: 250, display: false
+  Mass: 52, type: float, display: true, formatter: Kilogram
+  DegradationProb: 1, type: float, display: false
   RepairDisabled: true, display: true
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   RadialMenu: true
   { Child 0
     AllowAt: "UnderWater, Planet, Space"
-    ROF: 0.7, type: float, display: true, formatter: ROF
+    ROF: 0.8, type: float, display: true, formatter: ROF
     Automatic: true, display: true
-    AmmoCapacity: 7, display: true
-    Recoil: 1.44, display: true
+    AmmoCapacity: 10, display: true
+    Recoil: 1.5, display: true
     ReloadDelay: 7, display: true
-
-	RadialText: Splash Mode # add text
+    Range: 350, display: false
+    RangeSpace: 450, display: false
+	  RadialText: Splash Mode # add text
     RadialDesc: Good for taking out groups of entities with few shots
     RadialIcon: Radial_Defence
   }
   { Child 1
     Class: Ranged
     AllowRemote: false
-    ROF: 2.5, type: float, display: true, formatter: ROF
-    Range: 300, display: false
-    Damage: 1250, display: true
+    ROF: 2.4, type: float, display: true, formatter: ROF
+    Range: 250, display: false
+    RangeSpace: 400, display: false
+    Damage: 790, display: true
     NoiseStrength: 250, display: false
     CameraShake: 4
+    ShieldDamagePenFac: 0.25, display: true
     Automatic: false
     BulletSpread: 0.1, display: true
-    Recoil: 5.0, display: true
-    AmmoCapacity: 7, display: true
+    Recoil: 0.5, display: true
+    AmmoCapacity: 10, display: true
     AmmoType: SciFiCannonPlasmaCharge, display: true
     ReloadDelay: 7, display: true
     # Buff: "DermalBurn,IncreaseRadiation"
@@ -2262,7 +2284,7 @@
     DamageMultiplier_Group: HWS_EWS_Energy_HHW
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
-    Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage'] + 5"
+    Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/300)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
     Mod.Recoil: "Math.Max(0.01, Recoil - Player.Skills['Recoil']/100)"
@@ -2289,24 +2311,24 @@
   Info: "An improved automatic pistol developed by the Zirax after examining UCH weapons retrieved from the Titan's Wreckage. The technology to repair this weapon does not exist yet.", display: true
   Mass: 2.25, type: float, display: true, formatter: Kilogram
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
-  Durability: 500, display: false
-  DegradationProb: 0.3, type: float, display: false
+  Durability: 1200, display: false
+  DegradationProb: 1, type: float, display: false
   RepairDisabled: true, display: true
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: Ranged
     AllowAt: "UnderWater,Space,Planet"
-    ROF: 0.170, type: float, display: true, formatter: ROF
+    ROF: 0.17, type: float, display: true, formatter: ROF
     Range: 110, display: false
-    BulletSpread: 0.075, display: true
+    BulletSpread: 0.15, display: true
     Recoil: 0.25, display: true
-    Damage: 70, display: true
+    Damage: 62, display: true
     AllowRemote: true
-    Automatic: true, display: true
-    AmmoCapacity: 24, display: true
-    ReloadDelay: 3.7, display: true
-    # Buff: "OpenWound"
-    # Buff_chance: 0.2
+    Automatic: false, display: true
+    AmmoCapacity: 20, display: true
+    ReloadDelay: 3, display: true
+   # Buff: "OpenWound"
+   # Buff_chance: 0.08
     SfxBegin: Weapons/Player/Pistol/AWDS_AR_ HK53_Heavy_Single
 
     DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
@@ -2409,21 +2431,23 @@
   CustomIcon: RocketLauncherT2
   PickupToToolbar: true
   MarketPrice: 11018, display: true
-  Durability: 100, display: false
+  Durability: 90, display: false
+  Mass: 24.5, type: float, display: true, formatter: Kilogram
   Info: "An improved variant of Rocket Launcher designed to operate using laser-guided microrockets for anti-aircraft engagements where the targets are protected behind armor.", display: true
   #just for display, see ammo "SlowRocketHoming"
   BlastRadius: 3, display: true
   BlastDamage: 500, display: true
-  DegradationProb: 0.65, type: float, display: false
+  DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: LauncherSS
-    ROF: 1, type: float, display: true, formatter: ROF
-    Recoil: 5.70, display: true
-    Range: 700, display: true
-    AmmoCapacity: 1, display: true
+    ROF: 2.5, type: float, display: true, formatter: ROF
+    Recoil: 6.7, display: true
+    Range: 420, display: true
+    RangeSpace: 500, display: true
+    AmmoCapacity: 3, display: true
     AmmoType: SlowRocketHoming, display: true
-    ReloadDelay: 5.3, display: true
+    ReloadDelay: 5.6, display: true
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
@@ -2434,8 +2458,8 @@
   { Child 1
     Class: Zoom
     ZoomOverlay: Entities/Items/Weapons/SniperScopes/ScopeNew03
-    ZoomOut: 40
-    ZoomIn: 20
+    ZoomOut: 60
+    ZoomIn: 30
     RedDot: true
   }
 
@@ -2449,24 +2473,26 @@
   CustomIcon: RocketLauncherEpic
   PickupToToolbar: true
   MarketPrice: 250001, display: true
+  Mass: 32, type: float, display: true, formatter: Kilogram
   Info: "A refined version of the standard UCH Rocket Launcher developed by the Zirax after examining UCH weapons retrieved from the Titan's Wreckage. The technology to repair this weapon does not exist yet.", display: true
   #just for display, see ammo
   BlastRadius: 3, display: true
   BlastDamage: 500, display: true
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
-  Durability: 250, display: false
-  DegradationProb: 0.5, type: float, display: false
+  Durability: 100, display: false
+  DegradationProb: 1, type: float, display: false
   RepairDisabled: true, display: true
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: LauncherSS
-    ROF: 0.5, type: float, display: true, formatter: ROF
-    Range: 500, display: true
+    ROF: 0.4, type: float, display: true, formatter: ROF
+    Range: 450, display: true
+    RangeSpace: 600, display: true
     Damage: 1980, display: true
     Automatic: true, display: true
-    Recoil: 1.152, display: true
-    ReloadDelay: 12, display: true
-    AmmoCapacity: 7, display: true
+    Recoil: 1.25, display: true
+    ReloadDelay: 10, display: true
+    AmmoCapacity: 6, display: true
     AmmoType: SlowRocketHoming, display: true
 
     Mod.Damage: "Damage + Player.Skills['Damage']"
@@ -2498,19 +2524,24 @@
   PickupToToolbar: true
   MarketPrice: 39327, display: true
   # Damage: 100, display: true
-  Durability: 500, display: false
-  DegradationProb: 0.2, type: float, display: false
+  Durability: 1200, display: false
+  Mass: 2.65, type: float, display: true, formatter: Kilogram
+  DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
     Class: Ranged
-    ROF: 0.17, type: float, display: true, formatter: ROF
+    ROF: 0.18, type: float, display: true, formatter: ROF
     Recoil: 0.16, display: true
-    Range: 99, display: false
-    RangeSpace: 180, display: true
-    Damage: 93, display: true
-    AmmoCapacity: 28, display: true
+    Range: 95, display: false
+    RangeSpace: 120, display: true
+    BulletSpread: 0.1, display: true
+    Damage: 80, display: true
+    AmmoCapacity: 25, display: true
     ReloadDelay: 2.375, display: true
     SfxBegin: Weapons/Player/LaserPistol/BLASTERLargeFastKickback
+    
+  #  Buff: "DermalBurn"
+  #  Buff_chance: "0.03"
 
     DamageMultiplier_Group: HWS_EWS_Energy_LHW
 
@@ -2537,18 +2568,19 @@
   # Meshfile: Entities/Items/Weapons/Rifles/ScifiRifle2BlackPrefab
   PickupToToolbar: true
   MarketPrice: 3280, display: true
-  Durability: 500, display: false
-  DegradationProb: 0.25, type: float, display: false
+  Durability: 1400, display: false
+  Mass: 4.2, type: float, display: true, formatter: Kilogram
+  DegradationProb: 1.0, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
   { Child 0
     Class: Ranged
     ROF: 0.17, type: float, display: true, formatter: ROF
-    Range: 185, display: false
-    BulletSpread: 0.12, display: true
-    Recoil: 0.48, display: true
-    Damage: 52, display: true
-    AmmoCapacity: 30, display: true
-    ReloadDelay: 2.945, display: true
+    Range: 258, display: false
+    BulletSpread: 0.07, display: true
+    Recoil: 0.55, display: true
+    Damage: 78, display: true
+    AmmoCapacity: 25, display: true
+    ReloadDelay: 3.2, display: true
     # SfxBegin: Weapons/Player/AssaultRifle/AWDS_AR_HK416_start
     # SfxLoop: Weapons/Player/AssaultRifle/AWDS_AR_HK416_loop
     # SfxStop: Weapons/Player/AssaultRifle/AWDS_AR_HK416_end
@@ -2558,6 +2590,9 @@
     SfxBegin: Weapons/ProjectileWeapons/Automatic/FAL_50-42_Modern_start
     SfxLoop: Weapons/ProjectileWeapons/Automatic/FAL_50-42_Modern_loop
     SfxStop: Weapons/ProjectileWeapons/Automatic/FAL_50-42_Modern_end
+
+  #  Buff: "OpenWound,FractureClosed,FractureOpen"
+  #  Buff_chance: "0.05,0.03,0.01"
 
     DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
@@ -2585,20 +2620,24 @@
   # Meshfile: Entities/Items/Weapons/PulseRifle/PulseRifleT2Prefab
   PickupToToolbar: true
   MarketPrice: 11039, display: true
-  Durability: 500, display: false
-  DegradationProb: 0.2, type: float, display: false
+  Mass: 3.9, type: float, display: true, formatter: Kilogram
+  Durability: 3200, display: false
+  DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
   { Child 0
     Class: Ranged
-    ROF: 0.15, type: float, display: true, formatter: ROF
+    ROF: 0.115, type: float, display: true, formatter: ROF
     Range: 187, display: false
-    BulletSpread: 0.075, display: true
+    BulletSpread: 0.15, display: true
     Recoil: 0.32, display: true
     Automatic: true, display: true
     Damage: 54, display: true
-    AmmoCapacity: 35, display: true
+    AmmoCapacity: 40, display: true
     AmmoType: 5.8mmBullet, display: true
-    ReloadDelay: 2.945, display: true
+    ReloadDelay: 3, display: true
+
+  #  Buff: "OpenWound,FractureClosed"
+  #  Buff_chance: "0.03,0.01"
 
     DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
 
@@ -2629,28 +2668,29 @@
   HoldType: 15
   StackSize: 1
   Category: Weapons/Items
-  Durability: 500, display: false
-  DegradationProb: 0.1, type: float, display: false
+  Durability: 6000, display: false
+  DegradationProb: 1, type: float, display: false
   RepairDisabled: true, display: true
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
   Info: "An automatic electromagnetic rifle developed by the Zirax after examining UCH weapons retrieved from the Titan's Wreckage. The technology to repair this weapon does not exist yet.", display: true
   OverrideTradingConstraints: true # even if other constraints exist allow trading this item
-  Mass: 4.2, type: float, display: true, formatter: Kilogram
+  Mass: 4.1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   { Child 0
     Class: Ranged
-    ROF: 0.13, type: float, display: true, formatter: ROF
-    ReloadDelay: 3, display: true
-    Range: 224, display: false
-    BulletSpread: 0.09, display: false
-    Recoil: 0.192, display: true
+    ROF: 0.119, type: float, display: true, formatter: ROF
+    ReloadDelay: 3.1, display: true
+    Range: 212, display: false
+    BulletSpread: 0.13, display: false
+    Recoil: 0.26, display: true
     Automatic: true, display: true
-    Damage: 72, display: true
+    Damage: 67, display: true
     NoiseStrength: 120, display: false
-    AmmoCapacity: 50, display: true
+    AmmoCapacity: 60, display: true
     AmmoType: PulseLaserChargeRifle, display: true
-    # Buff: "RadiationBurn,DermalBurn"
-    # Buff_chance: "0.3,0.1"
+    
+  #  Buff: "OpenWound,FractureClosed"
+  #  Buff_chance: "0.06,0.02"
 
     PfxMuzzle: SniperMuzzleLaserGreen
     Tracer: Weapons/Projectiles/TracerLaserShotGreen
@@ -3370,16 +3410,18 @@
   Info: bkiAmmoExplosive, display: true
   Category: Weapons/Items
   StackSize: 1000
-  Mass: 1.2, type: float, display: true, formatter: Kilogram
+  Mass: 1.8, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   { Child 0
     Class: Projectile
-    Damage: 190, display: true
+    Damage: 210, display: true
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 235, display: true
-    Speed: 50
-    Range: 500
+    BlastDamage: 236, display: true
+    Speed: 60
+    SpeedSpace: 80
+    Range: 253
+    RangeSpace: 400
     Ballistic: False
 
     DamageMultiplier_Group: HWS_EWS_Kinetic_HHW
@@ -3497,12 +3539,14 @@
   MarketPrice: 533, display: true
   { Child 0
     Class: Projectile
-    Damage: 620, display: true
+    Damage: 425, display: true
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 195, display: true
-    Speed: 75
-    Range: 450
+    BlastDamage: 182, display: true
+    Speed: 95
+    SpeedSpace: 145 
+    Range: 350
+    RangeSpace: 450
     NoiseStrength: 100, display: false
     Ballistic: false
 
@@ -3515,19 +3559,20 @@
 { Item Id: 65, Name: SlowRocketHoming, Ref: SlowRocket
   Info: bkiAmmoExplosive, display: true
   StackSize: 1000
-  Mass: 1.6, type: float, display: true, formatter: Kilogram
+  Mass: 2.1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   MarketPrice: 1572, display: true
   { Child 0
     Class: Projectile
-    Damage: 300
+    Damage: 180
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 180, display: true
-    Speed: 65
+    BlastDamage: 160, display: true
+    Speed: 85
+    SpeedSpace: 130
     HomingSpeed: 4
-    Range: 600
-    RangeSpace: 1000, display: true
+    Range: 450
+    RangeSpace: 600, display: true
     Ballistic: false
 
     DamageMultiplier_Group: HWS_EWS_Kinetic_HHW
@@ -6584,7 +6629,7 @@
     Damage: 300, display: true
     BlastParticleIndex: 8
     BlastRadius: 3, display: true
-    BlastDamage: 130, display: true
+    BlastDamage: 145, display: true
     Speed: 300, display: true
     Range: 480, display: true
     SpeedSpace: 600, display: true
@@ -10728,7 +10773,7 @@
     Range: 100, display: false
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
     Automatic: true
-    Damage: 20, display: true
+    Damage: 22, display: true
     AmmoCapacity: 250, display: true
     AmmoUnlimited: true
     AmmoType: 8.3mmBullet, display: true
@@ -10763,7 +10808,7 @@
     Class: Ranged
     ROF: 0.8, type: float, display: true, formatter: ROF
     Range: 120, display: false
-    Damage: 65, display: true
+    Damage: 90, display: true
     IgnoreAtmo: true     # Ground NPC must ignore atmo - otherwise no particle is visible
     Automatic: true
     SfxBegin: Weapons/Player/LaserRifle/BLASTERComplexFireTriggerDigitalDischarge
@@ -11526,7 +11571,7 @@
   Durability: 500, display: true
   DegradationFac: 0.15, type: float, display: false    # do not display anymore
   Oxygen: 375, type: int, display: true    # OxygenConsumptionPerMinute = 12.5f;  => consume 500 units of oxygen in 40 min
-  Armor: 175, type: int, display: true
+  Armor: 150, type: int, display: true
   Heat: 10, type: int, display: true
   Cold: 10, type: int, display: true
   Radiation: 2, type: int, display: true
@@ -11566,7 +11611,7 @@
   Durability: 750, display: true
   DegradationFac: 0.125, type: float, display: false    # do not display anymore
   Oxygen: 550, type: int, display: true
-  Armor: 260, type: int, display: true
+  Armor: 225, type: int, display: true
   Heat: 20, type: int, display: true
   Cold: 20, type: int, display: true
   Radiation: 4, type: int, display: true
@@ -11603,7 +11648,7 @@
   Durability: 1000, display: true
   DegradationFac: 0.1, type: float, display: false    # do not display anymore
   Oxygen: 725, type: int, display: true
-  Armor: 350, type: int, display: true
+  Armor: 300, type: int, display: true
   Heat: 30, type: int, display: true
   Cold: 30, type: int, display: true
   Radiation: 6, type: int, display: true
@@ -11634,7 +11679,7 @@
   Durability: 625, display: true
   DegradationFac: 0.125, type: float, display: false    # do not display anymore
   Oxygen: 475, type: int, display: true    # OxygenConsumptionPerMinute = 12.5f;  => consume 500 units of oxygen in 40 min
-  Armor: 265, type: int, display: true
+  Armor: 225, type: int, display: true
   Heat: 20, type: int, display: true
   Cold: 20, type: int, display: true
   Radiation: 6, type: int, display: true
@@ -11664,7 +11709,7 @@
   Durability: 940, display: true
   DegradationFac: 0.1, type: float, display: false    # do not display anymore
   Oxygen: 600, type: int, display: true
-  Armor: 435, type: int, display: true
+  Armor: 375, type: int, display: true
   Heat: 90, type: int, display: true
   Cold: 100, type: int, display: true
   Radiation: 7, type: int, display: true
@@ -11700,7 +11745,7 @@
   Durability: 1350, display: true
   DegradationFac: 0.075, type: float, display: false    # do not display anymore
   Oxygen: 1000, type: int, display: true
-  Armor: 875, type: int, display: true
+  Armor: 750, type: int, display: true
   Heat: 150, type: int, display: true
   Cold: 250, type: int, display: true
   Radiation: 15, type: int, display: true
@@ -11768,7 +11813,7 @@
 }
 { Item Id: 623, Name: MultiBoost, Ref: ArmorBoostTemplate
   MarketPrice: 5000, display: true
-  Armor: 25, type: int, display: true
+  Armor: 20, type: int, display: true
   Oxygen: 25, type: int, display: true
   Radiation: 1, type: int, display: true
   Heat: 6, type: int, display: true
@@ -11857,7 +11902,7 @@
 # Epic Armor Booster
 { Item Id: 650, Name: ArmorBoostEpic, Ref: ArmorBoost
   MarketPrice: 100000.00, display: true
-  Armor: 150, type: int, display: true
+  Armor: 125, type: int, display: true
   Heat: -6, type: int, display: true
   Cold: -6, type: int, display: true
   Radiation: 2, type: int, display: true
@@ -11873,7 +11918,7 @@
 }
 { Item Id: 652, Name: MultiBoostEpic, Ref: MultiBoost
   MarketPrice: 100000.00, display: true
-  Armor: 40, type: int, display: true
+  Armor: 35, type: int, display: true
   Oxygen: 50, type: int, display: true
   Radiation: 3, type: int, display: true
   Heat: 10, type: int, display: true
@@ -12400,25 +12445,26 @@
   Category: Weapons/Items
   Info: bkiWeaponHandheldIgnoringAtmo, display: true
   Mass: 4.2, type: float, display: true, formatter: Kilogram
-  Volume: 5, type: float, display: true, formatter: Liter
-  Durability: 500, display: false
-  DegradationProb: 0.125, type: float, display: false
+  Volume: 0, type: float, display: true, formatter: Liter
+  Durability: 6000, display: false
+  DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
   { Child 0
     Class: Ranged
     AllowRemote: false
-    ROF: 0.11, type: float, display: true, formatter: ROF
-    Range: 160, display: false
+    ROF: 0.116, type: float, display: true, formatter: ROF
+    Range: 158, display: false
+    RangeSpace: 197, display: true
     Automatic: true, display: true
-    BulletSpread: 0.12, display: true
+    BulletSpread: 0.075, display: true
     Recoil: 0.25, display: true
     IgnoreAtmo: true, display: true
-    Damage: 60, display: true
+    Damage: 67, display: true
     NoiseStrength: 50, display: false
     CameraShake: 1
-    AmmoCapacity: 32, display: true
+    AmmoCapacity: 50, display: true
     AmmoType: PulseLaserChargeRifle, display: true
-    ReloadDelay: 2.25, display: true
+    ReloadDelay: 2.35, display: true
     ParticleTransform: Muzzle/Particle1
     SfxBegin: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_start
     # SfxLoop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_loop
@@ -12429,6 +12475,9 @@
     PfxMuzzle: SniperMuzzleLaserRed
     Tracer: Weapons/Projectiles/TracerLaserShotRed
     TracerPerBullet: 1
+
+ #  Buff: "DermalBurn"
+ #  Buff_chance: "0.01"
 
     DamageMultiplier_Group: HWS_EWS_Energy_LHW
   }
@@ -12470,25 +12519,25 @@
   StackSize: 1
   Category: Weapons/Items
   # Info: bkiWeaponHandheld, display: true
-  Mass: 4, type: float, display: true, formatter: Kilogram
-  Volume: 5, type: float, display: true, formatter: Liter
-  Durability: 500, display: false
-  DegradationProb: 0.08, type: float, display: false
+  Mass: 3, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: true, formatter: Liter
+  Durability: 1200, display: false
+  DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
   { Child 0
     Class: Ranged
     AllowRemote: false
-    ROF: 0.052, type: float, display: true, formatter: ROF
+    ROF: 0.06, type: float, display: true, formatter: ROF
     Range: 85, display: false
     NoiseStrength: 100, display: false
     CameraShake: 1
     Automatic: true, display: true
-    BulletSpread: 0.32, display: true
-    Recoil: 0.7, display: true
-    Damage: 30, display: true
-    AmmoCapacity: 32, display: true
+    BulletSpread: 0.33, display: true
+    Recoil: 0.6, display: true
+    Damage: 31, display: true
+    AmmoCapacity: 30, display: true
     AmmoType: 50Caliber, display: true
-    ReloadDelay: 1.8, display: true
+    ReloadDelay: 2, display: true
     # SfxBegin: Weapons/ProjectileWeapons/Automatic/HK416_Heavy_start
     SfxLoop: Weapons/ProjectileWeapons/Automatic/HK416_Heavy_loop
     SfxStop: Weapons/ProjectileWeapons/Automatic/HK416_Heavy_end
@@ -12521,26 +12570,26 @@
   StackSize: 1
   Category: Weapons/Items
   Info: bkiWeaponHandheldIgnoringAtmo, display: true
-  Mass: 4.2, type: float, display: true, formatter: Kilogram
-  Volume: 5, type: float, display: true, formatter: Liter
-  Durability: 500, display: false
-  DegradationProb: 0.125, type: float, display: false
+  Mass: 3.2, type: float, display: true, formatter: Kilogram
+  Volume: 0, type: float, display: true, formatter: Liter
+  Durability: 1800, display: false
+  DegradationProb: 1.0, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
   { Child 0
     Class: Ranged
     AllowRemote: false
-    ROF: 0.06, type: float, display: true, formatter: ROF
-    Range: 95, display: false
+    ROF: 0.07, type: float, display: true, formatter: ROF
+    Range: 72, display: false
     Automatic: true, display: true
-    BulletSpread: 0.25, display: true
-    Recoil: 0.55, display: true
+    BulletSpread: 0.26, display: true
+    Recoil: 0.45, display: true
     IgnoreAtmo: true, display: true
-    Damage: 38, display: true
+    Damage: 46, display: true
     NoiseStrength: 50, display: false
     CameraShake: 1
-    AmmoCapacity: 42, display: true
+    AmmoCapacity: 40, display: true
     AmmoType: PulseLaserChargePistol, display: true
-    ReloadDelay: 2, display: true
+    ReloadDelay: 2.1, display: true
     ParticleTransform: Muzzle/Particle1
     SfxBegin: Weapons/SS/LaserSS/BLASTERLargeFastKickback(stereo)
     # SfxLoop: Weapons/EnergyWeapons/Automatic/BLASTERComplexFireTriggerDigitalDischarge_loop
@@ -15047,7 +15096,7 @@
   StackSize: 1
   Category: Weapons/Items
   Info: A UCH multiple-grenade launcher designed to use 40mm Frag Grenades against enemy entrenchments., display: true
-  Mass: 12.3, type: float, display: true, formatter: Kilogram
+  Mass: 9.3, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Durability: 60, display: false
   DegradationProb: 1, type: float, display: false
@@ -15055,14 +15104,14 @@
   { Child 0
     Class: LauncherSS
     AllowRemote: false
-    ROF: 2.0, type: float, display: true, formatter: ROF
+    ROF: 2.5, type: float, display: true, formatter: ROF
     Range: 0, display: false
     NoiseStrength: 50, display: false
     Recoil: 5.2, display: true
     CameraShake: 3
     AmmoCapacity: 6, display: true
     AmmoType: FragGrenade, display: true
-    ReloadDelay: 7.5, display: true
+    ReloadDelay: 7.8, display: true
 	SfxBegin: Weapons/Enemies/Talon/CrossbowShot
 	# SfxBegin: Weapons/SS/Railgun/FuturisticGunSound02
     SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
@@ -15135,11 +15184,11 @@
     Damage: 25
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 230, display: true
-    Speed: 35
+    BlastDamage: 118, display: true
+    Speed: 36
     Range: 45
-    SpeedSpace: 40
-    RangeSpace: 100
+    SpeedSpace: 43
+    RangeSpace: 80
     Ballistic: true
 
     DamageMultiplier_Group: HWS_EWS_Kinetic_LHW
@@ -15322,7 +15371,8 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 0.5, type: float, display: true, formatter: ROF
-    Range: 500, display: true
+    Range: 520, display: true
+    RangeSpace: 600, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.25, display: true
     CameraShake: 3
@@ -15336,7 +15386,7 @@
     # SfxReload: Weapons/Player/RocketLauncher/M203InsertGranade01
     #PfxMuzzle: SniperMuzzleFire
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 4"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/500)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -15362,7 +15412,8 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
-    Range: 500, display: true
+    Range: 520, display: true
+    RangeSpace: 600, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.25, display: true
     CameraShake: 3
@@ -15376,7 +15427,7 @@
     # SfxReload: Weapons/Player/RocketLauncher/M203InsertGranade01
     # PfxMuzzle: SniperMuzzleFire
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 4"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/500)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -15402,7 +15453,8 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
-    Range: 500, display: true
+    Range: 520, display: true
+    RangeSpace: 600, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.25, display: true
     CameraShake: 3
@@ -15416,7 +15468,7 @@
     # SfxReload: Weapons/Player/RocketLauncher/M203InsertGranade01
     # PfxMuzzle: SniperMuzzleFire
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 4"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/500)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -15442,7 +15494,8 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
-    Range: 500, display: true
+    Range: 520, display: true
+    RangeSpace: 600, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.25, display: true
     CameraShake: 3
@@ -15456,7 +15509,7 @@
     # SfxReload: Weapons/Player/RocketLauncher/M203InsertGranade01
     # PfxMuzzle: SniperMuzzleFire
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 4"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/500)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -15482,7 +15535,8 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
-    Range: 625, display: true
+    Range: 650, display: true
+    RangeSpace: 750, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.25, display: true
     CameraShake: 3
@@ -15496,7 +15550,7 @@
     # SfxReload: Weapons/Player/RocketLauncher/M203InsertGranade01
     # PfxMuzzle: SniperMuzzleFire
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 4"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/500)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -15522,7 +15576,8 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
-    Range: 250, display: true
+    Range: 260, display: true
+    RangeSpace: 300, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.25, display: true
     CameraShake: 3
@@ -15536,7 +15591,7 @@
     # SfxReload: Weapons/Player/RocketLauncher/M203InsertGranade01
     # PfxMuzzle: SniperMuzzleFire
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 4"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/500)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -15562,7 +15617,8 @@
     Class: LauncherSS
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
-    Range: 500, display: true
+    Range: 520, display: true
+    RangeSpace: 600, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.25, display: true
     CameraShake: 3
@@ -15576,7 +15632,7 @@
     # SfxReload: Weapons/Player/RocketLauncher/M203InsertGranade01
     # PfxMuzzle: SniperMuzzleFire
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 4"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/500)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -15603,10 +15659,10 @@
     BlastDamage: 500, display: true
     HomingSpeed: 1.0
     Speed: 100, display: true
-    Range: 500, display: true
+    Range: 520, display: true
     SpeedSpace: 200, display: true
-    RangeSpace: 500, display: true
-    Ballistic: true
+    RangeSpace: 600, display: true
+    Ballistic: false
     Buff: "Frostbite"
     Buff_chance: "1.0"
 
@@ -15632,10 +15688,10 @@
     BlastRadius: 2, display: true
     BlastDamage: 500, display: true
     Speed: 100, display: true
-    Range: 500, display: true
+    Range: 520, display: true
     SpeedSpace: 200, display: true
-    RangeSpace: 500, display: true
-    Ballistic: true
+    RangeSpace: 600, display: true
+    Ballistic: false
     Buff: "Stunned,Mutilation"
     Buff_chance: "1.0,0.9"
 
@@ -15661,10 +15717,10 @@
     BlastDamage: 750, display: true
     HomingSpeed: 1.0
     Speed: 100, display: true
-    Range: 500, display: true
+    Range: 520, display: true
     SpeedSpace: 200, display: true
-    RangeSpace: 500, display: true
-    Ballistic: true
+    RangeSpace: 600, display: true
+    Ballistic: false
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -15690,10 +15746,10 @@
     BlastDamage: 500, display: true
     HomingSpeed: 1.0
     Speed: 100, display: true
-    Range: 500, display: true
+    Range: 520, display: true
     SpeedSpace: 200, display: true
-    RangeSpace: 500, display: true
-    Ballistic: true
+    RangeSpace: 600, display: true
+    Ballistic: false
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -15719,10 +15775,10 @@
     BlastDamage: 500, display: true
     HomingSpeed: 1.0
     Speed: 160, display: true
-    Range: 625, display: true
+    Range: 650, display: true
     SpeedSpace: 320, display: true
-    RangeSpace: 625, display: true
-    Ballistic: true
+    RangeSpace: 750, display: true
+    Ballistic: false
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -15748,10 +15804,10 @@
     BlastDamage: 500, display: true
     HomingSpeed: 1.0
     Speed: 100, display: true
-    Range: 250, display: true
+    Range: 260, display: true
     SpeedSpace: 200, display: true
-    RangeSpace: 250, display: true
-    Ballistic: true
+    RangeSpace: 300, display: true
+    Ballistic: false
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -15777,10 +15833,10 @@
     BlastDamage: 500, display: true
     HomingSpeed: 1.0
     Speed: 100, display: true
-    Range: 500, display: true
+    Range: 520, display: true
     SpeedSpace: 200, display: true
-    RangeSpace: 500, display: true
-    Ballistic: true
+    RangeSpace: 600, display: true
+    Ballistic: false
     Buff: "Fire"
     Buff_chance: "1.0"
 
@@ -27020,8 +27076,8 @@
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
     Damage: 375, display: true
-    Range: 500, display: true
-    RangeSpace: 1000, display: true
+    Range: 400, display: true
+    RangeSpace: 500, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.5, display: true
     CameraShake: 3
@@ -27034,7 +27090,7 @@
     # SfxReload: Weapons/Player/RocketLauncher/M203InsertGranade01
     PfxMuzzle: SniperMuzzleFire
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 4"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/500)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -27064,8 +27120,8 @@
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
     Damage: 375, display: true
-    Range: 500, display: true
-    RangeSpace: 1000, display: true
+    Range: 400, display: true
+    RangeSpace: 500, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.5, display: true
     CameraShake: 3
@@ -27078,7 +27134,7 @@
     # SfxReload: Weapons/Player/RocketLauncher/M203InsertGranade01
     PfxMuzzle: SniperMuzzleFire
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 4"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/500)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -27108,8 +27164,8 @@
     AllowRemote: false
     ROF: 0.9, type: float, display: true, formatter: ROF
     Damage: 375, display: true
-    Range: 500, display: true
-    RangeSpace: 1000, display: true
+    Range: 400, display: true
+    RangeSpace: 500, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.45, display: true
     CameraShake: 3
@@ -27122,7 +27178,7 @@
     # SfxReload: Weapons/Player/RocketLauncher/M203InsertGranade01
     PfxMuzzle: SniperMuzzleFire
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 4"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/500)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -27152,8 +27208,8 @@
     AllowRemote: false
     ROF: 0.5, type: float, display: true, formatter: ROF
     Damage: 375, display: true
-    Range: 500, display: true
-    RangeSpace: 1000, display: true
+    Range: 400, display: true
+    RangeSpace: 500, display: true
     NoiseStrength: 190, display: false
     Recoil: 0.5, display: true
     CameraShake: 3
@@ -27166,7 +27222,7 @@
     # SfxReload: Weapons/Player/RocketLauncher/M203InsertGranade01
     PfxMuzzle: SniperMuzzleFire
 
-    Mod.Damage: "Damage + Player.Skills['Damage'] - 4"
+    Mod.Damage: "Damage + Player.Skills['Damage']"
     Mod.BlastDamage: "BlastDamage + Player.Skills['BlastDamage']"
     Mod.BulletSpread: "Math.Max(0.01, BulletSpread - Player.Skills['BulletSpread']/500)"
     Mod.ReloadDelay: "Math.Max(0.01, ReloadDelay - Player.Skills['ReloadDelay']/100)"
@@ -27195,9 +27251,10 @@
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
     BlastDamage: 250, display: true
-    Speed: 50
-    Range: 500
-    RangeSpace: 1000
+    Speed: 65
+    SpeedSpace: 100
+    Range: 400
+    RangeSpace: 500
     HomingSpeed: 3
     Ballistic: False
 
