@@ -1,0 +1,160 @@
+ManifestFileVersion: 0
+CRC: 2701783160
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c7ef02505375f02cf345ef82559479c8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: cfec3b3bd052c9871937acbff85a4656
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8396afed7c1a1d5498e6e8b2a5f94443, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame12_Normal.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame1.prefab
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Materials/Darkness.asset
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 12.mat
+- Assets/hws_headdecorations/SnowmanHead/FBX/SnowmanHat_n.tga
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame3.prefab
+- Assets/hws_headdecorations/HWSValentinesDayGlasses/HWSValentinesDayGlasses.Meshes/Cube.003.asset
+- Assets/hws_headdecorations/HWSValentinesDayGlasses/HWSValentinesDayGlasses.Meshes/mesh_id31.001.asset
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Materials/Earth.asset
+- Assets/hws_headdecorations/HWSHalloweenHelmet/scene.Textures/Mat.1_metallicRoughness.metallicRoughness.asset
+- Assets/hws_headdecorations/HWSHelmetPatron/Import/HWSHelmetPatron.Materials/Material.asset
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame7.prefab
+- Assets/hws_headdecorations/HWSHalloweenHelmet/scene.Textures/Mat.1_metallicRoughness.occlusion.asset
+- Assets/hws_headdecorations/HWSValentinesDayGlasses/HWSValentinesDayGlasses.Materials/49.asset
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/HWSNecklaceElementalPower.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame16.png
+- Assets/hws_headdecorations/HWSHalloweenHelmet/textures/Mat.1_metallicRoughness.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame4.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame3_Normal.png
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Textures/Darkness.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 15.mat
+- Assets/hws_headdecorations/HWSHalloweenHelmet/HWSHalloweenHelmet.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame4.png
+- Assets/hws_headdecorations/SnowmanHead/FBX/SnowmanHat.tga
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Meshes/Cone.002.asset
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame4_Normal.png
+- Assets/hws_headdecorations/HWSValentinesDayGlasses/HWSValentinesDayGlasses.Materials/Material.asset
+- Assets/hws_headdecorations/HWSHalloweenHelmet/textures/Mat.1_normal.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 8.mat
+- Assets/hws_headdecorations/HWSHelmetPatron/Import/HWSHelmetPatron.Meshes/mesh_id37.001.asset
+- Assets/hws_headdecorations/HWSHalloweenHelmet/scene.prefab
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Textures/Light.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 4.mat
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame9_Normal.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame14_Normal.png
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Meshes/Cone.005.asset
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Materials/Light.asset
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 6.mat
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame8.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame16_Normal.png
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Materials/Fire.asset
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 14.mat
+- Assets/hws_headdecorations/HWSHalloweenHelmet/textures/Mat.1_baseColor.jpeg
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame11_Normal.png
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Materials/Water.asset
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 9.mat
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Textures/Fire.png
+- Assets/hws_headdecorations/SnowmanHead/FBX/SnowmanHat_o.tga
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 2.mat
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame10.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame15.png
+- Assets/hws_headdecorations/HWSValentinesDayGlasses/HWSValentinesDayGlasses.Meshes/mesh_id31.asset
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame13.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFrame.mat
+- Assets/hws_headdecorations/HWSHelmetPatron/Import/HWSHelmetPatron.Meshes/mesh_id37.asset
+- Assets/hws_headdecorations/SnowmanHead/Materials/SnowmanHat_MAT.mat
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame13_Normal.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame12.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame14.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 10.mat
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 11.mat
+- Assets/hws_headdecorations/HWSValentinesDayGlasses/HWSValentinesDayGlasses.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame15_Normal.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame16.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 13.mat
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Textures/Earth.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame14.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame8_Normal.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 7.mat
+- Assets/hws_headdecorations/SnowmanHead/FBX/SnowmanHat_s.tga
+- Assets/hws_headdecorations/HWSHelmetPatron/Import/HWSHelmetPatron.Materials/Visier.asset
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame5.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame5_Normal.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame3.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetCap.mat
+- Assets/hws_headdecorations/HWSHelmetPatron/Import/HWSHelmetPatron.Textures/Digital-Patreon-Logo_FieryCoral.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame6_Normal.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame10_Normal.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 5.mat
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame9.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront.mat
+- Assets/hws_headdecorations/HWSValentinesDayGlasses/HWSValentinesDayGlasses.Textures/Image_0.png
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Meshes/Cone.003.asset
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Textures/water.png
+- Assets/hws_headdecorations/SnowmanHead/FBX/SnowmanHat.fbx
+- Assets/hws_headdecorations/HWSHelmetPatron/Import/HWSHelmetPatron.Materials/73.asset
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame12.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame2.png
+- Assets/hws_headdecorations/HWSValentinesDayGlasses/HWSValentinesDayGlasses.Meshes/Cube.001.asset
+- Assets/hws_headdecorations/HWSHelmetPatron/Import/HWSHelmetPatron.Textures/favicon.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame7_Normal.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGameFBX.fbx
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame11.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame6.prefab
+- Assets/hws_headdecorations/HWSHelmetPatron/Import/HWSHelmetPatron.Textures/Image_4.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame1b.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 16.mat
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Meshes/Cone.001.asset
+- Assets/hws_headdecorations/HWSNecklaceElementalPower/Import/HWSNecklaceElementalPower.Meshes/Cone.004.asset
+- Assets/hws_headdecorations/HWSHalloweenHelmet/scene.Materials/Mat.1.asset
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame9.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame13.prefab
+- Assets/hws_headdecorations/HWSHelmetPatron/Import/HWSHelmetPatron.Textures/Visier.png
+- Assets/hws_headdecorations/HWSHelmetPatron/Import/HWSHelmetPatron.Materials/Patreon
+  Logo.asset
+- Assets/hws_headdecorations/HWSHalloweenHelmet/textures/Mat.1_emissive.jpeg
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame8.prefab
+- Assets/hws_headdecorations/HWSHelmetPatron/HWSHelmetPatron.prefab
+- Assets/hws_headdecorations/SnowmanHead/SnowmanHead2.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/Materials/HelmetFront 3.mat
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame5.png
+- Assets/hws_headdecorations/HWSHelmetPatron/Import/HWSHelmetPatron.prefab
+- Assets/hws_headdecorations/HWSHalloweenHelmet/scene.Meshes/Pumpkin_Mat.1_0.asset
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame7.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame2_Normal.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame1_Normal.png
+- Assets/hws_headdecorations/HWSValentinesDayGlasses/HWSValentinesDayGlasses.Meshes/Cube.002.asset
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame2.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame15.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/Textures/HWSRipGame6.png
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame10.prefab
+- Assets/hws_headdecorations/HWSRipGameHelmet/HWSHelmetRipGame11.prefab
+Dependencies: []

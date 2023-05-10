@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1820441434
+CRC: 970420532
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 905c1c9094155c980242242fc48fce81
+    Hash: 065f0e1976d04a5c0ddc0aebf2108690
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 61af05b9d9b99498efa7aa0e7e17dc09
+    Hash: 101b820435596b64555bfe3f9c09f8ae
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -57,6 +57,7 @@ Assets:
 - Assets/hws_projectiles/laser_impulse_001.psd
 - Assets/hws_projectiles/Additive.shader
 - Assets/hws_projectiles/HWSLuxBeam.prefab
+- Assets/hws_projectiles/HWSQuadBeamBackup.prefab
 - Assets/hws_projectiles/HWSNoxBeamSmall.prefab
 - Assets/hws_projectiles/HWSPyroProjectileTiny.prefab
 - Assets/hws_projectiles/HWSAquaBeamSmall.prefab
@@ -74,16 +75,17 @@ Assets:
 - Assets/hws_projectiles/HWSStrangeletBeamTiny.prefab
 - Assets/hws_projectiles/HWSObsidianProjectileSmall.prefab
 - Assets/hws_projectiles/HWSPyroBeamSmall.prefab
-- Assets/hws_projectiles/test.prefab
 - Assets/hws_projectiles/HWSLuxProjectileLarge.prefab
-- Assets/hws_projectiles/HWSProjectileAllOriginGun.prefab
 - Assets/hws_projectiles/HWSLuxProjectileSmall.prefab
+- Assets/hws_projectiles/HWSProjectileAllOriginGun.prefab
+- Assets/hws_projectiles/test.prefab
 - Assets/hws_projectiles/HWSObsidianBeamLarge.prefab
 - Assets/hws_projectiles/HWSStrangeletBeam.prefab
-- Assets/hws_projectiles/HWSTerraBeam.prefab
+- Assets/hws_projectiles/HWSGarageCVDrillTurretBeam.prefab
 - Assets/hws_projectiles/HWSTerraProjectileTiny.prefab
 - Assets/hws_projectiles/HWSTerraProjectileLarge.prefab
 - Assets/hws_projectiles/HWSStrangeletProjectileMedium.prefab
+- Assets/hws_projectiles/HWSTerraBeam.prefab
 - Assets/hws_projectiles/HWSObsidianProjectileLarge.prefab
 - Assets/hws_projectiles/HWSObsidianBeam.prefab
 - Assets/hws_projectiles/HWSAquaProjectileTiny.prefab
@@ -104,8 +106,8 @@ Assets:
 - Assets/hws_projectiles/HWSPyroProjectileLarge.prefab
 - Assets/hws_projectiles/HWSAquaBeamLarge.prefab
 - Assets/hws_projectiles/HWSStrangeletProjectileSmall.prefab
-- Assets/hws_projectiles/HWSPyroBeam.prefab
 - Assets/hws_projectiles/HWSNoxProjectileSmall.prefab
+- Assets/hws_projectiles/HWSPyroBeam.prefab
 - Assets/hws_projectiles/HWSObsidianProjectileTiny.prefab
 - Assets/hws_projectiles/HWSLuxProjectileTiny.prefab
 - Assets/hws_projectiles/HWSPyroProjectileMedium.prefab

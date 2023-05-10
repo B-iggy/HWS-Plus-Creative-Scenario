@@ -5837,131 +5837,147 @@
 # ----------------------------------------------------------------------------------------------------------------------
 # ---------------------------------------------------------------------------------------------------------------- HWS +
 # --------------------------------------------------------------------------------------------------------- HWS Elements
-{ Template Name: HWSElementAquaFluid
-  CraftTime: 1
-  BaseItem: true
-  Target: ""
-  { Child Inputs
-  }
-}
-
 { Template Name: HWSElementAquaGas
   CraftTime: 1
   BaseItem: true
-  Target: ""
+  Target: "BaseC,LargeC,AdvC"
   { Child Inputs
+    HWSElementAquaDust: 3
+  }
+}
+
+{ Template Name: HWSElementAquaFluid
+  CraftTime: 1
+  BaseItem: true
+  Target: "BaseC,LargeC,AdvC"
+  { Child Inputs
+    HWSElementAquaDust: 6
   }
 }
 
 { Template Name: HWSElementAquaSolid
   CraftTime: 1
   BaseItem: true
-  Target: ""
+  Target: "BaseC,LargeC,AdvC"
   { Child Inputs
-  }
-}
-
-{ Template Name: HWSElementPyroFluid
-  CraftTime: 1
-  BaseItem: true
-  Target: ""
-  { Child Inputs
-  }
-}
-
-{ Template Name: HWSElementPyroGas
-  CraftTime: 1
-  BaseItem: true
-  Target: ""
-  { Child Inputs
-  }
-}
-
-{ Template Name: HWSElementPyroSolid
-  CraftTime: 1
-  BaseItem: true
-  Target: ""
-  { Child Inputs
-  }
-}
-
-{ Template Name: HWSElementTerraFluid
-  CraftTime: 1
-  BaseItem: true
-  Target: ""
-  { Child Inputs
+    HWSElementAquaDust: 12
   }
 }
 
 { Template Name: HWSElementTerraGas
   CraftTime: 1
   BaseItem: true
-  Target: ""
+  Target: "BaseC,LargeC,AdvC"
   { Child Inputs
+    HWSElementTerraDust: 3
+  }
+}
+
+{ Template Name: HWSElementTerraFluid
+  CraftTime: 1
+  BaseItem: true
+  Target: "BaseC,LargeC,AdvC"
+  { Child Inputs
+    HWSElementTerraDust: 6
   }
 }
 
 { Template Name: HWSElementTerraSolid
   CraftTime: 1
   BaseItem: true
-  Target: ""
+  Target: "BaseC,LargeC,AdvC"
   { Child Inputs
+    HWSElementTerraDust: 12
   }
 }
 
-{ Template Name: HWSElementLuxFluid
+{ Template Name: HWSElementPyroGas
   CraftTime: 1
   BaseItem: true
-  Target: ""
+  Target: "BaseC,LargeC,AdvC"
   { Child Inputs
+    HWSElementPyroDust: 3
+  }
+}
+
+{ Template Name: HWSElementPyroFluid
+  CraftTime: 1
+  BaseItem: true
+  Target: "BaseC,LargeC,AdvC"
+  { Child Inputs
+    HWSElementPyroDust: 6
+  }
+}
+
+{ Template Name: HWSElementPyroSolid
+  CraftTime: 1
+  BaseItem: true
+  Target: "BaseC,LargeC,AdvC"
+  { Child Inputs
+    HWSElementPyroDust: 12
   }
 }
 
 { Template Name: HWSElementLuxGas
   CraftTime: 1
   BaseItem: true
-  Target: ""
+  Target: "BaseC,LargeC,AdvC"
   { Child Inputs
+    HWSElementLuxDust: 3
+  }
+}
+
+{ Template Name: HWSElementLuxFluid
+  CraftTime: 1
+  BaseItem: true
+  Target: "BaseC,LargeC,AdvC"
+  { Child Inputs
+    HWSElementLuxDust: 6
   }
 }
 
 { Template Name: HWSElementLuxSolid
   CraftTime: 1
   BaseItem: true
-  Target: ""
+  Target: "BaseC,LargeC,AdvC"
   { Child Inputs
-  }
-}
-
-{ Template Name: HWSElementNoxFluid
-  CraftTime: 1
-  BaseItem: true
-  Target: ""
-  { Child Inputs
+    HWSElementLuxDust: 12
   }
 }
 
 { Template Name: HWSElementNoxGas
   CraftTime: 1
   BaseItem: true
-  Target: ""
+  Target: "BaseC,LargeC,AdvC"
   { Child Inputs
+    HWSElementNoxDust: 3
+  }
+}
+
+{ Template Name: HWSElementNoxFluid
+  CraftTime: 1
+  BaseItem: true
+  Target: "BaseC,LargeC,AdvC"
+  { Child Inputs
+    HWSElementNoxDust: 6
   }
 }
 
 { Template Name: HWSElementNoxSolid
   CraftTime: 1
   BaseItem: true
-  Target: ""
+  Target: "BaseC,LargeC,AdvC"
   { Child Inputs
+    HWSElementNoxDust: 12
   }
 }
 
 { Template Name: HWSElementStrangelet
   CraftTime: 1
   BaseItem: true
-  Target: ""
+  Target: "BaseC,LargeC,AdvC"
   { Child Inputs
+    HWSElementStrangeletDust: 100
   }
 }
 
@@ -6006,6 +6022,16 @@
     HWSElementPyroFluid: 1
     HWSElementPyroGas: 1
     HWSElementPyroSolid: 1
+  }
+}
+
+{ Template Name: HWSElementObsidianCrystal
+  CraftTime: 30
+  OutputCount: 1
+  BaseItem: true
+  Target: "LargeC, AdvC"
+  { Child Inputs
+    HWSElementObsidianDust: 50
   }
 }
 
@@ -8054,7 +8080,22 @@
 }
 # -------------------------------------------------------------------------------------------- HWS Chaos Shieldgenerator
 # ---------------------------------------------------------------------------------------------------------------- Small
-{ Template Name: HWSChaosShieldGeneratorBlocksSmall
+{ Template Name: HWSChaosShieldGeneratorBlocksSV
+  CraftTime: 40
+  OutputCount: 1
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    HWSTantal: 2
+    HWSTungstenIngot: 2
+    HWSElementAquaCrystal: 2
+    HWSElementTerraCrystal: 2
+    HWSElementPyroCrystal: 2
+    HWSElementLuxCrystal: 2
+    HWSElementNoxCrystal: 2
+    HWSElementStrangeletRefined: 2
+  }
+}
+{ Template Name: HWSChaosShieldGeneratorBlocksHV
   CraftTime: 40
   OutputCount: 1
   Target: "LargeC,AdvC"
@@ -8070,7 +8111,22 @@
   }
 }
 # ---------------------------------------------------------------------------------------------------------------- Large
-{ Template Name: HWSChaosShieldGeneratorBlocksLarge
+{ Template Name: HWSChaosShieldGeneratorBlocksBA
+  CraftTime: 40
+  OutputCount: 1
+  Target: "LargeC,AdvC"
+  { Child Inputs
+    HWSTantal: 4
+    HWSTungstenIngot: 4
+    HWSElementAquaCrystal: 4
+    HWSElementTerraCrystal: 4
+    HWSElementPyroCrystal: 4
+    HWSElementLuxCrystal: 4
+    HWSElementNoxCrystal: 4
+    HWSElementStrangeletRefined: 4
+  }
+}
+{ Template Name: HWSChaosShieldGeneratorBlocksCV
   CraftTime: 40
   OutputCount: 1
   Target: "LargeC,AdvC"
@@ -8245,5 +8301,15 @@
     OpticalFiber: 4
     Motor: 4
     GlassPlate: 2
+  }
+}
+# ------------------------------------------------------------------------------------------------------ HWS Deconstruct System
+{ Template Name: HWSElementAquaEssence
+  DeconOverride: Continue
+  CraftTime: 30
+  OutputCount: 1
+  Target: "LargeC, AdvC"
+  { Child Inputs
+    HWSElementAquaCrystal: 50
   }
 }

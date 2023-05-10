@@ -899,6 +899,204 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
+# ------------------------------------------------------------------------------------------- Elemental Weapon Materials
+# Small: HV / SV
+# Large: CV / BA
+# Materials for Elemental weapons blocks (Turret\Guns) for the future balance what will have difference between devices and weapons
+# March 2023 - will be used for multitool balance
+{ Material Name: HWS_material_aquaweaponsmall
+  damage_category: HWS_material_aquaweaponsmall
+  surface_category: water
+  particle_category: water
+  particle_destroy_category: water
+  stepsound: water
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_aquaweaponlarge
+   damage_category: HWS_material_aquaweaponlarge
+   surface_category: water
+   particle_category: water
+   particle_destroy_category: water
+   stepsound: water
+   stability_glue: 100
+   Mass: 10, type: float, display: false, formatter: Kilogram
+   Hardness: 1, type: float, display: false, formatter: Hardness
+   ExplosionHardness: 1
+   HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_terraweaponsmall
+  damage_category: HWS_material_terraweaponsmall
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: wood
+  stepsound: stone
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_terraweaponlarge
+  damage_category: HWS_material_terraweaponlarge
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: wood
+  stepsound: stone
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_pyroweaponsmall
+  damage_category: HWS_material_pyroweaponsmall
+  surface_category: water
+  particle_category: water
+  particle_destroy_category: wood
+  stepsound: water
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_pyroweaponlarge
+  damage_category: HWS_material_pyroweaponlarge
+  surface_category: water
+  particle_category: water
+  particle_destroy_category: wood
+  stepsound: water
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_obsidianweaponsmall
+  damage_category: HWS_material_obsidianweaponsmall
+  surface_category: metal
+  particle_category: metal
+  particle_destroy_category: wood
+  stepsound: metal
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_obsidianweaponlarge
+  damage_category: HWS_material_obsidianweaponlarge
+  surface_category: metal
+  particle_category: metal
+  particle_destroy_category: wood
+  stepsound: metal
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_luxweaponsmall
+  damage_category: HWS_material_luxweaponsmall
+  surface_category: dirt
+  particle_category: dirt
+  particle_destroy_category: wood
+  stepsound: plants
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_luxweaponlarge
+  damage_category: HWS_material_luxweaponlarge
+  surface_category: dirt
+  particle_category: dirt
+  particle_destroy_category: wood
+  stepsound: plants
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_noxweaponsmall
+  damage_category: HWS_material_noxweaponsmall
+  surface_category: alien
+  particle_category: dirt
+  particle_destroy_category: wood
+  stepsound: grass
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_noxweaponlarge
+  damage_category: HWS_material_noxweaponlarge
+  surface_category: alien
+  particle_category: dirt
+  particle_destroy_category: wood
+  stepsound: grass
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_strangeletweaponsmall
+  damage_category: HWS_material_strangeletweaponsmall
+  surface_category: human
+  particle_category: alien
+  particle_destroy_category: wood
+  stepsound: plants
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_strangeletweaponlarge
+  damage_category: HWS_material_strangeletweaponlarge
+  surface_category: human
+  particle_category: alien
+  particle_destroy_category: wood
+  stepsound: plants
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_chaosweaponsmall
+  damage_category: HWS_material_chaosweaponsmall
+  surface_category: human
+  particle_category: alien
+  particle_destroy_category: wood
+  stepsound: plants
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_chaosweaponlarge
+  damage_category: HWS_material_chaosweaponlarge
+  surface_category: human
+  particle_category: alien
+  particle_destroy_category: wood
+  stepsound: plants
+  stability_glue: 100
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+# XXXXXXXXXXXX End of elemental weapon material
 # ----------------------------------------------------------------------------------------------------------------------
 # ---------------------------------------------------------------------------------------------- Elemental NPC Materials
 { Material Name: HWS_material_aquanpc
@@ -1107,4 +1305,192 @@
   Hardness: 1, type: float, display: false, formatter: Hardness
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
+}
+# ----------------------------------------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------------- Elemental Resource Material
+# Special drills needed to get Elemental Dust from Voxel Asteroids efficiently
+# Damage Multiplier do not work on them, thus splitted to Voxel and Structure resource
+{ Material Name: HWS_material_aqua_voxel_resource
+  damage_category: HWS_material_aqua_voxel_resource
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: stone
+  stepsound: stone
+  fertile_level: 1
+  stability_glue: 120
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 10000, type: int, display: true
+}
+{ Material Name: HWS_material_terra_voxel_resource
+  damage_category: HWS_material_terra_voxel_resource
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: stone
+  stepsound: stone
+  fertile_level: 1
+  stability_glue: 120
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 10000, type: int, display: true
+}
+{ Material Name: HWS_material_pyro_voxel_resource
+  damage_category: HWS_material_pyro_voxel_resource
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: stone
+  stepsound: stone
+  fertile_level: 1
+  stability_glue: 120
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 10000, type: int, display: true
+}
+{ Material Name: HWS_material_obsidian_voxel_resource
+  damage_category: HWS_material_obsidian_voxel_resource
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: stone
+  stepsound: stone
+  fertile_level: 1
+  stability_glue: 120
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 13000, type: int, display: true
+}
+{ Material Name: HWS_material_lux_voxel_resource
+  damage_category: HWS_material_lux_voxel_resource
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: stone
+  stepsound: stone
+  fertile_level: 1
+  stability_glue: 120
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 12000, type: int, display: true
+}
+{ Material Name: HWS_material_nox_voxel_resource
+  damage_category: HWS_material_nox_voxel_resource
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: stone
+  stepsound: stone
+  fertile_level: 1
+  stability_glue: 120
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 14000, type: int, display: true
+}
+{ Material Name: HWS_material_strangelet_voxel_resource
+  damage_category: HWS_material_strangelet_voxel_resource
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: stone
+  stepsound: stone
+  fertile_level: 1
+  stability_glue: 120
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 15000, type: int, display: true
+}
+
+# Special drill turrets needed to get Elemental Dust from Structure Asteroids
+{ Material Name: HWS_material_aqua_structure_resource
+  damage_category: HWS_material_aqua_structure_resource
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: stone
+  stepsound: stone
+  fertile_level: 1
+  stability_glue: 120
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  Hardness: 10000, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 10000
+  HitPoints: 0, type: int, display: true
+}
+{ Material Name: HWS_material_terra_structure_resource
+  damage_category: HWS_material_terra_structure_resource
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: stone
+  stepsound: stone
+  fertile_level: 1
+  stability_glue: 120
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  Hardness: 10000, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 10000
+  HitPoints: 0, type: int, display: true
+}
+{ Material Name: HWS_material_pyro_structure_resource
+  damage_category: HWS_material_pyro_structure_resource
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: stone
+  stepsound: stone
+  fertile_level: 1
+  stability_glue: 120
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  Hardness: 10000, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 10000
+  HitPoints: 0, type: int, display: true
+}
+{ Material Name: HWS_material_obsidian_structure_resource
+  damage_category: HWS_material_obsidian_structure_resource
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: stone
+  stepsound: stone
+  fertile_level: 1
+  stability_glue: 120
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  Hardness: 10000, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 10000
+  HitPoints: 0, type: int, display: true
+}
+{ Material Name: HWS_material_lux_structure_resource
+  damage_category: HWS_material_lux_structure_resource
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: stone
+  stepsound: stone
+  fertile_level: 1
+  stability_glue: 120
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  Hardness: 10000, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 10000
+  HitPoints: 0, type: int, display: true
+}
+{ Material Name: HWS_material_nox_structure_resource
+  damage_category: HWS_material_nox_structure_resource
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: stone
+  stepsound: stone
+  fertile_level: 1
+  stability_glue: 120
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  Hardness: 10000, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 10000
+  HitPoints: 0, type: int, display: true
+}
+{ Material Name: HWS_material_strangelet_structure_resource
+  damage_category: HWS_material_strangelet_structure_resource
+  surface_category: stone
+  particle_category: stone
+  particle_destroy_category: stone
+  stepsound: stone
+  fertile_level: 1
+  stability_glue: 120
+  Mass: 12, type: float, display: true, formatter: Kilogram
+  Hardness: 10000, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 10000
+  HitPoints: 0, type: int, display: true
 }

@@ -184,7 +184,7 @@
   # Damage: 1000       # Does not work with shields
   BlastParticleIndex: 9
   BlastRadius: 2
-  BlastDamage: 5000
+  BlastDamage: 1850
   DamageMultiplier_Group: HWS_EWS_Kinetic
 
   AllowUserInstantiate: false
@@ -1241,7 +1241,7 @@
   ModelType: ChunkClusterBase, param1: AsteroidVoxel03Carbon, param2: 2
   MapIcon: map_CarbonResource
 }
-/* Old Voxel Asteroid Field  */
+# Old Voxel Asteroid Field
 { Entity Name: asteroidfield20Size10Ast_V1
   EntityType: AstVoxel
   ModelType: ChunkClusterBase, param1: asteroidfield20Size10Ast_V1, param2: 2
@@ -1652,8 +1652,8 @@
 { Entity Name: GlidingOverseer
   EntityType: Animal
   Faction: Prey
-  /* Mesh: Enemies/Drones/DroneV2Prefab      */
-  /* MeshDead: Enemies/Drones/DroneV2DestroyedPrefab   */
+  # Mesh: Enemies/Drones/DroneV2Prefab
+  # MeshDead: Enemies/Drones/DroneV2DestroyedPrefab
   Mesh: Enemies/Drones/GlidingOverseerPrefab
   MeshDead: Enemies/Drones/GlidingOverseerDeadPrefab
   PoolCount: 10
@@ -1674,27 +1674,27 @@
 
   FadingEnabled: true
 
-  /* General properties */
-  /* HandItem: rocketlauncherDroneSmall */
-  /* ItemsOnEnterGame: rocketlauncherDroneSmall */
+  # General properties
+  # HandItem: rocketlauncherDroneSmall
+  # ItemsOnEnterGame: rocketlauncherDroneSmall
   IsEnemy: true
   MaxHealth: 950
   # XpFactor: 1.5
   XpFactor: 7.2
 
-  SpawnYAdd: 250     /* drones shall always spawn 15meters above ground */
+  SpawnYAdd: 250     # drones shall always spawn 15meters above ground
 
   ParticleOnDeath:
   # TimeStayAfterDeath: 150
   TimeStayAfterDeath: 300
   LootListOnDeath: 151
 
-  /* Sound Setting */
-  SfxRandomTime: 50.0   /* It will play the roam every [X/2, X] seconds */
+  # Sound Setting
+  SfxRandomTime: 50.0   # It will play the roam every [X/2, X] seconds
   SfxRandom: Enemies/Drone/LizardCreature01_cry
   # SfxRandom: Enemies/Drone/ROBOTICMechMovement01
 
-  SfxAlertTime: 25.0   /* It will play the roam every [X/2, X] seconds*/
+  SfxAlertTime: 25.0   # It will play the roam every [X/2, X] seconds
   SfxAlert: Enemies/Otyugh/LizardCreature01_cry
   SfxHurt:  Enemies/Otyugh/LizardCreature01_start
   SfxDeath: Enemies/Otyugh/LizardCreature04
@@ -2415,7 +2415,7 @@
   AllowUserInstantiate: false
   PoolCount: 10
 
-  {	Child TargetSensor
+  { Child TargetSensor
     AttackableTypes: "Player,PlayerBike,HV,Animal,Civilian,Cyborg,NPCFighter,Trader"
   }
 }
@@ -2890,7 +2890,7 @@
 
   # General entity properties
   ViewAngle: 120
-  MaxHealth: 7000
+  MaxHealth: 6000
   XpFactor: 20
   HandItem: MeleeArmoredGolem
   ItemsOnEnterGame: AssaultMechWeapon
@@ -7102,10 +7102,10 @@
   RotateToGround: true
   RotateSpeedMovement: 360
 
-  /* Determines particle effect  */
+  # Determines particle effect
   SurfaceCategory: human
 
-  /* Sound settings */
+  # Sound settings
   SfxRandomTime: 50.0
   SfxRandom: Enemies/Ripperdog/Ripperdog_SfxRandom
 
@@ -7123,69 +7123,69 @@
   AllowInSpawners: true
   FadingEnabled: false
 
-  /* AI Properties */
+  # AI Properties
   { Child MainBehavior
-	BehaviorName: Behaviors/HiLevelTrees/MainAnimal
-	Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
-	Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
-	Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
-	Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
-	Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
+ BehaviorName: Behaviors/HiLevelTrees/MainAnimal
+ Slot1: "SlotLifeCycle,       Behaviors/Activities/RandomWalk"
+ Slot2: "SlotLowAlert,        Behaviors/Activities/RandomWalk"
+ Slot3: "SlotAlertedNoTarget, Behaviors/Activities/RandomWalk"
+ Slot4: "SlotSearchTarget,    Behaviors/Activities/SearchTarget"
+ Slot5: "SlotAttackTarget,    Behaviors/Activities/AnimalAttack"
   }
 
   { Child Hints
-	AttackMaxCount: 3
-	AttackRandomDirection: 100
+ AttackMaxCount: 3
+ AttackRandomDirection: 100
   }
 
   { Child VariableOverride
     SpeedCalm: 0.12
     SpeedAlerted: 0.6
     SpeedAttack: 3
-	SpeedFlee: 2.8
-	MeleeAttackDistance: 2.2       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
-	MinimalDistanceToTarget: 1.3   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
+ SpeedFlee: 2.8
+ MeleeAttackDistance: 2.2       # the animal will attack from this distance, so small value for small animal, bigger for bigger animals, that would clip otherwise
+ MinimalDistanceToTarget: 1.3   # if the animal is closer then this, it will go a bit further, essentially the player is too close for the attack
   }
 
-  {	Child VisionSensor
-	VisibleDistance: 50
-	ViewAngle: 210
+  { Child VisionSensor
+ VisibleDistance: 50
+ ViewAngle: 210
   }
 
-  {	Child TargetSensor
+  { Child TargetSensor
     AttackableTypes: "Player,PlayerBike"
   }
 
-  {	Child AlertSensor
-	AlertLevel1: 15, param1: 0
-	AlertLevel2: 50, param1: 2
-	AlertLevel3: 80, param1: 20
-	AlertLevelDrop:10 /* slow alert drop */
-	AlertAddFromVisionMinNoMovement:0 /* no alert when not moving */
-	AlertAddFromVisionMovement:200
-	AlertVisionMaxSpeed:2
-	AlertAddFromAutoAlert:30
-	MinDistanceToAutoAlert:20
-	NoiseMaxDistance:50
-	NoiseAlertMultiplier:0.3
+  { Child AlertSensor
+ AlertLevel1: 15, param1: 0
+ AlertLevel2: 50, param1: 2
+ AlertLevel3: 80, param1: 20
+ AlertLevelDrop:10 # slow alert drop
+ AlertAddFromVisionMinNoMovement:0 # no alert when not moving
+ AlertAddFromVisionMovement:200
+ AlertVisionMaxSpeed:2
+ AlertAddFromAutoAlert:30
+ MinDistanceToAutoAlert:20
+ NoiseMaxDistance:50
+ NoiseAlertMultiplier:0.3
   }
 
-  {	Child FearSensor /* fear sensor params */
-    MaxFear: 40 /* maximal fear of the animal*/
+  { Child FearSensor # fear sensor params
+    MaxFear: 40 # maximal fear of the animal
 
-	FearDrop: 20 /* how much fear will drop per frame */
-	FearDropPerFriend: 10 /* fear drop per frame for each group member around */
-	FearDropMaxFromFriends: 50
-	MaxFriendDistance: 10 /* if the group member is further, it will not help in decreasing fear */
+ FearDrop: 20 # how much fear will drop per frame
+ FearDropPerFriend: 10 # fear drop per frame for each group member around
+ FearDropMaxFromFriends: 50
+ MaxFriendDistance: 10 # if the group member is further, it will not help in decreasing fear
 
-	MinDistanceToFearAnEnemy: 0 /* if closer, the agent will get feat from beign near to enemy, at max
-distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per second (linear) */
-	FearFromEnemy: 0
-	FearFromFriendDeath: 30
-	FearFromDamageMultiplier: 0.3 /* damage to fear conversion */
-	FearFromNoiseMaxDistance: 30  /* max distance to convert noise to fear */
-	FearFromNoiseMultiplier: 0.2  /* noise to fear conversion multiplier */
-	FearPropagationDamageMultiplier: 0.5 /* fear from damage propagation to group members */
+ MinDistanceToFearAnEnemy: 0 # if closer, the agent will get feat from beign near to enemy, at max
+distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per second (linear)
+ FearFromEnemy: 0
+ FearFromFriendDeath: 30
+ FearFromDamageMultiplier: 0.3 # damage to fear conversion
+ FearFromNoiseMaxDistance: 30  # max distance to convert noise to fear
+ FearFromNoiseMultiplier: 0.2  # noise to fear conversion multiplier
+ FearPropagationDamageMultiplier: 0.5 # fear from damage propagation to group members
   }
 
 }
@@ -10248,83 +10248,48 @@ distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per 
     VisibleDistance: 150
   }
 }
-# ======
-{ Entity Name: FastTransport
-  EntityType: EnemyDrone
-  Faction: Zirax
-  Mesh: Enemies/Drones/DroneTroopTransportAnimatedPrefab
-  MeshDead: Enemies/Drones/DroneTroopTransportDestroyedPrefab
-  PoolCount: 10
-
-  SurfaceCategory: metal
-  ModelType: Custom
-  Prefab: Drone
-  Class: MeshDrone
-  Parent: Drones
-  AvatarController: Custom
-
-  DroneType: BomberDrone
-  ViewAngle: 360
-  ViewRange: 1000
-
-  # AI properties
-  AITarget-1: DroneDetection, param1: "BA", param2: EntityShipSV
-
-  # General properties
-  HandItem: RocketLauncherSSHomingWeapon
-  ItemsOnEnterGame: RocketLauncherSSHomingWeapon
-  IsEnemy: true
-  MaxHealth: 6000
-  # XpFactor: 1.5
-  XpFactor: 10.0
-
-  SpawnYAdd: 40     # drones shall always spawn 15meters above ground
-
-  ParticleOnDeath: drone_explosion02
-  # TimeStayAfterDeath: 150
-  TimeStayAfterDeath: 120
-  LootListOnDeath: 16
-
-  # Sound Setting
-  SfxRandomTime: 50.0   # It will play the roam every [X/2, X] seconds
-  SfxRandom: Enemies/Drone/DroneLarge_SfxRandom
-
-  SfxAlertTime: 25.0   # It will play the roam every [X/2, X] seconds
-  SfxAlert: Enemies/Drone/DroneLarge_SfxRandom
-  SfxHurt:  Enemies/Drone/DroneLarge_SfxHurt
-  SfxDeath: Enemies/Drone/DroneLarge_SfxDeath
-
-  # MapIcon: map_EnemyEntityDot
-  MapIcon: map_SS
-
-  AllowUserInstantiate: true
-}
-
-{ Entity Name: test
-  Prefab: @hws_eclassmodels/HWSNebulaMix
-  Class: Generic
-  AllowUserInstantiate: true
-  Parent: Others
-  MaxHealth: 100
-  ShowInDistance: true
-  Lod0Distance: 20000
-}
 
 { Entity Name: HWSSkeleton, Ref: TalonGuardianOld
   Mesh: @hws_eclassmodels/HWSSkeleton
   MeshDead: @hws_eclassmodels/HWSSkeletonDead
+  SurfaceCategory: metal
 
   Faction: Chaos
   MaxHealth: 8000
 
 
-  AllowInSpawners: true
   AITask-1: ApproachAttack
   AITask-2: ApproachSpot
   AITask-3: ReturnHome
   AITask-4: ""
 
   ItemsOnEnterGame: "HWSSkeletonWeapon"
+
+    FadingEnabled: false     # otherwise problems when switching to dead model
+  UpdateClusterInfo: true       # If this entity can move on cluster other than terrain
+  AllowUserInstantiate: true
+  AllowInSpawners: true
+}
+
+{ Entity Name: HWSSkeletonBoss, Ref: TalonGuardianOld
+  Mesh: @hws_eclassmodels/HWSSkeletonBoss
+  MeshDead: @hws_eclassmodels/HWSSkeletonDeadBoss
+  SurfaceCategory: stone
+
+  Faction: Chaos
+  MaxHealth: 16000
+
+  AITask-1: ApproachAttack
+  AITask-2: ApproachSpot
+  AITask-3: ReturnHome
+  AITask-4: ""
+
+  ItemsOnEnterGame: "HWSSkeletonBossWeapon"
+
+    FadingEnabled: false     # otherwise problems when switching to dead model
+  UpdateClusterInfo: true       # If this entity can move on cluster other than terrain
+  AllowUserInstantiate: true
+  AllowInSpawners: true
 }
 
 # ----------------------------------------------------------------------------------------------------------------------
@@ -11299,6 +11264,7 @@ distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per 
     NoiseAlertMultiplier: 0.3
   }
 }
+
 # --------------------------------------------------------------------------------------- HWS Strangelet Elemental Melee
 { Entity Name: HWSStrangeletElementalMelee, Ref: AlienTemplate
   Mesh: @hws_eclassmodels/HWSStrangeletElementalMelee
@@ -11343,6 +11309,90 @@ distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per 
   RotateToGround: false
   AllowUserInstantiate: true
   FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
+}
+
+# --------------------------------------------------------------------------------------- HWS Space Pirate Range
+{ Entity Name: HWSSpacePirate, Ref: AlienTemplateBAI
+  Mesh: @hws_eclassmodels/HWSSpacePirate
+  MeshDead: @hws_eclassmodels/HWSStrangeletElementalDead
+  Prefab: AlienHumanoid
+  HeadTransform: Head
+
+  Material: HWS_material_strangeletnpc
+  SurfaceCategory: human
+
+  Faction: Chaos
+  MaxHealth: 8000
+  XpFactor: 3.12
+
+  RightHandJointName: "WeaponNode"
+  ItemsOnEnterGame: "HWSStrangeletElementalWeapon"
+
+  RotateToGround: false
+  RotateSpeedMovement: 180
+  ViewAngle: 180
+  RotateSpeed: 100
+  MotionAnimationSpeedMultiplier: 5.0
+
+  # Sound settings
+  SfxRandomTime: 50.0
+  SfxRandom: Enemies/Zirax/Zirax_SfxRandom
+  SfxAlertTime: 25.0
+  SfxAlert: Enemies/Zirax/Zirax_SfxRandom
+  SfxHurt:  Enemies/Zirax/Zirax_SfxHurt
+  SfxDeath: Enemies/Zirax/Zirax_SfxDeath
+
+  LootListOnDeath: 100
+  FadingEnabled: false              # disabled otherwise problems with switching to DeadMesh
+
+  UpdateClusterInfo: true
+  AllowUserInstantiate: true
+  AllowInSpawners: true
+
+  # AI Properties
+  { Child MainBehavior
+    BehaviorName: Behaviors/HiLevelTrees/ZiraxTroopCommands
+  }
+
+  { Child VariableOverride
+    SpeedCalm: 1.5
+    SpeedAlerted: 2.0
+    SpeedAttack: 10.0
+  }
+
+  { Child Hints
+    AttackApproachTarget: 0
+    AttackOptimalDistance: 120
+    SearchAdvanceTime: 1.0
+    SearchWaitTime: 0
+    SearchRandomDistanceMult: 0.3
+    FireWeaponBlendInTime: 0.3
+    FireWeaponDurationMultiplier: 0.3
+  }
+
+  { Child VisionSensor
+    VisibleDistance: 120
+    ViewAngle: 180
+    VisibleTypes: "Player,HV,SV,CV,PlayerBike"
+  }
+
+  { Child TargetSensor
+    AttackableTypes: "Player,HV,SV,CV,PlayerBike"
+  }
+
+  { Child AlertSensor
+    AlertLevel1: 10, param1: 0
+    AlertLevel2: 40, param1: 2
+    AlertLevel3: 60, param1: 50
+    AlertLevelDrop: 10 # slow alert drop
+    AlertAddFromVisionMinNoMovement: 120 # no alert when not moving
+    AlertAddFromVisionMovement: 200
+    AlertVisionMaxSpeed: 2
+    AlertAddFromAutoAlert: 30
+    MinDistanceToAutoAlert: 120
+    NoiseMaxDistance: 120
+    NoiseAlertMultiplier: 0.3
+  }
 }
 
 # ===============================
@@ -11746,4 +11796,67 @@ distance, he will get 0, at 0 distance, he will get the FearFromEnemy value per 
   ItemsOnEnterGame: laserSpaceDrone
 
   AllowUserInstantiate: true
+}
+
+
+# ======
+{ Entity Name: FastTransport
+  EntityType: EnemyDrone
+  Faction: Zirax
+  Mesh: Enemies/Drones/DroneTroopTransportAnimatedPrefab
+  MeshDead: Enemies/Drones/DroneTroopTransportDestroyedPrefab
+  PoolCount: 10
+
+  SurfaceCategory: metal
+  ModelType: Custom
+  Prefab: Drone
+  Class: MeshDrone
+  Parent: Drones
+  AvatarController: Custom
+
+  DroneType: BomberDrone
+  ViewAngle: 360
+  ViewRange: 1000
+
+  # AI properties
+  AITarget-1: DroneDetection, param1: "BA", param2: EntityShipSV
+
+  # General properties
+  HandItem: RocketLauncherSSHomingWeapon
+  ItemsOnEnterGame: RocketLauncherSSHomingWeapon
+  IsEnemy: true
+  MaxHealth: 6000
+  # XpFactor: 1.5
+  XpFactor: 10.0
+
+  SpawnYAdd: 40     # drones shall always spawn 15meters above ground
+
+  ParticleOnDeath: drone_explosion02
+  # TimeStayAfterDeath: 150
+  TimeStayAfterDeath: 120
+  LootListOnDeath: 16
+
+  # Sound Setting
+  SfxRandomTime: 50.0   # It will play the roam every [X/2, X] seconds
+  SfxRandom: Enemies/Drone/DroneLarge_SfxRandom
+
+  SfxAlertTime: 25.0   # It will play the roam every [X/2, X] seconds
+  SfxAlert: Enemies/Drone/DroneLarge_SfxRandom
+  SfxHurt:  Enemies/Drone/DroneLarge_SfxHurt
+  SfxDeath: Enemies/Drone/DroneLarge_SfxDeath
+
+  # MapIcon: map_EnemyEntityDot
+  MapIcon: map_SS
+
+  AllowUserInstantiate: true
+}
+
+{ Entity Name: test
+  Prefab: @hws_eclassmodels/HWSNebulaMix
+  Class: Generic
+  AllowUserInstantiate: true
+  Parent: Others
+  MaxHealth: 100
+  ShowInDistance: true
+  Lod0Distance: 20000
 }

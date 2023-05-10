@@ -10,15 +10,13 @@ Title: HWS+ | The Era of the Elements
 # If commented out, only the title will be displayed
 # max. 17 lines default format
 Body: |
-  <color=#EBCE3D>Release Candidate Notes | December 2022</color><size=80%>
-  • The HWS+ universe is now revealed. Only Chaos System needs expansion 
-  • Apartments can now be bought on HQ planets and sector
-  • Big HWS+ Config rework.
-  • T.E.A.M. rebalanced
-  • TSCG temporary deactivated for reworking the expansion
-  • Finally proper expansion system with exponentiel more different planets
-  • Allow more player in Stargate Missions
-  • Many polishes, fixes, balancing along the way</size>
+  <color=#EBCE3D>HWS+ Changelog | 11.05.2022</color><size=80%>
+  • Added custom Voxel and POI Asteroids
+  • Added Voxel drills and auto-POI-Asteroid drill turrets
+  • A lot of Config rebalances
+  • Added secondary fire more to Origin guns
+  • Added Group limits for weapons
+  • More I forgot...</size>
 
   <size=70%>     Learn more about HWS at <color=#019245><u>https://guide.hws.global</u></color>
        Become a HWS Patron with unique convenience benefits at <color=#019245><u>https://patreon.com/hws</u></color></size>
