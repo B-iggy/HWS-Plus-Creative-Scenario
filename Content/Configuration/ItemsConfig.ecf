@@ -13506,7 +13506,225 @@
     AllowAt: "UnderWater, Planet, Space"
   }
 }
+{ +Item Id: 882, Name: UCHAssaultRifle, Ref: AssaultRifle
+  Meshfile: Entities/Items/Weapons/Enemies/HumanMWRiflePrefab
+  PickupToToolbar: true
+  MarketPrice: 2538, display: true
+  Material: metalweapon
+  HoldType: 15
+  StackSize: 1
+  Category: Weapons/Items
+  ShowUser: No
+  Info: bkiUCHAssaultRifle, display: true
+  Mass: 4, type: float, display: true, formatter: Kilogram
+  Volume: 5, type: float, display: true, formatter: Liter
+  Durability: 500, display: false
+  DegradationProb: 0.08, type: float, display: false
+  SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
+  { Child 0
+    Class: Ranged
+    AllowRemote: false
+    ROF: 0.15, type: float, display: true, formatter: ROF
+    Range: 120, display: false
+    NoiseStrength: 100, display: false
+    CameraShake: 1
+    Automatic: true, display: true
+    BulletSpread: 0.07, display: true
+    Recoil: 0.7, display: true
+    Damage: 70, display: true
+    AmmoCapacity: 20, display: true
+    AmmoType: 5.8mmBullet, display: true
+    ReloadDelay: 2.2, display: true
+    SfxBegin: Weapons/Player/Pistol/AWDS_AR_ Heavy Single
+    # SfxLoop: Weapons/ProjectileWeapons/Automatic/FAL_50-42_Close_loop
+    SfxStop: Weapons/ProjectileWeapons/Automatic/FAL_50-42_Close_end
+    SfxNoAmmo: Weapons/Misc/AK47DryFire01
+    SfxReload: Weapons/Player/Reload/RifleReloadNormal
+    PfxMuzzle: MuzzleFlash1
+    Tracer: Weapons/Projectiles/TracerOrange1
+    TracerPerBullet: 3
 
+    DamageMultiplier_1: 3.5, param1: head, display: DmgMultiplierHead
+    DamageMultiplier_2: 0, param1: dirt|stone|rock|wood|hullarmored|hullcombat
+    DamageMultiplier_3: 0, param1: shield
+  }
+  { Child 1
+    Class: Zoom
+    ZoomOut: 40
+    ZoomIn: 40
+    # RedDot: true
+  }
+  UnlockCost: 0, display: true
+  UnlockLevel: 1, display: true
+  TechTreeParent: " "
+  TechTreeNames: Hidden    #do not show in TT
+}
+{ +Item Id: 883, Name: UCHShotgunRifle, Ref: Shotgun
+  Meshfile: Entities/Items/Weapons/Enemies/HumanMWRiflePrefab
+  PickupToToolbar: true
+  Material: metalweapon
+  MarketPrice: 1366, display: true
+  HoldType: 15
+  StackSize: 1
+  Category: Weapons/Items
+  ShowUser: No
+  Info: bkiUCHShotgunRifle, display: true
+  Mass: 6.2, type: float, display: true, formatter: Kilogram
+  Volume: 4.5, type: float, display: true, formatter: Liter
+  Durability: 500, display: false
+  DegradationProb: 0.625, type: float, display: false
+  SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
+  { Child 0
+    Class: Ranged
+    AllowRemote: false
+    ROF: 0.85, type: float, display: true, formatter: ROF
+    Range: 60, display: false
+    NoiseStrength: 80, display: false
+    CameraShake: 3
+    Automatic: false
+    BulletsPerShot: 8
+    BulletSpread: 0
+    RaySpread: 0.55, display: true
+    Recoil: 2.1, display: true
+    Damage: 100, display: true
+    AmmoCapacity: 5, display: true
+    AmmoType: ShotgunShells, display: true
+    ReloadDelay: 2.75, display: true
+    # SfxBegin: Weapons/Player/Shotgun/Stakeout
+    SfxBegin: Weapons/Player/Shotgun/Resistance-ShotGun-01-Single_Shot-01
+    SfxNoAmmo: Weapons/Misc/PumpgunDryFire
+    SfxReload: Weapons/Player/Reload/RifleReloadSlow
+    PfxMuzzle: MuzzleFlash2
+
+    DamageMultiplier_1: 2, param1: head, display: DmgMultiplierHead
+    DamageMultiplier_2: 0.015, param1: wood       # able to destroy trees
+    DamageMultiplier_3: 0, param1: dirt|stone|rock|hullarmored|hullcombat
+    DamageMultiplier_4: 0.4, param1: metal       # able to destroy door
+    DamageMultiplier_5: 0.05, param1: metalhard  # able to destroy door
+    DamageMultiplier_6: 0, param1: shield
+  }
+  { Child 1
+    Class: Zoom
+    ZoomOut: 40
+    ZoomIn: 40
+    # RedDot: true
+  }
+  UnlockCost: 0, display: true
+  UnlockLevel: 1, display: true
+  TechTreeParent: " "
+  TechTreeNames: Hidden    #do not show in TT
+}
+
+{ +Item Id: 884, Name: DroneLargePlayer01Weapon
+  Meshfile: Entities/Enemies/Drones/Weapons/minigunDronePrefab
+  Material: metalweapon
+  HoldType: 0
+  StackSize: 1
+  Category: Weapons/Items
+  ShowUser: No
+  { Child 0
+    Class: Ranged
+    ROF: 0.35, type: float
+    Range: 600      #  Drone will attack from: Range*WeaponRangeFactor
+    RangeSpace: 900
+    Automatic: true
+    Damage: 800
+    AmmoCapacity: 200
+    AmmoUnlimited: true
+    AmmoType: 30mmBullet, display: true
+    ReloadDelay: 1
+    #SfxBegin: Weapons/Enemies/Drones/minigunLowPitch_start
+    #SfxLoop: Weapons/Enemies/Drones/minigunLowPitch_loop
+    #SfxStop: Weapons/Enemies/Drones/minigunLowPitch_end
+    #SfxNoAmmo: Weapons/DryFireFromManuallyCockedHammer
+    #SfxReload: Weapons/weapon_reload_standard
+    SfxBegin: Weapons/Player/Misc/Single/cannon  #cannon
+    SfxNoAmmo: Weapons/Misc/weapon_outofammo_003
+    SfxReload: Weapons/Player/Misc/Reload/RifleBoltActionCock04_reload
+
+    PfxMuzzle: turretMuzzleFire
+    Tracer: Weapons/Projectiles/TracerOrange1
+    TracerPerBullet: 1
+
+    #DamageMultiplier_1: 3, param1: metal
+    #DamageMultiplier_2: 25, param1: metalhard|concrete|woodblock|hull
+    #DamageMultiplier_3: 60, param1: hullarmored|hullcombat
+    #DamageMultiplier_4: 0, param1: stone|dirt
+    #DamageMultiplier_5: 4, param1: shield
+    DamageMultiplier_1: 0.2, param1: head|body     # lower damage on entities
+    DamageMultiplier_2: 0.01, param1: wood|rock    # lower damage on trees and rocks
+    DamageMultiplier_3: 0, param1: stone|dirt      # no damage on terrain
+    DamageMultiplier_4: 0.05, param1: shield
+    DamageMultiplier_5: 1.15, data: hull|hullarmored|hullcombat|metal|metallight|metalhard
+  }
+}
+{ +Item Id: 885, Name: DroneLargePlayer01Unit
+  DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  Info: bkiDroneLargePlayer01Unit, display: true
+  CustomIcon: TechnicalArtifact
+  Meshfile: Entities/Misc/DummyPrefab
+  #Meshfile: Entities/Items/Weapons/Projectiles/rocket02Prefab
+  Material: metalitem
+  HoldType: 0
+  StackSize: 10
+  Canhold: false
+  Category: Weapons/Items
+  ShowUser: Yes
+
+  Mass: 1350, type: float, display: true, formatter: Kilogram
+  Volume: 670, type: float, display: true, formatter: Liter
+
+  UnlockCost: 12, display: true
+  UnlockLevel: 10, display: true
+  TechTreeNames: Weapons
+}
+
+{ +Item Id: 886, Name: FarrBlaster
+  Meshfile: Entities/Items/Weapons/Pistols/FarrBlasterPrefab
+ # CustomIcon: Blaster
+  PickupToToolbar: true
+  MarketPrice: 1900, display: true
+  Material: metalweapon
+  HoldType: 14
+  StackSize: 1
+  Category: Weapons/Items
+  Info: bkiFarrBlaster, display: true
+  Mass: 2.5, type: float, display: true, formatter: Kilogram
+  Volume: 1.6, type: float, display: true, formatter: Liter
+  # DamageMultiplier_1: 3.5, param1: head, display: DmgMultiplierHead
+  # Damage: 100, display: true
+  Durability: 500, display: false
+  DegradationProb: 0.2, type: float, display: false
+  SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
+  { Child 0
+    Class: Ranged
+    AllowRemote: false
+    ROF: 0.45, type: float, display: true, formatter: ROF
+    Recoil: 0, display: true
+    BulletSpread: 0, display: true
+    Range: 99, display: false
+    Damage: 220, display: true
+    AmmoCapacity: 15, display: true
+    AmmoType: PulseLaserChargePistol, display: true
+    ReloadDelay: 2, display: true
+    IgnoreAtmo: true, display: true
+    NoiseStrength: 15, display: false
+    CameraShake: 1
+    Automatic: false
+
+    PfxMuzzle: SniperMuzzleLaserRed
+    Tracer: Weapons/Projectiles/TracerLaserShotRed
+    TracerPerBullet: 1
+    TracerSpeed: 200
+
+    SfxBegin: Weapons/Player/LaserPistol/BLASTERLargeFastKickback
+
+    DamageMultiplier_1: 3.5, param1: head, display: DmgMultiplierHead
+    DamageMultiplier_2: 0, param1: dirt|stone|rock|wood|hullarmored|hullcombat
+    DamageMultiplier_3: 0.005, param1: shield
+  }
+}
+# available free 886-899
 # === High Tier sphere turret weapon and ammo (900-920) ===
 { Item Id: 900, Name: TurretEnemyLaserWeaponBlack, Ref: TurretEnemyLaserWeaponT2
   Mass: 8500, type: float, display: false, formatter: Kilogram
