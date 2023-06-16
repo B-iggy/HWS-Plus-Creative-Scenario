@@ -8144,7 +8144,7 @@
 # ----------------------------------------------------------------------------------------- HWS Shield Capacity Extender
 # ------------------------------------------------------------------------------------------------------------------- BA
 { Template Name: HWSShieldCapacityExtenderBase
-  CraftTime: 400
+  CraftTime: 300
   OutputCount: 1
   Target: "LargeC,AdvC"
   { Child Inputs
@@ -8162,7 +8162,7 @@
 }
 # ------------------------------------------------------------------------------------------------------------------- CV
 { Template Name: HWSShieldCapacityExtenderCV
-  CraftTime: 400
+  CraftTime: 300
   OutputCount: 1
   Target: "LargeC,AdvC"
   { Child Inputs
@@ -8180,73 +8180,73 @@
 }
 # ------------------------------------------------------------------------------------------------------------------- HV
 { Template Name: HWSShieldCapacityExtenderHV
-  CraftTime: 400
+  CraftTime: 100
   OutputCount: 1
   Target: "LargeC,AdvC"
   { Child Inputs
-    PlatinOunce: 5
+    PlatinOunce: 3
     AluminiumCoil: 5
-    EnergyMatrix: 30
-    Oscillator: 30
-    CapacitorComponent: 15
-    MechanicalComponents: 15
-    FluxCoil: 30
-    PowerCoil: 15
-    SteelPlateArmored: 100
-    PentaxidElement: 100
+    EnergyMatrix: 10
+    Oscillator: 10
+    CapacitorComponent: 5
+    MechanicalComponents: 5
+    FluxCoil: 10
+    PowerCoil: 5
+    SteelPlateArmored: 35
+    PentaxidElement: 70
   }
 }
 # ------------------------------------------------------------------------------------------------------------------- SV
 { Template Name: HWSShieldCapacityExtenderSV
-  CraftTime: 400
+  CraftTime: 100
   OutputCount: 1
   Target: "LargeC,AdvC"
   { Child Inputs
-    PlatinOunce: 5
+    PlatinOunce: 3
     AluminiumCoil: 5
-    EnergyMatrix: 30
-    Oscillator: 30
-    CapacitorComponent: 15
-    MechanicalComponents: 15
-    FluxCoil: 30
-    PowerCoil: 15
-    SteelPlateArmored: 100
-    PentaxidElement: 100
+    EnergyMatrix: 10
+    Oscillator: 10
+    CapacitorComponent: 5
+    MechanicalComponents: 5
+    FluxCoil: 10
+    PowerCoil: 5
+    SteelPlateArmored: 30
+    PentaxidElement: 80
   }
 }
 # ----------------------------------------------------------------------------------------- HWS Shield Recharge Extender
 # ------------------------------------------------------------------------------------------------------------------- BA
 { Template Name: HWSShieldRechargeExtenderBase
-  CraftTime: 400
+  CraftTime: 300
   OutputCount: 1
   Target: "LargeC,AdvC"
   { Child Inputs
     PlatinOunce: 10
     AluminiumCoil: 10
     EnergyMatrix: 30
-    Oscillator: 30
-    CapacitorComponent: 15
-    MechanicalComponents: 15
-    FluxCoil: 30
-    PowerCoil: 15
+    Oscillator: 20
+    CapacitorComponent: 10
+    MechanicalComponents: 10
+    FluxCoil: 15
+    PowerCoil: 30
     SteelPlateArmored: 100
     PentaxidElement: 200
   }
 }
 # ------------------------------------------------------------------------------------------------------------------- CV
 { Template Name: HWSShieldRechargeExtenderCV
-  CraftTime: 400
+  CraftTime: 300
   OutputCount: 1
   Target: "LargeC,AdvC"
   { Child Inputs
     PlatinOunce: 10
     AluminiumCoil: 10
     EnergyMatrix: 30
-    Oscillator: 30
-    CapacitorComponent: 15
-    MechanicalComponents: 15
-    FluxCoil: 30
-    PowerCoil: 15
+    Oscillator: 20
+    CapacitorComponent: 10
+    MechanicalComponents: 10
+    FluxCoil: 15
+    PowerCoil: 30
     SteelPlateArmored: 100
     PentaxidElement: 200
   }
@@ -8257,16 +8257,16 @@
   OutputCount: 1
   Target: "LargeC,AdvC"
   { Child Inputs
-    PlatinOunce: 5
+    PlatinOunce: 3
     AluminiumCoil: 5
-    EnergyMatrix: 30
-    Oscillator: 30
-    CapacitorComponent: 15
-    MechanicalComponents: 15
-    FluxCoil: 30
-    PowerCoil: 15
-    SteelPlateArmored: 100
-    PentaxidElement: 200
+    EnergyMatrix: 10
+    Oscillator: 6
+    CapacitorComponent: 3
+    MechanicalComponents: 4
+    FluxCoil: 5
+    PowerCoil: 10
+    SteelPlateArmored: 40
+    PentaxidElement: 80
   }
 }
 # ------------------------------------------------------------------------------------------------------------------- SV
@@ -8275,16 +8275,16 @@
   OutputCount: 1
   Target: "LargeC,AdvC"
   { Child Inputs
-    PlatinOunce: 5
+    PlatinOunce: 3
     AluminiumCoil: 5
-    EnergyMatrix: 30
-    Oscillator: 30
-    CapacitorComponent: 15
-    MechanicalComponents: 15
-    FluxCoil: 30
-    PowerCoil: 15
-    SteelPlateArmored: 100
-    PentaxidElement: 200
+    EnergyMatrix: 10
+    Oscillator: 6
+    CapacitorComponent: 3
+    MechanicalComponents: 4
+    FluxCoil: 5
+    PowerCoil: 10
+    SteelPlateArmored: 40
+    PentaxidElement: 80
   }
 }
 

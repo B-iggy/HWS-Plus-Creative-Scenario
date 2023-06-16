@@ -490,8 +490,56 @@
   ExplosionHardness: 1
   HitPoints: 0, type: int, display: false
 }
+{ Material Name: HWS_material_weapon_kinetic_large
+  damage_category: HWS_material_weapon_kinetic_large
+  surface_category: metal
+  particle_category: metal
+  particle_destroy_category: metal
+  stepsound: metal
+  stability_glue: 500
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_weapon_kinetic_small
+  damage_category: HWS_material_weapon_kinetic_small
+  surface_category: metal
+  particle_category: metal
+  particle_destroy_category: metal
+  stepsound: metal
+  stability_glue: 500
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
 { Material Name: HWS_material_weapon_energy
   damage_category: HWS_material_weapon_energy
+  surface_category: metal
+  particle_category: metal
+  particle_destroy_category: metal
+  stepsound: metal
+  stability_glue: 500
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_weapon_energy_large
+  damage_category: HWS_material_weapon_energy_large
+  surface_category: metal
+  particle_category: metal
+  particle_destroy_category: metal
+  stepsound: metal
+  stability_glue: 500
+  Mass: 10, type: float, display: false, formatter: Kilogram
+  Hardness: 1, type: float, display: false, formatter: Hardness
+  ExplosionHardness: 1
+  HitPoints: 0, type: int, display: false
+}
+{ Material Name: HWS_material_weapon_energy_small
+  damage_category: HWS_material_weapon_energy_small
   surface_category: metal
   particle_category: metal
   particle_destroy_category: metal
@@ -565,7 +613,7 @@
   stability_glue: 100
   Mass: 10, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
-  ExplosionHardness: 1
+  ExplosionHardness: 1.25
   HitPoints: 0, type: int, display: false
 }
 { Material Name: HWS_material_pyroblocklarge
@@ -577,7 +625,7 @@
   stability_glue: 100
   Mass: 10, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
-  ExplosionHardness: 1
+  ExplosionHardness: 1.25
   HitPoints: 0, type: int, display: false
 }
 { Material Name: HWS_material_obsidianblocksmall
@@ -764,7 +812,7 @@
   stability_glue: 100
   Mass: 10, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
-  ExplosionHardness: 1
+  ExplosionHardness: 1.25
   HitPoints: 0, type: int, display: false
 }
 { Material Name: HWS_material_pyrodevicelarge
@@ -776,7 +824,7 @@
   stability_glue: 100
   Mass: 10, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
-  ExplosionHardness: 1
+  ExplosionHardness: 1.25
   HitPoints: 0, type: int, display: false
 }
 { Material Name: HWS_material_obsidiandevicesmall
@@ -961,7 +1009,7 @@
   stability_glue: 100
   Mass: 10, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
-  ExplosionHardness: 1
+  ExplosionHardness: 1.25
   HitPoints: 0, type: int, display: false
 }
 { Material Name: HWS_material_pyroweaponlarge
@@ -973,7 +1021,7 @@
   stability_glue: 100
   Mass: 10, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
-  ExplosionHardness: 1
+  ExplosionHardness: 1.25
   HitPoints: 0, type: int, display: false
 }
 { Material Name: HWS_material_obsidianweaponsmall
@@ -1132,7 +1180,7 @@
   stability_glue: 100
   Mass: 10, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
-  ExplosionHardness: 1
+  ExplosionHardness: 1.25
   HitPoints: 0, type: int, display: false
 }
 { Material Name: HWS_material_obsidiannpc
@@ -1243,7 +1291,7 @@
   stability_glue: 100
   Mass: 10, type: float, display: false, formatter: Kilogram
   Hardness: 1, type: float, display: false, formatter: Hardness
-  ExplosionHardness: 1
+  ExplosionHardness: 1.25
   HitPoints: 0, type: int, display: false
 }
 { Material Name: HWS_material_obsidianitem

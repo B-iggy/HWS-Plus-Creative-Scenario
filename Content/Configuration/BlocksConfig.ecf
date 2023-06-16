@@ -24,12 +24,12 @@
 # 7   = Electric Explosion
 # 8 - 9 = Large Explosion Air
 # 10  = Electric Explosion
-#
-
-
 # ==Properties==
 # CustomIcon:  = Use with an existing Icon to show it ingame, f.ex. 'CustomIcon: DetectorSVT1'
-# PickupTarget = defines blocks that will be placed in inventory after pickup
+# PickupTarget = defines block, device OR item that will always (!) be placed in player inventory (count: 1) after picking up (deconstruct or retrieve) the block/device -  both (!) for public or private structures! Does NOT work for 'child' groups, but only for parent; eg do not use on HullFullLargeBlocks but only on its parent HullLargeBlocks
+# TemplateRoot: = Defines the crafting template; Usecase: Set for child-groups to allow using a particular crafting template when using UPGRADE functionality! Not required on parent (parent = always uses template name in templates.ecf!)
+# UpgradeTo: , display: true = Sets the device/blockgroup to upgrade to (set visibility to true or false). Important: when upgrading a child-group, this child group needs to have a TemplateRoot set, otherwise the upgrade will be 'free'; note: UpgradeTo: can also use the value 'null', eg. set when this block ref's another block that upgrades to this block (avoid loop).
+# DowngradeTo: = same as UpgradeTo but in the other direction.
 # Place: NoRotation = device cannot be rotated
 # RemoveOnSI: when structure collapses this block will be immediately removed
 # IsActivateable: block can be switched on/off
@@ -57,7 +57,8 @@
 # ExecuteOnActivate: YourDialogState   # Adding a dialogue state from the dialogues.ecf will allow the block/device to activate that dialogue by facing the block and clicking F; Note: Does not require 'IsActivatable' or other properties; Note: If device already has 'IsActivatable' or other activatable-state/Access (F-button, like containers, levers etc) their Access-function will be executed primarily BUT the dialogue will be run (invisible) never the less!
 # ExecuteOnCollide: YourDialogState    # Adding a dialogue state from the dialogues.ecf will allow the block/device to activate that dialogue by touching/pressing against that block. (similar to ExecuteOnActivate!)
 # DialogueSingleUserAccess: true       # Only one player at a time can access the dialogue triggered by the device/blocks
-#
+# DialogueState: YourDialogState       # Allows to specifying a hard coded target dialog. If this is present, this block can be placed by users on PLAYER owned bases and be also triggered using "F".
+# OmitCone: true                       # default: false; True = hides the yellow dialogue cone (f.ex if the NPC only has a barking dialogue)
 # == Special: Skills ==
 # Use "Player.Skills['skillname']" to set a skill entry in the dialogues.ecf.
 # The skill values can be used to modify properties of blocks and items: Damage, BlastDamage, BulletSpread, ReloadDelay, Recoil, RangeAU und RangeLY
@@ -1866,7 +1867,7 @@
   Category: Devices
   EnergyIn: 1, type: int, display: true, formatter: Watt
   CPUIn: 150, type: int, display: true
-  HitPoints: 100, type: int, display: true
+  HitPoints: 150, type: int, display: true
   FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, HWSElementStrangeletRefined"
   FuelCapacity: 8500, type: int, display: true
   BlastParticleIndex: 8
@@ -1887,7 +1888,7 @@
   # LootList: 23    # 20 slots
   Model: @models/Blocks/Mothership/FuelTankMSLargePrefab
   MarketPrice: 7530, display: true
-  HitPoints: 180, type: int, display: true
+  HitPoints: 260, type: int, display: true
   FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel, HWSElementStrangeletRefined"
   FuelCapacity: 20000, type: int, display: true
   AllowPlacingAt: "Base,MS", display: true
@@ -2006,7 +2007,7 @@
   StackSize: 200
   BlockColor: "110,110,110"
   Category: Devices
-  HitPoints: 120, type: int, display: true
+  HitPoints: 180, type: int, display: true
   Mass: 810, type: float, display: true, formatter: Kilogram
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 50, type: int, display: true
@@ -2617,7 +2618,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Turret
   Place: Free      # If turret is retractable
   Model: @models/Blocks/Turrets/TurretMSMinigunRetractPrefab
@@ -3285,7 +3286,7 @@
   ShowUser: No
 }
 { Block Id: 321, Name: TurretMSDrillRetract, Ref: TurretDrillTemplate
-  Material: HWS_material_weapon_energy, display: false
+  Material: HWS_material_weapon_energy_large, display: false
   MarketPrice: 1, display: true
   Model: @models/Blocks/Turrets/TurretMSDrillRetractPrefab
   WeaponItem: TurretMSDrillWeapon
@@ -3306,7 +3307,7 @@
   CPUIn: 95000, type: int, display: true
 }
 { Block Id: 322, Name: TurretMSToolRetract, Ref: TurretDrillTemplate
-  Material: HWS_material_weapon_energy, display: false      #TurretPlayer CV Tool
+  Material: HWS_material_weapon_energy_large, display: false      #TurretPlayer CV Tool
   MarketPrice: 1, display: true
   Model: @models/Blocks/Turrets/TurretMSToolRetractPrefab
   WeaponItem: TurretMSToolWeapon
@@ -3330,7 +3331,7 @@
   EnergyInIdle: 250, type: int, display: true, formatter: Watt
 }
 { Block Id: 323, Name: TurretMSPulseLaserRetract, Ref: TurretTemplate
-  Material: HWS_material_weapon_energy, display: true    #TurretPlayer CV Laser
+  Material: HWS_material_weapon_energy_large, display: true    #TurretPlayer CV Laser
   MarketPrice: 1, display: true
   Model: @models/Blocks/Turrets/TurretMSPulseLaserRetractPrefab
   WeaponItem: TurretMSPulseLaserWeapon
@@ -3354,7 +3355,7 @@
   DamageMultiplier_Group: HWS_EWS_Vanilla_Turrets_BlastDamage
 }
 { Block Id: 324, Name: TurretMSPlasmaRetract, Ref: TurretTemplate #TurretPlayer CV Plasma
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_large, display: true
   MarketPrice: 1, display: true
   Model: @models/Blocks/Turrets/TurretMSPlasmaRetractPrefab
   WeaponItem: TurretMSPlasmaWeapon
@@ -3883,7 +3884,7 @@
   IndexName: Turret
   Group: cpgTurret
   CustomIcon: TurretGVMinigun
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_small, display: true
   MarketPrice: 2901, display: true
   Shape: Turret
   Place: Face
@@ -3915,7 +3916,7 @@
   DamageMultiplier_Group: HWS_EWS_Vanilla_Turrets_BlastDamage
   EnergyIn: 120, type: int, display: true, formatter: Watt
   CPUIn: 1600, type: int, display: true
-  HitPoints: 2000, type: int, display: true
+  HitPoints: 3800, type: int, display: true
   RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 
@@ -4341,7 +4342,7 @@
   Info: bkiBlockGroup, display: true
   IsOxygenTight: true, display: true
   AllowPlacingAt: "SS,GV", display: true
-  HitPoints: 100, type: int, display: false
+  HitPoints: 100, type: int, display: true
   Mass: 16, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   StackSize: 10000
@@ -4349,7 +4350,7 @@
   Category: BuildingBlocks
   ChildBlocks: "HullFullSmall, HullThinSmall, HullExtendedSmall, HullExtendedSmall2, HullExtendedSmall3, HullExtendedSmall4, HullExtendedSmall5, HullExtendedSmall6"
   CPUIn: 1, type: int, display: true
-  ShieldCapacityBonus: 2, type: int, display: true
+  ShieldCapacityBonus: 3, type: int, display: true
 
   UnlockCost: 0
   UnlockLevel: 1
@@ -4378,7 +4379,7 @@
   UpgradeTo: HullArmoredFullSmall, display: true
   DowngradeTo: PlasticFullSmall
   CPUIn: 1, type: int, display: true
-  ShieldCapacityBonus: 2, type: int, display: true
+  ShieldCapacityBonus: 3, type: int, display: true
 
 
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
@@ -4411,7 +4412,7 @@
   ChildShapes: "Cube, CutCornerE, CutCornerB, SlicedCornerA1, CornerHalfB, CornerSmallC, CornerC, CornerHalfA3, RampCMedium, RampA, RampC, CornerRoundB, CornerRoundADouble, RoundCornerA, CubeRoundConnectorA, EdgeRound, Cylinder, RampRoundFTriple, RampRoundF, SmallCornerRoundB, SmallCornerRoundA, SphereHalf, Cone, ConeB, CutCornerC, Cylinder6Way, CornerRoundATriple, CornerA, CornerHalfA1, CornerDoubleA3, CornerSmallB, PyramidA"
   UpgradeTo: HullCombatFullSmall, display: true
   CPUIn: 1, type: int, display: true
-  ShieldCapacityBonus: 4, type: int, display: true
+  ShieldCapacityBonus: 6, type: int, display: true
 
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
 }
@@ -4561,7 +4562,7 @@
   Info: bkiBlockGroup, display: true
   IsOxygenTight: true, display: true
   AllowPlacingAt: "SS,GV", display: true
-  HitPoints: 250, type: int, display: false
+  HitPoints: 250, type: int, display: true
   Mass: 32, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   StackSize: 10000
@@ -4569,7 +4570,7 @@
   Category: BuildingBlocks
   ChildBlocks: "HullArmoredFullSmall, HullArmoredThinSmall, HullArmoredExtendedSmall, HullArmoredExtendedSmall2, HullArmoredExtendedSmall3, HullArmoredExtendedSmall4, HullArmoredExtendedSmall5, HullArmoredExtendedSmall6"
   CPUIn: 1, type: int, display: true
-  ShieldCapacityBonus: 4, type: int, display: true
+  ShieldCapacityBonus: 6, type: int, display: true
 
   UnlockCost: 0
   UnlockLevel: 1
@@ -4758,6 +4759,7 @@
   Category: BuildingBlocks
   ChildBlocks: "HullFullLarge, HullThinLarge, HullExtendedLarge, HullExtendedLarge2, HullExtendedLarge3, HullExtendedLarge4, HullExtendedLarge5, HullExtendedLarge6"
   CPUIn: 1, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 
   UnlockCost: 0
   UnlockLevel: 1
@@ -4797,7 +4799,7 @@
   UpgradeTo: HullArmoredThinLarge, display: true
   DowngradeTo: PlasticThinLarge
   Mass: 500, type: float, display: true, formatter: Kilogram
-  ShieldCapacityBonus: 6, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 }
 
 # Hardened Steel Block (large) - block group
@@ -4820,6 +4822,7 @@
   Category: BuildingBlocks
   ChildBlocks: "HullArmoredFullLarge, HullArmoredThinLarge, HullArmoredExtendedLarge, HullArmoredExtendedLarge2, HullArmoredExtendedLarge3, HullArmoredExtendedLarge4, HullArmoredExtendedLarge5, HullArmoredExtendedLarge6"
   CPUIn: 1, type: int, display: true
+  ShieldCapacityBonus: 20, type: int, display: true
 
   UnlockCost: 0
   UnlockLevel: 1
@@ -4857,7 +4860,7 @@
   ChildShapes: "Wall, WallLShape, WallSloped, WallSloped3Corner, WallSlopedC, WallSlopedCMediumright, WallSlopedAright, WallSlopedCMediumleft, WallSlopedAleft, WallCornerRoundB, WallSlopedRound, WallEdgeRound, WallEdgeRound3Way, WallCornerRoundA, WallCornerRoundC, WallSloped3CornerLow, WallCorner, WallLow, CubeHalf, RampADouble, RampCLow, RampBMedium, RampD, CutCornerEMedium, Beam, CylinderThin, CylinderThinTJoint, CylinderL, PipesFence, FenceTop, RampCHalf, CornerHalfA3Medium"
   UpgradeTo: HullCombatThinLarge, display: true
   Mass: 1225, type: float, display: true, formatter: Kilogram
-  ShieldCapacityBonus: 14, type: int, display: true
+  ShieldCapacityBonus: 20, type: int, display: true
 }
 
 # Alien Block in Creative Menu (radioactive) - returns non-radioactive AlienLargeBlocks
@@ -4938,6 +4941,7 @@
   Category: BuildingBlocks
   ChildBlocks: "HullCombatFullLarge, HullCombatThinLarge, HullCombatExtendedLarge, HullCombatExtendedLarge2, HullCombatExtendedLarge3, HullCombatExtendedLarge4, HullCombatExtendedLarge5, HullCombatExtendedLarge6"
   CPUIn: 1, type: int, display: true
+  ShieldCapacityBonus: 30, type: int, display: true
 
   UnlockCost: 0
   UnlockLevel: 1
@@ -4972,7 +4976,7 @@
 { Block Id: 413, Name: HullCombatThinLarge, Ref: HullCombatFullLarge
   MarketPrice: 1, display: true
   ChildShapes: "Wall, WallLShape, WallSloped, WallSloped3Corner, WallSlopedC, WallSlopedCMediumright, WallSlopedAright, WallSlopedCMediumleft, WallSlopedAleft, WallCornerRoundB, WallSlopedRound, WallEdgeRound, WallEdgeRound3Way, WallCornerRoundA, WallCornerRoundC, WallSloped3CornerLow, WallCorner, WallLow, CubeHalf, RampADouble, RampCLow, RampBMedium, RampD, CutCornerEMedium, Beam, CylinderThin, CylinderThinTJoint, CylinderL, PipesFence, FenceTop, RampCHalf, CornerHalfA3Medium"
-  ShieldCapacityBonus: 24, type: int, display: true
+  ShieldCapacityBonus: 30, type: int, display: true
 }
 
 { Block Id: 414, Name: DecalsControlBlock
@@ -4998,6 +5002,7 @@
   IsAccessible: true, type: bool
   IsActivateableInCP: true
   IsLockable: true
+  HitPoints: 50, type: int, display: true
   IsActivateable: true
   IsOxygenTight: false, display: true
   # HitPoints: 500, type: int, display: false
@@ -5525,7 +5530,7 @@
   Class: Weapon
   IndexName: WeaponShip
   Group: cpgWeapon
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_small, display: true
   MarketPrice: 114645, display: true
   Shape: ModelEntity
   ShowBlockName: true
@@ -5565,7 +5570,7 @@
 
   EnergyIn: 120, type: int, display: true, formatter: Watt
   CPUIn: 2300, type: int, display: true
-  HitPoints: 1200, type: int, display: true
+  HitPoints: 1600, type: int, display: true
   # Damage: 160, display: true
   # AmmoCapacity: 20, display: true
   # AmmoType: RailgunBullet, display: true
@@ -5584,7 +5589,7 @@
   Class: Weapon
   IndexName: WeaponShip
   Group: cpgWeapon
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_small, display: true
   MarketPrice: 2887, display: true
   Shape: ModelEntity
   ShowBlockName: true
@@ -5623,7 +5628,7 @@
 
   EnergyIn: 50, type: int, display: true, formatter: Watt
   CPUIn: 800, type: int, display: true
-  HitPoints: 650, type: int, display: true
+  HitPoints: 850, type: int, display: true
   # Damage: 7, display: true
   # AmmoCapacity: 300, display: true
   # AmmoType: 15mmBullet, display: true
@@ -5640,7 +5645,7 @@
   Class: Weapon
   IndexName: WeaponShip
   Group: cpgWeapon
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_small, display: true
   Shape: ModelEntity
   ShowBlockName: true
   WeaponItem: PulseLaserSSWeapon
@@ -5682,7 +5687,7 @@
 
   EnergyIn: 80, type: int, display: true, formatter: Watt
   CPUIn: 1800, type: int, display: true
-  HitPoints: 800, type: int, display: true
+  HitPoints: 1080, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -5700,7 +5705,7 @@
   IndexName: WeaponShip
   Group: cpgWeapon
   MarketPrice: 166920, display: true
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_small, display: true
   Shape: ModelEntity
   ShowBlockName: true
   WeaponItem: PlasmaCannonSSWeapon
@@ -5744,7 +5749,7 @@
 
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 2000, type: int, display: true
-  HitPoints: 1000, type: int, display: true
+  HitPoints: 1350, type: int, display: true
   # Damage: 54, display: true
   # AmmoCapacity: 50, display: true
   # AmmoType: PlasmaCannonChargeSS, display: true
@@ -5761,7 +5766,7 @@
   Class: Weapon
   IndexName: WeaponShip
   Group: cpgWeapon
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_small, display: true
   Shape: ModelEntity
   ShowBlockName: true
   MarketPrice: 13572, display: true
@@ -5802,7 +5807,7 @@
 
   EnergyIn: 40, type: int, display: true, formatter: Watt
   CPUIn: 1600, type: int, display: true
-  HitPoints: 650, type: int, display: true
+  HitPoints: 870, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
   # AmmoType: FastRocket, display: true
@@ -6995,7 +7000,7 @@
   EnergyIn: 60, type: int, display: true, formatter: Watt
   CPUIn: 2000, type: int, display: true
   MaxCount: 4, type: int, display: true
-  HitPoints: 700, type: int, display: true
+  HitPoints: 945, type: int, display: true
   AllowPlacingAt: SS, display: true
 
   UnlockCost: 17, display: true
@@ -7020,6 +7025,7 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   IsAccessible: false, type: bool
   Collide: "bullet,rocket,melee,sight"
+  CropType: Vegetables, display: true
   # ModelOffset: "0,0.5,0"
   { Child PlantGrowing
     Next: AlienPepperStage2
@@ -7031,8 +7037,8 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: Vegetables, display: true
-  CropYield: 2, display: true
+  # CropType: Vegetables, display: true
+  # CropYield: 2, display: true
   GrowthTimeInfo: 50, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiPlantSprout, display: true
@@ -7054,7 +7060,7 @@
   Class: TurretAuto
   Group: cpgAlien
   IndexName: Turret
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_large, display: true
   Shape: Turret
   TemplateRoot: TurretBaseCannon
   PickupTarget: TurretBaseCannon
@@ -7079,7 +7085,7 @@
   DamageMultiplier_Group: HWS_EWS_Elemental_BlastDamage
 
 
-  HitPoints: 5000, type: int, display: true
+  HitPoints: 12500, type: int, display: true
   RotSpeed: 120, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 25000, type: int, display: true
@@ -7097,7 +7103,7 @@
   SizeInBlocks: "3,2,3", display: true
   BlockColor: "110,110,110"
   WeaponItem: TurretEnemyLaserWeapon
-  HitPoints: 4500, type: int, display: true
+  HitPoints: 9500, type: int, display: true
   RotSpeed: 150, type: int, display: true
   CPUIn: 22500, type: int, display: true
   AboveTerrainCheck: false
@@ -8029,7 +8035,7 @@
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
-  HitPoints: 1200, type: int, display: true
+  HitPoints: 1750, type: int, display: true
   StackSize: 10000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
   Mass: 817, type: float, display: true, formatter: Kilogram
@@ -8395,7 +8401,7 @@
   Class: TurretAuto
   Group: cpgAlien
   IndexName: Turret
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_large, display: true
   Shape: Turret
   TemplateRoot: TurretBaseCannon
   PickupTarget: TurretBaseCannon
@@ -8418,7 +8424,7 @@
   BlastDamage: 300
   DamageMultiplier_Group: HWS_EWS_Elemental_BlastDamage
 
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 22500, type: int, display: true
   RotSpeed: 150, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 50000, type: int, display: true
@@ -8441,6 +8447,7 @@
   TemplateRoot: SpotlightBlocks
   # ModelOffset: "0,0.5,0"
   StackSize: 200
+  HitPoints: 60, type: int, display: true
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   AllowPlacingAt: "MS,SS,GV", display: true
   IsActivateable: true
@@ -8702,7 +8709,7 @@
   Class: TurretAuto
   Group: cpgAlien
   IndexName: Turret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Turret
   Place: Free
   BlockColor: "110,110,110"
@@ -8751,7 +8758,7 @@
   Class: TurretAuto
   Group: cpgAlien
   IndexName: Turret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Turret
   Place: Free
   BlockColor: "110,110,110"
@@ -8797,7 +8804,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Turret
   Place: Face
   BlockColor: "110,110,110"
@@ -8850,7 +8857,7 @@
   Class: TurretAuto
   Group: cpgAlien
   IndexName: Turret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Turret
   Place: Free
   BlockColor: "110,110,110"
@@ -9427,6 +9434,7 @@
   Shape: ModelEntity
   Model: @models2/Entities/Farming/SpeedTrees/WheatStage1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  CropType: Grain, display: true
   { Child PlantGrowing
     Next: WheatStage2
     GrowthRate: 20
@@ -9441,8 +9449,8 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: Grain, display: true
-  CropYield: 6, display: true
+  # CropType: Grain, display: true
+  # CropYield: 6, display: true
   GrowthTimeInfo: 40, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiPlantSprout, display: true
@@ -9530,6 +9538,7 @@
   # Model: @models2/Entities/Farming/ModernFarm/TomatoStage1Prefab
   Model: @models2/Entities/Farming/SpeedTrees/TomatoPlantStage1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  CropType: Vegetables, display: true
   { Child PlantGrowing
     Next: TomatoStage2
     GrowthRate: 26
@@ -9544,8 +9553,8 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: Vegetables, display: true
-  CropYield: 4, display: true
+  # CropType: Vegetables, display: true
+  # CropYield: 4, display: true
   GrowthTimeInfo: 80, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiPlantSprout, display: true
@@ -9632,6 +9641,7 @@
   Model: @models2/Entities/Farming/SpeedTrees/PumpkinPlantStage1Prefab
   # Model: @models2/Entities/Farming/ModernFarm/PumpkinStage1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  CropType: Vegetables, display: true
   { Child PlantGrowing
     Next: PumpkinStage2
     GrowthRate: 30
@@ -9650,8 +9660,8 @@
   Info: bkiPlantSprout, display: true
   Category: Farming
   XpFactor: 1
-  CropType: Vegetables, display: true
-  CropYield: 8, display: true
+  # CropType: Vegetables, display: true
+  # CropYield: 8, display: true
   GrowthTimeInfo: 145, type: int, display: true, formatter: Minutes
   PickupTarget: PumpkinStage1  # disassemble
   TemplateRoot: PumpkinStage2  # deconstruct - to avoid exploit
@@ -9735,6 +9745,7 @@
   Shape: ModelEntity
   Model: @models2/Entities/Farming/SpeedTrees/CornStage1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  CropType: Grain, display: true
   { Child PlantGrowing
     Next: CornStage2
     GrowthRate: 30
@@ -9749,8 +9760,8 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: Grain, display: true
-  CropYield: 12, display: true
+  # CropType: Grain, display: true
+  # CropYield: 12, display: true
   GrowthTimeInfo: 70, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiPlantSprout, display: true
@@ -9964,6 +9975,7 @@
   Shape: ModelEntity
   Model: @models2/Entities/Farming/Pearthing/PearthingStage1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  CropType: Fruit, display: true
   { Child PlantGrowing
     Next: PearthingStage2
     GrowthRate: 30
@@ -9978,8 +9990,8 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: Fruit, display: true
-  CropYield: 4, display: true
+  # CropType: Fruit, display: true
+  # CropYield: 4, display: true
   GrowthTimeInfo: 90, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiPlantSprout, display: true
@@ -10519,7 +10531,7 @@
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
   CropType: NaturalStimulant, display: true
-  CropYield: 2, display: true
+  # CropYield: 2, display: true
   GrowthTimeInfo: 33, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiAlienPlantSprout, display: true
@@ -10575,6 +10587,7 @@
   MarketPrice: 410, display: true
   AllowedInBlueprint: false, display: true
   IndexName: Plant
+  CropType: HerbalLeaves, display: true
   { Child PlantGrowing
     Next: DesertPlant20Stage2
     GrowthRate: 20
@@ -10593,8 +10606,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: HerbalLeaves, display: true
-  CropYield: 1, display: true
+  # CropYield: 1, display: true
   GrowthTimeInfo: 40, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiAlienPlantSprout, display: true
@@ -10678,6 +10690,7 @@
   MarketPrice: 295, display: true
   AllowedInBlueprint: false, display: true
   IndexName: Plant
+  CropType: PlantProtein, display: true
   { Child PlantGrowing
     Next: AlienPlantTube2Stage2
     GrowthRate: 35
@@ -10696,8 +10709,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: PlantProtein, display: true
-  CropYield: 5, display: true
+  # CropYield: 5, display: true
   GrowthTimeInfo: 90, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiAlienPlantSprout, display: true
@@ -10747,7 +10759,7 @@
   MarketPrice: 167320, display: true
   IndexName: WeaponShip
   Group: cpgWeapon
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: ModelEntity
   ShowBlockName: true
   WeaponItem: RocketLauncherMSWeapon
@@ -10782,7 +10794,7 @@
 
   EnergyIn: 8000, type: int, display: true, formatter: Watt
   CPUIn: 80000, type: int, display: true
-  HitPoints: 8000, type: int, display: true
+  HitPoints: 10000, type: int, display: true
   # Damage: 502, display: true
   # AmmoCapacity: 15, display: true
   # AmmoType: FastRocketMS, display: true
@@ -10800,7 +10812,7 @@
   Class: Weapon
   IndexName: WeaponShip
   Group: cpgWeapon
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_large, display: true
   Shape: ModelEntity
   ShowBlockName: true
   WeaponItem: PulseLaserMSWeapon
@@ -10834,7 +10846,7 @@
 
   EnergyIn: 9000, type: int, display: true, formatter: Watt
   CPUIn: 50000, type: int, display: true
-  HitPoints: 6000, type: int, display: true
+  HitPoints: 7500, type: int, display: true
   # Damage: 53, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeMSWeapon, display: true
@@ -10851,7 +10863,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_small, display: true
   Shape: Turret
   Place: Face
   # Model: @models/Blocks/Turrets/RealisticTurret/TurretGVMinigunPrefab
@@ -10884,7 +10896,7 @@
   DamageMultiplier_Group: HWS_EWS_Vanilla_Turrets_BlastDamage
   EnergyIn: 100, type: int, display: true, formatter: Watt
   CPUIn: 1600, type: int, display: true
-  HitPoints: 2700, type: int, display: true
+  HitPoints: 4050, type: int, display: true
   RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
@@ -10893,7 +10905,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_small, display: true
   Shape: Turret
   Place: Face
   # Model: @models/Blocks/Turrets/RealisticTurret/TurretGVRocketPrefab
@@ -10924,7 +10936,7 @@
   DamageMultiplier_Group: HWS_EWS_Vanilla_Turrets_BlastDamage
   EnergyIn: 260, type: int, display: true, formatter: Watt
   CPUIn: 2500, type: int, display: true
-  HitPoints: 3500, type: int, display: true
+  HitPoints: 5250, type: int, display: true
   RotSpeed: 150, type: int, display: true
   Zoom: 5, type: float
 }
@@ -10933,7 +10945,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_small, display: true
   Shape: Turret
   Place: Face
   # Model: @models/Blocks/Turrets/RealisticTurret/TurretGVPlasmaPrefab
@@ -10965,7 +10977,7 @@
   DamageMultiplier_Group: HWS_EWS_Vanilla_Turrets_BlastDamage
   EnergyIn: 300, type: int, display: true, formatter: Watt
   CPUIn: 3000, type: int, display: true
-  HitPoints: 4000, type: int, display: true
+  HitPoints: 6000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
 }
@@ -11248,7 +11260,7 @@
   LootList: 37   # still used?
   IndexName: WeaponShip
   Group: cpgHarvest
-  Material: HWS_material_weapon_kinetic, display: false
+  Material: HWS_material_weapon_kinetic_small, display: false
   MarketPrice: 4205, display: true
   Shape: ModelEntity
   ShowBlockName: true
@@ -11270,7 +11282,7 @@
   EnergyDynamicGroup: Drill
   EnergyIn: 200, type: int, display: true, formatter: Watt
   EnergyInIdle: 20, type: int, display: true, formatter: Watt
-  HitPoints: 850, type: int, display: true
+  HitPoints: 1250, type: int, display: true
   CPUIn: 1000, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
@@ -11486,7 +11498,7 @@
   EnergyIn: 300, type: int, display: true, formatter: Watt
   CPUIn: 1200, type: int, display: true
   EnergyInIdle: 30, type: int, display: true, formatter: Watt
-  HitPoints: 600, type: int, display: true
+  HitPoints: 900, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   MaxCount: 6, type: int, display: true
@@ -11503,7 +11515,7 @@
 }
 { Block Id: 684, Name: TurretGVDrill, Ref: TurretDrillTemplate    #TurretPlayer HV Drill
   MarketPrice: 1, display: true
-  Material: HWS_material_weapon_energy, display: false
+  Material: HWS_material_weapon_energy_small, display: false
   Model: @models/Blocks/Turrets/TurretGVDrillPrefab
   # Model: @models/Blocks/Turrets/TurretGVDrillPrefab
   # Mesh-Damage-1: Mesh/D0
@@ -11521,7 +11533,7 @@
   CPUIn: 4000, type: int, display: true
   EnergyIn: 850, type: int, display: true, formatter: Watt
   EnergyInIdle: 85, type: int, display: true, formatter: Watt
-  HitPoints: 2000, type: int, display: true
+  HitPoints: 3000, type: int, display: true
   BlastParticleIndex: 10
   BlastRadius: 2
   BlastDamage: 15
@@ -11531,7 +11543,7 @@
 
 { Block Id: 685, Name: TurretMSDrill, Ref: TurretDrillTemplate    #TurretPlayer CV Drill
   MarketPrice: 1, display: true
-  Material: HWS_material_weapon_energy, display: false
+  Material: HWS_material_weapon_energy_large, display: false
   Model: @models/Blocks/Turrets/TurretMSDrillPrefab
   # Mesh-Damage-1: Mesh/D0
   # Mesh-Damage-2: Mesh/D1
@@ -11834,7 +11846,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretMSFlakPrefab
@@ -11877,7 +11889,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_large, display: true
   Shape: Turret
   Place: Face
   # Model: @models/Blocks/Turrets/ModularTurret1/SingleGaussTurretBluePrefab
@@ -11913,7 +11925,7 @@
   EnergyIn: 1200, type: int, display: true, formatter: Watt
   CPUIn: 58500, type: int, display: true
   HitPoints: 24000, type: int, display: true
-  RotSpeed: 110, type: int, display: true
+  RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
 }
 # Plasma Turret
@@ -11922,7 +11934,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_large, display: true
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretMSPlasmaPrefab
@@ -11956,7 +11968,7 @@
   DamageMultiplier_Group: HWS_EWS_Vanilla_Turrets_BlastDamage
   CPUIn: 80000, type: int, display: true
   HitPoints: 18000, type: int, display: true
-  RotSpeed: 100, type: int, display: true
+  RotSpeed: 110, type: int, display: true
   Zoom: 5, type: float
   EnergyIn: 1800, type: int, display: true, formatter: Watt
 
@@ -12312,9 +12324,9 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
-  HitPoints: 750, type: int, display: true
+  HitPoints: 1000, type: int, display: true
   EnergyIn: 1250, type: int, display: true, formatter: Watt
-  CPUIn: 28500, type: int, display: true
+  CPUIn: 35000, type: int, display: true
   EnergyInIdle: 12, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Constructor
   BlastParticleIndex: 8
@@ -12374,7 +12386,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_small, display: true
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretGVArtilleryPrefab
@@ -12410,7 +12422,7 @@
   DamageMultiplier_Group: HWS_EWS_Vanilla_Turrets_BlastDamage
   EnergyIn: 450, type: int, display: true, formatter: Watt
   CPUIn: 4500, type: int, display: true
-  HitPoints: 6000, type: int, display: true
+  HitPoints: 9000, type: int, display: true
   RotSpeed: 80, type: int, display: true
   Zoom: 5, type: float
 }
@@ -12446,7 +12458,7 @@
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   Category: Devices
-  HitPoints: 75, type: int, display: true
+  HitPoints: 100, type: int, display: true
   EnergyIn: 5, type: int, display: true, formatter: Watt
   CPUIn: 50, type: int, display: true
   O2Capacity: 1000, type: int, display: true
@@ -14235,7 +14247,7 @@
 
   # Parent properties
   TemplateRoot: WindowSmallBlocks
-  HitPoints: 25, type: int, display: true
+  HitPoints: 50, type: int, display: true
   AllowPlacingAt: "SS,GV", display: true
   Mass: 24, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
@@ -14268,7 +14280,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   StackSize: 10000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
-  HitPoints: 25, type: int, display: true
+  HitPoints: 35, type: int, display: true
 }
 # obsolete but do not remove
 { Block Id: 838, Name: WalkwayBlocks
@@ -14417,7 +14429,7 @@
   IndexName: WeaponShip
   Group: cpgHarvest
   MarketPrice: 82862, display: true
-  Material: HWS_material_weapon_energy
+  Material: HWS_material_weapon_energy_small
   Shape: ModelEntity
   ShowBlockName: true
   CustomIcon: DrillAttachmentT2
@@ -14448,7 +14460,7 @@
   EnergyIn: 400, type: int, display: true, formatter: Watt
   CPUIn: 1600, type: int, display: true
   EnergyInIdle: 40, type: int, display: true, formatter: Watt
-  HitPoints: 800, type: int, display: true
+  HitPoints: 1100, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   MaxCount: 6, type: int, display: true
@@ -16069,9 +16081,9 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   BlockColor: "110,110,110"
   Category: Devices
-  HitPoints: 600, type: int, display: true
+  HitPoints: 800, type: int, display: true
   EnergyIn: 850, type: int, display: true, formatter: Watt
-  CPUIn: 20500, type: int, display: true
+  CPUIn: 25000, type: int, display: true
   EnergyInIdle: 10, type: int, display: true, formatter: Watt
   EnergyDynamicGroup: Constructor
   BlastParticleIndex: 9
@@ -16364,7 +16376,7 @@
   AllowPlacingAt: "SS,GV", display: true
   Mass: 62, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  HitPoints: 150, type: int, display: true
+  HitPoints: 185, type: int, display: true
 }
 { Block Id: 975, Name: HangarDoor10x5
   MarketPrice: 1, display: true
@@ -16422,7 +16434,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   StackSize: 10000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
-  HitPoints: 200, type: int, display: true
+  HitPoints: 250, type: int, display: true
 }
 { Block Id: 977, Name: Window_s1x1Thick, Ref: Window_v1x1Thick
   MarketPrice: 1, display: true
@@ -16769,7 +16781,7 @@
   Group: cpgHangarShutterDoor
   Material: hullarmored, display: true
   Shape: ModelEntity
-  Model: @models/Blocks/Mothership/ShutterDoor1x1Prefab
+  Model: @models/Blocks/Mothership/ShutterDoor/ShutterDoor1x1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
   TemplateRoot: ShutterDoorLargeBlocks
@@ -16797,7 +16809,7 @@
 { Block Id: 1012, Name: ShutterDoor2x2, Ref: ShutterDoor1x1
   MarketPrice: 1, display: true
   TemplateRoot: ShutterDoorLargeBlocks
-  Model: @models/Blocks/Mothership/ShutterDoor2x2Prefab
+  Model: @models/Blocks/Mothership/ShutterDoor/ShutterDoor2x2Prefab
   SizeInBlocks: "2,2,1", display: true
   # Volume: 0, type: float, display: false, formatter: Liter
   HitPoints: 480, type: int, display: true
@@ -16807,7 +16819,7 @@
 { Block Id: 1013, Name: ShutterDoor3x3, Ref: ShutterDoor1x1
   MarketPrice: 1, display: true
   TemplateRoot: ShutterDoorLargeBlocks
-  Model: @models/Blocks/Mothership/ShutterDoor3x3Prefab
+  Model: @models/Blocks/Mothership/ShutterDoor/ShutterDoor3x3Prefab
   SizeInBlocks: "3,3,1", display: true
   # Volume: 0, type: float, display: false, formatter: Liter
   HitPoints: 1080, type: int, display: true
@@ -16817,7 +16829,7 @@
 { Block Id: 1014, Name: ShutterDoor4x4, Ref: ShutterDoor1x1
   MarketPrice: 1, display: true
   TemplateRoot: ShutterDoorLargeBlocks
-  Model: @models/Blocks/Mothership/ShutterDoor4x4Prefab
+  Model: @models/Blocks/Mothership/ShutterDoor/ShutterDoor4x4Prefab
   SizeInBlocks: "4,4,1", display: true
   # Volume: 0, type: float, display: false, formatter: Liter
   HitPoints: 1910, type: int, display: true
@@ -16829,7 +16841,7 @@
 { Block Id: 1015, Name: ShutterDoor5x5, Ref: ShutterDoor1x1
   MarketPrice: 1, display: true
   TemplateRoot: ShutterDoorLargeBlocks
-  Model: @models/Blocks/Mothership/ShutterDoor5x5Prefab
+  Model: @models/Blocks/Mothership/ShutterDoor/ShutterDoor5x5Prefab
   SizeInBlocks: "5,5,1", display: true
   # Volume: 0, type: float, display: false, formatter: Liter
   HitPoints: 2980, type: int, display: true
@@ -16844,7 +16856,7 @@
   Material: hullarmored, display: true
   Shape: Invisible
   MarketPrice: 2219, display: true
-  # Model: @models/Blocks/Mothership/ShutterDoor1x1Prefab
+  # Model: @models/Blocks/Mothership/ShutterDoor/ShutterDoor1x1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
   Info: bkiBlockGroup, display: true
@@ -17114,7 +17126,7 @@
   Volume: 0, type: float, display: false, formatter: Liter
   CPUIn: 485, type: int, display: true
   Mass: 3570, type: float, display: true, formatter: Kilogram
-  HitPoints: 320, type: int, display: true
+  HitPoints: 450, type: int, display: true
   FuelCapacity: 40000, type: int, display: true
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -17132,7 +17144,7 @@
 { Block Id: 1036, Name: ShutterDoor1x2, Ref: ShutterDoor1x1
   MarketPrice: 1, display: true
   TemplateRoot: ShutterDoorLargeBlocks
-  Model: @models/Blocks/Mothership/ShutterDoor1x2Prefab
+  Model: @models/Blocks/Mothership/ShutterDoor/ShutterDoor1x2Prefab
   SizeInBlocks: "1,2,1", display: true
   HitPoints: 240, type: int, display: true
   Mass: 360, type: float, display: true, formatter: Kilogram
@@ -17141,7 +17153,7 @@
 { Block Id: 1037, Name: ShutterDoor2x3, Ref: ShutterDoor1x1
   MarketPrice: 1, display: true
   TemplateRoot: ShutterDoorLargeBlocks
-  Model: @models/Blocks/Mothership/ShutterDoor2x3Prefab
+  Model: @models/Blocks/Mothership/ShutterDoor/ShutterDoor2x3Prefab
   SizeInBlocks: "2,3,1", display: true
   HitPoints: 720, type: int, display: true
   Mass: 640, type: float, display: true, formatter: Kilogram
@@ -17309,7 +17321,57 @@
   Model: @models2/Environment/Plants/SpeedTrees/ElderberryBushNoFruitPrefab
 }
 
-# available free 1048 - 1051
+========================= AI drone for player block ============================
+
+{ Block Id: 1048, Name: AIDroneBay
+  Class: AIDroneBay
+  IndexName: AIDroneBay
+  Group: cpgSolar
+  LootList: 66
+  MarketPrice: 380, display: true
+  EssentialCategory: cpgGenerator
+  Material: metalhard
+  Shape: ModelEntity
+  ShowBlockName: true
+  Model: @models/Blocks/AIDrone/AIDroneBay2Prefab
+  Mesh-Damage-1: Mesh/D0
+  Mesh-Damage-2: Mesh/D1
+  Mesh-Damage-3: Mesh/D2
+  Mesh-Damage-4: Mesh/D3
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Place: Free
+  StackSize: 500
+  AllowPlacingAt: "Base,MS", display: true
+  MaxCount: 1, type: int, display: true
+  SizeInBlocks: "7,7,21", display: true
+  SizeInBlocksLocked: "Base,MS"
+  SymType: 4
+  IsOxygenTight: false, display: false
+  Info: bkiSolarGenerator, display: true
+  Category: Devices
+  HitPoints: 1500, type: int, display: true
+  EnergyDynamicGroup: AIDroneBay
+  IsActivateable: true
+
+  BlockColor: "110,110,110"
+
+  EnergyOut: 5000, type: int, display: false, formatter: Watt  # do not display for solar generator
+  Mass: 35000, type: float, display: true, formatter: Kilogram
+  Volume: 1500000, type: float, display: true, formatter: Liter
+  VolumeCapacity: 1500000, type: float, display: true, formatter: Liter
+  CPUIn: 15000, type: int, display: true
+
+  IsActivateableInCP: true
+  IsLockable: true
+
+  ADBDroneType: DroneSmallFast01Rocket
+  ADBMaxSpawner: 2
+  ADBMaxActiveDrone: 2
+  ADBMaxReserve: 13
+  ADBActionRadius: 500
+}
+
+# available free 1049 - 1051
 
 { Block Id: 1052, Name: UmbrellaTree
   MarketPrice: 1, display: true
@@ -17617,7 +17679,7 @@
   SizeInBlocksLocked: "Base,MS"
   Mass: 250, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  HitPoints: 278, type: int, display: true
+  HitPoints: 300, type: int, display: true
   StackSize: 10000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
   TemplateRoot: TrussLargeBlocks
@@ -17965,7 +18027,7 @@
 }
 { Block Id: 1104, Name: TurretGVTool, Ref: TurretDrillTemplate
   MarketPrice: 1, display: true
-  Material: HWS_material_weapon_energy, display: false
+  Material: HWS_material_weapon_energy_small, display: false
   Model: @models/Blocks/Turrets/TurretGVToolPrefab
   # Model: @models/Blocks/Turrets/TurretGVToolPrefab
   # Mesh-Damage-1: Mesh/D0
@@ -17978,7 +18040,7 @@
   SizeInBlocks: "3,1,3", display: true
   Info: bkiTurretTool, display: true
   ReturnFactor: 0.5, display: true
-  HitPoints: 2000, type: int, display: true
+  HitPoints: 3000, type: int, display: true
   EnergyIn: 750, type: int, display: true, formatter: Watt
   EnergyInIdle: 75, type: int, display: true, formatter: Watt
   Volume: 0, type: float, display: false, formatter: Liter
@@ -17987,7 +18049,7 @@
 }
 { Block Id: 1105, Name: TurretMSTool, Ref: TurretDrillTemplate
   MarketPrice: 1, display: true
-  Material: HWS_material_weapon_energy, display: false
+  Material: HWS_material_weapon_energy_large, display: false
   Model: @models/Blocks/Turrets/TurretMSToolPrefab
   # Mesh-Damage-1: Mesh/D0
   # Mesh-Damage-2: Mesh/D1
@@ -18477,7 +18539,7 @@
   TemplateRoot: WindowLargeBlocks
   AllowPlacingAt: "Base,MS", display: true
   SizeInBlocksLocked: "Base,MS"
-  HitPoints: 250, type: int, display: true
+  HitPoints: 375, type: int, display: true
   Mass: 330, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   StackSize: 10000
@@ -18509,7 +18571,7 @@
 
   TemplateRoot: WindowArmoredLargeBlocks
   AllowPlacingAt: "Base,MS", display: true
-  HitPoints: 1000, type: int, display: true
+  HitPoints: 1500, type: int, display: true
   Mass: 600, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   StackSize: 10000
@@ -18724,7 +18786,7 @@
   IndexName: Door
   Material: hullcombat, display: true
   Shape: Invisible
-  # Model: @models/Blocks/Mothership/ShutterDoor1x1Prefab
+  # Model: @models/Blocks/Mothership/ShutterDoor/ShutterDoor1x1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Place: Free
   Info: bkiBlockGroup, display: true
@@ -18751,7 +18813,7 @@
 }
 { Block Id: 1137, Name: BlastShutterDoors1x1x1
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BlastShutterDoors1x1x1Prefab
+  Model: @models/Blocks/Mothership/BlastShutterDoors/BlastShutterDoors1x1x1Prefab
   Class: Door
   IndexName: Door
   Group: cpgHangarShutterDoor
@@ -18778,7 +18840,7 @@
 }
 { Block Id: 1138, Name: BlastShutterDoors2x1x1, Ref: BlastShutterDoors1x1x1
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BlastShutterDoors2x1x1Prefab
+  Model: @models/Blocks/Mothership/BlastShutterDoors/BlastShutterDoors2x1x1Prefab
   SizeInBlocks: "1,1,3", display: true
   Mass: 4250, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
@@ -18828,7 +18890,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_large, display: true
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretMSPulseLaserPrefab
@@ -18871,7 +18933,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Turret
   Place: Face
   # Model: @models/Blocks/Turrets/ModularTurret1/SinglePlasmaTurretBluePrefab
@@ -18916,7 +18978,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Turret
   Place: Face
   # Model: @models/Blocks/Turrets/ModularTurret1/SingleMissileTurretBluePrefab
@@ -18958,7 +19020,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretMSCannonPrefab
@@ -19000,7 +19062,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretMSFlakPrefab
@@ -19040,7 +19102,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretMSMinigunPrefab
@@ -19085,7 +19147,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_large, display: true
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretMSPulseLaserPrefab
@@ -19127,7 +19189,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretMSArtilleryPrefab
@@ -19288,6 +19350,7 @@
   Shape: ModelEntity
   Model: @models2/Entities/Farming/SpeedTrees/ElderberryBushStage1Prefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
+  CropType: Berries, display: true
   { Child PlantGrowing
     Next: ElderberryStage2
     GrowthRate: 34
@@ -19302,8 +19365,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: Berries, display: true
-  CropYield: 4, display: true
+  # CropYield: 4, display: true
   GrowthTimeInfo: 74, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiPlantSprout, display: true
@@ -19373,6 +19435,7 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 320"
 
   MarketPrice: 322, display: true
+  CropType: Fruit, display: true
   Model: @models2/Entities/Farming/SpeedTrees/AlienPalmTreeStage1Prefab
   Class: PlantGrowing
   AllowedInBlueprint: false, display: true
@@ -19394,8 +19457,7 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: Fruit, display: true
-  CropYield: 8, display: true
+  # CropYield: 8, display: true
   GrowthTimeInfo: 135, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiPlantSprout, display: true
@@ -19471,6 +19533,7 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 320"
 
   MarketPrice: 430, display: true
+  CropType: NaturalSweetener, display: true
   Model: @models2/Entities/Farming/Misc/AlienplantWormStage1Prefab
   Class: PlantGrowing
   AllowedInBlueprint: false, display: true
@@ -19492,7 +19555,6 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: NaturalSweetener, display: true
   CropYield: 2, display: true
   GrowthTimeInfo: 62, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
@@ -19561,6 +19623,7 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 320"
 
   MarketPrice: 322, display: true
+  CropType: Vegetables, display: true
   # Model: @models2/Entities/Farming/Misc/BulbShroomYoungStage1Prefab
   Model: @models2/Entities/Farming/Misc/BulbShroomStage1Prefab
   Class: PlantGrowing
@@ -19583,7 +19646,6 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: Vegetables, display: true
   CropYield: 1, display: true
   GrowthTimeInfo: 31, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
@@ -20085,7 +20147,7 @@
 { Block Id: 1236, Name: DrillAttachmentT2, Ref: DrillAttachment
   Model: @models/Blocks/WeaponsShip/DrillAttachmentT2RetractPrefab
   # Model: @models/Blocks/WeaponsShip/DrillAttachmentT2Prefab
-  Material: HWS_material_weapon_energy, display: false
+  Material: HWS_material_weapon_energy_small, display: false
   WeaponItem: DrillAttachmentT2Weapon
   Damage: 30, display: true
   MarketPrice: 68527, display: true
@@ -20094,7 +20156,7 @@
   Mass: 1400, type: float, display: true, formatter: Kilogram
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
-  HitPoints: 800, type: int, display: true
+  HitPoints: 1200, type: int, display: true
   EnergyIn: 350, type: int, display: true, formatter: Watt
   EnergyInIdle: 35, type: int, display: true, formatter: Watt
   CPUIn: 1450, type: int, display: true
@@ -20696,7 +20758,54 @@
   # }
 }
 
-# available free 1269 1270 1271
+{ +Block Id: 1269, Name: XenoLargeDestroyedBlocks
+  Material: alien
+  CustomIcon: AlienLargeBlocks
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Texture: 36
+  TextureTable: 3    #  3 = alien table
+  Shape: Invisible
+  PickupTarget: XenoSubstrate
+  Info: bkiXenoLargeDestroyedBlocks, display: true
+  AllowPlacingAt: "Base,MS", display: true
+  HitPoints: 1300, type: int, display: false
+  Mass: 1200, type: float, display: true, formatter: Kilogram
+  StackSize: 1000
+  BlockSizeScale: 8
+  Category: BuildingBlocks
+  HideShapesWindow: true
+  ChildBlocks: "XenoFullLargeDestroyed, XenoThinLargeDestroyed"
+  IsOxygenTight: false, display: true
+
+  UnlockCost: 0
+  UnlockLevel: 1
+  TechTreeNames: ""
+}
+{ +Block Id: 1270, Name: XenoFullLargeDestroyed
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Material: alien
+  Texture: 36
+  TextureTable: 3    #  3 = alien table
+  Shape: New
+  Place: Free
+  Model: Cube
+  TemplateRoot: XenoLargeDestroyedBlocks
+  AllowPlacingAt: "Base,MS", display: true
+  HitPoints: 1300, type: int, display: true
+  Mass: 1200, type: float, display: true, formatter: Kilogram
+  Category: BuildingBlocks
+  ChildShapes: "CubeDestroyed, CutCornerEDestroyed, CutCornerBDestroyed, SlicedCornerA1Destroyed, CornerHalfBDestroyed, CornerSmallCDestroyed, CornerCDestroyed, CornerHalfA3Destroyed, RampCMediumDestroyed, RampADestroyed, RampCDestroyed, CornerRoundBDestroyed, CornerRoundADoubleDestroyed, RoundCornerADestroyed, CubeRoundConnectorADestroyed, EdgeRoundDestroyed, CylinderDestroyed, RampRoundFTripleDestroyed, RampRoundFDestroyed, SmallCornerRoundBDestroyed, SmallCornerRoundADestroyed, SphereHalfDestroyed, ConeDestroyed, ConeBDestroyed, CutCornerCDestroyed, Cylinder6WayDestroyed, CornerRoundATripleDestroyed, CornerADestroyed, CornerHalfA1Destroyed, CornerDoubleA3Destroyed, CornerSmallBDestroyed, PyramidADestroyed"
+  UpgradeTo: AlienFullLarge, display: true
+  IsOxygenTight: false, display: true
+}
+{ +Block Id: 1271, Name: XenoThinLargeDestroyed, Ref: XenoFullLargeDestroyed
+  HitPoints: 750, type: int, display: true
+  Mass: 650, type: float, display: true, formatter: Kilogram
+  ChildShapes: "WallDestroyed, WallLShapeDestroyed, WallSlopedDestroyed, WallSloped3CornerDestroyed, WallSlopedCDestroyed, WallSlopedCMediumrightDestroyed, WallSlopedArightDestroyed, WallSlopedCMediumleftDestroyed, WallSlopedAleftDestroyed, WallCornerRoundBDestroyed, WallSlopedRoundDestroyed, WallEdgeRoundDestroyed, WallEdgeRound3WayDestroyed, WallCornerRoundADestroyed, WallCornerRoundCDestroyed, WallSloped3CornerLowDestroyed, WallCornerDestroyed, WallLowDestroyed, CubeHalfDestroyed, RampADoubleDestroyed, RampCLowDestroyed, RampBMediumDestroyed, RampCHalfDestroyed, CutCornerEMediumDestroyed, BeamDestroyed, CylinderThinDestroyed, CylinderThinTJointDestroyed, CylinderLDestroyed, PipesFenceDestroyed, FenceTopDestroyed, RampDDestroyed, RoundCornerLongThinDestroyed"
+  UpgradeTo: AlienThinLarge, display: true
+  IsOxygenTight: false, display: true
+}
+
 
 { Block Id: 1272, Name: LightLantern, Ref: LightMS01
   MarketPrice: 1, display: true
@@ -21241,7 +21350,7 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   Mass: 2500, type: float, display: true, formatter: Kilogram
   EnergyIn: 6000, type: int, display: true, formatter: Watt
-  CPUIn: 25000, type: int, display: true
+  CPUIn: 75000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   HitPoints: 350, type: int, display: true
   BlastParticleIndex: 10
@@ -21834,7 +21943,7 @@
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
   CropType: Fiber, display: true
-  CropYield: 8, display: true
+  # CropYield: 8, display: true
   GrowthTimeInfo: 43, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiPlantSprout, display: true
@@ -22144,7 +22253,7 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   Mass: 3200, type: float, display: true, formatter: Kilogram
   EnergyIn: 12000, type: int, display: true, formatter: Watt
-  CPUIn: 50000, type: int, display: true
+  CPUIn: 60000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   HitPoints: 350, type: int, display: true
   BlastParticleIndex: 10
@@ -22463,7 +22572,7 @@
   MarketPrice: 5720, display: true
   Info: bkiBlockGroup, display: true
   AllowedInBlueprint: true, display: false
-  HitPoints: 3000, type: int, display: false
+  HitPoints: 3000, type: int, display: true
   Mass: 2600, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   BlockSizeScale: 8
@@ -22471,7 +22580,7 @@
   ChildBlocks: "AlienFullLarge, AlienThinLarge, AlienExtendedLarge, AlienExtendedLarge2, AlienExtendedLarge3, AlienExtendedLarge4, AlienExtendedLarge5, AlienExtendedLarge6"
   Radiation: 9
   CPUIn: 1, type: int, display: true
-
+  
   UnlockCost: 0
   UnlockLevel: 1
   TechTreeNames: ""
@@ -23135,6 +23244,44 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   ShowUser: No
 }
+{ Block Id: 1449, Name: PlayerSpawnerPlateThinSVHV, Ref: PlayerSpawner
+  AllowPlacingAt: "SS,GV", display: true
+  SizeInBlocks: "2,3,2", display: true
+  Texture: 51    
+  BlockColor: "0,15,100"
+  Model: @models/Blocks/Misc/PlayerSpawnerPlateThinPrefab
+  IsTextureable: true   # !!!
+  IsGPUInstance: false  # !!!
+}
+{ Block Id: 1450, Name: StandingHishkal, Ref: NPCAlienTemplate
+  Group: cpgCrewStationAlien
+  CustomIcon: StandingHexapod                       #Icon required
+  # DialogueState: Barking_Military_Random_Init     #create matching barking text
+  Class: NPCDialogue
+  AllowedInBlueprint: false, display: true
+  IsAccessible: true, type: bool
+  # CanPickup: true
+  Model: @models2/Entities/Decorations/DecoNPC/HishkalElderStandingIcePrefab  
+}
+
+{ Block Id: 1451, Name: ZiraxNPCBlocks              #Icon required
+  Material: human
+  Class: NPCDialogue    
+  Shape: Invisible
+  MarketPrice: 5850, display: true 
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  # ModelOffset: "0,0.5,0"
+  Place: Free
+  AllowPlacingAt: "Base,MS", display: false
+  Info: bkiZiraxNPCBlocks, display: true
+  Mass: 80, type: float, display: true, formatter: Kilogram
+  Volume: 40, type: float, display: true, formatter: Liter
+  StackSize: 1000
+  EnergyIn: 1, type: int, display: false, formatter: Watt
+  Category: Devices 
+  HitPoints: 250, type: int, display: true
+  ChildBlocks: "ZiraxCommander, SecurityGuardZirax"
+}
 
 # available free 1449 - 1452
 
@@ -23265,6 +23412,7 @@
 }
 { Block Id: 1465, Name: AlienNPCBlocks
   MarketPrice: 57, display: true
+  Class: NPCDialogue
   Material: human, display: true
   Shape: Invisible
   # Model: @models2/Entities/Decorations/DecoNPC/ControlStationNPCPrefab
@@ -23284,6 +23432,7 @@
 { Block Id: 1466, Name: HumanNPCBlocks
   MarketPrice: 57, display: true
   Material: human, display: true
+  Class: NPCDialogue
   Shape: Invisible
   # Model: @models2/Entities/Decorations/DecoNPC/ConsoleSmallHumanPrefab
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -23298,7 +23447,7 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   EnergyIn: 1, type: int, display: false, formatter: Watt
   Category: Devices
-  ChildBlocks: "ConsoleSmallHuman, StandingHuman, StandingHuman2, ControlStationHuman, ControlStationHuman2, ReceptionTableHuman, ScifiTableHuman, ScifiLargeSofaHuman, TacticalOfficer, CommandingOfficer, CommandingOfficer2, SecurityGuard, SecurityGuard2, OperatorPilot, EngineerMainStation, DancingHuman1, DancingHuman2, DancingHuman3"
+  ChildBlocks: "ConsoleSmallHuman, StandingHuman, StandingHuman2, ControlStationHuman, ControlStationHuman2, ReceptionTableHuman, ScifiTableHuman, ScifiLargeSofaHuman, TacticalOfficer, CommandingOfficer, CommandingOfficer2, SecurityGuard, SecurityGuard2, OperatorPilot, EngineerMainStation, DancingHuman1, DancingHuman2, DancingHuman3, CommandingOfficerMale"
 }
 { Block Id: 1467, Name: CommandingOfficer2, Ref: NPCHumanTemplate
   MarketPrice: 1, display: true
@@ -23697,7 +23846,7 @@
   EnergyIn: 10, type: int, display: true, formatter: Watt
   CPUIn: 2500, type: int, display: true
   BlockColor: "110,110,110"
-  HitPoints: 500, type: int, display: true
+  HitPoints: 300, type: int, display: true
 
   BlastParticleIndex: 10
   BlastRadius: 2
@@ -23795,6 +23944,7 @@
   Category: Devices
   HitPoints: 150, type: int, display: true
   EnergyDynamicGroup: SolarGenerator
+  IsActivateable: true
 
   BlockColor: "110,110,110"
 
@@ -24073,7 +24223,7 @@
   BlockColor: "102,0,0"
   WeaponItem: TurretEnemyRocketWeapon
   RotSpeed: 150, type: int, display: true
-  HitPoints: 5850, type: int, display: true
+  HitPoints: 12000, type: int, display: true
   CPUIn: 32500, type: int, display: true
   AboveTerrainCheck: false
 }
@@ -24090,8 +24240,34 @@
   WeaponItem: TurretEnemyArtilleryWeapon
   RotSpeed: 170, type: int, display: true
   CPUIn: 70000, type: int, display: true
-  HitPoints: 15800, type: int, display: true
+  HitPoints: 16500, type: int, display: true
   AboveTerrainCheck: false
+}
+{ Block Id: 1519, Name: CommandingOfficerMale, Ref: NPCHumanTemplate
+  Class: NPCDialogue
+  CustomIcon: CommandingOfficer
+  Group: cpgCrewStationHuman
+  Info: bkiCommandingOfficer, display: true
+  IsAccessible: true, type: bool
+  # AllowedInBlueprint: false, display: true
+  # CanPickup: true
+  # HitPoints: 15, type: int, display: true
+  Model: @models2/Entities/Decorations/DecoNPC/CommandingOfficerMalePrefab 
+  ShowUser: Yes
+}
+{ Block Id: 1520, Name: SecurityGuardZirax , Ref: NPCAlienTemplate         #Icon required
+  Class: NPCDialogue
+  #DialogueState: Barking_Military_Random_Init
+  #OmitCone: true
+  Group: cpgCrewStationAlien
+  Info: bkiSecurityGuardAlien, display: true
+  IsAccessible: true, type: bool
+  # AllowedInBlueprint: false, display: true
+  # CanPickup: true
+  # HitPoints: 150, type: int, display: true
+  Model: @models2/Entities/Decorations/DecoNPC/SecurityGuardZiraxPrefab    
+  EnergyIn: 0, type: int, display: true, formatter: Watt
+  ShowUser: Yes
 }
 
 # available free 1519 - 1526
@@ -24108,7 +24284,7 @@
     OnDeath: PlantDead
   }
   CropType: MushroomBrown, display: true
-  CropYield: 4, display: true
+  # CropYield: 4, display: true
   GrowthTimeInfo: 110, type: int, display: true, formatter: Minutes
   Info: bkiPlantSprout, display: true
   Category: Farming
@@ -24174,7 +24350,7 @@
     OnDeath: PlantDead
   }
   CropType: Spice, display: true
-  CropYield: 3, display: true
+  # CropYield: 3, display: true
   GrowthTimeInfo: 50, type: int, display: true, formatter: Minutes
   Info: bkiPlantSprout, display: true
   Category: Farming
@@ -24399,7 +24575,7 @@
 
   TemplateRoot: HeavyWindowBlocks
   AllowPlacingAt: "Base,MS", display: true
-  HitPoints: 1500, type: int, display: true
+  HitPoints: 1750, type: int, display: true
   Mass: 1880, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   StackSize: 10000
@@ -24435,7 +24611,7 @@
   AllowPlacingAt: "Base,MS", display: false
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
-  HitPoints: 1500, type: int, display: true
+  HitPoints: 1750, type: int, display: true
   Mass: 1880, type: float, display: true, formatter: Kilogram
   ShowUser: NoButCSV             # inverted versions should not be display in H menu but should show up in EAH tool
   CPUIn: 1, type: int, display: true
@@ -24506,6 +24682,59 @@
   Model: @models2/Environment/Plants/FractalFlora/BrainFungusHarvestedPrefab
 }
 
+#  Destroyed Wood Blocks (large) - block group  
+{ Block Id: 1567, Name: WoodLargeDestroyedBlocks   
+  CustomIcon: WoodBlocks
+  Material: woodblock
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Texture: 70
+  TextureTable: 1    #  1 = wood table  
+  BlockColor: "187,135,90"
+  BlockSizeScale: 8  
+  Shape: Invisible 
+  PickupTarget: WoodPlanks
+  Info: bkiWoodLargeDestroyedBlocks, display: true
+  AllowPlacingAt: Base, display: true
+  HitPoints: 100, type: int, display: false
+  Mass: 360, type: float, display: true, formatter: Kilogram
+  StackSize: 1000
+  Category: BuildingBlocks
+  HideShapesWindow: true
+  ChildBlocks: "WoodFullLargeDestroyed, WoodThinLargeDestroyed"
+  IsOxygenTight: false, display: true  
+  AllowedInBlueprint: false, display: true
+
+  UnlockCost: 0
+  UnlockLevel: 1 
+  TechTreeNames: ""
+} 
+{ Block Id: 1568, Name: WoodFullLargeDestroyed
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Material: woodblock
+  Texture: 70
+  TextureTable: 1    #  1 = wood table  
+  BlockColor: "187,135,90"
+  BlockSizeScale: 8  
+  Shape: New
+  Place: Free
+  Model: Cube
+  TemplateRoot: WoodLargeDestroyedBlocks 
+  AllowPlacingAt: Base, display: true
+  HitPoints: 100, type: int, display: true
+  Mass: 360, type: float, display: true, formatter: Kilogram
+  Category: BuildingBlocks
+  ChildShapes: "CubeDestroyed, CutCornerEDestroyed, CutCornerBDestroyed, SlicedCornerA1Destroyed, CornerHalfBDestroyed, CornerSmallCDestroyed, CornerCDestroyed, CornerHalfA3Destroyed, RampCMediumDestroyed, RampADestroyed, RampCDestroyed, CornerRoundBDestroyed, CornerRoundADoubleDestroyed, RoundCornerADestroyed, CubeRoundConnectorADestroyed, EdgeRoundDestroyed, CylinderDestroyed, RampRoundFTripleDestroyed, RampRoundFDestroyed, SmallCornerRoundBDestroyed, SmallCornerRoundADestroyed, SphereHalfDestroyed, ConeDestroyed, ConeBDestroyed, CutCornerCDestroyed, Cylinder6WayDestroyed, CornerRoundATripleDestroyed, CornerADestroyed, CornerHalfA1Destroyed, CornerDoubleA3Destroyed, CornerSmallBDestroyed, PyramidADestroyed"
+  UpgradeTo: WoodFull, display: true
+  IsOxygenTight: false, display: true
+  AllowedInBlueprint: false, display: true
+}
+{ Block Id: 1569, Name: WoodThinLargeDestroyed, Ref: WoodFullLargeDestroyed
+  HitPoints: 75, type: int, display: true
+  Mass: 250, type: float, display: true, formatter: Kilogram
+  ChildShapes: "WallDestroyed, WallLShapeDestroyed, WallSlopedDestroyed, WallSloped3CornerDestroyed, WallSlopedCDestroyed, WallSlopedCMediumrightDestroyed, WallSlopedArightDestroyed, WallSlopedCMediumleftDestroyed, WallSlopedAleftDestroyed, WallCornerRoundBDestroyed, WallSlopedRoundDestroyed, WallEdgeRoundDestroyed, WallEdgeRound3WayDestroyed, WallCornerRoundADestroyed, WallCornerRoundCDestroyed, WallSloped3CornerLowDestroyed, WallCornerDestroyed, WallLowDestroyed, CubeHalfDestroyed, RampADoubleDestroyed, RampCLowDestroyed, RampBMediumDestroyed, RampCHalfDestroyed, CutCornerEMediumDestroyed, BeamDestroyed, CylinderThinDestroyed, CylinderThinTJointDestroyed, CylinderLDestroyed, PipesFenceDestroyed, FenceTopDestroyed, RampDDestroyed, RoundCornerLongThinDestroyed"
+  UpgradeTo: WoodThin, display: true
+  IsOxygenTight: false, display: true
+}
 # available free 1567 - 1569
 
 { Block Id: 1570, Name: DimpleDomeHarvested, Ref: DimpleDome
@@ -24727,7 +24956,7 @@
   LootList: 37   # still used?
   IndexName: WeaponShip
   Group: cpgHarvest
-  Material: HWS_material_weapon_energy, display: false
+  Material: HWS_material_weapon_energy_large, display: false
   MarketPrice: 162586, display: true
   Shape: ModelEntity
   ShowBlockName: true
@@ -24761,7 +24990,7 @@
   EnergyInIdle: 120, type: int, display: true, formatter: Watt
   Mass: 14000, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  HitPoints: 3000, type: int, display: true
+  HitPoints: 4000, type: int, display: true
   Damage: 30, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
@@ -25015,7 +25244,7 @@
   StackSize: 10000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
   BlockSizeScale: 2
-  ShieldCapacityBonus: 6, type: int, display: true
+  ShieldCapacityBonus: 7, type: int, display: true
   Category: BuildingBlocks
   ChildBlocks: "HullCombatFullSmall, HullCombatThinSmall, HullCombatExtendedSmall, HullCombatExtendedSmall2, HullCombatExtendedSmall3, HullCombatExtendedSmall4, HullCombatExtendedSmall5, HullCombatExtendedSmall6"
   CPUIn: 1, type: int, display: true
@@ -25044,7 +25273,7 @@
   BlockSizeScale: 2
   ChildShapes: "Cube, CutCornerE, CutCornerB, SlicedCornerA1, CornerHalfB, CornerSmallC, CornerC, CornerHalfA3, RampCMedium, RampA, RampC, CornerRoundB, CornerRoundADouble, RoundCornerA, CubeRoundConnectorA, EdgeRound, Cylinder, RampRoundFTriple, RampRoundF, SmallCornerRoundB, SmallCornerRoundA, SphereHalf, Cone, ConeB, CutCornerC, Cylinder6Way, CornerRoundATriple, CornerA, CornerHalfA1, CornerDoubleA3, CornerSmallB, PyramidA"
   CPUIn: 1, type: int, display: true
-  ShieldCapacityBonus: 6, type: int, display: true
+  ShieldCapacityBonus: 7, type: int, display: true
 }
 
 { Block Id: 1596, Name: HullCombatThinSmall, Ref: HullCombatFullSmall
@@ -25081,7 +25310,7 @@
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
   CropType: NaturalStimulant, display: true
-  CropYield: 6, display: true
+  # CropYield: 6, display: true
   GrowthTimeInfo: 91, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiPlantSprout, display: true
@@ -25181,7 +25410,7 @@
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
   CropType: Buds, display: true
-  CropYield: 1, display: true
+  # CropYield: 1, display: true
   GrowthTimeInfo: 27, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiPlantSprout, display: true
@@ -25503,7 +25732,7 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   EnergyIn: 500, type: int, display: true, formatter: Watt
-  HitPoints: 350, type: int, display: true
+  HitPoints: 400, type: int, display: true
   CPUIn: 10000, type: int, display: true
   EnergyInIdle: 5, type: int, display: true, formatter: Watt
 
@@ -25561,7 +25790,7 @@
   IndexName: Turret
   Group: cpgTurret
   MarketPrice: 20855, display: true
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Invisible
   Place: Face
   # Model: @models/Blocks/Turrets/TurretMSMinigunPrefab
@@ -25578,7 +25807,7 @@
   IsOxygenTight: varies, display: true        # not all child blocks are the same
   Mass: 12240, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  CPUIn: 12500, type: int, display: true
+#  CPUIn: 12500, type: int, display: true
 
   UnlockCost: 20, display: true
   UnlockLevel: 7, display: true
@@ -25589,7 +25818,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   MarketPrice: 195651, display: true
   Shape: Invisible
   Place: Face
@@ -25618,7 +25847,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_large, display: true
   MarketPrice: 17016, display: true
   Shape: Turret
   Place: Face
@@ -25648,7 +25877,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_energy
+  Material: HWS_material_weapon_energy_large
   Shape: Invisible
   Place: Face
   # Model: @models/Blocks/Turrets/TurretMSArtilleryPrefab
@@ -25665,7 +25894,7 @@
   IsOxygenTight: varies, display: true        # not all child blocks are the same
   Mass: 18100, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  CPUIn: 80000, type: int, display: true
+#  CPUIn: 80000, type: int, display: true
 
   UnlockCost: 40, display: true
   UnlockLevel: 20, display: true
@@ -25695,8 +25924,7 @@
   IsOxygenTight: varies, display: true        # not all child blocks are the same
   Mass: 79200, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  CPUIn: 60000, type: int, display: true
-
+ 
   UnlockCost: 50, display: true
   UnlockLevel: 25, display: true
   TechTreeParent: TurretMSLaserBlocks
@@ -25770,7 +25998,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Invisible
   Place: Face
   # Model: @models/Blocks/Turrets/TurretMSMinigunPrefab
@@ -25797,7 +26025,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Invisible
   MarketPrice: 9887, display: true
   Place: Face
@@ -25825,7 +26053,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_large, display: true
   MarketPrice: 127388, display: true
   Shape: Invisible
   Place: Face
@@ -25854,7 +26082,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Invisible
   MarketPrice: 329513, display: true
   Place: Face
@@ -25868,7 +26096,6 @@
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   AllowPlacingAt: Base, display: true
   Volume: 0, type: float, display: false, formatter: Liter
-  CPUIn: 100000, type: int, display: true
   Mass: 79200, type: float, display: true, formatter: Kilogram
   Info: bkiBlockGroup, display: true
   IsOxygenTight: varies, display: true        # not all child blocks are the same
@@ -26021,7 +26248,7 @@
   IndexName: Turret
   Group: cpgTurret
   MarketPrice: 2901, display: true
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_small, display: true
   Shape: Invisible
   Place: Face
   # Model: @models/Blocks/Turrets/TurretGVMinigunV2Prefab
@@ -26049,7 +26276,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_small, display: true
   Shape: Invisible
   Place: Face
   # Model: @models/Blocks/Turrets/TurretMSRocketPrefab
@@ -26076,7 +26303,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_small, display: true
   MarketPrice: 65890, display: true
   Shape: Invisible
   Place: Face
@@ -26106,7 +26333,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_small, display: true
   MarketPrice: 121126, display: true
   Shape: Invisible
   Place: Face
@@ -26135,7 +26362,7 @@
   Class: TurretManual
   IndexName: Turret
   Group: cpgTurret
-  Material: HWS_material_weapon_energy, display: false
+  Material: HWS_material_weapon_energy_small, display: false
   MarketPrice: 34926, display: true
   Shape: Invisible
   Place: Face
@@ -26176,7 +26403,7 @@
   Info: bkiTurretRetract, display: true
   Place: Free
   SizeInBlocks: "3,2,3", display: true
-  HitPoints: 3500, type: int, display: true
+  HitPoints: 5250, type: int, display: true
   Mass: 1750, type: float, display: true, formatter: Kilogram
   EnergyIn: 125, type: int, display: true, formatter: Watt
   CPUIn: 2000, type: int, display: true
@@ -26195,7 +26422,7 @@
   Info: bkiTurretRetract, display: true
   Place: Free
   SizeInBlocks: "3,2,3", display: true
-  HitPoints: 4500, type: int, display: true
+  HitPoints: 6750, type: int, display: true
   Mass: 2700, type: float, display: true, formatter: Kilogram
   EnergyIn: 320, type: int, display: true, formatter: Watt
   CPUIn: 3300, type: int, display: true
@@ -26214,7 +26441,7 @@
   Info: bkiTurretRetract, display: true
   Place: Free
   SizeInBlocks: "3,2,3", display: true
-  HitPoints: 5200, type: int, display: true
+  HitPoints: 7800, type: int, display: true
   Mass: 3120, type: float, display: true, formatter: Kilogram
   EnergyIn: 350, type: int, display: true, formatter: Watt
   CPUIn: 3800, type: int, display: true
@@ -26233,7 +26460,7 @@
   Info: bkiTurretRetract, display: true
   Place: Free
   SizeInBlocks: "5,4,5", display: true
-  HitPoints: 7800, type: int, display: true
+  HitPoints: 11700, type: int, display: true
   Mass: 5850, type: float, display: true, formatter: Kilogram
   EnergyIn: 600, type: int, display: true, formatter: Watt
   CPUIn: 5900, type: int, display: true
@@ -26252,7 +26479,7 @@
   # Info: bkiTurretRetract, display: true
   Place: Free
   SizeInBlocks: "3,2,3", display: true
-  HitPoints: 2500, type: int, display: true
+  HitPoints: 3750, type: int, display: true
   Mass: 3950, type: float, display: true, formatter: Kilogram
   EnergyIn: 1000, type: int, display: true, formatter: Watt
   EnergyInIdle: 100, type: int, display: true, formatter: Watt
@@ -26272,7 +26499,7 @@
   # Info: bkiTurretRetract, display: true
   Place: Free
   SizeInBlocks: "3,2,3", display: true
-  HitPoints: 2500, type: int, display: true
+  HitPoints: 3750, type: int, display: true
   Mass: 3750, type: float, display: true, formatter: Kilogram
   CPUIn: 5000, type: int, display: true
   ReturnFactor: 0.5, display: true
@@ -26324,7 +26551,7 @@
   IndexName: Turret
   Group: cpgTurret
   MarketPrice: 3032, display: true
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: Invisible
   Place: Face
   # Model: @models/Blocks/Turrets/SentryGuns/SentryGunHumanPrefab
@@ -26521,7 +26748,7 @@
   SizeInBlocks: "3,2,3", display: true
   BlockColor: "255,247,0"
   WeaponItem: TurretEnemyEMPWeapon
-  HitPoints: 3500, type: int, display: true
+  HitPoints: 8500, type: int, display: true
   RotSpeed: 150, type: int, display: true
   CPUIn: 18400, type: int, display: true
   BlastRadius: 4
@@ -26577,7 +26804,7 @@
   IsDuplicateable: false
   Category: Devices
   EnergyIn: 10, type: int, display: true, formatter: Watt
-  CPUIn: 2000, type: int, display: true
+  CPUIn: 2500, type: int, display: true
   HitPoints: 250, type: int, display: true
   BlastParticleIndex: 5
   BlastRadius: 2
@@ -26710,7 +26937,7 @@
   BlockColor: "62,30,10"
   Info: bkiContainerHarvest, display: true                                      # adapt
   EnergyIn: 10, type: int, display: true, formatter: Watt
-  CPUIn: 2500, type: int, display: true
+  CPUIn: 4500, type: int, display: true
   AllowPlacingAt: "MS", display: true
   LootList: 48
 
@@ -26756,6 +26983,7 @@
   Info: bkiContainerAmmo, display: true                                      # adapt
   EnergyIn: 10, type: int, display: true, formatter: Watt
   AllowPlacingAt: "Base,MS", display: true
+  CPUIn: 3500, type: int, display: true
   BlastParticleIndex: 1
   BlastRadius: 3
   BlastDamage: 105
@@ -27082,7 +27310,7 @@
 }
 { Block Id: 1707, Name: BoardingRamp1x2x3, Ref: RampTemplate
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BoardingRamp1x2x3Prefab
+  Model: @models/Blocks/Mothership/BoardingRamp/BoardingRamp1x2x3Prefab
   AllowPlacingAt: "Base,MS", display: true
   IsTextureable: true   # !!!
   IsGPUInstance: false  # !!!
@@ -27096,7 +27324,7 @@
 }
 { Block Id: 1708, Name: BoardingRamp2x2x3, Ref: RampTemplate
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BoardingRamp2x2x3Prefab
+  Model: @models/Blocks/Mothership/BoardingRamp/BoardingRamp2x2x3Prefab
   AllowPlacingAt: "Base,MS", display: true
   IsTextureable: true   # !!!
   IsGPUInstance: false  # !!!
@@ -27111,7 +27339,7 @@
 }
 { Block Id: 1709, Name: BoardingRamp3x2x3, Ref: RampTemplate
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BoardingRamp3x2x3Prefab
+  Model: @models/Blocks/Mothership/BoardingRamp/BoardingRamp3x2x3Prefab
   AllowPlacingAt: "Base,MS", display: true
   IsTextureable: true   # !!!
   IsGPUInstance: false  # !!!
@@ -27127,7 +27355,7 @@
 # height of 3 blocks is problematic to integrate into BA/CV
 { Block Id: 1710, Name: BoardingRamp3x3x5, Ref: RampTemplate
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BoardingRamp3x3x5Prefab
+  Model: @models/Blocks/Mothership/BoardingRamp/BoardingRamp3x3x5Prefab
   AllowPlacingAt: "Base,MS", display: true
   IsTextureable: true   # !!!
   IsGPUInstance: false  # !!!
@@ -28784,7 +29012,7 @@
 
 { Block Id: 1876, Name: DrillAttachmentLarge, Ref: DrillAttachment
   Model: @models/Blocks/WeaponsShip/DrillAttachmentLargePrefab
-  Material: HWS_material_weapon_kinetic, display: false
+  Material: HWS_material_weapon_kinetic_large, display: false
   MarketPrice: 7450, display: true
   IsRetractable: false, display: true
   WeaponItem: DrillAttachmentLargeWeapon
@@ -28794,7 +29022,7 @@
   Mass: 3200, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   EnergyIn: 800, type: int, display: true, formatter: Watt
-  HitPoints: 1600, type: int, display: true
+  HitPoints: 2400, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
@@ -28936,7 +29164,7 @@
 { Block Id: 1894, Name: ShutterDoor1x3, Ref: ShutterDoor1x1
   MarketPrice: 1, display: true
   TemplateRoot: ShutterDoorLargeBlocks
-  Model: @models/Blocks/Mothership/ShutterDoor1x3Prefab
+  Model: @models/Blocks/Mothership/ShutterDoor/ShutterDoor1x3Prefab
   SizeInBlocks: "1,3,1", display: true
   HitPoints: 360, type: int, display: true
   Mass: 510, type: float, display: true, formatter: Kilogram
@@ -28944,7 +29172,7 @@
 { Block Id: 1895, Name: ShutterDoor1x4, Ref: ShutterDoor1x1
   MarketPrice: 1, display: true
   TemplateRoot: ShutterDoorLargeBlocks
-  Model: @models/Blocks/Mothership/ShutterDoor1x4Prefab
+  Model: @models/Blocks/Mothership/ShutterDoor/ShutterDoor1x4Prefab
   SizeInBlocks: "1,4,1", display: true
   HitPoints: 480, type: int, display: true
   Mass: 660, type: float, display: true, formatter: Kilogram
@@ -28952,7 +29180,7 @@
 { Block Id: 1896, Name: ShutterDoor4x3, Ref: ShutterDoor1x1
   MarketPrice: 1, display: true
   TemplateRoot: ShutterDoorLargeBlocks
-  Model: @models/Blocks/Mothership/ShutterDoor4x3Prefab
+  Model: @models/Blocks/Mothership/ShutterDoor/ShutterDoor4x3Prefab
   SizeInBlocks: "4,3,1", display: true
   HitPoints: 1430, type: int, display: true
   Mass: 2330, type: float, display: true, formatter: Kilogram
@@ -28960,7 +29188,7 @@
 { Block Id: 1897, Name: ShutterDoor1x5, Ref: ShutterDoor1x1
   MarketPrice: 1, display: true
   TemplateRoot: ShutterDoorLargeBlocks
-  Model: @models/Blocks/Mothership/ShutterDoor1x5Prefab
+  Model: @models/Blocks/Mothership/ShutterDoor/ShutterDoor1x5Prefab
   SizeInBlocks: "1,5,1", display: true
   HitPoints: 600, type: int, display: true
   Mass: 810, type: float, display: true, formatter: Kilogram
@@ -28968,7 +29196,7 @@
 { Block Id: 1898, Name: ShutterDoor5x3, Ref: ShutterDoor1x1
   MarketPrice: 1, display: true
   TemplateRoot: ShutterDoorLargeBlocks
-  Model: @models/Blocks/Mothership/ShutterDoor5x3Prefab
+  Model: @models/Blocks/Mothership/ShutterDoor/ShutterDoor5x3Prefab
   SizeInBlocks: "5,3,1", display: true
   HitPoints: 1790, type: int, display: true
   Mass: 2680, type: float, display: true, formatter: Kilogram
@@ -30500,8 +30728,8 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Texture: 282
   BlockColor: "0,64,220"
-  IsTextureable: false
-  IsColorable: false
+  IsTextureable: true
+  IsColorable: true
   Shape: Invisible
   Info: bkiBlockGroup, display: true
   IsOxygenTight: true, display: true
@@ -30528,8 +30756,8 @@
   Material: HWS_material_aquablocklarge, display: true
   Texture: 282
   BlockColor: "0,64,220"
-  IsTextureable: false
-  IsColorable: false
+  IsTextureable: true
+  IsColorable: true
   Shape: New
   Place: Free
   Model: Cube
@@ -30605,7 +30833,7 @@
   StackSize: 10000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
   CPUIn: 2, type: int, display: true
-  ShieldCapacityBonus: 8, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 
   BlockSizeScale: 2
   Category: BuildingBlocks
@@ -30631,7 +30859,7 @@
   HitPoints: 450, type: int, display: true
   StackSize: 10000
   CPUIn: 2, type: int, display: true
-  ShieldCapacityBonus: 8, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 
   Mass: 30, type: float, display: true, formatter: Kilogram
   BlockSizeScale: 2
@@ -30688,8 +30916,8 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Texture: 282
   BlockColor: "28,149,36"
-  IsTextureable: false
-  IsColorable: false
+  IsTextureable: true
+  IsColorable: true
   Shape: Invisible
   Info: bkiBlockGroup, display: true
   IsOxygenTight: true, display: true
@@ -30716,8 +30944,8 @@
   Material: HWS_material_terrablocklarge, display: true
   Texture: 282
   BlockColor: "28,149,36"
-  IsTextureable: false
-  IsColorable: false
+  IsTextureable: true
+  IsColorable: true
   Shape: New
   Place: Free
   Model: Cube
@@ -30789,8 +31017,8 @@
   AllowPlacingAt: "SS,GV", display: true
   Mass: 30, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
-  HitPoints: 500, type: int, display: true
-  ShieldCapacityBonus: 8, type: int, display: true
+  HitPoints: 560, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
   StackSize: 10000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
   CPUIn: 2, type: int, display: true
@@ -30816,10 +31044,10 @@
   Model: Cube
   TemplateRoot: HWSTerraBlocksSmall
   AllowPlacingAt: "SS,GV", display: true
-  HitPoints: 500, type: int, display: true
+  HitPoints: 560, type: int, display: true
   StackSize: 10000
   CPUIn: 2, type: int, display: true
-  ShieldCapacityBonus: 8, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 
   Mass: 30, type: float, display: true, formatter: Kilogram
   BlockSizeScale: 2
@@ -30876,8 +31104,8 @@
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   Texture: 282
   BlockColor: "170,5,5"
-  IsTextureable: false
-  IsColorable: false
+  IsTextureable: true
+  IsColorable: true
   Shape: Invisible
   Info: bkiBlockGroup, display: true
   IsOxygenTight: true, display: true
@@ -30904,8 +31132,8 @@
   Material: HWS_material_pyroblocklarge, display: true
   Texture: 282
   BlockColor: "170,5,5"
-  IsTextureable: false
-  IsColorable: false
+  IsTextureable: true
+  IsColorable: true
   Shape: New
   Place: Free
   Model: Cube
@@ -30981,7 +31209,7 @@
   StackSize: 10000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
   CPUIn: 2, type: int, display: true
-  ShieldCapacityBonus: 8, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 
   BlockSizeScale: 2
   Category: BuildingBlocks
@@ -31007,7 +31235,7 @@
   HitPoints: 450, type: int, display: true
   StackSize: 10000
   CPUIn: 2, type: int, display: true
-  ShieldCapacityBonus: 8, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 
   Mass: 30, type: float, display: true, formatter: Kilogram
   BlockSizeScale: 2
@@ -31169,7 +31397,7 @@
   StackSize: 10000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
   CPUIn: 2, type: int, display: true
-  ShieldCapacityBonus: 8, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 
   BlockSizeScale: 2
   Category: BuildingBlocks
@@ -31195,7 +31423,7 @@
   HitPoints: 450, type: int, display: true
   StackSize: 10000
   CPUIn: 2, type: int, display: true
-  ShieldCapacityBonus: 8, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 
   Mass: 30, type: float, display: true, formatter: Kilogram
   BlockSizeScale: 2
@@ -31357,7 +31585,7 @@
   StackSize: 10000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
   CPUIn: 2, type: int, display: true
-  ShieldCapacityBonus: 8, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 
   BlockSizeScale: 2
   Category: BuildingBlocks
@@ -31383,7 +31611,7 @@
   HitPoints: 450, type: int, display: true
   StackSize: 10000
   CPUIn: 2, type: int, display: true
-  ShieldCapacityBonus: 8, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 
   Mass: 22.5, type: float, display: true, formatter: Kilogram
   BlockSizeScale: 2
@@ -31545,7 +31773,7 @@
   StackSize: 10000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
   CPUIn: 2, type: int, display: true
-  ShieldCapacityBonus: 8, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 
   BlockSizeScale: 2
   Category: BuildingBlocks
@@ -31571,7 +31799,7 @@
   HitPoints: 450, type: int, display: true
   StackSize: 10000
   CPUIn: 2, type: int, display: true
-  ShieldCapacityBonus: 8, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 
   Mass: 30, type: float, display: true, formatter: Kilogram
   BlockSizeScale: 2
@@ -31733,7 +31961,7 @@
   StackSize: 10000
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 4000"
   CPUIn: 3, type: int, display: true
-  ShieldCapacityBonus: 8, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 
   BlockSizeScale: 2
   Category: BuildingBlocks
@@ -31759,7 +31987,7 @@
   HitPoints: 450, type: int, display: true
   StackSize: 10000
   CPUIn: 3, type: int, display: true
-  ShieldCapacityBonus: 8, type: int, display: true
+  ShieldCapacityBonus: 10, type: int, display: true
 
   Mass: 45, type: float, display: true, formatter: Kilogram
   BlockSizeScale: 2
@@ -35957,7 +36185,7 @@
   Mass: 10000, type: float, display: true, formatter: Kilogram
   EnergyIn: 10000, type: int, display: true, formatter: Watt
   CPUIn: 200000, type: int, display: true
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 16000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
   # AmmoType: FastRocket, display: true
@@ -36010,7 +36238,7 @@
   Mass: 14000, type: float, display: true, formatter: Kilogram
   EnergyIn: 14000, type: int, display: true, formatter: Watt
   CPUIn: 135000, type: int, display: true
-  HitPoints: 14000, type: int, display: true
+  HitPoints: 14500, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -36063,7 +36291,7 @@
   Mass: 20000, type: float, display: true, formatter: Kilogram
   EnergyIn: 20000, type: int, display: true, formatter: Watt
   CPUIn: 250000, type: int, display: true
-  HitPoints: 8000, type: int, display: true
+  HitPoints: 10000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -36145,7 +36373,7 @@
   Mass: 10000, type: float, display: true, formatter: Kilogram
   EnergyIn: 10000, type: int, display: true, formatter: Watt
   CPUIn: 200000, type: int, display: true
-  HitPoints: 12500, type: int, display: true
+  HitPoints: 20000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
   # AmmoType: FastRocket, display: true
@@ -36198,7 +36426,7 @@
   Mass: 14000, type: float, display: true, formatter: Kilogram
   EnergyIn: 14000, type: int, display: true, formatter: Watt
   CPUIn: 135000, type: int, display: true
-  HitPoints: 17500, type: int, display: true
+  HitPoints: 18125, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -36251,7 +36479,7 @@
   Mass: 20000, type: float, display: true, formatter: Kilogram
   EnergyIn: 20000, type: int, display: true, formatter: Watt
   CPUIn: 250000, type: int, display: true
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 12500, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -36333,7 +36561,7 @@
   Mass: 10000, type: float, display: true, formatter: Kilogram
   EnergyIn: 7500, type: int, display: true, formatter: Watt
   CPUIn: 200000, type: int, display: true
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 16000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
   # AmmoType: FastRocket, display: true
@@ -36385,7 +36613,7 @@
   Mass: 14000, type: float, display: true, formatter: Kilogram
   EnergyIn: 10500, type: int, display: true, formatter: Watt
   CPUIn: 135000, type: int, display: true
-  HitPoints: 14000, type: int, display: true
+  HitPoints: 14500, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -36438,7 +36666,7 @@
   Mass: 20000, type: float, display: true, formatter: Kilogram
   EnergyIn: 15000, type: int, display: true, formatter: Watt
   CPUIn: 250000, type: int, display: true
-  HitPoints: 8000, type: int, display: true
+  HitPoints: 10000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -36520,7 +36748,7 @@
   Mass: 10000, type: float, display: true, formatter: Kilogram
   EnergyIn: 10000, type: int, display: true, formatter: Watt
   CPUIn: 200000, type: int, display: true
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 16000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
   # AmmoType: FastRocket, display: true
@@ -36572,7 +36800,7 @@
   Mass: 14000, type: float, display: true, formatter: Kilogram
   EnergyIn: 14000, type: int, display: true, formatter: Watt
   CPUIn: 135000, type: int, display: true
-  HitPoints: 14000, type: int, display: true
+  HitPoints: 14500, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -36625,7 +36853,7 @@
   Mass: 20000, type: float, display: true, formatter: Kilogram
   EnergyIn: 20000, type: int, display: true, formatter: Watt
   CPUIn: 250000, type: int, display: true
-  HitPoints: 8000, type: int, display: true
+  HitPoints: 10000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -36707,7 +36935,7 @@
   Mass: 7500, type: float, display: true, formatter: Kilogram
   EnergyIn: 10000, type: int, display: true, formatter: Watt
   CPUIn: 200000, type: int, display: true
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 16000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
   # AmmoType: FastRocket, display: true
@@ -36759,7 +36987,7 @@
   Mass: 10500, type: float, display: true, formatter: Kilogram
   EnergyIn: 14000, type: int, display: true, formatter: Watt
   CPUIn: 135000, type: int, display: true
-  HitPoints: 14000, type: int, display: true
+  HitPoints: 14500, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -36812,7 +37040,7 @@
   Mass: 15000, type: float, display: true, formatter: Kilogram
   EnergyIn: 20000, type: int, display: true, formatter: Watt
   CPUIn: 250000, type: int, display: true
-  HitPoints: 8000, type: int, display: true
+  HitPoints: 10000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -36894,7 +37122,7 @@
   Mass: 10000, type: float, display: true, formatter: Kilogram
   EnergyIn: 10000, type: int, display: true, formatter: Watt
   CPUIn: 200000, type: int, display: true
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 16000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
   # AmmoType: FastRocket, display: true
@@ -36946,7 +37174,7 @@
   Mass: 14000, type: float, display: true, formatter: Kilogram
   EnergyIn: 14000, type: int, display: true, formatter: Watt
   CPUIn: 135000, type: int, display: true
-  HitPoints: 14000, type: int, display: true
+  HitPoints: 14500, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -36999,7 +37227,7 @@
   Mass: 20000, type: float, display: true, formatter: Kilogram
   EnergyIn: 20000, type: int, display: true, formatter: Watt
   CPUIn: 250000, type: int, display: true
-  HitPoints: 8000, type: int, display: true
+  HitPoints: 10000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -37081,7 +37309,7 @@
   Mass: 15000, type: float, display: true, formatter: Kilogram
   EnergyIn: 15000, type: int, display: true, formatter: Watt
   CPUIn: 300000, type: int, display: true
-  HitPoints: 10000, type: int, display: true
+  HitPoints: 16000, type: int, display: true
   # Damage: 211, display: true
   # AmmoCapacity: 15, display: true
   # AmmoType: FastRocket, display: true
@@ -37133,7 +37361,7 @@
   Mass: 21000, type: float, display: true, formatter: Kilogram
   EnergyIn: 21000, type: int, display: true, formatter: Watt
   CPUIn: 202500, type: int, display: true
-  HitPoints: 14000, type: int, display: true
+  HitPoints: 14500, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -37186,7 +37414,7 @@
   Mass: 30000, type: float, display: true, formatter: Kilogram
   EnergyIn: 30000, type: int, display: true, formatter: Watt
   CPUIn: 375000, type: int, display: true
-  HitPoints: 8000, type: int, display: true
+  HitPoints: 10000, type: int, display: true
   # Damage: 33, display: true
   # AmmoCapacity: 150, display: true
   # AmmoType: PulseLaserChargeSS, display: true
@@ -37272,7 +37500,7 @@
   CPUIn: 5100, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3420, type: float, display: true, formatter: Kilogram
-  HitPoints: 7000, type: int, display: true
+  HitPoints: 8750, type: int, display: true
   RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
@@ -37319,8 +37547,8 @@
   CPUIn: 3850, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
-  HitPoints: 6300, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  HitPoints: 7850, type: int, display: true
+  RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSAquaTurretHVT3
@@ -37364,7 +37592,7 @@
   CPUIn: 4300, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3120, type: float, display: true, formatter: Kilogram
-  HitPoints: 6000, type: int, display: true
+  HitPoints: 7500, type: int, display: true
   RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
@@ -37411,7 +37639,7 @@
   CPUIn: 5800, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4400, type: float, display: true, formatter: Kilogram
-  HitPoints: 8000, type: int, display: true
+  HitPoints: 10000, type: int, display: true
   RotSpeed: 85, type: int, display: true
   Zoom: 5, type: float
 }
@@ -37487,7 +37715,7 @@
   CPUIn: 5100, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3420, type: float, display: true, formatter: Kilogram
-  HitPoints: 8750, type: int, display: true
+  HitPoints: 10950, type: int, display: true
   RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
@@ -37533,8 +37761,8 @@
   CPUIn: 3850, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
-  HitPoints: 7875, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  HitPoints: 9800, type: int, display: true
+  RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSTerraTurretHVT3
@@ -37578,7 +37806,7 @@
   CPUIn: 4300, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3120, type: float, display: true, formatter: Kilogram
-  HitPoints: 7500, type: int, display: true
+  HitPoints: 9375, type: int, display: true
   RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
@@ -37625,7 +37853,7 @@
   CPUIn: 5800, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4400, type: float, display: true, formatter: Kilogram
-  HitPoints: 9750, type: int, display: true
+  HitPoints: 12500, type: int, display: true
   RotSpeed: 85, type: int, display: true
   Zoom: 5, type: float
 }
@@ -37701,7 +37929,7 @@
   CPUIn: 5100, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3420, type: float, display: true, formatter: Kilogram
-  HitPoints: 7000, type: int, display: true
+  HitPoints: 8750, type: int, display: true
   RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
@@ -37747,8 +37975,8 @@
   CPUIn: 3850, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
-  HitPoints: 6300, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  HitPoints: 7850, type: int, display: true
+  RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSPyroTurretHVT3
@@ -37792,7 +38020,7 @@
   CPUIn: 4300, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3120, type: float, display: true, formatter: Kilogram
-  HitPoints: 6000, type: int, display: true
+  HitPoints: 7500, type: int, display: true
   RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
@@ -37839,7 +38067,7 @@
   CPUIn: 5800, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4400, type: float, display: true, formatter: Kilogram
-  HitPoints: 8000, type: int, display: true
+  HitPoints: 10000, type: int, display: true
   RotSpeed: 85, type: int, display: true
   Zoom: 5, type: float
 }
@@ -37915,7 +38143,7 @@
   CPUIn: 5100, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3420, type: float, display: true, formatter: Kilogram
-  HitPoints: 7000, type: int, display: true
+  HitPoints: 8750, type: int, display: true
   RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
@@ -37961,8 +38189,8 @@
   CPUIn: 3850, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
-  HitPoints: 6300, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  HitPoints: 7850, type: int, display: true
+  RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSObsidianTurretHVT3
@@ -38006,7 +38234,7 @@
   CPUIn: 4300, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3120, type: float, display: true, formatter: Kilogram
-  HitPoints: 6000, type: int, display: true
+  HitPoints: 7500, type: int, display: true
   RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38053,7 +38281,7 @@
   CPUIn: 5800, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4400, type: float, display: true, formatter: Kilogram
-  HitPoints: 8000, type: int, display: true
+  HitPoints: 10000, type: int, display: true
   RotSpeed: 85, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38129,7 +38357,7 @@
   CPUIn: 5100, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 2565, type: float, display: true, formatter: Kilogram
-  HitPoints: 7000, type: int, display: true
+  HitPoints: 8750, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38175,8 +38403,8 @@
   CPUIn: 3850, type: int, display: true
    Volume: 0, type: float, display: false, formatter: Liter
   Mass: 2250, type: float, display: true, formatter: Kilogram
-  HitPoints: 6300, type: int, display: true
-  RotSpeed: 140, type: int, display: true
+  HitPoints: 7850, type: int, display: true
+  RotSpeed: 145, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSLuxTurretHVT3
@@ -38220,7 +38448,7 @@
   CPUIn: 4300, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 2340, type: float, display: true, formatter: Kilogram
-  HitPoints: 6000, type: int, display: true
+  HitPoints: 7500, type: int, display: true
   RotSpeed: 160, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38267,7 +38495,7 @@
   CPUIn: 5800, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3300, type: float, display: true, formatter: Kilogram
-  HitPoints: 8000, type: int, display: true
+  HitPoints: 10000, type: int, display: true
   RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38343,7 +38571,7 @@
   CPUIn: 5100, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3420, type: float, display: true, formatter: Kilogram
-  HitPoints: 7000, type: int, display: true
+  HitPoints: 8750, type: int, display: true
   RotSpeed: 80, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38389,8 +38617,8 @@
   CPUIn: 3850, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
-  HitPoints: 6300, type: int, display: true
-  RotSpeed: 100, type: int, display: true
+  HitPoints: 7850, type: int, display: true
+  RotSpeed: 105, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSNoxTurretHVT3
@@ -38434,7 +38662,7 @@
   CPUIn: 4300, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3120, type: float, display: true, formatter: Kilogram
-  HitPoints: 6000, type: int, display: true
+  HitPoints: 7500, type: int, display: true
   RotSpeed: 120, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38481,7 +38709,7 @@
   CPUIn: 5800, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4400, type: float, display: true, formatter: Kilogram
-  HitPoints: 8000, type: int, display: true
+  HitPoints: 10000, type: int, display: true
   RotSpeed: 65, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38557,7 +38785,7 @@
   CPUIn: 7650, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 5130, type: float, display: true, formatter: Kilogram
-  HitPoints: 7000, type: int, display: true
+  HitPoints: 8750, type: int, display: true
   RotSpeed: 100, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38603,8 +38831,8 @@
   CPUIn: 5775, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4500, type: float, display: true, formatter: Kilogram
-  HitPoints: 6300, type: int, display: true
-  RotSpeed: 120, type: int, display: true
+  HitPoints: 7850, type: int, display: true
+  RotSpeed: 125, type: int, display: true
   Zoom: 5, type: float
 }
 { Block Name: HWSStrangeletTurretHVT3
@@ -38648,7 +38876,7 @@
   CPUIn: 6450, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 4680, type: float, display: true, formatter: Kilogram
-  HitPoints: 6000, type: int, display: true
+  HitPoints: 7500, type: int, display: true
   RotSpeed: 140, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38695,7 +38923,7 @@
   CPUIn: 8700, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 6600, type: float, display: true, formatter: Kilogram
-  HitPoints: 8000, type: int, display: true
+  HitPoints: 10000, type: int, display: true
   RotSpeed: 85, type: int, display: true
   Zoom: 5, type: float
 }
@@ -38766,7 +38994,7 @@
   BlastDamage: 60
   DamageMultiplier_Group: HWS_EWS_Elemental_Weapons_BlastDamage
 
-  HitPoints: 8750, type: int, display: true
+  HitPoints: 11000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   EnergyIn: 390, type: int, display: true, formatter: Watt
   CPUIn: 6375, type: int, display: true
@@ -38813,7 +39041,7 @@
   BlastDamage: 60
   DamageMultiplier_Group: HWS_EWS_Elemental_Weapons_BlastDamage
 
-  HitPoints: 10940, type: int, display: true
+  HitPoints: 13670, type: int, display: true
   RotSpeed: 120, type: int, display: true
   EnergyIn: 390, type: int, display: true, formatter: Watt
   CPUIn: 6375, type: int, display: true
@@ -38860,7 +39088,7 @@
   BlastDamage: 60
   DamageMultiplier_Group: HWS_EWS_Elemental_Weapons_BlastDamage
 
-  HitPoints: 8750, type: int, display: true
+  HitPoints: 11000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   EnergyIn: 292, type: int, display: true, formatter: Watt
   CPUIn: 6375, type: int, display: true
@@ -38907,7 +39135,7 @@
   BlastDamage: 60
   DamageMultiplier_Group: HWS_EWS_Elemental_Weapons_BlastDamage
 
-  HitPoints: 8750, type: int, display: true
+  HitPoints: 11000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   EnergyIn: 390, type: int, display: true, formatter: Watt
   CPUIn: 6375, type: int, display: true
@@ -38954,7 +39182,7 @@
   BlastDamage: 60
   DamageMultiplier_Group: HWS_EWS_Elemental_Weapons_BlastDamage
 
-  HitPoints: 8750, type: int, display: true
+  HitPoints: 11000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   EnergyIn: 390, type: int, display: true, formatter: Watt
   CPUIn: 6375, type: int, display: true
@@ -39001,7 +39229,7 @@
   BlastDamage: 60
   DamageMultiplier_Group: HWS_EWS_Elemental_Weapons_BlastDamage
 
-  HitPoints: 8750, type: int, display: true
+  HitPoints: 11000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   EnergyIn: 390, type: int, display: true, formatter: Watt
   CPUIn: 6375, type: int, display: true
@@ -39048,7 +39276,7 @@
   BlastDamage: 60
   DamageMultiplier_Group: HWS_EWS_Elemental_Weapons_BlastDamage
 
-  HitPoints: 8750, type: int, display: true
+  HitPoints: 11000, type: int, display: true
   RotSpeed: 120, type: int, display: true
   EnergyIn: 780, type: int, display: true, formatter: Watt
   CPUIn: 6375, type: int, display: true
@@ -39137,7 +39365,7 @@
 
   EnergyIn: 420, type: int, display: true, formatter: Watt
   CPUIn: 3050, type: int, display: true
-  HitPoints: 1650, type: int, display: true
+  HitPoints: 2050, type: int, display: true
   Mass: 1500, type: float, display: true, formatter: Kilogram
 
   # Damage: 211, display: true
@@ -39193,7 +39421,7 @@
 
   EnergyIn: 680, type: int, display: true, formatter: Watt
   CPUIn: 3450, type: int, display: true
-  HitPoints: 2200, type: int, display: true
+  HitPoints: 2750, type: int, display: true
   Mass: 1900, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -39278,7 +39506,7 @@
 
   EnergyIn: 400, type: int, display: true, formatter: Watt
   CPUIn: 3050, type: int, display: true
-  HitPoints: 2060, type: int, display: true
+  HitPoints: 2560, type: int, display: true
   Mass: 1500, type: float, display: true, formatter: Kilogram
 
   # Damage: 211, display: true
@@ -39334,7 +39562,7 @@
 
   EnergyIn: 680, type: int, display: true, formatter: Watt
   CPUIn: 3450, type: int, display: true
-  HitPoints: 2450, type: int, display: true
+  HitPoints: 3430, type: int, display: true
   Mass: 2750, type: float, display: true, formatter: Kilogram
   
   # Damage: 33, display: true
@@ -39419,7 +39647,7 @@
 
   EnergyIn: 315, type: int, display: true, formatter: Watt
   CPUIn: 3050, type: int, display: true
-  HitPoints: 1650, type: int, display: true
+  HitPoints: 2050, type: int, display: true
   Mass: 1500, type: float, display: true, formatter: Kilogram
 
   # Damage: 211, display: true
@@ -39475,7 +39703,7 @@
 
   EnergyIn: 512, type: int, display: true, formatter: Watt
   CPUIn: 3450, type: int, display: true
-  HitPoints: 2200, type: int, display: true
+  HitPoints: 2750, type: int, display: true
   Mass: 1900, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -39560,7 +39788,7 @@
 
   EnergyIn: 420, type: int, display: true, formatter: Watt
   CPUIn: 3050, type: int, display: true
-  HitPoints: 1650, type: int, display: true
+  HitPoints: 2050, type: int, display: true
   Mass: 1500, type: float, display: true, formatter: Kilogram
 
   # Damage: 211, display: true
@@ -39616,7 +39844,7 @@
 
   EnergyIn: 680, type: int, display: true, formatter: Watt
   CPUIn: 3450, type: int, display: true
-  HitPoints: 2200, type: int, display: true
+  HitPoints: 2750, type: int, display: true
   Mass: 1900, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -39701,7 +39929,7 @@
 
   EnergyIn: 420, type: int, display: true, formatter: Watt
   CPUIn: 3050, type: int, display: true
-  HitPoints: 1650, type: int, display: true
+  HitPoints: 2050, type: int, display: true
   Mass: 1125, type: float, display: true, formatter: Kilogram
 
   # Damage: 211, display: true
@@ -39756,7 +39984,7 @@
 
   EnergyIn: 680, type: int, display: true, formatter: Watt
   CPUIn: 3450, type: int, display: true
-  HitPoints: 2200, type: int, display: true
+  HitPoints: 2750, type: int, display: true
   Mass: 1425, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -39841,7 +40069,7 @@
 
   EnergyIn: 420, type: int, display: true, formatter: Watt
   CPUIn: 3050, type: int, display: true
-  HitPoints: 1650, type: int, display: true
+  HitPoints: 2050, type: int, display: true
   Mass: 1500, type: float, display: true, formatter: Kilogram
 
   # Damage: 211, display: true
@@ -39896,7 +40124,7 @@
 
   EnergyIn: 680, type: int, display: true, formatter: Watt
   CPUIn: 3450, type: int, display: true
-  HitPoints: 2200, type: int, display: true
+  HitPoints: 2750, type: int, display: true
   Mass: 1900, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -39981,7 +40209,7 @@
 
   EnergyIn: 630, type: int, display: true, formatter: Watt
   CPUIn: 4575, type: int, display: true
-  HitPoints: 1650, type: int, display: true
+  HitPoints: 2050, type: int, display: true
   Mass: 2250, type: float, display: true, formatter: Kilogram
 
   # Damage: 211, display: true
@@ -40036,7 +40264,7 @@
 
   EnergyIn: 1024, type: int, display: true, formatter: Watt
   CPUIn: 5175, type: int, display: true
-  HitPoints: 2200, type: int, display: true
+  HitPoints: 2750, type: int, display: true
   Mass: 2850, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -40122,7 +40350,7 @@
   CPUIn: 5700, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3800, type: float, display: true, formatter: Kilogram
-  HitPoints: 5600, type: int, display: true
+  HitPoints: 7000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   Zoom: 5, type: float
 }
@@ -40166,7 +40394,7 @@
 
   EnergyIn: 540, type: int, display: true, formatter: Watt
   CPUIn: 5300, type: int, display: true
-  HitPoints: 4800, type: int, display: true
+  HitPoints: 6000, type: int, display: true
   Mass: 3400, type: float, display: true, formatter: Kilogram
   RotSpeed: 60, type: int, display: true
   Zoom: 5, type: float
@@ -40243,7 +40471,7 @@
   CPUIn: 5700, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3800, type: float, display: true, formatter: Kilogram
-  HitPoints: 6720, type: int, display: true
+  HitPoints: 8750, type: int, display: true
   RotSpeed: 30, type: int, display: true
   Zoom: 5, type: float
 }
@@ -40287,7 +40515,7 @@
 
   EnergyIn: 540, type: int, display: true, formatter: Watt
   CPUIn: 5300, type: int, display: true
-  HitPoints: 5760, type: int, display: true
+  HitPoints: 7500, type: int, display: true
   Mass: 3400, type: float, display: true, formatter: Kilogram
   RotSpeed: 60, type: int, display: true
   Zoom: 5, type: float
@@ -40364,7 +40592,7 @@
   CPUIn: 5700, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3800, type: float, display: true, formatter: Kilogram
-  HitPoints: 5600, type: int, display: true
+  HitPoints: 7000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   Zoom: 5, type: float
 }
@@ -40408,7 +40636,7 @@
 
   EnergyIn: 405, type: int, display: true, formatter: Watt
   CPUIn: 5300, type: int, display: true
-  HitPoints: 4800, type: int, display: true
+  HitPoints: 6000, type: int, display: true
   Mass: 3400, type: float, display: true, formatter: Kilogram
   RotSpeed: 60, type: int, display: true
   Zoom: 5, type: float
@@ -40485,7 +40713,7 @@
   CPUIn: 5700, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3800, type: float, display: true, formatter: Kilogram
-  HitPoints: 5600, type: int, display: true
+  HitPoints: 7000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   Zoom: 5, type: float
 }
@@ -40529,7 +40757,7 @@
 
   EnergyIn: 540, type: int, display: true, formatter: Watt
   CPUIn: 5300, type: int, display: true
-  HitPoints: 4800, type: int, display: true
+  HitPoints: 6000, type: int, display: true
   Mass: 3800, type: float, display: true, formatter: Kilogram
   RotSpeed: 60, type: int, display: true
   Zoom: 5, type: float
@@ -40609,7 +40837,7 @@
   CPUIn: 5700, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 2850, type: float, display: true, formatter: Kilogram
-  HitPoints: 5600, type: int, display: true
+  HitPoints: 7000, type: int, display: true
   RotSpeed: 35, type: int, display: true
   Zoom: 5, type: float
 }
@@ -40653,7 +40881,7 @@
 
   EnergyIn: 540, type: int, display: true, formatter: Watt
   CPUIn: 5300, type: int, display: true
-  HitPoints: 4800, type: int, display: true
+  HitPoints: 6000, type: int, display: true
   Mass: 2550, type: float, display: true, formatter: Kilogram
   RotSpeed: 70, type: int, display: true
   Zoom: 5, type: float
@@ -40730,7 +40958,7 @@
   CPUIn: 5700, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3500, type: float, display: true, formatter: Kilogram
-  HitPoints: 5600, type: int, display: true
+  HitPoints: 7000, type: int, display: true
   RotSpeed: 25, type: int, display: true
   Zoom: 5, type: float
 }
@@ -40774,7 +41002,7 @@
 
   EnergyIn: 540, type: int, display: true, formatter: Watt
   CPUIn: 5300, type: int, display: true
-  HitPoints: 4800, type: int, display: true
+  HitPoints: 6000, type: int, display: true
   Mass: 3400, type: float, display: true, formatter: Kilogram
   RotSpeed: 50, type: int, display: true
   Zoom: 5, type: float
@@ -40851,7 +41079,7 @@
   CPUIn: 8550, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 5700, type: float, display: true, formatter: Kilogram
-  HitPoints: 5600, type: int, display: true
+  HitPoints: 7000, type: int, display: true
   RotSpeed: 30, type: int, display: true
   Zoom: 5, type: float
 }
@@ -40895,7 +41123,7 @@
 
   EnergyIn: 810, type: int, display: true, formatter: Watt
   CPUIn: 7950, type: int, display: true
-  HitPoints: 4800, type: int, display: true
+  HitPoints: 6000, type: int, display: true
   Mass: 5100, type: float, display: true, formatter: Kilogram
   RotSpeed: 60, type: int, display: true
   Zoom: 5, type: float
@@ -40965,7 +41193,7 @@
   BlastDamage: 60
   DamageMultiplier_Group: HWS_EWS_Elemental_Weapons_BlastDamage
 
-  HitPoints: 7000, type: int, display: true
+  HitPoints: 8750, type: int, display: true
   RotSpeed: 40, type: int, display: true
   EnergyIn: 352, type: int, display: true, formatter: Watt
   CPUIn: 8550, type: int, display: true
@@ -41012,7 +41240,7 @@
   BlastDamage: 60
   DamageMultiplier_Group: HWS_EWS_Elemental_Weapons_BlastDamage
 
-  HitPoints: 8400, type: int, display: true
+  HitPoints: 10950, type: int, display: true
   RotSpeed: 40, type: int, display: true
   EnergyIn: 352, type: int, display: true, formatter: Watt
   CPUIn: 8550, type: int, display: true
@@ -41059,7 +41287,7 @@
   BlastDamage: 60
   DamageMultiplier_Group: HWS_EWS_Elemental_Weapons_BlastDamage
 
-  HitPoints: 7000, type: int, display: true
+  HitPoints: 8750, type: int, display: true
   RotSpeed: 40, type: int, display: true
   EnergyIn: 264, type: int, display: true, formatter: Watt
   CPUIn: 8550, type: int, display: true
@@ -41106,7 +41334,7 @@
   BlastDamage: 60
   DamageMultiplier_Group: HWS_EWS_Elemental_Weapons_BlastDamage
 
-  HitPoints: 7000, type: int, display: true
+  HitPoints: 8750, type: int, display: true
   RotSpeed: 40, type: int, display: true
   EnergyIn: 352, type: int, display: true, formatter: Watt
   CPUIn: 8550, type: int, display: true
@@ -41153,7 +41381,7 @@
   BlastDamage: 60
   DamageMultiplier_Group: HWS_EWS_Elemental_Weapons_BlastDamage
 
-  HitPoints: 7000, type: int, display: true
+  HitPoints: 8750, type: int, display: true
   RotSpeed: 45, type: int, display: true
   EnergyIn: 352, type: int, display: true, formatter: Watt
   CPUIn: 8550, type: int, display: true
@@ -41200,7 +41428,7 @@
   BlastDamage: 60
   DamageMultiplier_Group: HWS_EWS_Elemental_Weapons_BlastDamage
 
-  HitPoints: 7000, type: int, display: true
+  HitPoints: 8750, type: int, display: true
   RotSpeed: 35, type: int, display: true
   EnergyIn: 352, type: int, display: true, formatter: Watt
   CPUIn: 8550, type: int, display: true
@@ -41247,7 +41475,7 @@
   BlastDamage: 60
   DamageMultiplier_Group: HWS_EWS_Elemental_Weapons_BlastDamage
 
-  HitPoints: 7000, type: int, display: true
+  HitPoints: 8750, type: int, display: true
   RotSpeed: 40, type: int, display: true
   EnergyIn: 705, type: int, display: true, formatter: Watt
   CPUIn: 12825, type: int, display: true
@@ -41338,7 +41566,7 @@
  
   EnergyIn: 260, type: int, display: true, formatter: Watt
   CPUIn: 4200, type: int, display: true
-  HitPoints: 1550, type: int, display: true
+  HitPoints: 1950, type: int, display: true
   Mass: 1400, type: float, display: true, formatter: Kilogram
 
   # Damage: 211, display: true
@@ -41392,7 +41620,7 @@
 
   EnergyIn: 230, type: int, display: true, formatter: Watt
   CPUIn: 3500, type: int, display: true
-  HitPoints: 1400, type: int, display: true
+  HitPoints: 1750, type: int, display: true
   Mass: 1200, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -41445,7 +41673,7 @@
 
   EnergyIn: 300, type: int, display: true, formatter: Watt
   CPUIn: 3800, type: int, display: true
-  HitPoints: 1450, type: int, display: true
+  HitPoints: 1800, type: int, display: true
   Mass: 1300, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -41500,7 +41728,7 @@
 
   EnergyIn: 450, type: int, display: true, formatter: Watt
   CPUIn: 4600, type: int, display: true
-  HitPoints: 2050, type: int, display: true
+  HitPoints: 2450, type: int, display: true
   Mass: 1750, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -41585,7 +41813,7 @@
 
   EnergyIn: 260, type: int, display: true, formatter: Watt
   CPUIn: 4200, type: int, display: true
-  HitPoints: 1940, type: int, display: true
+  HitPoints: 2430, type: int, display: true
   Mass: 1400, type: float, display: true, formatter: Kilogram
 
   # Damage: 211, display: true
@@ -41640,7 +41868,7 @@
 
   EnergyIn: 230, type: int, display: true, formatter: Watt
   CPUIn: 3500, type: int, display: true
-  HitPoints: 1750, type: int, display: true
+  HitPoints: 2180, type: int, display: true
   Mass: 1200, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -41694,7 +41922,7 @@
 
   EnergyIn: 300, type: int, display: true, formatter: Watt
   CPUIn: 3800, type: int, display: true
-  HitPoints: 1810, type: int, display: true
+  HitPoints: 2250, type: int, display: true
   Mass: 1300, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -41750,7 +41978,7 @@
 
   EnergyIn: 450, type: int, display: true, formatter: Watt
   CPUIn: 4600, type: int, display: true
-  HitPoints: 2560, type: int, display: true
+  HitPoints: 3060, type: int, display: true
   Mass: 1750, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -41835,7 +42063,7 @@
 
   EnergyIn: 195, type: int, display: true, formatter: Watt
   CPUIn: 4200, type: int, display: true
-  HitPoints: 1550, type: int, display: true
+  HitPoints: 1950, type: int, display: true
   Mass: 1400, type: float, display: true, formatter: Kilogram
 
   # Damage: 211, display: true
@@ -41889,7 +42117,7 @@
 
   EnergyIn: 173, type: int, display: true, formatter: Watt
   CPUIn: 3500, type: int, display: true
-  HitPoints: 1400, type: int, display: true
+  HitPoints: 1750, type: int, display: true
   Mass: 1200, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -41942,7 +42170,7 @@
 
   EnergyIn: 225, type: int, display: true, formatter: Watt
   CPUIn: 3800, type: int, display: true
-  HitPoints: 1450, type: int, display: true
+  HitPoints: 1800, type: int, display: true
   Mass: 1300, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -41997,7 +42225,7 @@
 
   EnergyIn: 338, type: int, display: true, formatter: Watt
   CPUIn: 4600, type: int, display: true
-  HitPoints: 2050, type: int, display: true
+  HitPoints: 2450, type: int, display: true
   Mass: 1750, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -42082,7 +42310,7 @@
 
   EnergyIn: 260, type: int, display: true, formatter: Watt
   CPUIn: 4200, type: int, display: true
-  HitPoints: 1550, type: int, display: true
+  HitPoints: 1950, type: int, display: true
   Mass: 1400, type: float, display: true, formatter: Kilogram
 
   # Damage: 211, display: true
@@ -42136,7 +42364,7 @@
 
   EnergyIn: 230, type: int, display: true, formatter: Watt
   CPUIn: 3500, type: int, display: true
-  HitPoints: 1400, type: int, display: true
+  HitPoints: 1750, type: int, display: true
   Mass: 1200, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -42189,7 +42417,7 @@
 
   EnergyIn: 300, type: int, display: true, formatter: Watt
   CPUIn: 3800, type: int, display: true
-  HitPoints: 1450, type: int, display: true
+  HitPoints: 1800, type: int, display: true
   Mass: 1300, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -42244,7 +42472,7 @@
 
   EnergyIn: 450, type: int, display: true, formatter: Watt
   CPUIn: 4600, type: int, display: true
-  HitPoints: 2050, type: int, display: true
+  HitPoints: 2450, type: int, display: true
   Mass: 1750, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -42329,7 +42557,7 @@
 
   EnergyIn: 260, type: int, display: true, formatter: Watt
   CPUIn: 4200, type: int, display: true
-  HitPoints: 1550, type: int, display: true
+  HitPoints: 1950, type: int, display: true
   Mass: 1050, type: float, display: true, formatter: Kilogram
 
   # Damage: 211, display: true
@@ -42383,7 +42611,7 @@
 
   EnergyIn: 230, type: int, display: true, formatter: Watt
   CPUIn: 3500, type: int, display: true
-  HitPoints: 1400, type: int, display: true
+  HitPoints: 1750, type: int, display: true
   Mass: 900, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -42435,7 +42663,7 @@
 
   EnergyIn: 300, type: int, display: true, formatter: Watt
   CPUIn: 3800, type: int, display: true
-  HitPoints: 1450, type: int, display: true
+  HitPoints: 1800, type: int, display: true
   Mass: 975, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -42489,7 +42717,7 @@
 
   EnergyIn: 450, type: int, display: true, formatter: Watt
   CPUIn: 4600, type: int, display: true
-  HitPoints: 2050, type: int, display: true
+  HitPoints: 2450, type: int, display: true
   Mass: 1312, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -42574,7 +42802,7 @@
 
   EnergyIn: 260, type: int, display: true, formatter: Watt
   CPUIn: 4200, type: int, display: true
-  HitPoints: 1550, type: int, display: true
+  HitPoints: 1950, type: int, display: true
   Mass: 1400, type: float, display: true, formatter: Kilogram
 
   # Damage: 211, display: true
@@ -42628,7 +42856,7 @@
 
   EnergyIn: 230, type: int, display: true, formatter: Watt
   CPUIn: 3500, type: int, display: true
-  HitPoints: 1400, type: int, display: true
+  HitPoints: 1750, type: int, display: true
   Mass: 1200, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -42681,7 +42909,7 @@
 
   EnergyIn: 300, type: int, display: true, formatter: Watt
   CPUIn: 3800, type: int, display: true
-  HitPoints: 1450, type: int, display: true
+  HitPoints: 1800, type: int, display: true
   Mass: 1300, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -42736,7 +42964,7 @@
 
   EnergyIn: 450, type: int, display: true, formatter: Watt
   CPUIn: 4600, type: int, display: true
-  HitPoints: 2050, type: int, display: true
+  HitPoints: 2450, type: int, display: true
   Mass: 1750, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -42821,7 +43049,7 @@
 
   EnergyIn: 390, type: int, display: true, formatter: Watt
   CPUIn: 6300, type: int, display: true
-  HitPoints: 1550, type: int, display: true
+  HitPoints: 1950, type: int, display: true
   Mass: 2100, type: float, display: true, formatter: Kilogram
 
   # Damage: 211, display: true
@@ -42875,7 +43103,7 @@
 
   EnergyIn: 345, type: int, display: true, formatter: Watt
   CPUIn: 5250, type: int, display: true
-  HitPoints: 1400, type: int, display: true
+  HitPoints: 1750, type: int, display: true
   Mass: 1800, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -42928,7 +43156,7 @@
 
   EnergyIn: 450, type: int, display: true, formatter: Watt
   CPUIn: 5700, type: int, display: true
-  HitPoints: 1450, type: int, display: true
+  HitPoints: 1800, type: int, display: true
   Mass: 1950, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -42983,7 +43211,7 @@
 
   EnergyIn: 675, type: int, display: true, formatter: Watt
   CPUIn: 6900, type: int, display: true
-  HitPoints: 2050, type: int, display: true
+  HitPoints: 2450, type: int, display: true
   Mass: 2625, type: float, display: true, formatter: Kilogram
 
   # Damage: 33, display: true
@@ -43063,7 +43291,7 @@
 
   EnergyIn: 195, type: int, display: true, formatter: Watt
   CPUIn: 5250, type: int, display: true
-  HitPoints: 1950, type: int, display: true
+  HitPoints: 2300, type: int, display: true
   Mass: 1050, type: float, display: true, formatter: Kilogram
 
   MarketPrice: 250475.00, display: true
@@ -43118,7 +43346,7 @@
 
   EnergyIn: 195, type: int, display: true, formatter: Watt
   CPUIn: 5250, type: int, display: true
-  HitPoints: 2420, type: int, display: true
+  HitPoints: 3050, type: int, display: true
   Mass: 1050, type: float, display: true, formatter: Kilogram
 
 
@@ -43172,7 +43400,7 @@
 
   EnergyIn: 156, type: int, display: true, formatter: Watt
   CPUIn: 5250, type: int, display: true
-  HitPoints: 1950, type: int, display: true
+  HitPoints: 2300, type: int, display: true
   Mass: 1050, type: float, display: true, formatter: Kilogram
 
 
@@ -43226,7 +43454,7 @@
 
   EnergyIn: 195, type: int, display: true, formatter: Watt
   CPUIn: 5250, type: int, display: true
-  HitPoints: 1950, type: int, display: true
+  HitPoints: 2300, type: int, display: true
   Mass: 1050, type: float, display: true, formatter: Kilogram
 
 
@@ -43280,7 +43508,7 @@
 
   EnergyIn: 195, type: int, display: true, formatter: Watt
   CPUIn: 5250, type: int, display: true
-  HitPoints: 1950, type: int, display: true
+  HitPoints: 2300, type: int, display: true
   Mass: 787, type: float, display: true, formatter: Kilogram
 
 
@@ -43334,7 +43562,7 @@
 
   EnergyIn: 195, type: int, display: true, formatter: Watt
   CPUIn: 5250, type: int, display: true
-  HitPoints: 1950, type: int, display: true
+  HitPoints: 2300, type: int, display: true
   Mass: 1050, type: float, display: true, formatter: Kilogram
 
 
@@ -43388,7 +43616,7 @@
 
   EnergyIn: 485, type: int, display: true, formatter: Watt
   CPUIn: 7875, type: int, display: true
-  HitPoints: 1950, type: int, display: true
+  HitPoints: 2300, type: int, display: true
   Mass: 2100, type: float, display: true, formatter: Kilogram
 
 
@@ -43403,7 +43631,7 @@
   Class: Weapon
   IndexName: WeaponShip
   Group: cpgWeapon
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_small, display: true
   Shape: ModelEntity
   ShowBlockName: true
   WeaponItem: WeaponSVAntimatterCannonWeapon
@@ -43441,7 +43669,7 @@
 
   EnergyIn: 300, type: int, display: true, formatter: Watt
   CPUIn: 3500, type: int, display: true
-  HitPoints: 1000, type: int, display: true
+  HitPoints: 1500, type: int, display: true
 
   UnlockCost: 4500, display: true
   UnlockLevel: 25, display: true
@@ -43457,7 +43685,7 @@
   Class: Weapon
   IndexName: WeaponShip
   Group: cpgWeapon
-  Material: HWS_material_weapon_kinetic, display: true
+  Material: HWS_material_weapon_kinetic_large, display: true
   Shape: ModelEntity
   ShowBlockName: true
   WeaponItem: WeaponCVTorpedoLauncherWeapon
@@ -43570,11 +43798,11 @@
   EnergyIn: 3800, type: int, display: true, formatter: Watt
   CPUIn: 18750, type: int, display: true
   EnergyInIdle: 570, type: int, display: true, formatter: Watt
-  ShieldCapacity: 70000, type: int, display: true
-  ShieldRecharge: 1250, type: int, display: true # full in 5 sec
+  ShieldCapacity: 80000, type: int, display: true
+  ShieldRecharge: 1400, type: int, display: true # full in 5 sec
   ShieldCooldown: 10, type: int, display: true
   ShieldHitCooldown: 10, type: int, display: true
-  ShieldPerCrystal: 350, type: int, display: true # 500 Pentaxid in total
+  ShieldPerCrystal: 300, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSAquaShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -43627,11 +43855,11 @@
   EnergyIn: 3800, type: int, display: true, formatter: Watt
   CPUIn: 18750, type: int, display: true
   EnergyInIdle: 570, type: int, display: true, formatter: Watt
-  ShieldCapacity: 70000, type: int, display: true
-  ShieldRecharge: 1250, type: int, display: true # full in 5 sec
+  ShieldCapacity: 80000, type: int, display: true
+  ShieldRecharge: 1400, type: int, display: true # full in 5 sec
   ShieldCooldown: 10, type: int, display: true
   ShieldHitCooldown: 10, type: int, display: true
-  ShieldPerCrystal: 350, type: int, display: true # 500 Pentaxid in total
+  ShieldPerCrystal: 300, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSTerraShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -43684,11 +43912,11 @@
   EnergyIn: 2850, type: int, display: true, formatter: Watt
   CPUIn: 18750, type: int, display: true
   EnergyInIdle: 427, type: int, display: true, formatter: Watt
-  ShieldCapacity: 70000, type: int, display: true
-  ShieldRecharge: 1250, type: int, display: true # full in 5 sec
+  ShieldCapacity: 80000, type: int, display: true
+  ShieldRecharge: 1400, type: int, display: true # full in 5 sec
   ShieldCooldown: 10, type: int, display: true
   ShieldHitCooldown: 10, type: int, display: true
-  ShieldPerCrystal: 350, type: int, display: true # 500 Pentaxid in total
+  ShieldPerCrystal: 300, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSPyroShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 2
@@ -43741,11 +43969,11 @@
   EnergyIn: 3800, type: int, display: true, formatter: Watt
   CPUIn: 18750, type: int, display: true
   EnergyInIdle: 570, type: int, display: true, formatter: Watt
-  ShieldCapacity: 70000, type: int, display: true
-  ShieldRecharge: 1250, type: int, display: true # full in 5 sec
+  ShieldCapacity: 80000, type: int, display: true
+  ShieldRecharge: 1400, type: int, display: true # full in 5 sec
   ShieldCooldown: 10, type: int, display: true
   ShieldHitCooldown: 10, type: int, display: true
-  ShieldPerCrystal: 350, type: int, display: true # 500 Pentaxid in total
+  ShieldPerCrystal: 300, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSObsidianShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -43798,11 +44026,11 @@
   EnergyIn: 3800, type: int, display: true, formatter: Watt
   CPUIn: 18750, type: int, display: true
   EnergyInIdle: 570, type: int, display: true, formatter: Watt
-  ShieldCapacity: 70000, type: int, display: true
-  ShieldRecharge: 1250, type: int, display: true # full in 5 sec
+  ShieldCapacity: 80000, type: int, display: true
+  ShieldRecharge: 1400, type: int, display: true # full in 5 sec
   ShieldCooldown: 10, type: int, display: true
   ShieldHitCooldown: 10, type: int, display: true
-  ShieldPerCrystal: 350, type: int, display: true # 500 Pentaxid in total
+  ShieldPerCrystal: 300, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSLuxShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -43855,11 +44083,11 @@
   EnergyIn: 3800, type: int, display: true, formatter: Watt
   CPUIn: 18750, type: int, display: true
   EnergyInIdle: 570, type: int, display: true, formatter: Watt
-  ShieldCapacity: 70000, type: int, display: true
-  ShieldRecharge: 1250, type: int, display: true # full in 5 sec
+  ShieldCapacity: 80000, type: int, display: true
+  ShieldRecharge: 1400, type: int, display: true # full in 5 sec
   ShieldCooldown: 10, type: int, display: true
   ShieldHitCooldown: 10, type: int, display: true
-  ShieldPerCrystal: 350, type: int, display: true # 500 Pentaxid in total
+  ShieldPerCrystal: 300, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSNoxShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -43912,11 +44140,11 @@
   EnergyIn: 5700, type: int, display: true, formatter: Watt
   CPUIn: 28125, type: int, display: true
   EnergyInIdle: 855, type: int, display: true, formatter: Watt
-  ShieldCapacity: 70000, type: int, display: true
-  ShieldRecharge: 1250, type: int, display: true # full in 5 sec
+  ShieldCapacity: 80000, type: int, display: true
+  ShieldRecharge: 1400, type: int, display: true # full in 5 sec
   ShieldCooldown: 10, type: int, display: true
   ShieldHitCooldown: 10, type: int, display: true
-  ShieldPerCrystal: 350, type: int, display: true # 500 Pentaxid in total
+  ShieldPerCrystal: 300, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSStrangeletShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -43998,7 +44226,7 @@
   ShieldRecharge: 1600, type: int, display: true # full in 5 sec
   ShieldCooldown: 15, type: int, display: true
   ShieldHitCooldown: 15, type: int, display: true
-  ShieldPerCrystal: 360, type: int, display: true # 500 Pentaxid in total
+  ShieldPerCrystal: 300, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSAquaShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44055,7 +44283,7 @@
   ShieldRecharge: 1600, type: int, display: true # full in 5 sec
   ShieldCooldown: 15, type: int, display: true
   ShieldHitCooldown: 15, type: int, display: true
-  ShieldPerCrystal: 360, type: int, display: true # 500 Pentaxid in total
+  ShieldPerCrystal: 300, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSTerraShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44112,7 +44340,7 @@
   ShieldRecharge: 1600, type: int, display: true # full in 5 sec
   ShieldCooldown: 15, type: int, display: true
   ShieldHitCooldown: 15, type: int, display: true
-  ShieldPerCrystal: 360, type: int, display: true # 500 Pentaxid in total
+  ShieldPerCrystal: 300, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSPyroShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 2
@@ -44169,7 +44397,7 @@
   ShieldRecharge: 1600, type: int, display: true # full in 5 sec
   ShieldCooldown: 15, type: int, display: true
   ShieldHitCooldown: 15, type: int, display: true
-  ShieldPerCrystal: 360, type: int, display: true # 500 Pentaxid in total
+  ShieldPerCrystal: 300, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSObsidianShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44226,7 +44454,7 @@
   ShieldRecharge: 1600, type: int, display: true # full in 5 sec
   ShieldCooldown: 15, type: int, display: true
   ShieldHitCooldown: 15, type: int, display: true
-  ShieldPerCrystal: 360, type: int, display: true # 500 Pentaxid in total
+  ShieldPerCrystal: 300, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSLuxShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44283,7 +44511,7 @@
   ShieldRecharge: 1600, type: int, display: true # full in 5 sec
   ShieldCooldown: 15, type: int, display: true
   ShieldHitCooldown: 15, type: int, display: true
-  ShieldPerCrystal: 360, type: int, display: true # 500 Pentaxid in total
+  ShieldPerCrystal: 300, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSNoxShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -44340,7 +44568,7 @@
   ShieldRecharge: 1600, type: int, display: true # full in 5 sec
   ShieldCooldown: 15, type: int, display: true
   ShieldHitCooldown: 15, type: int, display: true
-  ShieldPerCrystal: 360, type: int, display: true # 500 Pentaxid in total
+  ShieldPerCrystal: 300, type: int, display: true # 500 Pentaxid in total
   ParticleName: @hws_blastparticles/HWSStrangeletShieldExplosionSmall
   BlastParticleIndex: 8
   BlastRadius: 3
@@ -45451,7 +45679,7 @@
   IndexName: ShieldExtender
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
   MarketPrice: 378240, display: true
-  ShieldCapacityBonus: 8500, type: int, display: true
+  ShieldCapacityBonus: 9500, type: int, display: true
   IsTextureable: true
   IsColorable: true
   Group: Custom
@@ -45982,6 +46210,7 @@
 { Block Name: HWSLogistics
   MarketPrice: 1, display: true
   Class: NPCDialogue
+#  OmitCone: false
   NPCModelRotation: false
   AllowedInBlueprint: false, display: true
   Group: HWS_CtrlGroup_Logistics
@@ -46207,7 +46436,7 @@
 # =================================================================================
 { Block Name: BlastShutterDoors3x1x1, Ref: BlastShutterDoors1x1x1
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BlastShutterDoors3x1x1Prefab
+  Model: @models/Blocks/Mothership/BlastShutterDoors/BlastShutterDoors3x1x1Prefab
   SizeInBlocks: "1,1,4", display: true
   Mass: 4500, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
@@ -46215,7 +46444,7 @@
 }
 { Block Name: BlastShutterDoors4x1x1, Ref: BlastShutterDoors1x1x1
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BlastShutterDoors4x1x1Prefab
+  Model: @models/Blocks/Mothership/BlastShutterDoors/BlastShutterDoors4x1x1Prefab
   SizeInBlocks: "1,1,5", display: true
   Mass: 4750, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
@@ -46223,7 +46452,7 @@
 }
 { Block Name: BlastShutterDoors5x1x1, Ref: BlastShutterDoors1x1x1
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BlastShutterDoors5x1x1Prefab
+  Model: @models/Blocks/Mothership/BlastShutterDoors/BlastShutterDoors5x1x1Prefab
   SizeInBlocks: "1,1,6", display: true
   Mass: 5000, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
@@ -46231,7 +46460,7 @@
 }
 { Block Name: BlastShutterDoors6x1x1, Ref: BlastShutterDoors1x1x1
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BlastShutterDoors6x1x1Prefab
+  Model: @models/Blocks/Mothership/BlastShutterDoors/BlastShutterDoors6x1x1Prefab
   SizeInBlocks: "1,1,7", display: true
   Mass: 5250, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
@@ -46239,7 +46468,7 @@
 }
 { Block Name: BlastShutterDoors7x1x1, Ref: BlastShutterDoors1x1x1
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BlastShutterDoors7x1x1Prefab
+  Model: @models/Blocks/Mothership/BlastShutterDoors/BlastShutterDoors7x1x1Prefab
   SizeInBlocks: "1,1,8", display: true
   Mass: 5500, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
@@ -46247,7 +46476,7 @@
 }
 { Block Name: BlastShutterDoors8x1x1, Ref: BlastShutterDoors1x1x1
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BlastShutterDoors8x1x1Prefab
+  Model: @models/Blocks/Mothership/BlastShutterDoors/BlastShutterDoors8x1x1Prefab
   SizeInBlocks: "1,1,9", display: true
   Mass: 5750, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
@@ -46255,7 +46484,7 @@
 }
 { Block Name: BlastShutterDoors9x1x1, Ref: BlastShutterDoors1x1x1
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BlastShutterDoors9x1x1Prefab
+  Model: @models/Blocks/Mothership/BlastShutterDoors/BlastShutterDoors9x1x1Prefab
   SizeInBlocks: "1,1,10", display: true
   Mass: 6000, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
@@ -46263,7 +46492,7 @@
 }
 { Block Name: BlastShutterDoors10x1x1, Ref: BlastShutterDoors1x1x1
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BlastShutterDoors10x1x1Prefab
+  Model: @models/Blocks/Mothership/BlastShutterDoors/BlastShutterDoors10x1x1Prefab
   SizeInBlocks: "1,1,11", display: true
   Mass: 6250, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
@@ -46271,7 +46500,7 @@
 }
 { Block Name: BlastShutterDoors11x1x1, Ref: BlastShutterDoors1x1x1
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BlastShutterDoors11x1x1Prefab
+  Model: @models/Blocks/Mothership/BlastShutterDoors/BlastShutterDoors11x1x1Prefab
   SizeInBlocks: "1,1,12", display: true
   Mass: 6500, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
@@ -46279,7 +46508,7 @@
 }
 { Block Name: BlastShutterDoors12x1x1, Ref: BlastShutterDoors1x1x1
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BlastShutterDoors12x1x1Prefab
+  Model: @models/Blocks/Mothership/BlastShutterDoors/BlastShutterDoors12x1x1Prefab
   SizeInBlocks: "1,1,13", display: true
   Mass: 6750, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
@@ -46287,7 +46516,7 @@
 }
 { Block Name: BlastShutterDoors13x1x1, Ref: BlastShutterDoors1x1x1
   MarketPrice: 1, display: true
-  Model: @models/Blocks/Mothership/BlastShutterDoors13x1x1Prefab
+  Model: @models/Blocks/Mothership/BlastShutterDoors/BlastShutterDoors13x1x1Prefab
   SizeInBlocks: "1,1,14", display: true
   Mass: 7000, type: float, display: true, formatter: Kilogram
   EnergyIn: 1, type: int, display: true, formatter: Watt
@@ -46465,6 +46694,41 @@
   ShowUser: No
   AllowedInBlueprint: false, display: true
 }
+{ Block Name: PlayerRespawnSV
+  CustomIcon: EntitySpawnerPlateThin
+  Info: bkiNoInfo, display: true
+  Model: @models/Blocks/Misc/EntitySpawnerPlateThinPrefab
+  # Collide: "bullet,rocket,melee,sight"     #  for AI pathfinding: do not consider this block as collide with movements
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  IndexName: SpawnPoint
+  Group: cpgTransportation
+  Category: Devices
+  Material: wood
+  Shape: ModelEntity
+  MarketPrice: 700, display: true
+  ShowBlockName: true
+  Place: Free
+  AllowPlacingAt: "SS,GV", display: true
+  SizeInBlocks: "2,1,2", display: true
+  SizeInBlocksLocked: "Base"
+  Volume: 1, type: float, display: true, formatter: Liter
+  Mass: 1, type: float, display: true, formatter: Kilogram
+  # IsLockable: true
+  IsOxygenTight: false, display: true
+  StackSize: 1000
+  BlockColor: "110,110,110"
+
+  EnergyIn: 0, type: int, display: true, formatter: Watt
+  BlastParticleIndex: 0
+  BlastRadius: 0
+  BlastDamage: 0
+
+  #BuffNamesActivate: "Resurrected", display: Activates
+  #DebuffNamesActivate: "WellFed,Rested", display: Deactivates
+
+  ShowUser: No
+  AllowedInBlueprint: false, display: true
+}
 =====   Posters Deco ========
 { Block Name: PosterARest
   Model: @models2/Entities/Decorations/Posters/aRestPosterPrefab
@@ -46614,7 +46878,7 @@
   AllowPlacingAt: "Base,MS", display: false
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
-  HitPoints: 1500, type: int, display: true
+  HitPoints: 1750, type: int, display: true
   Mass: 1880, type: float, display: true, formatter: Kilogram
   # ShowUser: NoButCSV             # inverted versions should not be display in H menu but should show up in EAH tool
   CPUIn: 1, type: int, display: true
@@ -48645,7 +48909,7 @@
   Category: Weapons/Items
   AllowedInBlueprint: true, display: true
   Info: bkiTurret, display: true
-  Material: HWS_material_weapon_energy, display: true
+  Material: HWS_material_weapon_energy_small, display: true
   Shape: Turret
   Place: Face
   Model: @models/Blocks/Turrets/TurretZiraxSpherical_LaserPrefab
@@ -48676,7 +48940,7 @@
   CPUIn: 4000, type: int, display: true
   Volume: 0, type: float, display: false, formatter: Liter
   Mass: 3000, type: float, display: true, formatter: Kilogram
-  HitPoints: 3500, type: int, display: true
+  HitPoints: 5250, type: int, display: true
   RotSpeed: 130, type: int, display: true
   Zoom: 5, type: float
 
@@ -48754,7 +49018,7 @@
   AllowedInBlueprint: true, display: true
   IndexName: WeaponShip
   Group: cpgWeapon
-  Material: HWS_material_weapon_kinetic
+  Material: HWS_material_weapon_kinetic_small
   Shape: ModelEntity
   ShowBlockName: true
   CustomIcon: ThrusterGVRoundArmored
@@ -48770,7 +49034,7 @@
   MaxCount: 1, type: int, display: true
   IsOxygenTight: false, display: true
   Category: Weapons/Items
-  HitPoints: 400, type: int, display: true
+  HitPoints: 540, type: int, display: true
   Mass: 4500, type: float, display: true, formatter: Kilogram
   EnergyIn: 250, type: int, display: true, formatter: Watt
   CPUIn: 10000, type: int, display: true
@@ -48840,7 +49104,7 @@
   Class: Weapon
   IndexName: WeaponShip
   Group: cpgWeapon
-  Material: HWS_material_weapon_kinetic
+  Material: HWS_material_weapon_kinetic_large
   MarketPrice: 170662, display: true
   Shape: ModelEntity
   ShowBlockName: true
@@ -48876,7 +49140,7 @@
 
   EnergyIn: 3000, type: int, display: true, formatter: Watt
   CPUIn: 40000, type: int, display: true
-  HitPoints: 3000, type: int, display: true
+  HitPoints: 4000, type: int, display: true
 
   UnlockCost: 20, display: true
   UnlockLevel: 15, display: true
@@ -49031,6 +49295,205 @@
 
 }
 
+{ Block Name: RCSBlockSVEvent    # low-performance 'broken' variant for special setups
+  IndexName: RCS
+  CustomIcon: RCSBlockSV
+  Group: cpgRCS
+  Material: metal
+  Shape: ModelEntity
+  ShowBlockName: true
+  MarketPrice: 805, display: true
+  Model: @models/Blocks/Mothership/RCS_BlockPrefab
+  Mesh-Damage-1: Mesh/D0
+  Mesh-Damage-2: Mesh/D1
+  Mesh-Damage-3: Mesh/D2
+  Mesh-Damage-4: Mesh/D3
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Place: Free
+  AllowPlacingAt: "SS,GV", display: true
+  AllowedInBlueprint: false, display: true
+  TemplateRoot: PlasticSmallBlocks
+  PickupTarget: PlasticSmallBlocks
+  SizeInBlocks: "1,1,1", display: true
+  Mass: 256, type: float, display: true, formatter: Kilogram
+  Volume: 10, type: float, display: true, formatter: Liter
+  IsActivateable: true
+  IsOxygenTight: false, display: true
+  IsIgnoreLC: true
+  Info: bkiRCBlockSVEvent, display: true
+  # ModelOffset: "0,0.5,0"
+  StackSize: 1000
+  BlockColor: "110,110,110"
+  Category: Devices
+  Torque: 17, type: int, display: true, formatter: NewtonMeter   #RCSlight: 50
+  EnergyDynamicGroup: RCS
+  EnergyIn: 50, type: int, display: true, formatter: Watt      #original: 10; damaged = facto 5
+  CPUIn: 450, type: int, display: true
+  BlastParticleIndex: 4
+  BlastRadius: 1
+  BlastDamage: 25
+
+  UpgradeTo: RCSBlockSV, display: true
+
+  UnlockCost: 0
+  UnlockLevel: 1
+  TechTreeNames: ""
+}
+{ Block Name: ThrusterSVSmallEvent    # low-performance 'broken' variant for special setups
+  Class: Thruster
+  CustomIcon: ThrusterSVSmall
+  IndexName: Thruster
+  Group: cpgThruster
+  MarketPrice: 685, display: true
+  AllowedInBlueprint: false, display: true
+  TemplateRoot: PlasticSmallBlocks
+  PickupTarget: PlasticSmallBlocks
+  EssentialCategory: cpgThruster
+  Place: Free
+  Material: metalhard
+  Shape: ModelEntity
+  ShowBlockName: true
+  # ModelOffset: "0,0.5,0"
+  ParticleOffset: "-1.3,0.5,0.5"
+  StackSize: 1000
+  BlockColor: "110,110,110"
+  Model: @models/Blocks/Thrusters/RoundThrusters/ThrusterSSDirectionalPrefab
+  # Mesh-Damage-1: Mesh/D0
+  # Mesh-Damage-2: Mesh/D1
+  # Mesh-Damage-3: Mesh/D2
+  # Mesh-Damage-4: Mesh/D3
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  IsTextureable: true   # !!!
+  IsGPUInstance: false  # !!!
+  Texture: 50
+  AllowPlacingAt: "SS,GV", display: true
+  SizeInBlocks: "1,1,1", display: true
+  Volume: 31.25, type: float, display: true, formatter: Liter
+  Mass: 184, type: float, display: true, formatter: Kilogram
+  IsDuplicateable: false
+  IsActivateable: true
+  IsOxygenTight: true, display: true
+  IsIgnoreLC: true
+  Info: bkiThrusterSVSmallEvent, display: true
+  HitPoints: 75, type: int, display: true
+  ThrusterForce: 25, type: int, display: true, formatter: Newton    #Default 75
+  EnergyIn: 100, type: int, display: true, formatter: Watt  #original: 20; damaged = facto 5
+  EnergyDynamicGroup: Thruster
+  CPUIn: 56, type: int, display: true
+  Category: Devices
+  BlastParticleIndex: 4
+  BlastRadius: 2
+  BlastDamage: 50
+
+  UnlockCost: 0
+  UnlockLevel: 1
+  TechTreeNames: ""
+
+  UpgradeTo: ThrusterSVDirectional, display: true
+
+  Temperature: 203, display: true
+}
+{ Block Name: FuelTankSVSmallEvent      # low-performance 'broken' variant for special setups
+  Model: @models/Blocks/Spaceship/FuelTankSVSmallPrefab
+  CustomIcon: FuelTankSVSmall
+  Class: FuelTank
+  IndexName: FuelTank
+  Group: cpgFuelTank
+  MarketPrice: 120, display: true
+  AllowedInBlueprint: false, display: true
+  TemplateRoot: PlasticSmallBlocks
+  PickupTarget: PlasticSmallBlocks
+  EssentialCategory: cpgFuelTank
+  # LootList: 26   # 10 slots
+  Material: metallight
+  Shape: ModelEntity
+  ShowBlockName: true
+  # Mesh-Damage-1: Mesh/D0
+  # Mesh-Damage-2: Mesh/D1
+  # Mesh-Damage-3: Mesh/D2
+  # Mesh-Damage-4: Mesh/D3
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  DropInventoryEntity: DropContainer
+  Place: Free
+  #  IsActivateable: false   #  fuel tanks activate themselves if they contain fuel
+  IsActivateableInCP: true
+  IsLockable: true
+  IsOxygenTight: false, display: true
+  IsIgnoreLC: true
+  # IsClosedOnMoving: true
+  AllowPlacingAt: "SS,GV", display: true
+  SizeInBlocks: "1,1,1", display: true
+  Volume: 8, type: float, display: true, formatter: Liter
+  Mass: 42, type: float, display: true, formatter: Kilogram
+  Info: bkiFuelTankSVSmallEvent, display: true
+  StackSize: 2000
+  BlockColor: "110,110,110"
+  EnergyIn: 1, type: int, display: true, formatter: Watt
+  CPUIn: 75, type: int, display: true
+  Category: Devices
+  FuelAccept: "EnergyCell, EnergyCellLarge, EnergyCellHydrogen, FusionCell, BioFuel"
+  FuelCapacity: 100, type: int, display: true      #Default: 300
+  BlastParticleIndex: 10
+  BlastRadius: 3
+  BlastDamage: 150
+
+  Radiation: 0.5, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
+
+  UpgradeTo: FuelTankSVSmall, display: true
+
+  UnlockCost: 0
+  UnlockLevel: 1
+  TechTreeNames: ""
+}
+{ Block Name: GeneratorSVSmallEvent  # low-performance 'broken' variant for special setups to quickly overload
+  Model: @models/Blocks/Spaceship/GeneratorSVSmallPrefab
+  CustomIcon: GeneratorSVSmall
+  IndexName: Generator
+  Class: Generator
+  Group: cpgGenerator
+  MarketPrice: 400, display: true
+  AllowedInBlueprint: false, display: true
+  TemplateRoot: PlasticSmallBlocks
+  PickupTarget: PlasticSmallBlocks
+  EssentialCategory: cpgGenerator
+  LootList: 1
+  Material: metalhard
+  Shape: ModelEntity
+  ShowBlockName: true
+  # Mesh-Damage-1: Mesh/D0
+  # Mesh-Damage-2: Mesh/D1
+  # Mesh-Damage-3: Mesh/D2
+  # Mesh-Damage-4: Mesh/D3
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  BlockColor: "110,110,110"
+  Place: Free
+  AllowPlacingAt: "SS,GV", display: true
+  SizeInBlocks: "1,1,1", display: true
+  Volume: 31.25, type: float, display: true, formatter: Liter
+  Mass: 148, type: float, display: true, formatter: Kilogram
+  Info: bkiGeneratorSVSmallEvent, display: true
+  # ModelOffset: "0,0.5,0"
+  StackSize: 1000
+  IsOxygenTight: true, display: true
+  IsActivateable: true
+  IsIgnoreLC: true
+  HitPoints: 125, type: int, display: true
+  EnergyOut: 50, type: int, display: true, formatter: Watt     #Original: 750
+  CPUIn: 87, type: int, display: true
+  Category: Devices
+  BlastParticleIndex: 2
+  BlastRadius: 3
+  BlastDamage: 200
+
+  UnlockCost: 0
+  UnlockLevel: 1
+  TechTreeNames: ""
+
+  UpgradeTo: GeneratorSVSmall, display: true
+
+  Temperature: 50, display: true
+  Radiation: 1, display: RadiationLevel    # Radiation (= Radiation Protection) already exists for Player Armor
+}
 { Block Name: TeleporterBAEvent
   Info: bkiTeleporterBAEvent, display: true
   Class: Teleporter
@@ -49077,42 +49540,6 @@
 
   ShowUser: No
 }
-{ Block Name: PlayerRespawnSV
-  CustomIcon: EntitySpawnerPlateThin
-  Info: bkiNoInfo, display: true
-  Model: @models/Blocks/Misc/EntitySpawnerPlateThinPrefab
-  # Collide: "bullet,rocket,melee,sight"     #  for AI pathfinding: do not consider this block as collide with movements
-  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
-  IndexName: SpawnPoint
-  Group: cpgTransportation
-  Category: Devices
-  Material: wood
-  Shape: ModelEntity
-  MarketPrice: 700, display: true
-  ShowBlockName: true
-  Place: Free
-  AllowPlacingAt: "SS,GV", display: true
-  SizeInBlocks: "2,1,2", display: true
-  SizeInBlocksLocked: "Base"
-  Volume: 0, type: float, display: false, formatter: Liter
-  Mass: 1, type: float, display: true, formatter: Kilogram
-  # IsLockable: true
-  IsOxygenTight: false, display: true
-  StackSize: 200
-  BlockColor: "110,110,110"
-
-  EnergyIn: 0, type: int, display: true, formatter: Watt
-  BlastParticleIndex: 0
-  BlastRadius: 0
-  BlastDamage: 0
-
-  #BuffNamesActivate: "Resurrected", display: Activates
-  #DebuffNamesActivate: "WellFed,Rested", display: Deactivates
-
-  ShowUser: No
-  AllowedInBlueprint: false, display: true
-}
-
 ## ============= Growable Crystals =======
 
 { Block Name: CrystalsPyramidBlueStage1
@@ -49136,8 +49563,8 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: Vegetables, display: true
-  CropYield: 2, display: true
+  # CropType: Vegetables, display: true
+  # CropYield: 2, display: true
   GrowthTimeInfo: 50, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiPlantSprout, display: true
@@ -49256,8 +49683,8 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: Vegetables, display: true
-  CropYield: 2, display: true
+  # CropType: Vegetables, display: true
+  # CropYield: 2, display: true
   GrowthTimeInfo: 50, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiPlantSprout, display: true
@@ -49377,8 +49804,8 @@
   SizeInBlocks: "1,1,1", display: true
   SizeInBlocksLocked: "Base,MS"
   ShowBlockName: true
-  CropType: Vegetables, display: true
-  CropYield: 2, display: true
+  # CropType: Vegetables, display: true
+  # CropYield: 2, display: true
   GrowthTimeInfo: 50, type: int, display: true, formatter: Minutes
   Mass: 1, type: float, display: true, formatter: Kilogram
   Info: bkiPlantSprout, display: true
@@ -49847,6 +50274,516 @@
   CustomIcon: TribalBuckets
   LootList: 55
   Model: @models2/Entities/Decorations/TribalAssets/TribalBucketsPrefab
+}
+# ===========================================
+#  SPECIAL 'Effect' Blocks
+# ===========================================
+#
+# = Destroy per signal =
+{ Block Name: WoodDestroyedRemoteEffectBlocks
+  Material: woodblock
+  CustomIcon: WoodBlocks            #NEEDS an adapted Icon!
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Texture: 70
+  TextureTable: 1    #  2 = concrete table
+  BlockColor: "187,135,90"
+  Shape: Invisible
+  # Model: Cube
+  PickupTarget: WoodPlanks
+  Info: bkiWoodDestroyedRemoteEffectBlocks, display: true
+  AllowPlacingAt: Base, display: true
+  AllowedInBlueprint: false, display: true
+  HitPoints: 100, type: int, display: false
+  Mass: 300, type: float, display: true, formatter: Kilogram
+  Volume: 80, type: float, display: true, formatter: Liter
+  StackSize: 1000
+  Category: BuildingBlocks
+  ChildBlocks: "WoodFullDestroyedRemoteEffect, WoodThinDestroyedRemoteEffect"
+  HideShapesWindow: true
+  IsOxygenTight: false, display: true
+
+  UnlockCost: 0
+  UnlockLevel: 1
+  TechTreeNames: ""
+}
+{ Block Name: WoodFullDestroyedRemoteEffect
+  Material: woodblock
+  CustomIcon: WoodBlocks            #NEEDS an adapted Icon!
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Texture: 70
+  TextureTable: 1    #  2 = concrete table
+  BlockColor: "187,135,90"
+  Shape: New
+  Place: Free
+  Model: Cube
+  AllowPlacingAt: Base, display: true
+  AllowedInBlueprint: false, display: true
+  HitPoints: 100, type: int, display: true
+  Mass: 300, type: float, display: true, formatter: Kilogram
+  # Category: BuildingBlocks
+  ChildShapes: "CubeDestroyed, CutCornerEDestroyed, CutCornerBDestroyed, SlicedCornerA1Destroyed, CornerHalfBDestroyed, CornerSmallCDestroyed, CornerCDestroyed, CornerHalfA3Destroyed, RampCMediumDestroyed, RampADestroyed, RampCDestroyed, CornerRoundBDestroyed, CornerRoundADoubleDestroyed, RoundCornerADestroyed, CubeRoundConnectorADestroyed, EdgeRoundDestroyed, CylinderDestroyed, RampRoundFTripleDestroyed, RampRoundFDestroyed, SmallCornerRoundBDestroyed, SmallCornerRoundADestroyed, SphereHalfDestroyed, ConeDestroyed, ConeBDestroyed, CutCornerCDestroyed, Cylinder6WayDestroyed, CornerRoundATripleDestroyed, CornerADestroyed, CornerHalfA1Destroyed, CornerDoubleA3Destroyed, CornerSmallBDestroyed, PyramidADestroyed"
+  TemplateRoot: WoodLargeDestroyedBlocks
+
+  Class: Explosive
+  # Class: TrapDoorOneTime
+  Group: cpgSignal
+  Category: Devices
+  BlastParticleIndex: 13
+  BlastRadius: 1, display: Radius
+  BlastDamage: 0
+  IsActivateable: true
+  IsAccessible: true, type: bool
+  IsOxygenTight: false, display: true
+  UpgradeTo: WoodFull, display: true
+}
+{ Block Name: WoodThinDestroyedRemoteEffect, Ref: WoodFullDestroyedRemoteEffect
+  HitPoints: 50, type: int, display: true
+  Mass: 150, type: float, display: true, formatter: Kilogram
+  ChildShapes: "WallDestroyed, WallLShapeDestroyed, WallSlopedDestroyed, WallSloped3CornerDestroyed, WallSlopedCDestroyed, WallSlopedCMediumrightDestroyed, WallSlopedArightDestroyed, WallSlopedCMediumleftDestroyed, WallSlopedAleftDestroyed, WallCornerRoundBDestroyed, WallSlopedRoundDestroyed, WallEdgeRoundDestroyed, WallEdgeRound3WayDestroyed, WallCornerRoundADestroyed, WallCornerRoundCDestroyed, WallSloped3CornerLowDestroyed, WallCornerDestroyed, WallLowDestroyed, CubeHalfDestroyed, RampADoubleDestroyed, RampCLowDestroyed, RampBMediumDestroyed, RampCHalfDestroyed, CutCornerEMediumDestroyed, BeamDestroyed, CylinderThinDestroyed, CylinderThinTJointDestroyed, CylinderLDestroyed, PipesFenceDestroyed, FenceTopDestroyed, RampDDestroyed, RoundCornerLongThinDestroyed"
+  IsOxygenTight: false, display: true
+  UpgradeTo: WoodThin, display: true
+}
+{ Block Name: WoodDestroyedOnTouchEffectBlocks
+  Material: woodblock
+  CustomIcon: WoodBlocks            #NEEDS an adapted Icon!
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Texture: 70
+  TextureTable: 1    #  2 = concrete table
+  BlockColor: "187,135,90"
+  Shape: Invisible
+  # Model: Cube
+  PickupTarget: WoodPlanks
+  Info: bkiWoodDestroyedRemoteEffectBlocks, display: true
+  AllowPlacingAt: Base, display: true
+  AllowedInBlueprint: false, display: true
+  HitPoints: 100, type: int, display: false
+  Mass: 300, type: float, display: true, formatter: Kilogram
+  Volume: 80, type: float, display: true, formatter: Liter
+  StackSize: 1000
+  Category: BuildingBlocks
+  ChildBlocks: "WoodFullDestroyedOnTouchEffectBlocks, WoodThinDestroyedOnTouchEffectBlocks"
+  HideShapesWindow: true
+  IsOxygenTight: false, display: true
+
+  UnlockCost: 0
+  UnlockLevel: 1
+  TechTreeNames: ""
+}
+{ Block Name: WoodFullDestroyedOnTouchEffectBlocks
+  Material: woodblock
+  CustomIcon: WoodBlocks            #NEEDS an adapted Icon!
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Texture: 70
+  TextureTable: 1    #  2 = concrete table
+  BlockColor: "187,135,90"
+  Shape: New
+  Place: Free
+  Model: Cube
+  AllowPlacingAt: Base, display: true
+  AllowedInBlueprint: false, display: true
+  HitPoints: 100, type: int, display: true
+  Mass: 300, type: float, display: true, formatter: Kilogram
+  # Category: BuildingBlocks
+  ChildShapes: "CubeDestroyed, CutCornerEDestroyed, CutCornerBDestroyed, SlicedCornerA1Destroyed, CornerHalfBDestroyed, CornerSmallCDestroyed, CornerCDestroyed, CornerHalfA3Destroyed, RampCMediumDestroyed, RampADestroyed, RampCDestroyed, CornerRoundBDestroyed, CornerRoundADoubleDestroyed, RoundCornerADestroyed, CubeRoundConnectorADestroyed, EdgeRoundDestroyed, CylinderDestroyed, RampRoundFTripleDestroyed, RampRoundFDestroyed, SmallCornerRoundBDestroyed, SmallCornerRoundADestroyed, SphereHalfDestroyed, ConeDestroyed, ConeBDestroyed, CutCornerCDestroyed, Cylinder6WayDestroyed, CornerRoundATripleDestroyed, CornerADestroyed, CornerHalfA1Destroyed, CornerDoubleA3Destroyed, CornerSmallBDestroyed, PyramidADestroyed"
+  TemplateRoot: WoodLargeDestroyedBlocks
+  UpgradeTo: WoodFull, display: true
+  #Class: Explosive
+  Class: TrapDoorOneTime
+  Group: cpgSignal
+  Category: Devices
+  BlastParticleIndex: 13
+  BlastRadius: 1, display: Radius
+  BlastDamage: 0
+  IsActivateable: true
+  IsAccessible: true, type: bool
+  IsOxygenTight: false, display: true
+}
+{ Block Name: WoodThinDestroyedOnTouchEffectBlocks, Ref: WoodFullDestroyedOnTouchEffectBlocks
+  HitPoints: 50, type: int, display: true
+  Mass: 150, type: float, display: true, formatter: Kilogram
+  ChildShapes: "WallDestroyed, WallLShapeDestroyed, WallSlopedDestroyed, WallSloped3CornerDestroyed, WallSlopedCDestroyed, WallSlopedCMediumrightDestroyed, WallSlopedArightDestroyed, WallSlopedCMediumleftDestroyed, WallSlopedAleftDestroyed, WallCornerRoundBDestroyed, WallSlopedRoundDestroyed, WallEdgeRoundDestroyed, WallEdgeRound3WayDestroyed, WallCornerRoundADestroyed, WallCornerRoundCDestroyed, WallSloped3CornerLowDestroyed, WallCornerDestroyed, WallLowDestroyed, CubeHalfDestroyed, RampADoubleDestroyed, RampCLowDestroyed, RampBMediumDestroyed, RampCHalfDestroyed, CutCornerEMediumDestroyed, BeamDestroyed, CylinderThinDestroyed, CylinderThinTJointDestroyed, CylinderLDestroyed, PipesFenceDestroyed, FenceTopDestroyed, RampDDestroyed, RoundCornerLongThinDestroyed"
+  IsOxygenTight: false, display: true
+  UpgradeTo: WoodThin, display: true
+}
+{ Block Name: HullLargeDestroyedRemoteEffectBlocks
+  Material: hullarmored
+  CustomIcon: HullLargeDestroyedBlocks            #NEEDS an adapted Icon!
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Texture: 50
+  BlockColor: "110,110,110"
+  Shape: Invisible
+  PickupTarget: SteelPlate
+  Info: bkiHullLargeDestroyedRemoteEffectBlocks, display: true
+  AllowPlacingAt: Base, display: true
+  AllowedInBlueprint: false, display: true
+  HitPoints: 250, type: int, display: false
+  Mass: 500, type: float, display: true, formatter: Kilogram
+  Volume: 80, type: float, display: true, formatter: Liter
+  StackSize: 1000
+  Category: BuildingBlocks
+  ChildBlocks: "HullFullLargeDestroyedRemoteEffect, HullThinLargeDestroyedRemoteEffect"
+  HideShapesWindow: true
+  IsOxygenTight: false, display: true
+
+  UnlockCost: 0
+  UnlockLevel: 1
+  TechTreeNames: ""
+}
+{ Block Name: HullFullLargeDestroyedRemoteEffect
+  Material: hullarmored
+  CustomIcon: HullLargeDestroyedBlocks            #NEEDS an adapted Icon!
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Texture: 50
+  BlockColor: "110,110,110"
+  Shape: New
+  Place: Free
+  Model: Cube
+  AllowPlacingAt: Base, display: true
+  AllowedInBlueprint: false, display: true
+  HitPoints: 250, type: int, display: true
+  Mass: 500, type: float, display: true, formatter: Kilogram
+  ChildShapes: "CubeDestroyed, CutCornerEDestroyed, CutCornerBDestroyed, SlicedCornerA1Destroyed, CornerHalfBDestroyed, CornerSmallCDestroyed, CornerCDestroyed, CornerHalfA3Destroyed, RampCMediumDestroyed, RampADestroyed, RampCDestroyed, CornerRoundBDestroyed, CornerRoundADoubleDestroyed, RoundCornerADestroyed, CubeRoundConnectorADestroyed, EdgeRoundDestroyed, CylinderDestroyed, RampRoundFTripleDestroyed, RampRoundFDestroyed, SmallCornerRoundBDestroyed, SmallCornerRoundADestroyed, SphereHalfDestroyed, ConeDestroyed, ConeBDestroyed, CutCornerCDestroyed, Cylinder6WayDestroyed, CornerRoundATripleDestroyed, CornerADestroyed, CornerHalfA1Destroyed, CornerDoubleA3Destroyed, CornerSmallBDestroyed, PyramidADestroyed"
+  TemplateRoot: HullLargeDestroyedBlocks
+
+  Class: Explosive
+  # Class: TrapDoorOneTime
+  Group: cpgSignal
+  Category: Devices
+  BlastParticleIndex: 13
+  BlastRadius: 1, display: Radius
+  BlastDamage: 0
+  IsActivateable: true
+  IsAccessible: true, type: bool
+  IsOxygenTight: false, display: true
+  UpgradeTo: HullFullLarge, display: true
+}
+{ Block Name: HullThinLargeDestroyedRemoteEffect, Ref: HullFullLargeDestroyedRemoteEffect
+  HitPoints: 125, type: int, display: true
+  Mass: 250, type: float, display: true, formatter: Kilogram
+  ChildShapes: "WallDestroyed, WallLShapeDestroyed, WallSlopedDestroyed, WallSloped3CornerDestroyed, WallSlopedCDestroyed, WallSlopedCMediumrightDestroyed, WallSlopedArightDestroyed, WallSlopedCMediumleftDestroyed, WallSlopedAleftDestroyed, WallCornerRoundBDestroyed, WallSlopedRoundDestroyed, WallEdgeRoundDestroyed, WallEdgeRound3WayDestroyed, WallCornerRoundADestroyed, WallCornerRoundCDestroyed, WallSloped3CornerLowDestroyed, WallCornerDestroyed, WallLowDestroyed, CubeHalfDestroyed, RampADoubleDestroyed, RampCLowDestroyed, RampBMediumDestroyed, RampCHalfDestroyed, CutCornerEMediumDestroyed, BeamDestroyed, CylinderThinDestroyed, CylinderThinTJointDestroyed, CylinderLDestroyed, PipesFenceDestroyed, FenceTopDestroyed, RampDDestroyed, RoundCornerLongThinDestroyed"
+  IsOxygenTight: false, display: true
+  UpgradeTo: HullThinLarge, display: true
+}
+{ Block Name: HullLargeDestroyedOnTouchEffect
+  Material: hullarmored
+  CustomIcon: HullLargeDestroyedBlocks            #NEEDS an adapted Icon!
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Texture: 50
+  BlockColor: "110,110,110"
+  Shape: Invisible
+  PickupTarget: SteelPlate
+  Info: bkiHullLargeDestroyedOnTouchEffect, display: true
+  AllowPlacingAt: Base, display: true
+  AllowedInBlueprint: false, display: true
+  HitPoints: 250, type: int, display: false
+  Mass: 500, type: float, display: true, formatter: Kilogram
+  Volume: 80, type: float, display: true, formatter: Liter
+  StackSize: 1000
+  Category: BuildingBlocks
+  ChildBlocks: "HullFullLargeDestroyedOnTouchEffect, HullThinLargeDestroyedOnTouchEffect"
+  HideShapesWindow: true
+  IsOxygenTight: false, display: true
+
+  UnlockCost: 0
+  UnlockLevel: 1
+  TechTreeNames: ""
+}
+{ Block Name: HullFullLargeDestroyedOnTouchEffect
+  Material: hullarmored
+  CustomIcon: HullLargeDestroyedBlocks            #NEEDS an adapted Icon!
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Texture: 50
+  BlockColor: "110,110,110"
+  Shape: New
+  Place: Free
+  Model: Cube
+  AllowPlacingAt: Base, display: true
+  AllowedInBlueprint: false, display: true
+  HitPoints: 250, type: int, display: true
+  Mass: 500, type: float, display: true, formatter: Kilogram
+  ChildShapes: "CubeDestroyed, CutCornerEDestroyed, CutCornerBDestroyed, SlicedCornerA1Destroyed, CornerHalfBDestroyed, CornerSmallCDestroyed, CornerCDestroyed, CornerHalfA3Destroyed, RampCMediumDestroyed, RampADestroyed, RampCDestroyed, CornerRoundBDestroyed, CornerRoundADoubleDestroyed, RoundCornerADestroyed, CubeRoundConnectorADestroyed, EdgeRoundDestroyed, CylinderDestroyed, RampRoundFTripleDestroyed, RampRoundFDestroyed, SmallCornerRoundBDestroyed, SmallCornerRoundADestroyed, SphereHalfDestroyed, ConeDestroyed, ConeBDestroyed, CutCornerCDestroyed, Cylinder6WayDestroyed, CornerRoundATripleDestroyed, CornerADestroyed, CornerHalfA1Destroyed, CornerDoubleA3Destroyed, CornerSmallBDestroyed, PyramidADestroyed"
+  TemplateRoot: HullLargeDestroyedBlocks
+  UpgradeTo: HullFullLarge, display: true
+
+  #Class: Explosive
+  Class: TrapDoorOneTime
+  Group: cpgSignal
+  Category: Devices
+  BlastParticleIndex: 13
+  BlastRadius: 1, display: Radius
+  BlastDamage: 0
+  IsActivateable: true
+  IsAccessible: true, type: bool
+  IsOxygenTight: false, display: true
+}
+{ Block Name: HullThinLargeDestroyedOnTouchEffect, Ref: HullFullLargeDestroyedOnTouchEffect
+  HitPoints: 125, type: int, display: true
+  Mass: 250, type: float, display: true, formatter: Kilogram
+  ChildShapes: "WallDestroyed, WallLShapeDestroyed, WallSlopedDestroyed, WallSloped3CornerDestroyed, WallSlopedCDestroyed, WallSlopedCMediumrightDestroyed, WallSlopedArightDestroyed, WallSlopedCMediumleftDestroyed, WallSlopedAleftDestroyed, WallCornerRoundBDestroyed, WallSlopedRoundDestroyed, WallEdgeRoundDestroyed, WallEdgeRound3WayDestroyed, WallCornerRoundADestroyed, WallCornerRoundCDestroyed, WallSloped3CornerLowDestroyed, WallCornerDestroyed, WallLowDestroyed, CubeHalfDestroyed, RampADoubleDestroyed, RampCLowDestroyed, RampBMediumDestroyed, RampCHalfDestroyed, CutCornerEMediumDestroyed, BeamDestroyed, CylinderThinDestroyed, CylinderThinTJointDestroyed, CylinderLDestroyed, PipesFenceDestroyed, FenceTopDestroyed, RampDDestroyed, RoundCornerLongThinDestroyed"
+  IsOxygenTight: false, display: true
+  UpgradeTo: HullThinLarge, display: true
+}
+{ Block Name: XenoDestroyedRemoteEffectBlocks     #Xeno Steel = AlienLargeBlocks = non-radioactive
+  Material: alien
+  CustomIcon: AlienLargeBlocks            #NEEDS an adapted Icon!
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Texture: 36
+  TextureTable: 3
+  # BlockColor: "110,110,110"
+  Shape: Invisible
+  PickupTarget: XenoSubstrate
+  Info: bkiXenoDestroyedRemoteEffectBlocks, display: true
+  AllowPlacingAt: Base, display: true
+  AllowedInBlueprint: false, display: true
+  HitPoints: 1300, type: int, display: false
+  Mass: 1300, type: float, display: true, formatter: Kilogram
+  Volume: 80, type: float, display: true, formatter: Liter
+  StackSize: 1000
+  #BlockSizeScale: 8
+  Category: BuildingBlocks
+  ChildBlocks: "XenoFullDestroyedRemoteEffect, XenoThinDestroyedRemoteEffect"
+  HideShapesWindow: true
+  IsOxygenTight: false, display: true
+
+  UnlockCost: 0
+  UnlockLevel: 1
+  TechTreeNames: ""
+}
+{ Block Name: XenoFullDestroyedRemoteEffect
+  Material: alien
+  CustomIcon: AlienLargeBlocks            #NEEDS an adapted Icon!
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Texture: 36
+  TextureTable: 3
+ # BlockColor: "110,110,110"
+  Shape: New
+  Place: Free
+  Model: Cube
+  AllowPlacingAt: Base, display: true
+  AllowedInBlueprint: false, display: true
+  HitPoints: 1300, type: int, display: true
+  Mass: 1300, type: float, display: true, formatter: Kilogram
+  ChildShapes: "CubeDestroyed, CutCornerEDestroyed, CutCornerBDestroyed, SlicedCornerA1Destroyed, CornerHalfBDestroyed, CornerSmallCDestroyed, CornerCDestroyed, CornerHalfA3Destroyed, RampCMediumDestroyed, RampADestroyed, RampCDestroyed, CornerRoundBDestroyed, CornerRoundADoubleDestroyed, RoundCornerADestroyed, CubeRoundConnectorADestroyed, EdgeRoundDestroyed, CylinderDestroyed, RampRoundFTripleDestroyed, RampRoundFDestroyed, SmallCornerRoundBDestroyed, SmallCornerRoundADestroyed, SphereHalfDestroyed, ConeDestroyed, ConeBDestroyed, CutCornerCDestroyed, Cylinder6WayDestroyed, CornerRoundATripleDestroyed, CornerADestroyed, CornerHalfA1Destroyed, CornerDoubleA3Destroyed, CornerSmallBDestroyed, PyramidADestroyed"
+  TemplateRoot: XenoLargeDestroyedBlocks
+  UpgradeTo: AlienFullLarge, display: true
+
+  Class: Explosive
+  # Class: TrapDoorOneTime
+  Group: cpgSignal
+  Category: Devices
+  BlastParticleIndex: 13
+  BlastRadius: 1, display: Radius
+  BlastDamage: 0
+  IsActivateable: true
+  IsAccessible: true, type: bool
+  IsOxygenTight: false, display: true
+}
+{ Block Name: XenoThinDestroyedRemoteEffect, Ref: XenoFullDestroyedRemoteEffect
+  ChildShapes: "WallDestroyed, WallLShapeDestroyed, WallSlopedDestroyed, WallSloped3CornerDestroyed, WallSlopedCDestroyed, WallSlopedCMediumrightDestroyed, WallSlopedArightDestroyed, WallSlopedCMediumleftDestroyed, WallSlopedAleftDestroyed, WallCornerRoundBDestroyed, WallSlopedRoundDestroyed, WallEdgeRoundDestroyed, WallEdgeRound3WayDestroyed, WallCornerRoundADestroyed, WallCornerRoundCDestroyed, WallSloped3CornerLowDestroyed, WallCornerDestroyed, WallLowDestroyed, CubeHalfDestroyed, RampADoubleDestroyed, RampCLowDestroyed, RampBMediumDestroyed, RampCHalfDestroyed, CutCornerEMediumDestroyed, BeamDestroyed, CylinderThinDestroyed, CylinderThinTJointDestroyed, CylinderLDestroyed, PipesFenceDestroyed, FenceTopDestroyed, RampDDestroyed, RoundCornerLongThinDestroyed"
+  HitPoints: 750, type: int, display: true
+  Mass: 750, type: float, display: true, formatter: Kilogram
+  IsOxygenTight: false, display: true
+  UpgradeTo: AlienThinLarge, display: true
+}
+{ Block Name: XenoDestroyedOnTouchEffect     #Xeno Steel = AlienLargeBlocks = non-radioactive
+  Material: alien
+  CustomIcon: AlienLargeBlocks            #NEEDS an adapted Icon!
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Texture: 36
+  TextureTable: 3
+  # BlockColor: "110,110,110"
+  Shape: Invisible
+  PickupTarget: XenoSubstrate
+  Info: bkiXenoDestroyedRemoteEffectBlocks, display: true
+  AllowPlacingAt: Base, display: true
+  AllowedInBlueprint: false, display: true
+  HitPoints: 1300, type: int, display: false
+  Mass: 1300, type: float, display: true, formatter: Kilogram
+  Volume: 80, type: float, display: true, formatter: Liter
+  StackSize: 1000
+  #BlockSizeScale: 8
+  Category: BuildingBlocks
+  ChildBlocks: "XenoFullDestroyedOnTouchEffect, XenoThinDestroyedOnTouchEffect"
+  HideShapesWindow: true
+  IsOxygenTight: false, display: true
+
+  UnlockCost: 0
+  UnlockLevel: 1
+  TechTreeNames: ""
+}
+{ Block Name: XenoFullDestroyedOnTouchEffect
+  Material: alien
+  CustomIcon: AlienLargeBlocks            #NEEDS an adapted Icon!
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Texture: 36
+  TextureTable: 3
+ # BlockColor: "110,110,110"
+  Shape: New
+  Place: Free
+  Model: Cube
+  AllowPlacingAt: Base, display: true
+  AllowedInBlueprint: false, display: true
+  HitPoints: 1300, type: int, display: true
+  Mass: 1300, type: float, display: true, formatter: Kilogram
+  ChildShapes: "CubeDestroyed, CutCornerEDestroyed, CutCornerBDestroyed, SlicedCornerA1Destroyed, CornerHalfBDestroyed, CornerSmallCDestroyed, CornerCDestroyed, CornerHalfA3Destroyed, RampCMediumDestroyed, RampADestroyed, RampCDestroyed, CornerRoundBDestroyed, CornerRoundADoubleDestroyed, RoundCornerADestroyed, CubeRoundConnectorADestroyed, EdgeRoundDestroyed, CylinderDestroyed, RampRoundFTripleDestroyed, RampRoundFDestroyed, SmallCornerRoundBDestroyed, SmallCornerRoundADestroyed, SphereHalfDestroyed, ConeDestroyed, ConeBDestroyed, CutCornerCDestroyed, Cylinder6WayDestroyed, CornerRoundATripleDestroyed, CornerADestroyed, CornerHalfA1Destroyed, CornerDoubleA3Destroyed, CornerSmallBDestroyed, PyramidADestroyed"
+  TemplateRoot: XenoLargeDestroyedBlocks
+  UpgradeTo: AlienFullLarge, display: true
+
+  #Class: Explosive
+  Class: TrapDoorOneTime
+  Group: cpgSignal
+  Category: Devices
+  BlastParticleIndex: 13
+  BlastRadius: 1, display: Radius
+  BlastDamage: 0
+  IsActivateable: true
+  IsAccessible: true, type: bool
+  IsOxygenTight: false, display: true
+}
+{ Block Name: XenoThinDestroyedOnTouchEffect, Ref: XenoFullDestroyedOnTouchEffect
+  ChildShapes: "WallDestroyed, WallLShapeDestroyed, WallSlopedDestroyed, WallSloped3CornerDestroyed, WallSlopedCDestroyed, WallSlopedCMediumrightDestroyed, WallSlopedArightDestroyed, WallSlopedCMediumleftDestroyed, WallSlopedAleftDestroyed, WallCornerRoundBDestroyed, WallSlopedRoundDestroyed, WallEdgeRoundDestroyed, WallEdgeRound3WayDestroyed, WallCornerRoundADestroyed, WallCornerRoundCDestroyed, WallSloped3CornerLowDestroyed, WallCornerDestroyed, WallLowDestroyed, CubeHalfDestroyed, RampADoubleDestroyed, RampCLowDestroyed, RampBMediumDestroyed, RampCHalfDestroyed, CutCornerEMediumDestroyed, BeamDestroyed, CylinderThinDestroyed, CylinderThinTJointDestroyed, CylinderLDestroyed, PipesFenceDestroyed, FenceTopDestroyed, RampDDestroyed, RoundCornerLongThinDestroyed"
+  HitPoints: 750, type: int, display: true
+  Mass: 750, type: float, display: true, formatter: Kilogram
+  IsOxygenTight: false, display: true
+  UpgradeTo: AlienThinLarge, display: true
+}
+# === Explosive Blocks for small vessels
+
+{ Block Name: ExplosiveSmallBlocksSelf
+  Class: Explosive
+  Group: cpgSignal
+  CustomIcon: ExplosiveBlocks
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Material: metallight
+  Texture: 46
+  BlockColor: "102,0,0"
+  # Shape: Invisible      # cannot set to invisible because id=1263 is used in several POIs
+  Shape: New
+  Model: Cube
+  Place: Free
+  PickupTarget: HullSmallBlocks
+  AllowPlacingAt: "SS,GV", display: true
+  AllowedInBlueprint: false, display: true
+  IsActivateable: true
+  IsAccessible: true, type: bool
+  IsOxygenTight: true, display: true
+  HitPoints: 50, type: int, display: false
+ # CPUIn: 10, type: int, display: true
+  Mass: 25, type: float, display: true, formatter: Kilogram
+  StackSize: 1000
+  HideShapesWindow: true
+  Category: Devices
+  ChildBlocks: "ExplosiveSmallBlocksSelfFull, ExplosiveSmallBlocksSelfThin"
+
+  BlastParticleIndex: 4
+  BlastRadius: 1, display: Radius
+  BlastDamage: 500
+}
+{ Block Name: ExplosiveSmallBlocksSelfFull
+  Class: Explosive
+  Group: cpgSignal
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Material: metallight
+  Texture: 46
+  BlockColor: "102,0,0"
+  Shape: New
+  Place: Free
+  Model: Cube
+  TemplateRoot: HullSmallBlocks
+  AllowPlacingAt: "SS,GV", display: true
+  AllowedInBlueprint: false, display: true
+  IsActivateable: true
+  IsAccessible: true, type: bool
+  IsOxygenTight: true, display: true
+  HitPoints: 50, type: int, display: false
+ # CPUIn: 10, type: int, display: true
+  Mass: 25, type: float, display: true, formatter: Kilogram
+  Category: Devices
+  ChildShapes: "Cube, CutCornerE, CutCornerB, SlicedCornerA1, CornerHalfB, CornerSmallC, CornerC, CornerHalfA3, RampCMedium, RampA, RampC, CornerRoundB, CornerRoundADouble, RoundCornerA, CubeRoundConnectorA, EdgeRound, Cylinder, RampRoundFTriple, RampRoundF, SmallCornerRoundB, SmallCornerRoundA, SphereHalf, Cone, ConeB, CutCornerC, Cylinder6Way, CornerRoundATriple, CornerA, CornerHalfA1, CornerDoubleA3, CornerSmallB, PyramidA"
+
+  BlastParticleIndex: 4
+  BlastRadius: 0, display: Radius
+  BlastDamage: 100
+}
+{ Block Name: ExplosiveSmallBlocksSelfThin, Ref: ExplosiveSmallBlocksSelfFull
+  HitPoints: 25, type: int, display: true
+  Mass: 15, type: float, display: true, formatter: Kilogram
+  ChildShapes: "Wall, WallLShape, WallSloped, WallSloped3Corner, WallSlopedC, WallSlopedCMediumright, WallSlopedAright, WallSlopedCMediumleft, WallSlopedAleft, WallCornerRoundB, WallSlopedRound, WallEdgeRound, WallEdgeRound3Way, WallCornerRoundA, WallCornerRoundC, WallSloped3CornerLow, WallCorner, WallLow, CubeHalf, RampADouble, RampCLow, RampBMedium, RampD, CutCornerEMedium, Beam, CylinderThin, CylinderThinTJoint, CylinderL, PipesFence, FenceTop, RampCHalf, CornerHalfA3Medium"
+}
+{ Block Name: ExplosiveSmallBlocksRadius, Ref: ExplosiveSmallBlocksSelf
+  BlockColor: "255,0,0"
+  Mass: 15, type: float, display: true, formatter: Kilogram
+  PickupTarget: HullSmallBlocks
+  CustomIcon: ExplosiveBlocks2
+  ChildBlocks: "ExplosiveSmallBlocksRadiusFull, ExplosiveSmallBlocksRadiusThin"
+
+  BlastParticleIndex: 4
+  BlastRadius: 3, display: Radius
+  BlastDamage: 1500
+}
+{ Block Name: ExplosiveSmallBlocksRadiusFull
+  Class: Explosive
+  Group: cpgSignal
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Material: metallight
+  Texture: 46
+  BlockColor: "255,0,0"
+  Shape: New
+  Place: Free
+  Model: Cube
+  TemplateRoot: HullLargeBlocks
+  AllowPlacingAt: "SS,GV", display: true
+  AllowedInBlueprint: false, display: true
+  IsActivateable: true
+  IsAccessible: true, type: bool
+  IsOxygenTight: true, display: true
+  HitPoints: 50, type: int, display: false
+ # CPUIn: 10, type: int, display: true
+  Mass: 25, type: float, display: true, formatter: Kilogram
+  Category: Devices
+  ChildShapes: "Cube, CutCornerE, CutCornerB, SlicedCornerA1, CornerHalfB, CornerSmallC, CornerC, CornerHalfA3, RampCMedium, RampA, RampC, CornerRoundB, CornerRoundADouble, RoundCornerA, CubeRoundConnectorA, EdgeRound, Cylinder, RampRoundFTriple, RampRoundF, SmallCornerRoundB, SmallCornerRoundA, SphereHalf, Cone, ConeB, CutCornerC, Cylinder6Way, CornerRoundATriple, CornerA, CornerHalfA1, CornerDoubleA3, CornerSmallB, PyramidA"
+
+  BlastParticleIndex: 4
+  BlastRadius: 3, display: Radius
+  BlastDamage: 1500
+  BlastShieldDamage: 500
+}
+{ Block Name: ExplosiveSmallBlocksRadiusThin, Ref: ExplosiveSmallBlocksRadiusFull
+  Mass: 15, type: float, display: true, formatter: Kilogram
+
+  ChildShapes: "Wall, WallLShape, WallSloped, WallSloped3Corner, WallSlopedC, WallSlopedCMediumright, WallSlopedAright, WallSlopedCMediumleft, WallSlopedAleft, WallCornerRoundB, WallSlopedRound, WallEdgeRound, WallEdgeRound3Way, WallCornerRoundA, WallCornerRoundC, WallSloped3CornerLow, WallCorner, WallLow, CubeHalf, RampADouble, RampCLow, RampBMedium, RampD, CutCornerEMedium, Beam, CylinderThin, CylinderThinTJoint, CylinderL, PipesFence, FenceTop, RampCHalf, CornerHalfA3Medium"
+}
+# === Special Dialogue Devices / Blocks
+{ Block Name: ConsoleGIN
+  CustomIcon: ConsoleTrading
+  Class: NPCDialogue
+  DialogueState: GIN_Console_Initialize
+  NPCModelRotation: false
+  Group: cpgCrewStationAlien
+  Material: metallight
+  Shape: ModelEntity
+  Model: @models/Blocks/Mothership/TradingConsolePrefab
+  DropMeshfile: Entities/Misc/DropContainerNewPrefab             #Large container box; Available variants: see start of this document!
+  Place: Free
+  Info: bkiConsoleGIN, display: true
+  Category: Deco Blocks
+  AllowPlacingAt: "Base,MS", display: true
+  SizeInBlocks: "1,1,1", display: true
+  SizeInBlocksLocked: "Base,MS"
+  IsAccessible: true, type: bool
+ # IsLockable: true
+  IsOxygenTight: false, display: true
+ # TemplateRoot: ConsoleBlocks
+  Mass: 65, type: float, display: true, formatter: Kilogram
+  Volume: 12, type: float, display: true, formatter: Liter
+  # ModelOffset: "0,0.5,0"
+  EnergyIn: 1, type: int, display: true, formatter: Watt
+  # BlockColor: "0,64,255"
+  BlockColor: "0,255,255"
+
+  BlastParticleIndex: 11
+  BlastRadius: 1
+  BlastDamage: 80
 }
 { Block Name: Alien_Dead_trunk_01
   Material: wood
@@ -54125,7 +55062,7 @@
   IndexName: WeaponShip
   Group: cpgHarvest
   MarketPrice: 82862, display: true
-  Material: HWS_material_weapon_energy
+  Material: HWS_material_weapon_energy_small
   Shape: ModelEntity
   ShowBlockName: true
   WeaponItem: HWSGarageSVDrillWeapon
@@ -54155,7 +55092,7 @@
   EnergyIn: 400, type: int, display: true, formatter: Watt
   CPUIn: 1600, type: int, display: true
   EnergyInIdle: 40, type: int, display: true, formatter: Watt
-  HitPoints: 800, type: int, display: true
+  HitPoints: 1400, type: int, display: true
   StackSize: 200
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
   MaxCount: 8, type: int, display: true

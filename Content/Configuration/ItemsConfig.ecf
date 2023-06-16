@@ -1370,7 +1370,7 @@
     ROF: 4.2, type: float, display: true, formatter: ROF
     Range: 250, display: false
     RangeSpace: 350, display: false
-    Damage: 920, display: true
+    Damage: 485, display: true
     EntityDamage: 450, display: true
     NoiseStrength: 180, display: false
     CameraShake: 4
@@ -1393,7 +1393,7 @@
     TracerSpeed: 250
 
     DamageMultiplier_Group: HWS_EWS_Energy_HHW
-    DamageMultiplier_2: 3.75, param1: shield, display: HWS_ItemInfo_BeamShieldDmgMultiplier
+    DamageMultiplier_2: 8, param1: shield
 
     Mod.Damage: "Damage + ((Damage / 40) * Player.Skills['Damage'])"
   #  Mod.BlastDamage: "BlastDamage + ((BlastDamage / 40) * Player.Skills['BlastDamage'])"
@@ -2270,7 +2270,7 @@
     ROF: 3.1, type: float, display: true, formatter: ROF
     Range: 250, display: false
     RangeSpace: 400, display: false
-    Damage: 980, display: true
+    Damage: 550, display: true
     EntityDamage: 500, display: true
     NoiseStrength: 250, display: false
     CameraShake: 4
@@ -2293,7 +2293,7 @@
     TracerSpeed: 250
 
     DamageMultiplier_Group: HWS_EWS_Energy_HHW
-    DamageMultiplier_2: 3.75, param1: shield, display: HWS_ItemInfo_BeamShieldDmgMultiplier
+    DamageMultiplier_2: 8, param1: shield
 
     Mod.Damage: "Damage + ((Damage / 40) * Player.Skills['Damage'])"
   #  Mod.BlastDamage: "BlastDamage + ((BlastDamage / 40) * Player.Skills['BlastDamage'])"
@@ -3580,7 +3580,7 @@
     Ballistic: false
 
     DamageMultiplier_Group: HWS_EWS_Energy_HHW
-    DamageMultiplier_2: 3.75, param1: shield, display: HWS_ItemInfo_BeamShieldDmgMultiplier     # add for test to compensate not working multipliers foe BlastShieldDamage   Blast damage 180 * 1.5 coz of it radius damage calc * 2 coz of shield multiplier = 540, Overal damage 308+308+540 = 1156 / 308 = 3.753 multiplier
+    DamageMultiplier_2: 3.75, param1: shield, display: HWS_ItemInfo_BeamShieldDmgMultiplierGun     # add for test to compensate not working multipliers foe BlastShieldDamage   Blast damage 180 * 1.5 coz of it radius damage calc * 2 coz of shield multiplier = 540, Overal damage 308+308+540 = 1156 / 308 = 3.753 multiplier
 
     Mod.Damage: "Damage + ((Damage / 40) * Player.Skills['Damage'])"
     Mod.BlastDamage: "BlastDamage + ((BlastDamage / 40) * Player.Skills['BlastDamage'])"
@@ -4956,7 +4956,7 @@
     ROF: 3.5, type: float, display: true, formatter: ROF
     Range: 500, display: false
     RangeSpace: 700, display: false
-    Damage: 1040, display: true
+    Damage: 560, display: true
     EntityDamage: 615, display: true
     AmmoCapacity: 50, display: true
     AutoReload: true
@@ -4978,7 +4978,7 @@
     TracerSpeed: 325
 
     DamageMultiplier_Group: HWS_EWS_Energy
-    DamageMultiplier_2: 4, param1: shield
+    DamageMultiplier_2: 8, param1: shield
 
 	RadialText: Anti Shield Mode  # add text
     RadialDesc: Fires a beam of plasma at supersonic speeds dealing catastrophic damage to Shields
@@ -5099,7 +5099,7 @@
     ROF: 18.5, type: float, display: true, formatter: ROF
     Range: 700, display: false
     RangeSpace: 1050, display: false
-    Damage: 7650, display: true
+    Damage: 3510, display: true
     AmmoCapacity: 10, display: true
     AutoReload: true
     Automatic: true
@@ -5120,7 +5120,7 @@
     TracerSpeed: 1050
 
     DamageMultiplier_Group: HWS_EWS_Energy
-    DamageMultiplier_2: 3.6, param1: shield
+    DamageMultiplier_2: 8.5, param1: shield
 
 	RadialText: Anti Shield Mode  # add text
     RadialDesc: Fires a beam of plasma at supersonic speeds dealing catastrophic damage to Shields
@@ -6167,7 +6167,7 @@
     Range: 540, display: true
     SpeedSpace: 600, display: true
     RangeSpace: 760, display: true
-    HomingSpeed: 0.3
+    HomingSpeed: 0.4
     Ballistic: false
     # Buff: "Stunned,DermalBurn,RadiationBurn,IncreaseRadiation"
     # Buff_chance: "0.2,0.5,0.2,0.3"
@@ -6241,7 +6241,7 @@
     NoiseStrength: 100, display: false
     BlastParticleIndex: 8
     BlastRadius: 3, display: true
-    BlastDamage: 195, display: true
+    BlastDamage: 200, display: true
     BlastEntityDamage: 350, display: true
     Speed: 220, display: true
     Range: 420, display: true
@@ -6362,7 +6362,7 @@
     # Buff: "FractureOpen,DermalBurn,RadiationBurn,IncreaseRadiation"
     # Buff_chance: "0.1,0.7,0.2,0.3"
 
-    DamageMultiplier_Group: HWS_EWS_Kinetic
+    DamageMultiplier_Group: HWS_EWS_Energy
   }
 
   UnlockCost: 4500, display: true
@@ -6386,10 +6386,10 @@
   Category: Weapons/Items
   { Child 0
     Class: Projectile
-    Damage: 4200, display: true
+    Damage: 4300, display: true
     BlastParticleIndex: 4
     BlastRadius: 4, display: true
-    BlastDamage: 2540, display: true
+    BlastDamage: 2360, display: true
     BlastEntityDamage: 3810, display: true
     HomingSpeed: 0.9
     Speed: 200, display: true
@@ -6459,7 +6459,7 @@
     Damage: 975, display: true
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 685, display: true
+    BlastDamage: 870, display: true
     BlastEntityDamage: 1028, display: true
     Speed: 600, display: true
     Range: 650, display: true
@@ -6540,13 +6540,13 @@
     Range: 540, display: true
     SpeedSpace: 500, display: true
     RangeSpace: 740, display: true
-    HomingSpeed: 0.15
+    HomingSpeed: 0.3
     Ballistic: false
     # Buff: "Stunned,DermalBurn,RadiationBurn,IncreaseRadiation"
     # Buff_chance: "0.2,0.4,0.1,0.2"
 
     DamageMultiplier_Group: HWS_EWS_Energy
-    DamageMultiplier_2: 4.3, param1: shield, display: HWS_ItemInfo_BeamShieldDmgMultiplier
+    DamageMultiplier_2: 4.3, param1: shield, display: HWS_ItemInfo_BeamShieldDmgMultiplierHV
   }
 
   UnlockLevel: 1
@@ -6572,8 +6572,8 @@
     Damage: 315, display: true
     BlastParticleIndex: 3
     BlastRadius: 4, display: true
-    BlastDamage: 195, display: true
-    BlastEntityDamage: 293, display: true
+    BlastDamage: 240, display: true
+    BlastEntityDamage: 360, display: true
     Speed: 640, display: true
     Range: 800, display: true
     SpeedSpace: 1050, display: true
@@ -6616,7 +6616,7 @@
     Range: 675, display: true
     SpeedSpace: 900, display: true
     RangeSpace: 1100, display: true
-    HomingSpeed: 0.3
+    HomingSpeed: 0.6
     Ballistic: false
     # Buff: "Stunned,DermalBurn,RadiationBurn,IncreaseRadiation"
     # Buff_chance: "0.3,0.5,0.2,0.3"
@@ -6647,7 +6647,7 @@
     Damage: 1600, display: true
     BlastParticleIndex: 4
     BlastRadius: 4, display: true
-    BlastDamage: 1040, display: true
+    BlastDamage: 870, display: true
     BlastEntityDamage: 1870, display: true
     Speed: 190, display: true
     Range: 610, display: true
@@ -6712,7 +6712,7 @@
     Damage: 300, display: true
     BlastParticleIndex: 9
     BlastRadius: 3, display: true
-    BlastDamage: 125, display: true
+    BlastDamage: 130, display: true
     BlastEntityDamage: 230, display: true
     Speed: 300, display: true
     Range: 480, display: true
@@ -6736,8 +6736,8 @@
     Damage: 265, display: true
     BlastParticleIndex: 3
     BlastRadius: 4, display: true
-    BlastDamage: 165, display: true
-    BlastEntityDamage: 248, display: true
+    BlastDamage: 200, display: true
+    BlastEntityDamage: 30, display: true
     Speed: 700, display: true
     Range: 700, display: true
     SpeedSpace: 950, display: true
@@ -6758,7 +6758,7 @@
     Damage: 3500, display: true
     BlastParticleIndex: 4
     BlastRadius: 4, display: true
-    BlastDamage: 2115, display: true
+    BlastDamage: 2030, display: true
     BlastEntityDamage: 3170, display: true
     HomingSpeed: 1.0
     Speed: 350, display: true
@@ -6800,7 +6800,7 @@
     Damage: 1200, display: true
     BlastParticleIndex: 3
     BlastRadius: 3, display: true
-    BlastDamage: 810, display: true
+    BlastDamage: 1040, display: true
     BlastEntityDamage: 1215, display: true
     Speed: 450, display: true
     Range: 750, display: true
@@ -6829,11 +6829,11 @@
     Range: 775, display: true
     SpeedSpace: 900, display: true
     RangeSpace: 1200, display: true
-    HomingSpeed: 0.4
+    HomingSpeed: 0.8
     Ballistic: false
 
     DamageMultiplier_Group: HWS_EWS_Energy
-    DamageMultiplier_2: 3.6, param1: shield, display: HWS_ItemInfo_BeamShieldDmgMultiplier
+    DamageMultiplier_2: 3.6, param1: shield, display: HWS_ItemInfo_BeamShieldDmgMultiplierBA
   }
 }
 { Item Id: 171, Name: PulseLaserChargeMSWeapon
@@ -6904,7 +6904,7 @@
   { Child 0
     Damage: 275, display: true
     BlastRadius: 3, display: true
-    BlastDamage: 208, display: true
+    BlastDamage: 215, display: true
     BlastEntityDamage: 375, display: true
     Speed: 390, display: true
     Range: 485, display: true
@@ -12295,6 +12295,43 @@
  # TechTreeNames: Tools
 }
 
+{ Item Id: 709, Name: SnapPointTool
+  CustomIcon: ColorTool
+  Meshfile: Entities/Items/Tools/ColorToolPrefab
+  PickupToToolbar: true
+  Material: metalweapon
+  HoldType: 14
+  StackSize: 1
+  Category: Weapons/Items
+  Mass: 2.1, type: float, display: true, formatter: Kilogram
+  Volume: 1, type: float, display: true, formatter: Liter
+  RadialMenu: true
+  { Child Alt0
+    Class: BlueprintPart
+    Range: 100
+	Mode: PlaceBPP
+    RadialText: "Place a part"
+	RadialDesc: "Focus a snap point and choose a part with left control. Use left shift and left mouse to toggle through snap points"
+	RadialIcon: Radial_Upgrade
+  }
+  { Child Alt1
+    Class: BlueprintPart
+    Range: 100
+	Mode: DeleteSnapPoint
+    RadialText: "Delete"
+	RadialDesc: "Delete the focused snap point"
+	RadialIcon: Radial_Remove
+  }
+  { Child Alt2
+    Class: BlueprintPart
+    Range: 100
+	Mode: SyncSnapPoints
+    RadialText: "Reload snap points"
+	RadialDesc: "Reloads all snap points from the used blueprint. Works only for one source blueprint"
+	RadialIcon: Radial_ChangeRotate
+  }
+}
+
 # HWS Event items. From 799 downwards
 
 { Item Id: 798, Name: HWSEventHalloweenPumpkinShell, Ref: ComponentsTemplate
@@ -15182,6 +15219,19 @@
     ROF: 1, type: float
   }
 }
+
+{ Item Id: 1321, Name: AIDroneBayWeapon
+  Info: bkiTutorialHUDViewPlayer, display: true
+  Meshfile: Entities/Misc/DummyPrefab
+  DropMeshfile: Entities/Misc/BagSmallNewPrefab   #Available variants: BagSmallChristmasPrefab
+  Material: metalweapon
+  HoldType: 0
+  Canhold: false
+  StackSize: 10
+  Category: Weapons/Items
+  Mass: 0.01, type: float, display: true, formatter: Kilogram
+  Volume: 0.01, type: float, display: true, formatter: Liter
+}
 # =============================================================================
 
 # =============================================================================
@@ -17097,7 +17147,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
-    Damage: 324, display: true
+    Damage: 320, display: true
     AmmoCapacity: 200, display: true
     AutoReload: true
     AmmoType: HWSAquaBAT4Ammo, display: true
@@ -17132,7 +17182,7 @@
     RangeSpace: 1400, display: true
     Automatic: true
     Speed: 900
-    Damage: 5800, display: true
+    Damage: 5900, display: true
     BulletSpread: 0.03, display: false
     AmmoCapacity: 10, display: true
     AutoReload: true
@@ -17256,7 +17306,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
-    Damage: 324, display: true
+    Damage: 320, display: true
     AmmoCapacity: 300, display: true
     AutoReload: true
     AmmoType: HWSTerraBAT4Ammo, display: true
@@ -17292,7 +17342,7 @@
     RangeSpace: 1400, display: true
     Automatic: true
     Speed: 900
-    Damage: 5800, display: true
+    Damage: 5900, display: true
     BulletSpread: 0.03, display: false
     AmmoCapacity: 15, display: true
     AutoReload: true
@@ -17416,7 +17466,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
-    Damage: 324, display: true
+    Damage: 320, display: true
     AmmoCapacity: 200, display: true
     AutoReload: true
     AmmoType: HWSPyroBAT4Ammo, display: true
@@ -17451,7 +17501,7 @@
     RangeSpace: 900, display: true
     Automatic: true
     Speed: 900
-    Damage: 5800, display: true
+    Damage: 5900, display: true
     BulletSpread: 0.03, display: true
     AmmoCapacity: 10, display: true
     AutoReload: true
@@ -17575,7 +17625,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
-    Damage: 324, display: true
+    Damage: 320, display: true
     AmmoCapacity: 200, display: true
     AutoReload: true
     AmmoType: HWSObsidianBAT4Ammo, display: true
@@ -17610,7 +17660,7 @@
     RangeSpace: 1400, display: true
     Automatic: true
     Speed: 900
-    Damage: 5800, display: true
+    Damage: 5900, display: true
     BulletSpread: 0.03, display: true
     AmmoCapacity: 10, display: true
     AutoReload: true
@@ -17734,7 +17784,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
-    Damage: 324, display: true
+    Damage: 320, display: true
     AmmoCapacity: 100, display: true
     AutoReload: true
     AmmoType: HWSLuxBAT4Ammo, display: true
@@ -17769,7 +17819,7 @@
     RangeSpace: 1750, display: true
     Automatic: true
     Speed: 1550
-    Damage: 5800, display: true
+    Damage: 5900, display: true
     BulletSpread: 0.03, display: true
     AmmoCapacity: 5, display: true
     AutoReload: true
@@ -17893,7 +17943,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
-    Damage: 324, display: true
+    Damage: 320, display: true
     AmmoCapacity: 200, display: true
     AutoReload: true
     AmmoType: HWSNoxBAT4Ammo, display: true
@@ -17928,7 +17978,7 @@
     RangeSpace: 700, display: true
     Automatic: true
     Speed: 450
-    Damage: 5800, display: true
+    Damage: 5900, display: true
     BulletSpread: 0.03, display: true
     AmmoCapacity: 10, display: true
     AutoReload: true
@@ -18052,7 +18102,7 @@
     BulletSpread: 0.045, display: false
     Automatic: true
     Speed: 100
-    Damage: 324, display: true
+    Damage: 320, display: true
     AmmoCapacity: 100, display: true
     AutoReload: true
     AmmoType: HWSStrangeletBAT4Ammo, display: true
@@ -18088,7 +18138,7 @@
     RangeSpace: 1400, display: true
     Automatic: true
     Speed: 900
-    Damage: 5800, display: true
+    Damage: 5900, display: true
     BulletSpread: 0.033, display: true
     AmmoCapacity: 10, display: true
     AutoReload: true
@@ -18201,7 +18251,7 @@
     ROF: 0.24, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 1000, display: true
-    Damage: 288, display: true
+    Damage: 290, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSAquaCVT3Ammo, display: true
@@ -18242,7 +18292,7 @@
     ROF: 4.875, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 5050, display: true
+    Damage: 5160, display: true
     BulletSpread: 0.035, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
@@ -18354,7 +18404,7 @@
     ROF: 4.5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 4200, display: true
+    Damage: 4300, display: true
     BulletSpread: 0.043, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
@@ -18463,7 +18513,7 @@
     ROF: 0.32, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 1000, display: true
-    Damage: 288, display: true
+    Damage: 290, display: true
     Automatic: true
     AmmoCapacity: 300, display: true
     AmmoType: HWSTerraCVT3Ammo, display: true
@@ -18504,7 +18554,7 @@
     ROF: 6.5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 5050, display: true
+    Damage: 5160, display: true
     BulletSpread: 0.035, display: true
     Automatic: true
     AmmoCapacity: 15, display: true
@@ -18616,7 +18666,7 @@
     ROF: 6, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 4200, display: true
+    Damage: 4300, display: true
     BulletSpread: 0.043, display: true
     Automatic: true
     AmmoCapacity: 15, display: true
@@ -18725,7 +18775,7 @@
     ROF: 0.32, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 1000, display: true
-    Damage: 288, display: true
+    Damage: 290, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSPyroCVT3Ammo, display: true
@@ -18766,7 +18816,7 @@
     ROF: 6.5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 5050, display: true
+    Damage: 5160, display: true
     BulletSpread: 0.035, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
@@ -18878,7 +18928,7 @@
     ROF: 6, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 4200, display: true
+    Damage: 4300, display: true
     BulletSpread: 0.043, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
@@ -18987,7 +19037,7 @@
     ROF: 0.32, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 1000, display: true
-    Damage: 288, display: true
+    Damage: 290, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSObsidianCVT3Ammo, display: true
@@ -19028,7 +19078,7 @@
     ROF: 6.5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 5050, display: true
+    Damage: 5160, display: true
     BulletSpread: 0.035, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
@@ -19140,7 +19190,7 @@
     ROF: 6, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 4200, display: true
+    Damage: 4300, display: true
     BulletSpread: 0.043, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
@@ -19249,7 +19299,7 @@
     ROF: 0.32, type: float, display: true, formatter: ROF
     Range: 750, display: true
     RangeSpace: 1250, display: true
-    Damage: 288, display: true
+    Damage: 290, display: true
     Automatic: true
     AmmoCapacity: 100, display: true
     AmmoType: HWSLuxCVT3Ammo, display: true
@@ -19290,7 +19340,7 @@
     ROF: 6.5, type: float, display: true, formatter: ROF
     Range: 875, display: true
     RangeSpace: 1550, display: true
-    Damage: 5050, display: true
+    Damage: 5160, display: true
     BulletSpread: 0.035, display: true
     Automatic: true
     AmmoCapacity: 5, display: true
@@ -19402,7 +19452,7 @@
     ROF: 6, type: float, display: true, formatter: ROF
     Range: 875, display: true
     RangeSpace: 1550, display: true
-    Damage: 4200, display: true
+    Damage: 4300, display: true
     BulletSpread: 0.043, display: true
     Automatic: true
     AmmoCapacity: 5, display: true
@@ -19511,7 +19561,7 @@
     ROF: 0.32, type: float, display: true, formatter: ROF
     Range: 300, display: true
     RangeSpace: 500, display: true
-    Damage: 288, display: true
+    Damage: 290, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSNoxCVT3Ammo, display: true
@@ -19552,7 +19602,7 @@
     ROF: 6.5, type: float, display: true, formatter: ROF
     Range: 350, display: true
     RangeSpace: 625, display: true
-    Damage: 5050, display: true
+    Damage: 5160, display: true
     BulletSpread: 0.035, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
@@ -19664,7 +19714,7 @@
     ROF: 6, type: float, display: true, formatter: ROF
     Range: 350, display: true
     RangeSpace: 625, display: true
-    Damage: 4200, display: true
+    Damage: 4300, display: true
     BulletSpread: 0.043, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
@@ -19773,7 +19823,7 @@
     ROF: 0.32, type: float, display: true, formatter: ROF
     Range: 600, display: true
     RangeSpace: 1000, display: true
-    Damage: 288, display: true
+    Damage: 290, display: true
     Automatic: true
     AmmoCapacity: 200, display: true
     AmmoType: HWSStrangeletCVT3Ammo, display: true
@@ -19814,7 +19864,7 @@
     ROF: 6.5, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 5050, display: true
+    Damage: 5160, display: true
     BulletSpread: 0.0365, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
@@ -19926,7 +19976,7 @@
     ROF: 6, type: float, display: true, formatter: ROF
     Range: 700, display: true
     RangeSpace: 1250, display: true
-    Damage: 4200, display: true
+    Damage: 4300, display: true
     BulletSpread: 0.044, display: true
     Automatic: true
     AmmoCapacity: 10, display: true
@@ -20082,7 +20132,7 @@
     ROF: 2.7, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 824, display: true
+    Damage: 840, display: true
     BulletSpread: 0.045, display: true
     EntityDamage: 1100, display: true
     Automatic: true
@@ -20152,7 +20202,7 @@
     ROF: 3, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 650, display: true
+    Damage: 680, display: true
     BulletSpread: 0.058, display: true
     EntityDamage: 950, display: true
     Automatic: true
@@ -20300,7 +20350,7 @@
     ROF: 3.6, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 824, display: true
+    Damage: 840, display: true
     BulletSpread: 0.045, display: true
     EntityDamage: 1100, display: true
     Automatic: true
@@ -20369,7 +20419,7 @@
     ROF: 4, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 650, display: true
+    Damage: 680, display: true
     BulletSpread: 0.058, display: true
     EntityDamage: 950, display: true
     Automatic: true
@@ -20517,7 +20567,7 @@
     ROF: 3.6, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 824, display: true
+    Damage: 840, display: true
     BulletSpread: 0.045, display: true
     EntityDamage: 1100, display: true
     Automatic: true
@@ -20586,7 +20636,7 @@
     ROF: 4, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 650, display: true
+    Damage: 680, display: true
     BulletSpread: 0.058, display: true
     EntityDamage: 950, display: true
     Automatic: true
@@ -20734,7 +20784,7 @@
     ROF: 3.6, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 824, display: true
+    Damage: 840, display: true
     BulletSpread: 0.045, display: true
     EntityDamage: 1100, display: true
     Automatic: true
@@ -20803,7 +20853,7 @@
     ROF: 4, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 650, display: true
+    Damage: 680, display: true
     BulletSpread: 0.058, display: true
     EntityDamage: 950, display: true
     Automatic: true
@@ -20951,7 +21001,7 @@
     ROF: 3.6, type: float, display: true, formatter: ROF
     Range: 687, display: true
     RangeSpace: 1000, display: true
-    Damage: 824, display: true
+    Damage: 840, display: true
     BulletSpread: 0.045, display: true
     EntityDamage: 1100, display: true
     Automatic: true
@@ -21020,7 +21070,7 @@
     ROF: 4, type: float, display: true, formatter: ROF
     Range: 687, display: true
     RangeSpace: 1000, display: true
-    Damage: 650, display: true
+    Damage: 680, display: true
     BulletSpread: 0.058, display: true
     EntityDamage: 950, display: true
     Automatic: true
@@ -21168,7 +21218,7 @@
     ROF: 3.6, type: float, display: true, formatter: ROF
     Range: 275, display: true
     RangeSpace: 400, display: true
-    Damage: 824, display: true
+    Damage: 840, display: true
     BulletSpread: 0.045, display: true
     EntityDamage: 1100, display: true
     Automatic: true
@@ -21237,7 +21287,7 @@
     ROF: 4, type: float, display: true, formatter: ROF
     Range: 275, display: true
     RangeSpace: 400, display: true
-    Damage: 650, display: true
+    Damage: 680, display: true
     BulletSpread: 0.058, display: true
     EntityDamage: 950, display: true
     Automatic: true
@@ -21385,7 +21435,7 @@
     ROF: 3.6, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 824, display: true
+    Damage: 840, display: true
     BulletSpread: 0.048, display: true
     EntityDamage: 1100, display: true
     Automatic: true
@@ -21455,7 +21505,7 @@
     ROF: 4, type: float, display: true, formatter: ROF
     Range: 550, display: true
     RangeSpace: 800, display: true
-    Damage: 650, display: true
+    Damage: 680, display: true
     BulletSpread: 0.06, display: true
     EntityDamage: 950, display: true
     Automatic: true
@@ -21685,7 +21735,7 @@
     ROF: 4, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 620, display: true
+    Damage: 650, display: true
     BulletSpread: 0.052, display: true
     EntityDamage: 1150, display: true
     Automatic: true
@@ -21905,7 +21955,7 @@
     ROF: 4, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 620, display: true
+    Damage: 650, display: true
     BulletSpread: 0.052, display: true
     EntityDamage: 1150, display: true
     Automatic: true
@@ -22124,7 +22174,7 @@
     ROF: 4, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 620, display: true
+    Damage: 650, display: true
     BulletSpread: 0.052, display: true
     EntityDamage: 1150, display: true
     Automatic: true
@@ -22344,7 +22394,7 @@
     ROF: 4, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 620, display: true
+    Damage: 650, display: true
     BulletSpread: 0.052, display: true
     EntityDamage: 1150, display: true
     Automatic: true
@@ -22565,7 +22615,7 @@
     ROF: 4, type: float, display: true, formatter: ROF
     Range: 662, display: true
     RangeSpace: 1000, display: true
-    Damage: 620, display: true
+    Damage: 650, display: true
     BulletSpread: 0.052, display: true
     EntityDamage: 1150, display: true
     Automatic: true
@@ -22785,7 +22835,7 @@
     ROF: 4, type: float, display: true, formatter: ROF
     Range: 265, display: true
     RangeSpace: 400, display: true
-    Damage: 620, display: true
+    Damage: 650, display: true
     BulletSpread: 0.052, display: true
     EntityDamage: 1150, display: true
     Automatic: true
@@ -23005,7 +23055,7 @@
     ROF: 4, type: float, display: true, formatter: ROF
     Range: 530, display: true
     RangeSpace: 800, display: true
-    Damage: 620, display: true
+    Damage: 650, display: true
     BulletSpread: 0.053, display: true
     EntityDamage: 1150, display: true
     Automatic: true
@@ -24093,8 +24143,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSAquaExplosionLarge
     BlastRadius: 4, display: true
-    BlastDamage: 1480, display: true
-    BlastEntityDamage: 2200, display: true
+    BlastDamage: 1560, display: true
+    BlastEntityDamage: 2340, display: true
     Speed: 325
     Range: 650
     SpeedSpace: 690
@@ -24123,8 +24173,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSAquaExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 1310, display: true
-    BlastEntityDamage: 1965, display: true
+    BlastDamage: 1340, display: true
+    BlastEntityDamage: 2010, display: true
     HomingSpeed: 3
     Speed: 400
     Range: 800
@@ -24188,8 +24238,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSTerraExplosionLarge
     BlastRadius: 4, display: true
-    BlastDamage: 1480, display: true
-    BlastEntityDamage: 2200, display: true
+    BlastDamage: 1560, display: true
+    BlastEntityDamage: 2340, display: true
     Speed: 325
     Range: 650
     SpeedSpace: 690
@@ -24218,8 +24268,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSTerraExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 1310, display: true
-    BlastEntityDamage: 1965, display: true
+    BlastDamage: 1340, display: true
+    BlastEntityDamage: 2010, display: true
     HomingSpeed: 3
     Speed: 400
     Range: 800
@@ -24283,8 +24333,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSPyroExplosionLarge
     BlastRadius: 4, display: true
-    BlastDamage: 2200, display: true
-    BlastEntityDamage: 3300, display: true
+    BlastDamage: 1950, display: true
+    BlastEntityDamage: 2930, display: true
     Speed: 325
     Range: 650
     SpeedSpace: 690
@@ -24313,8 +24363,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSPyroExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 1965, display: true
-    BlastEntityDamage: 2940, display: true
+    BlastDamage: 1680, display: true
+    BlastEntityDamage: 2520, display: true
     HomingSpeed: 3
     Speed: 400
     Range: 800
@@ -24378,8 +24428,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSObsidianExplosionLarge
     BlastRadius: 4, display: true
-    BlastDamage: 1480, display: true
-    BlastEntityDamage: 2200, display: true
+    BlastDamage: 1560, display: true
+    BlastEntityDamage: 2340, display: true
     Speed: 325
     Range: 650
     SpeedSpace: 690
@@ -24408,8 +24458,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSObsidianExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 1310, display: true
-    BlastEntityDamage: 1965, display: true
+    BlastDamage: 1340, display: true
+    BlastEntityDamage: 2010, display: true
     HomingSpeed: 3
     Speed: 400
     Range: 800
@@ -24473,8 +24523,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSLuxExplosionLarge
     BlastRadius: 4, display: true
-    BlastDamage: 1480, display: true
-    BlastEntityDamage: 2200, display: true
+    BlastDamage: 1560, display: true
+    BlastEntityDamage: 2340, display: true
     Speed: 400
     Range: 800
     SpeedSpace: 840
@@ -24503,8 +24553,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSLuxExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 1310, display: true
-    BlastEntityDamage: 1965, display: true
+    BlastDamage: 1340, display: true
+    BlastEntityDamage: 2010, display: true
     HomingSpeed: 3
     Speed: 500
     Range: 1000
@@ -24568,8 +24618,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSNoxExplosionLarge
     BlastRadius: 4, display: true
-    BlastDamage: 1480, display: true
-    BlastEntityDamage: 2200, display: true
+    BlastDamage: 1560, display: true
+    BlastEntityDamage: 2340, display: true
     Speed: 163
     Range: 325
     SpeedSpace: 400
@@ -24598,8 +24648,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSNoxExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 1310, display: true
-    BlastEntityDamage: 1965, display: true
+    BlastDamage: 1340, display: true
+    BlastEntityDamage: 2010, display: true
     HomingSpeed: 3
     Speed: 200
     Range: 400
@@ -24663,8 +24713,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSStrangeletExplosionLarge
     BlastRadius: 4, display: true
-    BlastDamage: 1480, display: true
-    BlastEntityDamage: 2200, display: true
+    BlastDamage: 1560, display: true
+    BlastEntityDamage: 2340, display: true
     Speed: 325
     Range: 650
     SpeedSpace: 690
@@ -24693,8 +24743,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSStrangeletExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 1310, display: true
-    BlastEntityDamage: 1965, display: true
+    BlastDamage: 1340, display: true
+    BlastEntityDamage: 2010, display: true
     HomingSpeed: 3
     Speed: 400
     Range: 800
@@ -24760,8 +24810,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSAquaExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 1100, display: true
-    BlastEntityDamage: 1650, display: true
+    BlastDamage: 1180, display: true
+    BlastEntityDamage: 1770, display: true
     Speed: 325, display: true
     Range: 650, display: true
     SpeedSpace: 720, display: true
@@ -24829,8 +24879,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSTerraExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 1100, display: true
-    BlastEntityDamage: 1650, display: true
+    BlastDamage: 1180, display: true
+    BlastEntityDamage: 1770, display: true
     Speed: 325, display: true
     Range: 650, display: true
     SpeedSpace: 720, display: true
@@ -24898,8 +24948,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSPyroExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 1650, display: true
-    BlastEntityDamage: 2475, display: true
+    BlastDamage: 1480, display: true
+    BlastEntityDamage: 2220, display: true
     Speed: 325, display: true
     Range: 650, display: true
     SpeedSpace: 720, display: true
@@ -24967,8 +25017,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSObsidianExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 1100, display: true
-    BlastEntityDamage: 1650, display: true
+    BlastDamage: 1180, display: true
+    BlastEntityDamage: 1770, display: true
     Speed: 325, display: true
     Range: 650, display: true
     SpeedSpace: 720, display: true
@@ -25036,8 +25086,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSLuxExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 1100, display: true
-    BlastEntityDamage: 1650, display: true
+    BlastDamage: 1180, display: true
+    BlastEntityDamage: 1770, display: true
     Speed: 400, display: true
     Range: 800, display: true
     SpeedSpace: 900, display: true
@@ -25105,8 +25155,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSNoxExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 1100, display: true
-    BlastEntityDamage: 1650, display: true
+    BlastDamage: 1180, display: true
+    BlastEntityDamage: 1770, display: true
     Speed: 162, display: true
     Range: 325, display: true
     SpeedSpace: 360, display: true
@@ -25174,8 +25224,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSStrangeletExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 1100, display: true
-    BlastEntityDamage: 1650, display: true
+    BlastDamage: 1180, display: true
+    BlastEntityDamage: 1770, display: true
     Speed: 325, display: true
     Range: 650, display: true
     SpeedSpace: 720, display: true
@@ -25385,8 +25435,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSPyroExplosionMedium
     BlastRadius: 3, display: true
-    BlastDamage: 450, display: true
-    BlastEntityDamage: 765, display: true
+    BlastDamage: 380, display: true
+    BlastEntityDamage: 650, display: true
     Speed: 250, display: true
     Range: 500, display: true
     SpeedSpace: 420, display: true
@@ -25737,7 +25787,7 @@
     BlastParticleName: @hws_blastparticles/HWSAquaExplosionSmall
     BlastRadius: 3, display: true
     BlastDamage: 184, display: true
-    BlastEntityDamage: 315, display: true
+    BlastEntityDamage: 310, display: true
     Speed: 240, display: true
     Range: 480, display: true
     SpeedSpace: 400, display: true
@@ -25813,7 +25863,7 @@
     BlastParticleName: @hws_blastparticles/HWSTerraExplosionSmall
     BlastRadius: 3, display: true
     BlastDamage: 184, display: true
-    BlastEntityDamage: 315, display: true
+    BlastEntityDamage: 310, display: true
     Speed: 240, display: true
     Range: 480, display: true
     SpeedSpace: 400, display: true
@@ -25882,8 +25932,8 @@
     BlastParticleIndex: 0
     BlastParticleName: @hws_blastparticles/HWSPyroExplosionSmall
     BlastRadius: 3, display: true
-    BlastDamage: 276, display: true
-    BlastEntityDamage: 470, display: true
+    BlastDamage: 230, display: true
+    BlastEntityDamage: 390, display: true
     Speed: 200, display: true
     Range: 480, display: true
     SpeedSpace: 400, display: true
@@ -25953,7 +26003,7 @@
     BlastParticleName: @hws_blastparticles/HWSObsidianExplosionSmall
     BlastRadius: 3, display: true
     BlastDamage: 184, display: true
-    BlastEntityDamage: 315, display: true
+    BlastEntityDamage: 310, display: true
     Speed: 200, display: true
     Range: 480, display: true
     SpeedSpace: 400, display: true
@@ -26023,7 +26073,7 @@
     BlastParticleName: @hws_blastparticles/HWSLuxExplosionSmall
     BlastRadius: 3, display: true
     BlastDamage: 184, display: true
-    BlastEntityDamage: 315, display: true
+    BlastEntityDamage: 310, display: true
     Speed: 380, display: true
     Range: 600, display: true
     SpeedSpace: 530, display: true
@@ -26093,7 +26143,7 @@
     BlastParticleName: @hws_blastparticles/HWSNoxExplosionSmall
     BlastRadius: 3, display: true
     BlastDamage: 184, display: true
-    BlastEntityDamage: 315, display: true
+    BlastEntityDamage: 310, display: true
     Speed: 120, display: true
     Range: 240, display: true
     SpeedSpace: 200, display: true
@@ -26163,7 +26213,7 @@
     BlastParticleName: @hws_blastparticles/HWSStrangeletExplosionSmall
     BlastRadius: 3, display: true
     BlastDamage: 184, display: true
-    BlastEntityDamage: 315, display: true
+    BlastEntityDamage: 310, display: true
     Speed: 200, display: true
     Range: 480, display: true
     SpeedSpace: 400, display: true

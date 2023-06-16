@@ -1,0 +1,143 @@
+# Define a custom Block Group string that should be applied to given blocks. That allows better
+# balancing of block groups, for example turrets.
+# Only works with blocks that have an index.
+# The Blocks you define here will all respect the MaxCount given here but still respect
+# their individual MaxCount limits set at the block itself (BlocksConfig.ecf).
+# Make sure to show your changes to the user by adding for example
+# BlockGroupMaxCount,Max in group,,,,,,,,,,,,,,,,
+# SVWeapons,Total SV Weapons {0},,,,,,,,,,,,,,,,
+# in your Localization.csv
+# Apart from that nothing needs to be added to the BlocksConfig.ecf
+
+# { BlockGroup Name: SVWeapons
+#   MaxCount: 3
+#   Blocks: "WeaponSV01,WeaponSV02,WeaponSV03"
+# }
+
+# { BlockGroup Name: CVWeapons
+#   MaxCount: 8
+#   Blocks: "WeaponCV01,WeaponCV02"
+# }
+
+# SV ELEMENTAL GUNS -------------------------------
+
+{ BlockGroup Name: ElementalGunSV_T1_Blocks
+   MaxCount: 8
+   Blocks: "HWSAquaGunSVT1,HWSTerraGunSVT1,HWSPyroGunSVT1,HWSObsidianGunSVT1,HWSLuxGunSVT1,HWSNoxGunSVT1,HWSStrangeletGunSVT1"
+}
+{ BlockGroup Name: ElementalGunSV_T2_Blocks
+   MaxCount: 12
+   Blocks: "HWSAquaGunSVT2,HWSTerraGunSVT2,HWSPyroGunSVT2,HWSObsidianGunSVT2,HWSLuxGunSVT2,HWSNoxGunSVT2,HWSStrangeletGunSVT2"
+}
+{ BlockGroup Name: ElementalGunSV_T3_Blocks
+   MaxCount: 10
+   Blocks: "HWSAquaGunSVT3,HWSTerraGunSVT3,HWSPyroGunSVT3,HWSObsidianGunSVT3,HWSLuxGunSVT3,HWSNoxGunSVT3,HWSStrangeletGunSVT3"
+}
+{ BlockGroup Name: ElementalGunSV_T4_Blocks
+   MaxCount: 8
+   Blocks: "HWSAquaGunSVT4,HWSTerraGunSVT4,HWSPyroGunSVT4,HWSObsidianGunSVT4,HWSLuxGunSVT4,HWSNoxGunSVT4,HWSStrangeletGunSVT4"
+}
+
+# SV ELEMENTAL TURRETS -------------------
+
+{ BlockGroup Name: ElementalTurretSV_T1_Blocks
+   MaxCount: 6
+   Blocks: "HWSAquaTurretSVT1,HWSTerraTurretSVT1,HWSPyroTurretSVT1,HWSObsidianTurretSVT1,HWSLuxTurretSVT1,HWSNoxTurretSVT1,HWSStrangeletTurretSVT1"
+}
+{ BlockGroup Name: ElementalTurretSV_T2_Blocks
+   MaxCount: 10
+   Blocks: "HWSAquaTurretSVT2,HWSTerraTurretSVT2,HWSPyroTurretSVT2,HWSObsidianTurretSVT2,HWSLuxTurretSVT2,HWSNoxTurretSVT2,HWSStrangeletTurretSVT2"
+}
+
+#{ BlockGroup Name: Elemental_Gun_SV_Blocks
+#   MaxCount: 4
+#   Blocks: "HWSAquaGunSVT1,HWSTerraGunSVT1,HWSPyroGunSVT1,HWSObsidianGunSVT1,HWSLuxGunSVT1,HWSNoxGunSVT1,HWSStrangeletGunSVT1,HWSAquaGunSVT2,HWSTerraGunSVT2,HWSPyroGunSVT2,HWSObsidianGunSVT2,HWSLuxGunSVT2,HWSNoxGunSVT2,HWSStrangeletGunSVT2,HWSAquaGunSVT3,HWSTerraGunSVT3,HWSPyroGunSVT3,HWSObsidianGunSVT3,HWSLuxGunSVT3,HWSNoxGunSVT3,HWSStrangeletGunSVT3,HWSAquaGunSVT4,HWSTerraGunSVT4,HWSPyroGunSVT4,HWSObsidianGunSVT4,HWSLuxGunSVT4,HWSNoxGunSVT4,HWSStrangeletGunSVT4"
+#}
+
+
+# HV ELEMENTAL GUNS -------------------------------
+
+{ BlockGroup Name: ElementalGunHV_T1_Blocks
+   MaxCount: 8
+   Blocks: "HWSAquaGunHVT1,HWSTerraGunHVT1,HWSPyroGunHVT1,HWSObsidianGunHVT1,HWSLuxGunHVT1,HWSNoxGunHVT1,HWSStrangeletGunHVT1"
+}
+{ BlockGroup Name: ElementalGunHV_T2_Blocks
+   MaxCount: 10
+   Blocks: "HWSAquaGunHVT2,HWSTerraGunHVT2,HWSPyroGunHVT2,HWSObsidianGunHVT2,HWSLuxGunHVT2,HWSNoxGunHVT2,HWSStrangeletGunHVT2"
+}
+
+# HV ELEMENTAL TURRETS -------------------
+
+{ BlockGroup Name: ElementalTurretHV_T1_Blocks
+   MaxCount: 10
+   Blocks: "HWSAquaTurretHVT1,HWSTerraTurretHVT1,HWSPyroTurretHVT1,HWSObsidianTurretHVT1,HWSLuxTurretHVT1,HWSNoxTurretHVT1,HWSStrangeletTurretHVT1"
+}
+{ BlockGroup Name: ElementalTurretHV_T2_Blocks
+   MaxCount: 14
+   Blocks: "HWSAquaTurretHVT2,HWSTerraTurretHVT2,HWSPyroTurretHVT2,HWSObsidianTurretHVT2,HWSLuxTurretHVT2,HWSNoxTurretHVT2,HWSStrangeletTurretHVT2"
+}
+{ BlockGroup Name: ElementalTurretHV_T3_Blocks
+   MaxCount: 12
+   Blocks: "HWSAquaTurretHVT3,HWSTerraTurretHVT3,HWSPyroTurretHVT3,HWSObsidianTurretHVT3,HWSLuxTurretHVT3,HWSNoxTurretHVT3,HWSStrangeletTurretHVT3"
+}
+{ BlockGroup Name: ElementalTurretHV_T4_Blocks
+   MaxCount: 10
+   Blocks: "HWSAquaTurretHVT4,HWSTerraTurretHVT4,HWSPyroTurretHVT4,HWSObsidianTurretHVT4,HWSLuxTurretHVT4,HWSNoxTurretHVT4,HWSStrangeletTurretHVT4"
+}
+
+# BA ELEMENTAL TURRETS -------------------
+
+{ BlockGroup Name: ElementalTurretBA_T1_Blocks
+   MaxCount: 10
+   Blocks: "HWSAquaTurretBAT1,HWSTerraTurretBAT1,HWSPyroTurretBAT1,HWSObsidianTurretBAT1,HWSLuxTurretBAT1,HWSNoxTurretBAT1,HWSStrangeletTurretBAT1"
+}
+{ BlockGroup Name: ElementalTurretBA_T2_Blocks
+   MaxCount: 12
+   Blocks: "HWSAquaTurretBAT2,HWSTerraTurretBAT2,HWSPyroTurretBAT2,HWSObsidianTurretBAT2,HWSLuxTurretBAT2,HWSNoxTurretBAT2,HWSStrangeletTurretBAT2"
+}
+{ BlockGroup Name: ElementalTurretBA_T3_Blocks
+   MaxCount: 18
+   Blocks: "HWSAquaTurretBAT3,HWSTerraTurretBAT3,HWSPyroTurretBAT3,HWSObsidianTurretBAT3,HWSLuxTurretBAT3,HWSNoxTurretBAT3,HWSStrangeletTurretBAT3"
+}
+{ BlockGroup Name: ElementalTurretBA_T4_Blocks
+   MaxCount: 14
+   Blocks: "HWSAquaTurretBAT4,HWSTerraTurretBAT4,HWSPyroTurretBAT4,HWSObsidianTurretBAT4,HWSLuxTurretBAT4,HWSNoxTurretBAT4,HWSStrangeletTurretBAT4"
+}
+{ BlockGroup Name: ElementalTurretBA_T5_Blocks
+   MaxCount: 12
+   Blocks: "HWSAquaTurretBAT5,HWSTerraTurretBAT5,HWSPyroTurretBAT5,HWSObsidianTurretBAT5,HWSLuxTurretBAT5,HWSNoxTurretBAT5,HWSStrangeletTurretBAT5"
+}
+
+# CV ELEMENTAL GUNS -------------------------------
+
+{ BlockGroup Name: ElementalGunCV_T1_Blocks
+   MaxCount: 8
+   Blocks: "HWSAquaGunCVT1,HWSTerraGunCVT1,HWSPyroGunCVT1,HWSObsidianGunCVT1,HWSLuxGunCVT1,HWSNoxGunCVT1,HWSStrangeletGunCVT1"
+}
+{ BlockGroup Name: ElementalGunCV_T2_Blocks
+   MaxCount: 12
+   Blocks: "HWSAquaGunCVT2,HWSTerraGunCVT2,HWSPyroGunCVT2,HWSObsidianGunCVT2,HWSLuxGunCVT2,HWSNoxGunCVT2,HWSStrangeletGunCVT2"
+}
+{ BlockGroup Name: ElementalGunCV_T3_Blocks
+   MaxCount: 8
+   Blocks: "HWSAquaGunCVT3,HWSTerraGunCVT3,HWSPyroGunCVT3,HWSObsidianGunCVT3,HWSLuxGunCVT3,HWSNoxGunCVT3,HWSStrangeletGunCVT3"
+}
+
+# CV ELEMENTAL TURRETS -------------------
+
+{ BlockGroup Name: ElementalTurretCV_T1_Blocks
+   MaxCount: 10
+   Blocks: "HWSAquaTurretCVT1,HWSTerraTurretCVT1,HWSPyroTurretCVT1,HWSObsidianTurretCVT1,HWSLuxTurretCVT1,HWSNoxTurretCVT1,HWSStrangeletTurretCVT1"
+}
+{ BlockGroup Name: ElementalTurretCV_T2_Blocks
+   MaxCount: 14
+   Blocks: "HWSAquaTurretCVT2,HWSTerraTurretCVT2,HWSPyroTurretCVT2,HWSObsidianTurretCVT2,HWSLuxTurretCVT2,HWSNoxTurretCVT2,HWSStrangeletTurretCVT2"
+}
+{ BlockGroup Name: ElementalTurretCV_T3_Blocks
+   MaxCount: 12
+   Blocks: "HWSAquaTurretCVT3,HWSTerraTurretCVT3,HWSPyroTurretCVT3,HWSObsidianTurretCVT3,HWSLuxTurretCVT3,HWSNoxTurretCVT3,HWSStrangeletTurretCVT3"
+}
+{ BlockGroup Name: ElementalTurretCV_T4_Blocks
+   MaxCount: 10
+   Blocks: "HWSAquaTurretCVT4,HWSTerraTurretCVT4,HWSPyroTurretCVT4,HWSObsidianTurretCVT4,HWSLuxTurretCVT4,HWSNoxTurretCVT4,HWSStrangeletTurretCVT4"
+}

@@ -22,6 +22,7 @@
 # HideAbbrev: true          - Will hide the Abbrev of the faction in the HUD (Faction-tag)
 # Discovery: true           - Factions can be discovered as soon as any of their POIs is discovered. To enable that a faction is 'discoverable', add 'Discovery: true' to the faction in Faction.ecf. Use console cmd 'faction discover <faction>' to debug that.
 # AttackNPC: true           - NPC factions will attack other NPC faction that have this enabled
+# ForceAttack: "Talon"      - Specify factions that this faction will attack; Can be set assymetrically; Will be overwritten in case 'AttackNPC' is set!
 # == Notes ===
 # You cannot MIX settings for STATIC and DYNAMIC factions!
 # Some factions (Zirax, Talon, Alien, Polaris, Prey, Predator, Admin) are not available for customization as they are handled as internal faction references or fallbacks; see comments below!
@@ -48,13 +49,16 @@
   Reputation: true            # Do not change. Hardcoded effect on Base Attacks. Change will lead to issues with related features!
   AttackNPC: true
   Discovery: true
+  ForceAttack: "UCH,GLaD,TheLegacy,Kriel,Pirates,Warlord"
 }
 
 { Faction Id: 3, Name: "Predator"
   Abbrev: Predator
   Color: "0.9, 0.75, 0"
+  Unfriendly: true
   HideAbbrev: true
   OmitMapLegend: true
+  ForceAttack: "Prey,Zirax,Xenu,Ghyst,Epsilon,Abyssal,Rados,Serdu,Talon,Polaris,UCH,GLaD,TheLegacy,Trader,Kriel,Pirates,Colonists,Tesch,Farr,Wastelanders,ARC,Warlord,Civilian"
 }
 
 { Faction Id: 4, Name: "Prey"
@@ -79,6 +83,8 @@
   ClaimTerritory: true
   Reputation: true            # Do not change. Hardcoded effect on Base Attacks. Change will lead to issues with related features!
   Discovery: true
+ # AttackNPC: true
+  ForceAttack: "Predator,Zirax,Xenu,Ghyst,Epsilon,TheLegacy,Warlord"
 }
 
 { Faction Id: 7, Name: "Polaris"
@@ -87,6 +93,7 @@
   ClaimTerritory: true
   Reputation: true
   Discovery: true
+  ForceAttack: "TheLegacy,Pirates,Warlord"
 }
 
 { Faction Id: 8, Name: "Alien"
@@ -115,6 +122,7 @@
   Unfriendly: true
   AttackNPC: true
   Discovery: true
+  ForceAttack: "Zirax,Xenu,Ghyst,Epsilon,Abyssal,Rados,Serdu,Talon,Polaris,UCH,GLaD,Trader,Kriel,Pirates,Colonists,Tesch,Farr,Wastelanders,ARC,Warlord,Civilian"
 }
 
 { Faction Id: 11, Name: "UCH"                #Main Story Faction
@@ -122,6 +130,7 @@
   Color: "0.2, 0.2, 0.9"
   Friendly: true
   Discovery: true
+  ForceAttack: "Zirax,Xenu,Ghyst,TheLegacy,Pirates,Warlord"
 }
 
 { Faction Id: 12, Name: "Progenitor"
@@ -131,6 +140,7 @@
   OmitMapLegend: true
   HideAbbrev: true
   Discovery: true
+ # ForceAttack: "TheLegacy"
 }
 
 { Faction Id: 13, Name: "Void"
@@ -140,12 +150,14 @@
   OmitMapLegend: true
   HideAbbrev: true
   Discovery: true
+ # ForceAttack: "TheLegacy"
 }
 { Faction Id: 14, Name: "GLaD"
   Abbrev: GLD
   Color: "0.2, 0.2, 0.9"
   Friendly: true
   Discovery: true
+  ForceAttack: "Zirax,Xenu,Ghyst,Epsilon,TheLegacy,Warlord"
 }
 
 { Faction Id: 15, Name: "Civilian"
@@ -164,6 +176,7 @@
   HideAbbrev: true
   AttackNPC: true
   #Discovery: true
+  ForceAttack: "Zirax,Xenu,Ghyst,Epsilon,Abyssal,Rados,Serdu,Talon,Polaris,UCH,GLaD,TheLegacy,Trader,Kriel,Pirates,Colonists,Tesch,Farr,Wastelanders,ARC,Warlord,Civilian"
 }
 #===========================
 #  CUSTOM DYNAMIC Factions
@@ -175,7 +188,8 @@
   ClaimTerritory: true
   Reputation: true
   Discovery: true
-  AttackNPC: true
+  # AttackNPC: true
+  ForceAttack: "Zirax,Xenu,Ghyst,Epsilon,Polaris,UCH,GLaD,TheLegacy,Trader,Kriel,Pirates,Colonists,Tesch,Farr,Wastelanders,ARC,Warlord"
 }
 
 { Faction Id: 18, Name: "Kriel"
@@ -184,7 +198,8 @@
   ClaimTerritory: true
   Reputation: true
   Discovery: true
-  AttackNPC: true
+ # AttackNPC: true
+  ForceAttack: "Zirax,Xenu,Ghyst,Epsilon,Abyssal,Serdu,Rados,TheLegacy,Pirates,Colonists,Farr,ARC,Warlord"
 }
 
 { Faction Id: 19, Name: "Trader"
@@ -193,6 +208,7 @@
   ClaimTerritory: true
   Reputation: true
   Discovery: true
+  ForceAttack: "TheLegacy,Pirates,Warlord"
 }
 
 { Faction Id: 20, Name: "Colonists"
@@ -201,6 +217,7 @@
   ClaimTerritory: true
   Reputation: true
   Discovery: true
+  ForceAttack: "TheLegacy,Pirates,Warlord"
 }
 
 { Faction Id: 21, Name: "Tesch"
@@ -209,6 +226,7 @@
   ClaimTerritory: true
   Reputation: true
   Discovery: true
+  ForceAttack: "TheLegacy,Pirates,ARC,Void,Warlord"
 }
 { Faction Id: 22, Name: "Farr"      #Brotherhood of Farr
   Abbrev: BoF
@@ -216,6 +234,7 @@
   ClaimTerritory: true
   Reputation: true
   Discovery: true
+  ForceAttack: "TheLegacy,Kriel,Pirates,Warlord"
   # AttackNPC: true
 }
 { Faction Id: 23, Name: "Wastelanders"
@@ -224,6 +243,7 @@
   ClaimTerritory: true
   Reputation: true
   Discovery: true
+  ForceAttack: "Zirax,Xenu,Ghyst,Epsilon,Abyssal,Rados,Serdu,TheLegacy,Pirates,Warlord"
   # AttackNPC: true
 }
 { Faction Id: 24, Name: "ARC"
@@ -232,6 +252,7 @@
   ClaimTerritory: true
   Reputation: true
   Discovery: true
+  ForceAttack: "TheLegacy,Kriel,Pirates,Tesch,Warlord"
   # AttackNPC: true
 }
 #==============================
@@ -245,6 +266,7 @@
   ClaimTerritory: true
   Reputation: true
   Discovery: true
+  ForceAttack: "Predator,Prey,Talon,UCH,GLaD,TheLegacy,Kriel,Pirates,Warlord"
 }
 { Faction Id: 26, Name: "Rados"               # Zirax Empire - Support
   Abbrev: Rad
@@ -253,6 +275,7 @@
   OmitMapLegend: true
   Reputation: true
   Discovery: true
+  ForceAttack: "TheLegacy,Kriel,Pirates,Warlord"
 }
 { Faction Id: 27, Name: "Epsilon"             # Zirax Empire - Communication
   Abbrev: Eps
@@ -261,6 +284,7 @@
   ClaimTerritory: true
   Reputation: true
   Discovery: true
+  ForceAttack: "GLaD,TheLegacy,Kriel,Warlord"
 }
 { Faction Id: 28, Name: "Ghyst"               # Zirax Empire - Recon
   Abbrev: Ghy
@@ -269,6 +293,7 @@
   ClaimTerritory: true
   Reputation: true
   Discovery: true
+  ForceAttack: "Predator,Talon,GLaD,TheLegacy,Kriel,Pirates,Warlord"
 }
 { Faction Id: 29, Name: "Serdu"             # Zirax Empire - Religion
   Abbrev: Ser
@@ -277,6 +302,7 @@
   ClaimTerritory: true
   Reputation: true
   Discovery: true
+  ForceAttack: "TheLegacy,Kriel,Pirates,Warlord"
 }
 { Faction Id: 30, Name: "Abyssal"             # Zirax Empire - Science
   Abbrev: Aby
@@ -331,7 +357,7 @@
 { Faction Id: 36, Name: "Dealer"
   Description: "[i][c][ffffff]Lore:[-][/c] After many years of battles against the Federation Clones, the EGS Cooperation and everyone trying to steal their land and wealth, many former Pirate Clones went into the exile to regroup, rethink and plan revenge. The [b][c][D60011]Outcast[-][/c][/b] people became a myth for some citizens. Rumors seem to be true though, that the Pirates will never be defeated and the revenge of the Outcast Clones will be the biggest threat the HWS Universe has ever experienced.[/i]"
   Abbrev: Dea
-  Color: "0.84, 0, 0.07"
+  Color: "0.77, 0.77, 0"
   ClaimTerritory: true
   Reputation: true
 }
@@ -342,6 +368,7 @@
   Unfriendly: true
   ClaimTerritory: true
   Discovery: true
+  AttackNPC: true
 }
 
 { Faction Id: 38, Name: "Terra"
@@ -350,6 +377,7 @@
   Unfriendly: true
   ClaimTerritory: true
   Discovery: true
+  AttackNPC: true
 }
 
 { Faction Id: 39, Name: "Pyro"
@@ -358,35 +386,48 @@
   Unfriendly: true
   ClaimTerritory: true
   Discovery: true
+  AttackNPC: true
 }
 
 { Faction Id: 40, Name: "Obsidian"
   Abbrev: Obsidian
-  Color: "0.05, 0.9, 0.9"
+  Color: "0.14, 0.9, 0.52"
   Unfriendly: true
   ClaimTerritory: true
   Discovery: true
+  AttackNPC: true
 }
 
 { Faction Id: 41, Name: "Lux"
   Abbrev: Lux
-  Color: "0.9, 0.9, 0.9"
+  Color: "0.9, 0.9, 0.8"
   Unfriendly: true
   ClaimTerritory: true
   Discovery: true
+  AttackNPC: true
 }
 
 { Faction Id: 42, Name: "Nox"
   Abbrev: Nox
-  Color: "0.1, 0.1, 0.1"
+  Color: "0.3, 0.1, 0.3"
   Unfriendly: true
   ClaimTerritory: true
   Discovery: true
+  AttackNPC: true
 }
 
-{ Faction Id: 43, Name: "Chaos"
-  Abbrev: Chaos
+{ Faction Id: 43, Name: "Strangelet"
+  Abbrev: Strangelet
   Color: "0.9, 0.1, 0.9"
+  Unfriendly: true
+  ClaimTerritory: true
+  Discovery: true
+  AttackNPC: true
+}
+
+{ Faction Id: 44, Name: "Chaos"
+  Abbrev: Chaos
+  Color: "0.95, 0.15, 0.6"
   Unfriendly: true
   ClaimTerritory: true
   Discovery: true
