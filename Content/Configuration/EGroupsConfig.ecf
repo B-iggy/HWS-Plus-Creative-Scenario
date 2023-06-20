@@ -1,15 +1,1666 @@
 
 
-# Note: Creature's _factions_ are set in the EClassConfig!
+# Note: If NO 'Faction:' parameter is set for a group, it will default to Alien OR to the default faction that is set in the EClassConfig.ecf!
 # =======================
 
+#===============================================================
+#== Faction Entity Patrols for Faction territories
+#===============================================================
+
+# ===============================================================
+# ZIRAX EMPIRE
+#
+# - [Troops] -
+# ZiraxMinigun, (ZiraxLaser), ZiraxShotgun, ZiraxRocket, ZiraxSniper, ZiraxCommander
+# - [Mechanoids] -
+# AssaultMech (large mech!), Mechanoid, (TurretRobotV2)
+# - [Pets/Wardogs] -
+# RipperDog, RipperDogWhite
+# - [Civilians] -
+# ZiraxCivilianMaleBlue, ZiraxCivilianFemaleBlue
+# ===============================================================
+{ EGroup Name: ZiraxShotgunPatrolEasy
+  Faction: Zirax
+  ZiraxShotgun: "1, 2"
+}
+{ EGroup Name: ZiraxShotgunPatrol
+  Faction: Zirax
+  ZiraxShotgun: "2, 4"
+}
+{ EGroup Name: ZiraxMinigunPatrolEasy
+  Faction: Zirax
+  ZiraxMinigun: "1, 2"
+}
+{ EGroup Name: ZiraxMinigunPatrol
+  Faction: Zirax
+  ZiraxMinigun: "2, 4"
+}
+
+{ EGroup Name: ZiraxLaserPatrolEasy
+  Faction: Zirax
+  ZiraxLaser: "1, 2"
+}
+
+{ EGroup Name: ZiraxLaserPatrol
+  Faction: Zirax
+  ZiraxLaser: "2, 4"
+}
+{ EGroup Name: ZiraxRocketPatrolEasy
+  Faction: Zirax
+  ZiraxRocket: "1, 2"
+}
+
+{ EGroup Name: ZiraxRocketPatrol
+  Faction: Zirax
+  ZiraxRocket: "2, 4"
+}
+
+{ EGroup Name: ZiraxRipperDogPatrolEasy
+  Faction: Zirax
+  ZiraxCommander: "1, 1"
+  RipperDog: "1, 2"
+}
+{ EGroup Name: ZiraxRipperDogPatrol
+  Faction: Zirax
+  ZiraxCommander: "1, 1"
+  RipperDog: "2, 4"
+}
+{ EGroup Name: ZiraxMechanoidPatrolEasy
+  Faction: Zirax
+  Mechanoid: "1, 2"
+}
+{ EGroup Name: ZiraxMechanoidPatrol
+  Faction: Zirax
+  Mechanoid: "2, 4"
+}
+{ EGroup Name: ZiraxAssaultMechPatrolEasy
+  Faction: Zirax
+  Mechanoid: "1, 2"
+  AssaultMech: "1, 1"
+}
+{ EGroup Name: ZiraxAssaultMechPatrol
+  Faction: Zirax
+  Mechanoid: "2, 4"
+  AssaultMech: "1, 1"
+}
+
+{ EGroup Name: ZiraxBattleGroupAEasy
+  Faction: Zirax
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxMinigun: "1, 2"
+  ZiraxRocket: "1, 1"
+  RipperDog: "1, 2"
+}
+{ EGroup Name: ZiraxBattleGroupA
+  Faction: Zirax
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxMinigun: "2, 4"
+  ZiraxRocket: "2, 4"
+  RipperDog: "2, 4"
+}
+{ EGroup Name: ZiraxBattleGroupBEasy
+  Faction: Zirax
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxLaser: "1, 1"
+  Mechanoid: "1, 1"
+  AssaultMech: "1, 1"
+}
+{ EGroup Name: ZiraxBattleGroupB
+  Faction: Zirax
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxLaser: "2, 4"
+  Mechanoid: "2, 3"
+  AssaultMech: "1, 1"
+}
+# Obsolete - keep for old playfield.yaml
+{ EGroup Name: ZiraxOverseerPatrol
+ # Faction: Zirax
+  ZiraxLaser: "1, 1"
+  RipperDog: "3, 5"
+  # OverseerGroup: "3, 5"
+}
+# Obsolete - keep for old playfield.yaml
+{ EGroup Name: ZiraxCrawlerPatrol
+  #Faction: Zirax
+  ZiraxLaser: "1, 1"
+  RipperDog: "3, 5"
+  # CrawlerGroup: "3, 5"
+}
 
 
+# ===============================================================
+# ZIRAX EMPIRE: House of XENU
+#
+# Color: red
+# Profession: Rockets (Brute Force)
+#
+# - [Troops] -
+# ZiraxMinigun, ZiraxLaser, ZiraxShotgun, ZiraxRocket, ZiraxSniper, ZiraxCommander
+# - [Mechanoids] -
+# AssaultMech (large mech!), Mechanoid, TurretRobotV2
+# - [Pets/Wardogs] -
+# RipperDog
+# - [Civilians] -
+# ZiraxCivilianMaleBlue, ZiraxCivilianFemaleBlue
+# ===============================================================
+{ EGroup Name: XenuShotgunPatrolEasy
+  Faction: Xenu
+  ZiraxShotgun: "1, 2"
+}
+{ EGroup Name: XenuShotgunPatrol
+  Faction: Xenu
+  ZiraxShotgun: "2, 4"
+}
+{ EGroup Name: XenuMinigunPatrolEasy
+  Faction: Xenu
+  ZiraxMinigun: "1, 2"
+}
+{ EGroup Name: XenuMinigunPatrol
+  Faction: Xenu
+  ZiraxMinigun: "2, 4"
+}
+
+{ EGroup Name: XenuLaserPatrolEasy
+  Faction: Xenu
+  ZiraxLaser: "1, 2"
+}
+
+{ EGroup Name: XenuLaserPatrol
+  Faction: Xenu
+  ZiraxLaser: "2, 4"
+}
+{ EGroup Name: XenuRocketPatrolEasy
+  Faction: Xenu
+  ZiraxRocket: "1, 2"
+}
+
+{ EGroup Name: XenuRocketPatrol
+  Faction: Xenu
+  ZiraxRocket: "2, 4"
+}
+
+{ EGroup Name: XenuRipperDogPatrolEasy
+  Faction: Xenu
+  ZiraxCommander: "1, 1"
+  RipperDog: "1, 2"
+}
+{ EGroup Name: XenuRipperDogPatrol
+  Faction: Xenu
+  ZiraxCommander: "1, 1"
+  RipperDog: "2, 4"
+}
+{ EGroup Name: XenuMechanoidPatrolEasy
+  Faction: Xenu
+  Mechanoid: "1, 2"
+}
+{ EGroup Name: XenuMechanoidPatrol
+  Faction: Xenu
+  Mechanoid: "2, 4"
+}
+{ EGroup Name: XenuAssaultMechPatrolEasy
+  Faction: Xenu
+  Mechanoid: "1, 2"
+  AssaultMech: "1, 1"
+}
+{ EGroup Name: XenuAssaultMechPatrol
+  Faction: Xenu
+  Mechanoid: "2, 4"
+  AssaultMech: "1, 1"
+}
+
+{ EGroup Name: XenuBattleGroupAEasy
+  Faction: Xenu
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxMinigun: "1, 2"
+  ZiraxRocket: "1, 1"
+  RipperDog: "1, 2"
+}
+{ EGroup Name: XenuBattleGroupA
+  Faction: Xenu
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxMinigun: "2, 4"
+  ZiraxRocket: "2, 4"
+  RipperDog: "2, 4"
+}
+{ EGroup Name: XenuBattleGroupBEasy
+  Faction: Xenu
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxLaser: "1, 1"
+  Mechanoid: "1, 1"
+  AssaultMech: "1, 1"
+}
+{ EGroup Name: XenuBattleGroupB
+  Faction: Xenu
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxLaser: "2, 4"
+  Mechanoid: "2, 3"
+  AssaultMech: "1, 1"
+}
+# Obsolete - keep for old playfield.yaml
+{ EGroup Name: XenuOverseerPatrol
+ # Faction: Xenu
+  ZiraxLaser: "1, 1"
+  RipperDog: "3, 5"
+  # OverseerGroup: "3, 5"
+}
+# Obsolete - keep for old playfield.yaml
+{ EGroup Name: XenuCrawlerPatrol
+  #Faction: Xenu
+  ZiraxLaser: "1, 1"
+  RipperDog: "3, 5"
+  # CrawlerGroup: "3, 5"
+}
+# ===============================================================
+# ZIRAX EMPIRE: House of GHYST
+#
+# Color: dark blue with bright blue (highlights)
+# Profession: Sniper  (Assassin)
+#
+# - [Troops] -
+# ZiraxMinigun, ZiraxLaser, ZiraxShotgun, ZiraxRocket, ZiraxSniper, ZiraxCommander
+# - [Mechanoids] -
+# AssaultMech (large mech!), Mechanoid, TurretRobotV2
+# - [Pets/Wardogs] -
+# RipperDog
+# - [Civilians] -
+# ZiraxCivilianMaleBlue, ZiraxCivilianFemaleBlue
+# ===============================================================
+{ EGroup Name: GhystShotgunPatrolEasy
+  Faction: Ghyst
+  ZiraxShotgun: "1, 2"
+}
+{ EGroup Name: GhystShotgunPatrol
+  Faction: Ghyst
+  ZiraxShotgun: "2, 4"
+}
+{ EGroup Name: GhystMinigunPatrolEasy
+  Faction: Ghyst
+  ZiraxMinigun: "1, 2"
+}
+{ EGroup Name: GhystMinigunPatrol
+  Faction: Ghyst
+  ZiraxMinigun: "2, 4"
+}
+
+{ EGroup Name: GhystLaserPatrolEasy
+  Faction: Ghyst
+  ZiraxLaser: "1, 2"
+}
+
+{ EGroup Name: GhystLaserPatrol
+  Faction: Ghyst
+  ZiraxLaser: "2, 4"
+}
+{ EGroup Name: GhystRocketPatrolEasy
+  Faction: Ghyst
+  ZiraxRocket: "1, 2"
+}
+
+{ EGroup Name: GhystRocketPatrol
+  Faction: Ghyst
+  ZiraxRocket: "2, 4"
+}
+
+{ EGroup Name: GhystRipperDogPatrolEasy
+  Faction: Ghyst
+  ZiraxCommander: "1, 1"
+  RipperDog: "1, 2"
+}
+{ EGroup Name: GhystRipperDogPatrol
+  Faction: Ghyst
+  ZiraxCommander: "1, 1"
+  RipperDog: "2, 4"
+}
+{ EGroup Name: GhystMechanoidPatrolEasy
+  Faction: Ghyst
+  Mechanoid: "1, 2"
+}
+{ EGroup Name: GhystMechanoidPatrol
+  Faction: Ghyst
+  Mechanoid: "2, 4"
+}
+{ EGroup Name: GhystAssaultMechPatrolEasy
+  Faction: Ghyst
+  Mechanoid: "1, 2"
+  AssaultMech: "1, 1"
+}
+{ EGroup Name: GhystAssaultMechPatrol
+  Faction: Ghyst
+  Mechanoid: "2, 4"
+  AssaultMech: "1, 1"
+}
+
+{ EGroup Name: GhystBattleGroupAEasy
+  Faction: Ghyst
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxMinigun: "1, 2"
+  ZiraxRocket: "1, 1"
+  RipperDog: "1, 2"
+}
+{ EGroup Name: GhystBattleGroupA
+  Faction: Ghyst
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxMinigun: "2, 4"
+  ZiraxRocket: "2, 4"
+  RipperDog: "2, 4"
+}
+{ EGroup Name: GhystBattleGroupBEasy
+  Faction: Ghyst
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxLaser: "1, 1"
+  Mechanoid: "1, 1"
+  AssaultMech: "1, 1"
+}
+{ EGroup Name: GhystBattleGroupB
+  Faction: Ghyst
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxLaser: "2, 4"
+  Mechanoid: "2, 3"
+  AssaultMech: "1, 1"
+}
+# ===============================================================
+# ZIRAX EMPIRE: House of EPSILON
+#
+# Color: green with yellow highlights
+# Profession: Assault  (Communication)
+#
+# - [Troops] -
+# ZiraxMinigun, ZiraxLaser, ZiraxShotgun, ZiraxRocket, ZiraxSniper, ZiraxCommander
+# - [Mechanoids] -
+# AssaultMech (large mech!), Mechanoid, TurretRobotV2
+# - [Pets/Wardogs] -
+# RipperDog
+# - [Civilians] -
+# ZiraxCivilianMaleBlue, ZiraxCivilianFemaleBlue
+# ===============================================================
+{ EGroup Name: EpsilonShotgunPatrolEasy
+  Faction: Epsilon
+  ZiraxShotgun: "1, 2"
+}
+{ EGroup Name: EpsilonShotgunPatrol
+  Faction: Epsilon
+  ZiraxShotgun: "2, 4"
+}
+{ EGroup Name: EpsilonMinigunPatrolEasy
+  Faction: Epsilon
+  ZiraxMinigun: "1, 2"
+}
+{ EGroup Name: EpsilonMinigunPatrol
+  Faction: Epsilon
+  ZiraxMinigun: "2, 4"
+}
+
+{ EGroup Name: EpsilonLaserPatrolEasy
+  Faction: Epsilon
+  ZiraxLaser: "1, 2"
+}
+
+{ EGroup Name: EpsilonLaserPatrol
+  Faction: Epsilon
+  ZiraxLaser: "2, 4"
+}
+{ EGroup Name: EpsilonRocketPatrolEasy
+  Faction: Epsilon
+  ZiraxRocket: "1, 2"
+}
+
+{ EGroup Name: EpsilonRocketPatrol
+  Faction: Epsilon
+  ZiraxRocket: "2, 4"
+}
+
+{ EGroup Name: EpsilonRipperDogPatrolEasy
+  Faction: Epsilon
+  ZiraxCommander: "1, 1"
+  RipperDog: "1, 2"
+}
+{ EGroup Name: EpsilonRipperDogPatrol
+  Faction: Epsilon
+  ZiraxCommander: "1, 1"
+  RipperDog: "2, 4"
+}
+{ EGroup Name: EpsilonMechanoidPatrolEasy
+  Faction: Epsilon
+  Mechanoid: "1, 2"
+}
+{ EGroup Name: EpsilonMechanoidPatrol
+  Faction: Epsilon
+  Mechanoid: "2, 4"
+}
+{ EGroup Name: EpsilonAssaultMechPatrolEasy
+  Faction: Epsilon
+  Mechanoid: "1, 2"
+  AssaultMech: "1, 1"
+}
+{ EGroup Name: EpsilonAssaultMechPatrol
+  Faction: Epsilon
+  Mechanoid: "2, 4"
+  AssaultMech: "1, 1"
+}
+
+{ EGroup Name: EpsilonBattleGroupAEasy
+  Faction: Epsilon
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxMinigun: "1, 2"
+  ZiraxRocket: "1, 1"
+  RipperDog: "1, 2"
+}
+{ EGroup Name: EpsilonBattleGroupA
+  Faction: Epsilon
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxMinigun: "2, 4"
+  ZiraxRocket: "2, 4"
+  RipperDog: "2, 4"
+}
+{ EGroup Name: EpsilonBattleGroupBEasy
+  Faction: Epsilon
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxLaser: "1, 1"
+  Mechanoid: "1, 1"
+  AssaultMech: "1, 1"
+}
+{ EGroup Name: EpsilonBattleGroupB
+  Faction: Epsilon
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxLaser: "2, 4"
+  Mechanoid: "2, 3"
+  AssaultMech: "1, 1"
+}
+
+# ===============================================================
+# ZIRAX EMPIRE: House of ABYSSAL
+#
+# Color: dark grey/cyan highlights
+# Profession: Laser or Plasma Launcher(Research)
+#
+# - [Troops] -
+# ZiraxMinigun, ZiraxLaser, ZiraxShotgun, ZiraxRocket, ZiraxSniper, ZiraxCommander
+# - [Mechanoids] -
+# AssaultMech (large mech!), Mechanoid, TurretRobotV2
+# - [Pets/Wardogs] -
+# RipperDogWhite
+# - [Civilians] -
+# ZiraxCivilianMaleBlue, ZiraxCivilianFemaleBlue
+# ===============================================================
+{ EGroup Name: AbyssalShotgunPatrolEasy
+  Faction: Abyssal
+  ZiraxShotgun: "1, 2"
+}
+{ EGroup Name: AbyssalShotgunPatrol
+  Faction: Abyssal
+  ZiraxShotgun: "2, 4"
+}
+{ EGroup Name: AbyssalMinigunPatrolEasy
+  Faction: Abyssal
+  ZiraxMinigun: "1, 2"
+}
+{ EGroup Name: AbyssalMinigunPatrol
+  Faction: Abyssal
+  ZiraxMinigun: "2, 4"
+}
+
+{ EGroup Name: AbyssalLaserPatrolEasy
+  Faction: Abyssal
+  ZiraxLaser: "1, 2"
+}
+
+{ EGroup Name: AbyssalLaserPatrol
+  Faction: Abyssal
+  ZiraxLaser: "2, 4"
+}
+{ EGroup Name: AbyssalRocketPatrolEasy
+  Faction: Abyssal
+  ZiraxRocket: "1, 2"
+}
+
+{ EGroup Name: AbyssalRocketPatrol
+  Faction: Abyssal
+  ZiraxRocket: "2, 4"
+}
+
+{ EGroup Name: AbyssalRipperDogPatrolEasy
+  Faction: Abyssal
+  ZiraxCommander: "1, 1"
+  RipperDogWhite: "1, 2"
+}
+{ EGroup Name: AbyssalRipperDogPatrol
+  Faction: Abyssal
+  ZiraxCommander: "1, 1"
+  RipperDogWhite: "2, 4"
+}
+{ EGroup Name: AbyssalMechanoidPatrolEasy
+  Faction: Abyssal
+  Mechanoid: "1, 2"
+}
+{ EGroup Name: AbyssalMechanoidPatrol
+  Faction: Abyssal
+  Mechanoid: "2, 4"
+}
+{ EGroup Name: AbyssalAssaultMechPatrolEasy
+  Faction: Abyssal
+  Mechanoid: "1, 2"
+  AssaultMech: "1, 1"
+}
+{ EGroup Name: AbyssalAssaultMechPatrol
+  Faction: Abyssal
+  Mechanoid: "2, 4"
+  AssaultMech: "1, 1"
+}
+
+{ EGroup Name: AbyssalBattleGroupAEasy
+  Faction: Abyssal
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxMinigun: "1, 2"
+  ZiraxRocket: "1, 1"
+  RipperDogWhite: "1, 2"
+}
+{ EGroup Name: AbyssalBattleGroupA
+  Faction: Abyssal
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxMinigun: "2, 4"
+  ZiraxRocket: "2, 4"
+  RipperDogWhite: "2, 4"
+}
+{ EGroup Name: AbyssalBattleGroupBEasy
+  Faction: Abyssal
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxLaser: "1, 1"
+  Mechanoid: "1, 1"
+  AssaultMech: "1, 1"
+}
+{ EGroup Name: AbyssalBattleGroupB
+  Faction: Abyssal
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxLaser: "2, 4"
+  Mechanoid: "2, 3"
+  AssaultMech: "1, 1"
+}
+
+# ===============================================================
+# ZIRAX EMPIRE: House of RADOS
+#
+# Color: bright grey/cyan
+# Profession: Plasma Rifle (Supplies)
+#
+# - [Troops] -
+# ZiraxMinigun, ZiraxLaser, ZiraxShotgun, ZiraxRocket, ZiraxSniper, ZiraxCommander
+# - [Mechanoids] -
+# AssaultMech (large mech!), Mechanoid, TurretRobotV2
+# - [Pets/Wardogs] -
+# RipperDog
+# - [Civilians] -
+# ZiraxCivilianMaleBlue, ZiraxCivilianFemaleBlue
+# ===============================================================
+
+{ EGroup Name: RadosShotgunPatrolEasy
+  Faction: Rados
+  ZiraxShotgun: "1, 2"
+}
+{ EGroup Name: RadosShotgunPatrol
+  Faction: Rados
+  ZiraxShotgun: "2, 4"
+}
+{ EGroup Name: RadosMinigunPatrolEasy
+  Faction: Rados
+  ZiraxMinigun: "1, 2"
+}
+{ EGroup Name: RadosMinigunPatrol
+  Faction: Rados
+  ZiraxMinigun: "2, 4"
+}
+
+{ EGroup Name: RadosLaserPatrolEasy
+  Faction: Rados
+  ZiraxLaser: "1, 2"
+}
+
+{ EGroup Name: RadosLaserPatrol
+  Faction: Rados
+  ZiraxLaser: "2, 4"
+}
+{ EGroup Name: RadosRocketPatrolEasy
+  Faction: Rados
+  ZiraxRocket: "1, 2"
+}
+
+{ EGroup Name: RadosRocketPatrol
+  Faction: Rados
+  ZiraxRocket: "2, 4"
+}
+
+{ EGroup Name: RadosRipperDogPatrolEasy
+  Faction: Rados
+  ZiraxCommander: "1, 1"
+  RipperDog: "1, 2"
+}
+{ EGroup Name: RadosRipperDogPatrol
+  Faction: Rados
+  ZiraxCommander: "1, 1"
+  RipperDog: "2, 4"
+}
+{ EGroup Name: RadosMechanoidPatrolEasy
+  Faction: Rados
+  Mechanoid: "1, 2"
+}
+{ EGroup Name: RadosMechanoidPatrol
+  Faction: Rados
+  Mechanoid: "2, 4"
+}
+{ EGroup Name: RadosAssaultMechPatrolEasy
+  Faction: Rados
+  Mechanoid: "1, 2"
+  AssaultMech: "1, 1"
+}
+{ EGroup Name: RadosAssaultMechPatrol
+  Faction: Rados
+  Mechanoid: "2, 4"
+  AssaultMech: "1, 1"
+}
+
+{ EGroup Name: RadosBattleGroupAEasy
+  Faction: Rados
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxMinigun: "1, 2"
+  ZiraxRocket: "1, 1"
+  RipperDog: "1, 2"
+}
+{ EGroup Name: RadosBattleGroupA
+  Faction: Rados
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxMinigun: "2, 4"
+  ZiraxRocket: "2, 4"
+  RipperDog: "2, 4"
+}
+{ EGroup Name: RadosBattleGroupBEasy
+  Faction: Rados
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxLaser: "1, 1"
+  Mechanoid: "1, 1"
+  AssaultMech: "1, 1"
+}
+{ EGroup Name: RadosBattleGroupB
+  Faction: Rados
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxLaser: "2, 4"
+  Mechanoid: "2, 3"
+  AssaultMech: "1, 1"
+}
+
+# ===============================================================
+# ZIRAX EMPIRE: House of SERDU
+#
+# Color: purple
+# Profession: Shotgun (Supplies)
+#
+# - [Troops] -
+# ZiraxMinigun, ZiraxLaser, ZiraxShotgun, ZiraxRocket, ZiraxSniper, ZiraxCommander
+# - [Mechanoids] -
+# AssaultMech (large mech!), Mechanoid, TurretRobotV2
+# - [Pets/Wardogs] -
+# RipperDog
+# - [Civilians] -
+# ZiraxCivilianMaleBlue, ZiraxCivilianFemaleBlue
+# ===============================================================
+
+{ EGroup Name: SerduShotgunPatrolEasy
+  Faction: Serdu
+  ZiraxShotgun: "1, 2"
+}
+{ EGroup Name: SerduShotgunPatrol
+  Faction: Serdu
+  ZiraxShotgun: "2, 4"
+}
+{ EGroup Name: SerduMinigunPatrolEasy
+  Faction: Serdu
+  ZiraxMinigun: "1, 2"
+}
+{ EGroup Name: SerduMinigunPatrol
+  Faction: Serdu
+  ZiraxMinigun: "2, 4"
+}
+
+{ EGroup Name: SerduLaserPatrolEasy
+  Faction: Serdu
+  ZiraxLaser: "1, 2"
+}
+
+{ EGroup Name: SerduLaserPatrol
+  Faction: Serdu
+  ZiraxLaser: "2, 4"
+}
+{ EGroup Name: SerduRocketPatrolEasy
+  Faction: Serdu
+  ZiraxRocket: "1, 2"
+}
+
+{ EGroup Name: SerduRocketPatrol
+  Faction: Serdu
+  ZiraxRocket: "2, 4"
+}
+
+{ EGroup Name: SerduRipperDogPatrolEasy
+  Faction: Serdu
+  ZiraxCommander: "1, 1"
+  RipperDog: "1, 2"
+}
+{ EGroup Name: SerduRipperDogPatrol
+  Faction: Serdu
+  ZiraxCommander: "1, 1"
+  RipperDog: "2, 4"
+}
+{ EGroup Name: SerduMechanoidPatrolEasy
+  Faction: Serdu
+  Mechanoid: "1, 2"
+}
+{ EGroup Name: SerduMechanoidPatrol
+  Faction: Serdu
+  Mechanoid: "2, 4"
+}
+{ EGroup Name: SerduAssaultMechPatrolEasy
+  Faction: Serdu
+  Mechanoid: "1, 2"
+  AssaultMech: "1, 1"
+}
+{ EGroup Name: SerduAssaultMechPatrol
+  Faction: Serdu
+  Mechanoid: "2, 4"
+  AssaultMech: "1, 1"
+}
+
+{ EGroup Name: SerduBattleGroupAEasy
+  Faction: Serdu
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxMinigun: "1, 2"
+  ZiraxRocket: "1, 1"
+  RipperDog: "1, 2"
+}
+{ EGroup Name: SerduBattleGroupA
+  Faction: Serdu
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxMinigun: "2, 4"
+  ZiraxRocket: "2, 4"
+  RipperDog: "2, 4"
+}
+{ EGroup Name: SerduBattleGroupBEasy
+  Faction: Serdu
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxLaser: "1, 1"
+  Mechanoid: "1, 1"
+  AssaultMech: "1, 1"
+}
+{ EGroup Name: SerduBattleGroupB
+  Faction: Serdu
+  ZiraxCommander: "1, 1"
+  ZiraxShotgun: "1, 2"
+  ZiraxLaser: "2, 4"
+  Mechanoid: "2, 3"
+  AssaultMech: "1, 1"
+}
+
+# ===============================================================
+# TALON
+#
+# - [Troops] -
+#   (TalonGuardianRed), TalonGuardianCrossbow (Range)
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+# Crawler
+# - [Civilians] -
+#  TalonGuardian, TalonGuardianBlue
+# ===============================================================
+{ EGroup Name: TalonGuardianPatrolSmall
+  Faction: Talon
+  TalonGuardianCrossbow: "1, 2"
+}
+{ EGroup Name: TalonGuardianCrawlerPatrol
+  Faction: Talon
+  TalonGuardianCrossbow: "1, 1"
+  Crawler: "2, 3"
+}
+{ EGroup Name: TalonGuardianPatrolMedium
+  Faction: Talon
+  TalonGuardianCrossbow: "2, 3" #Range
+  Crawler: "2, 3"               #Pet
+}
+{ EGroup Name: TalonGuardianPatrolLarge
+  Faction: Talon
+  TalonGuardianCrossbow: "4, 6"
+  Crawler: "2, 3"
+}
+{ EGroup Name: TalonGuardianBattleGroup
+  Faction: Talon
+  TalonGuardianCrossbow: "6, 8"
+  Crawler: "3, 4"
+}
+
+#--Old
+{ EGroup Name: TalonGuardianHerd
+  TalonGuardianGroup: "3, 4"
+  TalonGuardianCrossbowGroup: "1, 3"
+}
+{ EGroup Name: TalonGuardians
+  TalonGuardian: "1, 1"
+}
+# ===============================================================
+# TALON'AR
+#
+# - [Troops] -
+# TalonAdvancedGreen (Soldier), TalonAdvancedRed (CMD)
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+# RipperDogWhite
+# - [Civilians] -
+# TalonCivilianAdvancedGreen, TalonCivilianAdvancedRed
+# ===============================================================
+{ EGroup Name: TalonarPatrolSmall
+  Faction: Talon
+  TalonAdvancedGreen: "1, 2"
+}
+{ EGroup Name: TalonarDogPatrol
+  Faction: Talon
+  TalonAdvancedRed: "1, 1"
+  RipperDogWhite: "2, 3"
+}
+{ EGroup Name: TalonarPatrolMedium
+  Faction: Talon
+  TalonAdvancedRed: "1, 1"
+  TalonAdvancedGreen: "1, 2"
+  RipperDogWhite: "2, 3"
+}
+{ EGroup Name: TalonarPatrolLarge
+  Faction: Talon
+  TalonAdvancedRed: "1, 1"
+  TalonAdvancedGreen: "2, 3"
+  RipperDogWhite: "2, 3"
+}
+{ EGroup Name: TalonarBattleGroup
+  Faction: Talon
+  TalonAdvancedRed: "1, 1"
+  TalonAdvancedGreen: "4, 6"
+  RipperDogWhite: "3, 4"
+}
+# ===============================================================
+# UCH
+#
+# - [Troops] -
+# UCHSoldierFemale2AssaultRifle, UCHSoldierMale2Shotgun, UCHSoldierMaleAssaultRifle, UCHSoldierFemaleShotgun
+# - [Mechanoids] -
+# TurretRobotV2
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+# UCHCivilianFemale1, UCHCivilianFemale2, UCHPilotMale, UCHOfficerFemale, UCHTechnicianFemale, UCHOfficerMale, UCHTechnicianMale
+# ===============================================================
+
+{ EGroup Name: UCHPatrolSmall
+  Faction: UCH
+  UCHSoldierMaleAssaultRifle: "1, 2"
+}
+
+{ EGroup Name: UCHPatrolMedium
+  Faction: UCH
+  UCHSoldierFemale2AssaultRifle: "1, 1"    #Commander
+  UCHSoldierMaleAssaultRifle: "2, 3"
+}
+{ EGroup Name: UCHShotgunPatrolSmall
+  Faction: UCH
+  UCHSoldierFemaleShotgun: "1, 2"
+}
+{ EGroup Name: UCHShotgunPatrolMedium
+  Faction: UCH
+  UCHSoldierMale2Shotgun: "1, 1"
+  UCHSoldierFemaleShotgun: "2, 3"
+}
+{ EGroup Name: UCHRobotPatrolSmall
+  Faction: UCH
+  UCHSoldierFemaleShotgun: "1, 2"
+  TurretRobotV2: "1, 2"
+}
+{ EGroup Name: UCHRobotPatrolMedium
+  Faction: UCH
+  UCHSoldierMale2Shotgun: "1, 1"
+  TurretRobotV2: "2, 3"
+}
+
+{ EGroup Name: UCHMixedPatrolLarge
+  Faction: UCH
+  UCHSoldierFemale2AssaultRifle: "1, 1"
+  UCHSoldierMaleAssaultRifle: "1, 2"
+  UCHSoldierFemaleShotgun: "2, 3"
+}
+
+{ EGroup Name: UCHBattlegroupA
+  Faction: UCH
+  UCHSoldierFemale2AssaultRifle: "1, 1"
+  UCHSoldierMaleAssaultRifle: "2, 3"
+  UCHSoldierFemaleShotgun: "2, 3"
+  TurretRobotV2: "2, 3"
+}
+
+{ EGroup Name: UCHBattlegroupB
+  Faction: UCH
+  UCHSoldierMale2Shotgun: "1, 1"
+  UCHSoldierMaleAssaultRifle: "2, 3"
+  UCHSoldierFemaleShotgun: "2, 3"
+  TurretRobotV2: "2, 3"
+}
+# ===============================================================
+# GLaD
+#
+# - [Troops] -
+#
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+#
+# GLaD does only  have a few asteroids, thus no planetary bases or ownership, eg now EGroups.
+# GLaD can use ANY robot/mechanoids and entities from every 'humanoid' faction except Kriel (and other bug races) and Zirax and Legacy.
+#
+# ===============================================================
+# ARKENIAN REPUBLIC
+#
+# - [Troops] -
+# Soldier: SoldierHumanMaleShotgun, SoldierHumanMaleAssaultRifle
+# Elites:  SoldierHumanMale2Shotgun, SoldierHumanMale2AssaultRifle
+# - [Mechanoids] -
+# AssaultCyborg, AssaultCyborgCommando
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+# NOTE: All humanoid MODELS here shall be REPLACED.
+
+{ EGroup Name: ArkenianPatrolSmall
+  Faction: ArkenianRepublic
+  SoldierHumanMaleAssaultRifle: "1, 2"
+}
+
+{ EGroup Name: ArkenianPatrolMedium
+  Faction: ArkenianRepublic
+  SoldierHumanMale2AssaultRifle: "1, 1"    #Commander
+  SoldierHumanMaleAssaultRifle: "2, 3"
+}
+{ EGroup Name: ArkenianShotgunPatrolSmall
+  Faction: ArkenianRepublic
+  SoldierHumanMaleShotgun: "1, 2"
+}
+{ EGroup Name: ArkenianShotgunPatrolMedium
+  Faction: ArkenianRepublic
+  SoldierHumanMale2Shotgun: "1, 1"
+  SoldierHumanMaleShotgun: "2, 3"
+}
+{ EGroup Name: ArkenianCyborgPatrolSmall
+  Faction: ArkenianRepublic
+  AssaultCyborg: "1, 2"
+}
+{ EGroup Name: ArkenianCyborgPatrolMedium
+  Faction: ArkenianRepublic
+  AssaultCyborgCommando: "1, 1"
+  AssaultCyborg: "2, 3"
+}
+
+{ EGroup Name: ArkenianMixedPatrolLarge
+  Faction: ArkenianRepublic
+  SoldierHumanMale2AssaultRifle: "1, 1"
+  SoldierHumanMaleAssaultRifle: "1, 2"
+  SoldierHumanMaleShotgun: "2, 3"
+  AssaultCyborg: "1, 2"
+}
+
+{ EGroup Name: ArkenianBattlegroupA
+  Faction: ArkenianRepublic
+  SoldierHumanMale2AssaultRifle: "1, 1"
+  SoldierHumanMaleAssaultRifle: "2, 3"
+  SoldierHumanMaleShotgun: "2, 3"
+  AssaultCyborg: "2, 3"
+}
+
+{ EGroup Name: ArkenianBattlegroupB
+  Faction: ArkenianRepublic
+  SoldierHumanMale2Shotgun: "1, 1"
+  SoldierHumanMaleAssaultRifle: "2, 3"
+  SoldierHumanMaleShotgun: "2, 3"
+  AssaultCyborg: "2, 3"
+}
+{ EGroup Name: ArkenianBattlegroupC
+  Faction: ArkenianRepublic
+  AssaultCyborgCommando: "1, 1"
+  SoldierHumanMaleAssaultRifle: "2, 3"
+  SoldierHumanMaleShotgun: "2, 3"
+  AssaultCyborg: "2, 3"
+}
+# ===============================================================
+# POLARIS MEGACORP
+#
+# - [Troops] -
+#
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+#
+# Polaris Megacorp will only have one station and OPVs = no planetary owned structures.
+# All other POI and personell will be dedicated to the Arkenian Republic
+#
+# ===============================================================
+# PRENN FEDERATION
+#
+# - [Troops] -
+# SoldierAlienShotgun, SoldierAlienAssaultRifle
+# - [Mechanoids] -
+# AssaultCyborg, Mechanoid   (Prenn do NOT use the Arkenian AssaultCyborgCommando variant!)
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+# AlienCivilian1-x
+# ===============================================================
+{ EGroup Name: PrennPatrolSmall
+  Faction: PrennFederation
+  SoldierAlienAssaultRifle: "1, 2"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: PrennPatrolMedium
+  Faction: PrennFederation
+  SoldierAlienAssaultRifle: "2, 3"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: PrennShotgunPatrolSmall
+  Faction: PrennFederation
+  SoldierAlienShotgun: "1, 2"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: PrennShotgunPatrolMedium
+  Faction: PrennFederation
+  SoldierAlienShotgun: "2, 3"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: PrennRobotPatrolSmall
+  Faction: PrennFederation
+  AssaultCyborg: "1, 2"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: PrennRobotPatrolMedium
+  Faction: PrennFederation
+  AssaultCyborg: "1, 1"
+  Mechanoid: "1, 2"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: PrennMixedPatrol
+  Faction: PrennFederation
+  AssaultCyborg: "1, 1"
+  SoldierAlienShotgun: "2, 3"
+  Mechanoid: "1, 2"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: PrennBattlegroup
+  Faction: PrennFederation
+  SoldierAlienAssaultRifle: "2, 3"
+  SoldierAlienShotgun: "2, 3"
+  AssaultCyborg: "2, 3"
+  Mechanoid: "2, 3"
+  SpawnInSameDirection:true
+}
+
+#-- OLD (only for compatibility, do NOT uses anymore! )---
+{ EGroup Name: AssaultCyborgs
+  AssaultCyborgSentinel: "2, 2"
+  AlienCivilian1: "1, 1"
+  SpawnInSameDirection:true
+}
+
+{ EGroup Name: AssaultCyborgsCommandoHerd
+  AssaultCyborg: "2, 2"
+  AssaultCyborgCommando: "1, 1"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: AssaultCyborgsCommandoPatrol
+  AssaultCyborg: "3, 4"
+  AssaultCyborgCommando: "1,1"
+  SpawnInSameDirection:true
+}
+
+{ EGroup Name: AlienSoldierShotgunCommandoPatrol
+  AssaultCyborgCommando: "1, 1"
+  SoldierAlienShotgun: "3,4"
+  SpawnInSameDirection:true
+}
+
+{ EGroup Name: AlienSoldierRifleCommandoPatrol
+  SoldierAlienAssaultRifle: "3, 4"
+  AssaultCyborgCommando: "1,2"
+  SpawnInSameDirection:true
+}
+
+{ EGroup Name: AlienCivilians1
+  AlienCivilian1: "1, 1"
+}
+# ===============================================================
+# TRADERS GUILD
+#
+# - [Troops] -
+#
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+#
+# The Traders Guild will only have a representative station and no own properties on planets
+# The Traders Guild fully uses the units from the Prenn Federation.
+#
+# ===============================================================
+# KRIEL (SWARM)
+#
+# - [Troops] -
+# Hexapod (CMD), AlienAssassinGrey, AlienAssassinRed
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+{ EGroup Name: KrielPatrolSmall
+  Faction: Kriel
+  AlienAssassinGrey: "1, 2"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: KrielPatrolMedium
+  Faction: Kriel
+  AlienAssassinGrey: "2, 3"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: KrielPatrolLarge
+  Faction: Kriel
+  AlienAssassinRed: "1, 2"
+  AlienAssassinGrey: "3, 4"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: KrielBattlegroup
+  Faction: Kriel
+  Hexapod: "1, 2"
+  AlienAssassinRed: "2, 4"
+  AlienAssassinGrey: "4, 6"
+  SpawnInSameDirection:true
+}
+#--Old (only for compatibility, do NOT uses anymore! )--
+{ EGroup Name: Hexapods
+  Hexapod: "1, 1"
+}
+
+{ EGroup Name: AlienAssassinGreys
+  AlienAssassinGrey: "1, 1"
+}
+
+{ EGroup Name: AlienAssassinReds
+  AlienAssassinRed: "1, 1"
+}
 
 
-# ==================================================
+# ===============================================================
+# KARANA
+#
+# - [Troops] -
+#
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+#
+#  NOT YET ADDED (requires new NPC model)
+#
+# ===============================================================
+# TRESARI
+#
+# - [Troops] -
+#
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+#
+#  NOT YET ADDED (requires new NPC model)
+#
+# ===============================================================
+# PIRATE CLANS
+#
+# - [Troops] -
+# SoldierAlienAssaultRifle, SoldierAlienShotgun
+# - [Mechanoids] -
+# AssaultCyborgDamaged, Mechanoid
+# - [Pets/Wardogs] -
+# RipperDog
+# - [Civilians] -
+#
+# ===============================================================
+{ EGroup Name: PiratesPatrolSmall
+  Faction: Pirates
+  SoldierAlienAssaultRifle: "1, 2"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: PiratesShotgunPatrolSmall
+  Faction: Pirates
+  SoldierAlienShotgun: "1, 2"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: PiratesDogPatrolSmall
+  Faction: Pirates
+  SoldierAlienAssaultRifle: "1, 1"
+  RipperDog: "1, 2"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: PiratesDogPatrolMedium
+  Faction: Pirates
+  SoldierAlienAssaultRifle: "1, 2"
+  SoldierAlienShotgun: "1, 2"
+  RipperDog: "2, 3"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: PiratesRobotPatrolSmall
+  Faction: Pirates
+  AssaultCyborgDamaged: "1, 2"
+  Mechanoid: "1, 1"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: PiratesRobotPatrolMedium
+  Faction: Pirates
+  AssaultCyborgDamaged: "2, 3"
+  Mechanoid: "2, 3"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: PiratesMixedPatrol
+  Faction: Pirates
+  SoldierAlienAssaultRifle: "1, 2"
+  SoldierAlienShotgun: "1, 2"
+  SpawnInSameDirection:true
+}
+
+{ EGroup Name: PiratesBattlegroup
+  Faction: Pirates
+  SoldierAlienAssaultRifle: "2, 3"
+  SoldierAlienShotgun: "2, 3"
+  Mechanoid: "2, 3"
+  RipperDog: "2, 3"
+  SpawnInSameDirection:true
+}
+# ===============================================================
+# FREE COLONISTS
+#
+# - [Troops] -
+#
+# - [Mechanoids] -
+# AssaultCyborg, TurretRobotV2
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+{ EGroup Name: ColonistsPatrolSmall
+  Faction: Colonists
+  AssaultCyborg: "1, 2"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: ColonistsPatrolMedium
+  Faction: Colonists
+  AssaultCyborg: "1, 2"
+  TurretRobotV2: "1, 2"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: ColonistsPatrolLarge
+  Faction: Colonists
+  AssaultCyborg: "2, 3"
+  TurretRobotV2: "2, 3"
+  SpawnInSameDirection:true
+}
+
+
+# ===============================================================
+# BROTHERHOOD OF FARR
+#
+# - [Troops] -
+#
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+#
+#  Not yet defined
+#
+# ===============================================================
+# TESCH
+#
+# - [Troops] -
+#
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+#
+#  Not yet defined
+#
+# ===============================================================
+# WASTELANDERS
+#
+# - [Troops] -
+#
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+#
+#  Not yet defined
+#
+# ===============================================================
+# ARC
+#
+# - [Troops] -
+#
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+#
+#  Not yet defined
+#
+# ===============================================================
+# HELIOS
+#
+# - [Troops] -
+#
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+#
+#  Not yet defined
+#
+# ===============================================================
+# RAVAGERS
+#
+# - [Troops] -
+#
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+#
+#  Not yet defined
+#
+# ===============================================================
+# THE LEGACY
+#
+# - [Troops] -
+# Any *Infected, TotalHorror
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+# Creepy
+# - [Civilians] -
+#
+# ===============================================================
+
+{ EGroup Name: HexapodsInfected
+  Faction: TheLegacy
+  HexapodInfected: "1, 1"
+}
+
+{ EGroup Name: AlienAssassinGreysInfected
+  Faction: TheLegacy
+  AlienAssassinInfected: "1, 1"
+}
+
+{ EGroup Name: SoldierAliensInfected
+  Faction: TheLegacy
+  SoldierAlienInfected: "1, 1"
+}
+
+{ EGroup Name: TalonGuardiansCrossbowInfected
+  Faction: TheLegacy
+  TalonGuardianInfectedCrossbow: "1, 1"
+}
+
+{ EGroup Name: TalonGuardiansGreenInfected
+  Faction: TheLegacy
+  TalonGuardianInfectedGreen: "1, 1"
+}
+
+{ EGroup Name: TalonGuardiansBlueInfected
+  Faction: TheLegacy
+  TalonGuardianInfectedBlue: "1, 1"
+}
+
+{ EGroup Name: TalonGuardiansRedInfected
+  Faction: TheLegacy
+  TalonGuardianInfectedRed: "1, 1"
+}
+
+{ EGroup Name: SoldierHumanMalesInfected
+  Faction: TheLegacy
+  SoldierHumanMaleInfected: "1, 1"
+}
+
+{ EGroup Name: SoldierHumanMales2Infected
+  Faction: TheLegacy
+  SoldierHumanMale2Infected: "1, 1"
+}
+
+{ EGroup Name: ZiraxBluesInfected
+  Faction: TheLegacy
+  ZiraxInfectedBlue: "1, 1"
+}
+
+{ EGroup Name: ZiraxGreensInfected
+  Faction: TheLegacy
+  ZiraxInfectedGreen: "1, 1"
+}
+
+{ EGroup Name: ZiraxRedsInfected
+  Faction: TheLegacy
+  ZiraxInfectedRed: "1, 1"
+}
+
+{ EGroup Name: ZiraxYellowsInfected
+  Faction: TheLegacy
+  ZiraxInfectedYellow: "1, 1"
+}
+
+{ EGroup Name: ZiraxPurplesInfected
+  Faction: TheLegacy
+  ZiraxInfectedPurple: "1, 1"
+}
+
+{ EGroup Name: ZiraxCommandersInfected
+  Faction: TheLegacy
+  ZiraxInfectedCommander: "1, 1"
+}
+{ EGroup Name: HexapodsInfectedHerd
+  Faction: TheLegacy
+  HexapodInfected: "2, 3"
+}
+
+{ EGroup Name: AlienAssassinsInfectedHerd
+  Faction: TheLegacy
+  AlienAssassinInfected: "2, 3"
+}
+
+{ EGroup Name: HumanSoldiersInfectedHerd
+  Faction: TheLegacy
+  SoldierHumanMaleInfected: "1, 1"
+  SoldierHumanMale2Infected: "2, 3"
+}
+
+{ EGroup Name: ZiraxInfectedHerd
+  Faction: TheLegacy
+  ZiraxInfectedBlue: "2, 3"
+  ZiraxInfectedYellow: "1, 1"
+  TotalHorror: "1,2"
+  SpawnInSameDirection:true
+}
+
+# ===============================================================
+# N'TY
+# (Former "ArmoredGolem")
+# - [Troops] -
+#
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# USAGE NOTE: Can be spawned on Terrain and do NOT require a POI but shall ONLY be set on LAVA and LAVANASCENT playfields (and moons)
+# ===============================================================
+
+{ EGroup Name: Ntys
+  Faction: NTY
+  NTY: "1, 1"
+  SpawnInSameDirection:true
+}
+
+# ===============================================================
+# Hishkal
+#
+# - [Troops] -
+# GolemDesert, GolemIce, GolemSwamp
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# USAGE NOTE: Can be spawned on Terrain and do NOT require a POI
+# ===============================================================
+{ EGroup Name: GolemsDesert
+  Faction: Hishkal
+  GolemDesert: "1, 1"
+}
+
+{ EGroup Name: GolemsIce
+  Faction: Hishkal
+  GolemIce: "1, 1"
+}
+
+{ EGroup Name: GolemsSwamp
+  Faction: Hishkal
+  GolemSwamp: "1, 1"
+}
+
+# ===============================================================
+# WARLORD
+#
+# - [Troops] -
+#
+# - [Mechanoids] -
+#
+# - [Pets/Wardogs] -
+#
+# - [Civilians] -
+#
+# ===============================================================
+#
+#  not yet defined
+#
+# ===============================================================
+# ===============================================================
+# Note: The following DamagedCyborg groups are considered 'creatures' and can be used without faction reference to spice up certain playfields (eg. junkyards etc; They will default to ALIEN faction!
+# ===============================================================
+# ===============================================================
+
+{ EGroup Name: AssaultCyborgsDamagedHerd      /* Pirate Faction. */
+  AssaultCyborgDamaged: "2, 3"
+  SpawnInSameDirection:true
+}
+
+{ EGroup Name: AssaultCyborgsDamagedRandomHerd      /* Alien random faction */
+  AssaultCyborgDamagedRandom: "1, 3"
+  #DamagedCyborg: "1, 3"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: AssaultCyborgsDamagedRandomHerdMixed      /* Alien random faction */
+  AssaultCyborgDamagedRandom: "1, 2"
+  DamagedCyborg: "3, 4"
+  SpawnInSameDirection:true
+}
+{ EGroup Name: CyborgsDamagedHerd                     /* Civilian 'shoot me' */
+  DamagedCyborg: "1, 2"
+  SpawnInSameDirection:true
+}
+
+
+# ===============================================================
+# ===============================================================
+#
+# CREATURES
+# Use for 'CreatureSpawning:' entry in playfield_static.yaml
+#
+# ===============================================================
+#
+# =============
 # BATTLE GROUPS - Spawned as a group, interacting with each other as a team
-
+# =============
 # Behavioral AI ===
 
 { EGroup Name: Alien02_03_BattleGroup
@@ -25,10 +1676,9 @@
   SpawnInSameDirection:false
 }
 
-
-
-# ==================================================
-# HERDS
+# =============
+# Creature HERDS
+# =============
 
 # Behavioral AI ===
 { EGroup Name: Parasaurs
@@ -166,154 +1816,10 @@
 { EGroup Name: GlidingOverseers
   GlidingOverseer: "1, 1"
 }
-# ===============
 
-
-{ EGroup Name: ZiraxMinigunPatrol
-  ZiraxLaser: "1, 1"
-  ZiraxMinigun: "3, 4"
-}
-
-{ EGroup Name: ZiraxMinigunPatrolEasy
-  ZiraxMinigun: "4, 5"
-}
-
-{ EGroup Name: ZiraxRocketPatrol
-  ZiraxLaser: "1, 1"
-  ZiraxRocket: "3, 4"
-}
-
-{ EGroup Name: ZiraxRocketPatrolEasy
-  ZiraxMinigun: "1, 1"
-  ZiraxRocket: "3, 4"
-}
-
-{ EGroup Name: ZiraxShotgunPatrol
-  ZiraxLaser: "1, 1"
-  ZiraxShotgun: "3, 4"
-}
-
-{ EGroup Name: ZiraxShotgunPatrolEasy
-  ZiraxMinigun: "1, 1"
-  ZiraxShotgun: "3, 4"
-}
-
-
-{ EGroup Name: ZiraxMechanoidPatrol
-  ZiraxLaser: "1, 1"
-  Mechanoid: "3, 5"
-}
-
-{ EGroup Name: ZiraxRipperDogPatrol
-  ZiraxLaser: "1, 1"
-  RipperDog: "3, 5"
-}
-
-{ EGroup Name: ZiraxRipperDogPatrolEasy
-  ZiraxMinigun: "1, 1"
-  RipperDog: "3, 5"
-}
-
-# Obsolete - keep for old playfield.yaml
-{ EGroup Name: ZiraxOverseerPatrol
-  ZiraxLaser: "1, 1"
-  RipperDog: "3, 5"
-  # OverseerGroup: "3, 5"
-}
-
-{ EGroup Name: ZiraxCrawlerPatrol
-  ZiraxLaser: "1, 1"
-  RipperDog: "3, 5"
-  # CrawlerGroup: "3, 5"
-}
-
-# Polaris Patrols
-
-{ EGroup Name: AssaultCyborgsCommandoPatrol
-  AssaultCyborg: "3, 4"
-  AssaultCyborgCommando: "1,1"
-  SpawnInSameDirection:true
-}
-
-{ EGroup Name: AlienSoldierShotgunCommandoPatrol
-  AssaultCyborgCommando: "1, 1"
-  SoldierAlienShotgun: "3,4"
-  SpawnInSameDirection:true
-}
-
-{ EGroup Name: AlienSoldierRifleCommandoPatrol
-  SoldierAlienAssaultRifle: "3, 4"
-  AssaultCyborgCommando: "1,2"
-  SpawnInSameDirection:true
-}
-
-# Normal AI ===
-
-{ EGroup Name: AssaultCyborgs
-  AssaultCyborgSentinel: "2, 2"
-  AlienCivilian1: "1, 1"
-  SpawnInSameDirection:true
-}
-
-
-{ EGroup Name: TalonGuardianHerd              /* Talon faction */
-  TalonGuardianGroup: "3, 4"
-  TalonGuardianCrossbowGroup: "1, 3"
-}
-
-{ EGroup Name: AssaultCyborgsCommandoHerd     /* Polaris Faction. */
-  AssaultCyborg: "2, 2"
-  AssaultCyborgCommando: "1, 1"
-  SpawnInSameDirection:true
-}
-
-{ EGroup Name: AssaultCyborgsDamagedHerd      /* Pirate Faction. */
-  AssaultCyborgDamaged: "2, 3"
-  SpawnInSameDirection:true
-}
-
-{ EGroup Name: AssaultCyborgsDamagedRandomHerd      /* Alien random faction */
-  AssaultCyborgDamagedRandom: "1, 3"
-  #DamagedCyborg: "1, 3"
-  SpawnInSameDirection:true
-}
-{ EGroup Name: AssaultCyborgsDamagedRandomHerdMixed      /* Alien random faction */
-  AssaultCyborgDamagedRandom: "1, 2"
-  DamagedCyborg: "3, 4"
-  SpawnInSameDirection:true
-}
-{ EGroup Name: CyborgsDamagedHerd                     /* Civilian 'shoot me' */
-  DamagedCyborg: "1, 2"
-  SpawnInSameDirection:true
-}
-{ EGroup Name: HexapodsInfectedHerd           /* 'TheLegacy' faction. - Aggressive. */
-  HexapodInfected: "2, 3"
-}
-
-{ EGroup Name: AlienAssassinsInfectedHerd     /* 'TheLegacy' faction. - Aggressive. */
-  AlienAssassinInfected: "2, 3"
-}
-
-
-{ EGroup Name: HumanSoldiersInfectedHerd      /* 'TheLegacy' faction. - Aggressive. */
-  SoldierHumanMaleInfected: "1, 1"
-  SoldierHumanMale2Infected: "2, 3"
-}
-
-{ EGroup Name: ZiraxInfectedHerd              /* 'TheLegacy' faction. - Aggressive. */
-  ZiraxInfectedBlue: "2, 3"
-  ZiraxInfectedYellow: "1, 1"
-  TotalHorror: "1,2"
-  SpawnInSameDirection:true
-}
-
-
-
-
-
-
-# ==================================================
+# =============
 # Individual behavior but spawned as a group
+# =============
 
 
 # Behavioral AI
@@ -328,21 +1834,14 @@
   SpawnInSameDirection:false
 }
 
-
 { EGroup Name: LizardMules
   LizardMule: "1, 3"
   LizardMuleBaby: "2, 5"
 }
 
-# Normal AI
-
-
-
-
-# ==================================================
+# =============
 # (Mostly) INDIVIDUALS
-
-
+# =============
 
 # Behavioral AI ===
 
@@ -366,8 +1865,6 @@
   AlienBug03: "1, 1"
 }
 
-
-
 # Normal AI ===
 
 { EGroup Name: Megalonopses
@@ -390,18 +1887,6 @@
   RaptorNight: "2, 4"
 }
 
-{ EGroup Name: GolemsDesert
-  GolemDesert: "1, 1"
-}
-
-{ EGroup Name: GolemsIce
-  GolemIce: "1, 1"
-}
-
-{ EGroup Name: GolemsSwamp
-  GolemSwamp: "1, 1"
-}
-
 { EGroup Name: WoodWalkers
   WoodWalker: "1, 1"
 }
@@ -414,13 +1899,17 @@
   WormDesertLarge: "1, 1"
 }
 
-{ EGroup Name: RipperDogs
-  RipperDog: "1, 2"
-}
+#{ EGroup Name: RipperDogs      #Reserved for Zirax
+ # RipperDog: "1, 2"
+#}
 { EGroup Name: RipperDogsWildGroup
   RipperDogWild: "3, 4"
+  Faction: Predator
 }
-
+{ EGroup Name: RipperDogsWhiteGroup
+  RipperDogWhite: "3, 4"
+  Faction: Predator
+}
 { EGroup Name: Otyughs
   Otyugh: "1, 1"
 }
@@ -464,9 +1953,13 @@
 { EGroup Name: AlienBugs01
   AlienBug01V2: "1, 1"
 }
-
 { EGroup Name: AlienBugs02
   AlienBug02: "1, 1"
+}
+{ EGroup Name: AlienBugs02Group
+  AlienBug02: "1, 1"
+  AlienBug02Small: "1, 2"
+  AlienBug02Baby: "1, 4"
 }
 
 { EGroup Name: AlienBugs04
@@ -481,105 +1974,6 @@
   Spider03: "1, 1"
 }
 
-
-
-
-{ EGroup Name: AlienCivilians1
-  AlienCivilian1: "1, 1"
-}
-
-
-
-{ EGroup Name: Hexapods               /* Kriel Faction */
-  Hexapod: "1, 1"
-}
-
-{ EGroup Name: AlienAssassinGreys     /* Kriel Faction */
-  AlienAssassinGrey: "1, 1"
-}
-
-{ EGroup Name: AlienAssassinReds      /* Kriel Faction */
-  AlienAssassinRed: "1, 1"
-}
-
-
-
-{ EGroup Name: TalonGuardians         /* Talon Faction */
-  TalonGuardian: "1, 1"
-}
-
-{ EGroup Name: Crawlers               /* Talon Faction */
+{ EGroup Name: Crawlers
   Crawler: "1, 1"
 }
-
-
-
-{ EGroup Name: HexapodsInfected                      /* 'TheLegacy' faction. - Aggressive. */
-  HexapodInfected: "1, 1"
-}
-
-{ EGroup Name: AlienAssassinGreysInfected            /* 'TheLegacy' faction. - Aggressive. */
-  AlienAssassinInfected: "1, 1"
-}
-
-
-
-{ EGroup Name: SoldierAliensInfected           /* 'TheLegacy' faction. - Aggressive. */
-  SoldierAlienInfected: "1, 1"
-}
-
-
-
-{ EGroup Name: TalonGuardiansCrossbowInfected     /* 'TheLegacy' faction. - Aggressive. */
-  TalonGuardianInfectedCrossbow: "1, 1"
-}
-
-{ EGroup Name: TalonGuardiansGreenInfected        /* 'TheLegacy' faction. - Aggressive. */
-  TalonGuardianInfectedGreen: "1, 1"
-}
-
-{ EGroup Name: TalonGuardiansBlueInfected         /* 'TheLegacy' faction. - Aggressive. */
-  TalonGuardianInfectedBlue: "1, 1"
-}
-
-{ EGroup Name: TalonGuardiansRedInfected          /* 'TheLegacy' faction. - Aggressive. */
-  TalonGuardianInfectedRed: "1, 1"
-}
-
-
-{ EGroup Name: SoldierHumanMalesInfected          /* 'TheLegacy' faction. - Aggressive. */
-  SoldierHumanMaleInfected: "1, 1"
-}
-
-{ EGroup Name: SoldierHumanMales2Infected         /* 'TheLegacy' faction. - Aggressive. */
-  SoldierHumanMale2Infected: "1, 1"
-}
-
-
-{ EGroup Name: ZiraxBluesInfected                 /* 'TheLegacy' faction. - Aggressive. */
-  ZiraxInfectedBlue: "1, 1"
-}
-
-{ EGroup Name: ZiraxGreensInfected                /* 'TheLegacy' faction. - Aggressive. */
-  ZiraxInfectedGreen: "1, 1"
-}
-
-{ EGroup Name: ZiraxRedsInfected                  /* 'TheLegacy' faction. - Aggressive. */
-  ZiraxInfectedRed: "1, 1"
-}
-
-{ EGroup Name: ZiraxYellowsInfected               /* 'TheLegacy' faction. - Aggressive. */
-  ZiraxInfectedYellow: "1, 1"
-}
-
-{ EGroup Name: ZiraxPurplesInfected               /* 'TheLegacy' faction. - Aggressive. */
-  ZiraxInfectedPurple: "1, 1"
-}
-
-{ EGroup Name: ZiraxCommandersInfected            /* 'TheLegacy' faction. - Aggressive. */
-  ZiraxInfectedCommander: "1, 1"
-}
-
-
-
-
