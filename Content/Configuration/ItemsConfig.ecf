@@ -1365,6 +1365,7 @@
     RadialIcon: Radial_Defence
   }
   { Child 1
+    AllowAt: "UnderWater, Planet, Space"
     Class: Ranged
     AllowRemote: false
     ROF: 4.2, type: float, display: true, formatter: ROF
@@ -1892,6 +1893,7 @@
   RepairDisabled: true, display: true
   SfxJammed: Weapons/Player/Reload/WeaponJammedAutoFire
   { Child 0
+    AllowAt: "UnderWater, Planet, Space"
     ROF: 0.16, type: float, display: true, formatter: ROF
     Range: 293, display: false
     NoiseStrength: 100, display: false
@@ -2252,7 +2254,7 @@
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   RadialMenu: true
   { Child 0
-    AllowAt: "UnderWater, Planet, Space"
+    AllowAt: "Planet, Space"
     ROF: 1.0, type: float, display: true, formatter: ROF
     Automatic: true, display: true
     AmmoCapacity: 10, display: true
@@ -2265,6 +2267,7 @@
     RadialIcon: Radial_Defence
   }
   { Child 1
+    AllowAt: "UnderWater, Planet, Space"
     Class: Ranged
     AllowRemote: false
     ROF: 3.1, type: float, display: true, formatter: ROF
@@ -2689,6 +2692,7 @@
   Mass: 4.1, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   { Child 0
+    AllowAt: "UnderWater, Planet, Space"
     Class: Ranged
     ROF: 0.119, type: float, display: true, formatter: ROF
     ReloadDelay: 3.1, display: true
@@ -3088,6 +3092,7 @@
   DegradationProb: 1, type: float, display: false
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   { Child 0
+    AllowAt: "UnderWater, Planet, Space"
     Class: LauncherSS
     AllowRemote: false
     ROF: 1, type: float, display: true, formatter: ROF
@@ -3117,7 +3122,7 @@
   TechTreeNames: Hidden
 }
 
-{ Item Id: 44, Name: WeaponSVTorpedoLauncherWeapon
+{ Item Id: 44, Name: HWSWeaponSVTorpedoLauncherWeapon
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: @models/Blocks/WeaponsShip/WeaponSSMissilePrefab
@@ -3150,7 +3155,7 @@
   }
 }
 
-{ Item Id: 45, Name: AmmoSVTorpedo
+{ Item Id: 45, Name: HWSAmmoSVTorpedo
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: Entities/Items/Weapons/Projectiles/BombDronePrefab
@@ -4249,7 +4254,7 @@
   ShowUser: No
 }
 
-{ Item Id: 97, Name: TurretHVLaserWeapon
+{ Item Id: 97, Name: HWSTurretHVLaserWeapon
   Model: Entities/Blocks/Turrets/TurretsEnemy/TurretEnemyLaserPrefab
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -4269,7 +4274,7 @@
     RangeSpace: 750, display: true
     AmmoCapacity: 50, display: false   # no need to display since unlimited ammo
     # AmmoUnlimited: true
-    AmmoType: AmmoTurretHVLaser, display: true
+    AmmoType: HWSAmmoTurretHVLaser, display: true
     NoiseStrength: 100, display: false
     ReloadDelay: 3, display: true
     SfxBegin: Weapons/EnergyWeapons/weapon_laser_009
@@ -4280,7 +4285,7 @@
   }
 }
 
-{ Item Id: 98, Name: WeaponCVTorpedoLauncherWeapon
+{ Item Id: 98, Name: HWSWeaponCVTorpedoLauncherWeapon
   Meshfile: @models/Blocks/Turrets/TurretsEnemy/turretIONcannonPrefab
   MarketPrice: 1, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -4304,7 +4309,7 @@
     RangeSpace: 1000, display: true
     AmmoCapacity: 10, display: false   # no need to display since unlimited ammo
     # AmmoUnlimited: true
-    AmmoType: AmmoCVTorpedo, display: true
+    AmmoType: HWSAmmoCVTorpedo, display: true
     AutoReload: true
     CheckObstructed: true
     NoiseStrength: 300, display: false
@@ -4316,7 +4321,7 @@
   }
 }
 
-{ Item Id: 99, Name: AmmoCVTorpedo
+{ Item Id: 99, Name: HWSAmmoCVTorpedo
   Meshfile: Entities/Items/Weapons/Projectiles/AlienRocketRedPrefab
   MarketPrice: 96388, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -4698,6 +4703,7 @@
     Tracer: Weapons/Projectiles/TracerOrange1
 
     DamageMultiplier_Group: HWS_EWS_Kinetic
+	Mod.Damage: "Damage + Player.Skills['ShipMinigunDamage'] * 1.25"
   }
 }
 { Item Id: 110, Name: RocketLauncherMSWeapon
@@ -4799,6 +4805,8 @@
     TracerSpeed: 1000
 
     DamageMultiplier_Group: HWS_EWS_Energy
+	Mod.Damage: "Damage + Player.Skills['ShipMinigunDamage'] * 1.25"
+
   }
   # { Child 0
     # Class: LauncherSS
@@ -6329,7 +6337,7 @@
   UnlockLevel: 1
   TechTreeNames: Hidden
 }
-{ Item Id: 606, Name: AmmoSVAntimatterCannon
+{ Item Id: 606, Name: HWSAmmoSVAntimatterCannon
   Meshfile: Entities/Items/Weapons/Projectiles/AlienRocketGreenPrefab
   MarketPrice: 5400, display: true
   # Meshfile: Entities/Items/Weapons/Projectiles/alienRocketPrefab
@@ -7064,7 +7072,7 @@
   TechTreeNames: Hidden
 }
 
-{ Item Id: 179, Name: AmmoTurretHVLaser
+{ Item Id: 179, Name: HWSAmmoTurretHVLaser
   Meshfile: Entities/Items/Weapons/Projectiles/LaserShotRedAlien
   MarketPrice: 4594, display: true
   DropMeshfile: Entities/Misc/BagSmallNewPrefab
@@ -7624,7 +7632,7 @@
 }
 ## Please do not rename - referenced in code
 { Item Id: 253, Name: PlayerBike
-  Meshfile: Entities/Misc/PlayerBikePrefab
+  Meshfile: Entities/Misc/Hoverbike/Prefab/HoverbikePrefab
   DropMeshfile: Entities/Misc/PlayerBikeFoldedItemPrefab
   Material: metalitem, display: false
   Canhold: false
@@ -7632,6 +7640,7 @@
   Mass: 59.4, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: bkiPlayerBike, display: true
+  AllowPlacingAt: Terrain
   StackSize: 1
   Category: Devices
   MapIcon: map_PlayerBike
@@ -8506,7 +8515,7 @@
 }
 
 # Alien SV Homing Plasma
-{ Item Id: 331, Name: WeaponSVAntimatterCannonWeapon
+{ Item Id: 331, Name: HWSWeaponSVAntimatterCannonWeapon
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: @models/Blocks/WeaponsShip/WeaponSSPlasmaPrefab
@@ -8527,7 +8536,7 @@
     Range: 500, display: false
     RangeSpace: 850, display: false
     AmmoCapacity: 10, display: true
-    AmmoType: AmmoSVAntimatterCannon, display: true
+    AmmoType: HWSAmmoSVAntimatterCannon, display: true
     Automatic: true
     NoiseStrength: 100, display: false
     AutoReload: true
@@ -15454,7 +15463,7 @@
 
 # =============================================================================
 
-{ Item Id: 1502, Name: RocketPodMSWeapon
+{ Item Id: 1502, Name: HWSRocketPodMSWeapon
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 80"
 
   Meshfile: @models/Blocks/WeaponsShip/WeaponSSMissilePrefab
@@ -15476,7 +15485,7 @@
     Range: 450, display: false
     RangeSpace: 800, display: false
     AmmoCapacity: 16, display: true
-    AmmoType: LightRocketCV, display: true
+    AmmoType: HWSLightRocketCV, display: true
     Automatic: true
     NoiseStrength: 200, display: false
     AutoReload: true
@@ -15620,7 +15629,7 @@
 }
 
 # CV Rocket Launcher Ammo
-{ Item Id: 1602, Name: LightRocketCV
+{ Item Id: 1602, Name: HWSLightRocketCV
   Mod.StackSize: "StackSize + Player.Skills['StackSize'] * 400"
 
   Meshfile: Entities/Items/Weapons/Projectiles/rocket01Prefab
@@ -15629,7 +15638,7 @@
   MarketPrice: 1079, display: true
   StackSize: 1000
   AllowPlacingAt: MS, display: false
-  CustomIcon: LightRocketCV
+  CustomIcon: HWSLightRocketCV
   Mass: 132.5, type: float, display: true, formatter: Kilogram
   Volume: 0, type: float, display: false, formatter: Liter
   Info: A variant of the SGM-220 designed for ship-to-ship bombardments. It has a reinforced shell to achieve higher penetration at lower explosive damage., display: true
@@ -15791,6 +15800,7 @@
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   RadialMenu: true
   { Child 0
+    AllowAt: "UnderWater, Planet, Space"
     RadialText: Elemental Projectle
     RadialDesc: Elemental particle clot - explodes on contact with the surface  # add text
     RadialIcon: Radial_Upgrade
@@ -15820,6 +15830,7 @@
   }
   { Child 1       # Beam Mode
     Class: Ranged
+    AllowAt: "UnderWater, Planet, Space"
   #  DegradationProb: 0.01, type: float, display: true
     ROF: 0.225, type: float, display: true, formatter: ROF
     Range: 250, display: false
@@ -15904,6 +15915,7 @@
   }
   { Child 1       # Beam Mode
     Class: Ranged
+    AllowAt: "UnderWater, Planet, Space"
   #  DegradationProb: 0.01, type: float, display: true
     ROF: 0.3, type: float, display: true, formatter: ROF
     Range: 250, display: false
@@ -15988,6 +16000,7 @@
   }
   { Child 1       # Beam Mode
     Class: Ranged
+    AllowAt: "UnderWater, Planet, Space"
   #  DegradationProb: 0.01, type: float, display: true
     ROF: 0.3, type: float, display: true, formatter: ROF
     Range: 250, display: false
@@ -16072,6 +16085,7 @@
   }
   { Child 1       # Beam Mode
     Class: Ranged
+    AllowAt: "UnderWater, Planet, Space"
   #  DegradationProb: 0.01, type: float, display: true
     ROF: 0.3, type: float, display: true, formatter: ROF
     Range: 250, display: false
@@ -16156,6 +16170,7 @@
   }
   { Child 1       # Beam Mode
     Class: Ranged
+    AllowAt: "UnderWater, Planet, Space"
   #  DegradationProb: 0.01, type: float, display: true
     ROF: 0.3, type: float, display: true, formatter: ROF
     Range: 310, display: false
@@ -16240,6 +16255,7 @@
   }
   { Child 1       # Beam Mode
     Class: Ranged
+    AllowAt: "UnderWater, Planet, Space"
   #  DegradationProb: 0.01, type: float, display: true
     ROF: 0.3, type: float, display: true, formatter: ROF
     Range: 125, display: false
@@ -16295,6 +16311,7 @@
   SfxJammed: Weapons/Player/Reload/WeaponJammedSingleShot
   RadialMenu: true
   { Child 0
+    AllowAt: "UnderWater, Planet, Space"
     RadialText: Elemental Projectle
     RadialDesc: Elemental particle clot - explodes on contact with the surface  # add text
     RadialIcon: Radial_Upgrade
@@ -16324,6 +16341,7 @@
   }
   { Child 1       # Beam Mode
     Class: Ranged
+    AllowAt: "UnderWater, Planet, Space"
   #  DegradationProb: 0.01, type: float, display: true
     ROF: 0.3, type: float, display: true, formatter: ROF
     Range: 250, display: false

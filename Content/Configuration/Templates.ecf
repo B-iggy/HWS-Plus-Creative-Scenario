@@ -2359,7 +2359,7 @@
   }
 }
 
-{ Template Name: WarpDriveT2
+{ Template Name: HWSWarpDriveT2
   CraftTime: 180 #C2 CV 10
   Target: "AdvC"
   { Child Inputs
@@ -3893,7 +3893,7 @@
   }
 }
 
-{ Template Name: LightRocketCV
+{ Template Name: HWSLightRocketCV
   OutputCount: 10 #B1 10 used by "WeaponMS03"
   CraftTime: 5
   Target: "LargeC,AdvC"
@@ -4213,7 +4213,7 @@
   }
 }
 
-{ Template Name: WeaponMS03 #"Rocket Launcher"
+{ Template Name: HWSWeaponMS03 #"Rocket Launcher"
   CraftTime: 30 #D1 CV 20 uses "FastRocket"
   Target: AdvC
   { Child Inputs
@@ -5618,19 +5618,7 @@
   }
 }
 
-{ Template Name: PentaxidSeedCrystal
-  DeconOverride: Stop
-  CraftTime: 50
-  Target: "FoodP"
-  { Child Inputs
-    PentaxidElement: 25
-    ErestrumGel: 12
-    NutrientSolution: 5
-    XenoSubstrate: 5
-  }
-}
-
-{ Template Name: WeaponSVTorpedoLauncher
+{ Template Name: HWSWeaponSVTorpedoLauncher
   CraftTime: 90 #D1 20  uses "M77 Torpedo"
   DeconOverride: Stop
   Target: AdvC
@@ -5646,7 +5634,7 @@
   }
 }
 
-{ Template Name: AmmoSVTorpedo
+{ Template Name: HWSAmmoSVTorpedo
   OutputCount: 1 #D1 20 for "M77 Torpedo Launcher"
   CraftTime: 30
   DeconOverride: Stop
@@ -5660,7 +5648,7 @@
   }
 }
 
-{ Template Name: WeaponSVAntimatterCannon
+{ Template Name: HWSWeaponSVAntimatterCannon
   CraftTime: 90
   Target: AdvC
   DeconOverride: Stop
@@ -5677,7 +5665,7 @@
   }
 }
 
-{ Template Name: AmmoSVAntimatterCannon
+{ Template Name: HWSAmmoSVAntimatterCannon
   OutputCount: 10
   CraftTime: 15
   DeconOverride: Stop
@@ -5689,7 +5677,7 @@
   }
 }
 
-{ Template Name: WeaponCVTorpedoLauncher
+{ Template Name: HWSWeaponCVTorpedoLauncher
   CraftTime: 90 #D1 20  uses "L77 Torpedo"
   DeconOverride: Stop
   Target: AdvC
@@ -5705,7 +5693,7 @@
   }
 }
 
-{ Template Name: AmmoCVTorpedo
+{ Template Name: HWSAmmoCVTorpedo
   OutputCount: 2 #D1 20 for "L77 Torpedo Launcher"
   DeconOverride: Stop
   CraftTime: 60
@@ -5719,7 +5707,7 @@
   }
 }
 
-{ Template Name: AmmoTurretHVLaser
+{ Template Name: HWSAmmoTurretHVLaser
   OutputCount: 4 #D1 20 for "M77 Torpedo Launcher"
   CraftTime: 10
   Target: "AdvC"
